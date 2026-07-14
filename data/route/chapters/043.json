@@ -1,0 +1,1648 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 42 Stranglethorn Vale, or select this chapter on a partially completed character. Begin in Loch Modan with Margol's Horn. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 38,
+    "map_name": "Loch Modan",
+    "x": 18.18,
+    "y": 84.01
+  },
+  "entry_zone_or_sort": 51,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 33,
+    "map_name": "Stranglethorn Vale",
+    "quest_id": 1122,
+    "tag": "QT",
+    "x": 27.12,
+    "y": 77.21
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/043_world_43.lua",
+  "id": "043-primary-43-searing-gorge",
+  "maximum_level": 40,
+  "minimum_level": 40,
+  "next_chapter": "44 Desolace & Feralas",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "42 Stranglethorn Vale",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 3181,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:623:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3181:finisher",
+        "travel-network:ratchet-booty-bay",
+        "https://www.wowhead.com/tbc/quest=1040/passage-to-booty-bay"
+      ],
+      "instruction": "Travel from Dustwallow Marsh to Loch Modan: Take the ship between Ratchet and Booty Bay. Continue to [G18.18,84.01 Loch Modan]. [O]",
+      "map_id": 38,
+      "map_name": "Loch Modan",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 15,
+      "origin_map_name": "Dustwallow Marsh",
+      "origin_x": 68.84,
+      "origin_y": 53.22,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [
+        "ratchet-booty-bay"
+      ],
+      "type": "transport",
+      "verification": "questie_endpoints_and_tbc_transport_network",
+      "x": 18.18,
+      "y": 84.01
+    },
+    {
+      "before_quest_id": 3181,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3181:finisher"
+      ],
+      "instruction": "Before you begin: travel to Loch Modan and continue from the first verified route point at [G18.18,84.01 Loch Modan]. Leave at least two quest-log slots open. [O]",
+      "map_id": 38,
+      "map_name": "Loch Modan",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 18.18,
+      "y": 84.01
+    },
+    {
+      "before_quest_id": 3181,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3181:requiredLevel"
+      ],
+      "instruction": "Reach level 40 before accepting The Horn of the Beast. [XP40 Level 40]",
+      "map_id": 51,
+      "map_name": "Searing Gorge",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 40,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": null,
+      "y": null
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 10000,
+          "kind": "item",
+          "locations": [],
+          "name": "Margol's Horn",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3181"
+      ],
+      "instruction": "Accept [QA3181 The Horn of the Beast] from Margol's Horn.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 3181,
+      "quest_name": "The Horn of the Beast",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8479,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 39.06,
+              "y": 38.99
+            }
+          ],
+          "name": "Kalaran Windblade",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3441"
+      ],
+      "instruction": "Accept [QA3441 Divine Retribution] from Kalaran Windblade.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 3441,
+      "quest_name": "Divine Retribution",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3181"
+      ],
+      "instruction": "Complete [QC3181 The Horn of the Beast]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 3181,
+      "quest_name": "The Horn of the Beast",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3441"
+      ],
+      "instruction": "Complete the scripted or exploration event. [QC3441 Divine Retribution]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 3441,
+      "quest_name": "Divine Retribution",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8479,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 39.06,
+              "y": 38.99
+            }
+          ],
+          "name": "Kalaran Windblade",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3441"
+      ],
+      "instruction": "Turn in [QT3441 Divine Retribution] to Kalaran Windblade",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 3441,
+      "quest_name": "Divine Retribution",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3836,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 18.18,
+              "y": 84.01
+            }
+          ],
+          "name": "Mountaineer Pebblebitty",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3181"
+      ],
+      "instruction": "Turn in [QT3181 The Horn of the Beast] to Mountaineer Pebblebitty",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 3181,
+      "quest_name": "The Horn of the Beast",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8479,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 39.06,
+              "y": 38.99
+            }
+          ],
+          "name": "Kalaran Windblade",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3442"
+      ],
+      "instruction": "Accept [QA3442 The Flawless Flame] from Kalaran Windblade.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 3442,
+      "quest_name": "The Flawless Flame",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3442"
+      ],
+      "instruction": "Collect or use the required items: Heart of Flame, Golem Oil. [QC3442 The Flawless Flame]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Heart of Flame, Golem Oil",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 10509,
+          "kind": "item",
+          "locations": [],
+          "name": "Heart of Flame",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 10511,
+          "kind": "item",
+          "locations": [],
+          "name": "Golem Oil",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 11,
+      "quest_id": 3442,
+      "quest_name": "The Flawless Flame",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8479,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 39.06,
+              "y": 38.99
+            }
+          ],
+          "name": "Kalaran Windblade",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3442"
+      ],
+      "instruction": "Turn in [QT3442 The Flawless Flame] to Kalaran Windblade",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 3442,
+      "quest_name": "The Flawless Flame",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8479,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 39.06,
+              "y": 38.99
+            }
+          ],
+          "name": "Kalaran Windblade",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3443"
+      ],
+      "instruction": "Accept [QA3443 Forging the Shaft] from Kalaran Windblade.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 3443,
+      "quest_name": "Forging the Shaft",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3443"
+      ],
+      "instruction": "Collect or use the required item: Thorium Plated Dagger. [QC3443 Forging the Shaft]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Thorium Plated Dagger",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 10551,
+          "kind": "item",
+          "locations": [],
+          "name": "Thorium Plated Dagger",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 14,
+      "quest_id": 3443,
+      "quest_name": "Forging the Shaft",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8479,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 39.06,
+              "y": 38.99
+            }
+          ],
+          "name": "Kalaran Windblade",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3443"
+      ],
+      "instruction": "Turn in [QT3443 Forging the Shaft] to Kalaran Windblade",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 3443,
+      "quest_name": "Forging the Shaft",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8479,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 39.06,
+              "y": 38.99
+            }
+          ],
+          "name": "Kalaran Windblade",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3452"
+      ],
+      "instruction": "Accept [QA3452 The Flame's Casing] from Kalaran Windblade.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 3452,
+      "quest_name": "The Flame's Casing",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3452"
+      ],
+      "instruction": "Collect or use the required item: Symbol of Ragnaros. [QC3452 The Flame's Casing]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Symbol of Ragnaros",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 10552,
+          "kind": "item",
+          "locations": [],
+          "name": "Symbol of Ragnaros",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 17,
+      "quest_id": 3452,
+      "quest_name": "The Flame's Casing",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8479,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 39.06,
+              "y": 38.99
+            }
+          ],
+          "name": "Kalaran Windblade",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3452"
+      ],
+      "instruction": "Turn in [QT3452 The Flame's Casing] to Kalaran Windblade",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 3452,
+      "quest_name": "The Flame's Casing",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8479,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 39.06,
+              "y": 38.99
+            }
+          ],
+          "name": "Kalaran Windblade",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3453"
+      ],
+      "instruction": "Accept [QA3453 The Torch of Retribution] from Kalaran Windblade.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 3453,
+      "quest_name": "The Torch of Retribution",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3453"
+      ],
+      "instruction": "Complete the scripted or exploration event. [QC3453 The Torch of Retribution]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 3453,
+      "quest_name": "The Torch of Retribution",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8479,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 39.06,
+              "y": 38.99
+            }
+          ],
+          "name": "Kalaran Windblade",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3453"
+      ],
+      "instruction": "Turn in [QT3453 The Torch of Retribution] to Kalaran Windblade",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 3453,
+      "quest_name": "The Torch of Retribution",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8479,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 39.06,
+              "y": 38.99
+            }
+          ],
+          "name": "Kalaran Windblade",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3454"
+      ],
+      "instruction": "Accept [QA3454 The Torch of Retribution] from Kalaran Windblade.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 22,
+      "quest_id": 3454,
+      "quest_name": "The Torch of Retribution",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3454"
+      ],
+      "instruction": "Complete [QC3454 The Torch of Retribution]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 23,
+      "quest_id": 3454,
+      "quest_name": "The Torch of Retribution",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 149047,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 39.06,
+              "y": 39.07
+            }
+          ],
+          "name": "Torch of Retribution",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3454"
+      ],
+      "instruction": "Turn in [QT3454 The Torch of Retribution] to Torch of Retribution",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 24,
+      "quest_id": 3454,
+      "quest_name": "The Torch of Retribution",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8479,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 39.06,
+              "y": 38.99
+            }
+          ],
+          "name": "Kalaran Windblade",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3462"
+      ],
+      "instruction": "Accept [QA3462 Squire Maltrake] from Kalaran Windblade.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 25,
+      "quest_id": 3462,
+      "quest_name": "Squire Maltrake",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3462"
+      ],
+      "instruction": "Complete [QC3462 Squire Maltrake]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 26,
+      "quest_id": 3462,
+      "quest_name": "Squire Maltrake",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8509,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 39.17,
+              "y": 39.0
+            }
+          ],
+          "name": "Squire Maltrake",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3462"
+      ],
+      "instruction": "Turn in [QT3462 Squire Maltrake] to Squire Maltrake",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 27,
+      "quest_id": 3462,
+      "quest_name": "Squire Maltrake",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8509,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 39.17,
+              "y": 39.0
+            }
+          ],
+          "name": "Squire Maltrake",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3463"
+      ],
+      "instruction": "Accept [QA3463 Set Them Ablaze!] from Squire Maltrake.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 28,
+      "quest_id": 3463,
+      "quest_name": "Set Them Ablaze!",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3463"
+      ],
+      "instruction": "Use the quest item [UI10515-] as directed; interact with the required object: Sentry Brazier. [QC3463 Set Them Ablaze!]",
+      "item_use_id": 10515,
+      "objective_hint": "Interact with the required object: Sentry Brazier",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 149025,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 35.67,
+              "y": 60.68
+            }
+          ],
+          "name": "Sentry Brazier",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 149030,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 44.03,
+              "y": 60.91
+            }
+          ],
+          "name": "Sentry Brazier",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 149031,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 50.07,
+              "y": 54.74
+            }
+          ],
+          "name": "Sentry Brazier",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 149032,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 33.3,
+              "y": 54.48
+            }
+          ],
+          "name": "Sentry Brazier",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 29,
+      "quest_id": 3463,
+      "quest_name": "Set Them Ablaze!",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8509,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 39.17,
+              "y": 39.0
+            }
+          ],
+          "name": "Squire Maltrake",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3463"
+      ],
+      "instruction": "Turn in [QT3463 Set Them Ablaze!] to Squire Maltrake",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 30,
+      "quest_id": 3463,
+      "quest_name": "Set Them Ablaze!",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 149502,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 38.85,
+              "y": 38.99
+            }
+          ],
+          "name": "Hoard of the Black Dragonflight",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3481"
+      ],
+      "instruction": "Accept [QA3481 Trinkets...] from Hoard of the Black Dragonflight.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 31,
+      "quest_id": 3481,
+      "quest_name": "Trinkets...",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3481"
+      ],
+      "instruction": "Complete [QC3481 Trinkets...]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 32,
+      "quest_id": 3481,
+      "quest_name": "Trinkets...",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 149502,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 38.85,
+              "y": 38.99
+            }
+          ],
+          "name": "Hoard of the Black Dragonflight",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3481"
+      ],
+      "instruction": "Turn in [QT3481 Trinkets...] to Hoard of the Black Dragonflight",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 33,
+      "quest_id": 3481,
+      "quest_name": "Trinkets...",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2498,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 27.12,
+              "y": 77.21
+            }
+          ],
+          "name": "Crank Fizzlebub",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1119"
+      ],
+      "instruction": "Accept [QA1119 Zanzil's Mixture and a Fool's Stout] from Crank Fizzlebub.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 34,
+      "quest_id": 1119,
+      "quest_name": "Zanzil's Mixture and a Fool's Stout",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 400,
+      "zone_or_sort_name": "Thousand Needles"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1119"
+      ],
+      "instruction": "Complete [QC1119 Zanzil's Mixture and a Fool's Stout]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 35,
+      "quest_id": 1119,
+      "quest_name": "Zanzil's Mixture and a Fool's Stout",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 400,
+      "zone_or_sort_name": "Thousand Needles"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4452,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 400,
+              "map_name": "Thousand Needles",
+              "verification": "questie_structured_source_only",
+              "x": 77.79,
+              "y": 77.27
+            }
+          ],
+          "name": "Kravel Koalbeard",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1119"
+      ],
+      "instruction": "Turn in [QT1119 Zanzil's Mixture and a Fool's Stout] to Kravel Koalbeard",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 36,
+      "quest_id": 1119,
+      "quest_name": "Zanzil's Mixture and a Fool's Stout",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 400,
+      "zone_or_sort_name": "Thousand Needles"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4452,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 400,
+              "map_name": "Thousand Needles",
+              "verification": "questie_structured_source_only",
+              "x": 77.79,
+              "y": 77.27
+            }
+          ],
+          "name": "Kravel Koalbeard",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1120"
+      ],
+      "instruction": "Accept [QA1120 Get the Gnomes Drunk] from Kravel Koalbeard.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 37,
+      "quest_id": 1120,
+      "quest_name": "Get the Gnomes Drunk",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 400,
+      "zone_or_sort_name": "Thousand Needles"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1120"
+      ],
+      "instruction": "Complete [QC1120 Get the Gnomes Drunk]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 38,
+      "quest_id": 1120,
+      "quest_name": "Get the Gnomes Drunk",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 400,
+      "zone_or_sort_name": "Thousand Needles"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4495,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 400,
+              "map_name": "Thousand Needles",
+              "verification": "questie_structured_source_only",
+              "x": 77.56,
+              "y": 76.94
+            }
+          ],
+          "name": "Gnome Pit Boss",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1120"
+      ],
+      "instruction": "Turn in [QT1120 Get the Gnomes Drunk] to Gnome Pit Boss",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 39,
+      "quest_id": 1120,
+      "quest_name": "Get the Gnomes Drunk",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 400,
+      "zone_or_sort_name": "Thousand Needles"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4452,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 400,
+              "map_name": "Thousand Needles",
+              "verification": "questie_structured_source_only",
+              "x": 77.79,
+              "y": 77.27
+            }
+          ],
+          "name": "Kravel Koalbeard",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1122"
+      ],
+      "instruction": "Accept [QA1122 Report Back to Fizzlebub] from Kravel Koalbeard.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 40,
+      "quest_id": 1122,
+      "quest_name": "Report Back to Fizzlebub",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 400,
+      "zone_or_sort_name": "Thousand Needles"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1122"
+      ],
+      "instruction": "Complete [QC1122 Report Back to Fizzlebub]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 41,
+      "quest_id": 1122,
+      "quest_name": "Report Back to Fizzlebub",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 400,
+      "zone_or_sort_name": "Thousand Needles"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2498,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 27.12,
+              "y": 77.21
+            }
+          ],
+          "name": "Crank Fizzlebub",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1122"
+      ],
+      "instruction": "Turn in [QT1122 Report Back to Fizzlebub] to Crank Fizzlebub",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 42,
+      "quest_id": 1122,
+      "quest_name": "Report Back to Fizzlebub",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 400,
+      "zone_or_sort_name": "Thousand Needles"
+    }
+  ],
+  "title": "43 Searing Gorge"
+}

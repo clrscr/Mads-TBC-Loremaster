@@ -1,0 +1,850 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 94 Shattrath City, or select this chapter on a partially completed character. Begin in Tanaris with Steward of Time. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 440,
+    "map_name": "Tanaris",
+    "x": 66.02,
+    "y": 49.7
+  },
+  "entry_zone_or_sort": 1941,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 3483,
+    "map_name": "Hellfire Peninsula",
+    "quest_id": 10764,
+    "tag": "QT",
+    "x": 51.12,
+    "y": 60.3
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/095_world_95.lua",
+  "id": "095-primary-95-caverns-of-time-&-hellfire-peninsula",
+  "maximum_level": 70,
+  "minimum_level": 70,
+  "next_chapter": "96 Blade's Edge Mountains",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "94 Shattrath City",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 10279,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10984:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10279:starter",
+        "travel-network:shattrath-alliance-portals",
+        "https://www.wowhead.com/tbc/guide/how-to-get-to-shattrath-city-in-burning-crusade-classic"
+      ],
+      "instruction": "Travel from Shattrath City to Tanaris: Use the Alliance capital portal closest to the next route zone. Continue to [G66.02,49.70 Tanaris]. [O]",
+      "map_id": 440,
+      "map_name": "Tanaris",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 3703,
+      "origin_map_name": "Shattrath City",
+      "origin_x": 64.93,
+      "origin_y": 68.14,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [
+        "shattrath-alliance-portals"
+      ],
+      "type": "transport",
+      "verification": "questie_endpoints_and_tbc_transport_network",
+      "x": 66.02,
+      "y": 49.7
+    },
+    {
+      "before_quest_id": 10279,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10279:starter"
+      ],
+      "instruction": "Before you begin: travel to Tanaris and meet the first quest giver at [G66.02,49.70 Tanaris]. Leave at least two quest-log slots open. [O]",
+      "map_id": 440,
+      "map_name": "Tanaris",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 66.02,
+      "y": 49.7
+    },
+    {
+      "before_quest_id": 10279,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10279:requiredLevel"
+      ],
+      "instruction": "Reach level 70 before accepting To The Master's Lair. [XP70 Level 70]",
+      "map_id": 440,
+      "map_name": "Tanaris",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 70,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 66.02,
+      "y": 49.7
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 20142,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 66.02,
+              "y": 49.7
+            }
+          ],
+          "name": "Steward of Time",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10279"
+      ],
+      "instruction": "Accept [QA10279 To The Master's Lair] from Steward of Time.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 10279,
+      "quest_name": "To The Master's Lair",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1941,
+      "zone_or_sort_name": "Caverns of Time"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 20130,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 58.43,
+              "y": 54.28
+            }
+          ],
+          "name": "Andormu",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10277"
+      ],
+      "instruction": "Accept [QA10277 The Caverns of Time] from Andormu.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 10277,
+      "quest_name": "The Caverns of Time",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1941,
+      "zone_or_sort_name": "Caverns of Time"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10279"
+      ],
+      "instruction": "Complete [QC10279 To The Master's Lair]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 10279,
+      "quest_name": "To The Master's Lair",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1941,
+      "zone_or_sort_name": "Caverns of Time"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10277"
+      ],
+      "instruction": "Complete the scripted or exploration event. [QC10277 The Caverns of Time]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 10277,
+      "quest_name": "The Caverns of Time",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 1941,
+      "zone_or_sort_name": "Caverns of Time"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 20130,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 58.43,
+              "y": 54.28
+            }
+          ],
+          "name": "Andormu",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10279"
+      ],
+      "instruction": "Turn in [QT10279 To The Master's Lair] to Andormu",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 10279,
+      "quest_name": "To The Master's Lair",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1941,
+      "zone_or_sort_name": "Caverns of Time"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 20130,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 58.43,
+              "y": 54.28
+            }
+          ],
+          "name": "Andormu",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10277"
+      ],
+      "instruction": "Turn in [QT10277 The Caverns of Time] to Andormu",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 10277,
+      "quest_name": "The Caverns of Time",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1941,
+      "zone_or_sort_name": "Caverns of Time"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22037,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3520,
+              "map_name": "Shadowmoon Valley",
+              "verification": "questie_structured_source_only",
+              "x": 67.64,
+              "y": 36.2
+            }
+          ],
+          "name": "Smith Gorlunk",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10754"
+      ],
+      "instruction": "Accept [QA10754 Entry Into the Citadel] from Smith Gorlunk.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 10754,
+      "quest_name": "Entry Into the Citadel",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3483,
+      "zone_or_sort_name": "Hellfire Peninsula"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10754"
+      ],
+      "instruction": "Complete [QC10754 Entry Into the Citadel]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 10754,
+      "quest_name": "Entry Into the Citadel",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3483,
+      "zone_or_sort_name": "Hellfire Peninsula"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16819,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 56.64,
+              "y": 66.7
+            }
+          ],
+          "name": "Force Commander Danath Trollbane",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10754"
+      ],
+      "instruction": "Turn in [QT10754 Entry Into the Citadel] to Force Commander Danath Trollbane",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 10754,
+      "quest_name": "Entry Into the Citadel",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3483,
+      "zone_or_sort_name": "Hellfire Peninsula"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16819,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 56.64,
+              "y": 66.7
+            }
+          ],
+          "name": "Force Commander Danath Trollbane",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10762"
+      ],
+      "instruction": "Accept [QA10762 Grand Master Dumphry] from Force Commander Danath Trollbane.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 10762,
+      "quest_name": "Grand Master Dumphry",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3483,
+      "zone_or_sort_name": "Hellfire Peninsula"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10762"
+      ],
+      "instruction": "Complete [QC10762 Grand Master Dumphry]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 10762,
+      "quest_name": "Grand Master Dumphry",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3483,
+      "zone_or_sort_name": "Hellfire Peninsula"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 21209,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 51.12,
+              "y": 60.3
+            }
+          ],
+          "name": "Dumphry",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10762"
+      ],
+      "instruction": "Turn in [QT10762 Grand Master Dumphry] to Dumphry",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 10762,
+      "quest_name": "Grand Master Dumphry",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3483,
+      "zone_or_sort_name": "Hellfire Peninsula"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 21209,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 51.12,
+              "y": 60.3
+            }
+          ],
+          "name": "Dumphry",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10763"
+      ],
+      "instruction": "Accept [QA10763 Dumphry's Request] from Dumphry.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 10763,
+      "quest_name": "Dumphry's Request",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3483,
+      "zone_or_sort_name": "Hellfire Peninsula"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10763"
+      ],
+      "instruction": "Collect or use the required items: Fel Iron Bar, Arcane Dust, Mote of Fire. [QC10763 Dumphry's Request]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Fel Iron Bar, Arcane Dust, Mote of Fire",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 23445,
+          "kind": "item",
+          "locations": [],
+          "name": "Fel Iron Bar",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 22445,
+          "kind": "item",
+          "locations": [],
+          "name": "Arcane Dust",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 22574,
+          "kind": "item",
+          "locations": [],
+          "name": "Mote of Fire",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 17,
+      "quest_id": 10763,
+      "quest_name": "Dumphry's Request",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3483,
+      "zone_or_sort_name": "Hellfire Peninsula"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 21209,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 51.12,
+              "y": 60.3
+            }
+          ],
+          "name": "Dumphry",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10763"
+      ],
+      "instruction": "Turn in [QT10763 Dumphry's Request] to Dumphry",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 10763,
+      "quest_name": "Dumphry's Request",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3483,
+      "zone_or_sort_name": "Hellfire Peninsula"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 21209,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 51.12,
+              "y": 60.3
+            }
+          ],
+          "name": "Dumphry",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10764"
+      ],
+      "instruction": "Accept [QA10764 Hotter than Hell] from Dumphry.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 10764,
+      "quest_name": "Hotter than Hell",
+      "quest_tag": "Elite",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3483,
+      "zone_or_sort_name": "Hellfire Peninsula"
+    },
+    {
+      "before_quest_id": 10764,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10764:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 440,
+      "map_name": "Tanaris",
+      "optional": true,
+      "order": 20,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        10764
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 66.02,
+      "y": 49.7
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10764"
+      ],
+      "instruction": "Elite/group recommended \u2014 Collect or use the required item: Charred Key Mold. [QC10764 Hotter than Hell]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Charred Key Mold",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 31252,
+          "kind": "item",
+          "locations": [],
+          "name": "Charred Key Mold",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 21,
+      "quest_id": 10764,
+      "quest_name": "Hotter than Hell",
+      "quest_tag": "Elite",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3483,
+      "zone_or_sort_name": "Hellfire Peninsula"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 21209,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 51.12,
+              "y": 60.3
+            }
+          ],
+          "name": "Dumphry",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10764"
+      ],
+      "instruction": "Turn in [QT10764 Hotter than Hell] to Dumphry",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 22,
+      "quest_id": 10764,
+      "quest_name": "Hotter than Hell",
+      "quest_tag": "Elite",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3483,
+      "zone_or_sort_name": "Hellfire Peninsula"
+    }
+  ],
+  "title": "95 Caverns of Time & Hellfire Peninsula"
+}

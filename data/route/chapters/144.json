@@ -1,0 +1,887 @@
+{
+  "branch": "optional_content",
+  "entry_contract": "Complete Special Delivery to Shattrath City. Begin in Shattrath City with Khadgar. Leave at least two quest-log slots open; group and reputation gates remain explicit.",
+  "entry_route_point": {
+    "map_id": 3703,
+    "map_name": "Shattrath City",
+    "x": 54.75,
+    "y": 44.32
+  },
+  "entry_zone_or_sort": 3789,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 3703,
+    "map_name": "Shattrath City",
+    "quest_id": 11007,
+    "tag": "QT",
+    "x": 53.99,
+    "y": 44.75
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [
+    [
+      10280
+    ]
+  ],
+  "external_prerequisite_quest_ids": [
+    10280
+  ],
+  "group": "Mad's Loremaster Guide - Optional Content",
+  "guide_file": "Guides/optional_content/144_dungeon_48.lua",
+  "id": "144-optional_content-optional-content-48---shadow-labyrinth-&-tempest-keep",
+  "maximum_level": null,
+  "minimum_level": null,
+  "next_chapter": "Optional Content 49 - Auchindoun Dungeons & Shadowmoon Valley",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "Optional Content 47 - Karazhan",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 9831,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9829:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9831:starter"
+      ],
+      "instruction": "Continue within Shattrath City to the next route hub at [G54.75,44.32 Shattrath City]. [O]",
+      "map_id": 3703,
+      "map_name": "Shattrath City",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 3703,
+      "origin_map_name": "Shattrath City",
+      "origin_x": 54.75,
+      "origin_y": 44.32,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 54.75,
+      "y": 44.32
+    },
+    {
+      "before_quest_id": 9831,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10280:dependency"
+      ],
+      "instruction": "Optional entry requirements: complete Special Delivery to Shattrath City. [O]",
+      "map_id": 3703,
+      "map_name": "Shattrath City",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        10280
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "branch_entry",
+      "verification": "route_dependency_graph",
+      "x": 54.75,
+      "y": 44.32
+    },
+    {
+      "before_quest_id": 9831,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9831:starter"
+      ],
+      "instruction": "Optional chapter: travel to Shattrath City and begin at [G54.75,44.32 Shattrath City]. Leave at least two quest-log slots open. [O]",
+      "map_id": 3703,
+      "map_name": "Shattrath City",
+      "optional": true,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 54.75,
+      "y": 44.32
+    },
+    {
+      "before_quest_id": 9831,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9831:requiredLevel"
+      ],
+      "instruction": "Reach level 70 before accepting Entry Into Karazhan. [XP70 Level 70]",
+      "map_id": 3703,
+      "map_name": "Shattrath City",
+      "optional": false,
+      "order": 4,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 70,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 54.75,
+      "y": 44.32
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18166,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 54.75,
+              "y": 44.32
+            }
+          ],
+          "name": "Khadgar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9831"
+      ],
+      "instruction": "Accept [QA9831 Entry Into Karazhan] from Khadgar.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 9831,
+      "quest_name": "Entry Into Karazhan",
+      "quest_tag": "Dungeon",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3789,
+      "zone_or_sort_name": "Shadow Labyrinth"
+    },
+    {
+      "before_quest_id": 9831,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9831:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 3703,
+      "map_name": "Shattrath City",
+      "optional": true,
+      "order": 6,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        9831
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 54.75,
+      "y": 44.32
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9831"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required item: First Key Fragment. [QC9831 Entry Into Karazhan]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: First Key Fragment",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 24514,
+          "kind": "item",
+          "locations": [],
+          "name": "First Key Fragment",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 7,
+      "quest_id": 9831,
+      "quest_name": "Entry Into Karazhan",
+      "quest_tag": "Dungeon",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3789,
+      "zone_or_sort_name": "Shadow Labyrinth"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18166,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 54.75,
+              "y": 44.32
+            }
+          ],
+          "name": "Khadgar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9831"
+      ],
+      "instruction": "Turn in [QT9831 Entry Into Karazhan] to Khadgar",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 9831,
+      "quest_name": "Entry Into Karazhan",
+      "quest_tag": "Dungeon",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3789,
+      "zone_or_sort_name": "Shadow Labyrinth"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18166,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 54.75,
+              "y": 44.32
+            }
+          ],
+          "name": "Khadgar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9832"
+      ],
+      "instruction": "Accept [QA9832 The Second and Third Fragments] from Khadgar.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 9832,
+      "quest_name": "The Second and Third Fragments",
+      "quest_tag": "Dungeon",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9832"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required items: Second Key Fragment, Third Key Fragment. [QC9832 The Second and Third Fragments]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Second Key Fragment, Third Key Fragment",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 24487,
+          "kind": "item",
+          "locations": [],
+          "name": "Second Key Fragment",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 24488,
+          "kind": "item",
+          "locations": [],
+          "name": "Third Key Fragment",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 10,
+      "quest_id": 9832,
+      "quest_name": "The Second and Third Fragments",
+      "quest_tag": "Dungeon",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18166,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 54.75,
+              "y": 44.32
+            }
+          ],
+          "name": "Khadgar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9832"
+      ],
+      "instruction": "Turn in [QT9832 The Second and Third Fragments] to Khadgar",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 9832,
+      "quest_name": "The Second and Third Fragments",
+      "quest_tag": "Dungeon",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 21700,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3520,
+              "map_name": "Shadowmoon Valley",
+              "verification": "questie_structured_source_only",
+              "x": 58.11,
+              "y": 48.18
+            }
+          ],
+          "name": "Akama",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10705"
+      ],
+      "instruction": "Accept [QA10705 Seer Udalo] from Akama.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 10705,
+      "quest_name": "Seer Udalo",
+      "quest_tag": "Dungeon",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3845,
+      "zone_or_sort_name": "Tempest Keep"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10705"
+      ],
+      "instruction": "Dungeon \u2014 Complete [QC10705 Seer Udalo]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 10705,
+      "quest_name": "Seer Udalo",
+      "quest_tag": "Dungeon",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3845,
+      "zone_or_sort_name": "Tempest Keep"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 21962,
+          "kind": "npc",
+          "locations": [],
+          "name": "Udalo",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10705"
+      ],
+      "instruction": "Turn in [QT10705 Seer Udalo] to Udalo",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 10705,
+      "quest_name": "Seer Udalo",
+      "quest_tag": "Dungeon",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3845,
+      "zone_or_sort_name": "Tempest Keep"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18481,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 53.99,
+              "y": 44.75
+            }
+          ],
+          "name": "A'dal",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10704"
+      ],
+      "instruction": "Accept [QA10704 How to Break Into the Arcatraz] from A'dal.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 10704,
+      "quest_name": "How to Break Into the Arcatraz",
+      "quest_tag": "Dungeon",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3845,
+      "zone_or_sort_name": "Tempest Keep"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10704"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required items: Top Shard of the Arcatraz Key, Bottom Shard of the Arcatraz Key. [QC10704 How to Break Into the Arcatraz]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Top Shard of the Arcatraz Key, Bottom Shard of the Arcatraz Key",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 31085,
+          "kind": "item",
+          "locations": [],
+          "name": "Top Shard of the Arcatraz Key",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 31086,
+          "kind": "item",
+          "locations": [],
+          "name": "Bottom Shard of the Arcatraz Key",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 16,
+      "quest_id": 10704,
+      "quest_name": "How to Break Into the Arcatraz",
+      "quest_tag": "Dungeon",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3845,
+      "zone_or_sort_name": "Tempest Keep"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18481,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 53.99,
+              "y": 44.75
+            }
+          ],
+          "name": "A'dal",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10704"
+      ],
+      "instruction": "Turn in [QT10704 How to Break Into the Arcatraz] to A'dal",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 10704,
+      "quest_name": "How to Break Into the Arcatraz",
+      "quest_tag": "Dungeon",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3845,
+      "zone_or_sort_name": "Tempest Keep"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18481,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 53.99,
+              "y": 44.75
+            }
+          ],
+          "name": "A'dal",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10882"
+      ],
+      "instruction": "Accept [QA10882 Harbinger of Doom] from A'dal.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 10882,
+      "quest_name": "Harbinger of Doom",
+      "quest_tag": "Dungeon",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3845,
+      "zone_or_sort_name": "Tempest Keep"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10882"
+      ],
+      "instruction": "Dungeon \u2014 Complete the required NPC or creature objective: Harbinger Skyriss. [QC10882 Harbinger of Doom]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Harbinger Skyriss",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 20912,
+          "kind": "npc",
+          "locations": [],
+          "name": "Harbinger Skyriss",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 19,
+      "quest_id": 10882,
+      "quest_name": "Harbinger of Doom",
+      "quest_tag": "Dungeon",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3845,
+      "zone_or_sort_name": "Tempest Keep"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18481,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 53.99,
+              "y": 44.75
+            }
+          ],
+          "name": "A'dal",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10882"
+      ],
+      "instruction": "Turn in [QT10882 Harbinger of Doom] to A'dal",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 10882,
+      "quest_name": "Harbinger of Doom",
+      "quest_tag": "Dungeon",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3845,
+      "zone_or_sort_name": "Tempest Keep"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 32405,
+          "kind": "item",
+          "locations": [],
+          "name": "Verdant Sphere",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11007"
+      ],
+      "instruction": "Accept [QA11007 Kael'thas and the Verdant Sphere] from Verdant Sphere.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 11007,
+      "quest_name": "Kael'thas and the Verdant Sphere",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3845,
+      "zone_or_sort_name": "Tempest Keep"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11007"
+      ],
+      "instruction": "Raid \u2014 Complete [QC11007 Kael'thas and the Verdant Sphere]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 22,
+      "quest_id": 11007,
+      "quest_name": "Kael'thas and the Verdant Sphere",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3845,
+      "zone_or_sort_name": "Tempest Keep"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18481,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 53.99,
+              "y": 44.75
+            }
+          ],
+          "name": "A'dal",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11007"
+      ],
+      "instruction": "Turn in [QT11007 Kael'thas and the Verdant Sphere] to A'dal",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 23,
+      "quest_id": 11007,
+      "quest_name": "Kael'thas and the Verdant Sphere",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3845,
+      "zone_or_sort_name": "Tempest Keep"
+    }
+  ],
+  "title": "Optional Content 48 - Shadow Labyrinth & Tempest Keep"
+}

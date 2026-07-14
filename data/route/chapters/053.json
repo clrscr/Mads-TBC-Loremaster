@@ -1,0 +1,1665 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 52 Searing Gorge, or select this chapter on a partially completed character. Begin in Feralas with Troyas Moonbreeze. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 357,
+    "map_name": "Feralas",
+    "x": 31.78,
+    "y": 45.5
+  },
+  "entry_zone_or_sort": 357,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 16,
+    "map_name": "Azshara",
+    "quest_id": 5535,
+    "tag": "QT",
+    "x": 11.37,
+    "y": 78.17
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/053_world_53.lua",
+  "id": "053-primary-53-feralas",
+  "maximum_level": 45,
+  "minimum_level": 45,
+  "next_chapter": "54 Tanaris",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "52 Searing Gorge",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 2939,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7729:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2939:starter",
+        "travel-network:ratchet-booty-bay",
+        "https://www.wowhead.com/tbc/quest=1040/passage-to-booty-bay"
+      ],
+      "instruction": "Travel from Searing Gorge to Feralas: Take the ship between Ratchet and Booty Bay. Continue to [G31.78,45.50 Feralas]. [O]",
+      "map_id": 357,
+      "map_name": "Feralas",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 51,
+      "origin_map_name": "Searing Gorge",
+      "origin_x": 38.97,
+      "origin_y": 27.51,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [
+        "ratchet-booty-bay"
+      ],
+      "type": "transport",
+      "verification": "questie_endpoints_and_tbc_transport_network",
+      "x": 31.78,
+      "y": 45.5
+    },
+    {
+      "before_quest_id": 2939,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2939:starter"
+      ],
+      "instruction": "Before you begin: travel to Feralas and meet the first quest giver at [G31.78,45.50 Feralas]. Leave at least two quest-log slots open. [O]",
+      "map_id": 357,
+      "map_name": "Feralas",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 31.78,
+      "y": 45.5
+    },
+    {
+      "before_quest_id": 2939,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2939:requiredLevel"
+      ],
+      "instruction": "Reach level 45 before accepting In Search of Knowledge. [XP45 Level 45]",
+      "map_id": 357,
+      "map_name": "Feralas",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 45,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 31.78,
+      "y": 45.5
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7764,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 357,
+              "map_name": "Feralas",
+              "verification": "questie_structured_source_only",
+              "x": 31.78,
+              "y": 45.5
+            }
+          ],
+          "name": "Troyas Moonbreeze",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2939"
+      ],
+      "instruction": "Accept [QA2939 In Search of Knowledge] from Troyas Moonbreeze.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 2939,
+      "quest_name": "In Search of Knowledge",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 357,
+      "zone_or_sort_name": "Feralas"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2939"
+      ],
+      "instruction": "Complete [QC2939 In Search of Knowledge]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 2939,
+      "quest_name": "In Search of Knowledge",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 357,
+      "zone_or_sort_name": "Feralas"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7907,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 55.41,
+              "y": 92.23
+            }
+          ],
+          "name": "Daryn Lightwind",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2939"
+      ],
+      "instruction": "Turn in [QT2939 In Search of Knowledge] to Daryn Lightwind",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 2939,
+      "quest_name": "In Search of Knowledge",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 357,
+      "zone_or_sort_name": "Feralas"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 142958,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 55.22,
+              "y": 91.46
+            }
+          ],
+          "name": "Feralas: A History",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2940"
+      ],
+      "instruction": "Accept [QA2940 Feralas: A History] from Feralas: A History.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 2940,
+      "quest_name": "Feralas: A History",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 357,
+      "zone_or_sort_name": "Feralas"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2940"
+      ],
+      "instruction": "Complete [QC2940 Feralas: A History]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 2940,
+      "quest_name": "Feralas: A History",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 357,
+      "zone_or_sort_name": "Feralas"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7907,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 55.41,
+              "y": 92.23
+            }
+          ],
+          "name": "Daryn Lightwind",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2940"
+      ],
+      "instruction": "Turn in [QT2940 Feralas: A History] to Daryn Lightwind",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 2940,
+      "quest_name": "Feralas: A History",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 357,
+      "zone_or_sort_name": "Feralas"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7907,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 55.41,
+              "y": 92.23
+            }
+          ],
+          "name": "Daryn Lightwind",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2941"
+      ],
+      "instruction": "Accept [QA2941 The Borrower] from Daryn Lightwind.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 2941,
+      "quest_name": "The Borrower",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 357,
+      "zone_or_sort_name": "Feralas"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2941"
+      ],
+      "instruction": "Complete [QC2941 The Borrower]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 2941,
+      "quest_name": "The Borrower",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 357,
+      "zone_or_sort_name": "Feralas"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7763,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 52.36,
+              "y": 26.91
+            }
+          ],
+          "name": "Curgle Cranklehop",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2941"
+      ],
+      "instruction": "Turn in [QT2941 The Borrower] to Curgle Cranklehop",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 2941,
+      "quest_name": "The Borrower",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 357,
+      "zone_or_sort_name": "Feralas"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7763,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 52.36,
+              "y": 26.91
+            }
+          ],
+          "name": "Curgle Cranklehop",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2944"
+      ],
+      "instruction": "Accept [QA2944 The Super Snapper FX] from Curgle Cranklehop.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 2944,
+      "quest_name": "The Super Snapper FX",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 357,
+      "zone_or_sort_name": "Feralas"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2944"
+      ],
+      "instruction": "Use the quest item [UI9328-] as directed; collect or use the required item: Snapshot of Gammerita. [QC2944 The Super Snapper FX]",
+      "item_use_id": 9328,
+      "objective_hint": "Collect or use the required item: Snapshot of Gammerita",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 9330,
+          "kind": "item",
+          "locations": [],
+          "name": "Snapshot of Gammerita",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 14,
+      "quest_id": 2944,
+      "quest_name": "The Super Snapper FX",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 357,
+      "zone_or_sort_name": "Feralas"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7907,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 55.41,
+              "y": 92.23
+            }
+          ],
+          "name": "Daryn Lightwind",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2944"
+      ],
+      "instruction": "Turn in [QT2944 The Super Snapper FX] to Daryn Lightwind",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 2944,
+      "quest_name": "The Super Snapper FX",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 357,
+      "zone_or_sort_name": "Feralas"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7907,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 55.41,
+              "y": 92.23
+            }
+          ],
+          "name": "Daryn Lightwind",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2943"
+      ],
+      "instruction": "Accept [QA2943 Return to Troyas] from Daryn Lightwind.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 2943,
+      "quest_name": "Return to Troyas",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 357,
+      "zone_or_sort_name": "Feralas"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2943"
+      ],
+      "instruction": "Complete [QC2943 Return to Troyas]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 2943,
+      "quest_name": "Return to Troyas",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 357,
+      "zone_or_sort_name": "Feralas"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7764,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 357,
+              "map_name": "Feralas",
+              "verification": "questie_structured_source_only",
+              "x": 31.78,
+              "y": 45.5
+            }
+          ],
+          "name": "Troyas Moonbreeze",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2943"
+      ],
+      "instruction": "Turn in [QT2943 Return to Troyas] to Troyas Moonbreeze",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 2943,
+      "quest_name": "Return to Troyas",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 357,
+      "zone_or_sort_name": "Feralas"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7764,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 357,
+              "map_name": "Feralas",
+              "verification": "questie_structured_source_only",
+              "x": 31.78,
+              "y": 45.5
+            }
+          ],
+          "name": "Troyas Moonbreeze",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2879"
+      ],
+      "instruction": "Accept [QA2879 The Stave of Equinex] from Troyas Moonbreeze.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 2879,
+      "quest_name": "The Stave of Equinex",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 357,
+      "zone_or_sort_name": "Feralas"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2879"
+      ],
+      "instruction": "Collect or use the required item: Stave of Equinex. [QC2879 The Stave of Equinex]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Stave of Equinex",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 9306,
+          "kind": "item",
+          "locations": [],
+          "name": "Stave of Equinex",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 20,
+      "quest_id": 2879,
+      "quest_name": "The Stave of Equinex",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 357,
+      "zone_or_sort_name": "Feralas"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 144063,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 357,
+              "map_name": "Feralas",
+              "verification": "questie_structured_source_only",
+              "x": 38.83,
+              "y": 13.17
+            }
+          ],
+          "name": "Equinex Monolith",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2879"
+      ],
+      "instruction": "Turn in [QT2879 The Stave of Equinex] to Equinex Monolith",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 2879,
+      "quest_name": "The Stave of Equinex",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 357,
+      "zone_or_sort_name": "Feralas"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 144063,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 357,
+              "map_name": "Feralas",
+              "verification": "questie_structured_source_only",
+              "x": 38.83,
+              "y": 13.17
+            }
+          ],
+          "name": "Equinex Monolith",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2942"
+      ],
+      "instruction": "Accept [QA2942 The Morrow Stone] from Equinex Monolith.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 22,
+      "quest_id": 2942,
+      "quest_name": "The Morrow Stone",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 357,
+      "zone_or_sort_name": "Feralas"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7765,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 357,
+              "map_name": "Feralas",
+              "verification": "questie_structured_source_only",
+              "x": 42.39,
+              "y": 22.0
+            }
+          ],
+          "name": "Rockbiter",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2844"
+      ],
+      "instruction": "Accept [QA2844 The Giant Guardian] from Rockbiter.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 23,
+      "quest_id": 2844,
+      "quest_name": "The Giant Guardian",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 357,
+      "zone_or_sort_name": "Feralas"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2942"
+      ],
+      "instruction": "Collect or use the required item: A Sparkling Stone. [QC2942 The Morrow Stone]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: A Sparkling Stone",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 9307,
+          "kind": "item",
+          "locations": [],
+          "name": "A Sparkling Stone",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 24,
+      "quest_id": 2942,
+      "quest_name": "The Morrow Stone",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 357,
+      "zone_or_sort_name": "Feralas"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2844"
+      ],
+      "instruction": "Complete [QC2844 The Giant Guardian]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 25,
+      "quest_id": 2844,
+      "quest_name": "The Giant Guardian",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 357,
+      "zone_or_sort_name": "Feralas"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7774,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 357,
+              "map_name": "Feralas",
+              "verification": "questie_structured_source_only",
+              "x": 38.22,
+              "y": 10.3
+            }
+          ],
+          "name": "Shay Leafrunner",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2844"
+      ],
+      "instruction": "Turn in [QT2844 The Giant Guardian] to Shay Leafrunner",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 26,
+      "quest_id": 2844,
+      "quest_name": "The Giant Guardian",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 357,
+      "zone_or_sort_name": "Feralas"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7764,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 357,
+              "map_name": "Feralas",
+              "verification": "questie_structured_source_only",
+              "x": 31.78,
+              "y": 45.5
+            }
+          ],
+          "name": "Troyas Moonbreeze",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2942"
+      ],
+      "instruction": "Turn in [QT2942 The Morrow Stone] to Troyas Moonbreeze",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 27,
+      "quest_id": 2942,
+      "quest_name": "The Morrow Stone",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 357,
+      "zone_or_sort_name": "Feralas"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7774,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 357,
+              "map_name": "Feralas",
+              "verification": "questie_structured_source_only",
+              "x": 38.22,
+              "y": 10.3
+            }
+          ],
+          "name": "Shay Leafrunner",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2845"
+      ],
+      "instruction": "Accept [QA2845 Wandering Shay] from Shay Leafrunner.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 28,
+      "quest_id": 2845,
+      "quest_name": "Wandering Shay",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 357,
+      "zone_or_sort_name": "Feralas"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2845"
+      ],
+      "instruction": "Complete the scripted or exploration event; collect or use the required item: Shay's Bell. [QC2845 Wandering Shay]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Shay's Bell",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 9189,
+          "kind": "item",
+          "locations": [],
+          "name": "Shay's Bell",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 29,
+      "quest_id": 2845,
+      "quest_name": "Wandering Shay",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 357,
+      "zone_or_sort_name": "Feralas"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7765,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 357,
+              "map_name": "Feralas",
+              "verification": "questie_structured_source_only",
+              "x": 42.39,
+              "y": 22.0
+            }
+          ],
+          "name": "Rockbiter",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2845"
+      ],
+      "instruction": "Turn in [QT2845 Wandering Shay] to Rockbiter",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 30,
+      "quest_id": 2845,
+      "quest_name": "Wandering Shay",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 357,
+      "zone_or_sort_name": "Feralas"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14637,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 357,
+              "map_name": "Feralas",
+              "verification": "questie_structured_source_only",
+              "x": 44.81,
+              "y": 43.42
+            }
+          ],
+          "name": "Zorbin Fandazzle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7003"
+      ],
+      "instruction": "Accept [QA7003 Zapped Giants] from Zorbin Fandazzle.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 31,
+      "quest_id": 7003,
+      "quest_name": "Zapped Giants",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 357,
+      "zone_or_sort_name": "Feralas"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14637,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 357,
+              "map_name": "Feralas",
+              "verification": "questie_structured_source_only",
+              "x": 44.81,
+              "y": 43.42
+            }
+          ],
+          "name": "Zorbin Fandazzle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7721"
+      ],
+      "instruction": "Accept [QA7721 Fuel for the Zapping] from Zorbin Fandazzle.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 32,
+      "quest_id": 7721,
+      "quest_name": "Fuel for the Zapping",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 357,
+      "zone_or_sort_name": "Feralas"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7003"
+      ],
+      "instruction": "Use the quest item [UI18904-] as directed; collect or use the required item: Miniaturization Residue. [QC7003 Zapped Giants]",
+      "item_use_id": 18904,
+      "objective_hint": "Collect or use the required item: Miniaturization Residue",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 18956,
+          "kind": "item",
+          "locations": [],
+          "name": "Miniaturization Residue",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 33,
+      "quest_id": 7003,
+      "quest_name": "Zapped Giants",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 357,
+      "zone_or_sort_name": "Feralas"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7721"
+      ],
+      "instruction": "Collect or use the required item: Water Elemental Core. [QC7721 Fuel for the Zapping]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Water Elemental Core",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 18958,
+          "kind": "item",
+          "locations": [],
+          "name": "Water Elemental Core",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 34,
+      "quest_id": 7721,
+      "quest_name": "Fuel for the Zapping",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 357,
+      "zone_or_sort_name": "Feralas"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14637,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 357,
+              "map_name": "Feralas",
+              "verification": "questie_structured_source_only",
+              "x": 44.81,
+              "y": 43.42
+            }
+          ],
+          "name": "Zorbin Fandazzle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7003"
+      ],
+      "instruction": "Turn in [QT7003 Zapped Giants] to Zorbin Fandazzle",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 35,
+      "quest_id": 7003,
+      "quest_name": "Zapped Giants",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 357,
+      "zone_or_sort_name": "Feralas"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14637,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 357,
+              "map_name": "Feralas",
+              "verification": "questie_structured_source_only",
+              "x": 44.81,
+              "y": 43.42
+            }
+          ],
+          "name": "Zorbin Fandazzle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7721"
+      ],
+      "instruction": "Turn in [QT7721 Fuel for the Zapping] to Zorbin Fandazzle",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 36,
+      "quest_id": 7721,
+      "quest_name": "Fuel for the Zapping",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 357,
+      "zone_or_sort_name": "Feralas"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11548,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 11.37,
+              "y": 78.17
+            }
+          ],
+          "name": "Loh'atu",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5535"
+      ],
+      "instruction": "Accept [QA5535 Spiritual Unrest] from Loh'atu.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 37,
+      "quest_id": 5535,
+      "quest_name": "Spiritual Unrest",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5535"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Highborne Apparition, Highborne Lichling. [QC5535 Spiritual Unrest]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Highborne Apparition, Highborne Lichling",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 6116,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 16.57,
+              "y": 69.4
+            },
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 17.27,
+              "y": 70.71
+            },
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 16.55,
+              "y": 72.73
+            },
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 14.7,
+              "y": 73.48
+            },
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 17.84,
+              "y": 67.74
+            },
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 17.12,
+              "y": 65.86
+            },
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 17.89,
+              "y": 68.85
+            },
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 14.51,
+              "y": 72.3
+            },
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 16.46,
+              "y": 68.76
+            },
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 13.96,
+              "y": 71.82
+            },
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 15.82,
+              "y": 73.6
+            }
+          ],
+          "name": "Highborne Apparition",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 6117,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 13.48,
+              "y": 73.18
+            },
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 14.58,
+              "y": 72.62
+            },
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 16.67,
+              "y": 70.78
+            },
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 16.5,
+              "y": 67.73
+            },
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 17.28,
+              "y": 68.55
+            },
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 17.29,
+              "y": 67.64
+            },
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 17.85,
+              "y": 69.96
+            },
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 17.11,
+              "y": 66.61
+            },
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 16.64,
+              "y": 71.66
+            },
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 17.74,
+              "y": 66.82
+            }
+          ],
+          "name": "Highborne Lichling",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 38,
+      "quest_id": 5535,
+      "quest_name": "Spiritual Unrest",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11548,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 11.37,
+              "y": 78.17
+            }
+          ],
+          "name": "Loh'atu",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5535"
+      ],
+      "instruction": "Turn in [QT5535 Spiritual Unrest] to Loh'atu",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 39,
+      "quest_id": 5535,
+      "quest_name": "Spiritual Unrest",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    }
+  ],
+  "title": "53 Feralas"
+}

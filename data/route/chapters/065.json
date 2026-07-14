@@ -1,0 +1,1007 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 64 Eastern Plaguelands & Western Plaguelands, or select this chapter on a partially completed character. Begin in Stormwind City with Royal Factor Bathrilor. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 1519,
+    "map_name": "Stormwind City",
+    "x": 48.46,
+    "y": 30.54
+  },
+  "entry_zone_or_sort": 1519,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 1537,
+    "map_name": "Ironforge",
+    "quest_id": 7811,
+    "tag": "QT",
+    "x": 74.09,
+    "y": 48.22
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/065_world_65.lua",
+  "id": "065-primary-65-stormwind-city-&-ironforge",
+  "maximum_level": 52,
+  "minimum_level": 52,
+  "next_chapter": "66 Tanaris",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "64 Eastern Plaguelands & Western Plaguelands",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 5048,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6164:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5048:starter"
+      ],
+      "instruction": "Travel from Eastern Plaguelands to Stormwind City. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G48.46,30.54 Stormwind City]. [O]",
+      "map_id": 1519,
+      "map_name": "Stormwind City",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 139,
+      "origin_map_name": "Eastern Plaguelands",
+      "origin_x": 14.45,
+      "origin_y": 33.48,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 48.46,
+      "y": 30.54
+    },
+    {
+      "before_quest_id": 5048,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5048:starter"
+      ],
+      "instruction": "Before you begin: travel to Stormwind City and meet the first quest giver at [G48.46,30.54 Stormwind City]. Leave at least two quest-log slots open. [O]",
+      "map_id": 1519,
+      "map_name": "Stormwind City",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 48.46,
+      "y": 30.54
+    },
+    {
+      "before_quest_id": 5048,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5048:requiredLevel"
+      ],
+      "instruction": "Reach level 52 before accepting Good Natured Emma. [XP52 Level 52]",
+      "map_id": 1519,
+      "map_name": "Stormwind City",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 52,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 48.46,
+      "y": 30.54
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10782,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 48.46,
+              "y": 30.54
+            }
+          ],
+          "name": "Royal Factor Bathrilor",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5048"
+      ],
+      "instruction": "Accept [QA5048 Good Natured Emma] from Royal Factor Bathrilor.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 5048,
+      "quest_name": "Good Natured Emma",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5048"
+      ],
+      "instruction": "Complete [QC5048 Good Natured Emma]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 5048,
+      "quest_name": "Good Natured Emma",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3520,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 52.37,
+              "y": 42.13
+            }
+          ],
+          "name": "Ol' Emma",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5048"
+      ],
+      "instruction": "Turn in [QT5048 Good Natured Emma] to Ol' Emma",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 5048,
+      "quest_name": "Good Natured Emma",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14722,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 44.27,
+              "y": 73.99
+            }
+          ],
+          "name": "Clavicus Knavingham",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7795"
+      ],
+      "instruction": "Accept [QA7795 A Donation of Runecloth] from Clavicus Knavingham.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 7795,
+      "quest_name": "A Donation of Runecloth",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7795"
+      ],
+      "instruction": "Collect or use the required item: Runecloth. [QC7795 A Donation of Runecloth]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Runecloth",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 14047,
+          "kind": "item",
+          "locations": [],
+          "name": "Runecloth",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 8,
+      "quest_id": 7795,
+      "quest_name": "A Donation of Runecloth",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14722,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 44.27,
+              "y": 73.99
+            }
+          ],
+          "name": "Clavicus Knavingham",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7795"
+      ],
+      "instruction": "Turn in [QT7795 A Donation of Runecloth] to Clavicus Knavingham",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 7795,
+      "quest_name": "A Donation of Runecloth",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8879,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 38.37,
+              "y": 55.31
+            }
+          ],
+          "name": "Royal Historian Archesonus",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3702"
+      ],
+      "instruction": "Accept [QA3702 The Smoldering Ruins of Thaurissan] from Royal Historian Archesonus.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 3702,
+      "quest_name": "The Smoldering Ruins of Thaurissan",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3702"
+      ],
+      "instruction": "Complete the scripted or exploration event. [QC3702 The Smoldering Ruins of Thaurissan]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 3702,
+      "quest_name": "The Smoldering Ruins of Thaurissan",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8879,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 38.37,
+              "y": 55.31
+            }
+          ],
+          "name": "Royal Historian Archesonus",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3702"
+      ],
+      "instruction": "Turn in [QT3702 The Smoldering Ruins of Thaurissan] to Royal Historian Archesonus",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 3702,
+      "quest_name": "The Smoldering Ruins of Thaurissan",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8879,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 38.37,
+              "y": 55.31
+            }
+          ],
+          "name": "Royal Historian Archesonus",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3701"
+      ],
+      "instruction": "Accept [QA3701 The Smoldering Ruins of Thaurissan] from Royal Historian Archesonus.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 3701,
+      "quest_name": "The Smoldering Ruins of Thaurissan",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3701"
+      ],
+      "instruction": "Interact with the required object: Thaurissan Relic. [QC3701 The Smoldering Ruins of Thaurissan]",
+      "item_use_id": null,
+      "objective_hint": "Interact with the required object: Thaurissan Relic",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 153556,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 46,
+              "map_name": "Burning Steppes",
+              "verification": "questie_structured_source_only",
+              "x": 64.63,
+              "y": 37.23
+            },
+            {
+              "map_id": 46,
+              "map_name": "Burning Steppes",
+              "verification": "questie_structured_source_only",
+              "x": 64.12,
+              "y": 44.14
+            },
+            {
+              "map_id": 46,
+              "map_name": "Burning Steppes",
+              "verification": "questie_structured_source_only",
+              "x": 72.39,
+              "y": 33.93
+            },
+            {
+              "map_id": 46,
+              "map_name": "Burning Steppes",
+              "verification": "questie_structured_source_only",
+              "x": 62.71,
+              "y": 39.6
+            },
+            {
+              "map_id": 46,
+              "map_name": "Burning Steppes",
+              "verification": "questie_structured_source_only",
+              "x": 68.25,
+              "y": 40.86
+            },
+            {
+              "map_id": 46,
+              "map_name": "Burning Steppes",
+              "verification": "questie_structured_source_only",
+              "x": 67.2,
+              "y": 38.07
+            },
+            {
+              "map_id": 46,
+              "map_name": "Burning Steppes",
+              "verification": "questie_structured_source_only",
+              "x": 65.26,
+              "y": 34.81
+            },
+            {
+              "map_id": 46,
+              "map_name": "Burning Steppes",
+              "verification": "questie_structured_source_only",
+              "x": 57.41,
+              "y": 36.38
+            },
+            {
+              "map_id": 46,
+              "map_name": "Burning Steppes",
+              "verification": "questie_structured_source_only",
+              "x": 52.49,
+              "y": 39.05
+            },
+            {
+              "map_id": 46,
+              "map_name": "Burning Steppes",
+              "verification": "questie_structured_source_only",
+              "x": 63.46,
+              "y": 35.59
+            },
+            {
+              "map_id": 46,
+              "map_name": "Burning Steppes",
+              "verification": "questie_structured_source_only",
+              "x": 69.88,
+              "y": 38.12
+            },
+            {
+              "map_id": 46,
+              "map_name": "Burning Steppes",
+              "verification": "questie_structured_source_only",
+              "x": 57.32,
+              "y": 41.66
+            },
+            {
+              "map_id": 46,
+              "map_name": "Burning Steppes",
+              "verification": "questie_structured_source_only",
+              "x": 58.9,
+              "y": 41.63
+            },
+            {
+              "map_id": 46,
+              "map_name": "Burning Steppes",
+              "verification": "questie_structured_source_only",
+              "x": 61.85,
+              "y": 36.72
+            },
+            {
+              "map_id": 46,
+              "map_name": "Burning Steppes",
+              "verification": "questie_structured_source_only",
+              "x": 55.77,
+              "y": 39.4
+            },
+            {
+              "map_id": 46,
+              "map_name": "Burning Steppes",
+              "verification": "questie_structured_source_only",
+              "x": 61.5,
+              "y": 41.21
+            },
+            {
+              "map_id": 46,
+              "map_name": "Burning Steppes",
+              "verification": "questie_structured_source_only",
+              "x": 59.32,
+              "y": 43.93
+            },
+            {
+              "map_id": 46,
+              "map_name": "Burning Steppes",
+              "verification": "questie_structured_source_only",
+              "x": 69.18,
+              "y": 36.41
+            },
+            {
+              "map_id": 46,
+              "map_name": "Burning Steppes",
+              "verification": "questie_structured_source_only",
+              "x": 54.23,
+              "y": 38.32
+            },
+            {
+              "map_id": 46,
+              "map_name": "Burning Steppes",
+              "verification": "questie_structured_source_only",
+              "x": 65.6,
+              "y": 44.04
+            },
+            {
+              "map_id": 46,
+              "map_name": "Burning Steppes",
+              "verification": "questie_structured_source_only",
+              "x": 57.87,
+              "y": 39.06
+            },
+            {
+              "map_id": 46,
+              "map_name": "Burning Steppes",
+              "verification": "questie_structured_source_only",
+              "x": 67.59,
+              "y": 43.73
+            },
+            {
+              "map_id": 46,
+              "map_name": "Burning Steppes",
+              "verification": "questie_structured_source_only",
+              "x": 53.94,
+              "y": 35.06
+            },
+            {
+              "map_id": 46,
+              "map_name": "Burning Steppes",
+              "verification": "questie_structured_source_only",
+              "x": 66.11,
+              "y": 40.44
+            },
+            {
+              "map_id": 46,
+              "map_name": "Burning Steppes",
+              "verification": "questie_structured_source_only",
+              "x": 59.64,
+              "y": 37.69
+            },
+            {
+              "map_id": 46,
+              "map_name": "Burning Steppes",
+              "verification": "questie_structured_source_only",
+              "x": 60.31,
+              "y": 35.13
+            },
+            {
+              "map_id": 46,
+              "map_name": "Burning Steppes",
+              "verification": "questie_structured_source_only",
+              "x": 54.18,
+              "y": 40.87
+            },
+            {
+              "map_id": 46,
+              "map_name": "Burning Steppes",
+              "verification": "questie_structured_source_only",
+              "x": 55.41,
+              "y": 37.29
+            }
+          ],
+          "name": "Thaurissan Relic",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 14,
+      "quest_id": 3701,
+      "quest_name": "The Smoldering Ruins of Thaurissan",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8879,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 38.37,
+              "y": 55.31
+            }
+          ],
+          "name": "Royal Historian Archesonus",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3701"
+      ],
+      "instruction": "Turn in [QT3701 The Smoldering Ruins of Thaurissan] to Royal Historian Archesonus",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 3701,
+      "quest_name": "The Smoldering Ruins of Thaurissan",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14723,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 43.22,
+              "y": 31.57
+            }
+          ],
+          "name": "Mistina Steelshield",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7805"
+      ],
+      "instruction": "Accept [QA7805 A Donation of Runecloth] from Mistina Steelshield.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 7805,
+      "quest_name": "A Donation of Runecloth",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7805"
+      ],
+      "instruction": "Collect or use the required item: Runecloth. [QC7805 A Donation of Runecloth]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Runecloth",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 14047,
+          "kind": "item",
+          "locations": [],
+          "name": "Runecloth",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 17,
+      "quest_id": 7805,
+      "quest_name": "A Donation of Runecloth",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14723,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 43.22,
+              "y": 31.57
+            }
+          ],
+          "name": "Mistina Steelshield",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7805"
+      ],
+      "instruction": "Turn in [QT7805 A Donation of Runecloth] to Mistina Steelshield",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 7805,
+      "quest_name": "A Donation of Runecloth",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14724,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 74.09,
+              "y": 48.22
+            }
+          ],
+          "name": "Bubulo Acerbus",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7811"
+      ],
+      "instruction": "Accept [QA7811 A Donation of Runecloth] from Bubulo Acerbus.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 7811,
+      "quest_name": "A Donation of Runecloth",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7811"
+      ],
+      "instruction": "Collect or use the required item: Runecloth. [QC7811 A Donation of Runecloth]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Runecloth",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 14047,
+          "kind": "item",
+          "locations": [],
+          "name": "Runecloth",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 20,
+      "quest_id": 7811,
+      "quest_name": "A Donation of Runecloth",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14724,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 74.09,
+              "y": 48.22
+            }
+          ],
+          "name": "Bubulo Acerbus",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7811"
+      ],
+      "instruction": "Turn in [QT7811 A Donation of Runecloth] to Bubulo Acerbus",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 7811,
+      "quest_name": "A Donation of Runecloth",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    }
+  ],
+  "title": "65 Stormwind City & Ironforge"
+}

@@ -1,0 +1,745 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 73 Stormwind City, or select this chapter on a partially completed character. Begin in Burning Steppes with Cyrus Therepentous. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 46,
+    "map_name": "Burning Steppes",
+    "x": 95.09,
+    "y": 31.56
+  },
+  "entry_zone_or_sort": 46,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 16,
+    "map_name": "Azshara",
+    "quest_id": 2744,
+    "tag": "QT",
+    "x": 60.82,
+    "y": 66.35
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/074_world_74.lua",
+  "id": "074-primary-74-burning-steppes-&-blasted-lands",
+  "maximum_level": 56,
+  "minimum_level": 56,
+  "next_chapter": "75 Winterspring",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "73 Stormwind City",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 4022,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6183:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4022:starter"
+      ],
+      "instruction": "Travel from Stormwind City to Burning Steppes. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G95.09,31.56 Burning Steppes]. [O]",
+      "map_id": 46,
+      "map_name": "Burning Steppes",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 1519,
+      "origin_map_name": "Stormwind City",
+      "origin_x": 75.78,
+      "origin_y": 59.84,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 95.09,
+      "y": 31.56
+    },
+    {
+      "before_quest_id": 4022,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4022:starter"
+      ],
+      "instruction": "Before you begin: travel to Burning Steppes and meet the first quest giver at [G95.09,31.56 Burning Steppes]. Leave at least two quest-log slots open. [O]",
+      "map_id": 46,
+      "map_name": "Burning Steppes",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 95.09,
+      "y": 31.56
+    },
+    {
+      "before_quest_id": 4022,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4022:requiredLevel"
+      ],
+      "instruction": "Reach level 56 before accepting A Taste of Flame. [XP56 Level 56]",
+      "map_id": 46,
+      "map_name": "Burning Steppes",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 56,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 95.09,
+      "y": 31.56
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9459,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 46,
+              "map_name": "Burning Steppes",
+              "verification": "questie_structured_source_only",
+              "x": 95.09,
+              "y": 31.56
+            }
+          ],
+          "name": "Cyrus Therepentous",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4022"
+      ],
+      "instruction": "Accept [QA4022 A Taste of Flame] from Cyrus Therepentous.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 4022,
+      "quest_name": "A Taste of Flame",
+      "quest_tag": null,
+      "required_level": 56,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 46,
+      "zone_or_sort_name": "Burning Steppes"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4022"
+      ],
+      "instruction": "Collect or use the required item: Black Dragonflight Molt. [QC4022 A Taste of Flame]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Black Dragonflight Molt",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 10575,
+          "kind": "item",
+          "locations": [],
+          "name": "Black Dragonflight Molt",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 5,
+      "quest_id": 4022,
+      "quest_name": "A Taste of Flame",
+      "quest_tag": null,
+      "required_level": 56,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 46,
+      "zone_or_sort_name": "Burning Steppes"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9459,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 46,
+              "map_name": "Burning Steppes",
+              "verification": "questie_structured_source_only",
+              "x": 95.09,
+              "y": 31.56
+            }
+          ],
+          "name": "Cyrus Therepentous",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4022"
+      ],
+      "instruction": "Turn in [QT4022 A Taste of Flame] to Cyrus Therepentous",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 4022,
+      "quest_name": "A Taste of Flame",
+      "quest_tag": null,
+      "required_level": 56,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 46,
+      "zone_or_sort_name": "Burning Steppes"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7572,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 34.29,
+              "y": 66.14
+            }
+          ],
+          "name": "Fallen Hero of the Horde",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2702"
+      ],
+      "instruction": "Accept [QA2702 Heroes of Old] from Fallen Hero of the Horde.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 2702,
+      "quest_name": "Heroes of Old",
+      "quest_tag": null,
+      "required_level": 56,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 4,
+      "zone_or_sort_name": "Blasted Lands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2702"
+      ],
+      "instruction": "Complete [QC2702 Heroes of Old]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 2702,
+      "quest_name": "Heroes of Old",
+      "quest_tag": null,
+      "required_level": 56,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 4,
+      "zone_or_sort_name": "Blasted Lands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7750,
+          "kind": "npc",
+          "locations": [],
+          "name": "Corporal Thund Splithoof",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2702"
+      ],
+      "instruction": "Turn in [QT2702 Heroes of Old] to Corporal Thund Splithoof",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 2702,
+      "quest_name": "Heroes of Old",
+      "quest_tag": null,
+      "required_level": 56,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 4,
+      "zone_or_sort_name": "Blasted Lands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7750,
+          "kind": "npc",
+          "locations": [],
+          "name": "Corporal Thund Splithoof",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2701"
+      ],
+      "instruction": "Accept [QA2701 Heroes of Old] from Corporal Thund Splithoof.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 2701,
+      "quest_name": "Heroes of Old",
+      "quest_tag": null,
+      "required_level": 56,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 4,
+      "zone_or_sort_name": "Blasted Lands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2701"
+      ],
+      "instruction": "Complete [QC2701 Heroes of Old]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 2701,
+      "quest_name": "Heroes of Old",
+      "quest_tag": null,
+      "required_level": 56,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 4,
+      "zone_or_sort_name": "Blasted Lands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 141980,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 33.26,
+              "y": 66.22
+            }
+          ],
+          "name": "Spectral Lockbox",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2701"
+      ],
+      "instruction": "Turn in [QT2701 Heroes of Old] to Spectral Lockbox",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 2701,
+      "quest_name": "Heroes of Old",
+      "quest_tag": null,
+      "required_level": 56,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 4,
+      "zone_or_sort_name": "Blasted Lands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7572,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 34.29,
+              "y": 66.14
+            }
+          ],
+          "name": "Fallen Hero of the Horde",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2721"
+      ],
+      "instruction": "Accept [QA2721 Kirith] from Fallen Hero of the Horde.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 2721,
+      "quest_name": "Kirith",
+      "quest_tag": null,
+      "required_level": 56,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 4,
+      "zone_or_sort_name": "Blasted Lands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2721"
+      ],
+      "instruction": "Complete [QC2721 Kirith]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 2721,
+      "quest_name": "Kirith",
+      "quest_tag": null,
+      "required_level": 56,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 4,
+      "zone_or_sort_name": "Blasted Lands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7729,
+          "kind": "npc",
+          "locations": [],
+          "name": "Spirit of Kirith",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2721"
+      ],
+      "instruction": "Turn in [QT2721 Kirith] to Spirit of Kirith",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 2721,
+      "quest_name": "Kirith",
+      "quest_tag": null,
+      "required_level": 56,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 4,
+      "zone_or_sort_name": "Blasted Lands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7729,
+          "kind": "npc",
+          "locations": [],
+          "name": "Spirit of Kirith",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2743"
+      ],
+      "instruction": "Accept [QA2743 The Cover of Darkness] from Spirit of Kirith.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 2743,
+      "quest_name": "The Cover of Darkness",
+      "quest_tag": null,
+      "required_level": 56,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 4,
+      "zone_or_sort_name": "Blasted Lands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2743"
+      ],
+      "instruction": "Complete [QC2743 The Cover of Darkness]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 2743,
+      "quest_name": "The Cover of Darkness",
+      "quest_tag": null,
+      "required_level": 56,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 4,
+      "zone_or_sort_name": "Blasted Lands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7572,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 34.29,
+              "y": 66.14
+            }
+          ],
+          "name": "Fallen Hero of the Horde",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2743"
+      ],
+      "instruction": "Turn in [QT2743 The Cover of Darkness] to Fallen Hero of the Horde",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 2743,
+      "quest_name": "The Cover of Darkness",
+      "quest_tag": null,
+      "required_level": 56,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 4,
+      "zone_or_sort_name": "Blasted Lands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7572,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 34.29,
+              "y": 66.14
+            }
+          ],
+          "name": "Fallen Hero of the Horde",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2744"
+      ],
+      "instruction": "Accept [QA2744 The Demon Hunter] from Fallen Hero of the Horde.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 2744,
+      "quest_name": "The Demon Hunter",
+      "quest_tag": null,
+      "required_level": 56,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 4,
+      "zone_or_sort_name": "Blasted Lands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2744"
+      ],
+      "instruction": "Complete the scripted or exploration event. [QC2744 The Demon Hunter]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 2744,
+      "quest_name": "The Demon Hunter",
+      "quest_tag": null,
+      "required_level": 56,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 4,
+      "zone_or_sort_name": "Blasted Lands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7783,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 60.82,
+              "y": 66.35
+            }
+          ],
+          "name": "Loramus Thalipedes",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2744"
+      ],
+      "instruction": "Turn in [QT2744 The Demon Hunter] to Loramus Thalipedes",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 2744,
+      "quest_name": "The Demon Hunter",
+      "quest_tag": null,
+      "required_level": 56,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 4,
+      "zone_or_sort_name": "Blasted Lands"
+    }
+  ],
+  "title": "74 Burning Steppes & Blasted Lands"
+}

@@ -1,0 +1,345 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 70 Silithus, or select this chapter on a partially completed character. Begin in Darnassus with Gracina Spiritmight. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 1657,
+    "map_name": "Darnassus",
+    "x": 41.83,
+    "y": 85.62
+  },
+  "entry_zone_or_sort": 1657,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 3557,
+    "map_name": "The Exodar",
+    "quest_id": 10357,
+    "tag": "QT",
+    "x": 63.51,
+    "y": 67.74
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/071_world_71.lua",
+  "id": "071-primary-71-darnassus-&-the-exodar",
+  "maximum_level": 55,
+  "minimum_level": 55,
+  "next_chapter": "72 Eastern Plaguelands & Western Plaguelands",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "70 Silithus",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 4510,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:975:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4510:starter"
+      ],
+      "instruction": "Travel from Winterspring to Darnassus. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G41.83,85.62 Darnassus]. [O]",
+      "map_id": 1657,
+      "map_name": "Darnassus",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 618,
+      "origin_map_name": "Winterspring",
+      "origin_x": 61.92,
+      "origin_y": 38.3,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 41.83,
+      "y": 85.62
+    },
+    {
+      "before_quest_id": 4510,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4510:starter"
+      ],
+      "instruction": "Before you begin: travel to Darnassus and meet the first quest giver at [G41.83,85.62 Darnassus]. Leave at least two quest-log slots open. [O]",
+      "map_id": 1657,
+      "map_name": "Darnassus",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 41.83,
+      "y": 85.62
+    },
+    {
+      "before_quest_id": 4510,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4510:requiredLevel"
+      ],
+      "instruction": "Reach level 55 before accepting Calm Before the Storm. [XP55 Level 55]",
+      "map_id": 1657,
+      "map_name": "Darnassus",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 55,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 41.83,
+      "y": 85.62
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7740,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1657,
+              "map_name": "Darnassus",
+              "verification": "questie_structured_source_only",
+              "x": 41.83,
+              "y": 85.62
+            }
+          ],
+          "name": "Gracina Spiritmight",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4510"
+      ],
+      "instruction": "Accept [QA4510 Calm Before the Storm] from Gracina Spiritmight.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 4510,
+      "quest_name": "Calm Before the Storm",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1657,
+      "zone_or_sort_name": "Darnassus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4510"
+      ],
+      "instruction": "Complete [QC4510 Calm Before the Storm]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 4510,
+      "quest_name": "Calm Before the Storm",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1657,
+      "zone_or_sort_name": "Darnassus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4155,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1657,
+              "map_name": "Darnassus",
+              "verification": "questie_structured_source_only",
+              "x": 39.39,
+              "y": 42.43
+            }
+          ],
+          "name": "Idriana",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4510"
+      ],
+      "instruction": "Turn in [QT4510 Calm Before the Storm] to Idriana",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 4510,
+      "quest_name": "Calm Before the Storm",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1657,
+      "zone_or_sort_name": "Darnassus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 20604,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3557,
+              "map_name": "The Exodar",
+              "verification": "questie_structured_source_only",
+              "x": 63.51,
+              "y": 67.74
+            }
+          ],
+          "name": "Dugiru",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10357"
+      ],
+      "instruction": "Accept [QA10357 A Donation of Runecloth] from Dugiru.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 10357,
+      "quest_name": "A Donation of Runecloth",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3557,
+      "zone_or_sort_name": "The Exodar"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10357"
+      ],
+      "instruction": "Collect or use the required item: Runecloth. [QC10357 A Donation of Runecloth]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Runecloth",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 14047,
+          "kind": "item",
+          "locations": [],
+          "name": "Runecloth",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 8,
+      "quest_id": 10357,
+      "quest_name": "A Donation of Runecloth",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3557,
+      "zone_or_sort_name": "The Exodar"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 20604,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3557,
+              "map_name": "The Exodar",
+              "verification": "questie_structured_source_only",
+              "x": 63.51,
+              "y": 67.74
+            }
+          ],
+          "name": "Dugiru",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10357"
+      ],
+      "instruction": "Turn in [QT10357 A Donation of Runecloth] to Dugiru",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 10357,
+      "quest_name": "A Donation of Runecloth",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3557,
+      "zone_or_sort_name": "The Exodar"
+    }
+  ],
+  "title": "71 Darnassus & The Exodar"
+}

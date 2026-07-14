@@ -1,0 +1,1462 @@
+{
+  "branch": "optional_content",
+  "entry_contract": "Complete Bazil Thredd. Begin in The Barrens with Falla Sagewind. Leave at least two quest-log slots open; group and reputation gates remain explicit.",
+  "entry_route_point": {
+    "map_id": 17,
+    "map_name": "The Barrens",
+    "x": 48.18,
+    "y": 32.78
+  },
+  "entry_zone_or_sort": 17,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 1519,
+    "map_name": "Stormwind City",
+    "quest_id": 396,
+    "tag": "QT",
+    "x": 78.1,
+    "y": 17.75
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [
+    [
+      389
+    ]
+  ],
+  "external_prerequisite_quest_ids": [
+    389
+  ],
+  "group": "Mad's Loremaster Guide - Optional Content",
+  "guide_file": "Guides/optional_content/098_world_02.lua",
+  "id": "098-optional_content-optional-content-02---the-barrens-&-stormwind-city",
+  "maximum_level": null,
+  "minimum_level": null,
+  "next_chapter": "Optional Content 03 - Wetlands & Gnomeregan",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "Optional Content 01 - Hunter & Wailing Caverns",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 3370,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:167:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3370:starter",
+        "travel-network:ratchet-booty-bay",
+        "https://www.wowhead.com/tbc/quest=1040/passage-to-booty-bay"
+      ],
+      "instruction": "Travel from Stormwind City to The Barrens: Take the ship between Ratchet and Booty Bay. Continue to [G48.18,32.78 The Barrens]. [O]",
+      "map_id": 17,
+      "map_name": "The Barrens",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 1519,
+      "origin_map_name": "Stormwind City",
+      "origin_x": 65.44,
+      "origin_y": 21.17,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [
+        "ratchet-booty-bay"
+      ],
+      "type": "transport",
+      "verification": "questie_endpoints_and_tbc_transport_network",
+      "x": 48.18,
+      "y": 32.78
+    },
+    {
+      "before_quest_id": 3370,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:389:dependency"
+      ],
+      "instruction": "Optional entry requirements: complete Bazil Thredd. [O]",
+      "map_id": 17,
+      "map_name": "The Barrens",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        389
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "branch_entry",
+      "verification": "route_dependency_graph",
+      "x": 48.18,
+      "y": 32.78
+    },
+    {
+      "before_quest_id": 3370,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3370:starter"
+      ],
+      "instruction": "Optional chapter: travel to The Barrens and begin at [G48.18,32.78 The Barrens]. Leave at least two quest-log slots open. [O]",
+      "map_id": 17,
+      "map_name": "The Barrens",
+      "optional": true,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 48.18,
+      "y": 32.78
+    },
+    {
+      "before_quest_id": 3370,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3370:requiredLevel"
+      ],
+      "instruction": "Reach level 15 before accepting In Nightmares. [XP15 Level 15]",
+      "map_id": 17,
+      "map_name": "The Barrens",
+      "optional": false,
+      "order": 4,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 15,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 48.18,
+      "y": 32.78
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8418,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 48.18,
+              "y": 32.78
+            }
+          ],
+          "name": "Falla Sagewind",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3370"
+      ],
+      "instruction": "Accept [QA3370 In Nightmares] from Falla Sagewind.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 3370,
+      "quest_name": "In Nightmares",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 17,
+      "zone_or_sort_name": "The Barrens"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3370"
+      ],
+      "instruction": "Complete [QC3370 In Nightmares]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 3370,
+      "quest_name": "In Nightmares",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 17,
+      "zone_or_sort_name": "The Barrens"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4217,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1657,
+              "map_name": "Darnassus",
+              "verification": "questie_structured_source_only",
+              "x": 35.37,
+              "y": 8.4
+            }
+          ],
+          "name": "Mathrengyl Bearwalker",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3370"
+      ],
+      "instruction": "Turn in [QT3370 In Nightmares] to Mathrengyl Bearwalker",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 3370,
+      "quest_name": "In Nightmares",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 17,
+      "zone_or_sort_name": "The Barrens"
+    },
+    {
+      "before_quest_id": 391,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:391:requiredLevel"
+      ],
+      "instruction": "Reach level 16 before accepting The Stockade Riots. [XP16 Level 16]",
+      "map_id": 1519,
+      "map_name": "Stormwind City",
+      "optional": false,
+      "order": 8,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 16,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 41.11,
+      "y": 58.09
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1719,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 41.11,
+              "y": 58.09
+            }
+          ],
+          "name": "Warden Thelwater",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:391"
+      ],
+      "instruction": "Accept [QA391 The Stockade Riots] from Warden Thelwater.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 391,
+      "quest_name": "The Stockade Riots",
+      "quest_tag": "Dungeon",
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 717,
+      "zone_or_sort_name": "The Stockade"
+    },
+    {
+      "before_quest_id": 391,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:391:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 17,
+      "map_name": "The Barrens",
+      "optional": true,
+      "order": 10,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        391
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 48.18,
+      "y": 32.78
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:391"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required item: Head of Bazil Thredd. [QC391 The Stockade Riots]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Head of Bazil Thredd",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 2926,
+          "kind": "item",
+          "locations": [],
+          "name": "Head of Bazil Thredd",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 11,
+      "quest_id": 391,
+      "quest_name": "The Stockade Riots",
+      "quest_tag": "Dungeon",
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 717,
+      "zone_or_sort_name": "The Stockade"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1719,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 41.11,
+              "y": 58.09
+            }
+          ],
+          "name": "Warden Thelwater",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:391"
+      ],
+      "instruction": "Turn in [QT391 The Stockade Riots] to Warden Thelwater",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 391,
+      "quest_name": "The Stockade Riots",
+      "quest_tag": "Dungeon",
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 717,
+      "zone_or_sort_name": "The Stockade"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1719,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 41.11,
+              "y": 58.09
+            }
+          ],
+          "name": "Warden Thelwater",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:392"
+      ],
+      "instruction": "Accept [QA392 The Curious Visitor] from Warden Thelwater.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 392,
+      "quest_name": "The Curious Visitor",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:392"
+      ],
+      "instruction": "Complete [QC392 The Curious Visitor]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 392,
+      "quest_name": "The Curious Visitor",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1646,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 49.19,
+              "y": 30.28
+            }
+          ],
+          "name": "Baros Alexston",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:392"
+      ],
+      "instruction": "Turn in [QT392 The Curious Visitor] to Baros Alexston",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 392,
+      "quest_name": "The Curious Visitor",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1646,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 49.19,
+              "y": 30.28
+            }
+          ],
+          "name": "Baros Alexston",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:393"
+      ],
+      "instruction": "Accept [QA393 Shadow of the Past] from Baros Alexston.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 393,
+      "quest_name": "Shadow of the Past",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:393"
+      ],
+      "instruction": "Complete [QC393 Shadow of the Past]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 393,
+      "quest_name": "Shadow of the Past",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 332,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 75.78,
+              "y": 59.84
+            }
+          ],
+          "name": "Master Mathias Shaw",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:393"
+      ],
+      "instruction": "Turn in [QT393 Shadow of the Past] to Master Mathias Shaw",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 393,
+      "quest_name": "Shadow of the Past",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 332,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 75.78,
+              "y": 59.84
+            }
+          ],
+          "name": "Master Mathias Shaw",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:350"
+      ],
+      "instruction": "Accept [QA350 Look to an Old Friend] from Master Mathias Shaw.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 350,
+      "quest_name": "Look to an Old Friend",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:350"
+      ],
+      "instruction": "Complete [QC350 Look to an Old Friend]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 350,
+      "quest_name": "Look to an Old Friend",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 482,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 59.91,
+              "y": 64.18
+            }
+          ],
+          "name": "Elling Trias",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:350"
+      ],
+      "instruction": "Turn in [QT350 Look to an Old Friend] to Elling Trias",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 350,
+      "quest_name": "Look to an Old Friend",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 482,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 59.91,
+              "y": 64.18
+            }
+          ],
+          "name": "Elling Trias",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2745"
+      ],
+      "instruction": "Accept [QA2745 Infiltrating the Castle] from Elling Trias.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 22,
+      "quest_id": 2745,
+      "quest_name": "Infiltrating the Castle",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2745"
+      ],
+      "instruction": "Complete [QC2745 Infiltrating the Castle]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 23,
+      "quest_id": 2745,
+      "quest_name": "Infiltrating the Castle",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7766,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 69.21,
+              "y": 14.4
+            }
+          ],
+          "name": "Tyrion",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2745"
+      ],
+      "instruction": "Turn in [QT2745 Infiltrating the Castle] to Tyrion",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 24,
+      "quest_id": 2745,
+      "quest_name": "Infiltrating the Castle",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7766,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 69.21,
+              "y": 14.4
+            }
+          ],
+          "name": "Tyrion",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2746"
+      ],
+      "instruction": "Accept [QA2746 Items of Some Consequence] from Tyrion.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 25,
+      "quest_id": 2746,
+      "quest_name": "Items of Some Consequence",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2746"
+      ],
+      "instruction": "Collect or use the required items: Silk Cloth, Clara's Fresh Apple. [QC2746 Items of Some Consequence]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Silk Cloth, Clara's Fresh Apple",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4306,
+          "kind": "item",
+          "locations": [],
+          "name": "Silk Cloth",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 8683,
+          "kind": "item",
+          "locations": [],
+          "name": "Clara's Fresh Apple",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 26,
+      "quest_id": 2746,
+      "quest_name": "Items of Some Consequence",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7766,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 69.21,
+              "y": 14.4
+            }
+          ],
+          "name": "Tyrion",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2746"
+      ],
+      "instruction": "Turn in [QT2746 Items of Some Consequence] to Tyrion",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 27,
+      "quest_id": 2746,
+      "quest_name": "Items of Some Consequence",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7766,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 69.21,
+              "y": 14.4
+            }
+          ],
+          "name": "Tyrion",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:434"
+      ],
+      "instruction": "Accept [QA434 The Attack!] from Tyrion.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 28,
+      "quest_id": 434,
+      "quest_name": "The Attack!",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:434"
+      ],
+      "instruction": "Complete the scripted or exploration event; complete the required NPC or creature objectives: Lord Gregor Lescovar, Marzon the Silent Blade. [QC434 The Attack!]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Lord Gregor Lescovar, Marzon the Silent Blade",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1754,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 73.36,
+              "y": 6.04
+            }
+          ],
+          "name": "Lord Gregor Lescovar",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1755,
+          "kind": "npc",
+          "locations": [],
+          "name": "Marzon the Silent Blade",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 29,
+      "quest_id": 434,
+      "quest_name": "The Attack!",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 482,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 59.91,
+              "y": 64.18
+            }
+          ],
+          "name": "Elling Trias",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:434"
+      ],
+      "instruction": "Turn in [QT434 The Attack!] to Elling Trias",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 30,
+      "quest_id": 434,
+      "quest_name": "The Attack!",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 482,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 59.91,
+              "y": 64.18
+            }
+          ],
+          "name": "Elling Trias",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:394"
+      ],
+      "instruction": "Accept [QA394 The Head of the Beast] from Elling Trias.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 31,
+      "quest_id": 394,
+      "quest_name": "The Head of the Beast",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:394"
+      ],
+      "instruction": "Complete [QC394 The Head of the Beast]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 32,
+      "quest_id": 394,
+      "quest_name": "The Head of the Beast",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 332,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 75.78,
+              "y": 59.84
+            }
+          ],
+          "name": "Master Mathias Shaw",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:394"
+      ],
+      "instruction": "Turn in [QT394 The Head of the Beast] to Master Mathias Shaw",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 33,
+      "quest_id": 394,
+      "quest_name": "The Head of the Beast",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 332,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 75.78,
+              "y": 59.84
+            }
+          ],
+          "name": "Master Mathias Shaw",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:395"
+      ],
+      "instruction": "Accept [QA395 Brotherhood's End] from Master Mathias Shaw.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 34,
+      "quest_id": 395,
+      "quest_name": "Brotherhood's End",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:395"
+      ],
+      "instruction": "Complete [QC395 Brotherhood's End]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 35,
+      "quest_id": 395,
+      "quest_name": "Brotherhood's End",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1646,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 49.19,
+              "y": 30.28
+            }
+          ],
+          "name": "Baros Alexston",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:395"
+      ],
+      "instruction": "Turn in [QT395 Brotherhood's End] to Baros Alexston",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 36,
+      "quest_id": 395,
+      "quest_name": "Brotherhood's End",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1646,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 49.19,
+              "y": 30.28
+            }
+          ],
+          "name": "Baros Alexston",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:396"
+      ],
+      "instruction": "Accept [QA396 An Audience with the King] from Baros Alexston.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 37,
+      "quest_id": 396,
+      "quest_name": "An Audience with the King",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:396"
+      ],
+      "instruction": "Complete [QC396 An Audience with the King]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 38,
+      "quest_id": 396,
+      "quest_name": "An Audience with the King",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1749,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 78.1,
+              "y": 17.75
+            }
+          ],
+          "name": "Lady Katrana Prestor",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:396"
+      ],
+      "instruction": "Turn in [QT396 An Audience with the King] to Lady Katrana Prestor",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 39,
+      "quest_id": 396,
+      "quest_name": "An Audience with the King",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    }
+  ],
+  "title": "Optional Content 02 - The Barrens & Stormwind City"
+}

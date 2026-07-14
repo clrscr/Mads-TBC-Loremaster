@@ -1,0 +1,4196 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 36 Thousand Needles & Desolace, or select this chapter on a partially completed character. Begin in Dustwallow Marsh with Mudcrush Durtfeet. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 15,
+    "map_name": "Dustwallow Marsh",
+    "x": 35.15,
+    "y": 38.26
+  },
+  "entry_zone_or_sort": 15,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 400,
+    "map_name": "Thousand Needles",
+    "quest_id": 1194,
+    "tag": "QT",
+    "x": 80.18,
+    "y": 75.88
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/037_world_37.lua",
+  "id": "037-primary-37-dustwallow-marsh",
+  "maximum_level": 34,
+  "minimum_level": 34,
+  "next_chapter": "38 Desolace",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "36 Thousand Needles & Desolace",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 1177,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1190:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1177:starter"
+      ],
+      "instruction": "Travel from Thousand Needles to Dustwallow Marsh. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G35.15,38.26 Dustwallow Marsh]. [O]",
+      "map_id": 15,
+      "map_name": "Dustwallow Marsh",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 400,
+      "origin_map_name": "Thousand Needles",
+      "origin_x": 77.21,
+      "origin_y": 77.39,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 35.15,
+      "y": 38.26
+    },
+    {
+      "before_quest_id": 1177,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1177:starter"
+      ],
+      "instruction": "Before you begin: travel to Dustwallow Marsh and meet the first quest giver at [G35.15,38.26 Dustwallow Marsh]. Leave at least two quest-log slots open. [O]",
+      "map_id": 15,
+      "map_name": "Dustwallow Marsh",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 35.15,
+      "y": 38.26
+    },
+    {
+      "before_quest_id": 1177,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1177:requiredLevel"
+      ],
+      "instruction": "Reach level 34 before accepting Hungry! [XP34 Level 34]",
+      "map_id": 15,
+      "map_name": "Dustwallow Marsh",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 34,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 35.15,
+      "y": 38.26
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4503,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 35.15,
+              "y": 38.26
+            }
+          ],
+          "name": "Mudcrush Durtfeet",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1177"
+      ],
+      "instruction": "Accept [QA1177 Hungry!] from Mudcrush Durtfeet.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 1177,
+      "quest_name": "Hungry!",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1177"
+      ],
+      "instruction": "Collect or use the required item: Mirefin Head. [QC1177 Hungry!]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Mirefin Head",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 5847,
+          "kind": "item",
+          "locations": [],
+          "name": "Mirefin Head",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 5,
+      "quest_id": 1177,
+      "quest_name": "Hungry!",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4503,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 35.15,
+              "y": 38.26
+            }
+          ],
+          "name": "Mudcrush Durtfeet",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1177"
+      ],
+      "instruction": "Turn in [QT1177 Hungry!] to Mudcrush Durtfeet",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 1177,
+      "quest_name": "Hungry!",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23566,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 68.33,
+              "y": 51.04
+            }
+          ],
+          "name": "Calia Hastings",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11126"
+      ],
+      "instruction": "Accept [QA11126 Traitors Among Us] from Calia Hastings.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 11126,
+      "quest_name": "Traitors Among Us",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11126"
+      ],
+      "instruction": "Complete the required NPC or creature objective: Deserter Agitator. [QC11126 Traitors Among Us]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Deserter Agitator",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23602,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 67.22,
+              "y": 50.99
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 68.61,
+              "y": 51.62
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 68.03,
+              "y": 52.57
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 71.09,
+              "y": 56.06
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 71.57,
+              "y": 56.05
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 65.91,
+              "y": 52.02
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 66.18,
+              "y": 46.12
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 67.72,
+              "y": 49.56
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 67.08,
+              "y": 53.28
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 69.61,
+              "y": 49.74
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 64.51,
+              "y": 45.69
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 65.64,
+              "y": 48.56
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 63.76,
+              "y": 44.98
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 71.68,
+              "y": 54.24
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 64.73,
+              "y": 46.92
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 64.85,
+              "y": 48.54
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 64.28,
+              "y": 49.6
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 65.63,
+              "y": 50.51
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 66.87,
+              "y": 50.07
+            }
+          ],
+          "name": "Deserter Agitator",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 8,
+      "quest_id": 11126,
+      "quest_name": "Traitors Among Us",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23566,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 68.33,
+              "y": 51.04
+            }
+          ],
+          "name": "Calia Hastings",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11126"
+      ],
+      "instruction": "Turn in [QT11126 Traitors Among Us] to Calia Hastings",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 11126,
+      "quest_name": "Traitors Among Us",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23566,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 68.33,
+              "y": 51.04
+            }
+          ],
+          "name": "Calia Hastings",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11128"
+      ],
+      "instruction": "Accept [QA11128 Propaganda War] from Calia Hastings.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 11128,
+      "quest_name": "Propaganda War",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11128"
+      ],
+      "instruction": "Collect or use the required item: Deserter Propaganda. [QC11128 Propaganda War]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Deserter Propaganda",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 33008,
+          "kind": "item",
+          "locations": [],
+          "name": "Deserter Propaganda",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 11,
+      "quest_id": 11128,
+      "quest_name": "Propaganda War",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23566,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 68.33,
+              "y": 51.04
+            }
+          ],
+          "name": "Calia Hastings",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11128"
+      ],
+      "instruction": "Turn in [QT11128 Propaganda War] to Calia Hastings",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 11128,
+      "quest_name": "Propaganda War",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23566,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 68.33,
+              "y": 51.04
+            }
+          ],
+          "name": "Calia Hastings",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11133"
+      ],
+      "instruction": "Accept [QA11133 Discrediting the Deserters] from Calia Hastings.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 11133,
+      "quest_name": "Discrediting the Deserters",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11133"
+      ],
+      "instruction": "Complete the required NPC or creature objective: Theramore Guard. [QC11133 Discrediting the Deserters]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Theramore Guard",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4979,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 65.0,
+              "y": 46.98
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 64.21,
+              "y": 45.98
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 63.97,
+              "y": 44.76
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 63.79,
+              "y": 44.98
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 68.57,
+              "y": 52.31
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 65.63,
+              "y": 48.61
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 65.46,
+              "y": 48.25
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 65.49,
+              "y": 48.21
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 65.73,
+              "y": 48.46
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 68.3,
+              "y": 51.87
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 70.99,
+              "y": 56.58
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 65.02,
+              "y": 46.59
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 68.32,
+              "y": 51.9
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 65.0,
+              "y": 46.91
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 64.77,
+              "y": 46.95
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 64.53,
+              "y": 45.61
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 68.04,
+              "y": 52.56
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 69.65,
+              "y": 50.06
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 64.24,
+              "y": 49.55
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 71.64,
+              "y": 54.26
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 66.82,
+              "y": 50.1
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 71.28,
+              "y": 55.65
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 68.51,
+              "y": 51.56
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 71.39,
+              "y": 56.55
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 70.56,
+              "y": 57.17
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 69.29,
+              "y": 50.16
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 71.64,
+              "y": 56.15
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 71.05,
+              "y": 56.04
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 65.66,
+              "y": 50.49
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 64.87,
+              "y": 48.57
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 65.88,
+              "y": 52.04
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 69.6,
+              "y": 49.79
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 66.75,
+              "y": 50.68
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 66.76,
+              "y": 50.72
+            }
+          ],
+          "name": "Theramore Guard",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 14,
+      "quest_id": 11133,
+      "quest_name": "Discrediting the Deserters",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23566,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 68.33,
+              "y": 51.04
+            }
+          ],
+          "name": "Calia Hastings",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11133"
+      ],
+      "instruction": "Turn in [QT11133 Discrediting the Deserters] to Calia Hastings",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 11133,
+      "quest_name": "Discrediting the Deserters",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23566,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 68.33,
+              "y": 51.04
+            }
+          ],
+          "name": "Calia Hastings",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11134"
+      ],
+      "instruction": "Accept [QA11134 The End of the Deserters] from Calia Hastings.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 11134,
+      "quest_name": "The End of the Deserters",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11134"
+      ],
+      "instruction": "Complete the required NPC or creature objective: Gavis Greyshield. [QC11134 The End of the Deserters]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Gavis Greyshield",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23941,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 76.21,
+              "y": 56.95
+            }
+          ],
+          "name": "Gavis Greyshield",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 17,
+      "quest_id": 11134,
+      "quest_name": "The End of the Deserters",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23566,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 68.33,
+              "y": 51.04
+            }
+          ],
+          "name": "Calia Hastings",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11134"
+      ],
+      "instruction": "Turn in [QT11134 The End of the Deserters] to Calia Hastings",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 11134,
+      "quest_name": "The End of the Deserters",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23835,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 68.25,
+              "y": 51.81
+            }
+          ],
+          "name": "Sergeant Amelyn",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11177"
+      ],
+      "instruction": "Accept [QA11177 The Hermit of Swamplight Manor] from Sergeant Amelyn.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 11177,
+      "quest_name": "The Hermit of Swamplight Manor",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11177"
+      ],
+      "instruction": "Complete [QC11177 The Hermit of Swamplight Manor]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 11177,
+      "quest_name": "The Hermit of Swamplight Manor",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4792,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 55.44,
+              "y": 26.27
+            }
+          ],
+          "name": "\"Swamp Eye\" Jarl",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11177"
+      ],
+      "instruction": "Turn in [QT11177 The Hermit of Swamplight Manor] to \"Swamp Eye\" Jarl",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 11177,
+      "quest_name": "The Hermit of Swamplight Manor",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4792,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 55.44,
+              "y": 26.27
+            }
+          ],
+          "name": "\"Swamp Eye\" Jarl",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1218"
+      ],
+      "instruction": "Accept [QA1218 Marsh Frog Legs] from \"Swamp Eye\" Jarl.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 22,
+      "quest_id": 1218,
+      "quest_name": "Marsh Frog Legs",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1218"
+      ],
+      "instruction": "Collect or use the required item: Marsh Frog Leg. [QC1218 Marsh Frog Legs]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Marsh Frog Leg",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 33202,
+          "kind": "item",
+          "locations": [],
+          "name": "Marsh Frog Leg",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 23,
+      "quest_id": 1218,
+      "quest_name": "Marsh Frog Legs",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4792,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 55.44,
+              "y": 26.27
+            }
+          ],
+          "name": "\"Swamp Eye\" Jarl",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1218"
+      ],
+      "instruction": "Turn in [QT1218 Marsh Frog Legs] to \"Swamp Eye\" Jarl",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 24,
+      "quest_id": 1218,
+      "quest_name": "Marsh Frog Legs",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4792,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 55.44,
+              "y": 26.27
+            }
+          ],
+          "name": "\"Swamp Eye\" Jarl",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1206"
+      ],
+      "instruction": "Accept [QA1206 Jarl Needs Eyes] from \"Swamp Eye\" Jarl.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 25,
+      "quest_id": 1206,
+      "quest_name": "Jarl Needs Eyes",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1206"
+      ],
+      "instruction": "Collect or use the required item: Unpopped Darkmist Eye. [QC1206 Jarl Needs Eyes]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Unpopped Darkmist Eye",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 5884,
+          "kind": "item",
+          "locations": [],
+          "name": "Unpopped Darkmist Eye",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 26,
+      "quest_id": 1206,
+      "quest_name": "Jarl Needs Eyes",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4792,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 55.44,
+              "y": 26.27
+            }
+          ],
+          "name": "\"Swamp Eye\" Jarl",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1206"
+      ],
+      "instruction": "Turn in [QT1206 Jarl Needs Eyes] to \"Swamp Eye\" Jarl",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 27,
+      "quest_id": 1206,
+      "quest_name": "Jarl Needs Eyes",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4792,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 55.44,
+              "y": 26.27
+            }
+          ],
+          "name": "\"Swamp Eye\" Jarl",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1203"
+      ],
+      "instruction": "Accept [QA1203 Jarl Needs a Blade] from \"Swamp Eye\" Jarl.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 28,
+      "quest_id": 1203,
+      "quest_name": "Jarl Needs a Blade",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1203"
+      ],
+      "instruction": "Collect or use the required item: Razorspine's Sword. [QC1203 Jarl Needs a Blade]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Razorspine's Sword",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 33110,
+          "kind": "item",
+          "locations": [],
+          "name": "Razorspine's Sword",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 29,
+      "quest_id": 1203,
+      "quest_name": "Jarl Needs a Blade",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4792,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 55.44,
+              "y": 26.27
+            }
+          ],
+          "name": "\"Swamp Eye\" Jarl",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1203"
+      ],
+      "instruction": "Turn in [QT1203 Jarl Needs a Blade] to \"Swamp Eye\" Jarl",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 30,
+      "quest_id": 1203,
+      "quest_name": "Jarl Needs a Blade",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23951,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 65.07,
+              "y": 47.13
+            }
+          ],
+          "name": "Lieutenant Aden",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11136"
+      ],
+      "instruction": "Accept [QA11136 A Disturbing Development] from Lieutenant Aden.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 31,
+      "quest_id": 11136,
+      "quest_name": "A Disturbing Development",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5086,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 59.67,
+              "y": 41.08
+            }
+          ],
+          "name": "Captain Wymor",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11137"
+      ],
+      "instruction": "Accept [QA11137 Defias in Dustwallow?] from Captain Wymor.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 32,
+      "quest_id": 11137,
+      "quest_name": "Defias in Dustwallow?",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11136"
+      ],
+      "instruction": "Complete [QC11136 A Disturbing Development]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 33,
+      "quest_id": 11136,
+      "quest_name": "A Disturbing Development",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11137"
+      ],
+      "instruction": "Collect or use the required item: Defias Orders. [QC11137 Defias in Dustwallow?]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Defias Orders",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 33037,
+          "kind": "item",
+          "locations": [],
+          "name": "Defias Orders",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 34,
+      "quest_id": 11137,
+      "quest_name": "Defias in Dustwallow?",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5086,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 59.67,
+              "y": 41.08
+            }
+          ],
+          "name": "Captain Wymor",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11136"
+      ],
+      "instruction": "Turn in [QT11136 A Disturbing Development] to Captain Wymor",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 35,
+      "quest_id": 11136,
+      "quest_name": "A Disturbing Development",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5086,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 59.67,
+              "y": 41.08
+            }
+          ],
+          "name": "Captain Wymor",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11137"
+      ],
+      "instruction": "Turn in [QT11137 Defias in Dustwallow?] to Captain Wymor",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 36,
+      "quest_id": 11137,
+      "quest_name": "Defias in Dustwallow?",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5086,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 59.67,
+              "y": 41.08
+            }
+          ],
+          "name": "Captain Wymor",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11138"
+      ],
+      "instruction": "Accept [QA11138 Renn McGill] from Captain Wymor.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 37,
+      "quest_id": 11138,
+      "quest_name": "Renn McGill",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11138"
+      ],
+      "instruction": "Complete [QC11138 Renn McGill]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 38,
+      "quest_id": 11138,
+      "quest_name": "Renn McGill",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23569,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 63.74,
+              "y": 17.04
+            }
+          ],
+          "name": "Renn McGill",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11138"
+      ],
+      "instruction": "Turn in [QT11138 Renn McGill] to Renn McGill",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 39,
+      "quest_id": 11138,
+      "quest_name": "Renn McGill",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23569,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 63.74,
+              "y": 17.04
+            }
+          ],
+          "name": "Renn McGill",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11139"
+      ],
+      "instruction": "Accept [QA11139 Secondhand Diving Gear] from Renn McGill.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 40,
+      "quest_id": 11139,
+      "quest_name": "Secondhand Diving Gear",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11139"
+      ],
+      "instruction": "Collect or use the required items: Damaged Diving Gear, Tool Kit. [QC11139 Secondhand Diving Gear]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Damaged Diving Gear, Tool Kit",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 33038,
+          "kind": "item",
+          "locations": [],
+          "name": "Damaged Diving Gear",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 33039,
+          "kind": "item",
+          "locations": [],
+          "name": "Tool Kit",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 41,
+      "quest_id": 11139,
+      "quest_name": "Secondhand Diving Gear",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23569,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 63.74,
+              "y": 17.04
+            }
+          ],
+          "name": "Renn McGill",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11139"
+      ],
+      "instruction": "Turn in [QT11139 Secondhand Diving Gear] to Renn McGill",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 42,
+      "quest_id": 11139,
+      "quest_name": "Secondhand Diving Gear",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23569,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 63.74,
+              "y": 17.04
+            }
+          ],
+          "name": "Renn McGill",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11140"
+      ],
+      "instruction": "Accept [QA11140 Recover the Cargo!] from Renn McGill.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 43,
+      "quest_id": 11140,
+      "quest_name": "Recover the Cargo!",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11140"
+      ],
+      "instruction": "Collect or use the required items: Salvaged Strongbox, Salvage Kit. [QC11140 Recover the Cargo!]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Salvaged Strongbox, Salvage Kit",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 33041,
+          "kind": "item",
+          "locations": [],
+          "name": "Salvaged Strongbox",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 33044,
+          "kind": "item",
+          "locations": [],
+          "name": "Salvage Kit",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 44,
+      "quest_id": 11140,
+      "quest_name": "Recover the Cargo!",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23569,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 63.74,
+              "y": 17.04
+            }
+          ],
+          "name": "Renn McGill",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11140"
+      ],
+      "instruction": "Turn in [QT11140 Recover the Cargo!] to Renn McGill",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 45,
+      "quest_id": 11140,
+      "quest_name": "Recover the Cargo!",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1141,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 41.49,
+              "y": 89.4
+            }
+          ],
+          "name": "Angus Stern",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1260"
+      ],
+      "instruction": "Accept [QA1260 Morgan Stern] from Angus Stern.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 46,
+      "quest_id": 1260,
+      "quest_name": "Morgan Stern",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1260"
+      ],
+      "instruction": "Complete [QC1260 Morgan Stern]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 47,
+      "quest_id": 1260,
+      "quest_name": "Morgan Stern",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4794,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 66.34,
+              "y": 45.47
+            }
+          ],
+          "name": "Morgan Stern",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1260"
+      ],
+      "instruction": "Turn in [QT1260 Morgan Stern] to Morgan Stern",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 48,
+      "quest_id": 1260,
+      "quest_name": "Morgan Stern",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4794,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 66.34,
+              "y": 45.47
+            }
+          ],
+          "name": "Morgan Stern",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1204"
+      ],
+      "instruction": "Accept [QA1204 Mudrock Soup and Bugs] from Morgan Stern.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 49,
+      "quest_id": 1204,
+      "quest_name": "Mudrock Soup and Bugs",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1204"
+      ],
+      "instruction": "Collect or use the required item: Forked Mudrock Tongue. [QC1204 Mudrock Soup and Bugs]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Forked Mudrock Tongue",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 5883,
+          "kind": "item",
+          "locations": [],
+          "name": "Forked Mudrock Tongue",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 50,
+      "quest_id": 1204,
+      "quest_name": "Mudrock Soup and Bugs",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4794,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 66.34,
+              "y": 45.47
+            }
+          ],
+          "name": "Morgan Stern",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1204"
+      ],
+      "instruction": "Turn in [QT1204 Mudrock Soup and Bugs] to Morgan Stern",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 51,
+      "quest_id": 1204,
+      "quest_name": "Mudrock Soup and Bugs",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4794,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 66.34,
+              "y": 45.47
+            }
+          ],
+          "name": "Morgan Stern",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1258"
+      ],
+      "instruction": "Accept [QA1258 ... and Bugs] from Morgan Stern.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 52,
+      "quest_id": 1258,
+      "quest_name": "... and Bugs",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1258"
+      ],
+      "instruction": "Collect or use the required item: Pristine Crawler Leg. [QC1258 ... and Bugs]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Pristine Crawler Leg",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 5938,
+          "kind": "item",
+          "locations": [],
+          "name": "Pristine Crawler Leg",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 53,
+      "quest_id": 1258,
+      "quest_name": "... and Bugs",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4794,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 66.34,
+              "y": 45.47
+            }
+          ],
+          "name": "Morgan Stern",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1258"
+      ],
+      "instruction": "Turn in [QT1258 ... and Bugs] to Morgan Stern",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 54,
+      "quest_id": 1258,
+      "quest_name": "... and Bugs",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1141,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 41.49,
+              "y": 89.4
+            }
+          ],
+          "name": "Angus Stern",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1271"
+      ],
+      "instruction": "Accept [QA1271 Feast at the Blue Recluse] from Angus Stern.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 55,
+      "quest_id": 1271,
+      "quest_name": "Feast at the Blue Recluse",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1271"
+      ],
+      "instruction": "Complete [QC1271 Feast at the Blue Recluse]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 56,
+      "quest_id": 1271,
+      "quest_name": "Feast at the Blue Recluse",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1141,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 41.49,
+              "y": 89.4
+            }
+          ],
+          "name": "Angus Stern",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1271"
+      ],
+      "instruction": "Turn in [QT1271 Feast at the Blue Recluse] to Angus Stern",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 57,
+      "quest_id": 1271,
+      "quest_name": "Feast at the Blue Recluse",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23569,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 63.74,
+              "y": 17.04
+            }
+          ],
+          "name": "Renn McGill",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11141"
+      ],
+      "instruction": "Accept [QA11141 Jaina Must Know] from Renn McGill.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 58,
+      "quest_id": 11141,
+      "quest_name": "Jaina Must Know",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11141"
+      ],
+      "instruction": "Complete [QC11141 Jaina Must Know]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 59,
+      "quest_id": 11141,
+      "quest_name": "Jaina Must Know",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4968,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 66.27,
+              "y": 49.04
+            }
+          ],
+          "name": "Lady Jaina Proudmoore",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11141"
+      ],
+      "instruction": "Turn in [QT11141 Jaina Must Know] to Lady Jaina Proudmoore",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 60,
+      "quest_id": 11141,
+      "quest_name": "Jaina Must Know",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4968,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 66.27,
+              "y": 49.04
+            }
+          ],
+          "name": "Lady Jaina Proudmoore",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11142"
+      ],
+      "instruction": "Accept [QA11142 Survey Alcaz Island] from Lady Jaina Proudmoore.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 61,
+      "quest_id": 11142,
+      "quest_name": "Survey Alcaz Island",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4944,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 68.21,
+              "y": 48.62
+            }
+          ],
+          "name": "Captain Garran Vimes",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11143"
+      ],
+      "instruction": "Accept [QA11143 A Grim Connection] from Captain Garran Vimes.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 62,
+      "quest_id": 11143,
+      "quest_name": "A Grim Connection",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "before_quest_id": 11142,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:npc:4321",
+        "authored-route:guidelime-tugs-tbc-alliance-2.50:38-39Dustwallow Marsh,STV.lua:11"
+      ],
+      "instruction": "Optional: learn the flight path from Baldruc. [P][G67.48,51.30 Dustwallow Marsh][O]",
+      "map_id": 15,
+      "map_name": "Dustwallow Marsh",
+      "optional": true,
+      "order": 63,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "acquire_flight_path",
+      "verification": "cross_verified_questie_and_authored_route",
+      "x": 67.48,
+      "y": 51.3
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11142"
+      ],
+      "instruction": "Complete the scripted or exploration event; complete the required NPC or creature objective: Cassa Crimsonwing. [QC11142 Survey Alcaz Island]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Cassa Crimsonwing",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23704,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 67.33,
+              "y": 51.15
+            }
+          ],
+          "name": "Cassa Crimsonwing",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 64,
+      "quest_id": 11142,
+      "quest_name": "Survey Alcaz Island",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11143"
+      ],
+      "instruction": "Complete [QC11143 A Grim Connection]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 65,
+      "quest_id": 11143,
+      "quest_name": "A Grim Connection",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4968,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 66.27,
+              "y": 49.04
+            }
+          ],
+          "name": "Lady Jaina Proudmoore",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11142"
+      ],
+      "instruction": "Turn in [QT11142 Survey Alcaz Island] to Lady Jaina Proudmoore",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 66,
+      "quest_id": 11142,
+      "quest_name": "Survey Alcaz Island",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23568,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.62,
+              "y": 24.6
+            }
+          ],
+          "name": "Captain Darill",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11143"
+      ],
+      "instruction": "Turn in [QT11143 A Grim Connection] to Captain Darill",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 67,
+      "quest_id": 11143,
+      "quest_name": "A Grim Connection",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23568,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.62,
+              "y": 24.6
+            }
+          ],
+          "name": "Captain Darill",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11144"
+      ],
+      "instruction": "Accept [QA11144 Confirming the Suspicion] from Captain Darill.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 68,
+      "quest_id": 11144,
+      "quest_name": "Confirming the Suspicion",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23723,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.66,
+              "y": 23.05
+            }
+          ],
+          "name": "Sergeant Lukas",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11146"
+      ],
+      "instruction": "Accept [QA11146 Raptor Captor] from Sergeant Lukas.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 69,
+      "quest_id": 11146,
+      "quest_name": "Raptor Captor",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11146"
+      ],
+      "instruction": "Use the quest item [UI33069-] as directed; complete the required NPC or creature objectives: Bloodfen Raptor, Bloodfen Screecher. [QC11146 Raptor Captor]",
+      "item_use_id": 33069,
+      "objective_hint": "Complete the required NPC or creature objectives: Bloodfen Raptor, Bloodfen Screecher",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4351,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 51.99,
+              "y": 21.36
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 51.6,
+              "y": 20.62
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 48.35,
+              "y": 18.75
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.67,
+              "y": 15.48
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 49.51,
+              "y": 20.41
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 50.84,
+              "y": 21.53
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 49.03,
+              "y": 17.76
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 50.24,
+              "y": 19.47
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 48.57,
+              "y": 15.18
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 49.45,
+              "y": 18.41
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 52.28,
+              "y": 16.99
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 49.12,
+              "y": 15.79
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 47.81,
+              "y": 19.87
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 45.1,
+              "y": 20.85
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 48.17,
+              "y": 17.99
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 45.84,
+              "y": 16.61
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 47.45,
+              "y": 17.61
+            }
+          ],
+          "name": "Bloodfen Raptor",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4352,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 51.55,
+              "y": 21.95
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 48.86,
+              "y": 19.58
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 48.64,
+              "y": 20.73
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 52.39,
+              "y": 19.29
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 50.47,
+              "y": 17.48
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 52.2,
+              "y": 15.2
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 50.91,
+              "y": 15.98
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 50.52,
+              "y": 15.7
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 49.8,
+              "y": 16.7
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 48.24,
+              "y": 16.46
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 47.76,
+              "y": 15.81
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 47.26,
+              "y": 16.47
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 45.94,
+              "y": 19.66
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 47.23,
+              "y": 18.46
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.72,
+              "y": 18.4
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 47.72,
+              "y": 17.41
+            }
+          ],
+          "name": "Bloodfen Screecher",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 70,
+      "quest_id": 11146,
+      "quest_name": "Raptor Captor",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11144"
+      ],
+      "instruction": "Collect or use the required item: Grimtotem Battle Plan. [QC11144 Confirming the Suspicion]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Grimtotem Battle Plan",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 33051,
+          "kind": "item",
+          "locations": [],
+          "name": "Grimtotem Battle Plan",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 71,
+      "quest_id": 11144,
+      "quest_name": "Confirming the Suspicion",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23723,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.66,
+              "y": 23.05
+            }
+          ],
+          "name": "Sergeant Lukas",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11146"
+      ],
+      "instruction": "Turn in [QT11146 Raptor Captor] to Sergeant Lukas",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 72,
+      "quest_id": 11146,
+      "quest_name": "Raptor Captor",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23568,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.62,
+              "y": 24.6
+            }
+          ],
+          "name": "Captain Darill",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11144"
+      ],
+      "instruction": "Turn in [QT11144 Confirming the Suspicion] to Captain Darill",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 73,
+      "quest_id": 11144,
+      "quest_name": "Confirming the Suspicion",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23723,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.66,
+              "y": 23.05
+            }
+          ],
+          "name": "Sergeant Lukas",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11145"
+      ],
+      "instruction": "Accept [QA11145 Prisoners of the Grimtotems] from Sergeant Lukas.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 74,
+      "quest_id": 11145,
+      "quest_name": "Prisoners of the Grimtotems",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23723,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.66,
+              "y": 23.05
+            }
+          ],
+          "name": "Sergeant Lukas",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11147"
+      ],
+      "instruction": "Accept [QA11147 Unleash the Raptors] from Sergeant Lukas.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 75,
+      "quest_id": 11147,
+      "quest_name": "Unleash the Raptors",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23568,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.62,
+              "y": 24.6
+            }
+          ],
+          "name": "Captain Darill",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11148"
+      ],
+      "instruction": "Accept [QA11148 Arms of the Grimtotems] from Captain Darill.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 76,
+      "quest_id": 11148,
+      "quest_name": "Arms of the Grimtotems",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11145"
+      ],
+      "instruction": "Complete the required NPC or creature objective: Theramore Prisoner. [QC11145 Prisoners of the Grimtotems]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Theramore Prisoner",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23720,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 40.7,
+              "y": 11.9
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 40.89,
+              "y": 12.43
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 40.63,
+              "y": 11.5
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 41.62,
+              "y": 10.8
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 41.93,
+              "y": 13.22
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 41.48,
+              "y": 12.98
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 42.39,
+              "y": 11.76
+            }
+          ],
+          "name": "Theramore Prisoner",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 77,
+      "quest_id": 11145,
+      "quest_name": "Prisoners of the Grimtotems",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11147"
+      ],
+      "instruction": "Use the quest item [UI33070-] as directed; complete the marked or scripted objective. [QC11147 Unleash the Raptors]",
+      "item_use_id": 33070,
+      "objective_hint": "Complete the marked or scripted objective",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23727,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 41.5,
+              "y": 11.78
+            }
+          ],
+          "name": "Invis Raptor Credit",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 78,
+      "quest_id": 11147,
+      "quest_name": "Unleash the Raptors",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11148"
+      ],
+      "instruction": "Collect or use the required item: Blackhoof Armaments. [QC11148 Arms of the Grimtotems]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Blackhoof Armaments",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 33071,
+          "kind": "item",
+          "locations": [],
+          "name": "Blackhoof Armaments",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 79,
+      "quest_id": 11148,
+      "quest_name": "Arms of the Grimtotems",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23723,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.66,
+              "y": 23.05
+            }
+          ],
+          "name": "Sergeant Lukas",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11145"
+      ],
+      "instruction": "Turn in [QT11145 Prisoners of the Grimtotems] to Sergeant Lukas",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 80,
+      "quest_id": 11145,
+      "quest_name": "Prisoners of the Grimtotems",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23723,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.66,
+              "y": 23.05
+            }
+          ],
+          "name": "Sergeant Lukas",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11147"
+      ],
+      "instruction": "Turn in [QT11147 Unleash the Raptors] to Sergeant Lukas",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 81,
+      "quest_id": 11147,
+      "quest_name": "Unleash the Raptors",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23568,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.62,
+              "y": 24.6
+            }
+          ],
+          "name": "Captain Darill",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11148"
+      ],
+      "instruction": "Turn in [QT11148 Arms of the Grimtotems] to Captain Darill",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 82,
+      "quest_id": 11148,
+      "quest_name": "Arms of the Grimtotems",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4968,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 66.27,
+              "y": 49.04
+            }
+          ],
+          "name": "Lady Jaina Proudmoore",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11222"
+      ],
+      "instruction": "Accept [QA11222 Warn Bolvar!] from Lady Jaina Proudmoore.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 83,
+      "quest_id": 11222,
+      "quest_name": "Warn Bolvar!",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11222"
+      ],
+      "instruction": "Complete [QC11222 Warn Bolvar!]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 84,
+      "quest_id": 11222,
+      "quest_name": "Warn Bolvar!",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1748,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 78.22,
+              "y": 17.98
+            }
+          ],
+          "name": "Highlord Bolvar Fordragon",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11222"
+      ],
+      "instruction": "Turn in [QT11222 Warn Bolvar!] to Highlord Bolvar Fordragon",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 85,
+      "quest_id": 11222,
+      "quest_name": "Warn Bolvar!",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1748,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 78.22,
+              "y": 17.98
+            }
+          ],
+          "name": "Highlord Bolvar Fordragon",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11223"
+      ],
+      "instruction": "Accept [QA11223 Return to Jaina] from Highlord Bolvar Fordragon.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 86,
+      "quest_id": 11223,
+      "quest_name": "Return to Jaina",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11223"
+      ],
+      "instruction": "Complete [QC11223 Return to Jaina]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 87,
+      "quest_id": 11223,
+      "quest_name": "Return to Jaina",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4968,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 66.27,
+              "y": 49.04
+            }
+          ],
+          "name": "Lady Jaina Proudmoore",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11223"
+      ],
+      "instruction": "Turn in [QT11223 Return to Jaina] to Lady Jaina Proudmoore",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 88,
+      "quest_id": 11223,
+      "quest_name": "Return to Jaina",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 20805,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 400,
+              "map_name": "Thousand Needles",
+              "verification": "questie_structured_source_only",
+              "x": 77.21,
+              "y": 77.39
+            }
+          ],
+          "name": "Rizzle's Unguarded Plans",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1194"
+      ],
+      "instruction": "Accept [QA1194 Rizzle's Schematics] from Rizzle's Unguarded Plans.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 89,
+      "quest_id": 1194,
+      "quest_name": "Rizzle's Schematics",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 400,
+      "zone_or_sort_name": "Thousand Needles"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1194"
+      ],
+      "instruction": "Complete [QC1194 Rizzle's Schematics]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 90,
+      "quest_id": 1194,
+      "quest_name": "Rizzle's Schematics",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 400,
+      "zone_or_sort_name": "Thousand Needles"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4630,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 400,
+              "map_name": "Thousand Needles",
+              "verification": "questie_structured_source_only",
+              "x": 80.18,
+              "y": 75.88
+            }
+          ],
+          "name": "Pozzik",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1194"
+      ],
+      "instruction": "Turn in [QT1194 Rizzle's Schematics] to Pozzik",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 91,
+      "quest_id": 1194,
+      "quest_name": "Rizzle's Schematics",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 400,
+      "zone_or_sort_name": "Thousand Needles"
+    }
+  ],
+  "title": "37 Dustwallow Marsh"
+}

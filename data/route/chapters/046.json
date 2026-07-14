@@ -1,0 +1,589 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 45 Stormwind City, or select this chapter on a partially completed character. Begin in Loch Modan with Ghak Healtouch. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 38,
+    "map_name": "Loch Modan",
+    "x": 37.07,
+    "y": 49.38
+  },
+  "entry_zone_or_sort": 38,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 15,
+    "map_name": "Dustwallow Marsh",
+    "quest_id": 11217,
+    "tag": "QT",
+    "x": 41.54,
+    "y": 72.99
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/046_world_46.lua",
+  "id": "046-primary-46-loch-modan-&-dustwallow-marsh",
+  "maximum_level": 40,
+  "minimum_level": 40,
+  "next_chapter": "47 Tanaris",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "45 Stormwind City",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 2500,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7809:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2500:starter"
+      ],
+      "instruction": "Travel from Ironforge to Loch Modan. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G37.07,49.38 Loch Modan]. [O]",
+      "map_id": 38,
+      "map_name": "Loch Modan",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 1537,
+      "origin_map_name": "Ironforge",
+      "origin_x": 74.09,
+      "origin_y": 48.22,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 37.07,
+      "y": 49.38
+    },
+    {
+      "before_quest_id": 2500,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2500:starter"
+      ],
+      "instruction": "Before you begin: travel to Loch Modan and meet the first quest giver at [G37.07,49.38 Loch Modan]. Leave at least two quest-log slots open. [O]",
+      "map_id": 38,
+      "map_name": "Loch Modan",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 37.07,
+      "y": 49.38
+    },
+    {
+      "before_quest_id": 2500,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2500:requiredLevel"
+      ],
+      "instruction": "Reach level 40 before accepting Badlands Reagent Run. [XP40 Level 40]",
+      "map_id": 38,
+      "map_name": "Loch Modan",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 40,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 37.07,
+      "y": 49.38
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1470,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 37.07,
+              "y": 49.38
+            }
+          ],
+          "name": "Ghak Healtouch",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2500"
+      ],
+      "instruction": "Accept [QA2500 Badlands Reagent Run] from Ghak Healtouch.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 2500,
+      "quest_name": "Badlands Reagent Run",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2500"
+      ],
+      "instruction": "Collect or use the required items: Buzzard Gizzard, Crag Coyote Fang, Rock Elemental Shard. [QC2500 Badlands Reagent Run]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Buzzard Gizzard, Crag Coyote Fang, Rock Elemental Shard",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 7847,
+          "kind": "item",
+          "locations": [],
+          "name": "Buzzard Gizzard",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 7846,
+          "kind": "item",
+          "locations": [],
+          "name": "Crag Coyote Fang",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 7848,
+          "kind": "item",
+          "locations": [],
+          "name": "Rock Elemental Shard",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 5,
+      "quest_id": 2500,
+      "quest_name": "Badlands Reagent Run",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1470,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 37.07,
+              "y": 49.38
+            }
+          ],
+          "name": "Ghak Healtouch",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2500"
+      ],
+      "instruction": "Turn in [QT2500 Badlands Reagent Run] to Ghak Healtouch",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 2500,
+      "quest_name": "Badlands Reagent Run",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3836,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 18.18,
+              "y": 84.01
+            }
+          ],
+          "name": "Mountaineer Pebblebitty",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3182"
+      ],
+      "instruction": "Accept [QA3182 Proof of Deed] from Mountaineer Pebblebitty.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 3182,
+      "quest_name": "Proof of Deed",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3182"
+      ],
+      "instruction": "Complete [QC3182 Proof of Deed]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 3182,
+      "quest_name": "Proof of Deed",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8256,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 71.5,
+              "y": 15.74
+            }
+          ],
+          "name": "Curator Thorius",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3182"
+      ],
+      "instruction": "Turn in [QT3182 Proof of Deed] to Curator Thorius",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 3182,
+      "quest_name": "Proof of Deed",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4921,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 66.15,
+              "y": 46.07
+            }
+          ],
+          "name": "Guard Byron",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11212"
+      ],
+      "instruction": "Accept [QA11212 Tabetha's Farm] from Guard Byron.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 11212,
+      "quest_name": "Tabetha's Farm",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11212"
+      ],
+      "instruction": "Complete [QC11212 Tabetha's Farm]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 11212,
+      "quest_name": "Tabetha's Farm",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 6546,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.06,
+              "y": 57.09
+            }
+          ],
+          "name": "Tabetha",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11212"
+      ],
+      "instruction": "Turn in [QT11212 Tabetha's Farm] to Tabetha",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 11212,
+      "quest_name": "Tabetha's Farm",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23570,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 41.54,
+              "y": 72.99
+            }
+          ],
+          "name": "Gizzix Grimegurgle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11217"
+      ],
+      "instruction": "Accept [QA11217 Catch a Dragon by the Tail] from Gizzix Grimegurgle.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 11217,
+      "quest_name": "Catch a Dragon by the Tail",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11217"
+      ],
+      "instruction": "Collect or use the required item: Wyrmtail. [QC11217 Catch a Dragon by the Tail]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Wyrmtail",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 33175,
+          "kind": "item",
+          "locations": [],
+          "name": "Wyrmtail",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 14,
+      "quest_id": 11217,
+      "quest_name": "Catch a Dragon by the Tail",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23570,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 41.54,
+              "y": 72.99
+            }
+          ],
+          "name": "Gizzix Grimegurgle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11217"
+      ],
+      "instruction": "Turn in [QT11217 Catch a Dragon by the Tail] to Gizzix Grimegurgle",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 11217,
+      "quest_name": "Catch a Dragon by the Tail",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    }
+  ],
+  "title": "46 Loch Modan & Dustwallow Marsh"
+}

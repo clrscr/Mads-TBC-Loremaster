@@ -1,0 +1,1020 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 21 Darkshore & Ashenvale, or select this chapter on a partially completed character. Begin in Stonetalon Mountains with Keeper Albagorm. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 406,
+    "map_name": "Stonetalon Mountains",
+    "x": 37.1,
+    "y": 8.1
+  },
+  "entry_zone_or_sort": 406,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 406,
+    "map_name": "Stonetalon Mountains",
+    "quest_id": 1092,
+    "tag": "QT",
+    "x": 58.99,
+    "y": 62.6
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/022_world_22.lua",
+  "id": "022-primary-22-stonetalon-mountains",
+  "maximum_level": 21,
+  "minimum_level": 21,
+  "next_chapter": "23 Redridge Mountains & Duskwood",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "21 Darkshore & Ashenvale",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 1057,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1035:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1057:starter"
+      ],
+      "instruction": "Travel from Ashenvale to Stonetalon Mountains. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G37.10,8.10 Stonetalon Mountains]. [O]",
+      "map_id": 406,
+      "map_name": "Stonetalon Mountains",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 331,
+      "origin_map_name": "Ashenvale",
+      "origin_x": 37.37,
+      "origin_y": 51.79,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 37.1,
+      "y": 8.1
+    },
+    {
+      "before_quest_id": 1057,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1057:starter"
+      ],
+      "instruction": "Before you begin: travel to Stonetalon Mountains and meet the first quest giver at [G37.10,8.10 Stonetalon Mountains]. Leave at least two quest-log slots open. [O]",
+      "map_id": 406,
+      "map_name": "Stonetalon Mountains",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 37.1,
+      "y": 8.1
+    },
+    {
+      "before_quest_id": 1057,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1057:requiredLevel"
+      ],
+      "instruction": "Reach level 21 before accepting Reclaiming the Charred Vale. [XP21 Level 21]",
+      "map_id": 406,
+      "map_name": "Stonetalon Mountains",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 21,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 37.1,
+      "y": 8.1
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3994,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 37.1,
+              "y": 8.1
+            }
+          ],
+          "name": "Keeper Albagorm",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1057"
+      ],
+      "instruction": "Accept [QA1057 Reclaiming the Charred Vale] from Keeper Albagorm.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 1057,
+      "quest_name": "Reclaiming the Charred Vale",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1057"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Bloodfury Harpy, Bloodfury Ambusher, Bloodfury Slayer, plus 1 more. [QC1057 Reclaiming the Charred Vale]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Bloodfury Harpy, Bloodfury Ambusher, Bloodfury Slayer, plus 1 more",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4022,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 31.34,
+              "y": 60.42
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 32.84,
+              "y": 64.18
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 31.95,
+              "y": 66.51
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 30.18,
+              "y": 64.33
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 33.36,
+              "y": 64.99
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 32.75,
+              "y": 64.45
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 37.36,
+              "y": 49.09
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 37.79,
+              "y": 44.11
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 35.25,
+              "y": 63.21
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 34.51,
+              "y": 60.8
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 32.57,
+              "y": 60.66
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 31.83,
+              "y": 58.76
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 30.93,
+              "y": 59.23
+            }
+          ],
+          "name": "Bloodfury Harpy",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4025,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 32.07,
+              "y": 60.43
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 30.79,
+              "y": 65.29
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 30.8,
+              "y": 61.32
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 31.11,
+              "y": 58.55
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 29.98,
+              "y": 61.88
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 29.64,
+              "y": 62.62
+            }
+          ],
+          "name": "Bloodfury Ambusher",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4024,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 36.21,
+              "y": 67.36
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 34.89,
+              "y": 70.26
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 37.28,
+              "y": 65.74
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 36.98,
+              "y": 69.0
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 36.98,
+              "y": 69.78
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 30.06,
+              "y": 67.49
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 30.12,
+              "y": 69.67
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 30.24,
+              "y": 69.58
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 29.2,
+              "y": 71.14
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 27.37,
+              "y": 69.71
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 26.79,
+              "y": 69.53
+            }
+          ],
+          "name": "Bloodfury Slayer",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4023,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 34.71,
+              "y": 70.77
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 35.33,
+              "y": 67.64
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 35.46,
+              "y": 66.56
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 34.69,
+              "y": 68.03
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 34.86,
+              "y": 69.12
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 36.75,
+              "y": 67.66
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 35.53,
+              "y": 69.92
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 30.8,
+              "y": 68.91
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 29.49,
+              "y": 68.63
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 29.72,
+              "y": 69.34
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 29.3,
+              "y": 70.31
+            }
+          ],
+          "name": "Bloodfury Roguefeather",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 5,
+      "quest_id": 1057,
+      "quest_name": "Reclaiming the Charred Vale",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3994,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 37.1,
+              "y": 8.1
+            }
+          ],
+          "name": "Keeper Albagorm",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1057"
+      ],
+      "instruction": "Turn in [QT1057 Reclaiming the Charred Vale] to Keeper Albagorm",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 1057,
+      "quest_name": "Reclaiming the Charred Vale",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "pvp",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17287,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 86.0,
+              "y": 44.36
+            }
+          ],
+          "name": "Sentinel Luciel Starwhisper",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9521"
+      ],
+      "instruction": "Accept [QA9521 Report from the Northern Front] from Sentinel Luciel Starwhisper.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 9521,
+      "quest_name": "Report from the Northern Front",
+      "quest_tag": "PvP",
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "pvp",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9521"
+      ],
+      "instruction": "Complete [QC9521 Report from the Northern Front]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 9521,
+      "quest_name": "Report from the Northern Front",
+      "quest_tag": "PvP",
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "pvp",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14733,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 61.85,
+              "y": 83.9
+            }
+          ],
+          "name": "Sentinel Farsong",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9521"
+      ],
+      "instruction": "Turn in [QT9521 Report from the Northern Front] to Sentinel Farsong",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 9521,
+      "quest_name": "Report from the Northern Front",
+      "quest_tag": "PvP",
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3994,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 37.1,
+              "y": 8.1
+            }
+          ],
+          "name": "Keeper Albagorm",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1059"
+      ],
+      "instruction": "Accept [QA1059 Reclaiming the Charred Vale] from Keeper Albagorm.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 1059,
+      "quest_name": "Reclaiming the Charred Vale",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1059"
+      ],
+      "instruction": "Complete [QC1059 Reclaiming the Charred Vale]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 1059,
+      "quest_name": "Reclaiming the Charred Vale",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "before_quest_id": 1059,
+      "before_tag": "QT",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:npc:4319",
+        "authored-route:guidelime-tugs-tbc-alliance-2.50:31-36STV,Desolace.lua:63"
+      ],
+      "instruction": "Optional: learn the flight path from Thyssiana. [P][G89.50,45.85 Feralas][O]",
+      "map_id": 357,
+      "map_name": "Feralas",
+      "optional": true,
+      "order": 12,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "acquire_flight_path",
+      "verification": "cross_verified_questie_and_authored_route",
+      "x": 89.5,
+      "y": 45.85
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4048,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 357,
+              "map_name": "Feralas",
+              "verification": "questie_structured_source_only",
+              "x": 89.64,
+              "y": 46.57
+            }
+          ],
+          "name": "Falfindel Waywarder",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1059"
+      ],
+      "instruction": "Turn in [QT1059 Reclaiming the Charred Vale] to Falfindel Waywarder",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 1059,
+      "quest_name": "Reclaiming the Charred Vale",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4276,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 71.87,
+              "y": 60.0
+            }
+          ],
+          "name": "Piznik",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1090"
+      ],
+      "instruction": "Accept [QA1090 Gerenzo's Orders] from Piznik.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 1090,
+      "quest_name": "Gerenzo's Orders",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1090"
+      ],
+      "instruction": "Complete the scripted or exploration event. [QC1090 Gerenzo's Orders]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 1090,
+      "quest_name": "Gerenzo's Orders",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4276,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 71.87,
+              "y": 60.0
+            }
+          ],
+          "name": "Piznik",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1090"
+      ],
+      "instruction": "Turn in [QT1090 Gerenzo's Orders] to Piznik",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 1090,
+      "quest_name": "Gerenzo's Orders",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4276,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 71.87,
+              "y": 60.0
+            }
+          ],
+          "name": "Piznik",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1092"
+      ],
+      "instruction": "Accept [QA1092 Gerenzo's Orders] from Piznik.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 1092,
+      "quest_name": "Gerenzo's Orders",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1092"
+      ],
+      "instruction": "Complete [QC1092 Gerenzo's Orders]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 1092,
+      "quest_name": "Gerenzo's Orders",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4201,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 58.99,
+              "y": 62.6
+            }
+          ],
+          "name": "Ziz Fizziks",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1092"
+      ],
+      "instruction": "Turn in [QT1092 Gerenzo's Orders] to Ziz Fizziks",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 1092,
+      "quest_name": "Gerenzo's Orders",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    }
+  ],
+  "title": "22 Stonetalon Mountains"
+}

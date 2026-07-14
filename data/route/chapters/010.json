@@ -1,0 +1,5157 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 09 Stormwind City, or select this chapter on a partially completed character. Begin in Elwynn Forest with Deputy Willem. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 12,
+    "map_name": "Elwynn Forest",
+    "x": 48.17,
+    "y": 42.94
+  },
+  "entry_zone_or_sort": 9,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 1,
+    "map_name": "Dun Morogh",
+    "quest_id": 3365,
+    "tag": "QT",
+    "x": 24.98,
+    "y": 75.96
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/010_world_10.lua",
+  "id": "010-primary-10-world",
+  "maximum_level": 15,
+  "minimum_level": 15,
+  "next_chapter": "11 Dun Morogh & Redridge Mountains",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "09 Stormwind City",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 783,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2041:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:783:starter"
+      ],
+      "instruction": "Travel from Stormwind City to Elwynn Forest. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G48.17,42.94 Elwynn Forest]. [O]",
+      "map_id": 12,
+      "map_name": "Elwynn Forest",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 1519,
+      "origin_map_name": "Stormwind City",
+      "origin_x": 55.51,
+      "origin_y": 12.51,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 48.17,
+      "y": 42.94
+    },
+    {
+      "before_quest_id": 783,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:783:starter"
+      ],
+      "instruction": "Before you begin: travel to Elwynn Forest and meet the first quest giver at [G48.17,42.94 Elwynn Forest]. Leave at least two quest-log slots open. [O]",
+      "map_id": 12,
+      "map_name": "Elwynn Forest",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 48.17,
+      "y": 42.94
+    },
+    {
+      "before_quest_id": 783,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:783:requiredLevel"
+      ],
+      "instruction": "Reach level 15 before accepting A Threat Within. [XP15 Level 15]",
+      "map_id": 12,
+      "map_name": "Elwynn Forest",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 15,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 48.17,
+      "y": 42.94
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 823,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.17,
+              "y": 42.94
+            }
+          ],
+          "name": "Deputy Willem",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:783"
+      ],
+      "instruction": "Accept [QA783 A Threat Within] from Deputy Willem.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 783,
+      "quest_name": "A Threat Within",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 9,
+      "zone_or_sort_name": "Map or sort 9"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:783"
+      ],
+      "instruction": "Complete [QC783 A Threat Within]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 783,
+      "quest_name": "A Threat Within",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 9,
+      "zone_or_sort_name": "Map or sort 9"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 197,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.92,
+              "y": 41.61
+            }
+          ],
+          "name": "Marshal McBride",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:783"
+      ],
+      "instruction": "Turn in [QT783 A Threat Within] to Marshal McBride",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 783,
+      "quest_name": "A Threat Within",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 9,
+      "zone_or_sort_name": "Map or sort 9"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 197,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.92,
+              "y": 41.61
+            }
+          ],
+          "name": "Marshal McBride",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7"
+      ],
+      "instruction": "Accept [QA7 Kobold Camp Cleanup] from Marshal McBride.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 7,
+      "quest_name": "Kobold Camp Cleanup",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 9,
+      "zone_or_sort_name": "Map or sort 9"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7"
+      ],
+      "instruction": "Complete the required NPC or creature objective: Kobold Vermin. [QC7 Kobold Camp Cleanup]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Kobold Vermin",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 6,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.73,
+              "y": 35.8
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.89,
+              "y": 36.44
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.55,
+              "y": 36.06
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.27,
+              "y": 37.05
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.1,
+              "y": 36.96
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.37,
+              "y": 36.59
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.32,
+              "y": 35.81
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.87,
+              "y": 35.14
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.87,
+              "y": 36.3
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.52,
+              "y": 36.13
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 46.93,
+              "y": 35.67
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.58,
+              "y": 35.94
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.65,
+              "y": 36.91
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.86,
+              "y": 36.26
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.57,
+              "y": 36.37
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.62,
+              "y": 35.75
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.67,
+              "y": 34.92
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.22,
+              "y": 36.0
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.95,
+              "y": 35.4
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.79,
+              "y": 35.17
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.44,
+              "y": 35.34
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 50.04,
+              "y": 35.46
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 51.3,
+              "y": 36.5
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 51.61,
+              "y": 35.68
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 50.49,
+              "y": 37.61
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 50.98,
+              "y": 37.58
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 51.29,
+              "y": 37.43
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 51.36,
+              "y": 37.02
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 51.81,
+              "y": 36.94
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.17,
+              "y": 36.55
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 50.76,
+              "y": 37.47
+            }
+          ],
+          "name": "Kobold Vermin",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 8,
+      "quest_id": 7,
+      "quest_name": "Kobold Camp Cleanup",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 9,
+      "zone_or_sort_name": "Map or sort 9"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 197,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.92,
+              "y": 41.61
+            }
+          ],
+          "name": "Marshal McBride",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7"
+      ],
+      "instruction": "Turn in [QT7 Kobold Camp Cleanup] to Marshal McBride",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 7,
+      "quest_name": "Kobold Camp Cleanup",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 9,
+      "zone_or_sort_name": "Map or sort 9"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 197,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.92,
+              "y": 41.61
+            }
+          ],
+          "name": "Marshal McBride",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:15"
+      ],
+      "instruction": "Accept [QA15 Investigate Echo Ridge] from Marshal McBride.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 15,
+      "quest_name": "Investigate Echo Ridge",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 9,
+      "zone_or_sort_name": "Map or sort 9"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 823,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.17,
+              "y": 42.94
+            }
+          ],
+          "name": "Deputy Willem",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:18"
+      ],
+      "instruction": "Accept [QA18 Brotherhood of Thieves] from Deputy Willem.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 18,
+      "quest_name": "Brotherhood of Thieves",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 9,
+      "zone_or_sort_name": "Map or sort 9"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:15"
+      ],
+      "instruction": "Complete the required NPC or creature objective: Kobold Worker. [QC15 Investigate Echo Ridge]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Kobold Worker",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 257,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.31,
+              "y": 34.68
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.4,
+              "y": 33.61
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.63,
+              "y": 35.88
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.5,
+              "y": 35.82
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.83,
+              "y": 35.59
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 50.17,
+              "y": 34.24
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.18,
+              "y": 35.29
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.22,
+              "y": 35.87
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.25,
+              "y": 36.78
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.45,
+              "y": 35.78
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.17,
+              "y": 35.12
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.73,
+              "y": 33.79
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.9,
+              "y": 32.8
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.09,
+              "y": 34.03
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.98,
+              "y": 33.12
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.53,
+              "y": 32.64
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 46.84,
+              "y": 33.43
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.36,
+              "y": 33.18
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 46.55,
+              "y": 32.47
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 46.3,
+              "y": 32.2
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.35,
+              "y": 32.27
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.4,
+              "y": 33.97
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.61,
+              "y": 31.46
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.82,
+              "y": 34.64
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 50.23,
+              "y": 33.83
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 51.02,
+              "y": 35.55
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 52.15,
+              "y": 36.37
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 50.83,
+              "y": 37.92
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 51.51,
+              "y": 36.61
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 51.66,
+              "y": 37.66
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 51.52,
+              "y": 38.02
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.64,
+              "y": 32.91
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.93,
+              "y": 34.27
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 50.05,
+              "y": 33.1
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 51.06,
+              "y": 38.19
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 51.27,
+              "y": 37.75
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 52.09,
+              "y": 35.84
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 51.57,
+              "y": 36.23
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.91,
+              "y": 31.63
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.7,
+              "y": 32.02
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 46.27,
+              "y": 32.79
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.22,
+              "y": 32.64
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 50.12,
+              "y": 34.99
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.65,
+              "y": 35.16
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.07,
+              "y": 33.66
+            }
+          ],
+          "name": "Kobold Worker",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 12,
+      "quest_id": 15,
+      "quest_name": "Investigate Echo Ridge",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 9,
+      "zone_or_sort_name": "Map or sort 9"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:18"
+      ],
+      "instruction": "Collect or use the required item: Red Burlap Bandana. [QC18 Brotherhood of Thieves]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Red Burlap Bandana",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 752,
+          "kind": "item",
+          "locations": [],
+          "name": "Red Burlap Bandana",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 13,
+      "quest_id": 18,
+      "quest_name": "Brotherhood of Thieves",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 9,
+      "zone_or_sort_name": "Map or sort 9"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 197,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.92,
+              "y": 41.61
+            }
+          ],
+          "name": "Marshal McBride",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:15"
+      ],
+      "instruction": "Turn in [QT15 Investigate Echo Ridge] to Marshal McBride",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 15,
+      "quest_name": "Investigate Echo Ridge",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 9,
+      "zone_or_sort_name": "Map or sort 9"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 823,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.17,
+              "y": 42.94
+            }
+          ],
+          "name": "Deputy Willem",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:18"
+      ],
+      "instruction": "Turn in [QT18 Brotherhood of Thieves] to Deputy Willem",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 18,
+      "quest_name": "Brotherhood of Thieves",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 9,
+      "zone_or_sort_name": "Map or sort 9"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 823,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.17,
+              "y": 42.94
+            }
+          ],
+          "name": "Deputy Willem",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6"
+      ],
+      "instruction": "Accept [QA6 Bounty on Garrick Padfoot] from Deputy Willem.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 6,
+      "quest_name": "Bounty on Garrick Padfoot",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 9,
+      "zone_or_sort_name": "Map or sort 9"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 197,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.92,
+              "y": 41.61
+            }
+          ],
+          "name": "Marshal McBride",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:21"
+      ],
+      "instruction": "Accept [QA21 Skirmish at Echo Ridge] from Marshal McBride.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 21,
+      "quest_name": "Skirmish at Echo Ridge",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 9,
+      "zone_or_sort_name": "Map or sort 9"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:21"
+      ],
+      "instruction": "Complete the required NPC or creature objective: Kobold Laborer. [QC21 Skirmish at Echo Ridge]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Kobold Laborer",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 80,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.79,
+              "y": 31.64
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.35,
+              "y": 29.87
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.37,
+              "y": 29.25
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.37,
+              "y": 30.27
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.5,
+              "y": 30.29
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.42,
+              "y": 30.06
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.04,
+              "y": 30.28
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.64,
+              "y": 29.13
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.19,
+              "y": 29.02
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.26,
+              "y": 28.34
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 50.03,
+              "y": 25.52
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.21,
+              "y": 28.59
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.47,
+              "y": 28.05
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.92,
+              "y": 26.37
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.15,
+              "y": 27.75
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.59,
+              "y": 27.34
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.5,
+              "y": 26.62
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 50.3,
+              "y": 26.71
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.5,
+              "y": 25.84
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 50.16,
+              "y": 26.34
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 50.48,
+              "y": 26.87
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 50.13,
+              "y": 27.03
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.81,
+              "y": 31.09
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.0,
+              "y": 28.35
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.49,
+              "y": 27.98
+            }
+          ],
+          "name": "Kobold Laborer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 18,
+      "quest_id": 21,
+      "quest_name": "Skirmish at Echo Ridge",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 9,
+      "zone_or_sort_name": "Map or sort 9"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6"
+      ],
+      "instruction": "Collect or use the required item: Garrick's Head. [QC6 Bounty on Garrick Padfoot]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Garrick's Head",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 182,
+          "kind": "item",
+          "locations": [],
+          "name": "Garrick's Head",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 19,
+      "quest_id": 6,
+      "quest_name": "Bounty on Garrick Padfoot",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 9,
+      "zone_or_sort_name": "Map or sort 9"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 197,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.92,
+              "y": 41.61
+            }
+          ],
+          "name": "Marshal McBride",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:21"
+      ],
+      "instruction": "Turn in [QT21 Skirmish at Echo Ridge] to Marshal McBride",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 21,
+      "quest_name": "Skirmish at Echo Ridge",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 9,
+      "zone_or_sort_name": "Map or sort 9"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 823,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.17,
+              "y": 42.94
+            }
+          ],
+          "name": "Deputy Willem",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6"
+      ],
+      "instruction": "Turn in [QT6 Bounty on Garrick Padfoot] to Deputy Willem",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 6,
+      "quest_name": "Bounty on Garrick Padfoot",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 9,
+      "zone_or_sort_name": "Map or sort 9"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 197,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.92,
+              "y": 41.61
+            }
+          ],
+          "name": "Marshal McBride",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:54"
+      ],
+      "instruction": "Accept [QA54 Report to Goldshire] from Marshal McBride.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 22,
+      "quest_id": 54,
+      "quest_name": "Report to Goldshire",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 9,
+      "zone_or_sort_name": "Map or sort 9"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 823,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.17,
+              "y": 42.94
+            }
+          ],
+          "name": "Deputy Willem",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5261"
+      ],
+      "instruction": "Accept [QA5261 Eagan Peltskinner] from Deputy Willem.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 23,
+      "quest_id": 5261,
+      "quest_name": "Eagan Peltskinner",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 9,
+      "zone_or_sort_name": "Map or sort 9"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:54"
+      ],
+      "instruction": "Complete [QC54 Report to Goldshire]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 24,
+      "quest_id": 54,
+      "quest_name": "Report to Goldshire",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 9,
+      "zone_or_sort_name": "Map or sort 9"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5261"
+      ],
+      "instruction": "Complete [QC5261 Eagan Peltskinner]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 25,
+      "quest_id": 5261,
+      "quest_name": "Eagan Peltskinner",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 9,
+      "zone_or_sort_name": "Map or sort 9"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 196,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.94,
+              "y": 40.16
+            }
+          ],
+          "name": "Eagan Peltskinner",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5261"
+      ],
+      "instruction": "Turn in [QT5261 Eagan Peltskinner] to Eagan Peltskinner",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 26,
+      "quest_id": 5261,
+      "quest_name": "Eagan Peltskinner",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 9,
+      "zone_or_sort_name": "Map or sort 9"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 240,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 42.11,
+              "y": 65.93
+            }
+          ],
+          "name": "Marshal Dughan",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:54"
+      ],
+      "instruction": "Turn in [QT54 Report to Goldshire] to Marshal Dughan",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 27,
+      "quest_id": 54,
+      "quest_name": "Report to Goldshire",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 9,
+      "zone_or_sort_name": "Map or sort 9"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 196,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.94,
+              "y": 40.16
+            }
+          ],
+          "name": "Eagan Peltskinner",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:33"
+      ],
+      "instruction": "Accept [QA33 Wolves Across the Border] from Eagan Peltskinner.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 28,
+      "quest_id": 33,
+      "quest_name": "Wolves Across the Border",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 9,
+      "zone_or_sort_name": "Map or sort 9"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:33"
+      ],
+      "instruction": "Collect or use the required item: Tough Wolf Meat. [QC33 Wolves Across the Border]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Tough Wolf Meat",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 750,
+          "kind": "item",
+          "locations": [],
+          "name": "Tough Wolf Meat",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 29,
+      "quest_id": 33,
+      "quest_name": "Wolves Across the Border",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 9,
+      "zone_or_sort_name": "Map or sort 9"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 196,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.94,
+              "y": 40.16
+            }
+          ],
+          "name": "Eagan Peltskinner",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:33"
+      ],
+      "instruction": "Turn in [QT33 Wolves Across the Border] to Eagan Peltskinner",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 30,
+      "quest_id": 33,
+      "quest_name": "Wolves Across the Border",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 9,
+      "zone_or_sort_name": "Map or sort 9"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 823,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.17,
+              "y": 42.94
+            }
+          ],
+          "name": "Deputy Willem",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3903"
+      ],
+      "instruction": "Accept [QA3903 Milly Osworth] from Deputy Willem.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 31,
+      "quest_id": 3903,
+      "quest_name": "Milly Osworth",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 9,
+      "zone_or_sort_name": "Map or sort 9"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3903"
+      ],
+      "instruction": "Complete [QC3903 Milly Osworth]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 32,
+      "quest_id": 3903,
+      "quest_name": "Milly Osworth",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 9,
+      "zone_or_sort_name": "Map or sort 9"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9296,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 50.69,
+              "y": 39.35
+            }
+          ],
+          "name": "Milly Osworth",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3903"
+      ],
+      "instruction": "Turn in [QT3903 Milly Osworth] to Milly Osworth",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 33,
+      "quest_id": 3903,
+      "quest_name": "Milly Osworth",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 9,
+      "zone_or_sort_name": "Map or sort 9"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9296,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 50.69,
+              "y": 39.35
+            }
+          ],
+          "name": "Milly Osworth",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3904"
+      ],
+      "instruction": "Accept [QA3904 Milly's Harvest] from Milly Osworth.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 34,
+      "quest_id": 3904,
+      "quest_name": "Milly's Harvest",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 9,
+      "zone_or_sort_name": "Map or sort 9"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3904"
+      ],
+      "instruction": "Collect or use the required item: Milly's Harvest. [QC3904 Milly's Harvest]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Milly's Harvest",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 11119,
+          "kind": "item",
+          "locations": [],
+          "name": "Milly's Harvest",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 35,
+      "quest_id": 3904,
+      "quest_name": "Milly's Harvest",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 9,
+      "zone_or_sort_name": "Map or sort 9"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9296,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 50.69,
+              "y": 39.35
+            }
+          ],
+          "name": "Milly Osworth",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3904"
+      ],
+      "instruction": "Turn in [QT3904 Milly's Harvest] to Milly Osworth",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 36,
+      "quest_id": 3904,
+      "quest_name": "Milly's Harvest",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 9,
+      "zone_or_sort_name": "Map or sort 9"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9296,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 50.69,
+              "y": 39.35
+            }
+          ],
+          "name": "Milly Osworth",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3905"
+      ],
+      "instruction": "Accept [QA3905 Grape Manifest] from Milly Osworth.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 37,
+      "quest_id": 3905,
+      "quest_name": "Grape Manifest",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 9,
+      "zone_or_sort_name": "Map or sort 9"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3905"
+      ],
+      "instruction": "Complete [QC3905 Grape Manifest]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 38,
+      "quest_id": 3905,
+      "quest_name": "Grape Manifest",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 9,
+      "zone_or_sort_name": "Map or sort 9"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 952,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.47,
+              "y": 41.59
+            }
+          ],
+          "name": "Brother Neals",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3905"
+      ],
+      "instruction": "Turn in [QT3905 Grape Manifest] to Brother Neals",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 39,
+      "quest_id": 3905,
+      "quest_name": "Grape Manifest",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 9,
+      "zone_or_sort_name": "Map or sort 9"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 658,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 29.93,
+              "y": 71.2
+            }
+          ],
+          "name": "Sten Stoutarm",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:179"
+      ],
+      "instruction": "Accept [QA179 Dwarven Outfitters] from Sten Stoutarm.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 40,
+      "quest_id": 179,
+      "quest_name": "Dwarven Outfitters",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 132,
+      "zone_or_sort_name": "Map or sort 132"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:179"
+      ],
+      "instruction": "Collect or use the required item: Tough Wolf Meat. [QC179 Dwarven Outfitters]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Tough Wolf Meat",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 750,
+          "kind": "item",
+          "locations": [],
+          "name": "Tough Wolf Meat",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 41,
+      "quest_id": 179,
+      "quest_name": "Dwarven Outfitters",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 132,
+      "zone_or_sort_name": "Map or sort 132"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 658,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 29.93,
+              "y": 71.2
+            }
+          ],
+          "name": "Sten Stoutarm",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:179"
+      ],
+      "instruction": "Turn in [QT179 Dwarven Outfitters] to Sten Stoutarm",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 42,
+      "quest_id": 179,
+      "quest_name": "Dwarven Outfitters",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 132,
+      "zone_or_sort_name": "Map or sort 132"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 713,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 29.71,
+              "y": 71.25
+            }
+          ],
+          "name": "Balir Frosthammer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:170"
+      ],
+      "instruction": "Accept [QA170 A New Threat] from Balir Frosthammer.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 43,
+      "quest_id": 170,
+      "quest_name": "A New Threat",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 132,
+      "zone_or_sort_name": "Map or sort 132"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 786,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 25.08,
+              "y": 75.71
+            }
+          ],
+          "name": "Grelin Whitebeard",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:182"
+      ],
+      "instruction": "Accept [QA182 The Troll Cave] from Grelin Whitebeard.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 44,
+      "quest_id": 182,
+      "quest_name": "The Troll Cave",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 132,
+      "zone_or_sort_name": "Map or sort 132"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 714,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 22.6,
+              "y": 71.43
+            }
+          ],
+          "name": "Talin Keeneye",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:183"
+      ],
+      "instruction": "Accept [QA183 The Boar Hunter] from Talin Keeneye.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 45,
+      "quest_id": 183,
+      "quest_name": "The Boar Hunter",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 132,
+      "zone_or_sort_name": "Map or sort 132"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:183"
+      ],
+      "instruction": "Complete the required NPC or creature objective: Small Crag Boar. [QC183 The Boar Hunter]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Small Crag Boar",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 708,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 32.28,
+              "y": 71.68
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 31.22,
+              "y": 69.24
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 28.21,
+              "y": 73.04
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 26.58,
+              "y": 69.66
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 27.43,
+              "y": 71.62
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 25.99,
+              "y": 69.17
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 26.18,
+              "y": 71.19
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 26.59,
+              "y": 68.57
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 25.41,
+              "y": 70.23
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 24.67,
+              "y": 70.9
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 24.62,
+              "y": 69.16
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 25.5,
+              "y": 68.37
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 24.39,
+              "y": 68.11
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 23.41,
+              "y": 69.15
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 24.03,
+              "y": 72.5
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 23.58,
+              "y": 68.55
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 22.7,
+              "y": 70.19
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 22.71,
+              "y": 69.56
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 22.2,
+              "y": 69.45
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 22.35,
+              "y": 71.61
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 22.82,
+              "y": 72.48
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 21.3,
+              "y": 69.13
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 20.38,
+              "y": 74.24
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 20.76,
+              "y": 73.4
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 20.71,
+              "y": 69.12
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 19.86,
+              "y": 73.42
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 20.09,
+              "y": 71.08
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 19.9,
+              "y": 72.29
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 20.14,
+              "y": 71.37
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 20.21,
+              "y": 74.51
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 19.47,
+              "y": 75.15
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 21.39,
+              "y": 70.23
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 20.7,
+              "y": 70.28
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 21.81,
+              "y": 71.44
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 21.43,
+              "y": 71.27
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 21.34,
+              "y": 72.22
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 22.02,
+              "y": 72.32
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 20.73,
+              "y": 74.12
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 20.66,
+              "y": 73.3
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 20.06,
+              "y": 73.32
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 21.25,
+              "y": 69.14
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 20.69,
+              "y": 69.18
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 21.92,
+              "y": 70.12
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 21.95,
+              "y": 71.26
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 22.11,
+              "y": 72.2
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 21.98,
+              "y": 69.3
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 22.6,
+              "y": 69.33
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 22.61,
+              "y": 70.15
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 22.74,
+              "y": 72.42
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 20.75,
+              "y": 75.28
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 21.46,
+              "y": 78.02
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 19.75,
+              "y": 76.42
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 23.46,
+              "y": 78.77
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 24.02,
+              "y": 78.82
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 23.98,
+              "y": 76.46
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 24.69,
+              "y": 79.28
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 28.01,
+              "y": 73.07
+            }
+          ],
+          "name": "Small Crag Boar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 46,
+      "quest_id": 183,
+      "quest_name": "The Boar Hunter",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 132,
+      "zone_or_sort_name": "Map or sort 132"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:170"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Rockjaw Trogg, Burly Rockjaw Trogg. [QC170 A New Threat]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Rockjaw Trogg, Burly Rockjaw Trogg",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 707,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 32.35,
+              "y": 74.47
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 31.13,
+              "y": 74.74
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 31.05,
+              "y": 73.95
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 30.62,
+              "y": 74.56
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 24.31,
+              "y": 71.0
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 23.83,
+              "y": 73.48
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 21.82,
+              "y": 72.42
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 20.12,
+              "y": 73.23
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 19.42,
+              "y": 74.44
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 21.8,
+              "y": 73.37
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 22.75,
+              "y": 76.27
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 23.21,
+              "y": 78.39
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 24.12,
+              "y": 77.29
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 23.04,
+              "y": 73.71
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 29.26,
+              "y": 75.5
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 28.84,
+              "y": 76.47
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 30.07,
+              "y": 74.49
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 29.92,
+              "y": 75.01
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 28.96,
+              "y": 77.11
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 28.86,
+              "y": 77.64
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 29.64,
+              "y": 76.26
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 29.9,
+              "y": 77.96
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 30.35,
+              "y": 77.57
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 29.78,
+              "y": 77.66
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 30.72,
+              "y": 77.02
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 30.04,
+              "y": 76.63
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 30.47,
+              "y": 74.91
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 30.75,
+              "y": 74.46
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 30.68,
+              "y": 75.71
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 31.81,
+              "y": 75.75
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 31.56,
+              "y": 76.17
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 31.81,
+              "y": 74.62
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 32.11,
+              "y": 75.11
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 31.25,
+              "y": 75.97
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 31.11,
+              "y": 74.78
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 31.33,
+              "y": 76.61
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 31.98,
+              "y": 76.38
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 31.67,
+              "y": 77.59
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 32.84,
+              "y": 75.21
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 32.25,
+              "y": 75.86
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 33.34,
+              "y": 75.43
+            }
+          ],
+          "name": "Rockjaw Trogg",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 724,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 31.63,
+              "y": 73.69
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 27.22,
+              "y": 72.14
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 27.21,
+              "y": 73.02
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 26.87,
+              "y": 73.14
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 27.42,
+              "y": 73.41
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 26.3,
+              "y": 73.16
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 26.92,
+              "y": 72.95
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 26.16,
+              "y": 72.22
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 26.56,
+              "y": 72.57
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 26.19,
+              "y": 71.9
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 26.19,
+              "y": 72.14
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 26.1,
+              "y": 72.68
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 26.59,
+              "y": 71.91
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 27.02,
+              "y": 72.63
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 25.65,
+              "y": 72.46
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 25.37,
+              "y": 73.1
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 24.8,
+              "y": 72.38
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 23.91,
+              "y": 72.56
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 22.7,
+              "y": 73.16
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 22.98,
+              "y": 73.56
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 20.78,
+              "y": 72.12
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 21.19,
+              "y": 71.78
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 21.44,
+              "y": 74.68
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 20.81,
+              "y": 74.3
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 20.61,
+              "y": 70.45
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 20.24,
+              "y": 71.51
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 19.99,
+              "y": 75.41
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 19.42,
+              "y": 72.24
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 21.45,
+              "y": 73.32
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 21.84,
+              "y": 72.66
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 21.36,
+              "y": 75.37
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 21.32,
+              "y": 77.31
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 21.9,
+              "y": 76.25
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 20.01,
+              "y": 77.52
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 21.96,
+              "y": 78.23
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 22.86,
+              "y": 77.55
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 23.96,
+              "y": 79.6
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 23.33,
+              "y": 76.68
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 22.92,
+              "y": 75.39
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 23.91,
+              "y": 75.21
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 24.19,
+              "y": 74.24
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 23.89,
+              "y": 73.04
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 23.14,
+              "y": 74.16
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 22.9,
+              "y": 74.45
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 25.99,
+              "y": 74.23
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 26.64,
+              "y": 73.4
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 24.83,
+              "y": 74.18
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 27.69,
+              "y": 76.51
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 30.32,
+              "y": 74.52
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 29.25,
+              "y": 75.0
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 29.22,
+              "y": 77.74
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 28.57,
+              "y": 78.02
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 30.11,
+              "y": 75.63
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 29.96,
+              "y": 77.42
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 30.29,
+              "y": 76.27
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 30.69,
+              "y": 75.13
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 31.67,
+              "y": 75.98
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 31.25,
+              "y": 75.35
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 30.89,
+              "y": 76.23
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 31.72,
+              "y": 76.76
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 32.38,
+              "y": 75.86
+            }
+          ],
+          "name": "Burly Rockjaw Trogg",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 47,
+      "quest_id": 170,
+      "quest_name": "A New Threat",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 132,
+      "zone_or_sort_name": "Map or sort 132"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:182"
+      ],
+      "instruction": "Complete the required NPC or creature objective: Frostmane Troll Whelp. [QC182 The Troll Cave]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Frostmane Troll Whelp",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 706,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 20.78,
+              "y": 75.93
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 21.29,
+              "y": 76.03
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 21.0,
+              "y": 75.33
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 20.84,
+              "y": 76.26
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 21.03,
+              "y": 76.44
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 21.42,
+              "y": 76.97
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 21.39,
+              "y": 77.96
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 20.39,
+              "y": 77.17
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 20.83,
+              "y": 76.63
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 22.31,
+              "y": 78.12
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 22.09,
+              "y": 78.84
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 22.61,
+              "y": 78.94
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 22.32,
+              "y": 79.32
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 23.34,
+              "y": 79.96
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 23.77,
+              "y": 80.33
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 22.99,
+              "y": 79.35
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 22.76,
+              "y": 80.8
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 22.66,
+              "y": 79.97
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 22.85,
+              "y": 79.96
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 22.85,
+              "y": 80.13
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 22.67,
+              "y": 80.19
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 25.86,
+              "y": 78.26
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 25.77,
+              "y": 79.27
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 26.42,
+              "y": 79.37
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 26.79,
+              "y": 79.75
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 26.14,
+              "y": 79.97
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 27.13,
+              "y": 80.46
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 27.16,
+              "y": 78.44
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 27.7,
+              "y": 78.82
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 26.39,
+              "y": 78.34
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 26.83,
+              "y": 78.96
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 28.47,
+              "y": 80.76
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 28.68,
+              "y": 79.19
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 28.5,
+              "y": 79.77
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 26.98,
+              "y": 81.08
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 27.98,
+              "y": 81.06
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 28.08,
+              "y": 80.25
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 28.01,
+              "y": 80.56
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 27.63,
+              "y": 80.87
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 28.44,
+              "y": 80.77
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 28.68,
+              "y": 82.98
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 29.16,
+              "y": 81.96
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 28.73,
+              "y": 83.02
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 28.68,
+              "y": 81.04
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 28.96,
+              "y": 80.9
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 28.8,
+              "y": 80.58
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 28.76,
+              "y": 80.09
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 28.29,
+              "y": 82.15
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 29.57,
+              "y": 80.37
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 29.49,
+              "y": 79.99
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 29.32,
+              "y": 79.05
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 29.57,
+              "y": 79.12
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 29.79,
+              "y": 79.86
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 29.85,
+              "y": 80.43
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 29.26,
+              "y": 80.71
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 30.59,
+              "y": 81.9
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 30.53,
+              "y": 81.29
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 30.1,
+              "y": 79.32
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 30.59,
+              "y": 80.02
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 30.08,
+              "y": 79.82
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 30.46,
+              "y": 80.71
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 20.21,
+              "y": 75.89
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 30.17,
+              "y": 79.36
+            }
+          ],
+          "name": "Frostmane Troll Whelp",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 48,
+      "quest_id": 182,
+      "quest_name": "The Troll Cave",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 132,
+      "zone_or_sort_name": "Map or sort 132"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 786,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 25.08,
+              "y": 75.71
+            }
+          ],
+          "name": "Grelin Whitebeard",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:182"
+      ],
+      "instruction": "Turn in [QT182 The Troll Cave] to Grelin Whitebeard",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 49,
+      "quest_id": 182,
+      "quest_name": "The Troll Cave",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 132,
+      "zone_or_sort_name": "Map or sort 132"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 714,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 22.6,
+              "y": 71.43
+            }
+          ],
+          "name": "Talin Keeneye",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:183"
+      ],
+      "instruction": "Turn in [QT183 The Boar Hunter] to Talin Keeneye",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 50,
+      "quest_id": 183,
+      "quest_name": "The Boar Hunter",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 132,
+      "zone_or_sort_name": "Map or sort 132"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 713,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 29.71,
+              "y": 71.25
+            }
+          ],
+          "name": "Balir Frosthammer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:170"
+      ],
+      "instruction": "Turn in [QT170 A New Threat] to Balir Frosthammer",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 51,
+      "quest_id": 170,
+      "quest_name": "A New Threat",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 132,
+      "zone_or_sort_name": "Map or sort 132"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 786,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 25.08,
+              "y": 75.71
+            }
+          ],
+          "name": "Grelin Whitebeard",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:218"
+      ],
+      "instruction": "Accept [QA218 The Stolen Journal] from Grelin Whitebeard.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 52,
+      "quest_id": 218,
+      "quest_name": "The Stolen Journal",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 132,
+      "zone_or_sort_name": "Map or sort 132"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 658,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 29.93,
+              "y": 71.2
+            }
+          ],
+          "name": "Sten Stoutarm",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:233"
+      ],
+      "instruction": "Accept [QA233 Coldridge Valley Mail Delivery] from Sten Stoutarm.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 53,
+      "quest_id": 233,
+      "quest_name": "Coldridge Valley Mail Delivery",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 132,
+      "zone_or_sort_name": "Map or sort 132"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:218"
+      ],
+      "instruction": "Collect or use the required item: Grelin Whitebeard's Journal. [QC218 The Stolen Journal]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Grelin Whitebeard's Journal",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 2004,
+          "kind": "item",
+          "locations": [],
+          "name": "Grelin Whitebeard's Journal",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 54,
+      "quest_id": 218,
+      "quest_name": "The Stolen Journal",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 132,
+      "zone_or_sort_name": "Map or sort 132"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:233"
+      ],
+      "instruction": "Complete [QC233 Coldridge Valley Mail Delivery]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 55,
+      "quest_id": 233,
+      "quest_name": "Coldridge Valley Mail Delivery",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 132,
+      "zone_or_sort_name": "Map or sort 132"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 786,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 25.08,
+              "y": 75.71
+            }
+          ],
+          "name": "Grelin Whitebeard",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:218"
+      ],
+      "instruction": "Turn in [QT218 The Stolen Journal] to Grelin Whitebeard",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 56,
+      "quest_id": 218,
+      "quest_name": "The Stolen Journal",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 132,
+      "zone_or_sort_name": "Map or sort 132"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 714,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 22.6,
+              "y": 71.43
+            }
+          ],
+          "name": "Talin Keeneye",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:233"
+      ],
+      "instruction": "Turn in [QT233 Coldridge Valley Mail Delivery] to Talin Keeneye",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 57,
+      "quest_id": 233,
+      "quest_name": "Coldridge Valley Mail Delivery",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 132,
+      "zone_or_sort_name": "Map or sort 132"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 714,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 22.6,
+              "y": 71.43
+            }
+          ],
+          "name": "Talin Keeneye",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:234"
+      ],
+      "instruction": "Accept [QA234 Coldridge Valley Mail Delivery] from Talin Keeneye.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 58,
+      "quest_id": 234,
+      "quest_name": "Coldridge Valley Mail Delivery",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 132,
+      "zone_or_sort_name": "Map or sort 132"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 786,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 25.08,
+              "y": 75.71
+            }
+          ],
+          "name": "Grelin Whitebeard",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:282"
+      ],
+      "instruction": "Accept [QA282 Senir's Observations] from Grelin Whitebeard.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 59,
+      "quest_id": 282,
+      "quest_name": "Senir's Observations",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 132,
+      "zone_or_sort_name": "Map or sort 132"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:234"
+      ],
+      "instruction": "Complete [QC234 Coldridge Valley Mail Delivery]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 60,
+      "quest_id": 234,
+      "quest_name": "Coldridge Valley Mail Delivery",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 132,
+      "zone_or_sort_name": "Map or sort 132"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:282"
+      ],
+      "instruction": "Complete [QC282 Senir's Observations]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 61,
+      "quest_id": 282,
+      "quest_name": "Senir's Observations",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 132,
+      "zone_or_sort_name": "Map or sort 132"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 786,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 25.08,
+              "y": 75.71
+            }
+          ],
+          "name": "Grelin Whitebeard",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:234"
+      ],
+      "instruction": "Turn in [QT234 Coldridge Valley Mail Delivery] to Grelin Whitebeard",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 62,
+      "quest_id": 234,
+      "quest_name": "Coldridge Valley Mail Delivery",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 132,
+      "zone_or_sort_name": "Map or sort 132"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1965,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 33.48,
+              "y": 71.84
+            }
+          ],
+          "name": "Mountaineer Thalos",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:282"
+      ],
+      "instruction": "Turn in [QT282 Senir's Observations] to Mountaineer Thalos",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 63,
+      "quest_id": 282,
+      "quest_name": "Senir's Observations",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 132,
+      "zone_or_sort_name": "Map or sort 132"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1965,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 33.48,
+              "y": 71.84
+            }
+          ],
+          "name": "Mountaineer Thalos",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:420"
+      ],
+      "instruction": "Accept [QA420 Senir's Observations] from Mountaineer Thalos.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 64,
+      "quest_id": 420,
+      "quest_name": "Senir's Observations",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 132,
+      "zone_or_sort_name": "Map or sort 132"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8416,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 28.55,
+              "y": 67.64
+            }
+          ],
+          "name": "Felix Whindlebolt",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3361"
+      ],
+      "instruction": "Accept [QA3361 A Refugee's Quandary] from Felix Whindlebolt.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 65,
+      "quest_id": 3361,
+      "quest_name": "A Refugee's Quandary",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 132,
+      "zone_or_sort_name": "Map or sort 132"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 12738,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 24.98,
+              "y": 75.96
+            }
+          ],
+          "name": "Nori Pridedrift",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3364"
+      ],
+      "instruction": "Accept [QA3364 Scalding Mornbrew Delivery] from Nori Pridedrift.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 66,
+      "quest_id": 3364,
+      "quest_name": "Scalding Mornbrew Delivery",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 132,
+      "zone_or_sort_name": "Map or sort 132"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:420"
+      ],
+      "instruction": "Complete [QC420 Senir's Observations]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 67,
+      "quest_id": 420,
+      "quest_name": "Senir's Observations",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 132,
+      "zone_or_sort_name": "Map or sort 132"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3361"
+      ],
+      "instruction": "Collect or use the required items: Felix's Box, Felix's Chest, Felix's Bucket of Bolts. [QC3361 A Refugee's Quandary]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Felix's Box, Felix's Chest, Felix's Bucket of Bolts",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 10438,
+          "kind": "item",
+          "locations": [],
+          "name": "Felix's Box",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 16313,
+          "kind": "item",
+          "locations": [],
+          "name": "Felix's Chest",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 16314,
+          "kind": "item",
+          "locations": [],
+          "name": "Felix's Bucket of Bolts",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 68,
+      "quest_id": 3361,
+      "quest_name": "A Refugee's Quandary",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 132,
+      "zone_or_sort_name": "Map or sort 132"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3364"
+      ],
+      "instruction": "Complete [QC3364 Scalding Mornbrew Delivery]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 69,
+      "quest_id": 3364,
+      "quest_name": "Scalding Mornbrew Delivery",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 132,
+      "zone_or_sort_name": "Map or sort 132"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8416,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 28.55,
+              "y": 67.64
+            }
+          ],
+          "name": "Felix Whindlebolt",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3361"
+      ],
+      "instruction": "Turn in [QT3361 A Refugee's Quandary] to Felix Whindlebolt",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 70,
+      "quest_id": 3361,
+      "quest_name": "A Refugee's Quandary",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 132,
+      "zone_or_sort_name": "Map or sort 132"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 836,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 28.77,
+              "y": 66.37
+            }
+          ],
+          "name": "Durnan Furcutter",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3364"
+      ],
+      "instruction": "Turn in [QT3364 Scalding Mornbrew Delivery] to Durnan Furcutter",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 71,
+      "quest_id": 3364,
+      "quest_name": "Scalding Mornbrew Delivery",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 132,
+      "zone_or_sort_name": "Map or sort 132"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1252,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 46.73,
+              "y": 53.83
+            }
+          ],
+          "name": "Senir Whitebeard",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:420"
+      ],
+      "instruction": "Turn in [QT420 Senir's Observations] to Senir Whitebeard",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 72,
+      "quest_id": 420,
+      "quest_name": "Senir's Observations",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 132,
+      "zone_or_sort_name": "Map or sort 132"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 836,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 28.77,
+              "y": 66.37
+            }
+          ],
+          "name": "Durnan Furcutter",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3365"
+      ],
+      "instruction": "Accept [QA3365 Bring Back the Mug] from Durnan Furcutter.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 73,
+      "quest_id": 3365,
+      "quest_name": "Bring Back the Mug",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 132,
+      "zone_or_sort_name": "Map or sort 132"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3365"
+      ],
+      "instruction": "Complete [QC3365 Bring Back the Mug]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 74,
+      "quest_id": 3365,
+      "quest_name": "Bring Back the Mug",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 132,
+      "zone_or_sort_name": "Map or sort 132"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 12738,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 24.98,
+              "y": 75.96
+            }
+          ],
+          "name": "Nori Pridedrift",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3365"
+      ],
+      "instruction": "Turn in [QT3365 Bring Back the Mug] to Nori Pridedrift",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 75,
+      "quest_id": 3365,
+      "quest_name": "Bring Back the Mug",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 132,
+      "zone_or_sort_name": "Map or sort 132"
+    }
+  ],
+  "title": "10 World"
+}

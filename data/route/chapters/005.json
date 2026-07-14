@@ -1,0 +1,3424 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 04 The Barrens & Azuremyst Isle, or select this chapter on a partially completed character. Begin in Bloodmyst Isle with Red Crystal Pendant. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 3525,
+    "map_name": "Bloodmyst Isle",
+    "x": 53.24,
+    "y": 57.74
+  },
+  "entry_zone_or_sort": 3525,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 3525,
+    "map_name": "Bloodmyst Isle",
+    "quest_id": 9694,
+    "tag": "QT",
+    "x": 55.42,
+    "y": 55.27
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/005_world_05.lua",
+  "id": "005-primary-05-bloodmyst-isle",
+  "maximum_level": 15,
+  "minimum_level": 15,
+  "next_chapter": "06 The Exodar & Elwynn Forest",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "04 The Barrens & Azuremyst Isle",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 9576,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9623:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9576:finisher"
+      ],
+      "instruction": "Travel from The Exodar to Bloodmyst Isle. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G53.24,57.74 Bloodmyst Isle]. [O]",
+      "map_id": 3525,
+      "map_name": "Bloodmyst Isle",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 3557,
+      "origin_map_name": "The Exodar",
+      "origin_x": 81.49,
+      "origin_y": 51.44,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 53.24,
+      "y": 57.74
+    },
+    {
+      "before_quest_id": 9576,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9576:finisher"
+      ],
+      "instruction": "Before you begin: travel to Bloodmyst Isle and continue from the first verified route point at [G53.24,57.74 Bloodmyst Isle]. Leave at least two quest-log slots open. [O]",
+      "map_id": 3525,
+      "map_name": "Bloodmyst Isle",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 53.24,
+      "y": 57.74
+    },
+    {
+      "before_quest_id": 9576,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9576:requiredLevel"
+      ],
+      "instruction": "Reach level 15 before accepting Cruelfin's Necklace. [XP15 Level 15]",
+      "map_id": 3525,
+      "map_name": "Bloodmyst Isle",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 15,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": null,
+      "y": null
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 23870,
+          "kind": "item",
+          "locations": [],
+          "name": "Red Crystal Pendant",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9576"
+      ],
+      "instruction": "Accept [QA9576 Cruelfin's Necklace] from Red Crystal Pendant.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 9576,
+      "quest_name": "Cruelfin's Necklace",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17423,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 52.59,
+              "y": 53.21
+            }
+          ],
+          "name": "Harbinger Mikolaas",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9581"
+      ],
+      "instruction": "Accept [QA9581 Learning from the Crystals] from Harbinger Mikolaas.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 9581,
+      "quest_name": "Learning from the Crystals",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 23900,
+          "kind": "item",
+          "locations": [],
+          "name": "Tzerak's Armor Plate",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9594"
+      ],
+      "instruction": "Accept [QA9594 Signs of the Legion] from Tzerak's Armor Plate.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 9594,
+      "quest_name": "Signs of the Legion",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9594"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Nazzivus Satyr, Nazzivus Felsworn. [QC9594 Signs of the Legion]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Nazzivus Satyr, Nazzivus Felsworn",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17337,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 39.98,
+              "y": 79.29
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 39.02,
+              "y": 77.22
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 35.84,
+              "y": 81.69
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 36.09,
+              "y": 78.98
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 37.35,
+              "y": 77.35
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 37.26,
+              "y": 76.89
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 38.93,
+              "y": 74.6
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 41.17,
+              "y": 76.23
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 35.01,
+              "y": 76.08
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 34.91,
+              "y": 73.13
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 33.41,
+              "y": 71.36
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 33.19,
+              "y": 71.79
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 32.05,
+              "y": 79.28
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 32.81,
+              "y": 82.23
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 39.49,
+              "y": 73.08
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 35.06,
+              "y": 77.71
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 38.32,
+              "y": 73.33
+            }
+          ],
+          "name": "Nazzivus Satyr",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17339,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 40.15,
+              "y": 79.58
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 38.76,
+              "y": 78.92
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 36.79,
+              "y": 82.46
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 37.0,
+              "y": 81.11
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 36.11,
+              "y": 82.02
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 35.96,
+              "y": 80.25
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 38.24,
+              "y": 77.72
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 34.83,
+              "y": 77.32
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 35.8,
+              "y": 77.13
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 40.39,
+              "y": 78.28
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 34.84,
+              "y": 76.34
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 33.82,
+              "y": 73.03
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 34.26,
+              "y": 76.6
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 33.81,
+              "y": 74.74
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 32.38,
+              "y": 80.57
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 33.33,
+              "y": 80.77
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 38.52,
+              "y": 72.88
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 32.9,
+              "y": 73.7
+            }
+          ],
+          "name": "Nazzivus Felsworn",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 7,
+      "quest_id": 9594,
+      "quest_name": "Signs of the Legion",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9576"
+      ],
+      "instruction": "Complete [QC9576 Cruelfin's Necklace]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 9576,
+      "quest_name": "Cruelfin's Necklace",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9581"
+      ],
+      "instruction": "Use the quest item [UI23875-] as directed; collect or use the required item: Impact Site Crystal Sample. [QC9581 Learning from the Crystals]",
+      "item_use_id": 23875,
+      "objective_hint": "Collect or use the required item: Impact Site Crystal Sample",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 23878,
+          "kind": "item",
+          "locations": [],
+          "name": "Impact Site Crystal Sample",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 9,
+      "quest_id": 9581,
+      "quest_name": "Learning from the Crystals",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17434,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 53.24,
+              "y": 57.74
+            }
+          ],
+          "name": "Morae",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9576"
+      ],
+      "instruction": "Turn in [QT9576 Cruelfin's Necklace] to Morae",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 9576,
+      "quest_name": "Cruelfin's Necklace",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17433,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 55.08,
+              "y": 57.99
+            }
+          ],
+          "name": "Vindicator Aalesia",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9594"
+      ],
+      "instruction": "Turn in [QT9594 Signs of the Legion] to Vindicator Aalesia",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 9594,
+      "quest_name": "Signs of the Legion",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17423,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 52.59,
+              "y": 53.21
+            }
+          ],
+          "name": "Harbinger Mikolaas",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9581"
+      ],
+      "instruction": "Turn in [QT9581 Learning from the Crystals] to Harbinger Mikolaas",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 9581,
+      "quest_name": "Learning from the Crystals",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17423,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 52.59,
+              "y": 53.21
+            }
+          ],
+          "name": "Harbinger Mikolaas",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9620"
+      ],
+      "instruction": "Accept [QA9620 The Missing Survey Team] from Harbinger Mikolaas.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 9620,
+      "quest_name": "The Missing Survey Team",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9620"
+      ],
+      "instruction": "Complete [QC9620 The Missing Survey Team]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 9620,
+      "quest_name": "The Missing Survey Team",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17600,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 61.18,
+              "y": 48.75
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 61.57,
+              "y": 48.41
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 61.25,
+              "y": 48.38
+            }
+          ],
+          "name": "Draenei Cartographer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9620"
+      ],
+      "instruction": "Turn in [QT9620 The Missing Survey Team] to Draenei Cartographer",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 9620,
+      "quest_name": "The Missing Survey Team",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17599,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 63.43,
+              "y": 88.79
+            }
+          ],
+          "name": "Aonar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9624"
+      ],
+      "instruction": "Accept [QA9624 A Favorite Treat] from Aonar.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 9624,
+      "quest_name": "A Favorite Treat",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9624"
+      ],
+      "instruction": "Collect or use the required item: Sand Pear. [QC9624 A Favorite Treat]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Sand Pear",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 23927,
+          "kind": "item",
+          "locations": [],
+          "name": "Sand Pear",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 17,
+      "quest_id": 9624,
+      "quest_name": "A Favorite Treat",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17599,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 63.43,
+              "y": 88.79
+            }
+          ],
+          "name": "Aonar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9624"
+      ],
+      "instruction": "Turn in [QT9624 A Favorite Treat] to Aonar",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 9624,
+      "quest_name": "A Favorite Treat",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17600,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 61.18,
+              "y": 48.75
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 61.57,
+              "y": 48.41
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 61.25,
+              "y": 48.38
+            }
+          ],
+          "name": "Draenei Cartographer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9628"
+      ],
+      "instruction": "Accept [QA9628 Salvaging the Data] from Draenei Cartographer.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 9628,
+      "quest_name": "Salvaging the Data",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9628"
+      ],
+      "instruction": "Collect or use the required item: Survey Data Crystal. [QC9628 Salvaging the Data]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Survey Data Crystal",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 23932,
+          "kind": "item",
+          "locations": [],
+          "name": "Survey Data Crystal",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 20,
+      "quest_id": 9628,
+      "quest_name": "Salvaging the Data",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17423,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 52.59,
+              "y": 53.21
+            }
+          ],
+          "name": "Harbinger Mikolaas",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9628"
+      ],
+      "instruction": "Turn in [QT9628 Salvaging the Data] to Harbinger Mikolaas",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 9628,
+      "quest_name": "Salvaging the Data",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17423,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 52.59,
+              "y": 53.21
+            }
+          ],
+          "name": "Harbinger Mikolaas",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9584"
+      ],
+      "instruction": "Accept [QA9584 The Second Sample] from Harbinger Mikolaas.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 22,
+      "quest_id": 9584,
+      "quest_name": "The Second Sample",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9584"
+      ],
+      "instruction": "Use the quest item [UI23876-] as directed; collect or use the required item: Altered Crystal Sample. [QC9584 The Second Sample]",
+      "item_use_id": 23876,
+      "objective_hint": "Collect or use the required item: Altered Crystal Sample",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 23879,
+          "kind": "item",
+          "locations": [],
+          "name": "Altered Crystal Sample",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 23,
+      "quest_id": 9584,
+      "quest_name": "The Second Sample",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17423,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 52.59,
+              "y": 53.21
+            }
+          ],
+          "name": "Harbinger Mikolaas",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9584"
+      ],
+      "instruction": "Turn in [QT9584 The Second Sample] to Harbinger Mikolaas",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 24,
+      "quest_id": 9584,
+      "quest_name": "The Second Sample",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17423,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 52.59,
+              "y": 53.21
+            }
+          ],
+          "name": "Harbinger Mikolaas",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9585"
+      ],
+      "instruction": "Accept [QA9585 The Final Sample] from Harbinger Mikolaas.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 25,
+      "quest_id": 9585,
+      "quest_name": "The Final Sample",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17434,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 53.24,
+              "y": 57.74
+            }
+          ],
+          "name": "Morae",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9629"
+      ],
+      "instruction": "Accept [QA9629 Catch and Release] from Morae.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 26,
+      "quest_id": 9629,
+      "quest_name": "Catch and Release",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9629"
+      ],
+      "instruction": "Use the quest item [UI23995-] as directed; complete the required NPC or creature objective: Blacksilt Scout. [QC9629 Catch and Release]",
+      "item_use_id": 23995,
+      "objective_hint": "Complete the required NPC or creature objective: Blacksilt Scout",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17326,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 52.38,
+              "y": 93.23
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 51.22,
+              "y": 94.98
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 51.27,
+              "y": 92.26
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 48.91,
+              "y": 93.66
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 46.1,
+              "y": 94.48
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 41.6,
+              "y": 94.14
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 42.65,
+              "y": 94.76
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 39.87,
+              "y": 95.25
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 37.24,
+              "y": 95.68
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 35.2,
+              "y": 94.09
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 34.7,
+              "y": 95.99
+            }
+          ],
+          "name": "Blacksilt Scout",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 27,
+      "quest_id": 9629,
+      "quest_name": "Catch and Release",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9585"
+      ],
+      "instruction": "Use the quest item [UI23877-] as directed; collect or use the required item: Axxarien Crystal Sample. [QC9585 The Final Sample]",
+      "item_use_id": 23877,
+      "objective_hint": "Collect or use the required item: Axxarien Crystal Sample",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 23880,
+          "kind": "item",
+          "locations": [],
+          "name": "Axxarien Crystal Sample",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 28,
+      "quest_id": 9585,
+      "quest_name": "The Final Sample",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17434,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 53.24,
+              "y": 57.74
+            }
+          ],
+          "name": "Morae",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9629"
+      ],
+      "instruction": "Turn in [QT9629 Catch and Release] to Morae",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 29,
+      "quest_id": 9629,
+      "quest_name": "Catch and Release",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17423,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 52.59,
+              "y": 53.21
+            }
+          ],
+          "name": "Harbinger Mikolaas",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9585"
+      ],
+      "instruction": "Turn in [QT9585 The Final Sample] to Harbinger Mikolaas",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 30,
+      "quest_id": 9585,
+      "quest_name": "The Final Sample",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17434,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 53.24,
+              "y": 57.74
+            }
+          ],
+          "name": "Morae",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9574"
+      ],
+      "instruction": "Accept [QA9574 Victims of Corruption] from Morae.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 31,
+      "quest_id": 9574,
+      "quest_name": "Victims of Corruption",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9574"
+      ],
+      "instruction": "Collect or use the required item: Crystallized Bark. [QC9574 Victims of Corruption]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Crystallized Bark",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 23869,
+          "kind": "item",
+          "locations": [],
+          "name": "Crystallized Bark",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 32,
+      "quest_id": 9574,
+      "quest_name": "Victims of Corruption",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17434,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 53.24,
+              "y": 57.74
+            }
+          ],
+          "name": "Morae",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9574"
+      ],
+      "instruction": "Turn in [QT9574 Victims of Corruption] to Morae",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 33,
+      "quest_id": 9574,
+      "quest_name": "Victims of Corruption",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17586,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 63.03,
+              "y": 87.9
+            }
+          ],
+          "name": "Vorkhan the Elekk Herder",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9634"
+      ],
+      "instruction": "Accept [QA9634 Alien Predators] from Vorkhan the Elekk Herder.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 34,
+      "quest_id": 9634,
+      "quest_name": "Alien Predators",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9634"
+      ],
+      "instruction": "Complete the required NPC or creature objective: Bloodmyst Hatchling. [QC9634 Alien Predators]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Bloodmyst Hatchling",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17525,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 68.63,
+              "y": 89.84
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 71.95,
+              "y": 85.2
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 67.91,
+              "y": 91.14
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 60.25,
+              "y": 88.8
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 68.6,
+              "y": 88.8
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 69.1,
+              "y": 86.77
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 70.32,
+              "y": 86.64
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 69.78,
+              "y": 85.66
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 72.67,
+              "y": 85.42
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 71.03,
+              "y": 84.48
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 73.68,
+              "y": 84.15
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 73.7,
+              "y": 82.23
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 72.6,
+              "y": 82.48
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 74.68,
+              "y": 83.67
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 74.69,
+              "y": 82.51
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 74.6,
+              "y": 80.78
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 74.12,
+              "y": 80.37
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 72.69,
+              "y": 79.97
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 74.67,
+              "y": 79.22
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 74.64,
+              "y": 77.88
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 73.73,
+              "y": 77.81
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 71.85,
+              "y": 83.83
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 70.82,
+              "y": 85.59
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 69.55,
+              "y": 88.2
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 59.44,
+              "y": 91.54
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 60.59,
+              "y": 91.99
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 59.32,
+              "y": 90.32
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 59.25,
+              "y": 88.86
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 59.64,
+              "y": 86.78
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 59.41,
+              "y": 85.35
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 58.84,
+              "y": 90.67
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 58.17,
+              "y": 88.82
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 58.48,
+              "y": 86.99
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 58.03,
+              "y": 87.31
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 60.05,
+              "y": 82.45
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 57.39,
+              "y": 88.69
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 58.34,
+              "y": 85.46
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 57.52,
+              "y": 85.82
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 56.48,
+              "y": 85.9
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 58.14,
+              "y": 83.84
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 58.22,
+              "y": 82.54
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 56.57,
+              "y": 83.63
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 57.76,
+              "y": 87.49
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 58.7,
+              "y": 80.9
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 58.13,
+              "y": 90.35
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 57.26,
+              "y": 90.08
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 56.1,
+              "y": 89.62
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 58.19,
+              "y": 90.69
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 55.72,
+              "y": 87.76
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 57.88,
+              "y": 90.95
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 57.75,
+              "y": 91.71
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 56.47,
+              "y": 91.82
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 58.77,
+              "y": 93.26
+            }
+          ],
+          "name": "Bloodmyst Hatchling",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 35,
+      "quest_id": 9634,
+      "quest_name": "Alien Predators",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17586,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 63.03,
+              "y": 87.9
+            }
+          ],
+          "name": "Vorkhan the Elekk Herder",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9634"
+      ],
+      "instruction": "Turn in [QT9634 Alien Predators] to Vorkhan the Elekk Herder",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 36,
+      "quest_id": 9634,
+      "quest_name": "Alien Predators",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17584,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3557,
+              "map_name": "The Exodar",
+              "verification": "questie_structured_source_only",
+              "x": 81.49,
+              "y": 51.44
+            }
+          ],
+          "name": "Torallius the Pack Handler",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9625"
+      ],
+      "instruction": "Accept [QA9625 Elekks Are Serious Business] from Torallius the Pack Handler.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 37,
+      "quest_id": 9625,
+      "quest_name": "Elekks Are Serious Business",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3524,
+      "zone_or_sort_name": "Azuremyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9625"
+      ],
+      "instruction": "Complete [QC9625 Elekks Are Serious Business]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 38,
+      "quest_id": 9625,
+      "quest_name": "Elekks Are Serious Business",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3524,
+      "zone_or_sort_name": "Azuremyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17586,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 63.03,
+              "y": 87.9
+            }
+          ],
+          "name": "Vorkhan the Elekk Herder",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9625"
+      ],
+      "instruction": "Turn in [QT9625 Elekks Are Serious Business] to Vorkhan the Elekk Herder",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 39,
+      "quest_id": 9625,
+      "quest_name": "Elekks Are Serious Business",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3524,
+      "zone_or_sort_name": "Azuremyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 181889,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 55.26,
+              "y": 59.12
+            }
+          ],
+          "name": "Wanted Poster",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9646"
+      ],
+      "instruction": "Accept [QA9646 WANTED: Deathclaw] from Wanted Poster.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 40,
+      "quest_id": 9646,
+      "quest_name": "WANTED: Deathclaw",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17663,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 56.42,
+              "y": 56.82
+            }
+          ],
+          "name": "Jessera of Mac'Aree",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9648"
+      ],
+      "instruction": "Accept [QA9648 Maatparm Mushroom Menagerie] from Jessera of Mac'Aree.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 41,
+      "quest_id": 9648,
+      "quest_name": "Maatparm Mushroom Menagerie",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9646"
+      ],
+      "instruction": "Collect or use the required item: Deathclaw's Paw. [QC9646 WANTED: Deathclaw]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Deathclaw's Paw",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 24025,
+          "kind": "item",
+          "locations": [],
+          "name": "Deathclaw's Paw",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 42,
+      "quest_id": 9646,
+      "quest_name": "WANTED: Deathclaw",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9648"
+      ],
+      "instruction": "Collect or use the required items: Aquatic Stinkhorn, Blood Mushroom, Ruinous Polyspore, plus 1 more. [QC9648 Maatparm Mushroom Menagerie]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Aquatic Stinkhorn, Blood Mushroom, Ruinous Polyspore, plus 1 more",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 24041,
+          "kind": "item",
+          "locations": [],
+          "name": "Aquatic Stinkhorn",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 24040,
+          "kind": "item",
+          "locations": [],
+          "name": "Blood Mushroom",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 24042,
+          "kind": "item",
+          "locations": [],
+          "name": "Ruinous Polyspore",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 24043,
+          "kind": "item",
+          "locations": [],
+          "name": "Fel Cone Fungus",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 43,
+      "quest_id": 9648,
+      "quest_name": "Maatparm Mushroom Menagerie",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17663,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 56.42,
+              "y": 56.82
+            }
+          ],
+          "name": "Jessera of Mac'Aree",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9648"
+      ],
+      "instruction": "Turn in [QT9648 Maatparm Mushroom Menagerie] to Jessera of Mac'Aree",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 44,
+      "quest_id": 9648,
+      "quest_name": "Maatparm Mushroom Menagerie",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17423,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 52.59,
+              "y": 53.21
+            }
+          ],
+          "name": "Harbinger Mikolaas",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9646"
+      ],
+      "instruction": "Turn in [QT9646 WANTED: Deathclaw] to Harbinger Mikolaas",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 45,
+      "quest_id": 9646,
+      "quest_name": "WANTED: Deathclaw",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17649,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 62.99,
+              "y": 87.54
+            }
+          ],
+          "name": "Kessel",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9663"
+      ],
+      "instruction": "Accept [QA9663 The Kessel Run] from Kessel.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 46,
+      "quest_id": 9663,
+      "quest_name": "The Kessel Run",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9663"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: High Chief Stillpine, Exarch Menelaous, Admiral Odesyus. [QC9663 The Kessel Run]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: High Chief Stillpine, Exarch Menelaous, Admiral Odesyus",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17440,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 46.69,
+              "y": 20.61
+            }
+          ],
+          "name": "High Chief Stillpine",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17116,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 47.11,
+              "y": 50.6
+            }
+          ],
+          "name": "Exarch Menelaous",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17240,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 47.04,
+              "y": 70.21
+            }
+          ],
+          "name": "Admiral Odesyus",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 47,
+      "quest_id": 9663,
+      "quest_name": "The Kessel Run",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17649,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 62.99,
+              "y": 87.54
+            }
+          ],
+          "name": "Kessel",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9663"
+      ],
+      "instruction": "Turn in [QT9663 The Kessel Run] to Kessel",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 48,
+      "quest_id": 9663,
+      "quest_name": "The Kessel Run",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17649,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 62.99,
+              "y": 87.54
+            }
+          ],
+          "name": "Kessel",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9666"
+      ],
+      "instruction": "Accept [QA9666 Declaration of Power] from Kessel.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 49,
+      "quest_id": 9666,
+      "quest_name": "Declaration of Power",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17682,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 68.26,
+              "y": 80.99
+            }
+          ],
+          "name": "Princess Stillpine",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9667"
+      ],
+      "instruction": "Accept [QA9667 Saving Princess Stillpine] from Princess Stillpine.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 50,
+      "quest_id": 9667,
+      "quest_name": "Saving Princess Stillpine",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9667"
+      ],
+      "instruction": "Use the quest item [UI24099-] as directed; complete the required NPC or creature objective: Princess Stillpine. [QC9667 Saving Princess Stillpine]",
+      "item_use_id": 24099,
+      "objective_hint": "Complete the required NPC or creature objective: Princess Stillpine",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17682,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 68.26,
+              "y": 80.99
+            }
+          ],
+          "name": "Princess Stillpine",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 51,
+      "quest_id": 9667,
+      "quest_name": "Saving Princess Stillpine",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9666"
+      ],
+      "instruction": "Complete the scripted or exploration event; complete the required NPC or creature objective: Lord Xiz. [QC9666 Declaration of Power]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Lord Xiz",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17701,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 68.77,
+              "y": 68.16
+            }
+          ],
+          "name": "Lord Xiz",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 52,
+      "quest_id": 9666,
+      "quest_name": "Declaration of Power",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18803,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 55.16,
+              "y": 55.95
+            }
+          ],
+          "name": "Stillpine Ambassador Frasaboo",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9667"
+      ],
+      "instruction": "Turn in [QT9667 Saving Princess Stillpine] to Stillpine Ambassador Frasaboo",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 53,
+      "quest_id": 9667,
+      "quest_name": "Saving Princess Stillpine",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17649,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 62.99,
+              "y": 87.54
+            }
+          ],
+          "name": "Kessel",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9666"
+      ],
+      "instruction": "Turn in [QT9666 Declaration of Power] to Kessel",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 54,
+      "quest_id": 9666,
+      "quest_name": "Declaration of Power",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17658,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 52.68,
+              "y": 53.21
+            }
+          ],
+          "name": "Exarch Admetius",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9693"
+      ],
+      "instruction": "Accept [QA9693 What Argus Means to Me] from Exarch Admetius.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 55,
+      "quest_id": 9693,
+      "quest_name": "What Argus Means to Me",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9693"
+      ],
+      "instruction": "Complete [QC9693 What Argus Means to Me]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 56,
+      "quest_id": 9693,
+      "quest_name": "What Argus Means to Me",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17684,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 55.42,
+              "y": 55.27
+            }
+          ],
+          "name": "Vindicator Boros",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9693"
+      ],
+      "instruction": "Turn in [QT9693 What Argus Means to Me] to Vindicator Boros",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 57,
+      "quest_id": 9693,
+      "quest_name": "What Argus Means to Me",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17649,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 62.99,
+              "y": 87.54
+            }
+          ],
+          "name": "Kessel",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9668"
+      ],
+      "instruction": "Accept [QA9668 Report to Exarch Admetius] from Kessel.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 58,
+      "quest_id": 9668,
+      "quest_name": "Report to Exarch Admetius",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9668"
+      ],
+      "instruction": "Complete [QC9668 Report to Exarch Admetius]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 59,
+      "quest_id": 9668,
+      "quest_name": "Report to Exarch Admetius",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17658,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 52.68,
+              "y": 53.21
+            }
+          ],
+          "name": "Exarch Admetius",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9668"
+      ],
+      "instruction": "Turn in [QT9668 Report to Exarch Admetius] to Exarch Admetius",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 60,
+      "quest_id": 9668,
+      "quest_name": "Report to Exarch Admetius",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17684,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 55.42,
+              "y": 55.27
+            }
+          ],
+          "name": "Vindicator Boros",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9694"
+      ],
+      "instruction": "Accept [QA9694 Blood Watch] from Vindicator Boros.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 61,
+      "quest_id": 9694,
+      "quest_name": "Blood Watch",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9694"
+      ],
+      "instruction": "Complete the required NPC or creature objective: Sunhawk Spy. [QC9694 Blood Watch]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Sunhawk Spy",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17604,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 47.83,
+              "y": 50.2
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 45.83,
+              "y": 50.63
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 46.54,
+              "y": 46.15
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 48.23,
+              "y": 48.75
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 47.5,
+              "y": 43.92
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 46.02,
+              "y": 44.68
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 48.79,
+              "y": 46.96
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 50.69,
+              "y": 45.78
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 48.12,
+              "y": 44.86
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 48.97,
+              "y": 45.72
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 49.18,
+              "y": 48.21
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 48.95,
+              "y": 50.61
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 46.35,
+              "y": 47.89
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 49.43,
+              "y": 50.1
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 47.36,
+              "y": 45.73
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 49.99,
+              "y": 46.07
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 47.2,
+              "y": 42.46
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 48.39,
+              "y": 43.29
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 49.65,
+              "y": 43.38
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 48.56,
+              "y": 42.41
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 50.45,
+              "y": 49.29
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 45.39,
+              "y": 48.68
+            },
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 45.13,
+              "y": 47.04
+            }
+          ],
+          "name": "Sunhawk Spy",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 62,
+      "quest_id": 9694,
+      "quest_name": "Blood Watch",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17684,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 55.42,
+              "y": 55.27
+            }
+          ],
+          "name": "Vindicator Boros",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9694"
+      ],
+      "instruction": "Turn in [QT9694 Blood Watch] to Vindicator Boros",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 63,
+      "quest_id": 9694,
+      "quest_name": "Blood Watch",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    }
+  ],
+  "title": "05 Bloodmyst Isle"
+}

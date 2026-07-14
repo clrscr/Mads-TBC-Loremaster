@@ -1,0 +1,1146 @@
+{
+  "branch": "optional_content",
+  "entry_contract": "Complete either Expedition Point or Ill Omens. Begin in Winterspring with Malyfous's Catalogue. Leave at least two quest-log slots open; group and reputation gates remain explicit.",
+  "entry_route_point": {
+    "map_id": 618,
+    "map_name": "Winterspring",
+    "x": 61.0,
+    "y": 38.8
+  },
+  "entry_zone_or_sort": 618,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 1537,
+    "map_name": "Ironforge",
+    "quest_id": 8952,
+    "tag": "QT",
+    "x": 43.53,
+    "y": 52.64
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [
+    [
+      10143,
+      10483
+    ]
+  ],
+  "external_prerequisite_quest_ids": [
+    10143,
+    10483
+  ],
+  "group": "Mad's Loremaster Guide - Optional Content",
+  "guide_file": "Guides/optional_content/124_dungeon_28.lua",
+  "id": "124-optional_content-optional-content-28---winterspring-&-hellfire-citadel",
+  "maximum_level": null,
+  "minimum_level": null,
+  "next_chapter": "Optional Content 29 - Hunter & Epic",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "Optional Content 27 - Dire Maul & Blackrock Spire",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 5063,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5047:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5063:starter"
+      ],
+      "instruction": "Continue within Winterspring to the next route hub at [G61.00,38.80 Winterspring]. [O]",
+      "map_id": 618,
+      "map_name": "Winterspring",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 618,
+      "origin_map_name": "Winterspring",
+      "origin_x": 60.99,
+      "origin_y": 38.78,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 61.0,
+      "y": 38.8
+    },
+    {
+      "before_quest_id": 5063,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10143:dependency",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10483:dependency"
+      ],
+      "instruction": "Optional entry requirements: complete either Expedition Point or Ill Omens. [O]",
+      "map_id": 618,
+      "map_name": "Winterspring",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        10143,
+        10483
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "branch_entry",
+      "verification": "route_dependency_graph",
+      "x": 61.0,
+      "y": 38.8
+    },
+    {
+      "before_quest_id": 5063,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5063:starter"
+      ],
+      "instruction": "Optional chapter: travel to Winterspring and begin at [G61.00,38.80 Winterspring]. Leave at least two quest-log slots open. [O]",
+      "map_id": 618,
+      "map_name": "Winterspring",
+      "optional": true,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 61.0,
+      "y": 38.8
+    },
+    {
+      "before_quest_id": 5063,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5063:requiredLevel"
+      ],
+      "instruction": "Reach level 62 before accepting Cap of the Scarlet Savant. [XP62 Level 62]",
+      "map_id": 618,
+      "map_name": "Winterspring",
+      "optional": false,
+      "order": 4,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 62,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 61.0,
+      "y": 38.8
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 175927,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 61.0,
+              "y": 38.8
+            }
+          ],
+          "name": "Malyfous's Catalogue",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5063"
+      ],
+      "instruction": "Accept [QA5063 Cap of the Scarlet Savant] from Malyfous's Catalogue.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 5063,
+      "quest_name": "Cap of the Scarlet Savant",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 618,
+      "zone_or_sort_name": "Winterspring"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 175927,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 61.0,
+              "y": 38.8
+            }
+          ],
+          "name": "Malyfous's Catalogue",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5067"
+      ],
+      "instruction": "Accept [QA5067 Leggings of Arcana] from Malyfous's Catalogue.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 5067,
+      "quest_name": "Leggings of Arcana",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 618,
+      "zone_or_sort_name": "Winterspring"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 175927,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 61.0,
+              "y": 38.8
+            }
+          ],
+          "name": "Malyfous's Catalogue",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5068"
+      ],
+      "instruction": "Accept [QA5068 Breastplate of Bloodthirst] from Malyfous's Catalogue.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 5068,
+      "quest_name": "Breastplate of Bloodthirst",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 618,
+      "zone_or_sort_name": "Winterspring"
+    },
+    {
+      "before_quest_id": 5063,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5063:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 618,
+      "map_name": "Winterspring",
+      "optional": true,
+      "order": 8,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        5063
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 61.0,
+      "y": 38.8
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5063"
+      ],
+      "instruction": "Elite/group recommended \u2014 Collect or use the required items: Pristine Hide of the Beast, Frayed Abomination Stitching, Arcane Crystal, plus 1 more. [QC5063 Cap of the Scarlet Savant]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Pristine Hide of the Beast, Frayed Abomination Stitching, Arcane Crystal, plus 1 more",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 12731,
+          "kind": "item",
+          "locations": [],
+          "name": "Pristine Hide of the Beast",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 12735,
+          "kind": "item",
+          "locations": [],
+          "name": "Frayed Abomination Stitching",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 12363,
+          "kind": "item",
+          "locations": [],
+          "name": "Arcane Crystal",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 12734,
+          "kind": "item",
+          "locations": [],
+          "name": "Enchanted Scarlet Thread",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 9,
+      "quest_id": 5063,
+      "quest_name": "Cap of the Scarlet Savant",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 618,
+      "zone_or_sort_name": "Winterspring"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5067"
+      ],
+      "instruction": "Elite/group recommended \u2014 Collect or use the required items: Pristine Hide of the Beast, Frayed Abomination Stitching, Arcanite Bar, plus 1 more. [QC5067 Leggings of Arcana]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Pristine Hide of the Beast, Frayed Abomination Stitching, Arcanite Bar, plus 1 more",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 12731,
+          "kind": "item",
+          "locations": [],
+          "name": "Pristine Hide of the Beast",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 12735,
+          "kind": "item",
+          "locations": [],
+          "name": "Frayed Abomination Stitching",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 12360,
+          "kind": "item",
+          "locations": [],
+          "name": "Arcanite Bar",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 12736,
+          "kind": "item",
+          "locations": [],
+          "name": "Frostwhisper's Embalming Fluid",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 10,
+      "quest_id": 5067,
+      "quest_name": "Leggings of Arcana",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 618,
+      "zone_or_sort_name": "Winterspring"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5068"
+      ],
+      "instruction": "Elite/group recommended \u2014 Collect or use the required items: Pristine Hide of the Beast, Frayed Abomination Stitching, Arcanite Bar, plus 1 more. [QC5068 Breastplate of Bloodthirst]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Pristine Hide of the Beast, Frayed Abomination Stitching, Arcanite Bar, plus 1 more",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 12731,
+          "kind": "item",
+          "locations": [],
+          "name": "Pristine Hide of the Beast",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 12735,
+          "kind": "item",
+          "locations": [],
+          "name": "Frayed Abomination Stitching",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 12360,
+          "kind": "item",
+          "locations": [],
+          "name": "Arcanite Bar",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 12753,
+          "kind": "item",
+          "locations": [],
+          "name": "Skin of Shadow",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 11,
+      "quest_id": 5068,
+      "quest_name": "Breastplate of Bloodthirst",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 618,
+      "zone_or_sort_name": "Winterspring"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10637,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 60.99,
+              "y": 38.78
+            }
+          ],
+          "name": "Malyfous Darkhammer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5063"
+      ],
+      "instruction": "Turn in [QT5063 Cap of the Scarlet Savant] to Malyfous Darkhammer",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 5063,
+      "quest_name": "Cap of the Scarlet Savant",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 618,
+      "zone_or_sort_name": "Winterspring"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10637,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 60.99,
+              "y": 38.78
+            }
+          ],
+          "name": "Malyfous Darkhammer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5067"
+      ],
+      "instruction": "Turn in [QT5067 Leggings of Arcana] to Malyfous Darkhammer",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 5067,
+      "quest_name": "Leggings of Arcana",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 618,
+      "zone_or_sort_name": "Winterspring"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10637,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 60.99,
+              "y": 38.78
+            }
+          ],
+          "name": "Malyfous Darkhammer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5068"
+      ],
+      "instruction": "Turn in [QT5068 Breastplate of Bloodthirst] to Malyfous Darkhammer",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 5068,
+      "quest_name": "Breastplate of Bloodthirst",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 618,
+      "zone_or_sort_name": "Winterspring"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17557,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 56.73,
+              "y": 66.34
+            }
+          ],
+          "name": "Lieutenant Chadwick",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9575"
+      ],
+      "instruction": "Accept [QA9575 Weaken the Ramparts] from Lieutenant Chadwick.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 9575,
+      "quest_name": "Weaken the Ramparts",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3563,
+      "zone_or_sort_name": "Hellfire Citadel"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17479,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 56.4,
+              "y": 66.66
+            }
+          ],
+          "name": "Gunny",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9589"
+      ],
+      "instruction": "Accept [QA9589 The Blood is Life] from Gunny.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 9589,
+      "quest_name": "The Blood is Life",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3563,
+      "zone_or_sort_name": "Hellfire Citadel"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9575"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required items: Gargolmar's Hand, Omor's Hoof, Nazan's Head. [QC9575 Weaken the Ramparts]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Gargolmar's Hand, Omor's Hoof, Nazan's Head",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 23881,
+          "kind": "item",
+          "locations": [],
+          "name": "Gargolmar's Hand",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 23886,
+          "kind": "item",
+          "locations": [],
+          "name": "Omor's Hoof",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 23901,
+          "kind": "item",
+          "locations": [],
+          "name": "Nazan's Head",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 17,
+      "quest_id": 9575,
+      "quest_name": "Weaken the Ramparts",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3563,
+      "zone_or_sort_name": "Hellfire Citadel"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9589"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required item: Fel Orc Blood Vial. [QC9589 The Blood is Life]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Fel Orc Blood Vial",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 23894,
+          "kind": "item",
+          "locations": [],
+          "name": "Fel Orc Blood Vial",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 18,
+      "quest_id": 9589,
+      "quest_name": "The Blood is Life",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3563,
+      "zone_or_sort_name": "Hellfire Citadel"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17479,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 56.4,
+              "y": 66.66
+            }
+          ],
+          "name": "Gunny",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9575"
+      ],
+      "instruction": "Turn in [QT9575 Weaken the Ramparts] to Gunny",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 9575,
+      "quest_name": "Weaken the Ramparts",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3563,
+      "zone_or_sort_name": "Hellfire Citadel"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17479,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 56.4,
+              "y": 66.66
+            }
+          ],
+          "name": "Gunny",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9589"
+      ],
+      "instruction": "Turn in [QT9589 The Blood is Life] to Gunny",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 9589,
+      "quest_name": "The Blood is Life",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3563,
+      "zone_or_sort_name": "Hellfire Citadel"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17479,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 56.4,
+              "y": 66.66
+            }
+          ],
+          "name": "Gunny",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9607"
+      ],
+      "instruction": "Accept [QA9607 Heart of Rage] from Gunny.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 9607,
+      "quest_name": "Heart of Rage",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3563,
+      "zone_or_sort_name": "Hellfire Citadel"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9607"
+      ],
+      "instruction": "Dungeon \u2014 Complete the scripted or exploration event. [QC9607 Heart of Rage]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 22,
+      "quest_id": 9607,
+      "quest_name": "Heart of Rage",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 3563,
+      "zone_or_sort_name": "Hellfire Citadel"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16819,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 56.64,
+              "y": 66.7
+            }
+          ],
+          "name": "Force Commander Danath Trollbane",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9607"
+      ],
+      "instruction": "Turn in [QT9607 Heart of Rage] to Force Commander Danath Trollbane",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 23,
+      "quest_id": 9607,
+      "quest_name": "Heart of Rage",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3563,
+      "zone_or_sort_name": "Hellfire Citadel"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16016,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 139,
+              "map_name": "Eastern Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 30.85,
+              "y": 16.75
+            }
+          ],
+          "name": "Anthion Harmon",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8952"
+      ],
+      "instruction": "Accept [QA8952 Anthion's Parting Words] from Anthion Harmon.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 24,
+      "quest_id": 8952,
+      "quest_name": "Anthion's Parting Words",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8952"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required items: Beaststalker's Boots, Beaststalker's Pants, Beaststalker's Mantle. [QC8952 Anthion's Parting Words]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Beaststalker's Boots, Beaststalker's Pants, Beaststalker's Mantle",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 16675,
+          "kind": "item",
+          "locations": [],
+          "name": "Beaststalker's Boots",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 16678,
+          "kind": "item",
+          "locations": [],
+          "name": "Beaststalker's Pants",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 16679,
+          "kind": "item",
+          "locations": [],
+          "name": "Beaststalker's Mantle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 25,
+      "quest_id": 8952,
+      "quest_name": "Anthion's Parting Words",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16013,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 43.53,
+              "y": 52.64
+            }
+          ],
+          "name": "Deliana",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8952"
+      ],
+      "instruction": "Turn in [QT8952 Anthion's Parting Words] to Deliana",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 26,
+      "quest_id": 8952,
+      "quest_name": "Anthion's Parting Words",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    }
+  ],
+  "title": "Optional Content 28 - Winterspring & Hellfire Citadel"
+}

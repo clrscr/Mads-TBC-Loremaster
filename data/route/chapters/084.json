@@ -1,0 +1,1247 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 83 Zangarmarsh & Hellfire Peninsula, or select this chapter on a partially completed character. Begin in Shattrath City with Haggard War Veteran. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 3703,
+    "map_name": "Shattrath City",
+    "x": 61.82,
+    "y": 9.91
+  },
+  "entry_zone_or_sort": 3519,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 3519,
+    "map_name": "Terokkar Forest",
+    "quest_id": 9951,
+    "tag": "QT",
+    "x": 43.44,
+    "y": 22.36
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/084_world_84.lua",
+  "id": "084-primary-84-terokkar-forest-&-shattrath-city",
+  "maximum_level": 62,
+  "minimum_level": 60,
+  "next_chapter": "85 Zangarmarsh",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "83 Zangarmarsh & Hellfire Peninsula",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 10210,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10355:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10210:starter"
+      ],
+      "instruction": "Travel from Zangarmarsh to Shattrath City. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G61.82,9.91 Shattrath City]. [O]",
+      "map_id": 3703,
+      "map_name": "Shattrath City",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 3521,
+      "origin_map_name": "Zangarmarsh",
+      "origin_x": 68.63,
+      "origin_y": 48.73,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 61.82,
+      "y": 9.91
+    },
+    {
+      "before_quest_id": 10210,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10210:starter"
+      ],
+      "instruction": "Before you begin: travel to Shattrath City and meet the first quest giver at [G61.82,9.91 Shattrath City]. Leave at least two quest-log slots open. [O]",
+      "map_id": 3703,
+      "map_name": "Shattrath City",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 61.82,
+      "y": 9.91
+    },
+    {
+      "before_quest_id": 10210,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "ux-policy:milestone:shattrath"
+      ],
+      "instruction": "Milestone: Shattrath is your central Outland hub. Primary Route chooses the Aldor; choose Scryer Alternative before accepting Allegiance to the Aldor if you prefer the Scryers. [O]",
+      "map_id": 3703,
+      "map_name": "Shattrath City",
+      "optional": true,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "milestone",
+      "verification": "player_experience_policy",
+      "x": 61.82,
+      "y": 9.91
+    },
+    {
+      "before_quest_id": 10210,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10210:requiredLevel"
+      ],
+      "instruction": "Reach level 60 before accepting A'dal. [XP60 Level 60]",
+      "map_id": 3703,
+      "map_name": "Shattrath City",
+      "optional": false,
+      "order": 4,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 60,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 61.82,
+      "y": 9.91
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19684,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 61.82,
+              "y": 9.91
+            },
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 72.71,
+              "y": 55.21
+            },
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 77.16,
+              "y": 43.44
+            },
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 73.0,
+              "y": 17.79
+            },
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 59.66,
+              "y": 41.43
+            }
+          ],
+          "name": "Haggard War Veteran",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10210"
+      ],
+      "instruction": "Accept [QA10210 A'dal] from Haggard War Veteran.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 10210,
+      "quest_name": "A'dal",
+      "quest_tag": null,
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10210"
+      ],
+      "instruction": "Complete [QC10210 A'dal]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 10210,
+      "quest_name": "A'dal",
+      "quest_tag": null,
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18481,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 53.99,
+              "y": 44.75
+            }
+          ],
+          "name": "A'dal",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10210"
+      ],
+      "instruction": "Turn in [QT10210 A'dal] to A'dal",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 10210,
+      "quest_name": "A'dal",
+      "quest_tag": null,
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18713,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 57.5,
+              "y": 55.78
+            }
+          ],
+          "name": "Lieutenant Gravelhammer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10869"
+      ],
+      "instruction": "Accept [QA10869 Thin the Flock] from Lieutenant Gravelhammer.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 10869,
+      "quest_name": "Thin the Flock",
+      "quest_tag": null,
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10869"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Shienor Talonite, Shienor Sorcerer. [QC10869 Thin the Flock]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Shienor Talonite, Shienor Sorcerer",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18449,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 59.97,
+              "y": 27.5
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 60.46,
+              "y": 25.66
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 60.4,
+              "y": 24.44
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 60.7,
+              "y": 23.54
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 59.92,
+              "y": 22.68
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 60.02,
+              "y": 23.38
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 58.42,
+              "y": 22.62
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 58.05,
+              "y": 22.67
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 57.45,
+              "y": 25.66
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 56.87,
+              "y": 25.36
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 56.72,
+              "y": 24.56
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 57.28,
+              "y": 26.5
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 58.63,
+              "y": 25.69
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 56.24,
+              "y": 25.46
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 58.71,
+              "y": 27.44
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 58.82,
+              "y": 26.14
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 58.05,
+              "y": 27.17
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 59.37,
+              "y": 26.22
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 59.34,
+              "y": 27.5
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.87,
+              "y": 19.27
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.9,
+              "y": 19.63
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.53,
+              "y": 19.34
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.41,
+              "y": 18.17
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 50.01,
+              "y": 17.9
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 50.89,
+              "y": 18.12
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 50.03,
+              "y": 17.04
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.88,
+              "y": 15.53
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.84,
+              "y": 13.75
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.73,
+              "y": 14.34
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.24,
+              "y": 13.27
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.72,
+              "y": 13.46
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.49,
+              "y": 13.48
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.14,
+              "y": 13.35
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.38,
+              "y": 18.09
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.36,
+              "y": 18.99
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.97,
+              "y": 18.04
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.84,
+              "y": 19.08
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.11,
+              "y": 16.2
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.71,
+              "y": 16.32
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.39,
+              "y": 16.23
+            }
+          ],
+          "name": "Shienor Talonite",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18450,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 60.18,
+              "y": 26.83
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 59.42,
+              "y": 24.45
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 58.52,
+              "y": 24.63
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 58.6,
+              "y": 21.92
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 57.23,
+              "y": 24.23
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 57.94,
+              "y": 24.38
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 58.32,
+              "y": 24.72
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.97,
+              "y": 18.82
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.97,
+              "y": 17.17
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.34,
+              "y": 14.82
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.39,
+              "y": 14.19
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 50.85,
+              "y": 16.55
+            }
+          ],
+          "name": "Shienor Sorcerer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 9,
+      "quest_id": 10869,
+      "quest_name": "Thin the Flock",
+      "quest_tag": null,
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18713,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 57.5,
+              "y": 55.78
+            }
+          ],
+          "name": "Lieutenant Gravelhammer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10869"
+      ],
+      "instruction": "Turn in [QT10869 Thin the Flock] to Lieutenant Gravelhammer",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 10869,
+      "quest_name": "Thin the Flock",
+      "quest_tag": null,
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18166,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 54.75,
+              "y": 44.32
+            }
+          ],
+          "name": "Khadgar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10211"
+      ],
+      "instruction": "Accept [QA10211 City of Light] from Khadgar.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 10211,
+      "quest_name": "City of Light",
+      "quest_tag": null,
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10211"
+      ],
+      "instruction": "Complete the scripted or exploration event. [QC10211 City of Light]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 10211,
+      "quest_name": "City of Light",
+      "quest_tag": null,
+      "required_level": 60,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18166,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 54.75,
+              "y": 44.32
+            }
+          ],
+          "name": "Khadgar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10211"
+      ],
+      "instruction": "Turn in [QT10211 City of Light] to Khadgar",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 10211,
+      "quest_name": "City of Light",
+      "quest_tag": null,
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18166,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 54.75,
+              "y": 44.32
+            }
+          ],
+          "name": "Khadgar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10551"
+      ],
+      "instruction": "Accept [QA10551 Allegiance to the Aldor] from Khadgar.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 10551,
+      "quest_name": "Allegiance to the Aldor",
+      "quest_tag": null,
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10551"
+      ],
+      "instruction": "Complete [QC10551 Allegiance to the Aldor]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 10551,
+      "quest_name": "Allegiance to the Aldor",
+      "quest_tag": null,
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18166,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 54.75,
+              "y": 44.32
+            }
+          ],
+          "name": "Khadgar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10551"
+      ],
+      "instruction": "Turn in [QT10551 Allegiance to the Aldor] to Khadgar",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 10551,
+      "quest_name": "Allegiance to the Aldor",
+      "quest_tag": null,
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 24729,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 66.47,
+              "y": 14.39
+            }
+          ],
+          "name": "Alicia",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11451"
+      ],
+      "instruction": "Accept [QA11451 Alicia's Poem] from Alicia.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 11451,
+      "quest_name": "Alicia's Poem",
+      "quest_tag": null,
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11451"
+      ],
+      "instruction": "Complete [QC11451 Alicia's Poem]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 11451,
+      "quest_name": "Alicia's Poem",
+      "quest_tag": null,
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 24727,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 31.19,
+              "y": 27.74
+            }
+          ],
+          "name": "Caylee Dak",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11451"
+      ],
+      "instruction": "Turn in [QT11451 Alicia's Poem] to Caylee Dak",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 11451,
+      "quest_name": "Alicia's Poem",
+      "quest_tag": null,
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "before_quest_id": 9951,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9951:requiredLevel"
+      ],
+      "instruction": "Reach level 62 before accepting It's Watching You! [XP62 Level 62]",
+      "map_id": 3519,
+      "map_name": "Terokkar Forest",
+      "optional": false,
+      "order": 20,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 62,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 43.44,
+      "y": 22.36
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18424,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 43.44,
+              "y": 22.36
+            }
+          ],
+          "name": "Warden Treelos",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9951"
+      ],
+      "instruction": "Accept [QA9951 It's Watching You!] from Warden Treelos.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 9951,
+      "quest_name": "It's Watching You!",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9951"
+      ],
+      "instruction": "Complete the required NPC or creature objective: Naphthal'ar. [QC9951 It's Watching You!]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Naphthal'ar",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18438,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 43.54,
+              "y": 22.07
+            }
+          ],
+          "name": "Naphthal'ar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 22,
+      "quest_id": 9951,
+      "quest_name": "It's Watching You!",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18424,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 43.44,
+              "y": 22.36
+            }
+          ],
+          "name": "Warden Treelos",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9951"
+      ],
+      "instruction": "Turn in [QT9951 It's Watching You!] to Warden Treelos",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 23,
+      "quest_id": 9951,
+      "quest_name": "It's Watching You!",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    }
+  ],
+  "title": "84 Terokkar Forest & Shattrath City"
+}

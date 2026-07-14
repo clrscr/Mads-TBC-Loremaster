@@ -1,0 +1,1691 @@
+{
+  "branch": "optional_content",
+  "entry_contract": "Complete the relevant shared prerequisites. Begin in Tanaris with Magical Ledger. Leave at least two quest-log slots open; group and reputation gates remain explicit.",
+  "entry_route_point": {
+    "map_id": 440,
+    "map_name": "Tanaris",
+    "x": 65.24,
+    "y": 18.58
+  },
+  "entry_zone_or_sort": 16,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 141,
+    "map_name": "Teldrassil",
+    "quest_id": 8733,
+    "tag": "QT",
+    "x": 37.55,
+    "y": 47.92
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Optional Content",
+  "guide_file": "Guides/optional_content/131_raid_35.lua",
+  "id": "131-optional_content-optional-content-35---azshara-&-tanaris",
+  "maximum_level": null,
+  "minimum_level": null,
+  "next_chapter": "Optional Content 36 - Teldrassil & Moonglade",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "Optional Content 34 - Blackwing Lair & Silithus",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 8575,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8555:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8575:finisher"
+      ],
+      "instruction": "Continue within Tanaris to the next route hub at [G65.24,18.58 Tanaris]. [O]",
+      "map_id": 440,
+      "map_name": "Tanaris",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 440,
+      "origin_map_name": "Tanaris",
+      "origin_x": 64.2,
+      "origin_y": 51.42,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 65.24,
+      "y": 18.58
+    },
+    {
+      "before_quest_id": 8575,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "route-branch:optional_content"
+      ],
+      "instruction": "Optional entry requirements: complete the relevant shared prerequisites. [O]",
+      "map_id": 440,
+      "map_name": "Tanaris",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "branch_entry",
+      "verification": "route_dependency_graph",
+      "x": 65.24,
+      "y": 18.58
+    },
+    {
+      "before_quest_id": 8575,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8575:finisher"
+      ],
+      "instruction": "Optional chapter: travel to Tanaris and begin at [G65.24,18.58 Tanaris]. Leave at least two quest-log slots open. [O]",
+      "map_id": 440,
+      "map_name": "Tanaris",
+      "optional": true,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 65.24,
+      "y": 18.58
+    },
+    {
+      "before_quest_id": 8575,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8575:requiredLevel"
+      ],
+      "instruction": "Reach level 62 before accepting Azuregos's Magical Ledger. [XP62 Level 62]",
+      "map_id": 16,
+      "map_name": "Azshara",
+      "optional": false,
+      "order": 4,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 62,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": null,
+      "y": null
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 20949,
+          "kind": "item",
+          "locations": [],
+          "name": "Magical Ledger",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8575"
+      ],
+      "instruction": "Accept [QA8575 Azuregos's Magical Ledger] from Magical Ledger.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 8575,
+      "quest_name": "Azuregos's Magical Ledger",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8575"
+      ],
+      "instruction": "Complete [QC8575 Azuregos's Magical Ledger]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 8575,
+      "quest_name": "Azuregos's Magical Ledger",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11811,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 65.24,
+              "y": 18.58
+            }
+          ],
+          "name": "Narain Soothfancy",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8575"
+      ],
+      "instruction": "Turn in [QT8575 Azuregos's Magical Ledger] to Narain Soothfancy",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 8575,
+      "quest_name": "Azuregos's Magical Ledger",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11811,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 65.24,
+              "y": 18.58
+            }
+          ],
+          "name": "Narain Soothfancy",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8576"
+      ],
+      "instruction": "Accept [QA8576 Translating the Ledger] from Narain Soothfancy.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 8576,
+      "quest_name": "Translating the Ledger",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8576"
+      ],
+      "instruction": "Complete [QC8576 Translating the Ledger]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 8576,
+      "quest_name": "Translating the Ledger",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11811,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 65.24,
+              "y": 18.58
+            }
+          ],
+          "name": "Narain Soothfancy",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8576"
+      ],
+      "instruction": "Turn in [QT8576 Translating the Ledger] to Narain Soothfancy",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 8576,
+      "quest_name": "Translating the Ledger",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11811,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 65.24,
+              "y": 18.58
+            }
+          ],
+          "name": "Narain Soothfancy",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8577"
+      ],
+      "instruction": "Accept [QA8577 Stewvul, Ex-B.F.F.] from Narain Soothfancy.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 8577,
+      "quest_name": "Stewvul, Ex-B.F.F.",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11811,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 65.24,
+              "y": 18.58
+            }
+          ],
+          "name": "Narain Soothfancy",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8584"
+      ],
+      "instruction": "Accept [QA8584 Never Ask Me About My Business] from Narain Soothfancy.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 8584,
+      "quest_name": "Never Ask Me About My Business",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "before_quest_id": 8577,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8577:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 440,
+      "map_name": "Tanaris",
+      "optional": true,
+      "order": 13,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        8577
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 65.24,
+      "y": 18.58
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8577"
+      ],
+      "instruction": "Raid \u2014 Complete [QC8577 Stewvul, Ex-B.F.F.]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 8577,
+      "quest_name": "Stewvul, Ex-B.F.F.",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8584"
+      ],
+      "instruction": "Raid \u2014 Complete [QC8584 Never Ask Me About My Business]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 8584,
+      "quest_name": "Never Ask Me About My Business",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8125,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 52.63,
+              "y": 28.11
+            }
+          ],
+          "name": "Dirge Quikcleave",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8584"
+      ],
+      "instruction": "Turn in [QT8584 Never Ask Me About My Business] to Dirge Quikcleave",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 8584,
+      "quest_name": "Never Ask Me About My Business",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 180642,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 130,
+              "map_name": "Silverpine Forest",
+              "verification": "questie_structured_source_only",
+              "x": 46.19,
+              "y": 86.68
+            }
+          ],
+          "name": "Inconspicuous Crate",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8577"
+      ],
+      "instruction": "Turn in [QT8577 Stewvul, Ex-B.F.F.] to Inconspicuous Crate",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 8577,
+      "quest_name": "Stewvul, Ex-B.F.F.",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8125,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 52.63,
+              "y": 28.11
+            }
+          ],
+          "name": "Dirge Quikcleave",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8585"
+      ],
+      "instruction": "Accept [QA8585 The Isle of Dread!] from Dirge Quikcleave.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 8585,
+      "quest_name": "The Isle of Dread!",
+      "quest_tag": "Raid",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8585"
+      ],
+      "instruction": "Raid \u2014 Collect or use the required items: Lakmaeran's Carcass, Chimaerok Tenderloin. [QC8585 The Isle of Dread!]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Lakmaeran's Carcass, Chimaerok Tenderloin",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 21027,
+          "kind": "item",
+          "locations": [],
+          "name": "Lakmaeran's Carcass",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 21024,
+          "kind": "item",
+          "locations": [],
+          "name": "Chimaerok Tenderloin",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 19,
+      "quest_id": 8585,
+      "quest_name": "The Isle of Dread!",
+      "quest_tag": "Raid",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8125,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 52.63,
+              "y": 28.11
+            }
+          ],
+          "name": "Dirge Quikcleave",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8585"
+      ],
+      "instruction": "Turn in [QT8585 The Isle of Dread!] to Dirge Quikcleave",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 8585,
+      "quest_name": "The Isle of Dread!",
+      "quest_tag": "Raid",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8125,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 52.63,
+              "y": 28.11
+            }
+          ],
+          "name": "Dirge Quikcleave",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8586"
+      ],
+      "instruction": "Accept [QA8586 Dirge's Kickin' Chimaerok Chops] from Dirge Quikcleave.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 8586,
+      "quest_name": "Dirge's Kickin' Chimaerok Chops",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8586"
+      ],
+      "instruction": "Raid \u2014 Collect or use the required items: Goblin Rocket Fuel, Deeprock Salt. [QC8586 Dirge's Kickin' Chimaerok Chops]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Goblin Rocket Fuel, Deeprock Salt",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 9061,
+          "kind": "item",
+          "locations": [],
+          "name": "Goblin Rocket Fuel",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 8150,
+          "kind": "item",
+          "locations": [],
+          "name": "Deeprock Salt",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 22,
+      "quest_id": 8586,
+      "quest_name": "Dirge's Kickin' Chimaerok Chops",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8125,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 52.63,
+              "y": 28.11
+            }
+          ],
+          "name": "Dirge Quikcleave",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8586"
+      ],
+      "instruction": "Turn in [QT8586 Dirge's Kickin' Chimaerok Chops] to Dirge Quikcleave",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 23,
+      "quest_id": 8586,
+      "quest_name": "Dirge's Kickin' Chimaerok Chops",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8125,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 52.63,
+              "y": 28.11
+            }
+          ],
+          "name": "Dirge Quikcleave",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8587"
+      ],
+      "instruction": "Accept [QA8587 Return to Narain] from Dirge Quikcleave.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 24,
+      "quest_id": 8587,
+      "quest_name": "Return to Narain",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8587"
+      ],
+      "instruction": "Raid \u2014 Complete [QC8587 Return to Narain]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 25,
+      "quest_id": 8587,
+      "quest_name": "Return to Narain",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11811,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 65.24,
+              "y": 18.58
+            }
+          ],
+          "name": "Narain Soothfancy",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8587"
+      ],
+      "instruction": "Turn in [QT8587 Return to Narain] to Narain Soothfancy",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 26,
+      "quest_id": 8587,
+      "quest_name": "Return to Narain",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11811,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 65.24,
+              "y": 18.58
+            }
+          ],
+          "name": "Narain Soothfancy",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8597"
+      ],
+      "instruction": "Accept [QA8597 Draconic for Dummies] from Narain Soothfancy.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 27,
+      "quest_id": 8597,
+      "quest_name": "Draconic for Dummies",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15526,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 59.43,
+              "y": 96.05
+            }
+          ],
+          "name": "Meridith the Mermaiden",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8599"
+      ],
+      "instruction": "Accept [QA8599 Love Song for Narain] from Meridith the Mermaiden.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 28,
+      "quest_id": 8599,
+      "quest_name": "Love Song for Narain",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8599"
+      ],
+      "instruction": "Raid \u2014 Complete [QC8599 Love Song for Narain]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 29,
+      "quest_id": 8599,
+      "quest_name": "Love Song for Narain",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11811,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 65.24,
+              "y": 18.58
+            }
+          ],
+          "name": "Narain Soothfancy",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8599"
+      ],
+      "instruction": "Turn in [QT8599 Love Song for Narain] to Narain Soothfancy",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 30,
+      "quest_id": 8599,
+      "quest_name": "Love Song for Narain",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8597"
+      ],
+      "instruction": "Raid \u2014 Complete [QC8597 Draconic for Dummies]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 31,
+      "quest_id": 8597,
+      "quest_name": "Draconic for Dummies",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 180652,
+          "kind": "object",
+          "locations": [],
+          "name": "Freshly Dug Dirt",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8597"
+      ],
+      "instruction": "Turn in [QT8597 Draconic for Dummies] to Freshly Dug Dirt",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 32,
+      "quest_id": 8597,
+      "quest_name": "Draconic for Dummies",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 180652,
+          "kind": "object",
+          "locations": [],
+          "name": "Freshly Dug Dirt",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8598"
+      ],
+      "instruction": "Accept [QA8598 rAnS0m] from Freshly Dug Dirt.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 33,
+      "quest_id": 8598,
+      "quest_name": "rAnS0m",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8598"
+      ],
+      "instruction": "Raid \u2014 Complete [QC8598 rAnS0m]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 34,
+      "quest_id": 8598,
+      "quest_name": "rAnS0m",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11811,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 65.24,
+              "y": 18.58
+            }
+          ],
+          "name": "Narain Soothfancy",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8598"
+      ],
+      "instruction": "Turn in [QT8598 rAnS0m] to Narain Soothfancy",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 35,
+      "quest_id": 8598,
+      "quest_name": "rAnS0m",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11811,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 65.24,
+              "y": 18.58
+            }
+          ],
+          "name": "Narain Soothfancy",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8606"
+      ],
+      "instruction": "Accept [QA8606 Decoy!] from Narain Soothfancy.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 36,
+      "quest_id": 8606,
+      "quest_name": "Decoy!",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8606"
+      ],
+      "instruction": "Elite/group recommended \u2014 Use the quest item [UI21042-] as directed; complete the required NPC or creature objective: Number Two. [QC8606 Decoy!]",
+      "item_use_id": 21042,
+      "objective_hint": "Complete the required NPC or creature objective: Number Two",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15554,
+          "kind": "npc",
+          "locations": [],
+          "name": "Number Two",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 37,
+      "quest_id": 8606,
+      "quest_name": "Decoy!",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11811,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 65.24,
+              "y": 18.58
+            }
+          ],
+          "name": "Narain Soothfancy",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8606"
+      ],
+      "instruction": "Turn in [QT8606 Decoy!] to Narain Soothfancy",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 38,
+      "quest_id": 8606,
+      "quest_name": "Decoy!",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11811,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 65.24,
+              "y": 18.58
+            }
+          ],
+          "name": "Narain Soothfancy",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8620"
+      ],
+      "instruction": "Accept [QA8620 The Only Prescription] from Narain Soothfancy.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 39,
+      "quest_id": 8620,
+      "quest_name": "The Only Prescription",
+      "quest_tag": "Raid",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8620"
+      ],
+      "instruction": "Raid \u2014 Collect or use the required item: Draconic For Dummies: Volume II. [QC8620 The Only Prescription]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Draconic For Dummies: Volume II",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 21111,
+          "kind": "item",
+          "locations": [],
+          "name": "Draconic For Dummies: Volume II",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 40,
+      "quest_id": 8620,
+      "quest_name": "The Only Prescription",
+      "quest_tag": "Raid",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11811,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 65.24,
+              "y": 18.58
+            }
+          ],
+          "name": "Narain Soothfancy",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8620"
+      ],
+      "instruction": "Turn in [QT8620 The Only Prescription] to Narain Soothfancy",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 41,
+      "quest_id": 8620,
+      "quest_name": "The Only Prescription",
+      "quest_tag": "Raid",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15362,
+          "kind": "npc",
+          "locations": [],
+          "name": "Malfurion Stormrage",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8733"
+      ],
+      "instruction": "Accept [QA8733 Eranikus, Tyrant of the Dream] from Malfurion Stormrage.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 42,
+      "quest_id": 8733,
+      "quest_name": "Eranikus, Tyrant of the Dream",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1417,
+      "zone_or_sort_name": "Sunken Temple"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8733"
+      ],
+      "instruction": "Raid \u2014 Complete [QC8733 Eranikus, Tyrant of the Dream]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 43,
+      "quest_id": 8733,
+      "quest_name": "Eranikus, Tyrant of the Dream",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1417,
+      "zone_or_sort_name": "Sunken Temple"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15624,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 37.55,
+              "y": 47.92
+            }
+          ],
+          "name": "Forest Wisp",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8733"
+      ],
+      "instruction": "Turn in [QT8733 Eranikus, Tyrant of the Dream] to Forest Wisp",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 44,
+      "quest_id": 8733,
+      "quest_name": "Eranikus, Tyrant of the Dream",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1417,
+      "zone_or_sort_name": "Sunken Temple"
+    }
+  ],
+  "title": "Optional Content 35 - Azshara & Tanaris"
+}

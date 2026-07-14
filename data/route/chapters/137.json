@@ -1,0 +1,4577 @@
+{
+  "branch": "optional_content",
+  "entry_contract": "Complete either Allegiance to the Aldor or Allegiance to the Scryers. Begin in Shattrath City with Ishanah. Leave at least two quest-log slots open; group and reputation gates remain explicit.",
+  "entry_route_point": {
+    "map_id": 3703,
+    "map_name": "Shattrath City",
+    "x": 23.97,
+    "y": 29.73
+  },
+  "entry_zone_or_sort": 3703,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 3703,
+    "map_name": "Shattrath City",
+    "quest_id": 10228,
+    "tag": "QT",
+    "x": 49.12,
+    "y": 35.9
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [
+    [
+      10551,
+      10552
+    ]
+  ],
+  "external_prerequisite_quest_ids": [
+    10551,
+    10552
+  ],
+  "group": "Mad's Loremaster Guide - Optional Content",
+  "guide_file": "Guides/optional_content/137_reputation_41.lua",
+  "id": "137-optional_content-optional-content-41---shattrath-city-&-nagrand",
+  "maximum_level": null,
+  "minimum_level": null,
+  "next_chapter": "Optional Content 42 - Mana-Tombs & Nagrand",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "Optional Content 40 - The Underbog & Coilfang Reservoir",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 10420,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9715:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10420:starter"
+      ],
+      "instruction": "Travel from Zangarmarsh to Shattrath City. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G23.97,29.73 Shattrath City]. [O]",
+      "map_id": 3703,
+      "map_name": "Shattrath City",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 3521,
+      "origin_map_name": "Zangarmarsh",
+      "origin_x": 19.54,
+      "origin_y": 50.04,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 23.97,
+      "y": 29.73
+    },
+    {
+      "before_quest_id": 10420,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10551:dependency",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10552:dependency"
+      ],
+      "instruction": "Optional entry requirements: complete either Allegiance to the Aldor or Allegiance to the Scryers. [O]",
+      "map_id": 3703,
+      "map_name": "Shattrath City",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        10551,
+        10552
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "branch_entry",
+      "verification": "route_dependency_graph",
+      "x": 23.97,
+      "y": 29.73
+    },
+    {
+      "before_quest_id": 10420,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10420:starter"
+      ],
+      "instruction": "Optional chapter: travel to Shattrath City and begin at [G23.97,29.73 Shattrath City]. Leave at least two quest-log slots open. [O]",
+      "map_id": 3703,
+      "map_name": "Shattrath City",
+      "optional": true,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 23.97,
+      "y": 29.73
+    },
+    {
+      "before_quest_id": 10420,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10420:requiredLevel"
+      ],
+      "instruction": "Reach level 64 before accepting A Cleansing Light. [XP64 Level 64]",
+      "map_id": 3703,
+      "map_name": "Shattrath City",
+      "optional": false,
+      "order": 4,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 64,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 23.97,
+      "y": 29.73
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18538,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 23.97,
+              "y": 29.73
+            }
+          ],
+          "name": "Ishanah",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10420"
+      ],
+      "instruction": "Accept [QA10420 A Cleansing Light] from Ishanah.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 10420,
+      "quest_name": "A Cleansing Light",
+      "quest_tag": null,
+      "required_level": 64,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10420"
+      ],
+      "instruction": "Collect or use the required item: Fel Armament. [QC10420 A Cleansing Light]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Fel Armament",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 29740,
+          "kind": "item",
+          "locations": [],
+          "name": "Fel Armament",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 6,
+      "quest_id": 10420,
+      "quest_name": "A Cleansing Light",
+      "quest_tag": null,
+      "required_level": 64,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18538,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 23.97,
+              "y": 29.73
+            }
+          ],
+          "name": "Ishanah",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10420"
+      ],
+      "instruction": "Turn in [QT10420 A Cleansing Light] to Ishanah",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 10420,
+      "quest_name": "A Cleansing Light",
+      "quest_tag": null,
+      "required_level": 64,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18233,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 55.52,
+              "y": 68.78
+            }
+          ],
+          "name": "Elementalist Ioki",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9869"
+      ],
+      "instruction": "Accept [QA9869 The Throne of the Elements] from Elementalist Ioki.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 9869,
+      "quest_name": "The Throne of the Elements",
+      "quest_tag": null,
+      "required_level": 64,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18222,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 54.48,
+              "y": 72.08
+            }
+          ],
+          "name": "Otonbu the Sage",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9874"
+      ],
+      "instruction": "Accept [QA9874 Stopping the Spread] from Otonbu the Sage.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 9874,
+      "quest_name": "Stopping the Spread",
+      "quest_tag": null,
+      "required_level": 64,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18224,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 54.47,
+              "y": 72.31
+            }
+          ],
+          "name": "Poli'lukluk the Wiser",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9878"
+      ],
+      "instruction": "Accept [QA9878 Solving the Problem] from Poli'lukluk the Wiser.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 9878,
+      "quest_name": "Solving the Problem",
+      "quest_tag": null,
+      "required_level": 64,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9874"
+      ],
+      "instruction": "Use the quest item [UI24560-] as directed; complete the required NPC or creature objective: Sunspring Villager. [QC9874 Stopping the Spread]",
+      "item_use_id": 24560,
+      "objective_hint": "Complete the required NPC or creature objective: Sunspring Villager",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18240,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 30.42,
+              "y": 42.63
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 30.58,
+              "y": 41.99
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 30.37,
+              "y": 42.37
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 31.75,
+              "y": 40.26
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 31.76,
+              "y": 39.62
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 33.36,
+              "y": 40.68
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 33.45,
+              "y": 40.68
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 33.78,
+              "y": 40.34
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 33.81,
+              "y": 40.99
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 31.35,
+              "y": 41.87
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 31.19,
+              "y": 43.07
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 30.67,
+              "y": 42.69
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 32.86,
+              "y": 41.65
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 32.48,
+              "y": 42.99
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 33.15,
+              "y": 42.38
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 33.06,
+              "y": 42.3
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 32.26,
+              "y": 45.23
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 33.19,
+              "y": 43.95
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 34.57,
+              "y": 46.76
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 34.72,
+              "y": 45.9
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 34.42,
+              "y": 46.33
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 34.54,
+              "y": 47.49
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 35.1,
+              "y": 46.71
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 35.16,
+              "y": 46.0
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 33.93,
+              "y": 48.07
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 34.0,
+              "y": 47.65
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 34.19,
+              "y": 47.17
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 33.0,
+              "y": 47.82
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 33.64,
+              "y": 47.83
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 33.37,
+              "y": 47.63
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 33.7,
+              "y": 46.31
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 33.1,
+              "y": 48.28
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 33.26,
+              "y": 48.5
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 33.58,
+              "y": 48.28
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 33.15,
+              "y": 46.35
+            }
+          ],
+          "name": "Sunspring Villager",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 11,
+      "quest_id": 9874,
+      "quest_name": "Stopping the Spread",
+      "quest_tag": null,
+      "required_level": 64,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9878"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Murkblood Scavenger, Murkblood Raider. [QC9878 Solving the Problem]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Murkblood Scavenger, Murkblood Raider",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18207,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 31.35,
+              "y": 43.71
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 31.45,
+              "y": 43.68
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 31.55,
+              "y": 43.76
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 31.17,
+              "y": 43.15
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 30.99,
+              "y": 43.25
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 31.09,
+              "y": 43.1
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 31.18,
+              "y": 41.51
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 31.16,
+              "y": 41.62
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 31.1,
+              "y": 41.53
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 30.61,
+              "y": 41.32
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 30.75,
+              "y": 41.34
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 30.68,
+              "y": 41.28
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 32.32,
+              "y": 45.53
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 32.3,
+              "y": 45.11
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 32.08,
+              "y": 45.52
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 32.2,
+              "y": 45.63
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 32.03,
+              "y": 45.35
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 32.08,
+              "y": 45.17
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 32.19,
+              "y": 45.04
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 33.34,
+              "y": 44.34
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 33.24,
+              "y": 44.3
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 33.36,
+              "y": 44.23
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 32.4,
+              "y": 45.32
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 33.6,
+              "y": 46.0
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 33.51,
+              "y": 45.97
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 33.57,
+              "y": 45.86
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 32.67,
+              "y": 42.45
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 32.94,
+              "y": 42.77
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 32.83,
+              "y": 42.69
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 33.16,
+              "y": 41.04
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 33.14,
+              "y": 40.89
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 33.26,
+              "y": 41.0
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 33.92,
+              "y": 40.36
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 33.85,
+              "y": 40.35
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 33.8,
+              "y": 40.38
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 31.52,
+              "y": 39.79
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 31.65,
+              "y": 39.75
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 31.59,
+              "y": 39.53
+            }
+          ],
+          "name": "Murkblood Scavenger",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18203,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 31.85,
+              "y": 44.88
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 33.39,
+              "y": 44.44
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 32.77,
+              "y": 45.15
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 32.11,
+              "y": 46.22
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 33.39,
+              "y": 46.16
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 33.32,
+              "y": 46.19
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 30.91,
+              "y": 42.43
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 30.43,
+              "y": 41.42
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 30.43,
+              "y": 43.23
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 31.52,
+              "y": 43.58
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 31.48,
+              "y": 42.68
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 31.49,
+              "y": 42.24
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 31.13,
+              "y": 43.32
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 33.34,
+              "y": 42.54
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 32.94,
+              "y": 41.14
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 32.87,
+              "y": 41.07
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 32.91,
+              "y": 42.05
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 30.82,
+              "y": 43.56
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 30.88,
+              "y": 43.51
+            }
+          ],
+          "name": "Murkblood Raider",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 12,
+      "quest_id": 9878,
+      "quest_name": "Solving the Problem",
+      "quest_tag": null,
+      "required_level": 64,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9869"
+      ],
+      "instruction": "Complete [QC9869 The Throne of the Elements]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 9869,
+      "quest_name": "The Throne of the Elements",
+      "quest_tag": null,
+      "required_level": 64,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18222,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 54.48,
+              "y": 72.08
+            }
+          ],
+          "name": "Otonbu the Sage",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9874"
+      ],
+      "instruction": "Turn in [QT9874 Stopping the Spread] to Otonbu the Sage",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 9874,
+      "quest_name": "Stopping the Spread",
+      "quest_tag": null,
+      "required_level": 64,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18224,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 54.47,
+              "y": 72.31
+            }
+          ],
+          "name": "Poli'lukluk the Wiser",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9878"
+      ],
+      "instruction": "Turn in [QT9878 Solving the Problem] to Poli'lukluk the Wiser",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 9878,
+      "quest_name": "Solving the Problem",
+      "quest_tag": null,
+      "required_level": 64,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18072,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 60.66,
+              "y": 22.1
+            }
+          ],
+          "name": "Elementalist Sharvak",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9869"
+      ],
+      "instruction": "Turn in [QT9869 The Throne of the Elements] to Elementalist Sharvak",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 9869,
+      "quest_name": "The Throne of the Elements",
+      "quest_tag": null,
+      "required_level": 64,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "reputation",
+        "reputation_gated",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18209,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 33.18,
+              "y": 42.31
+            }
+          ],
+          "name": "Kurenai Captive",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9879"
+      ],
+      "instruction": "Accept [QA9879 The Totem of Kar'dash] from Kurenai Captive.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 9879,
+      "quest_name": "The Totem of Kar'dash",
+      "quest_tag": "Elite",
+      "required_level": 64,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "before_quest_id": 9879,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9879:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 3703,
+      "map_name": "Shattrath City",
+      "optional": true,
+      "order": 18,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        9879
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 23.97,
+      "y": 29.73
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "reputation",
+        "reputation_gated",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9879"
+      ],
+      "instruction": "Elite/group recommended \u2014 Complete the scripted or exploration event. [QC9879 The Totem of Kar'dash]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 9879,
+      "quest_name": "The Totem of Kar'dash",
+      "quest_tag": "Elite",
+      "required_level": 64,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "reputation",
+        "reputation_gated",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18183,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 55.48,
+              "y": 68.7
+            }
+          ],
+          "name": "Arechron",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9879"
+      ],
+      "instruction": "Turn in [QT9879 The Totem of Kar'dash] to Arechron",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 9879,
+      "quest_name": "The Totem of Kar'dash",
+      "quest_tag": "Elite",
+      "required_level": 64,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18265,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 31.36,
+              "y": 57.79
+            }
+          ],
+          "name": "Gezhe",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9882"
+      ],
+      "instruction": "Accept [QA9882 Stealing from Thieves] from Gezhe.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 9882,
+      "quest_name": "Stealing from Thieves",
+      "quest_tag": null,
+      "required_level": 64,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18265,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 31.36,
+              "y": 57.79
+            }
+          ],
+          "name": "Gezhe",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9893"
+      ],
+      "instruction": "Accept [QA9893 Obsidian Warbeads] from Gezhe.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 22,
+      "quest_id": 9893,
+      "quest_name": "Obsidian Warbeads",
+      "quest_tag": null,
+      "required_level": 64,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18333,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 31.77,
+              "y": 56.78
+            }
+          ],
+          "name": "Shadrek",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9914"
+      ],
+      "instruction": "Accept [QA9914 A Head Full of Ivory] from Shadrek.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 23,
+      "quest_id": 9914,
+      "quest_name": "A Head Full of Ivory",
+      "quest_tag": null,
+      "required_level": 64,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9882"
+      ],
+      "instruction": "Collect or use the required item: Oshu'gun Crystal Fragment. [QC9882 Stealing from Thieves]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Oshu'gun Crystal Fragment",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 25416,
+          "kind": "item",
+          "locations": [],
+          "name": "Oshu'gun Crystal Fragment",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 24,
+      "quest_id": 9882,
+      "quest_name": "Stealing from Thieves",
+      "quest_tag": null,
+      "required_level": 64,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9893"
+      ],
+      "instruction": "Collect or use the required item: Obsidian Warbeads. [QC9893 Obsidian Warbeads]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Obsidian Warbeads",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 25433,
+          "kind": "item",
+          "locations": [],
+          "name": "Obsidian Warbeads",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 25,
+      "quest_id": 9893,
+      "quest_name": "Obsidian Warbeads",
+      "quest_tag": null,
+      "required_level": 64,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9914"
+      ],
+      "instruction": "Collect or use the required item: Pair of Ivory Tusks. [QC9914 A Head Full of Ivory]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Pair of Ivory Tusks",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 25463,
+          "kind": "item",
+          "locations": [],
+          "name": "Pair of Ivory Tusks",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 26,
+      "quest_id": 9914,
+      "quest_name": "A Head Full of Ivory",
+      "quest_tag": null,
+      "required_level": 64,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18333,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 31.77,
+              "y": 56.78
+            }
+          ],
+          "name": "Shadrek",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9914"
+      ],
+      "instruction": "Turn in [QT9914 A Head Full of Ivory] to Shadrek",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 27,
+      "quest_id": 9914,
+      "quest_name": "A Head Full of Ivory",
+      "quest_tag": null,
+      "required_level": 64,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18265,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 31.36,
+              "y": 57.79
+            }
+          ],
+          "name": "Gezhe",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9882"
+      ],
+      "instruction": "Turn in [QT9882 Stealing from Thieves] to Gezhe",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 28,
+      "quest_id": 9882,
+      "quest_name": "Stealing from Thieves",
+      "quest_tag": null,
+      "required_level": 64,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18265,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 31.36,
+              "y": 57.79
+            }
+          ],
+          "name": "Gezhe",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9893"
+      ],
+      "instruction": "Turn in [QT9893 Obsidian Warbeads] to Gezhe",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 29,
+      "quest_id": 9893,
+      "quest_name": "Obsidian Warbeads",
+      "quest_tag": null,
+      "required_level": 64,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18369,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 72.53,
+              "y": 70.74
+            }
+          ],
+          "name": "Corki",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9923"
+      ],
+      "instruction": "Accept [QA9923 HELP!] from Corki.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 30,
+      "quest_id": 9923,
+      "quest_name": "HELP!",
+      "quest_tag": null,
+      "required_level": 64,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9923"
+      ],
+      "instruction": "Complete the required NPC or creature objective: Corki. [QC9923 HELP!]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Corki",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18369,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 72.53,
+              "y": 70.74
+            }
+          ],
+          "name": "Corki",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 31,
+      "quest_id": 9923,
+      "quest_name": "HELP!",
+      "quest_tag": null,
+      "required_level": 64,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18183,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 55.48,
+              "y": 68.7
+            }
+          ],
+          "name": "Arechron",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9923"
+      ],
+      "instruction": "Turn in [QT9923 HELP!] to Arechron",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 32,
+      "quest_id": 9923,
+      "quest_name": "HELP!",
+      "quest_tag": null,
+      "required_level": 64,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18183,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 55.48,
+              "y": 68.7
+            }
+          ],
+          "name": "Arechron",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9924"
+      ],
+      "instruction": "Accept [QA9924 Corki's Gone Missing Again!] from Arechron.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 33,
+      "quest_id": 9924,
+      "quest_name": "Corki's Gone Missing Again!",
+      "quest_tag": null,
+      "required_level": 64,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9924"
+      ],
+      "instruction": "Complete the required NPC or creature objective: Corki. [QC9924 Corki's Gone Missing Again!]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Corki",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 20812,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 39.25,
+              "y": 27.42
+            }
+          ],
+          "name": "Corki",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 34,
+      "quest_id": 9924,
+      "quest_name": "Corki's Gone Missing Again!",
+      "quest_tag": null,
+      "required_level": 64,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18183,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 55.48,
+              "y": 68.7
+            }
+          ],
+          "name": "Arechron",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9924"
+      ],
+      "instruction": "Turn in [QT9924 Corki's Gone Missing Again!] to Arechron",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 35,
+      "quest_id": 9924,
+      "quest_name": "Corki's Gone Missing Again!",
+      "quest_tag": null,
+      "required_level": 64,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 182393,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 54.67,
+              "y": 70.75
+            }
+          ],
+          "name": "Telaar Bulletin Board",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9936"
+      ],
+      "instruction": "Accept [QA9936 Wanted: Giselda the Crone] from Telaar Bulletin Board.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 36,
+      "quest_id": 9936,
+      "quest_name": "Wanted: Giselda the Crone",
+      "quest_tag": null,
+      "required_level": 64,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 182393,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 54.67,
+              "y": 70.75
+            }
+          ],
+          "name": "Telaar Bulletin Board",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9940"
+      ],
+      "instruction": "Accept [QA9940 Wanted: Zorbo the Advisor] from Telaar Bulletin Board.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 37,
+      "quest_id": 9940,
+      "quest_name": "Wanted: Zorbo the Advisor",
+      "quest_tag": null,
+      "required_level": 64,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9936"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Giselda the Crone, Kil'sorrow Spellbinder, Kil'sorrow Cultist, plus 3 more. [QC9936 Wanted: Giselda the Crone]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Giselda the Crone, Kil'sorrow Spellbinder, Kil'sorrow Cultist, plus 3 more",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18391,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 71.16,
+              "y": 82.36
+            }
+          ],
+          "name": "Giselda the Crone",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17146,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 69.27,
+              "y": 76.69
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 70.55,
+              "y": 76.73
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 70.25,
+              "y": 76.8
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 69.89,
+              "y": 76.82
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 71.98,
+              "y": 79.23
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 71.34,
+              "y": 80.86
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 71.8,
+              "y": 80.74
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 70.4,
+              "y": 79.95
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 70.61,
+              "y": 79.95
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 70.4,
+              "y": 79.64
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 70.61,
+              "y": 79.64
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 72.13,
+              "y": 81.94
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 69.39,
+              "y": 79.71
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 69.49,
+              "y": 79.93
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 69.12,
+              "y": 79.75
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 68.42,
+              "y": 83.09
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 68.26,
+              "y": 82.98
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 67.73,
+              "y": 78.69
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 69.34,
+              "y": 76.72
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 71.75,
+              "y": 80.95
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 69.75,
+              "y": 78.55
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 69.36,
+              "y": 76.89
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 67.89,
+              "y": 82.28
+            }
+          ],
+          "name": "Kil'sorrow Spellbinder",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17147,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 69.23,
+              "y": 77.12
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 69.34,
+              "y": 76.72
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 69.36,
+              "y": 76.89
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 69.93,
+              "y": 76.83
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 71.94,
+              "y": 79.16
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 71.48,
+              "y": 80.81
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 71.75,
+              "y": 80.95
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 71.74,
+              "y": 80.77
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 69.51,
+              "y": 79.46
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 69.75,
+              "y": 78.55
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 69.07,
+              "y": 79.6
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 68.49,
+              "y": 82.73
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 68.23,
+              "y": 83.01
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 67.67,
+              "y": 78.62
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 67.88,
+              "y": 78.3
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 68.11,
+              "y": 77.31
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 67.73,
+              "y": 77.71
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 67.86,
+              "y": 77.36
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 70.25,
+              "y": 76.8
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 72.13,
+              "y": 81.94
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 67.94,
+              "y": 82.36
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 68.26,
+              "y": 82.98
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 69.39,
+              "y": 79.71
+            }
+          ],
+          "name": "Kil'sorrow Cultist",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17148,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 68.62,
+              "y": 78.69
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 68.93,
+              "y": 77.11
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 68.79,
+              "y": 77.48
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 68.73,
+              "y": 80.65
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 67.09,
+              "y": 79.4
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 68.03,
+              "y": 82.72
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 68.27,
+              "y": 82.37
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 69.27,
+              "y": 80.23
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 69.82,
+              "y": 79.66
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 69.21,
+              "y": 79.22
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 71.72,
+              "y": 82.81
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 71.46,
+              "y": 81.55
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 70.94,
+              "y": 80.58
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 70.86,
+              "y": 83.2
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 70.69,
+              "y": 80.71
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 71.08,
+              "y": 82.0
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 70.6,
+              "y": 81.95
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 71.24,
+              "y": 82.76
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 69.66,
+              "y": 81.68
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 69.52,
+              "y": 81.65
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 72.37,
+              "y": 79.31
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 71.75,
+              "y": 79.11
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 72.59,
+              "y": 77.19
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 72.29,
+              "y": 79.28
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 71.84,
+              "y": 79.35
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 72.38,
+              "y": 77.83
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 72.57,
+              "y": 79.58
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 72.64,
+              "y": 77.41
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 70.31,
+              "y": 78.97
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 71.58,
+              "y": 76.94
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 69.44,
+              "y": 77.38
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 69.65,
+              "y": 76.96
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 70.81,
+              "y": 78.88
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 70.08,
+              "y": 76.42
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 69.86,
+              "y": 76.39
+            }
+          ],
+          "name": "Kil'sorrow Deathsworn",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18658,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 35.34,
+              "y": 74.97
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 35.55,
+              "y": 74.69
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 35.41,
+              "y": 77.43
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 35.58,
+              "y": 77.45
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 35.36,
+              "y": 77.54
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 35.63,
+              "y": 77.58
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 35.75,
+              "y": 74.99
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 35.51,
+              "y": 75.28
+            }
+          ],
+          "name": "Kil'sorrow Ritualist",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 21276,
+          "kind": "npc",
+          "locations": [],
+          "name": "Kil'sorrow Agent",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 38,
+      "quest_id": 9936,
+      "quest_name": "Wanted: Giselda the Crone",
+      "quest_tag": null,
+      "required_level": 64,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9940"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Zorbo the Advisor, Warmaul Shaman, Warmaul Reaver. [QC9940 Wanted: Zorbo the Advisor]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Zorbo the Advisor, Warmaul Shaman, Warmaul Reaver",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18413,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 46.48,
+              "y": 18.19
+            }
+          ],
+          "name": "Zorbo the Advisor",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18064,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 43.64,
+              "y": 22.36
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 44.06,
+              "y": 21.44
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 45.41,
+              "y": 22.36
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 46.55,
+              "y": 24.25
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 45.81,
+              "y": 22.79
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 46.7,
+              "y": 22.19
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 45.99,
+              "y": 19.79
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 44.83,
+              "y": 19.76
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 46.96,
+              "y": 20.27
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 45.75,
+              "y": 18.86
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 46.73,
+              "y": 22.7
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 47.06,
+              "y": 24.57
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 47.59,
+              "y": 23.18
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 48.68,
+              "y": 21.97
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 42.77,
+              "y": 21.43
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 43.48,
+              "y": 21.81
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 47.28,
+              "y": 24.2
+            }
+          ],
+          "name": "Warmaul Shaman",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17138,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 41.52,
+              "y": 22.76
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 42.54,
+              "y": 22.88
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 42.34,
+              "y": 21.81
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 43.85,
+              "y": 21.47
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 44.87,
+              "y": 20.63
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 44.46,
+              "y": 22.36
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 44.9,
+              "y": 21.58
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 44.41,
+              "y": 22.44
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 44.64,
+              "y": 22.86
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 44.89,
+              "y": 22.39
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 46.03,
+              "y": 24.7
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 46.63,
+              "y": 24.27
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 45.85,
+              "y": 23.17
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 46.85,
+              "y": 23.53
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 46.91,
+              "y": 23.51
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 47.19,
+              "y": 21.69
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 46.19,
+              "y": 18.94
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 48.48,
+              "y": 23.55
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 47.85,
+              "y": 23.79
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 48.42,
+              "y": 21.41
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 47.47,
+              "y": 24.01
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 49.04,
+              "y": 23.39
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 48.58,
+              "y": 22.56
+            },
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 49.25,
+              "y": 21.57
+            }
+          ],
+          "name": "Warmaul Reaver",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 39,
+      "quest_id": 9940,
+      "quest_name": "Wanted: Zorbo the Advisor",
+      "quest_tag": null,
+      "required_level": 64,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18408,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 54.74,
+              "y": 70.88
+            }
+          ],
+          "name": "Warden Moi'bff Jill",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9936"
+      ],
+      "instruction": "Turn in [QT9936 Wanted: Giselda the Crone] to Warden Moi'bff Jill",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 40,
+      "quest_id": 9936,
+      "quest_name": "Wanted: Giselda the Crone",
+      "quest_tag": null,
+      "required_level": 64,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18408,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 54.74,
+              "y": 70.88
+            }
+          ],
+          "name": "Warden Moi'bff Jill",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9940"
+      ],
+      "instruction": "Turn in [QT9940 Wanted: Zorbo the Advisor] to Warden Moi'bff Jill",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 41,
+      "quest_id": 9940,
+      "quest_name": "Wanted: Zorbo the Advisor",
+      "quest_tag": null,
+      "required_level": 64,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "before_quest_id": 9954,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9954:requiredLevel"
+      ],
+      "instruction": "Reach level 65 before accepting Corki's Ransom. [XP65 Level 65]",
+      "map_id": 3518,
+      "map_name": "Nagrand",
+      "optional": false,
+      "order": 42,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 65,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 55.48,
+      "y": 68.7
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18183,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 55.48,
+              "y": 68.7
+            }
+          ],
+          "name": "Arechron",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9954"
+      ],
+      "instruction": "Accept [QA9954 Corki's Ransom] from Arechron.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 43,
+      "quest_id": 9954,
+      "quest_name": "Corki's Ransom",
+      "quest_tag": "Elite",
+      "required_level": 65,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9954"
+      ],
+      "instruction": "Elite/group recommended \u2014 Complete [QC9954 Corki's Ransom]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 44,
+      "quest_id": 9954,
+      "quest_name": "Corki's Ransom",
+      "quest_tag": "Elite",
+      "required_level": 65,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18445,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 29.54,
+              "y": 26.06
+            }
+          ],
+          "name": "Corki",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9954"
+      ],
+      "instruction": "Turn in [QT9954 Corki's Ransom] to Corki",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 45,
+      "quest_id": 9954,
+      "quest_name": "Corki's Ransom",
+      "quest_tag": "Elite",
+      "required_level": 65,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18445,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 29.54,
+              "y": 26.06
+            }
+          ],
+          "name": "Corki",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9955"
+      ],
+      "instruction": "Accept [QA9955 Cho'war the Pillager] from Corki.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 46,
+      "quest_id": 9955,
+      "quest_name": "Cho'war the Pillager",
+      "quest_tag": "Elite",
+      "required_level": 65,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9955"
+      ],
+      "instruction": "Elite/group recommended \u2014 Complete the required NPC or creature objective: Corki. [QC9955 Cho'war the Pillager]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Corki",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18445,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 29.54,
+              "y": 26.06
+            }
+          ],
+          "name": "Corki",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 47,
+      "quest_id": 9955,
+      "quest_name": "Cho'war the Pillager",
+      "quest_tag": "Elite",
+      "required_level": 65,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18183,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 55.48,
+              "y": 68.7
+            }
+          ],
+          "name": "Arechron",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9955"
+      ],
+      "instruction": "Turn in [QT9955 Cho'war the Pillager] to Arechron",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 48,
+      "quest_id": 9955,
+      "quest_name": "Cho'war the Pillager",
+      "quest_tag": "Elite",
+      "required_level": 65,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18416,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 54.24,
+              "y": 72.27
+            }
+          ],
+          "name": "Huntress Kima",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9956"
+      ],
+      "instruction": "Accept [QA9956 The Ravaged Caravan] from Huntress Kima.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 49,
+      "quest_id": 9956,
+      "quest_name": "The Ravaged Caravan",
+      "quest_tag": null,
+      "required_level": 65,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18408,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 54.74,
+              "y": 70.88
+            }
+          ],
+          "name": "Warden Moi'bff Jill",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10476"
+      ],
+      "instruction": "Accept [QA10476 Fierce Enemies] from Warden Moi'bff Jill.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 50,
+      "quest_id": 10476,
+      "quest_name": "Fierce Enemies",
+      "quest_tag": null,
+      "required_level": 65,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9956"
+      ],
+      "instruction": "Collect or use the required item: Telaar Supply Crate. [QC9956 The Ravaged Caravan]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Telaar Supply Crate",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 25647,
+          "kind": "item",
+          "locations": [],
+          "name": "Telaar Supply Crate",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 51,
+      "quest_id": 9956,
+      "quest_name": "The Ravaged Caravan",
+      "quest_tag": null,
+      "required_level": 65,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10476"
+      ],
+      "instruction": "Collect or use the required item: Obsidian Warbeads. [QC10476 Fierce Enemies]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Obsidian Warbeads",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 25433,
+          "kind": "item",
+          "locations": [],
+          "name": "Obsidian Warbeads",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 52,
+      "quest_id": 10476,
+      "quest_name": "Fierce Enemies",
+      "quest_tag": null,
+      "required_level": 65,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18408,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 54.74,
+              "y": 70.88
+            }
+          ],
+          "name": "Warden Moi'bff Jill",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10476"
+      ],
+      "instruction": "Turn in [QT10476 Fierce Enemies] to Warden Moi'bff Jill",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 53,
+      "quest_id": 10476,
+      "quest_name": "Fierce Enemies",
+      "quest_tag": null,
+      "required_level": 65,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18416,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 54.24,
+              "y": 72.27
+            }
+          ],
+          "name": "Huntress Kima",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9956"
+      ],
+      "instruction": "Turn in [QT9956 The Ravaged Caravan] to Huntress Kima",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 54,
+      "quest_id": 9956,
+      "quest_name": "The Ravaged Caravan",
+      "quest_tag": null,
+      "required_level": 65,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "before_quest_id": 9938,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9938:requiredLevel"
+      ],
+      "instruction": "Reach level 66 before accepting Wanted: Durn the Hungerer. [XP66 Level 66]",
+      "map_id": 3518,
+      "map_name": "Nagrand",
+      "optional": false,
+      "order": 55,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 66,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 54.74,
+      "y": 70.88
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18408,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 54.74,
+              "y": 70.88
+            }
+          ],
+          "name": "Warden Moi'bff Jill",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9938"
+      ],
+      "instruction": "Accept [QA9938 Wanted: Durn the Hungerer] from Warden Moi'bff Jill.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 56,
+      "quest_id": 9938,
+      "quest_name": "Wanted: Durn the Hungerer",
+      "quest_tag": "Elite",
+      "required_level": 66,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9938"
+      ],
+      "instruction": "Elite/group recommended \u2014 Complete the required NPC or creature objective: Durn the Hungerer. [QC9938 Wanted: Durn the Hungerer]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Durn the Hungerer",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18411,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 31.95,
+              "y": 62.42
+            }
+          ],
+          "name": "Durn the Hungerer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 57,
+      "quest_id": 9938,
+      "quest_name": "Wanted: Durn the Hungerer",
+      "quest_tag": "Elite",
+      "required_level": 66,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18408,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 54.74,
+              "y": 70.88
+            }
+          ],
+          "name": "Warden Moi'bff Jill",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9938"
+      ],
+      "instruction": "Turn in [QT9938 Wanted: Durn the Hungerer] to Warden Moi'bff Jill",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 58,
+      "quest_id": 9938,
+      "quest_name": "Wanted: Durn the Hungerer",
+      "quest_tag": "Elite",
+      "required_level": 66,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18416,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 54.24,
+              "y": 72.27
+            }
+          ],
+          "name": "Huntress Kima",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9982"
+      ],
+      "instruction": "Accept [QA9982 He Called Himself Altruis...] from Huntress Kima.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 59,
+      "quest_id": 9982,
+      "quest_name": "He Called Himself Altruis...",
+      "quest_tag": "Elite",
+      "required_level": 66,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "before_quest_id": 11044,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11044:requiredLevel"
+      ],
+      "instruction": "Reach level 67 before accepting Visions of Destruction. [XP67 Level 67]",
+      "map_id": 3518,
+      "map_name": "Nagrand",
+      "optional": false,
+      "order": 60,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 67,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 55.4,
+      "y": 68.69
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23268,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 55.4,
+              "y": 68.69
+            }
+          ],
+          "name": "Seer Jovar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11044"
+      ],
+      "instruction": "Accept [QA11044 Visions of Destruction] from Seer Jovar.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 61,
+      "quest_id": 11044,
+      "quest_name": "Visions of Destruction",
+      "quest_tag": null,
+      "required_level": 67,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9982"
+      ],
+      "instruction": "Elite/group recommended \u2014 Complete [QC9982 He Called Himself Altruis...]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 62,
+      "quest_id": 9982,
+      "quest_name": "He Called Himself Altruis...",
+      "quest_tag": "Elite",
+      "required_level": 66,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11044"
+      ],
+      "instruction": "Complete [QC11044 Visions of Destruction]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 63,
+      "quest_id": 11044,
+      "quest_name": "Visions of Destruction",
+      "quest_tag": null,
+      "required_level": 67,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18417,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 27.34,
+              "y": 43.09
+            }
+          ],
+          "name": "Altruis the Sufferer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9982"
+      ],
+      "instruction": "Turn in [QT9982 He Called Himself Altruis...] to Altruis the Sufferer",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 64,
+      "quest_id": 9982,
+      "quest_name": "He Called Himself Altruis...",
+      "quest_tag": "Elite",
+      "required_level": 66,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 21357,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3520,
+              "map_name": "Shadowmoon Valley",
+              "verification": "questie_structured_source_only",
+              "x": 39.5,
+              "y": 53.73
+            }
+          ],
+          "name": "Wing Commander Nuainn",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11044"
+      ],
+      "instruction": "Turn in [QT11044 Visions of Destruction] to Wing Commander Nuainn",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 65,
+      "quest_id": 11044,
+      "quest_name": "Visions of Destruction",
+      "quest_tag": null,
+      "required_level": 67,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "before_quest_id": 10653,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10653:requiredLevel"
+      ],
+      "instruction": "Reach level 68 before accepting Marks of Sargeras. [XP68 Level 68]",
+      "map_id": 3703,
+      "map_name": "Shattrath City",
+      "optional": false,
+      "order": 66,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 68,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 30.73,
+      "y": 34.62
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18537,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 30.73,
+              "y": 34.62
+            }
+          ],
+          "name": "Adyen the Lightwarden",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10653"
+      ],
+      "instruction": "Accept [QA10653 Marks of Sargeras] from Adyen the Lightwarden.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 67,
+      "quest_id": 10653,
+      "quest_name": "Marks of Sargeras",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10653"
+      ],
+      "instruction": "Collect or use the required item: Mark of Sargeras. [QC10653 Marks of Sargeras]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Mark of Sargeras",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 30809,
+          "kind": "item",
+          "locations": [],
+          "name": "Mark of Sargeras",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 68,
+      "quest_id": 10653,
+      "quest_name": "Marks of Sargeras",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18537,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 30.73,
+              "y": 34.62
+            }
+          ],
+          "name": "Adyen the Lightwarden",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10653"
+      ],
+      "instruction": "Turn in [QT10653 Marks of Sargeras] to Adyen the Lightwarden",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 69,
+      "quest_id": 10653,
+      "quest_name": "Marks of Sargeras",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19697,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 35.09,
+              "y": 65.09
+            }
+          ],
+          "name": "Ha'lei",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10227"
+      ],
+      "instruction": "Accept [QA10227 I See Dead Draenei] from Ha'lei.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 70,
+      "quest_id": 10227,
+      "quest_name": "I See Dead Draenei",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3688,
+      "zone_or_sort_name": "Auchindoun"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10227"
+      ],
+      "instruction": "Dungeon \u2014 Complete [QC10227 I See Dead Draenei]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 71,
+      "quest_id": 10227,
+      "quest_name": "I See Dead Draenei",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3688,
+      "zone_or_sort_name": "Auchindoun"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19417,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 35.15,
+              "y": 66.24
+            }
+          ],
+          "name": "Ramdor the Mad",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10227"
+      ],
+      "instruction": "Turn in [QT10227 I See Dead Draenei] to Ramdor the Mad",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 72,
+      "quest_id": 10227,
+      "quest_name": "I See Dead Draenei",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3688,
+      "zone_or_sort_name": "Auchindoun"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19417,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 35.15,
+              "y": 66.24
+            }
+          ],
+          "name": "Ramdor the Mad",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10228"
+      ],
+      "instruction": "Accept [QA10228 Ezekiel] from Ramdor the Mad.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 73,
+      "quest_id": 10228,
+      "quest_name": "Ezekiel",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3688,
+      "zone_or_sort_name": "Auchindoun"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10228"
+      ],
+      "instruction": "Dungeon \u2014 Complete [QC10228 Ezekiel]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 74,
+      "quest_id": 10228,
+      "quest_name": "Ezekiel",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3688,
+      "zone_or_sort_name": "Auchindoun"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19715,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 49.12,
+              "y": 35.9
+            }
+          ],
+          "name": "Ezekiel",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10228"
+      ],
+      "instruction": "Turn in [QT10228 Ezekiel] to Ezekiel",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 75,
+      "quest_id": 10228,
+      "quest_name": "Ezekiel",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3688,
+      "zone_or_sort_name": "Auchindoun"
+    }
+  ],
+  "title": "Optional Content 41 - Shattrath City & Nagrand"
+}

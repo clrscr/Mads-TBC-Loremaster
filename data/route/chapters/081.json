@@ -1,0 +1,499 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 80 Eastern Plaguelands & Stormwind City, or select this chapter on a partially completed character. Begin in Tanaris with Krinkle Goodsteel. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 440,
+    "map_name": "Tanaris",
+    "x": 51.46,
+    "y": 28.81
+  },
+  "entry_zone_or_sort": 440,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 28,
+    "map_name": "Western Plaguelands",
+    "quest_id": 5505,
+    "tag": "QT",
+    "x": 42.66,
+    "y": 83.77
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/081_world_81.lua",
+  "id": "081-primary-81-tanaris-&-western-plaguelands",
+  "maximum_level": 58,
+  "minimum_level": 58,
+  "next_chapter": "82 Hellfire Peninsula",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "80 Eastern Plaguelands & Stormwind City",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 5801,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6186:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5801:starter",
+        "travel-network:ratchet-booty-bay",
+        "https://www.wowhead.com/tbc/quest=1040/passage-to-booty-bay"
+      ],
+      "instruction": "Travel from Stormwind City to Tanaris: Take the ship between Ratchet and Booty Bay. Continue to [G51.46,28.81 Tanaris]. [O]",
+      "map_id": 440,
+      "map_name": "Tanaris",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 1519,
+      "origin_map_name": "Stormwind City",
+      "origin_x": 78.22,
+      "origin_y": 17.98,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [
+        "ratchet-booty-bay"
+      ],
+      "type": "transport",
+      "verification": "questie_endpoints_and_tbc_transport_network",
+      "x": 51.46,
+      "y": 28.81
+    },
+    {
+      "before_quest_id": 5801,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5801:starter"
+      ],
+      "instruction": "Before you begin: travel to Tanaris and meet the first quest giver at [G51.46,28.81 Tanaris]. Leave at least two quest-log slots open. [O]",
+      "map_id": 440,
+      "map_name": "Tanaris",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 51.46,
+      "y": 28.81
+    },
+    {
+      "before_quest_id": 5801,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5801:requiredLevel"
+      ],
+      "instruction": "Reach level 58 before accepting Fire Plume Forged. [XP58 Level 58]",
+      "map_id": 440,
+      "map_name": "Tanaris",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 58,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 51.46,
+      "y": 28.81
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5411,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 51.46,
+              "y": 28.81
+            }
+          ],
+          "name": "Krinkle Goodsteel",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5801"
+      ],
+      "instruction": "Accept [QA5801 Fire Plume Forged] from Krinkle Goodsteel.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 5801,
+      "quest_name": "Fire Plume Forged",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5801"
+      ],
+      "instruction": "Use the quest item [UI14644-] as directed; collect or use the required item: Unfinished Skeleton Key. [QC5801 Fire Plume Forged]",
+      "item_use_id": 14644,
+      "objective_hint": "Collect or use the required item: Unfinished Skeleton Key",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 14645,
+          "kind": "item",
+          "locations": [],
+          "name": "Unfinished Skeleton Key",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 5,
+      "quest_id": 5801,
+      "quest_name": "Fire Plume Forged",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11056,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 28,
+              "map_name": "Western Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 42.66,
+              "y": 83.77
+            }
+          ],
+          "name": "Alchemist Arbington",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5801"
+      ],
+      "instruction": "Turn in [QT5801 Fire Plume Forged] to Alchemist Arbington",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 5801,
+      "quest_name": "Fire Plume Forged",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11056,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 28,
+              "map_name": "Western Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 42.66,
+              "y": 83.77
+            }
+          ],
+          "name": "Alchemist Arbington",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5803"
+      ],
+      "instruction": "Accept [QA5803 Araj's Scarab] from Alchemist Arbington.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 5803,
+      "quest_name": "Araj's Scarab",
+      "quest_tag": "Elite",
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 28,
+      "zone_or_sort_name": "Western Plaguelands"
+    },
+    {
+      "before_quest_id": 5803,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5803:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 440,
+      "map_name": "Tanaris",
+      "optional": true,
+      "order": 8,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        5803
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 51.46,
+      "y": 28.81
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5803"
+      ],
+      "instruction": "Elite/group recommended \u2014 Collect or use the required item: Araj's Scarab. [QC5803 Araj's Scarab]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Araj's Scarab",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 14610,
+          "kind": "item",
+          "locations": [],
+          "name": "Araj's Scarab",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 9,
+      "quest_id": 5803,
+      "quest_name": "Araj's Scarab",
+      "quest_tag": "Elite",
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 28,
+      "zone_or_sort_name": "Western Plaguelands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11056,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 28,
+              "map_name": "Western Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 42.66,
+              "y": 83.77
+            }
+          ],
+          "name": "Alchemist Arbington",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5803"
+      ],
+      "instruction": "Turn in [QT5803 Araj's Scarab] to Alchemist Arbington",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 5803,
+      "quest_name": "Araj's Scarab",
+      "quest_tag": "Elite",
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 28,
+      "zone_or_sort_name": "Western Plaguelands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11056,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 28,
+              "map_name": "Western Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 42.66,
+              "y": 83.77
+            }
+          ],
+          "name": "Alchemist Arbington",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5505"
+      ],
+      "instruction": "Accept [QA5505 The Key to Scholomance] from Alchemist Arbington.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 5505,
+      "quest_name": "The Key to Scholomance",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 28,
+      "zone_or_sort_name": "Western Plaguelands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5505"
+      ],
+      "instruction": "Complete [QC5505 The Key to Scholomance]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 5505,
+      "quest_name": "The Key to Scholomance",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 28,
+      "zone_or_sort_name": "Western Plaguelands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11056,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 28,
+              "map_name": "Western Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 42.66,
+              "y": 83.77
+            }
+          ],
+          "name": "Alchemist Arbington",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5505"
+      ],
+      "instruction": "Turn in [QT5505 The Key to Scholomance] to Alchemist Arbington",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 5505,
+      "quest_name": "The Key to Scholomance",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 28,
+      "zone_or_sort_name": "Western Plaguelands"
+    }
+  ],
+  "title": "81 Tanaris & Western Plaguelands"
+}

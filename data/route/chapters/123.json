@@ -1,0 +1,838 @@
+{
+  "branch": "optional_content",
+  "entry_contract": "Complete the relevant shared prerequisites. Begin in Eastern Plaguelands with Anthion Harmon. Leave at least two quest-log slots open; group and reputation gates remain explicit.",
+  "entry_route_point": {
+    "map_id": 139,
+    "map_name": "Eastern Plaguelands",
+    "x": 30.85,
+    "y": 16.75
+  },
+  "entry_zone_or_sort": 2557,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 618,
+    "map_name": "Winterspring",
+    "quest_id": 5047,
+    "tag": "QT",
+    "x": 60.99,
+    "y": 38.78
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Optional Content",
+  "guide_file": "Guides/optional_content/123_dungeon_27.lua",
+  "id": "123-optional_content-optional-content-27---dire-maul-&-blackrock-spire",
+  "maximum_level": null,
+  "minimum_level": null,
+  "next_chapter": "Optional Content 28 - Winterspring & Hellfire Citadel",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "Optional Content 26 - Eastern Plaguelands & Scholomance",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 8948,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4771:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8948:starter"
+      ],
+      "instruction": "Continue within Eastern Plaguelands to the next route hub at [G30.85,16.75 Eastern Plaguelands]. [O]",
+      "map_id": 139,
+      "map_name": "Eastern Plaguelands",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 139,
+      "origin_map_name": "Eastern Plaguelands",
+      "origin_x": 81.47,
+      "origin_y": 59.66,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 30.85,
+      "y": 16.75
+    },
+    {
+      "before_quest_id": 8948,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "route-branch:optional_content"
+      ],
+      "instruction": "Optional entry requirements: complete the relevant shared prerequisites. [O]",
+      "map_id": 139,
+      "map_name": "Eastern Plaguelands",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "branch_entry",
+      "verification": "route_dependency_graph",
+      "x": 30.85,
+      "y": 16.75
+    },
+    {
+      "before_quest_id": 8948,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8948:starter"
+      ],
+      "instruction": "Optional chapter: travel to Eastern Plaguelands and begin at [G30.85,16.75 Eastern Plaguelands]. Leave at least two quest-log slots open. [O]",
+      "map_id": 139,
+      "map_name": "Eastern Plaguelands",
+      "optional": true,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 30.85,
+      "y": 16.75
+    },
+    {
+      "before_quest_id": 8948,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8948:requiredLevel"
+      ],
+      "instruction": "Reach level 62 before accepting Anthion's Old Friend. [XP62 Level 62]",
+      "map_id": 139,
+      "map_name": "Eastern Plaguelands",
+      "optional": false,
+      "order": 4,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 62,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 30.85,
+      "y": 16.75
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16016,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 139,
+              "map_name": "Eastern Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 30.85,
+              "y": 16.75
+            }
+          ],
+          "name": "Anthion Harmon",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8948"
+      ],
+      "instruction": "Accept [QA8948 Anthion's Old Friend] from Anthion Harmon.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 8948,
+      "quest_name": "Anthion's Old Friend",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "before_quest_id": 8948,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8948:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 139,
+      "map_name": "Eastern Plaguelands",
+      "optional": true,
+      "order": 6,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        8948
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 30.85,
+      "y": 16.75
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8948"
+      ],
+      "instruction": "Dungeon \u2014 Complete [QC8948 Anthion's Old Friend]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 8948,
+      "quest_name": "Anthion's Old Friend",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16032,
+          "kind": "npc",
+          "locations": [],
+          "name": "Falrin Treeshaper",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8948"
+      ],
+      "instruction": "Turn in [QT8948 Anthion's Old Friend] to Falrin Treeshaper",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 8948,
+      "quest_name": "Anthion's Old Friend",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16032,
+          "kind": "npc",
+          "locations": [],
+          "name": "Falrin Treeshaper",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8949"
+      ],
+      "instruction": "Accept [QA8949 Falrin's Vendetta] from Falrin Treeshaper.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 8949,
+      "quest_name": "Falrin's Vendetta",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8949"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required item: Ogre Warbeads. [QC8949 Falrin's Vendetta]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Ogre Warbeads",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 21982,
+          "kind": "item",
+          "locations": [],
+          "name": "Ogre Warbeads",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 10,
+      "quest_id": 8949,
+      "quest_name": "Falrin's Vendetta",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16032,
+          "kind": "npc",
+          "locations": [],
+          "name": "Falrin Treeshaper",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8949"
+      ],
+      "instruction": "Turn in [QT8949 Falrin's Vendetta] to Falrin Treeshaper",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 8949,
+      "quest_name": "Falrin's Vendetta",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16032,
+          "kind": "npc",
+          "locations": [],
+          "name": "Falrin Treeshaper",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8950"
+      ],
+      "instruction": "Accept [QA8950 The Instigator's Enchantment] from Falrin Treeshaper.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 8950,
+      "quest_name": "The Instigator's Enchantment",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8950"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required items: Jeering Spectre's Essence, Dark Rune, Large Brilliant Shard. [QC8950 The Instigator's Enchantment]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Jeering Spectre's Essence, Dark Rune, Large Brilliant Shard",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 22224,
+          "kind": "item",
+          "locations": [],
+          "name": "Jeering Spectre's Essence",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 20520,
+          "kind": "item",
+          "locations": [],
+          "name": "Dark Rune",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 14344,
+          "kind": "item",
+          "locations": [],
+          "name": "Large Brilliant Shard",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 13,
+      "quest_id": 8950,
+      "quest_name": "The Instigator's Enchantment",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16032,
+          "kind": "npc",
+          "locations": [],
+          "name": "Falrin Treeshaper",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8950"
+      ],
+      "instruction": "Turn in [QT8950 The Instigator's Enchantment] to Falrin Treeshaper",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 8950,
+      "quest_name": "The Instigator's Enchantment",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16032,
+          "kind": "npc",
+          "locations": [],
+          "name": "Falrin Treeshaper",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9015"
+      ],
+      "instruction": "Accept [QA9015 The Challenge] from Falrin Treeshaper.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 9015,
+      "quest_name": "The Challenge",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1584,
+      "zone_or_sort_name": "Blackrock Depths"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9015"
+      ],
+      "instruction": "Dungeon \u2014 Use the quest item [UI21986-] as directed; complete the required objectives \u2014 NPCs or creatures: Theldren Kill Credit; items: Top Piece of Lord Valthalak's Amulet. [QC9015 The Challenge]",
+      "item_use_id": 21986,
+      "objective_hint": "Complete the required objectives \u2014 NPCs or creatures: Theldren Kill Credit; items: Top Piece of Lord Valthalak's Amulet",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16166,
+          "kind": "npc",
+          "locations": [],
+          "name": "Theldren Kill Credit",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 22047,
+          "kind": "item",
+          "locations": [],
+          "name": "Top Piece of Lord Valthalak's Amulet",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 16,
+      "quest_id": 9015,
+      "quest_name": "The Challenge",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1584,
+      "zone_or_sort_name": "Blackrock Depths"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16016,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 139,
+              "map_name": "Eastern Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 30.85,
+              "y": 16.75
+            }
+          ],
+          "name": "Anthion Harmon",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9015"
+      ],
+      "instruction": "Turn in [QT9015 The Challenge] to Anthion Harmon",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 9015,
+      "quest_name": "The Challenge",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1584,
+      "zone_or_sort_name": "Blackrock Depths"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10776,
+          "kind": "npc",
+          "locations": [],
+          "name": "Finkle Einhorn",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5047"
+      ],
+      "instruction": "Accept [QA5047 Finkle Einhorn, At Your Service!] from Finkle Einhorn.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 5047,
+      "quest_name": "Finkle Einhorn, At Your Service!",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1583,
+      "zone_or_sort_name": "Blackrock Spire"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10296,
+          "kind": "npc",
+          "locations": [],
+          "name": "Vaelan",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4743"
+      ],
+      "instruction": "Accept [QA4743 Seal of Ascension] from Vaelan.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 4743,
+      "quest_name": "Seal of Ascension",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1583,
+      "zone_or_sort_name": "Blackrock Spire"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5047"
+      ],
+      "instruction": "Dungeon \u2014 Complete [QC5047 Finkle Einhorn, At Your Service!]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 5047,
+      "quest_name": "Finkle Einhorn, At Your Service!",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1583,
+      "zone_or_sort_name": "Blackrock Spire"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4743"
+      ],
+      "instruction": "Dungeon \u2014 Use the quest item [UI12339-] as directed; collect or use the required item: Forged Seal of Ascension. [QC4743 Seal of Ascension]",
+      "item_use_id": 12339,
+      "objective_hint": "Collect or use the required item: Forged Seal of Ascension",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 12324,
+          "kind": "item",
+          "locations": [],
+          "name": "Forged Seal of Ascension",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 21,
+      "quest_id": 4743,
+      "quest_name": "Seal of Ascension",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1583,
+      "zone_or_sort_name": "Blackrock Spire"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10637,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 60.99,
+              "y": 38.78
+            }
+          ],
+          "name": "Malyfous Darkhammer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5047"
+      ],
+      "instruction": "Turn in [QT5047 Finkle Einhorn, At Your Service!] to Malyfous Darkhammer",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 22,
+      "quest_id": 5047,
+      "quest_name": "Finkle Einhorn, At Your Service!",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1583,
+      "zone_or_sort_name": "Blackrock Spire"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10296,
+          "kind": "npc",
+          "locations": [],
+          "name": "Vaelan",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4743"
+      ],
+      "instruction": "Turn in [QT4743 Seal of Ascension] to Vaelan",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 23,
+      "quest_id": 4743,
+      "quest_name": "Seal of Ascension",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1583,
+      "zone_or_sort_name": "Blackrock Spire"
+    }
+  ],
+  "title": "Optional Content 27 - Dire Maul & Blackrock Spire"
+}

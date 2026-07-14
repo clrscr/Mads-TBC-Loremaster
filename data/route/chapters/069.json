@@ -1,0 +1,480 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 68 Silithus & Winterspring, or select this chapter on a partially completed character. Begin in Felwood with Ivy Leafrunner. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 361,
+    "map_name": "Felwood",
+    "x": 50.96,
+    "y": 81.58
+  },
+  "entry_zone_or_sort": 361,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 139,
+    "map_name": "Eastern Plaguelands",
+    "quest_id": 5245,
+    "tag": "QT",
+    "x": 53.5,
+    "y": 22.0
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/069_world_69.lua",
+  "id": "069-primary-69-felwood-&-winterspring",
+  "maximum_level": 54,
+  "minimum_level": 54,
+  "next_chapter": "70 Silithus",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "68 Silithus & Winterspring",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 5249,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4864:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5249:starter"
+      ],
+      "instruction": "Travel from Winterspring to Felwood. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G50.96,81.58 Felwood]. [O]",
+      "map_id": 361,
+      "map_name": "Felwood",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 618,
+      "origin_map_name": "Winterspring",
+      "origin_x": 52.14,
+      "origin_y": 30.43,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 50.96,
+      "y": 81.58
+    },
+    {
+      "before_quest_id": 5249,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5249:starter"
+      ],
+      "instruction": "Before you begin: travel to Felwood and meet the first quest giver at [G50.96,81.58 Felwood]. Leave at least two quest-log slots open. [O]",
+      "map_id": 361,
+      "map_name": "Felwood",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 50.96,
+      "y": 81.58
+    },
+    {
+      "before_quest_id": 5249,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5249:requiredLevel"
+      ],
+      "instruction": "Reach level 54 before accepting To Winterspring! [XP54 Level 54]",
+      "map_id": 361,
+      "map_name": "Felwood",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 54,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 50.96,
+      "y": 81.58
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10924,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 50.96,
+              "y": 81.58
+            }
+          ],
+          "name": "Ivy Leafrunner",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5249"
+      ],
+      "instruction": "Accept [QA5249 To Winterspring!] from Ivy Leafrunner.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 5249,
+      "quest_name": "To Winterspring!",
+      "quest_tag": null,
+      "required_level": 54,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5249"
+      ],
+      "instruction": "Complete [QC5249 To Winterspring!]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 5249,
+      "quest_name": "To Winterspring!",
+      "quest_tag": null,
+      "required_level": 54,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11079,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 51.97,
+              "y": 30.39
+            }
+          ],
+          "name": "Wynd Nightchaser",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5249"
+      ],
+      "instruction": "Turn in [QT5249 To Winterspring!] to Wynd Nightchaser",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 5249,
+      "quest_name": "To Winterspring!",
+      "quest_tag": null,
+      "required_level": 54,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11079,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 51.97,
+              "y": 30.39
+            }
+          ],
+          "name": "Wynd Nightchaser",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5244"
+      ],
+      "instruction": "Accept [QA5244 The Ruins of Kel'Theril] from Wynd Nightchaser.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 5244,
+      "quest_name": "The Ruins of Kel'Theril",
+      "quest_tag": null,
+      "required_level": 54,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 618,
+      "zone_or_sort_name": "Winterspring"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5244"
+      ],
+      "instruction": "Complete [QC5244 The Ruins of Kel'Theril]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 5244,
+      "quest_name": "The Ruins of Kel'Theril",
+      "quest_tag": null,
+      "required_level": 54,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 618,
+      "zone_or_sort_name": "Winterspring"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10301,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 52.14,
+              "y": 30.43
+            }
+          ],
+          "name": "Jaron Stoneshaper",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5244"
+      ],
+      "instruction": "Turn in [QT5244 The Ruins of Kel'Theril] to Jaron Stoneshaper",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 5244,
+      "quest_name": "The Ruins of Kel'Theril",
+      "quest_tag": null,
+      "required_level": 54,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 618,
+      "zone_or_sort_name": "Winterspring"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10301,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 52.14,
+              "y": 30.43
+            }
+          ],
+          "name": "Jaron Stoneshaper",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5245"
+      ],
+      "instruction": "Accept [QA5245 Troubled Spirits of Kel'Theril] from Jaron Stoneshaper.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 5245,
+      "quest_name": "Troubled Spirits of Kel'Theril",
+      "quest_tag": null,
+      "required_level": 54,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 618,
+      "zone_or_sort_name": "Winterspring"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5245"
+      ],
+      "instruction": "Use the quest item [UI12891-] as directed; collect or use the required items: First Relic Fragment, Second Relic Fragment, Third Relic Fragment, plus 1 more. [QC5245 Troubled Spirits of Kel'Theril]",
+      "item_use_id": 12891,
+      "objective_hint": "Collect or use the required items: First Relic Fragment, Second Relic Fragment, Third Relic Fragment, plus 1 more",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 12896,
+          "kind": "item",
+          "locations": [],
+          "name": "First Relic Fragment",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 12897,
+          "kind": "item",
+          "locations": [],
+          "name": "Second Relic Fragment",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 12898,
+          "kind": "item",
+          "locations": [],
+          "name": "Third Relic Fragment",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 12899,
+          "kind": "item",
+          "locations": [],
+          "name": "Fourth Relic Fragment",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 11,
+      "quest_id": 5245,
+      "quest_name": "Troubled Spirits of Kel'Theril",
+      "quest_tag": null,
+      "required_level": 54,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 618,
+      "zone_or_sort_name": "Winterspring"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10304,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 139,
+              "map_name": "Eastern Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 53.5,
+              "y": 22.0
+            }
+          ],
+          "name": "Aurora Skycaller",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5245"
+      ],
+      "instruction": "Turn in [QT5245 Troubled Spirits of Kel'Theril] to Aurora Skycaller",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 5245,
+      "quest_name": "Troubled Spirits of Kel'Theril",
+      "quest_tag": null,
+      "required_level": 54,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 618,
+      "zone_or_sort_name": "Winterspring"
+    }
+  ],
+  "title": "69 Felwood & Winterspring"
+}

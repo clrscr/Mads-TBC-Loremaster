@@ -1,0 +1,1342 @@
+{
+  "branch": "optional_content",
+  "entry_contract": "Complete Rhapsody's Tale. Begin in Loch Modan with Hammertoe Grez. Leave at least two quest-log slots open; group and reputation gates remain explicit.",
+  "entry_route_point": {
+    "map_id": 38,
+    "map_name": "Loch Modan",
+    "x": 37.28,
+    "y": 85.78
+  },
+  "entry_zone_or_sort": 3,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 1519,
+    "map_name": "Stormwind City",
+    "quest_id": 1475,
+    "tag": "QT",
+    "x": 64.33,
+    "y": 20.63
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [
+    [
+      1469
+    ]
+  ],
+  "external_prerequisite_quest_ids": [
+    1469
+  ],
+  "group": "Mad's Loremaster Guide - Optional Content",
+  "guide_file": "Guides/optional_content/103_world_07.lua",
+  "id": "103-optional_content-optional-content-07---badlands-&-sunken-temple",
+  "maximum_level": null,
+  "minimum_level": null,
+  "next_chapter": "Optional Content 08 - Maraudon",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "Optional Content 06 - Razorfen Downs & Scarlet Monastery",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 723,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2279:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:723:starter"
+      ],
+      "instruction": "Travel from Ironforge to Loch Modan. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G37.28,85.78 Loch Modan]. [O]",
+      "map_id": 38,
+      "map_name": "Loch Modan",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 1537,
+      "origin_map_name": "Ironforge",
+      "origin_x": 69.93,
+      "origin_y": 18.55,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 37.28,
+      "y": 85.78
+    },
+    {
+      "before_quest_id": 723,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1469:dependency"
+      ],
+      "instruction": "Optional entry requirements: complete Rhapsody's Tale. [O]",
+      "map_id": 38,
+      "map_name": "Loch Modan",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        1469
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "branch_entry",
+      "verification": "route_dependency_graph",
+      "x": 37.28,
+      "y": 85.78
+    },
+    {
+      "before_quest_id": 723,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:723:starter"
+      ],
+      "instruction": "Optional chapter: travel to Loch Modan and begin at [G37.28,85.78 Loch Modan]. Leave at least two quest-log slots open. [O]",
+      "map_id": 38,
+      "map_name": "Loch Modan",
+      "optional": true,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 37.28,
+      "y": 85.78
+    },
+    {
+      "before_quest_id": 723,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:723:requiredLevel"
+      ],
+      "instruction": "Reach level 40 before accepting Prospect of Faith. [XP40 Level 40]",
+      "map_id": 38,
+      "map_name": "Loch Modan",
+      "optional": false,
+      "order": 4,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 40,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 37.28,
+      "y": 85.78
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2909,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 37.28,
+              "y": 85.78
+            }
+          ],
+          "name": "Hammertoe Grez",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:723"
+      ],
+      "instruction": "Accept [QA723 Prospect of Faith] from Hammertoe Grez.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 723,
+      "quest_name": "Prospect of Faith",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3,
+      "zone_or_sort_name": "Badlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:723"
+      ],
+      "instruction": "Complete [QC723 Prospect of Faith]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 723,
+      "quest_name": "Prospect of Faith",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3,
+      "zone_or_sort_name": "Badlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2910,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3,
+              "map_name": "Badlands",
+              "verification": "questie_structured_source_only",
+              "x": 53.42,
+              "y": 43.39
+            }
+          ],
+          "name": "Prospector Ryedol",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:723"
+      ],
+      "instruction": "Turn in [QT723 Prospect of Faith] to Prospector Ryedol",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 723,
+      "quest_name": "Prospect of Faith",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3,
+      "zone_or_sort_name": "Badlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2910,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3,
+              "map_name": "Badlands",
+              "verification": "questie_structured_source_only",
+              "x": 53.42,
+              "y": 43.39
+            }
+          ],
+          "name": "Prospector Ryedol",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:724"
+      ],
+      "instruction": "Accept [QA724 Prospect of Faith] from Prospector Ryedol.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 724,
+      "quest_name": "Prospect of Faith",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3,
+      "zone_or_sort_name": "Badlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:724"
+      ],
+      "instruction": "Complete [QC724 Prospect of Faith]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 724,
+      "quest_name": "Prospect of Faith",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3,
+      "zone_or_sort_name": "Badlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2916,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 77.54,
+              "y": 11.82
+            }
+          ],
+          "name": "Historian Karnik",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:724"
+      ],
+      "instruction": "Turn in [QT724 Prospect of Faith] to Historian Karnik",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 724,
+      "quest_name": "Prospect of Faith",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3,
+      "zone_or_sort_name": "Badlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2916,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 77.54,
+              "y": 11.82
+            }
+          ],
+          "name": "Historian Karnik",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:725"
+      ],
+      "instruction": "Accept [QA725 Passing Word of a Threat] from Historian Karnik.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 725,
+      "quest_name": "Passing Word of a Threat",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3,
+      "zone_or_sort_name": "Badlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:725"
+      ],
+      "instruction": "Complete [QC725 Passing Word of a Threat]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 725,
+      "quest_name": "Passing Word of a Threat",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3,
+      "zone_or_sort_name": "Badlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2918,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 77.34,
+              "y": 9.71
+            }
+          ],
+          "name": "Advisor Belgrum",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:725"
+      ],
+      "instruction": "Turn in [QT725 Passing Word of a Threat] to Advisor Belgrum",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 725,
+      "quest_name": "Passing Word of a Threat",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3,
+      "zone_or_sort_name": "Badlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2918,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 77.34,
+              "y": 9.71
+            }
+          ],
+          "name": "Advisor Belgrum",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:726"
+      ],
+      "instruction": "Accept [QA726 Passing Word of a Threat] from Advisor Belgrum.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 726,
+      "quest_name": "Passing Word of a Threat",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3,
+      "zone_or_sort_name": "Badlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:726"
+      ],
+      "instruction": "Complete [QC726 Passing Word of a Threat]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 726,
+      "quest_name": "Passing Word of a Threat",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3,
+      "zone_or_sort_name": "Badlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2916,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 77.54,
+              "y": 11.82
+            }
+          ],
+          "name": "Historian Karnik",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:726"
+      ],
+      "instruction": "Turn in [QT726 Passing Word of a Threat] to Historian Karnik",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 726,
+      "quest_name": "Passing Word of a Threat",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3,
+      "zone_or_sort_name": "Badlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2916,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 77.54,
+              "y": 11.82
+            }
+          ],
+          "name": "Historian Karnik",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:762"
+      ],
+      "instruction": "Accept [QA762 An Ambassador of Evil] from Historian Karnik.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 762,
+      "quest_name": "An Ambassador of Evil",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3,
+      "zone_or_sort_name": "Badlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:762"
+      ],
+      "instruction": "Collect or use the required item: Ambassador Infernus' Bracer. [QC762 An Ambassador of Evil]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Ambassador Infernus' Bracer",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4621,
+          "kind": "item",
+          "locations": [],
+          "name": "Ambassador Infernus' Bracer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 18,
+      "quest_id": 762,
+      "quest_name": "An Ambassador of Evil",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3,
+      "zone_or_sort_name": "Badlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2918,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 77.34,
+              "y": 9.71
+            }
+          ],
+          "name": "Advisor Belgrum",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:762"
+      ],
+      "instruction": "Turn in [QT762 An Ambassador of Evil] to Advisor Belgrum",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 762,
+      "quest_name": "An Ambassador of Evil",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3,
+      "zone_or_sort_name": "Badlands"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2918,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 77.34,
+              "y": 9.71
+            }
+          ],
+          "name": "Advisor Belgrum",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1139"
+      ],
+      "instruction": "Accept [QA1139 The Lost Tablets of Will] from Advisor Belgrum.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 1139,
+      "quest_name": "The Lost Tablets of Will",
+      "quest_tag": "Dungeon",
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "before_quest_id": 2204,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2204:requiredLevel"
+      ],
+      "instruction": "Reach level 41 before accepting Restoring the Necklace. [XP41 Level 41]",
+      "map_id": 1517,
+      "map_name": "Map or sort 1517",
+      "optional": false,
+      "order": 21,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 41,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": null,
+      "y": null
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 112877,
+          "kind": "object",
+          "locations": [],
+          "name": "Talvash's Scrying Bowl",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2204"
+      ],
+      "instruction": "Accept [QA2204 Restoring the Necklace] from Talvash's Scrying Bowl.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 22,
+      "quest_id": 2204,
+      "quest_name": "Restoring the Necklace",
+      "quest_tag": "Dungeon",
+      "required_level": 41,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "before_quest_id": 1139,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1139:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 38,
+      "map_name": "Loch Modan",
+      "optional": true,
+      "order": 23,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        1139
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 37.28,
+      "y": 85.78
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1139"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required item: Tablet of Will. [QC1139 The Lost Tablets of Will]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Tablet of Will",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 5824,
+          "kind": "item",
+          "locations": [],
+          "name": "Tablet of Will",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 24,
+      "quest_id": 1139,
+      "quest_name": "The Lost Tablets of Will",
+      "quest_tag": "Dungeon",
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2204"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required item: Shattered Necklace Power Source. [QC2204 Restoring the Necklace]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Shattered Necklace Power Source",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 7672,
+          "kind": "item",
+          "locations": [],
+          "name": "Shattered Necklace Power Source",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 25,
+      "quest_id": 2204,
+      "quest_name": "Restoring the Necklace",
+      "quest_tag": "Dungeon",
+      "required_level": 41,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2918,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 77.34,
+              "y": 9.71
+            }
+          ],
+          "name": "Advisor Belgrum",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1139"
+      ],
+      "instruction": "Turn in [QT1139 The Lost Tablets of Will] to Advisor Belgrum",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 26,
+      "quest_id": 1139,
+      "quest_name": "The Lost Tablets of Will",
+      "quest_tag": "Dungeon",
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 6826,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 36.38,
+              "y": 3.61
+            }
+          ],
+          "name": "Talvash del Kissel",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2204"
+      ],
+      "instruction": "Turn in [QT2204 Restoring the Necklace] to Talvash del Kissel",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 27,
+      "quest_id": 2204,
+      "quest_name": "Restoring the Necklace",
+      "quest_tag": "Dungeon",
+      "required_level": 41,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 6826,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 36.38,
+              "y": 3.61
+            }
+          ],
+          "name": "Talvash del Kissel",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2361"
+      ],
+      "instruction": "Accept [QA2361 Restoring the Necklace] from Talvash del Kissel.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 28,
+      "quest_id": 2361,
+      "quest_name": "Restoring the Necklace",
+      "quest_tag": "Dungeon",
+      "required_level": 41,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2361"
+      ],
+      "instruction": "Dungeon \u2014 Complete [QC2361 Restoring the Necklace]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 29,
+      "quest_id": 2361,
+      "quest_name": "Restoring the Necklace",
+      "quest_tag": "Dungeon",
+      "required_level": 41,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 6826,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 36.38,
+              "y": 3.61
+            }
+          ],
+          "name": "Talvash del Kissel",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2361"
+      ],
+      "instruction": "Turn in [QT2361 Restoring the Necklace] to Talvash del Kissel",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 30,
+      "quest_id": 2361,
+      "quest_name": "Restoring the Necklace",
+      "quest_tag": "Dungeon",
+      "required_level": 41,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5598,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 47,
+              "map_name": "The Hinterlands",
+              "verification": "questie_structured_source_only",
+              "x": 33.75,
+              "y": 75.21
+            }
+          ],
+          "name": "Atal'ai Exile",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1446"
+      ],
+      "instruction": "Accept [QA1446 Jammal'an the Prophet] from Atal'ai Exile.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 31,
+      "quest_id": 1446,
+      "quest_name": "Jammal'an the Prophet",
+      "quest_tag": "Dungeon",
+      "required_level": 41,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1417,
+      "zone_or_sort_name": "Sunken Temple"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1446"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required item: Head of Jammal'an. [QC1446 Jammal'an the Prophet]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Head of Jammal'an",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 6212,
+          "kind": "item",
+          "locations": [],
+          "name": "Head of Jammal'an",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 32,
+      "quest_id": 1446,
+      "quest_name": "Jammal'an the Prophet",
+      "quest_tag": "Dungeon",
+      "required_level": 41,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1417,
+      "zone_or_sort_name": "Sunken Temple"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5598,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 47,
+              "map_name": "The Hinterlands",
+              "verification": "questie_structured_source_only",
+              "x": 33.75,
+              "y": 75.21
+            }
+          ],
+          "name": "Atal'ai Exile",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1446"
+      ],
+      "instruction": "Turn in [QT1446 Jammal'an the Prophet] to Atal'ai Exile",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 33,
+      "quest_id": 1446,
+      "quest_name": "Jammal'an the Prophet",
+      "quest_tag": "Dungeon",
+      "required_level": 41,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1417,
+      "zone_or_sort_name": "Sunken Temple"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5384,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 64.33,
+              "y": 20.63
+            }
+          ],
+          "name": "Brohann Caskbelly",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1475"
+      ],
+      "instruction": "Accept [QA1475 Into The Temple of Atal'Hakkar] from Brohann Caskbelly.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 34,
+      "quest_id": 1475,
+      "quest_name": "Into The Temple of Atal'Hakkar",
+      "quest_tag": "Dungeon",
+      "required_level": 41,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1417,
+      "zone_or_sort_name": "Sunken Temple"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1475"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required item: Atal'ai Tablet. [QC1475 Into The Temple of Atal'Hakkar]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Atal'ai Tablet",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 6288,
+          "kind": "item",
+          "locations": [],
+          "name": "Atal'ai Tablet",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 35,
+      "quest_id": 1475,
+      "quest_name": "Into The Temple of Atal'Hakkar",
+      "quest_tag": "Dungeon",
+      "required_level": 41,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1417,
+      "zone_or_sort_name": "Sunken Temple"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5384,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 64.33,
+              "y": 20.63
+            }
+          ],
+          "name": "Brohann Caskbelly",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1475"
+      ],
+      "instruction": "Turn in [QT1475 Into The Temple of Atal'Hakkar] to Brohann Caskbelly",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 36,
+      "quest_id": 1475,
+      "quest_name": "Into The Temple of Atal'Hakkar",
+      "quest_tag": "Dungeon",
+      "required_level": 41,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1417,
+      "zone_or_sort_name": "Sunken Temple"
+    }
+  ],
+  "title": "Optional Content 07 - Badlands & Sunken Temple"
+}

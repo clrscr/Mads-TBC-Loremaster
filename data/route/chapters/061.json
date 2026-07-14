@@ -1,0 +1,1076 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 60 Burning Steppes, or select this chapter on a partially completed character. Begin in Felwood with Nafien. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 361,
+    "map_name": "Felwood",
+    "x": 64.77,
+    "y": 8.13
+  },
+  "entry_zone_or_sort": 1769,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 618,
+    "map_name": "Winterspring",
+    "quest_id": 8465,
+    "tag": "QT",
+    "x": 27.73,
+    "y": 34.5
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/061_world_61.lua",
+  "id": "061-primary-61-felwood",
+  "maximum_level": 50,
+  "minimum_level": 50,
+  "next_chapter": "62 Winterspring",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "60 Burning Steppes",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 8461,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2681:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8461:starter",
+        "travel-network:auberdine-menethil",
+        "https://www.wowhead.com/tbc/quest=942/the-absent-minded-prospector"
+      ],
+      "instruction": "Travel from Swamp of Sorrows to Felwood: Take the ship between Auberdine and Menethil Harbor. Continue to [G64.77,8.13 Felwood]. [O]",
+      "map_id": 361,
+      "map_name": "Felwood",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 8,
+      "origin_map_name": "Swamp of Sorrows",
+      "origin_x": 34.29,
+      "origin_y": 66.14,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [
+        "auberdine-menethil"
+      ],
+      "type": "transport",
+      "verification": "questie_endpoints_and_tbc_transport_network",
+      "x": 64.77,
+      "y": 8.13
+    },
+    {
+      "before_quest_id": 8461,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8461:starter"
+      ],
+      "instruction": "Before you begin: travel to Felwood and meet the first quest giver at [G64.77,8.13 Felwood]. Leave at least two quest-log slots open. [O]",
+      "map_id": 361,
+      "map_name": "Felwood",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 64.77,
+      "y": 8.13
+    },
+    {
+      "before_quest_id": 8461,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8461:requiredLevel"
+      ],
+      "instruction": "Reach level 50 before accepting Deadwood of the North. [XP50 Level 50]",
+      "map_id": 361,
+      "map_name": "Felwood",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 50,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 64.77,
+      "y": 8.13
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15395,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 64.77,
+              "y": 8.13
+            }
+          ],
+          "name": "Nafien",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8461"
+      ],
+      "instruction": "Accept [QA8461 Deadwood of the North] from Nafien.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 8461,
+      "quest_name": "Deadwood of the North",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1769,
+      "zone_or_sort_name": "Map or sort 1769"
+    },
+    {
+      "before_quest_id": 8461,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:npc:12578",
+        "authored-route:guidelime-tugs-tbc-alliance-2.50:52-53Felwood.lua:32"
+      ],
+      "instruction": "Optional: learn the flight path from Mishellena. [P][G62.49,24.24 Felwood][O]",
+      "map_id": 361,
+      "map_name": "Felwood",
+      "optional": true,
+      "order": 5,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "acquire_flight_path",
+      "verification": "cross_verified_questie_and_authored_route",
+      "x": 62.49,
+      "y": 24.24
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8461"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Deadwood Den Watcher, Deadwood Avenger, Deadwood Shaman. [QC8461 Deadwood of the North]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Deadwood Den Watcher, Deadwood Avenger, Deadwood Shaman",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7156,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 63.68,
+              "y": 6.05
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 60.07,
+              "y": 8.15
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 61.43,
+              "y": 10.04
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 62.54,
+              "y": 13.21
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 62.56,
+              "y": 10.26
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 62.67,
+              "y": 9.94
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 62.76,
+              "y": 8.01
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 61.26,
+              "y": 7.41
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 60.11,
+              "y": 5.79
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 61.14,
+              "y": 5.84
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 61.74,
+              "y": 6.32
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 62.08,
+              "y": 7.12
+            }
+          ],
+          "name": "Deadwood Den Watcher",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7157,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 60.9,
+              "y": 8.42
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 61.1,
+              "y": 9.04
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 63.67,
+              "y": 8.17
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 63.27,
+              "y": 12.95
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 63.44,
+              "y": 11.59
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 63.06,
+              "y": 11.59
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 63.14,
+              "y": 9.84
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 62.73,
+              "y": 10.06
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 62.61,
+              "y": 7.75
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 62.67,
+              "y": 8.45
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 62.96,
+              "y": 7.33
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 61.18,
+              "y": 7.75
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 60.1,
+              "y": 6.45
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 59.84,
+              "y": 6.19
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 60.45,
+              "y": 5.56
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 63.11,
+              "y": 9.02
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 63.35,
+              "y": 8.23
+            }
+          ],
+          "name": "Deadwood Avenger",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7158,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 64.01,
+              "y": 6.79
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 60.37,
+              "y": 8.82
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 61.46,
+              "y": 11.15
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 63.66,
+              "y": 12.34
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 62.48,
+              "y": 11.56
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 62.63,
+              "y": 11.22
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 63.06,
+              "y": 10.9
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 62.51,
+              "y": 11.8
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 62.42,
+              "y": 12.69
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 62.33,
+              "y": 9.25
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 62.71,
+              "y": 7.14
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 60.14,
+              "y": 7.39
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 61.37,
+              "y": 10.61
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 60.27,
+              "y": 5.91
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 62.41,
+              "y": 6.31
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 63.64,
+              "y": 9.11
+            }
+          ],
+          "name": "Deadwood Shaman",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 6,
+      "quest_id": 8461,
+      "quest_name": "Deadwood of the North",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1769,
+      "zone_or_sort_name": "Map or sort 1769"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15395,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 64.77,
+              "y": 8.13
+            }
+          ],
+          "name": "Nafien",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8461"
+      ],
+      "instruction": "Turn in [QT8461 Deadwood of the North] to Nafien",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 8461,
+      "quest_name": "Deadwood of the North",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1769,
+      "zone_or_sort_name": "Map or sort 1769"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11556,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 27.73,
+              "y": 34.5
+            }
+          ],
+          "name": "Salfa",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8464"
+      ],
+      "instruction": "Accept [QA8464 Winterfall Activity] from Salfa.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 8464,
+      "quest_name": "Winterfall Activity",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1769,
+      "zone_or_sort_name": "Map or sort 1769"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8464"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Winterfall Shaman, Winterfall Den Watcher, Winterfall Ursa. [QC8464 Winterfall Activity]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Winterfall Shaman, Winterfall Den Watcher, Winterfall Ursa",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7439,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 67.5,
+              "y": 39.8
+            },
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 67.37,
+              "y": 35.22
+            },
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 67.86,
+              "y": 38.06
+            },
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 68.23,
+              "y": 36.92
+            },
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 69.51,
+              "y": 38.33
+            },
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 67.59,
+              "y": 35.66
+            }
+          ],
+          "name": "Winterfall Shaman",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7440,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 68.0,
+              "y": 34.37
+            },
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 41.6,
+              "y": 42.64
+            },
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 65.95,
+              "y": 34.97
+            },
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 30.34,
+              "y": 36.33
+            },
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 30.61,
+              "y": 35.62
+            },
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 30.5,
+              "y": 36.92
+            },
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 66.23,
+              "y": 34.3
+            },
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 66.14,
+              "y": 35.48
+            },
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 67.08,
+              "y": 34.06
+            },
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 66.97,
+              "y": 34.49
+            },
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 68.13,
+              "y": 35.66
+            },
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 68.54,
+              "y": 35.09
+            },
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 67.13,
+              "y": 36.24
+            },
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 67.51,
+              "y": 35.91
+            },
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 66.54,
+              "y": 35.92
+            }
+          ],
+          "name": "Winterfall Den Watcher",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7438,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 65.24,
+              "y": 37.81
+            },
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 67.68,
+              "y": 39.41
+            },
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 66.64,
+              "y": 38.86
+            },
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 65.11,
+              "y": 37.18
+            },
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 67.29,
+              "y": 39.96
+            },
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 66.04,
+              "y": 38.5
+            },
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 65.79,
+              "y": 37.64
+            },
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 66.66,
+              "y": 37.07
+            },
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 66.84,
+              "y": 37.04
+            },
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 68.08,
+              "y": 36.86
+            },
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 68.79,
+              "y": 37.84
+            },
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 68.0,
+              "y": 38.05
+            }
+          ],
+          "name": "Winterfall Ursa",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 9,
+      "quest_id": 8464,
+      "quest_name": "Winterfall Activity",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1769,
+      "zone_or_sort_name": "Map or sort 1769"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11556,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 27.73,
+              "y": 34.5
+            }
+          ],
+          "name": "Salfa",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8464"
+      ],
+      "instruction": "Turn in [QT8464 Winterfall Activity] to Salfa",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 8464,
+      "quest_name": "Winterfall Activity",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1769,
+      "zone_or_sort_name": "Map or sort 1769"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15395,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 64.77,
+              "y": 8.13
+            }
+          ],
+          "name": "Nafien",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8465"
+      ],
+      "instruction": "Accept [QA8465 Speak to Salfa] from Nafien.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 8465,
+      "quest_name": "Speak to Salfa",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8465"
+      ],
+      "instruction": "Complete [QC8465 Speak to Salfa]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 8465,
+      "quest_name": "Speak to Salfa",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11556,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 27.73,
+              "y": 34.5
+            }
+          ],
+          "name": "Salfa",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8465"
+      ],
+      "instruction": "Turn in [QT8465 Speak to Salfa] to Salfa",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 8465,
+      "quest_name": "Speak to Salfa",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    }
+  ],
+  "title": "61 Felwood"
+}

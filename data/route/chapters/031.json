@@ -1,0 +1,2419 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 30 Desolace, or select this chapter on a partially completed character. Begin in Arathi Highlands with Pendant of Myzrael. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 45,
+    "map_name": "Arathi Highlands",
+    "x": 62.5,
+    "y": 33.73
+  },
+  "entry_zone_or_sort": 45,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 267,
+    "map_name": "Hillsbrad Foothills",
+    "quest_id": 661,
+    "tag": "QT",
+    "x": 50.35,
+    "y": 59.05
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/031_world_31.lua",
+  "id": "031-primary-31-arathi-highlands-&-hillsbrad-foothills",
+  "maximum_level": 30,
+  "minimum_level": 30,
+  "next_chapter": "32 Stormwind City",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "30 Desolace",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 635,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:563:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:635:finisher"
+      ],
+      "instruction": "Travel from Stormwind City to Arathi Highlands. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G62.50,33.73 Arathi Highlands]. [O]",
+      "map_id": 45,
+      "map_name": "Arathi Highlands",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 1519,
+      "origin_map_name": "Stormwind City",
+      "origin_x": 72.57,
+      "origin_y": 15.88,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 62.5,
+      "y": 33.73
+    },
+    {
+      "before_quest_id": 635,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:635:finisher"
+      ],
+      "instruction": "Before you begin: travel to Arathi Highlands and continue from the first verified route point at [G62.50,33.73 Arathi Highlands]. Leave at least two quest-log slots open. [O]",
+      "map_id": 45,
+      "map_name": "Arathi Highlands",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 62.5,
+      "y": 33.73
+    },
+    {
+      "before_quest_id": 635,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:635:requiredLevel"
+      ],
+      "instruction": "Reach level 30 before accepting Crystal in the Mountains. [XP30 Level 30]",
+      "map_id": 45,
+      "map_name": "Arathi Highlands",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 30,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": null,
+      "y": null
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4614,
+          "kind": "item",
+          "locations": [],
+          "name": "Pendant of Myzrael",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:635"
+      ],
+      "instruction": "Accept [QA635 Crystal in the Mountains] from Pendant of Myzrael.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 635,
+      "quest_name": "Crystal in the Mountains",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 138492,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 62.5,
+              "y": 33.73
+            }
+          ],
+          "name": "Shards of Myzrael",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:642"
+      ],
+      "instruction": "Accept [QA642 The Princess Trapped] from Shards of Myzrael.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 642,
+      "quest_name": "The Princess Trapped",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:635"
+      ],
+      "instruction": "Complete [QC635 Crystal in the Mountains]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 635,
+      "quest_name": "Crystal in the Mountains",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:642"
+      ],
+      "instruction": "Collect or use the required item: Mote of Myzrael. [QC642 The Princess Trapped]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Mote of Myzrael",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4435,
+          "kind": "item",
+          "locations": [],
+          "name": "Mote of Myzrael",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 7,
+      "quest_id": 642,
+      "quest_name": "The Princess Trapped",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 138492,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 62.5,
+              "y": 33.73
+            }
+          ],
+          "name": "Shards of Myzrael",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:635"
+      ],
+      "instruction": "Turn in [QT635 Crystal in the Mountains] to Shards of Myzrael",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 635,
+      "quest_name": "Crystal in the Mountains",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 2701,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 84.31,
+              "y": 30.95
+            }
+          ],
+          "name": "Iridescent Shards",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:642"
+      ],
+      "instruction": "Turn in [QT642 The Princess Trapped] to Iridescent Shards",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 642,
+      "quest_name": "The Princess Trapped",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 2701,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 84.31,
+              "y": 30.95
+            }
+          ],
+          "name": "Iridescent Shards",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:651"
+      ],
+      "instruction": "Accept [QA651 Stones of Binding] from Iridescent Shards.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 651,
+      "quest_name": "Stones of Binding",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:651"
+      ],
+      "instruction": "Collect or use the required items: Burning Key, Cresting Key, Thundering Key. [QC651 Stones of Binding]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Burning Key, Cresting Key, Thundering Key",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4483,
+          "kind": "item",
+          "locations": [],
+          "name": "Burning Key",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4484,
+          "kind": "item",
+          "locations": [],
+          "name": "Cresting Key",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4485,
+          "kind": "item",
+          "locations": [],
+          "name": "Thundering Key",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 11,
+      "quest_id": 651,
+      "quest_name": "Stones of Binding",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 2702,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 36.23,
+              "y": 57.38
+            }
+          ],
+          "name": "Stone of Inner Binding",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:651"
+      ],
+      "instruction": "Turn in [QT651 Stones of Binding] to Stone of Inner Binding",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 651,
+      "quest_name": "Stones of Binding",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 2702,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 36.23,
+              "y": 57.38
+            }
+          ],
+          "name": "Stone of Inner Binding",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:652"
+      ],
+      "instruction": "Accept [QA652 Breaking the Keystone] from Stone of Inner Binding.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 652,
+      "quest_name": "Breaking the Keystone",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2700,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 45.83,
+              "y": 47.56
+            }
+          ],
+          "name": "Captain Nials",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:681"
+      ],
+      "instruction": "Accept [QA681 Northfold Manor] from Captain Nials.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 681,
+      "quest_name": "Northfold Manor",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:681"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Syndicate Highwayman, Syndicate Mercenary. [QC681 Northfold Manor]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Syndicate Highwayman, Syndicate Mercenary",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2586,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 33.91,
+              "y": 26.51
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 34.7,
+              "y": 27.0
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 34.66,
+              "y": 31.69
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 33.92,
+              "y": 32.94
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 32.94,
+              "y": 32.38
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 34.69,
+              "y": 29.88
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 34.0,
+              "y": 29.55
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 34.67,
+              "y": 28.35
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 31.78,
+              "y": 32.98
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 33.79,
+              "y": 30.77
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 33.51,
+              "y": 31.47
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 30.97,
+              "y": 29.79
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 31.22,
+              "y": 25.48
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 34.19,
+              "y": 26.96
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 30.3,
+              "y": 27.97
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 30.3,
+              "y": 24.33
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 29.05,
+              "y": 28.38
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 30.63,
+              "y": 25.68
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 30.37,
+              "y": 28.87
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 32.11,
+              "y": 24.79
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 31.59,
+              "y": 31.21
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 29.32,
+              "y": 26.85
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 32.21,
+              "y": 31.87
+            }
+          ],
+          "name": "Syndicate Highwayman",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2589,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 32.35,
+              "y": 25.93
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 32.47,
+              "y": 26.75
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 31.54,
+              "y": 30.03
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 33.6,
+              "y": 29.25
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 30.96,
+              "y": 27.91
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 33.66,
+              "y": 29.8
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 33.02,
+              "y": 31.04
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 31.86,
+              "y": 25.64
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 32.28,
+              "y": 31.22
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 32.11,
+              "y": 30.91
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 31.02,
+              "y": 28.75
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 32.11,
+              "y": 25.35
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 33.75,
+              "y": 27.34
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 30.9,
+              "y": 26.16
+            }
+          ],
+          "name": "Syndicate Mercenary",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 15,
+      "quest_id": 681,
+      "quest_name": "Northfold Manor",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:652"
+      ],
+      "instruction": "Collect or use the required item: Rod of Order. [QC652 Breaking the Keystone]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Rod of Order",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4469,
+          "kind": "item",
+          "locations": [],
+          "name": "Rod of Order",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 16,
+      "quest_id": 652,
+      "quest_name": "Breaking the Keystone",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2700,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 45.83,
+              "y": 47.56
+            }
+          ],
+          "name": "Captain Nials",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:681"
+      ],
+      "instruction": "Turn in [QT681 Northfold Manor] to Captain Nials",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 681,
+      "quest_name": "Northfold Manor",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 2688,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 36.08,
+              "y": 58.09
+            }
+          ],
+          "name": "Keystone",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:652"
+      ],
+      "instruction": "Turn in [QT652 Breaking the Keystone] to Keystone",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 652,
+      "quest_name": "Breaking the Keystone",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2700,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 45.83,
+              "y": 47.56
+            }
+          ],
+          "name": "Captain Nials",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:682"
+      ],
+      "instruction": "Accept [QA682 Stromgarde Badges] from Captain Nials.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 682,
+      "quest_name": "Stromgarde Badges",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 2713,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 46.04,
+              "y": 47.76
+            }
+          ],
+          "name": "Wanted Board",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:684"
+      ],
+      "instruction": "Accept [QA684 Wanted! Marez Cowl] from Wanted Board.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 684,
+      "quest_name": "Wanted!  Marez Cowl",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 2713,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 46.04,
+              "y": 47.76
+            }
+          ],
+          "name": "Wanted Board",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:685"
+      ],
+      "instruction": "Accept [QA685 Wanted! Otto and Falconcrest] from Wanted Board.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 685,
+      "quest_name": "Wanted!  Otto and Falconcrest",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:682"
+      ],
+      "instruction": "Collect or use the required item: Stromgarde Badge. [QC682 Stromgarde Badges]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Stromgarde Badge",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4506,
+          "kind": "item",
+          "locations": [],
+          "name": "Stromgarde Badge",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 22,
+      "quest_id": 682,
+      "quest_name": "Stromgarde Badges",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:684"
+      ],
+      "instruction": "Collect or use the required item: Marez's Head. [QC684 Wanted! Marez Cowl]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Marez's Head",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4515,
+          "kind": "item",
+          "locations": [],
+          "name": "Marez's Head",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 23,
+      "quest_id": 684,
+      "quest_name": "Wanted!  Marez Cowl",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:685"
+      ],
+      "instruction": "Collect or use the required items: Otto's Head, Falconcrest's Head. [QC685 Wanted! Otto and Falconcrest]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Otto's Head, Falconcrest's Head",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4516,
+          "kind": "item",
+          "locations": [],
+          "name": "Otto's Head",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4517,
+          "kind": "item",
+          "locations": [],
+          "name": "Falconcrest's Head",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 24,
+      "quest_id": 685,
+      "quest_name": "Wanted!  Otto and Falconcrest",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2700,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 45.83,
+              "y": 47.56
+            }
+          ],
+          "name": "Captain Nials",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:682"
+      ],
+      "instruction": "Turn in [QT682 Stromgarde Badges] to Captain Nials",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 25,
+      "quest_id": 682,
+      "quest_name": "Stromgarde Badges",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2700,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 45.83,
+              "y": 47.56
+            }
+          ],
+          "name": "Captain Nials",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:684"
+      ],
+      "instruction": "Turn in [QT684 Wanted! Marez Cowl] to Captain Nials",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 26,
+      "quest_id": 684,
+      "quest_name": "Wanted!  Marez Cowl",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2700,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 45.83,
+              "y": 47.56
+            }
+          ],
+          "name": "Captain Nials",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:685"
+      ],
+      "instruction": "Turn in [QT685 Wanted! Otto and Falconcrest] to Captain Nials",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 27,
+      "quest_id": 685,
+      "quest_name": "Wanted!  Otto and Falconcrest",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2382,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 52.42,
+              "y": 55.96
+            }
+          ],
+          "name": "Darren Malvew",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:564"
+      ],
+      "instruction": "Accept [QA564 Costly Menace] from Darren Malvew.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 28,
+      "quest_id": 564,
+      "quest_name": "Costly Menace",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 267,
+      "zone_or_sort_name": "Hillsbrad Foothills"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2711,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 50.35,
+              "y": 59.05
+            }
+          ],
+          "name": "Phin Odelic",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:659"
+      ],
+      "instruction": "Accept [QA659 Hints of a New Plague?] from Phin Odelic.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 29,
+      "quest_id": 659,
+      "quest_name": "Hints of a New Plague?",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 267,
+      "zone_or_sort_name": "Hillsbrad Foothills"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:564"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Mountain Lion, Hulking Mountain Lion. [QC564 Costly Menace]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Mountain Lion, Hulking Mountain Lion",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2406,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 34.36,
+              "y": 82.92
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 35.93,
+              "y": 84.76
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 32.15,
+              "y": 82.81
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 40.34,
+              "y": 91.87
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 42.78,
+              "y": 78.54
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 38.2,
+              "y": 91.93
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 37.02,
+              "y": 86.37
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 39.35,
+              "y": 88.11
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 37.51,
+              "y": 88.68
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 49.05,
+              "y": 75.2
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 35.29,
+              "y": 84.17
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 33.64,
+              "y": 83.9
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 30.58,
+              "y": 78.93
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 31.74,
+              "y": 81.14
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 29.94,
+              "y": 77.13
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 29.68,
+              "y": 84.71
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 31.14,
+              "y": 72.23
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 29.43,
+              "y": 70.37
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 29.67,
+              "y": 74.55
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 33.02,
+              "y": 80.06
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 32.54,
+              "y": 79.55
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 29.71,
+              "y": 86.56
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 30.55,
+              "y": 88.32
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 83.12,
+              "y": 58.17
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 74.1,
+              "y": 59.79
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 78.7,
+              "y": 50.09
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 76.69,
+              "y": 51.29
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 64.71,
+              "y": 48.64
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 38.8,
+              "y": 24.62
+            }
+          ],
+          "name": "Mountain Lion",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2407,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 39.82,
+              "y": 84.69
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 37.12,
+              "y": 90.07
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 30.92,
+              "y": 84.74
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 39.57,
+              "y": 92.34
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 43.7,
+              "y": 80.72
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 45.7,
+              "y": 77.72
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 44.21,
+              "y": 76.66
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 45.53,
+              "y": 19.39
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 53.51,
+              "y": 30.56
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 53.61,
+              "y": 31.57
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 48.88,
+              "y": 83.09
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 50.43,
+              "y": 22.73
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 56.19,
+              "y": 32.72
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 52.5,
+              "y": 24.66
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 39.6,
+              "y": 25.77
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 38.13,
+              "y": 24.84
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 83.2,
+              "y": 64.86
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 83.14,
+              "y": 61.07
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 78.39,
+              "y": 52.91
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 81.41,
+              "y": 48.83
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 74.4,
+              "y": 54.72
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 45.28,
+              "y": 23.72
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 75.55,
+              "y": 51.67
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 82.57,
+              "y": 58.55
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 51.75,
+              "y": 23.72
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 66.75,
+              "y": 51.11
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 52.76,
+              "y": 30.65
+            }
+          ],
+          "name": "Hulking Mountain Lion",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 30,
+      "quest_id": 564,
+      "quest_name": "Costly Menace",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 267,
+      "zone_or_sort_name": "Hillsbrad Foothills"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:659"
+      ],
+      "instruction": "Complete [QC659 Hints of a New Plague?]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 31,
+      "quest_id": 659,
+      "quest_name": "Hints of a New Plague?",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 267,
+      "zone_or_sort_name": "Hillsbrad Foothills"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2382,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 52.42,
+              "y": 55.96
+            }
+          ],
+          "name": "Darren Malvew",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:564"
+      ],
+      "instruction": "Turn in [QT564 Costly Menace] to Darren Malvew",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 32,
+      "quest_id": 564,
+      "quest_name": "Costly Menace",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 267,
+      "zone_or_sort_name": "Hillsbrad Foothills"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2712,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 60.18,
+              "y": 53.85
+            }
+          ],
+          "name": "Quae",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:659"
+      ],
+      "instruction": "Turn in [QT659 Hints of a New Plague?] to Quae",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 33,
+      "quest_id": 659,
+      "quest_name": "Hints of a New Plague?",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 267,
+      "zone_or_sort_name": "Hillsbrad Foothills"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2712,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 60.18,
+              "y": 53.85
+            }
+          ],
+          "name": "Quae",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:658"
+      ],
+      "instruction": "Accept [QA658 Hints of a New Plague?] from Quae.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 34,
+      "quest_id": 658,
+      "quest_name": "Hints of a New Plague?",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 267,
+      "zone_or_sort_name": "Hillsbrad Foothills"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:658"
+      ],
+      "instruction": "Collect or use the required item: Sealed Folder. [QC658 Hints of a New Plague?]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Sealed Folder",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4482,
+          "kind": "item",
+          "locations": [],
+          "name": "Sealed Folder",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 35,
+      "quest_id": 658,
+      "quest_name": "Hints of a New Plague?",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 267,
+      "zone_or_sort_name": "Hillsbrad Foothills"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2712,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 60.18,
+              "y": 53.85
+            }
+          ],
+          "name": "Quae",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:658"
+      ],
+      "instruction": "Turn in [QT658 Hints of a New Plague?] to Quae",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 36,
+      "quest_id": 658,
+      "quest_name": "Hints of a New Plague?",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 267,
+      "zone_or_sort_name": "Hillsbrad Foothills"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2712,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 60.18,
+              "y": 53.85
+            }
+          ],
+          "name": "Quae",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:657"
+      ],
+      "instruction": "Accept [QA657 Hints of a New Plague?] from Quae.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 37,
+      "quest_id": 657,
+      "quest_name": "Hints of a New Plague?",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 267,
+      "zone_or_sort_name": "Hillsbrad Foothills"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:657"
+      ],
+      "instruction": "Complete [QC657 Hints of a New Plague?]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 38,
+      "quest_id": 657,
+      "quest_name": "Hints of a New Plague?",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 267,
+      "zone_or_sort_name": "Hillsbrad Foothills"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2713,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 60.24,
+              "y": 53.92
+            }
+          ],
+          "name": "Kinelory",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:657"
+      ],
+      "instruction": "Turn in [QT657 Hints of a New Plague?] to Kinelory",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 39,
+      "quest_id": 657,
+      "quest_name": "Hints of a New Plague?",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 267,
+      "zone_or_sort_name": "Hillsbrad Foothills"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2713,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 60.24,
+              "y": 53.92
+            }
+          ],
+          "name": "Kinelory",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:660"
+      ],
+      "instruction": "Accept [QA660 Hints of a New Plague?] from Kinelory.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 40,
+      "quest_id": 660,
+      "quest_name": "Hints of a New Plague?",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 267,
+      "zone_or_sort_name": "Hillsbrad Foothills"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:660"
+      ],
+      "instruction": "Complete the scripted or exploration event. [QC660 Hints of a New Plague?]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 41,
+      "quest_id": 660,
+      "quest_name": "Hints of a New Plague?",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 267,
+      "zone_or_sort_name": "Hillsbrad Foothills"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2712,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 60.18,
+              "y": 53.85
+            }
+          ],
+          "name": "Quae",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:660"
+      ],
+      "instruction": "Turn in [QT660 Hints of a New Plague?] to Quae",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 42,
+      "quest_id": 660,
+      "quest_name": "Hints of a New Plague?",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 267,
+      "zone_or_sort_name": "Hillsbrad Foothills"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2712,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 60.18,
+              "y": 53.85
+            }
+          ],
+          "name": "Quae",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:661"
+      ],
+      "instruction": "Accept [QA661 Hints of a New Plague?] from Quae.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 43,
+      "quest_id": 661,
+      "quest_name": "Hints of a New Plague?",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 267,
+      "zone_or_sort_name": "Hillsbrad Foothills"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:661"
+      ],
+      "instruction": "Complete [QC661 Hints of a New Plague?]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 44,
+      "quest_id": 661,
+      "quest_name": "Hints of a New Plague?",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 267,
+      "zone_or_sort_name": "Hillsbrad Foothills"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2711,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 50.35,
+              "y": 59.05
+            }
+          ],
+          "name": "Phin Odelic",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:661"
+      ],
+      "instruction": "Turn in [QT661 Hints of a New Plague?] to Phin Odelic",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 45,
+      "quest_id": 661,
+      "quest_name": "Hints of a New Plague?",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 267,
+      "zone_or_sort_name": "Hillsbrad Foothills"
+    }
+  ],
+  "title": "31 Arathi Highlands & Hillsbrad Foothills"
+}

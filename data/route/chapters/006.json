@@ -1,0 +1,4991 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 05 Bloodmyst Isle, or select this chapter on a partially completed character. Begin in The Exodar with Dugiru. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 3557,
+    "map_name": "The Exodar",
+    "x": 63.51,
+    "y": 67.74
+  },
+  "entry_zone_or_sort": 3557,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 12,
+    "map_name": "Elwynn Forest",
+    "quest_id": 5545,
+    "tag": "QT",
+    "x": 81.38,
+    "y": 66.11
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/006_world_06.lua",
+  "id": "006-primary-06-the-exodar-&-elwynn-forest",
+  "maximum_level": 15,
+  "minimum_level": 15,
+  "next_chapter": "07 Westfall & Dun Morogh",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "05 Bloodmyst Isle",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 7792,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9694:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7792:starter"
+      ],
+      "instruction": "Travel from Bloodmyst Isle to The Exodar. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G63.51,67.74 The Exodar]. [O]",
+      "map_id": 3557,
+      "map_name": "The Exodar",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 3525,
+      "origin_map_name": "Bloodmyst Isle",
+      "origin_x": 55.42,
+      "origin_y": 55.27,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 63.51,
+      "y": 67.74
+    },
+    {
+      "before_quest_id": 7792,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7792:starter"
+      ],
+      "instruction": "Before you begin: travel to The Exodar and meet the first quest giver at [G63.51,67.74 The Exodar]. Leave at least two quest-log slots open. [O]",
+      "map_id": 3557,
+      "map_name": "The Exodar",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 63.51,
+      "y": 67.74
+    },
+    {
+      "before_quest_id": 7792,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7792:requiredLevel"
+      ],
+      "instruction": "Reach level 15 before accepting A Donation of Wool. [XP15 Level 15]",
+      "map_id": 3557,
+      "map_name": "The Exodar",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 15,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 63.51,
+      "y": 67.74
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 20604,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3557,
+              "map_name": "The Exodar",
+              "verification": "questie_structured_source_only",
+              "x": 63.51,
+              "y": 67.74
+            }
+          ],
+          "name": "Dugiru",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7792"
+      ],
+      "instruction": "Accept [QA7792 A Donation of Wool] from Dugiru.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 7792,
+      "quest_name": "A Donation of Wool",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3557,
+      "zone_or_sort_name": "The Exodar"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7792"
+      ],
+      "instruction": "Collect or use the required item: Wool Cloth. [QC7792 A Donation of Wool]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Wool Cloth",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 2592,
+          "kind": "item",
+          "locations": [],
+          "name": "Wool Cloth",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 5,
+      "quest_id": 7792,
+      "quest_name": "A Donation of Wool",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3557,
+      "zone_or_sort_name": "The Exodar"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 20604,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3557,
+              "map_name": "The Exodar",
+              "verification": "questie_structured_source_only",
+              "x": 63.51,
+              "y": 67.74
+            }
+          ],
+          "name": "Dugiru",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7792"
+      ],
+      "instruction": "Turn in [QT7792 A Donation of Wool] to Dugiru",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 7792,
+      "quest_name": "A Donation of Wool",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3557,
+      "zone_or_sort_name": "The Exodar"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 241,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 42.14,
+              "y": 67.26
+            }
+          ],
+          "name": "Remy \"Two Times\"",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:40"
+      ],
+      "instruction": "Accept [QA40 A Fishy Peril] from Remy \"Two Times\".",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 40,
+      "quest_name": "A Fishy Peril",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:40"
+      ],
+      "instruction": "Complete [QC40 A Fishy Peril]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 40,
+      "quest_name": "A Fishy Peril",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 240,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 42.11,
+              "y": 65.93
+            }
+          ],
+          "name": "Marshal Dughan",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:40"
+      ],
+      "instruction": "Turn in [QT40 A Fishy Peril] to Marshal Dughan",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 40,
+      "quest_name": "A Fishy Peril",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 240,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 42.11,
+              "y": 65.93
+            }
+          ],
+          "name": "Marshal Dughan",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:35"
+      ],
+      "instruction": "Accept [QA35 Further Concerns] from Marshal Dughan.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 35,
+      "quest_name": "Further Concerns",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:35"
+      ],
+      "instruction": "Complete [QC35 Further Concerns]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 35,
+      "quest_name": "Further Concerns",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 261,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 73.97,
+              "y": 72.18
+            }
+          ],
+          "name": "Guard Thomas",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:35"
+      ],
+      "instruction": "Turn in [QT35 Further Concerns] to Guard Thomas",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 35,
+      "quest_name": "Further Concerns",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 261,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 73.97,
+              "y": 72.18
+            }
+          ],
+          "name": "Guard Thomas",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:37"
+      ],
+      "instruction": "Accept [QA37 Find the Lost Guards] from Guard Thomas.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 37,
+      "quest_name": "Find the Lost Guards",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:37"
+      ],
+      "instruction": "Complete [QC37 Find the Lost Guards]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 37,
+      "quest_name": "Find the Lost Guards",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 55,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 72.66,
+              "y": 60.34
+            }
+          ],
+          "name": "A half-eaten body",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:37"
+      ],
+      "instruction": "Turn in [QT37 Find the Lost Guards] to A half-eaten body",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 37,
+      "quest_name": "Find the Lost Guards",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 55,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 72.66,
+              "y": 60.34
+            }
+          ],
+          "name": "A half-eaten body",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:45"
+      ],
+      "instruction": "Accept [QA45 Discover Rolf's Fate] from A half-eaten body.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 45,
+      "quest_name": "Discover Rolf's Fate",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 261,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 73.97,
+              "y": 72.18
+            }
+          ],
+          "name": "Guard Thomas",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:46"
+      ],
+      "instruction": "Accept [QA46 Bounty on Murlocs] from Guard Thomas.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 46,
+      "quest_name": "Bounty on Murlocs",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:45"
+      ],
+      "instruction": "Complete [QC45 Discover Rolf's Fate]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 45,
+      "quest_name": "Discover Rolf's Fate",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:46"
+      ],
+      "instruction": "Collect or use the required item: Torn Murloc Fin. [QC46 Bounty on Murlocs]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Torn Murloc Fin",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 780,
+          "kind": "item",
+          "locations": [],
+          "name": "Torn Murloc Fin",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 19,
+      "quest_id": 46,
+      "quest_name": "Bounty on Murlocs",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 261,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 73.97,
+              "y": 72.18
+            }
+          ],
+          "name": "Guard Thomas",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:46"
+      ],
+      "instruction": "Turn in [QT46 Bounty on Murlocs] to Guard Thomas",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 46,
+      "quest_name": "Bounty on Murlocs",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 56,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 79.8,
+              "y": 55.5
+            }
+          ],
+          "name": "Rolf's corpse",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:45"
+      ],
+      "instruction": "Turn in [QT45 Discover Rolf's Fate] to Rolf's corpse",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 45,
+      "quest_name": "Discover Rolf's Fate",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 241,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 42.14,
+              "y": 67.26
+            }
+          ],
+          "name": "Remy \"Two Times\"",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:47"
+      ],
+      "instruction": "Accept [QA47 Gold Dust Exchange] from Remy \"Two Times\".",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 22,
+      "quest_id": 47,
+      "quest_name": "Gold Dust Exchange",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:47"
+      ],
+      "instruction": "Collect or use the required item: Gold Dust. [QC47 Gold Dust Exchange]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Gold Dust",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 773,
+          "kind": "item",
+          "locations": [],
+          "name": "Gold Dust",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 23,
+      "quest_id": 47,
+      "quest_name": "Gold Dust Exchange",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 241,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 42.14,
+              "y": 67.26
+            }
+          ],
+          "name": "Remy \"Two Times\"",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:47"
+      ],
+      "instruction": "Turn in [QT47 Gold Dust Exchange] to Remy \"Two Times\"",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 24,
+      "quest_id": 47,
+      "quest_name": "Gold Dust Exchange",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 261,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 73.97,
+              "y": 72.18
+            }
+          ],
+          "name": "Guard Thomas",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:52"
+      ],
+      "instruction": "Accept [QA52 Protect the Frontier] from Guard Thomas.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 25,
+      "quest_id": 52,
+      "quest_name": "Protect the Frontier",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:52"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Prowler, Young Forest Bear. [QC52 Protect the Frontier]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Prowler, Young Forest Bear",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 118,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 75.49,
+              "y": 76.54
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 75.46,
+              "y": 74.18
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 76.63,
+              "y": 63.67
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 72.28,
+              "y": 65.76
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 72.39,
+              "y": 65.15
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 71.83,
+              "y": 65.29
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 72.26,
+              "y": 64.82
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 66.65,
+              "y": 45.18
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 64.61,
+              "y": 43.33
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 69.9,
+              "y": 40.85
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 70.53,
+              "y": 41.86
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 70.84,
+              "y": 39.93
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 71.43,
+              "y": 37.45
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 72.13,
+              "y": 41.06
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 77.45,
+              "y": 74.47
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 76.17,
+              "y": 77.89
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 76.16,
+              "y": 75.97
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 77.26,
+              "y": 76.48
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 77.76,
+              "y": 78.09
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 80.19,
+              "y": 83.25
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 80.28,
+              "y": 81.12
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 82.06,
+              "y": 83.82
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 80.72,
+              "y": 81.38
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 80.51,
+              "y": 80.74
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 80.81,
+              "y": 81.16
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 80.56,
+              "y": 80.23
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 81.29,
+              "y": 82.53
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 83.63,
+              "y": 84.12
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 83.01,
+              "y": 85.51
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 85.02,
+              "y": 82.92
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 80.58,
+              "y": 78.82
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 80.29,
+              "y": 78.2
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 81.48,
+              "y": 77.9
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 81.81,
+              "y": 77.18
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 79.03,
+              "y": 76.18
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 78.96,
+              "y": 62.33
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 78.38,
+              "y": 62.72
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 82.4,
+              "y": 60.59
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 79.99,
+              "y": 60.74
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 77.7,
+              "y": 61.68
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 78.58,
+              "y": 60.85
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 78.92,
+              "y": 41.52
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 77.46,
+              "y": 40.88
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 75.22,
+              "y": 40.41
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 76.58,
+              "y": 40.56
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 75.16,
+              "y": 39.68
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 73.67,
+              "y": 40.46
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 74.46,
+              "y": 40.37
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 75.41,
+              "y": 37.33
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 73.62,
+              "y": 38.11
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 74.06,
+              "y": 37.59
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 83.2,
+              "y": 59.68
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 80.32,
+              "y": 78.12
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 79.26,
+              "y": 79.7
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 79.17,
+              "y": 82.75
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 85.82,
+              "y": 85.21
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 85.66,
+              "y": 83.94
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 87.11,
+              "y": 79.37
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 87.14,
+              "y": 77.41
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 85.92,
+              "y": 72.31
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 83.83,
+              "y": 71.99
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 88.02,
+              "y": 72.11
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 87.36,
+              "y": 68.46
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 86.87,
+              "y": 66.06
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 88.67,
+              "y": 68.58
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 88.72,
+              "y": 70.87
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 87.76,
+              "y": 63.75
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 85.06,
+              "y": 61.96
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 85.02,
+              "y": 61.97
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 86.36,
+              "y": 64.18
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 86.03,
+              "y": 62.6
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 84.56,
+              "y": 61.23
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 85.9,
+              "y": 61.25
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 88.2,
+              "y": 67.87
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 87.86,
+              "y": 78.32
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 88.78,
+              "y": 77.4
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 89.63,
+              "y": 75.0
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 87.4,
+              "y": 81.83
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 87.6,
+              "y": 81.27
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 89.8,
+              "y": 81.48
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 91.32,
+              "y": 79.8
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 90.51,
+              "y": 77.71
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 87.05,
+              "y": 69.21
+            }
+          ],
+          "name": "Prowler",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 822,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.64,
+              "y": 77.23
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 88.79,
+              "y": 77.46
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 86.4,
+              "y": 78.49
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 65.67,
+              "y": 78.87
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 60.88,
+              "y": 75.7
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 54.28,
+              "y": 79.2
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 78.16,
+              "y": 79.31
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 63.67,
+              "y": 79.51
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 60.29,
+              "y": 79.39
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.45,
+              "y": 75.79
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 58.97,
+              "y": 80.2
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 43.76,
+              "y": 80.58
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 73.38,
+              "y": 80.99
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 46.95,
+              "y": 80.64
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 27.95,
+              "y": 81.62
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 87.09,
+              "y": 81.79
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 22.85,
+              "y": 75.8
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 44.04,
+              "y": 76.45
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.35,
+              "y": 82.93
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 79.83,
+              "y": 83.58
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 25.59,
+              "y": 84.04
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 53.16,
+              "y": 84.25
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 83.38,
+              "y": 84.34
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 35.77,
+              "y": 88.35
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 45.78,
+              "y": 86.37
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 38.66,
+              "y": 89.71
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 25.47,
+              "y": 89.94
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 42.53,
+              "y": 90.72
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 57.75,
+              "y": 76.67
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 64.03,
+              "y": 76.91
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 76.7,
+              "y": 77.08
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 81.89,
+              "y": 77.09
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 55.67,
+              "y": 75.53
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 70.53,
+              "y": 74.92
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 86.94,
+              "y": 69.08
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 59.32,
+              "y": 67.67
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 74.24,
+              "y": 67.66
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 68.39,
+              "y": 66.94
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 88.26,
+              "y": 65.57
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 86.51,
+              "y": 65.2
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 62.94,
+              "y": 64.76
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 69.14,
+              "y": 64.41
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 64.71,
+              "y": 63.14
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 77.75,
+              "y": 62.05
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 71.4,
+              "y": 61.56
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 78.63,
+              "y": 60.04
+            },
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 82.02,
+              "y": 58.97
+            }
+          ],
+          "name": "Young Forest Bear",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 26,
+      "quest_id": 52,
+      "quest_name": "Protect the Frontier",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 261,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 73.97,
+              "y": 72.18
+            }
+          ],
+          "name": "Guard Thomas",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:52"
+      ],
+      "instruction": "Turn in [QT52 Protect the Frontier] to Guard Thomas",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 27,
+      "quest_id": 52,
+      "quest_name": "Protect the Frontier",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 253,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 43.32,
+              "y": 65.7
+            }
+          ],
+          "name": "William Pestle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:60"
+      ],
+      "instruction": "Accept [QA60 Kobold Candles] from William Pestle.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 28,
+      "quest_id": 60,
+      "quest_name": "Kobold Candles",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:60"
+      ],
+      "instruction": "Collect or use the required item: Large Candle. [QC60 Kobold Candles]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Large Candle",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 772,
+          "kind": "item",
+          "locations": [],
+          "name": "Large Candle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 29,
+      "quest_id": 60,
+      "quest_name": "Kobold Candles",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 253,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 43.32,
+              "y": 65.7
+            }
+          ],
+          "name": "William Pestle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:60"
+      ],
+      "instruction": "Turn in [QT60 Kobold Candles] to William Pestle",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 30,
+      "quest_id": 60,
+      "quest_name": "Kobold Candles",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 253,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 43.32,
+              "y": 65.7
+            }
+          ],
+          "name": "William Pestle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:61"
+      ],
+      "instruction": "Accept [QA61 Shipment to Stormwind] from William Pestle.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 31,
+      "quest_id": 61,
+      "quest_name": "Shipment to Stormwind",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 240,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 42.11,
+              "y": 65.93
+            }
+          ],
+          "name": "Marshal Dughan",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:62"
+      ],
+      "instruction": "Accept [QA62 The Fargodeep Mine] from Marshal Dughan.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 32,
+      "quest_id": 62,
+      "quest_name": "The Fargodeep Mine",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:61"
+      ],
+      "instruction": "Complete [QC61 Shipment to Stormwind]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 33,
+      "quest_id": 61,
+      "quest_name": "Shipment to Stormwind",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:62"
+      ],
+      "instruction": "Complete the scripted or exploration event. [QC62 The Fargodeep Mine]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 34,
+      "quest_id": 62,
+      "quest_name": "The Fargodeep Mine",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 240,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 42.11,
+              "y": 65.93
+            }
+          ],
+          "name": "Marshal Dughan",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:62"
+      ],
+      "instruction": "Turn in [QT62 The Fargodeep Mine] to Marshal Dughan",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 35,
+      "quest_id": 62,
+      "quest_name": "The Fargodeep Mine",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 279,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 56.2,
+              "y": 64.58
+            }
+          ],
+          "name": "Morgan Pestle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:61"
+      ],
+      "instruction": "Turn in [QT61 Shipment to Stormwind] to Morgan Pestle",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 36,
+      "quest_id": 61,
+      "quest_name": "Shipment to Stormwind",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 56,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 79.8,
+              "y": 55.5
+            }
+          ],
+          "name": "Rolf's corpse",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:71"
+      ],
+      "instruction": "Accept [QA71 Report to Thomas] from Rolf's corpse.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 37,
+      "quest_id": 71,
+      "quest_name": "Report to Thomas",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:71"
+      ],
+      "instruction": "Complete [QC71 Report to Thomas]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 38,
+      "quest_id": 71,
+      "quest_name": "Report to Thomas",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 261,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 73.97,
+              "y": 72.18
+            }
+          ],
+          "name": "Guard Thomas",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:71"
+      ],
+      "instruction": "Turn in [QT71 Report to Thomas] to Guard Thomas",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 39,
+      "quest_id": 71,
+      "quest_name": "Report to Thomas",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 261,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 73.97,
+              "y": 72.18
+            }
+          ],
+          "name": "Guard Thomas",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:39"
+      ],
+      "instruction": "Accept [QA39 Deliver Thomas' Report] from Guard Thomas.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 40,
+      "quest_id": 39,
+      "quest_name": "Deliver Thomas' Report",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:39"
+      ],
+      "instruction": "Complete [QC39 Deliver Thomas' Report]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 41,
+      "quest_id": 39,
+      "quest_name": "Deliver Thomas' Report",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 240,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 42.11,
+              "y": 65.93
+            }
+          ],
+          "name": "Marshal Dughan",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:39"
+      ],
+      "instruction": "Turn in [QT39 Deliver Thomas' Report] to Marshal Dughan",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 42,
+      "quest_id": 39,
+      "quest_name": "Deliver Thomas' Report",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 240,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 42.11,
+              "y": 65.93
+            }
+          ],
+          "name": "Marshal Dughan",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:59"
+      ],
+      "instruction": "Accept [QA59 Cloth and Leather Armor] from Marshal Dughan.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 43,
+      "quest_id": 59,
+      "quest_name": "Cloth and Leather Armor",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 240,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 42.11,
+              "y": 65.93
+            }
+          ],
+          "name": "Marshal Dughan",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:76"
+      ],
+      "instruction": "Accept [QA76 The Jasperlode Mine] from Marshal Dughan.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 44,
+      "quest_id": 76,
+      "quest_name": "The Jasperlode Mine",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:59"
+      ],
+      "instruction": "Complete [QC59 Cloth and Leather Armor]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 45,
+      "quest_id": 59,
+      "quest_name": "Cloth and Leather Armor",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:76"
+      ],
+      "instruction": "Complete the scripted or exploration event. [QC76 The Jasperlode Mine]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 46,
+      "quest_id": 76,
+      "quest_name": "The Jasperlode Mine",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 240,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 42.11,
+              "y": 65.93
+            }
+          ],
+          "name": "Marshal Dughan",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:76"
+      ],
+      "instruction": "Turn in [QT76 The Jasperlode Mine] to Marshal Dughan",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 47,
+      "quest_id": 76,
+      "quest_name": "The Jasperlode Mine",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 278,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 79.46,
+              "y": 68.79
+            }
+          ],
+          "name": "Sara Timberlain",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:59"
+      ],
+      "instruction": "Turn in [QT59 Cloth and Leather Armor] to Sara Timberlain",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 48,
+      "quest_id": 59,
+      "quest_name": "Cloth and Leather Armor",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 278,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 79.46,
+              "y": 68.79
+            }
+          ],
+          "name": "Sara Timberlain",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:83"
+      ],
+      "instruction": "Accept [QA83 Red Linen Goods] from Sara Timberlain.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 49,
+      "quest_id": 83,
+      "quest_name": "Red Linen Goods",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:83"
+      ],
+      "instruction": "Collect or use the required item: Red Linen Bandana. [QC83 Red Linen Goods]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Red Linen Bandana",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 1019,
+          "kind": "item",
+          "locations": [],
+          "name": "Red Linen Bandana",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 50,
+      "quest_id": 83,
+      "quest_name": "Red Linen Goods",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 278,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 79.46,
+              "y": 68.79
+            }
+          ],
+          "name": "Sara Timberlain",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:83"
+      ],
+      "instruction": "Turn in [QT83 Red Linen Goods] to Sara Timberlain",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 51,
+      "quest_id": 83,
+      "quest_name": "Red Linen Goods",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 246,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 34.49,
+              "y": 84.25
+            }
+          ],
+          "name": "\"Auntie\" Bernice Stonefield",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:85"
+      ],
+      "instruction": "Accept [QA85 Lost Necklace] from \"Auntie\" Bernice Stonefield.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 52,
+      "quest_id": 85,
+      "quest_name": "Lost Necklace",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:85"
+      ],
+      "instruction": "Complete [QC85 Lost Necklace]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 53,
+      "quest_id": 85,
+      "quest_name": "Lost Necklace",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 247,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 43.13,
+              "y": 85.72
+            }
+          ],
+          "name": "Billy Maclure",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:85"
+      ],
+      "instruction": "Turn in [QT85 Lost Necklace] to Billy Maclure",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 54,
+      "quest_id": 85,
+      "quest_name": "Lost Necklace",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 247,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 43.13,
+              "y": 85.72
+            }
+          ],
+          "name": "Billy Maclure",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:86"
+      ],
+      "instruction": "Accept [QA86 Pie for Billy] from Billy Maclure.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 55,
+      "quest_id": 86,
+      "quest_name": "Pie for Billy",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:86"
+      ],
+      "instruction": "Collect or use the required item: Chunk of Boar Meat. [QC86 Pie for Billy]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Chunk of Boar Meat",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 769,
+          "kind": "item",
+          "locations": [],
+          "name": "Chunk of Boar Meat",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 56,
+      "quest_id": 86,
+      "quest_name": "Pie for Billy",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 246,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 34.49,
+              "y": 84.25
+            }
+          ],
+          "name": "\"Auntie\" Bernice Stonefield",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:86"
+      ],
+      "instruction": "Turn in [QT86 Pie for Billy] to \"Auntie\" Bernice Stonefield",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 57,
+      "quest_id": 86,
+      "quest_name": "Pie for Billy",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 246,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 34.49,
+              "y": 84.25
+            }
+          ],
+          "name": "\"Auntie\" Bernice Stonefield",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:84"
+      ],
+      "instruction": "Accept [QA84 Back to Billy] from \"Auntie\" Bernice Stonefield.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 58,
+      "quest_id": 84,
+      "quest_name": "Back to Billy",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:84"
+      ],
+      "instruction": "Complete [QC84 Back to Billy]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 59,
+      "quest_id": 84,
+      "quest_name": "Back to Billy",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 247,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 43.13,
+              "y": 85.72
+            }
+          ],
+          "name": "Billy Maclure",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:84"
+      ],
+      "instruction": "Turn in [QT84 Back to Billy] to Billy Maclure",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 60,
+      "quest_id": 84,
+      "quest_name": "Back to Billy",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 247,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 43.13,
+              "y": 85.72
+            }
+          ],
+          "name": "Billy Maclure",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:87"
+      ],
+      "instruction": "Accept [QA87 Goldtooth] from Billy Maclure.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 61,
+      "quest_id": 87,
+      "quest_name": "Goldtooth",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 244,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 34.66,
+              "y": 84.48
+            }
+          ],
+          "name": "Ma Stonefield",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:88"
+      ],
+      "instruction": "Accept [QA88 Princess Must Die!] from Ma Stonefield.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 62,
+      "quest_id": 88,
+      "quest_name": "Princess Must Die!",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 251,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 43.15,
+              "y": 89.62
+            }
+          ],
+          "name": "Maybell Maclure",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:106"
+      ],
+      "instruction": "Accept [QA106 Young Lovers] from Maybell Maclure.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 63,
+      "quest_id": 106,
+      "quest_name": "Young Lovers",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 233,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 40,
+              "map_name": "Westfall",
+              "verification": "questie_structured_source_only",
+              "x": 56.04,
+              "y": 31.23
+            }
+          ],
+          "name": "Farmer Saldean",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 237,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 40,
+              "map_name": "Westfall",
+              "verification": "questie_structured_source_only",
+              "x": 59.95,
+              "y": 19.36
+            }
+          ],
+          "name": "Farmer Furlbrow",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 240,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 42.11,
+              "y": 65.93
+            }
+          ],
+          "name": "Marshal Dughan",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 261,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 73.97,
+              "y": 72.18
+            }
+          ],
+          "name": "Guard Thomas",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 963,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 24.23,
+              "y": 74.45
+            }
+          ],
+          "name": "Deputy Rainer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:109"
+      ],
+      "instruction": "Accept [QA109 Report to Gryan Stoutmantle] from Farmer Saldean or Farmer Furlbrow (plus 3 other sources).",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 64,
+      "quest_id": 109,
+      "quest_name": "Report to Gryan Stoutmantle",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:87"
+      ],
+      "instruction": "Collect or use the required item: Bernice's Necklace. [QC87 Goldtooth]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Bernice's Necklace",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 981,
+          "kind": "item",
+          "locations": [],
+          "name": "Bernice's Necklace",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 65,
+      "quest_id": 87,
+      "quest_name": "Goldtooth",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:88"
+      ],
+      "instruction": "Collect or use the required item: Brass Collar. [QC88 Princess Must Die!]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Brass Collar",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 1006,
+          "kind": "item",
+          "locations": [],
+          "name": "Brass Collar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 66,
+      "quest_id": 88,
+      "quest_name": "Princess Must Die!",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:106"
+      ],
+      "instruction": "Complete [QC106 Young Lovers]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 67,
+      "quest_id": 106,
+      "quest_name": "Young Lovers",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:109"
+      ],
+      "instruction": "Complete [QC109 Report to Gryan Stoutmantle]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 68,
+      "quest_id": 109,
+      "quest_name": "Report to Gryan Stoutmantle",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 246,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 34.49,
+              "y": 84.25
+            }
+          ],
+          "name": "\"Auntie\" Bernice Stonefield",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:87"
+      ],
+      "instruction": "Turn in [QT87 Goldtooth] to \"Auntie\" Bernice Stonefield",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 69,
+      "quest_id": 87,
+      "quest_name": "Goldtooth",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 244,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 34.66,
+              "y": 84.48
+            }
+          ],
+          "name": "Ma Stonefield",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:88"
+      ],
+      "instruction": "Turn in [QT88 Princess Must Die!] to Ma Stonefield",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 70,
+      "quest_id": 88,
+      "quest_name": "Princess Must Die!",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 252,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 29.84,
+              "y": 86.0
+            }
+          ],
+          "name": "Tommy Joe Stonefield",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:106"
+      ],
+      "instruction": "Turn in [QT106 Young Lovers] to Tommy Joe Stonefield",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 71,
+      "quest_id": 106,
+      "quest_name": "Young Lovers",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 234,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 40,
+              "map_name": "Westfall",
+              "verification": "questie_structured_source_only",
+              "x": 56.33,
+              "y": 47.52
+            }
+          ],
+          "name": "Gryan Stoutmantle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:109"
+      ],
+      "instruction": "Turn in [QT109 Report to Gryan Stoutmantle] to Gryan Stoutmantle",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 72,
+      "quest_id": 109,
+      "quest_name": "Report to Gryan Stoutmantle",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 252,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 29.84,
+              "y": 86.0
+            }
+          ],
+          "name": "Tommy Joe Stonefield",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:111"
+      ],
+      "instruction": "Accept [QA111 Speak with Gramma] from Tommy Joe Stonefield.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 73,
+      "quest_id": 111,
+      "quest_name": "Speak with Gramma",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:111"
+      ],
+      "instruction": "Complete [QC111 Speak with Gramma]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 74,
+      "quest_id": 111,
+      "quest_name": "Speak with Gramma",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 248,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 34.94,
+              "y": 83.86
+            }
+          ],
+          "name": "Gramma Stonefield",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:111"
+      ],
+      "instruction": "Turn in [QT111 Speak with Gramma] to Gramma Stonefield",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 75,
+      "quest_id": 111,
+      "quest_name": "Speak with Gramma",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 248,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 34.94,
+              "y": 83.86
+            }
+          ],
+          "name": "Gramma Stonefield",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:107"
+      ],
+      "instruction": "Accept [QA107 Note to William] from Gramma Stonefield.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 76,
+      "quest_id": 107,
+      "quest_name": "Note to William",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:107"
+      ],
+      "instruction": "Complete [QC107 Note to William]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 77,
+      "quest_id": 107,
+      "quest_name": "Note to William",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 253,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 43.32,
+              "y": 65.7
+            }
+          ],
+          "name": "William Pestle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:107"
+      ],
+      "instruction": "Turn in [QT107 Note to William] to William Pestle",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 78,
+      "quest_id": 107,
+      "quest_name": "Note to William",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 253,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 43.32,
+              "y": 65.7
+            }
+          ],
+          "name": "William Pestle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:112"
+      ],
+      "instruction": "Accept [QA112 Collecting Kelp] from William Pestle.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 79,
+      "quest_id": 112,
+      "quest_name": "Collecting Kelp",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:112"
+      ],
+      "instruction": "Collect or use the required item: Crystal Kelp Frond. [QC112 Collecting Kelp]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Crystal Kelp Frond",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 1256,
+          "kind": "item",
+          "locations": [],
+          "name": "Crystal Kelp Frond",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 80,
+      "quest_id": 112,
+      "quest_name": "Collecting Kelp",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 253,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 43.32,
+              "y": 65.7
+            }
+          ],
+          "name": "William Pestle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:112"
+      ],
+      "instruction": "Turn in [QT112 Collecting Kelp] to William Pestle",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 81,
+      "quest_id": 112,
+      "quest_name": "Collecting Kelp",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 253,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 43.32,
+              "y": 65.7
+            }
+          ],
+          "name": "William Pestle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:114"
+      ],
+      "instruction": "Accept [QA114 The Escape] from William Pestle.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 82,
+      "quest_id": 114,
+      "quest_name": "The Escape",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 1307,
+          "kind": "item",
+          "locations": [],
+          "name": "Gold Pickup Schedule",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:123"
+      ],
+      "instruction": "Accept [QA123 The Collector] from Gold Pickup Schedule.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 83,
+      "quest_id": 123,
+      "quest_name": "The Collector",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:114"
+      ],
+      "instruction": "Complete [QC114 The Escape]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 84,
+      "quest_id": 114,
+      "quest_name": "The Escape",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:123"
+      ],
+      "instruction": "Complete [QC123 The Collector]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 85,
+      "quest_id": 123,
+      "quest_name": "The Collector",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 240,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 42.11,
+              "y": 65.93
+            }
+          ],
+          "name": "Marshal Dughan",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:123"
+      ],
+      "instruction": "Turn in [QT123 The Collector] to Marshal Dughan",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 86,
+      "quest_id": 123,
+      "quest_name": "The Collector",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 251,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 43.15,
+              "y": 89.62
+            }
+          ],
+          "name": "Maybell Maclure",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:114"
+      ],
+      "instruction": "Turn in [QT114 The Escape] to Maybell Maclure",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 87,
+      "quest_id": 114,
+      "quest_name": "The Escape",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 240,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 42.11,
+              "y": 65.93
+            }
+          ],
+          "name": "Marshal Dughan",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:147"
+      ],
+      "instruction": "Accept [QA147 Manhunt] from Marshal Dughan.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 88,
+      "quest_id": 147,
+      "quest_name": "Manhunt",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:147"
+      ],
+      "instruction": "Collect or use the required item: The Collector's Ring. [QC147 Manhunt]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: The Collector's Ring",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 2239,
+          "kind": "item",
+          "locations": [],
+          "name": "The Collector's Ring",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 89,
+      "quest_id": 147,
+      "quest_name": "Manhunt",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 240,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 42.11,
+              "y": 65.93
+            }
+          ],
+          "name": "Marshal Dughan",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:147"
+      ],
+      "instruction": "Turn in [QT147 Manhunt] to Marshal Dughan",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 90,
+      "quest_id": 147,
+      "quest_name": "Manhunt",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 68,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 24.55,
+              "y": 74.69
+            }
+          ],
+          "name": "Wanted Poster",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 156561,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 24.57,
+              "y": 78.23
+            }
+          ],
+          "name": "Wanted Poster",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:176"
+      ],
+      "instruction": "Accept [QA176 Wanted: \"Hogger\"] from Wanted Poster.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 91,
+      "quest_id": 176,
+      "quest_name": "Wanted:  \"Hogger\"",
+      "quest_tag": "Elite",
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "before_quest_id": 176,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:176:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 3557,
+      "map_name": "The Exodar",
+      "optional": true,
+      "order": 92,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        176
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 63.51,
+      "y": 67.74
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:176"
+      ],
+      "instruction": "Elite/group recommended \u2014 Collect or use the required item: Huge Gnoll Claw. [QC176 Wanted: \"Hogger\"]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Huge Gnoll Claw",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 1931,
+          "kind": "item",
+          "locations": [],
+          "name": "Huge Gnoll Claw",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 93,
+      "quest_id": 176,
+      "quest_name": "Wanted:  \"Hogger\"",
+      "quest_tag": "Elite",
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 240,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 42.11,
+              "y": 65.93
+            }
+          ],
+          "name": "Marshal Dughan",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:176"
+      ],
+      "instruction": "Turn in [QT176 Wanted: \"Hogger\"] to Marshal Dughan",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 94,
+      "quest_id": 176,
+      "quest_name": "Wanted:  \"Hogger\"",
+      "quest_tag": "Elite",
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 240,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 42.11,
+              "y": 65.93
+            }
+          ],
+          "name": "Marshal Dughan",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:239"
+      ],
+      "instruction": "Accept [QA239 Westbrook Garrison Needs Help!] from Marshal Dughan.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 95,
+      "quest_id": 239,
+      "quest_name": "Westbrook Garrison Needs Help!",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:239"
+      ],
+      "instruction": "Complete [QC239 Westbrook Garrison Needs Help!]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 96,
+      "quest_id": 239,
+      "quest_name": "Westbrook Garrison Needs Help!",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 963,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 24.23,
+              "y": 74.45
+            }
+          ],
+          "name": "Deputy Rainer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:239"
+      ],
+      "instruction": "Turn in [QT239 Westbrook Garrison Needs Help!] to Deputy Rainer",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 97,
+      "quest_id": 239,
+      "quest_name": "Westbrook Garrison Needs Help!",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 963,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 24.23,
+              "y": 74.45
+            }
+          ],
+          "name": "Deputy Rainer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11"
+      ],
+      "instruction": "Accept [QA11 Riverpaw Gnoll Bounty] from Deputy Rainer.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 98,
+      "quest_id": 11,
+      "quest_name": "Riverpaw Gnoll Bounty",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11"
+      ],
+      "instruction": "Collect or use the required item: Painted Gnoll Armband. [QC11 Riverpaw Gnoll Bounty]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Painted Gnoll Armband",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 782,
+          "kind": "item",
+          "locations": [],
+          "name": "Painted Gnoll Armband",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 99,
+      "quest_id": 11,
+      "quest_name": "Riverpaw Gnoll Bounty",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 963,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 24.23,
+              "y": 74.45
+            }
+          ],
+          "name": "Deputy Rainer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11"
+      ],
+      "instruction": "Turn in [QT11 Riverpaw Gnoll Bounty] to Deputy Rainer",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 100,
+      "quest_id": 11,
+      "quest_name": "Riverpaw Gnoll Bounty",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 6774,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 45.56,
+              "y": 47.74
+            }
+          ],
+          "name": "Falkhaan Isenstrider",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2158"
+      ],
+      "instruction": "Accept [QA2158 Rest and Relaxation] from Falkhaan Isenstrider.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 101,
+      "quest_id": 2158,
+      "quest_name": "Rest and Relaxation",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2158"
+      ],
+      "instruction": "Complete [QC2158 Rest and Relaxation]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 102,
+      "quest_id": 2158,
+      "quest_name": "Rest and Relaxation",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 295,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 43.77,
+              "y": 65.8
+            }
+          ],
+          "name": "Innkeeper Farley",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2158"
+      ],
+      "instruction": "Turn in [QT2158 Rest and Relaxation] to Innkeeper Farley",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 103,
+      "quest_id": 2158,
+      "quest_name": "Rest and Relaxation",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10616,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 81.38,
+              "y": 66.11
+            }
+          ],
+          "name": "Supervisor Raelen",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5545"
+      ],
+      "instruction": "Accept [QA5545 A Bundle of Trouble] from Supervisor Raelen.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 104,
+      "quest_id": 5545,
+      "quest_name": "A Bundle of Trouble",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5545"
+      ],
+      "instruction": "Collect or use the required item: Bundle of Wood. [QC5545 A Bundle of Trouble]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Bundle of Wood",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 13872,
+          "kind": "item",
+          "locations": [],
+          "name": "Bundle of Wood",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 105,
+      "quest_id": 5545,
+      "quest_name": "A Bundle of Trouble",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10616,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 81.38,
+              "y": 66.11
+            }
+          ],
+          "name": "Supervisor Raelen",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5545"
+      ],
+      "instruction": "Turn in [QT5545 A Bundle of Trouble] to Supervisor Raelen",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 106,
+      "quest_id": 5545,
+      "quest_name": "A Bundle of Trouble",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 12,
+      "zone_or_sort_name": "Elwynn Forest"
+    }
+  ],
+  "title": "06 The Exodar & Elwynn Forest"
+}

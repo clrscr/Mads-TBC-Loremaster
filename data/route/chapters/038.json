@@ -1,0 +1,891 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 37 Dustwallow Marsh, or select this chapter on a partially completed character. Begin in Desolace with Hornizz Brimbuzzle. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 405,
+    "map_name": "Desolace",
+    "x": 47.83,
+    "y": 61.83
+  },
+  "entry_zone_or_sort": 405,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 33,
+    "map_name": "Stranglethorn Vale",
+    "quest_id": 1118,
+    "tag": "QT",
+    "x": 27.12,
+    "y": 77.21
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/038_world_38.lua",
+  "id": "038-primary-38-desolace",
+  "maximum_level": 35,
+  "minimum_level": 34,
+  "next_chapter": "39 Dustwallow Marsh & Arathi Highlands",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "37 Dustwallow Marsh",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 6134,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1194:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6134:starter"
+      ],
+      "instruction": "Travel from Thousand Needles to Desolace. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G47.83,61.83 Desolace]. [O]",
+      "map_id": 405,
+      "map_name": "Desolace",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 400,
+      "origin_map_name": "Thousand Needles",
+      "origin_x": 80.18,
+      "origin_y": 75.88,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 47.83,
+      "y": 61.83
+    },
+    {
+      "before_quest_id": 6134,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6134:starter"
+      ],
+      "instruction": "Before you begin: travel to Desolace and meet the first quest giver at [G47.83,61.83 Desolace]. Leave at least two quest-log slots open. [O]",
+      "map_id": 405,
+      "map_name": "Desolace",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 47.83,
+      "y": 61.83
+    },
+    {
+      "before_quest_id": 6134,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6134:requiredLevel"
+      ],
+      "instruction": "Reach level 34 before accepting Ghost-o-plasm Round Up. [XP34 Level 34]",
+      "map_id": 405,
+      "map_name": "Desolace",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 34,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 47.83,
+      "y": 61.83
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 6019,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 47.83,
+              "y": 61.83
+            }
+          ],
+          "name": "Hornizz Brimbuzzle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6134"
+      ],
+      "instruction": "Accept [QA6134 Ghost-o-plasm Round Up] from Hornizz Brimbuzzle.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 6134,
+      "quest_name": "Ghost-o-plasm Round Up",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6134"
+      ],
+      "instruction": "Collect or use the required item: Ghost-o-plasm. [QC6134 Ghost-o-plasm Round Up]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Ghost-o-plasm",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 15849,
+          "kind": "item",
+          "locations": [],
+          "name": "Ghost-o-plasm",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 5,
+      "quest_id": 6134,
+      "quest_name": "Ghost-o-plasm Round Up",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 6019,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 47.83,
+              "y": 61.83
+            }
+          ],
+          "name": "Hornizz Brimbuzzle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6134"
+      ],
+      "instruction": "Turn in [QT6134 Ghost-o-plasm Round Up] to Hornizz Brimbuzzle",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 6134,
+      "quest_name": "Ghost-o-plasm Round Up",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 12336,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 42.58,
+              "y": 24.23
+            }
+          ],
+          "name": "Brother Crowley",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6141"
+      ],
+      "instruction": "Accept [QA6141 Brother Anton] from Brother Crowley.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 6141,
+      "quest_name": "Brother Anton",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6141"
+      ],
+      "instruction": "Complete [QC6141 Brother Anton]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 6141,
+      "quest_name": "Brother Anton",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1182,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 66.52,
+              "y": 7.91
+            }
+          ],
+          "name": "Brother Anton",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6141"
+      ],
+      "instruction": "Turn in [QT6141 Brother Anton] to Brother Anton",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 6141,
+      "quest_name": "Brother Anton",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1182,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 66.52,
+              "y": 7.91
+            }
+          ],
+          "name": "Brother Anton",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:261"
+      ],
+      "instruction": "Accept [QA261 Down the Scarlet Path] from Brother Anton.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 261,
+      "quest_name": "Down the Scarlet Path",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:261"
+      ],
+      "instruction": "Complete the required NPC or creature objective: Undead Ravager. [QC261 Down the Scarlet Path]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Undead Ravager",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11561,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 63.88,
+              "y": 89.03
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 64.95,
+              "y": 87.76
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 64.86,
+              "y": 88.87
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 64.05,
+              "y": 91.31
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 64.83,
+              "y": 90.07
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 64.24,
+              "y": 90.37
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 64.11,
+              "y": 92.11
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 63.28,
+              "y": 91.02
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 62.98,
+              "y": 92.13
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 59.71,
+              "y": 90.01
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 60.46,
+              "y": 90.28
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 62.13,
+              "y": 90.65
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 61.14,
+              "y": 90.85
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 65.16,
+              "y": 85.77
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 65.19,
+              "y": 86.53
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 63.97,
+              "y": 81.5
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 64.26,
+              "y": 82.88
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 64.87,
+              "y": 83.48
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 63.49,
+              "y": 90.82
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 64.26,
+              "y": 88.07
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 64.17,
+              "y": 84.57
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 63.92,
+              "y": 87.23
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 63.86,
+              "y": 88.83
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 58.34,
+              "y": 90.19
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 63.03,
+              "y": 90.0
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 59.59,
+              "y": 88.15
+            }
+          ],
+          "name": "Undead Ravager",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 11,
+      "quest_id": 261,
+      "quest_name": "Down the Scarlet Path",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1182,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 66.52,
+              "y": 7.91
+            }
+          ],
+          "name": "Brother Anton",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:261"
+      ],
+      "instruction": "Turn in [QT261 Down the Scarlet Path] to Brother Anton",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 261,
+      "quest_name": "Down the Scarlet Path",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1182,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 66.52,
+              "y": 7.91
+            }
+          ],
+          "name": "Brother Anton",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1052"
+      ],
+      "instruction": "Accept [QA1052 Down the Scarlet Path] from Brother Anton.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 1052,
+      "quest_name": "Down the Scarlet Path",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1052"
+      ],
+      "instruction": "Complete [QC1052 Down the Scarlet Path]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 1052,
+      "quest_name": "Down the Scarlet Path",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3980,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 51.47,
+              "y": 58.35
+            }
+          ],
+          "name": "Raleigh the Devout",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1052"
+      ],
+      "instruction": "Turn in [QT1052 Down the Scarlet Path] to Raleigh the Devout",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 1052,
+      "quest_name": "Down the Scarlet Path",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "before_quest_id": 1118,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1118:requiredLevel"
+      ],
+      "instruction": "Reach level 35 before accepting Back to Booty Bay. [XP35 Level 35]",
+      "map_id": 400,
+      "map_name": "Thousand Needles",
+      "optional": false,
+      "order": 16,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 35,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 77.79,
+      "y": 77.27
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4452,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 400,
+              "map_name": "Thousand Needles",
+              "verification": "questie_structured_source_only",
+              "x": 77.79,
+              "y": 77.27
+            }
+          ],
+          "name": "Kravel Koalbeard",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1118"
+      ],
+      "instruction": "Accept [QA1118 Back to Booty Bay] from Kravel Koalbeard.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 1118,
+      "quest_name": "Back to Booty Bay",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 400,
+      "zone_or_sort_name": "Thousand Needles"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1118"
+      ],
+      "instruction": "Complete [QC1118 Back to Booty Bay]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 1118,
+      "quest_name": "Back to Booty Bay",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 400,
+      "zone_or_sort_name": "Thousand Needles"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2498,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 27.12,
+              "y": 77.21
+            }
+          ],
+          "name": "Crank Fizzlebub",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1118"
+      ],
+      "instruction": "Turn in [QT1118 Back to Booty Bay] to Crank Fizzlebub",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 1118,
+      "quest_name": "Back to Booty Bay",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 400,
+      "zone_or_sort_name": "Thousand Needles"
+    }
+  ],
+  "title": "38 Desolace"
+}

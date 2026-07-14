@@ -1,0 +1,614 @@
+{
+  "branch": "optional_content",
+  "entry_contract": "Complete the relevant shared prerequisites. Begin in Blackrock Spire with Bodley. Leave at least two quest-log slots open; group and reputation gates remain explicit.",
+  "entry_route_point": {
+    "map_id": 1583,
+    "map_name": "Blackrock Spire",
+    "x": null,
+    "y": null
+  },
+  "entry_zone_or_sort": 1583,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 1537,
+    "map_name": "Ironforge",
+    "quest_id": 9000,
+    "tag": "QT",
+    "x": 43.53,
+    "y": 52.64
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Optional Content",
+  "guide_file": "Guides/optional_content/129_world_33.lua",
+  "id": "129-optional_content-optional-content-33---ironforge-&-blackrock-spire",
+  "maximum_level": null,
+  "minimum_level": null,
+  "next_chapter": "Optional Content 34 - Blackwing Lair & Silithus",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "Optional Content 32 - Scholomance & Dire Maul",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 8995,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8992:objective",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8995:objective"
+      ],
+      "instruction": "Travel from Scholomance to Blackrock Spire. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to Blackrock Spire. [O]",
+      "map_id": 1583,
+      "map_name": "Blackrock Spire",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 2057,
+      "origin_map_name": "Scholomance",
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": null,
+      "y": null
+    },
+    {
+      "before_quest_id": 8995,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "route-branch:optional_content"
+      ],
+      "instruction": "Optional entry requirements: complete the relevant shared prerequisites. [O]",
+      "map_id": 1583,
+      "map_name": "Blackrock Spire",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "branch_entry",
+      "verification": "route_dependency_graph",
+      "x": null,
+      "y": null
+    },
+    {
+      "before_quest_id": 8995,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8995:objective"
+      ],
+      "instruction": "Optional chapter: enter Blackrock Spire. Leave at least two quest-log slots open. [O]",
+      "map_id": 1583,
+      "map_name": "Blackrock Spire",
+      "optional": true,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": null,
+      "y": null
+    },
+    {
+      "before_quest_id": 8995,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8995:requiredLevel"
+      ],
+      "instruction": "Reach level 62 before accepting Mea Culpa, Lord Valthalak. [XP62 Level 62]",
+      "map_id": 1583,
+      "map_name": "Blackrock Spire",
+      "optional": false,
+      "order": 4,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 62,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": null,
+      "y": null
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16033,
+          "kind": "npc",
+          "locations": [],
+          "name": "Bodley",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8995"
+      ],
+      "instruction": "Accept [QA8995 Mea Culpa, Lord Valthalak] from Bodley.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 8995,
+      "quest_name": "Mea Culpa, Lord Valthalak",
+      "quest_tag": "Raid",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1583,
+      "zone_or_sort_name": "Blackrock Spire"
+    },
+    {
+      "before_quest_id": 8995,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8995:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 1583,
+      "map_name": "Blackrock Spire",
+      "optional": true,
+      "order": 6,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        8995
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": null,
+      "y": null
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8995"
+      ],
+      "instruction": "Raid \u2014 Use the quest item [UI22056-] as directed; complete the required objectives \u2014 NPCs or creatures: Lord Valthalak; items: Lord Valthalak's Amulet. [QC8995 Mea Culpa, Lord Valthalak]",
+      "item_use_id": 22056,
+      "objective_hint": "Complete the required objectives \u2014 NPCs or creatures: Lord Valthalak; items: Lord Valthalak's Amulet",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16042,
+          "kind": "npc",
+          "locations": [],
+          "name": "Lord Valthalak",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 22048,
+          "kind": "item",
+          "locations": [],
+          "name": "Lord Valthalak's Amulet",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 7,
+      "quest_id": 8995,
+      "quest_name": "Mea Culpa, Lord Valthalak",
+      "quest_tag": "Raid",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1583,
+      "zone_or_sort_name": "Blackrock Spire"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16073,
+          "kind": "npc",
+          "locations": [],
+          "name": "Spirit of Lord Valthalak",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8995"
+      ],
+      "instruction": "Turn in [QT8995 Mea Culpa, Lord Valthalak] to Spirit of Lord Valthalak",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 8995,
+      "quest_name": "Mea Culpa, Lord Valthalak",
+      "quest_tag": "Raid",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1583,
+      "zone_or_sort_name": "Blackrock Spire"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16073,
+          "kind": "npc",
+          "locations": [],
+          "name": "Spirit of Lord Valthalak",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8996"
+      ],
+      "instruction": "Accept [QA8996 Return to Bodley] from Spirit of Lord Valthalak.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 8996,
+      "quest_name": "Return to Bodley",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 25,
+      "zone_or_sort_name": "Map or sort 25"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8996"
+      ],
+      "instruction": "Collect or use the required item: Brazier of Beckoning. [QC8996 Return to Bodley]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Brazier of Beckoning",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 22056,
+          "kind": "item",
+          "locations": [],
+          "name": "Brazier of Beckoning",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 10,
+      "quest_id": 8996,
+      "quest_name": "Return to Bodley",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 25,
+      "zone_or_sort_name": "Map or sort 25"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16033,
+          "kind": "npc",
+          "locations": [],
+          "name": "Bodley",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8996"
+      ],
+      "instruction": "Turn in [QT8996 Return to Bodley] to Bodley",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 8996,
+      "quest_name": "Return to Bodley",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 25,
+      "zone_or_sort_name": "Map or sort 25"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16033,
+          "kind": "npc",
+          "locations": [],
+          "name": "Bodley",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8997"
+      ],
+      "instruction": "Accept [QA8997 Back to the Beginning] from Bodley.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 8997,
+      "quest_name": "Back to the Beginning",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8997"
+      ],
+      "instruction": "Complete [QC8997 Back to the Beginning]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 8997,
+      "quest_name": "Back to the Beginning",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16013,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 43.53,
+              "y": 52.64
+            }
+          ],
+          "name": "Deliana",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8997"
+      ],
+      "instruction": "Turn in [QT8997 Back to the Beginning] to Deliana",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 8997,
+      "quest_name": "Back to the Beginning",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16013,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 43.53,
+              "y": 52.64
+            }
+          ],
+          "name": "Deliana",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9000"
+      ],
+      "instruction": "Accept [QA9000 Saving the Best for Last] from Deliana.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 9000,
+      "quest_name": "Saving the Best for Last",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9000"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required items: Beaststalker's Cap, Beaststalker's Tunic. [QC9000 Saving the Best for Last]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Beaststalker's Cap, Beaststalker's Tunic",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 16677,
+          "kind": "item",
+          "locations": [],
+          "name": "Beaststalker's Cap",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 16674,
+          "kind": "item",
+          "locations": [],
+          "name": "Beaststalker's Tunic",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 16,
+      "quest_id": 9000,
+      "quest_name": "Saving the Best for Last",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16013,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 43.53,
+              "y": 52.64
+            }
+          ],
+          "name": "Deliana",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9000"
+      ],
+      "instruction": "Turn in [QT9000 Saving the Best for Last] to Deliana",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 9000,
+      "quest_name": "Saving the Best for Last",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    }
+  ],
+  "title": "Optional Content 33 - Ironforge & Blackrock Spire"
+}

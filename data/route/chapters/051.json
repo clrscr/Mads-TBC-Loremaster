@@ -1,0 +1,590 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 50 Duskwood & Ironforge, or select this chapter on a partially completed character. Begin in Badlands with Sigrun Ironhew. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 3,
+    "map_name": "Badlands",
+    "x": 53.8,
+    "y": 43.3
+  },
+  "entry_zone_or_sort": 3,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 33,
+    "map_name": "Stranglethorn Vale",
+    "quest_id": 3721,
+    "tag": "QT",
+    "x": 28.36,
+    "y": 76.35
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/051_world_51.lua",
+  "id": "051-primary-51-badlands",
+  "maximum_level": 45,
+  "minimum_level": 45,
+  "next_chapter": "52 Searing Gorge",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "50 Duskwood & Ironforge",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 706,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3483:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:706:starter"
+      ],
+      "instruction": "Travel from Ironforge to Badlands. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G53.80,43.30 Badlands]. [O]",
+      "map_id": 3,
+      "map_name": "Badlands",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 1537,
+      "origin_map_name": "Ironforge",
+      "origin_x": 70.87,
+      "origin_y": 94.56,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 53.8,
+      "y": 43.3
+    },
+    {
+      "before_quest_id": 706,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:706:starter"
+      ],
+      "instruction": "Before you begin: travel to Badlands and meet the first quest giver at [G53.80,43.30 Badlands]. Leave at least two quest-log slots open. [O]",
+      "map_id": 3,
+      "map_name": "Badlands",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 53.8,
+      "y": 43.3
+    },
+    {
+      "before_quest_id": 706,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:706:requiredLevel"
+      ],
+      "instruction": "Reach level 45 before accepting Fiery Blaze Enchantments. [XP45 Level 45]",
+      "map_id": 3,
+      "map_name": "Badlands",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 45,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 53.8,
+      "y": 43.3
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2860,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3,
+              "map_name": "Badlands",
+              "verification": "questie_structured_source_only",
+              "x": 53.8,
+              "y": 43.3
+            }
+          ],
+          "name": "Sigrun Ironhew",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:706"
+      ],
+      "instruction": "Accept [QA706 Fiery Blaze Enchantments] from Sigrun Ironhew.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 706,
+      "quest_name": "Fiery Blaze Enchantments",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3,
+      "zone_or_sort_name": "Badlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2888,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3,
+              "map_name": "Badlands",
+              "verification": "questie_structured_source_only",
+              "x": 61.94,
+              "y": 54.26
+            }
+          ],
+          "name": "Garek",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:732"
+      ],
+      "instruction": "Accept [QA732 Tremors of the Earth] from Garek.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 732,
+      "quest_name": "Tremors of the Earth",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3,
+      "zone_or_sort_name": "Badlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:706"
+      ],
+      "instruction": "Collect or use the required item: Black Drake's Heart. [QC706 Fiery Blaze Enchantments]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Black Drake's Heart",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4612,
+          "kind": "item",
+          "locations": [],
+          "name": "Black Drake's Heart",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 6,
+      "quest_id": 706,
+      "quest_name": "Fiery Blaze Enchantments",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3,
+      "zone_or_sort_name": "Badlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:732"
+      ],
+      "instruction": "Collect or use the required item: Sign of the Earth. [QC732 Tremors of the Earth]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Sign of the Earth",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4640,
+          "kind": "item",
+          "locations": [],
+          "name": "Sign of the Earth",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 7,
+      "quest_id": 732,
+      "quest_name": "Tremors of the Earth",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3,
+      "zone_or_sort_name": "Badlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2888,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3,
+              "map_name": "Badlands",
+              "verification": "questie_structured_source_only",
+              "x": 61.94,
+              "y": 54.26
+            }
+          ],
+          "name": "Garek",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:732"
+      ],
+      "instruction": "Turn in [QT732 Tremors of the Earth] to Garek",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 732,
+      "quest_name": "Tremors of the Earth",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3,
+      "zone_or_sort_name": "Badlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2860,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3,
+              "map_name": "Badlands",
+              "verification": "questie_structured_source_only",
+              "x": 53.8,
+              "y": 43.3
+            }
+          ],
+          "name": "Sigrun Ironhew",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:706"
+      ],
+      "instruction": "Turn in [QT706 Fiery Blaze Enchantments] to Sigrun Ironhew",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 706,
+      "quest_name": "Fiery Blaze Enchantments",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3,
+      "zone_or_sort_name": "Badlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2888,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3,
+              "map_name": "Badlands",
+              "verification": "questie_structured_source_only",
+              "x": 61.94,
+              "y": 54.26
+            }
+          ],
+          "name": "Garek",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:717"
+      ],
+      "instruction": "Accept [QA717 Tremors of the Earth] from Garek.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 717,
+      "quest_name": "Tremors of the Earth",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3,
+      "zone_or_sort_name": "Badlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:717"
+      ],
+      "instruction": "Use the quest item [UI4640-] as directed; collect or use the required items: Blacklash's Bindings, Chains of Hematus. [QC717 Tremors of the Earth]",
+      "item_use_id": 4640,
+      "objective_hint": "Collect or use the required items: Blacklash's Bindings, Chains of Hematus",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4615,
+          "kind": "item",
+          "locations": [],
+          "name": "Blacklash's Bindings",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4645,
+          "kind": "item",
+          "locations": [],
+          "name": "Chains of Hematus",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 11,
+      "quest_id": 717,
+      "quest_name": "Tremors of the Earth",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3,
+      "zone_or_sort_name": "Badlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2888,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3,
+              "map_name": "Badlands",
+              "verification": "questie_structured_source_only",
+              "x": 61.94,
+              "y": 54.26
+            }
+          ],
+          "name": "Garek",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:717"
+      ],
+      "instruction": "Turn in [QT717 Tremors of the Earth] to Garek",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 717,
+      "quest_name": "Tremors of the Earth",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3,
+      "zone_or_sort_name": "Badlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7406,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 28.36,
+              "y": 76.35
+            }
+          ],
+          "name": "Oglethorpe Obnoticus",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3721"
+      ],
+      "instruction": "Accept [QA3721 An OOX of Your Own] from Oglethorpe Obnoticus.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 3721,
+      "quest_name": "An OOX of Your Own",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 35,
+      "zone_or_sort_name": "Map or sort 35"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3721"
+      ],
+      "instruction": "Complete [QC3721 An OOX of Your Own]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 3721,
+      "quest_name": "An OOX of Your Own",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 35,
+      "zone_or_sort_name": "Map or sort 35"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7406,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 28.36,
+              "y": 76.35
+            }
+          ],
+          "name": "Oglethorpe Obnoticus",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3721"
+      ],
+      "instruction": "Turn in [QT3721 An OOX of Your Own] to Oglethorpe Obnoticus",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 3721,
+      "quest_name": "An OOX of Your Own",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 35,
+      "zone_or_sort_name": "Map or sort 35"
+    }
+  ],
+  "title": "51 Badlands"
+}

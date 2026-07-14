@@ -1,0 +1,2173 @@
+{
+  "branch": "optional_content",
+  "entry_contract": "Complete Poisoned Water and Stormers and Rumblers. Begin in Azshara with Duke Hydraxis. Leave at least two quest-log slots open; group and reputation gates remain explicit.",
+  "entry_route_point": {
+    "map_id": 16,
+    "map_name": "Azshara",
+    "x": 79.28,
+    "y": 73.7
+  },
+  "entry_zone_or_sort": 16,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 139,
+    "map_name": "Eastern Plaguelands",
+    "quest_id": 5522,
+    "tag": "QT",
+    "x": 81.73,
+    "y": 57.83
+  },
+  "external_prerequisite_all_quest_ids": [
+    6804,
+    6805
+  ],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [
+    6804,
+    6805
+  ],
+  "group": "Mad's Loremaster Guide - Optional Content",
+  "guide_file": "Guides/optional_content/119_raid_23.lua",
+  "id": "119-optional_content-optional-content-23---azshara-&-tanaris",
+  "maximum_level": null,
+  "minimum_level": null,
+  "next_chapter": "Optional Content 24 - Stormwind City & Ironforge",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "Optional Content 22 - Eastern Plaguelands & Western Plaguelands",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 6821,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5466:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6821:starter",
+        "travel-network:auberdine-menethil",
+        "https://www.wowhead.com/tbc/quest=942/the-absent-minded-prospector"
+      ],
+      "instruction": "Travel from Western Plaguelands to Azshara: Take the ship between Auberdine and Menethil Harbor. Continue to [G79.28,73.70 Azshara]. [O]",
+      "map_id": 16,
+      "map_name": "Azshara",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 28,
+      "origin_map_name": "Western Plaguelands",
+      "origin_x": 70.57,
+      "origin_y": 74.11,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [
+        "auberdine-menethil"
+      ],
+      "type": "transport",
+      "verification": "questie_endpoints_and_tbc_transport_network",
+      "x": 79.28,
+      "y": 73.7
+    },
+    {
+      "before_quest_id": 6821,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6804:dependency",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6805:dependency"
+      ],
+      "instruction": "Optional entry requirements: complete Poisoned Water and Stormers and Rumblers. [O]",
+      "map_id": 16,
+      "map_name": "Azshara",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        6804,
+        6805
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "branch_entry",
+      "verification": "route_dependency_graph",
+      "x": 79.28,
+      "y": 73.7
+    },
+    {
+      "before_quest_id": 6821,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6821:starter"
+      ],
+      "instruction": "Optional chapter: travel to Azshara and begin at [G79.28,73.70 Azshara]. Leave at least two quest-log slots open. [O]",
+      "map_id": 16,
+      "map_name": "Azshara",
+      "optional": true,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 79.28,
+      "y": 73.7
+    },
+    {
+      "before_quest_id": 6821,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6821:requiredLevel"
+      ],
+      "instruction": "Reach level 62 before accepting Eye of the Emberseer. [XP62 Level 62]",
+      "map_id": 16,
+      "map_name": "Azshara",
+      "optional": false,
+      "order": 4,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 62,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 79.28,
+      "y": 73.7
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 13278,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 79.28,
+              "y": 73.7
+            }
+          ],
+          "name": "Duke Hydraxis",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6821"
+      ],
+      "instruction": "Accept [QA6821 Eye of the Emberseer] from Duke Hydraxis.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 6821,
+      "quest_name": "Eye of the Emberseer",
+      "quest_tag": "Raid",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "before_quest_id": 6821,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6821:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 16,
+      "map_name": "Azshara",
+      "optional": true,
+      "order": 6,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        6821
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 79.28,
+      "y": 73.7
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6821"
+      ],
+      "instruction": "Raid \u2014 Collect or use the required item: Eye of the Emberseer. [QC6821 Eye of the Emberseer]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Eye of the Emberseer",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 17322,
+          "kind": "item",
+          "locations": [],
+          "name": "Eye of the Emberseer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 7,
+      "quest_id": 6821,
+      "quest_name": "Eye of the Emberseer",
+      "quest_tag": "Raid",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 13278,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 79.28,
+              "y": 73.7
+            }
+          ],
+          "name": "Duke Hydraxis",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6821"
+      ],
+      "instruction": "Turn in [QT6821 Eye of the Emberseer] to Duke Hydraxis",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 6821,
+      "quest_name": "Eye of the Emberseer",
+      "quest_tag": "Raid",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 13278,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 79.28,
+              "y": 73.7
+            }
+          ],
+          "name": "Duke Hydraxis",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6822"
+      ],
+      "instruction": "Accept [QA6822 The Molten Core] from Duke Hydraxis.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 6822,
+      "quest_name": "The Molten Core",
+      "quest_tag": "Raid",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6822"
+      ],
+      "instruction": "Raid \u2014 Complete the required NPC or creature objectives: Molten Giant, Firelord, Ancient Core Hound, plus 1 more. [QC6822 The Molten Core]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Molten Giant, Firelord, Ancient Core Hound, plus 1 more",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11658,
+          "kind": "npc",
+          "locations": [],
+          "name": "Molten Giant",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11668,
+          "kind": "npc",
+          "locations": [],
+          "name": "Firelord",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11673,
+          "kind": "npc",
+          "locations": [],
+          "name": "Ancient Core Hound",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 12101,
+          "kind": "npc",
+          "locations": [],
+          "name": "Lava Surger",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 10,
+      "quest_id": 6822,
+      "quest_name": "The Molten Core",
+      "quest_tag": "Raid",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 13278,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 79.28,
+              "y": 73.7
+            }
+          ],
+          "name": "Duke Hydraxis",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6822"
+      ],
+      "instruction": "Turn in [QT6822 The Molten Core] to Duke Hydraxis",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 6822,
+      "quest_name": "The Molten Core",
+      "quest_tag": "Raid",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16013,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 43.53,
+              "y": 52.64
+            }
+          ],
+          "name": "Deliana",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8922"
+      ],
+      "instruction": "Accept [QA8922 A Supernatural Device] from Deliana.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 8922,
+      "quest_name": "A Supernatural Device",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8922"
+      ],
+      "instruction": "Complete [QC8922 A Supernatural Device]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 8922,
+      "quest_name": "A Supernatural Device",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16014,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 52.47,
+              "y": 27.23
+            }
+          ],
+          "name": "Mux Manascrambler",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8922"
+      ],
+      "instruction": "Turn in [QT8922 A Supernatural Device] to Mux Manascrambler",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 8922,
+      "quest_name": "A Supernatural Device",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16014,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 52.47,
+              "y": 27.23
+            }
+          ],
+          "name": "Mux Manascrambler",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8921"
+      ],
+      "instruction": "Accept [QA8921 The Ectoplasmic Distiller] from Mux Manascrambler.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 8921,
+      "quest_name": "The Ectoplasmic Distiller",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8921"
+      ],
+      "instruction": "Collect or use the required items: Delicate Arcanite Converter, Greater Eternal Essence, Stonescale Oil, plus 1 more. [QC8921 The Ectoplasmic Distiller]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Delicate Arcanite Converter, Greater Eternal Essence, Stonescale Oil, plus 1 more",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 16006,
+          "kind": "item",
+          "locations": [],
+          "name": "Delicate Arcanite Converter",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 16203,
+          "kind": "item",
+          "locations": [],
+          "name": "Greater Eternal Essence",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 13423,
+          "kind": "item",
+          "locations": [],
+          "name": "Stonescale Oil",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 22338,
+          "kind": "item",
+          "locations": [],
+          "name": "Volcanic Ash",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 16,
+      "quest_id": 8921,
+      "quest_name": "The Ectoplasmic Distiller",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16014,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 52.47,
+              "y": 27.23
+            }
+          ],
+          "name": "Mux Manascrambler",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8921"
+      ],
+      "instruction": "Turn in [QT8921 The Ectoplasmic Distiller] to Mux Manascrambler",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 8921,
+      "quest_name": "The Ectoplasmic Distiller",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16014,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 52.47,
+              "y": 27.23
+            }
+          ],
+          "name": "Mux Manascrambler",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8924"
+      ],
+      "instruction": "Accept [QA8924 Hunting for Ectoplasm] from Mux Manascrambler.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 8924,
+      "quest_name": "Hunting for Ectoplasm",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8924"
+      ],
+      "instruction": "Use the quest item [UI21946-] as directed; collect or use the required items: Scorched Ectoplasm, Frozen Ectoplasm, Stable Ectoplasm. [QC8924 Hunting for Ectoplasm]",
+      "item_use_id": 21946,
+      "objective_hint": "Collect or use the required items: Scorched Ectoplasm, Frozen Ectoplasm, Stable Ectoplasm",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 21937,
+          "kind": "item",
+          "locations": [],
+          "name": "Scorched Ectoplasm",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 21936,
+          "kind": "item",
+          "locations": [],
+          "name": "Frozen Ectoplasm",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 21935,
+          "kind": "item",
+          "locations": [],
+          "name": "Stable Ectoplasm",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 19,
+      "quest_id": 8924,
+      "quest_name": "Hunting for Ectoplasm",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16014,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 52.47,
+              "y": 27.23
+            }
+          ],
+          "name": "Mux Manascrambler",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8924"
+      ],
+      "instruction": "Turn in [QT8924 Hunting for Ectoplasm] to Mux Manascrambler",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 8924,
+      "quest_name": "Hunting for Ectoplasm",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16014,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 52.47,
+              "y": 27.23
+            }
+          ],
+          "name": "Mux Manascrambler",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8925"
+      ],
+      "instruction": "Accept [QA8925 A Portable Power Source] from Mux Manascrambler.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 8925,
+      "quest_name": "A Portable Power Source",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8925"
+      ],
+      "instruction": "Collect or use the required item: Magma Core. [QC8925 A Portable Power Source]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Magma Core",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 21938,
+          "kind": "item",
+          "locations": [],
+          "name": "Magma Core",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 22,
+      "quest_id": 8925,
+      "quest_name": "A Portable Power Source",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16014,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 52.47,
+              "y": 27.23
+            }
+          ],
+          "name": "Mux Manascrambler",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8925"
+      ],
+      "instruction": "Turn in [QT8925 A Portable Power Source] to Mux Manascrambler",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 23,
+      "quest_id": 8925,
+      "quest_name": "A Portable Power Source",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16014,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 52.47,
+              "y": 27.23
+            }
+          ],
+          "name": "Mux Manascrambler",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8928"
+      ],
+      "instruction": "Accept [QA8928 A Shifty Merchant] from Mux Manascrambler.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 24,
+      "quest_id": 8928,
+      "quest_name": "A Shifty Merchant",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8928"
+      ],
+      "instruction": "Elite/group recommended \u2014 Collect or use the required item: Fel Elemental Rod. [QC8928 A Shifty Merchant]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Fel Elemental Rod",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 21939,
+          "kind": "item",
+          "locations": [],
+          "name": "Fel Elemental Rod",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 25,
+      "quest_id": 8928,
+      "quest_name": "A Shifty Merchant",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16014,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 52.47,
+              "y": 27.23
+            }
+          ],
+          "name": "Mux Manascrambler",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8928"
+      ],
+      "instruction": "Turn in [QT8928 A Shifty Merchant] to Mux Manascrambler",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 26,
+      "quest_id": 8928,
+      "quest_name": "A Shifty Merchant",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 13278,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 79.28,
+              "y": 73.7
+            }
+          ],
+          "name": "Duke Hydraxis",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6823"
+      ],
+      "instruction": "Accept [QA6823 Agent of Hydraxis] from Duke Hydraxis.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 27,
+      "quest_id": 6823,
+      "quest_name": "Agent of Hydraxis",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6823"
+      ],
+      "instruction": "Raid \u2014 Complete [QC6823 Agent of Hydraxis]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 28,
+      "quest_id": 6823,
+      "quest_name": "Agent of Hydraxis",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 13278,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 79.28,
+              "y": 73.7
+            }
+          ],
+          "name": "Duke Hydraxis",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6823"
+      ],
+      "instruction": "Turn in [QT6823 Agent of Hydraxis] to Duke Hydraxis",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 29,
+      "quest_id": 6823,
+      "quest_name": "Agent of Hydraxis",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 13278,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 79.28,
+              "y": 73.7
+            }
+          ],
+          "name": "Duke Hydraxis",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6824"
+      ],
+      "instruction": "Accept [QA6824 Hands of the Enemy] from Duke Hydraxis.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 30,
+      "quest_id": 6824,
+      "quest_name": "Hands of the Enemy",
+      "quest_tag": "Raid",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6824"
+      ],
+      "instruction": "Raid \u2014 Collect or use the required items: Hand of Shazzrah, Hand of Lucifron, Hand of Gehennas, plus 1 more. [QC6824 Hands of the Enemy]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Hand of Shazzrah, Hand of Lucifron, Hand of Gehennas, plus 1 more",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 17332,
+          "kind": "item",
+          "locations": [],
+          "name": "Hand of Shazzrah",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 17329,
+          "kind": "item",
+          "locations": [],
+          "name": "Hand of Lucifron",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 17331,
+          "kind": "item",
+          "locations": [],
+          "name": "Hand of Gehennas",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 17330,
+          "kind": "item",
+          "locations": [],
+          "name": "Hand of Sulfuron",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 31,
+      "quest_id": 6824,
+      "quest_name": "Hands of the Enemy",
+      "quest_tag": "Raid",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 13278,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 79.28,
+              "y": 73.7
+            }
+          ],
+          "name": "Duke Hydraxis",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6824"
+      ],
+      "instruction": "Turn in [QT6824 Hands of the Enemy] to Duke Hydraxis",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 32,
+      "quest_id": 6824,
+      "quest_name": "Hands of the Enemy",
+      "quest_tag": "Raid",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 13278,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 79.28,
+              "y": 73.7
+            }
+          ],
+          "name": "Duke Hydraxis",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7486"
+      ],
+      "instruction": "Accept [QA7486 A Hero's Reward] from Duke Hydraxis.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 33,
+      "quest_id": 7486,
+      "quest_name": "A Hero's Reward",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7486"
+      ],
+      "instruction": "Complete [QC7486 A Hero's Reward]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 34,
+      "quest_id": 7486,
+      "quest_name": "A Hero's Reward",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 179551,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 79.24,
+              "y": 74.87
+            }
+          ],
+          "name": "Hydraxis' Coffer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7486"
+      ],
+      "instruction": "Turn in [QT7486 A Hero's Reward] to Hydraxis' Coffer",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 35,
+      "quest_id": 7486,
+      "quest_name": "A Hero's Reward",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15192,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 64.2,
+              "y": 51.42
+            }
+          ],
+          "name": "Anachronos",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8747"
+      ],
+      "instruction": "Accept [QA8747 The Path of the Protector] from Anachronos.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 36,
+      "quest_id": 8747,
+      "quest_name": "The Path of the Protector",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8747"
+      ],
+      "instruction": "Complete [QC8747 The Path of the Protector]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 37,
+      "quest_id": 8747,
+      "quest_name": "The Path of the Protector",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15192,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 64.2,
+              "y": 51.42
+            }
+          ],
+          "name": "Anachronos",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8747"
+      ],
+      "instruction": "Turn in [QT8747 The Path of the Protector] to Anachronos",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 38,
+      "quest_id": 8747,
+      "quest_name": "The Path of the Protector",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15192,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 64.2,
+              "y": 51.42
+            }
+          ],
+          "name": "Anachronos",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8748"
+      ],
+      "instruction": "Accept [QA8748 The Path of the Protector] from Anachronos.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 39,
+      "quest_id": 8748,
+      "quest_name": "The Path of the Protector",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8748"
+      ],
+      "instruction": "Raid \u2014 Collect or use the required item: Signet Ring of the Bronze Dragonflight. [QC8748 The Path of the Protector]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Signet Ring of the Bronze Dragonflight",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 21196,
+          "kind": "item",
+          "locations": [],
+          "name": "Signet Ring of the Bronze Dragonflight",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 40,
+      "quest_id": 8748,
+      "quest_name": "The Path of the Protector",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15192,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 64.2,
+              "y": 51.42
+            }
+          ],
+          "name": "Anachronos",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8748"
+      ],
+      "instruction": "Turn in [QT8748 The Path of the Protector] to Anachronos",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 41,
+      "quest_id": 8748,
+      "quest_name": "The Path of the Protector",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15192,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 64.2,
+              "y": 51.42
+            }
+          ],
+          "name": "Anachronos",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8749"
+      ],
+      "instruction": "Accept [QA8749 The Path of the Protector] from Anachronos.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 42,
+      "quest_id": 8749,
+      "quest_name": "The Path of the Protector",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8749"
+      ],
+      "instruction": "Raid \u2014 Collect or use the required item: Signet Ring of the Bronze Dragonflight. [QC8749 The Path of the Protector]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Signet Ring of the Bronze Dragonflight",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 21197,
+          "kind": "item",
+          "locations": [],
+          "name": "Signet Ring of the Bronze Dragonflight",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 43,
+      "quest_id": 8749,
+      "quest_name": "The Path of the Protector",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15192,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 64.2,
+              "y": 51.42
+            }
+          ],
+          "name": "Anachronos",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8749"
+      ],
+      "instruction": "Turn in [QT8749 The Path of the Protector] to Anachronos",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 44,
+      "quest_id": 8749,
+      "quest_name": "The Path of the Protector",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15192,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 64.2,
+              "y": 51.42
+            }
+          ],
+          "name": "Anachronos",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8750"
+      ],
+      "instruction": "Accept [QA8750 The Path of the Protector] from Anachronos.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 45,
+      "quest_id": 8750,
+      "quest_name": "The Path of the Protector",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8750"
+      ],
+      "instruction": "Raid \u2014 Collect or use the required item: Signet Ring of the Bronze Dragonflight. [QC8750 The Path of the Protector]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Signet Ring of the Bronze Dragonflight",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 21198,
+          "kind": "item",
+          "locations": [],
+          "name": "Signet Ring of the Bronze Dragonflight",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 46,
+      "quest_id": 8750,
+      "quest_name": "The Path of the Protector",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15192,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 64.2,
+              "y": 51.42
+            }
+          ],
+          "name": "Anachronos",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8750"
+      ],
+      "instruction": "Turn in [QT8750 The Path of the Protector] to Anachronos",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 47,
+      "quest_id": 8750,
+      "quest_name": "The Path of the Protector",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15192,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 64.2,
+              "y": 51.42
+            }
+          ],
+          "name": "Anachronos",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8751"
+      ],
+      "instruction": "Accept [QA8751 The Protector of Kalimdor] from Anachronos.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 48,
+      "quest_id": 8751,
+      "quest_name": "The Protector of Kalimdor",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8751"
+      ],
+      "instruction": "Raid \u2014 Collect or use the required item: Signet Ring of the Bronze Dragonflight. [QC8751 The Protector of Kalimdor]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Signet Ring of the Bronze Dragonflight",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 21199,
+          "kind": "item",
+          "locations": [],
+          "name": "Signet Ring of the Bronze Dragonflight",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 49,
+      "quest_id": 8751,
+      "quest_name": "The Protector of Kalimdor",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15192,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 64.2,
+              "y": 51.42
+            }
+          ],
+          "name": "Anachronos",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8751"
+      ],
+      "instruction": "Turn in [QT8751 The Protector of Kalimdor] to Anachronos",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 50,
+      "quest_id": 8751,
+      "quest_name": "The Protector of Kalimdor",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10267,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 46,
+              "map_name": "Burning Steppes",
+              "verification": "questie_structured_source_only",
+              "x": 65.24,
+              "y": 24.0
+            }
+          ],
+          "name": "Tinkee Steamboil",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5522"
+      ],
+      "instruction": "Accept [QA5522 Leonid Barthalomew] from Tinkee Steamboil.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 51,
+      "quest_id": 5522,
+      "quest_name": "Leonid Barthalomew",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 46,
+      "zone_or_sort_name": "Burning Steppes"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5522"
+      ],
+      "instruction": "Dungeon \u2014 Complete [QC5522 Leonid Barthalomew]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 52,
+      "quest_id": 5522,
+      "quest_name": "Leonid Barthalomew",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 46,
+      "zone_or_sort_name": "Burning Steppes"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11036,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 139,
+              "map_name": "Eastern Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 81.73,
+              "y": 57.83
+            }
+          ],
+          "name": "Leonid Barthalomew the Revered",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5522"
+      ],
+      "instruction": "Turn in [QT5522 Leonid Barthalomew] to Leonid Barthalomew the Revered",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 53,
+      "quest_id": 5522,
+      "quest_name": "Leonid Barthalomew",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 46,
+      "zone_or_sort_name": "Burning Steppes"
+    }
+  ],
+  "title": "Optional Content 23 - Azshara & Tanaris"
+}

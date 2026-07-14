@@ -1,0 +1,846 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 48 Darnassus, or select this chapter on a partially completed character. Begin in The Exodar with Dugiru. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 3557,
+    "map_name": "The Exodar",
+    "x": 63.51,
+    "y": 67.74
+  },
+  "entry_zone_or_sort": 3557,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 40,
+    "map_name": "Westfall",
+    "quest_id": 53,
+    "tag": "QT",
+    "x": 44.62,
+    "y": 80.25
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/049_world_49.lua",
+  "id": "049-primary-49-the-exodar-&-westfall",
+  "maximum_level": 43,
+  "minimum_level": 43,
+  "next_chapter": "50 Duskwood & Ironforge",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "48 Darnassus",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 10356,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7799:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10356:starter",
+        "travel-network:auberdine-exodar",
+        "https://www.wowhead.com/tbc/guide/how-to-get-to-the-exodar-in-burning-crusade-classic"
+      ],
+      "instruction": "Travel from Darnassus to The Exodar: Take the ship between Auberdine and Valnaar's Berth outside the Exodar. Continue to [G63.51,67.74 The Exodar]. [O]",
+      "map_id": 3557,
+      "map_name": "The Exodar",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 1657,
+      "origin_map_name": "Darnassus",
+      "origin_x": 64.02,
+      "origin_y": 23.0,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [
+        "auberdine-exodar"
+      ],
+      "type": "transport",
+      "verification": "questie_endpoints_and_tbc_transport_network",
+      "x": 63.51,
+      "y": 67.74
+    },
+    {
+      "before_quest_id": 10356,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10356:starter"
+      ],
+      "instruction": "Before you begin: travel to The Exodar and meet the first quest giver at [G63.51,67.74 The Exodar]. Leave at least two quest-log slots open. [O]",
+      "map_id": 3557,
+      "map_name": "The Exodar",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 63.51,
+      "y": 67.74
+    },
+    {
+      "before_quest_id": 10356,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10356:requiredLevel"
+      ],
+      "instruction": "Reach level 43 before accepting A Donation of Mageweave. [XP43 Level 43]",
+      "map_id": 3557,
+      "map_name": "The Exodar",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 43,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 63.51,
+      "y": 67.74
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 20604,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3557,
+              "map_name": "The Exodar",
+              "verification": "questie_structured_source_only",
+              "x": 63.51,
+              "y": 67.74
+            }
+          ],
+          "name": "Dugiru",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10356"
+      ],
+      "instruction": "Accept [QA10356 A Donation of Mageweave] from Dugiru.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 10356,
+      "quest_name": "A Donation of Mageweave",
+      "quest_tag": null,
+      "required_level": 43,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3557,
+      "zone_or_sort_name": "The Exodar"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10356"
+      ],
+      "instruction": "Collect or use the required item: Mageweave Cloth. [QC10356 A Donation of Mageweave]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Mageweave Cloth",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4338,
+          "kind": "item",
+          "locations": [],
+          "name": "Mageweave Cloth",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 5,
+      "quest_id": 10356,
+      "quest_name": "A Donation of Mageweave",
+      "quest_tag": null,
+      "required_level": 43,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3557,
+      "zone_or_sort_name": "The Exodar"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 20604,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3557,
+              "map_name": "The Exodar",
+              "verification": "questie_structured_source_only",
+              "x": 63.51,
+              "y": 67.74
+            }
+          ],
+          "name": "Dugiru",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10356"
+      ],
+      "instruction": "Turn in [QT10356 A Donation of Mageweave] to Dugiru",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 10356,
+      "quest_name": "A Donation of Mageweave",
+      "quest_tag": null,
+      "required_level": 43,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3557,
+      "zone_or_sort_name": "The Exodar"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 239,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 40,
+              "map_name": "Westfall",
+              "verification": "questie_structured_source_only",
+              "x": 44.62,
+              "y": 80.25
+            }
+          ],
+          "name": "Grimbooze Thunderbrew",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:48"
+      ],
+      "instruction": "Accept [QA48 Sweet Amber] from Grimbooze Thunderbrew.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 48,
+      "quest_name": "Sweet Amber",
+      "quest_tag": null,
+      "required_level": 43,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 40,
+      "zone_or_sort_name": "Westfall"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:48"
+      ],
+      "instruction": "Collect or use the required item: Holy Spring Water. [QC48 Sweet Amber]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Holy Spring Water",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 737,
+          "kind": "item",
+          "locations": [],
+          "name": "Holy Spring Water",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 8,
+      "quest_id": 48,
+      "quest_name": "Sweet Amber",
+      "quest_tag": null,
+      "required_level": 43,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 40,
+      "zone_or_sort_name": "Westfall"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 239,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 40,
+              "map_name": "Westfall",
+              "verification": "questie_structured_source_only",
+              "x": 44.62,
+              "y": 80.25
+            }
+          ],
+          "name": "Grimbooze Thunderbrew",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:48"
+      ],
+      "instruction": "Turn in [QT48 Sweet Amber] to Grimbooze Thunderbrew",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 48,
+      "quest_name": "Sweet Amber",
+      "quest_tag": null,
+      "required_level": 43,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 40,
+      "zone_or_sort_name": "Westfall"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 239,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 40,
+              "map_name": "Westfall",
+              "verification": "questie_structured_source_only",
+              "x": 44.62,
+              "y": 80.25
+            }
+          ],
+          "name": "Grimbooze Thunderbrew",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:49"
+      ],
+      "instruction": "Accept [QA49 Sweet Amber] from Grimbooze Thunderbrew.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 49,
+      "quest_name": "Sweet Amber",
+      "quest_tag": null,
+      "required_level": 43,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 40,
+      "zone_or_sort_name": "Westfall"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:49"
+      ],
+      "instruction": "Collect or use the required items: Sack of Barley, Sack of Corn, Sack of Rye. [QC49 Sweet Amber]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Sack of Barley, Sack of Corn, Sack of Rye",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 738,
+          "kind": "item",
+          "locations": [],
+          "name": "Sack of Barley",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 739,
+          "kind": "item",
+          "locations": [],
+          "name": "Sack of Corn",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 740,
+          "kind": "item",
+          "locations": [],
+          "name": "Sack of Rye",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 11,
+      "quest_id": 49,
+      "quest_name": "Sweet Amber",
+      "quest_tag": null,
+      "required_level": 43,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 40,
+      "zone_or_sort_name": "Westfall"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 239,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 40,
+              "map_name": "Westfall",
+              "verification": "questie_structured_source_only",
+              "x": 44.62,
+              "y": 80.25
+            }
+          ],
+          "name": "Grimbooze Thunderbrew",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:49"
+      ],
+      "instruction": "Turn in [QT49 Sweet Amber] to Grimbooze Thunderbrew",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 49,
+      "quest_name": "Sweet Amber",
+      "quest_tag": null,
+      "required_level": 43,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 40,
+      "zone_or_sort_name": "Westfall"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 239,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 40,
+              "map_name": "Westfall",
+              "verification": "questie_structured_source_only",
+              "x": 44.62,
+              "y": 80.25
+            }
+          ],
+          "name": "Grimbooze Thunderbrew",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:50"
+      ],
+      "instruction": "Accept [QA50 Sweet Amber] from Grimbooze Thunderbrew.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 50,
+      "quest_name": "Sweet Amber",
+      "quest_tag": null,
+      "required_level": 43,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 40,
+      "zone_or_sort_name": "Westfall"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:50"
+      ],
+      "instruction": "Collect or use the required item: Truesilver Bar. [QC50 Sweet Amber]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Truesilver Bar",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 6037,
+          "kind": "item",
+          "locations": [],
+          "name": "Truesilver Bar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 14,
+      "quest_id": 50,
+      "quest_name": "Sweet Amber",
+      "quest_tag": null,
+      "required_level": 43,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 40,
+      "zone_or_sort_name": "Westfall"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 239,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 40,
+              "map_name": "Westfall",
+              "verification": "questie_structured_source_only",
+              "x": 44.62,
+              "y": 80.25
+            }
+          ],
+          "name": "Grimbooze Thunderbrew",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:50"
+      ],
+      "instruction": "Turn in [QT50 Sweet Amber] to Grimbooze Thunderbrew",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 50,
+      "quest_name": "Sweet Amber",
+      "quest_tag": null,
+      "required_level": 43,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 40,
+      "zone_or_sort_name": "Westfall"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 239,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 40,
+              "map_name": "Westfall",
+              "verification": "questie_structured_source_only",
+              "x": 44.62,
+              "y": 80.25
+            }
+          ],
+          "name": "Grimbooze Thunderbrew",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:51"
+      ],
+      "instruction": "Accept [QA51 Sweet Amber] from Grimbooze Thunderbrew.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 51,
+      "quest_name": "Sweet Amber",
+      "quest_tag": null,
+      "required_level": 43,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 40,
+      "zone_or_sort_name": "Westfall"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:51"
+      ],
+      "instruction": "Collect or use the required item: A Sycamore Branch. [QC51 Sweet Amber]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: A Sycamore Branch",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 742,
+          "kind": "item",
+          "locations": [],
+          "name": "A Sycamore Branch",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 17,
+      "quest_id": 51,
+      "quest_name": "Sweet Amber",
+      "quest_tag": null,
+      "required_level": 43,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 40,
+      "zone_or_sort_name": "Westfall"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 239,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 40,
+              "map_name": "Westfall",
+              "verification": "questie_structured_source_only",
+              "x": 44.62,
+              "y": 80.25
+            }
+          ],
+          "name": "Grimbooze Thunderbrew",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:51"
+      ],
+      "instruction": "Turn in [QT51 Sweet Amber] to Grimbooze Thunderbrew",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 51,
+      "quest_name": "Sweet Amber",
+      "quest_tag": null,
+      "required_level": 43,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 40,
+      "zone_or_sort_name": "Westfall"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 239,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 40,
+              "map_name": "Westfall",
+              "verification": "questie_structured_source_only",
+              "x": 44.62,
+              "y": 80.25
+            }
+          ],
+          "name": "Grimbooze Thunderbrew",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:53"
+      ],
+      "instruction": "Accept [QA53 Sweet Amber] from Grimbooze Thunderbrew.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 53,
+      "quest_name": "Sweet Amber",
+      "quest_tag": null,
+      "required_level": 43,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 40,
+      "zone_or_sort_name": "Westfall"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:53"
+      ],
+      "instruction": "Collect or use the required item: Bundle of Charred Oak. [QC53 Sweet Amber]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Bundle of Charred Oak",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 743,
+          "kind": "item",
+          "locations": [],
+          "name": "Bundle of Charred Oak",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 20,
+      "quest_id": 53,
+      "quest_name": "Sweet Amber",
+      "quest_tag": null,
+      "required_level": 43,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 40,
+      "zone_or_sort_name": "Westfall"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 239,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 40,
+              "map_name": "Westfall",
+              "verification": "questie_structured_source_only",
+              "x": 44.62,
+              "y": 80.25
+            }
+          ],
+          "name": "Grimbooze Thunderbrew",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:53"
+      ],
+      "instruction": "Turn in [QT53 Sweet Amber] to Grimbooze Thunderbrew",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 53,
+      "quest_name": "Sweet Amber",
+      "quest_tag": null,
+      "required_level": 43,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 40,
+      "zone_or_sort_name": "Westfall"
+    }
+  ],
+  "title": "49 The Exodar & Westfall"
+}

@@ -1,0 +1,401 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 79 Blasted Lands & Western Plaguelands, or select this chapter on a partially completed character. Begin in Western Plaguelands with Flint Shadowmore. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 28,
+    "map_name": "Western Plaguelands",
+    "x": 43.61,
+    "y": 84.51
+  },
+  "entry_zone_or_sort": 139,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 1519,
+    "map_name": "Stormwind City",
+    "quest_id": 6186,
+    "tag": "QT",
+    "x": 78.22,
+    "y": 17.98
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/080_world_80.lua",
+  "id": "080-primary-80-eastern-plaguelands-&-stormwind-city",
+  "maximum_level": 58,
+  "minimum_level": 58,
+  "next_chapter": "81 Tanaris & Western Plaguelands",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "79 Blasted Lands & Western Plaguelands",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 6185,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6184:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6185:starter"
+      ],
+      "instruction": "Continue within Western Plaguelands to the next route hub at [G43.61,84.51 Western Plaguelands]. [O]",
+      "map_id": 28,
+      "map_name": "Western Plaguelands",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 28,
+      "origin_map_name": "Western Plaguelands",
+      "origin_x": 43.61,
+      "origin_y": 84.51,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 43.61,
+      "y": 84.51
+    },
+    {
+      "before_quest_id": 6185,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6185:starter"
+      ],
+      "instruction": "Before you begin: travel to Western Plaguelands and meet the first quest giver at [G43.61,84.51 Western Plaguelands]. Leave at least two quest-log slots open. [O]",
+      "map_id": 28,
+      "map_name": "Western Plaguelands",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 43.61,
+      "y": 84.51
+    },
+    {
+      "before_quest_id": 6185,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6185:requiredLevel"
+      ],
+      "instruction": "Reach level 58 before accepting The Eastern Plagues. [XP58 Level 58]",
+      "map_id": 28,
+      "map_name": "Western Plaguelands",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 58,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 43.61,
+      "y": 84.51
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 12425,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 28,
+              "map_name": "Western Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 43.61,
+              "y": 84.51
+            }
+          ],
+          "name": "Flint Shadowmore",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6185"
+      ],
+      "instruction": "Accept [QA6185 The Eastern Plagues] from Flint Shadowmore.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 6185,
+      "quest_name": "The Eastern Plagues",
+      "quest_tag": "Elite",
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 139,
+      "zone_or_sort_name": "Eastern Plaguelands"
+    },
+    {
+      "before_quest_id": 6185,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6185:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 28,
+      "map_name": "Western Plaguelands",
+      "optional": true,
+      "order": 5,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        6185
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 43.61,
+      "y": 84.51
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6185"
+      ],
+      "instruction": "Elite/group recommended \u2014 Complete the scripted or exploration event; collect or use the required items: SI:7 Insignia (Rutger), SI:7 Insignia (Fredo), SI:7 Insignia (Turyen). [QC6185 The Eastern Plagues]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: SI:7 Insignia (Rutger), SI:7 Insignia (Fredo), SI:7 Insignia (Turyen)",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 16003,
+          "kind": "item",
+          "locations": [],
+          "name": "SI:7 Insignia (Rutger)",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 16001,
+          "kind": "item",
+          "locations": [],
+          "name": "SI:7 Insignia (Fredo)",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 16002,
+          "kind": "item",
+          "locations": [],
+          "name": "SI:7 Insignia (Turyen)",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 6,
+      "quest_id": 6185,
+      "quest_name": "The Eastern Plagues",
+      "quest_tag": "Elite",
+      "required_level": 58,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 139,
+      "zone_or_sort_name": "Eastern Plaguelands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 12425,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 28,
+              "map_name": "Western Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 43.61,
+              "y": 84.51
+            }
+          ],
+          "name": "Flint Shadowmore",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6185"
+      ],
+      "instruction": "Turn in [QT6185 The Eastern Plagues] to Flint Shadowmore",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 6185,
+      "quest_name": "The Eastern Plagues",
+      "quest_tag": "Elite",
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 139,
+      "zone_or_sort_name": "Eastern Plaguelands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 12425,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 28,
+              "map_name": "Western Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 43.61,
+              "y": 84.51
+            }
+          ],
+          "name": "Flint Shadowmore",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6186"
+      ],
+      "instruction": "Accept [QA6186 The Blightcaller Cometh] from Flint Shadowmore.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 6186,
+      "quest_name": "The Blightcaller Cometh",
+      "quest_tag": "Elite",
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6186"
+      ],
+      "instruction": "Elite/group recommended \u2014 Complete [QC6186 The Blightcaller Cometh]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 6186,
+      "quest_name": "The Blightcaller Cometh",
+      "quest_tag": "Elite",
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1748,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 78.22,
+              "y": 17.98
+            }
+          ],
+          "name": "Highlord Bolvar Fordragon",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6186"
+      ],
+      "instruction": "Turn in [QT6186 The Blightcaller Cometh] to Highlord Bolvar Fordragon",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 6186,
+      "quest_name": "The Blightcaller Cometh",
+      "quest_tag": "Elite",
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    }
+  ],
+  "title": "80 Eastern Plaguelands & Stormwind City"
+}

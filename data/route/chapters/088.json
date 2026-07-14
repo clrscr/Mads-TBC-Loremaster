@@ -1,0 +1,2054 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 87 Shattrath City & Terokkar Forest, or select this chapter on a partially completed character. Begin in Stranglethorn Vale with Vinchaxa. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 33,
+    "map_name": "Stranglethorn Vale",
+    "x": 14.5,
+    "y": 15.83
+  },
+  "entry_zone_or_sort": 19,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 1377,
+    "map_name": "Silithus",
+    "quest_id": 8498,
+    "tag": "QT",
+    "x": 49.2,
+    "y": 34.18
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/088_world_88.lua",
+  "id": "088-primary-88-silithus",
+  "maximum_level": 63,
+  "minimum_level": 63,
+  "next_chapter": "89 Nagrand & Blade's Edge Mountains",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "87 Shattrath City & Terokkar Forest",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 8240,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10930:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8240:starter",
+        "travel-network:shattrath-alliance-portals",
+        "https://www.wowhead.com/tbc/guide/how-to-get-to-shattrath-city-in-burning-crusade-classic"
+      ],
+      "instruction": "Travel from Terokkar Forest to Stranglethorn Vale: Return to Shattrath City and use the Alliance capital portal closest to the next route zone. Continue to [G14.50,15.83 Stranglethorn Vale]. [O]",
+      "map_id": 33,
+      "map_name": "Stranglethorn Vale",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 3519,
+      "origin_map_name": "Terokkar Forest",
+      "origin_x": 30.98,
+      "origin_y": 76.19,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [
+        "shattrath-alliance-portals"
+      ],
+      "type": "transport",
+      "verification": "questie_endpoints_and_tbc_transport_network",
+      "x": 14.5,
+      "y": 15.83
+    },
+    {
+      "before_quest_id": 8240,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8240:starter"
+      ],
+      "instruction": "Before you begin: travel to Stranglethorn Vale and meet the first quest giver at [G14.50,15.83 Stranglethorn Vale]. Leave at least two quest-log slots open. [O]",
+      "map_id": 33,
+      "map_name": "Stranglethorn Vale",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 14.5,
+      "y": 15.83
+    },
+    {
+      "before_quest_id": 8240,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8240:requiredLevel"
+      ],
+      "instruction": "Reach level 63 before accepting A Bijou for Zanza. [XP63 Level 63]",
+      "map_id": 33,
+      "map_name": "Stranglethorn Vale",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 63,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 14.5,
+      "y": 15.83
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15070,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 14.5,
+              "y": 15.83
+            }
+          ],
+          "name": "Vinchaxa",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8240"
+      ],
+      "instruction": "Accept [QA8240 A Bijou for Zanza] from Vinchaxa.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 8240,
+      "quest_name": "A Bijou for Zanza",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 19,
+      "zone_or_sort_name": "Map or sort 19"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8240"
+      ],
+      "instruction": "Complete the scripted or exploration event. [QC8240 A Bijou for Zanza]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 8240,
+      "quest_name": "A Bijou for Zanza",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 19,
+      "zone_or_sort_name": "Map or sort 19"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15070,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 14.5,
+              "y": 15.83
+            }
+          ],
+          "name": "Vinchaxa",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8240"
+      ],
+      "instruction": "Turn in [QT8240 A Bijou for Zanza] to Vinchaxa",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 8240,
+      "quest_name": "A Bijou for Zanza",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 19,
+      "zone_or_sort_name": "Map or sort 19"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15180,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 49.45,
+              "y": 36.45
+            }
+          ],
+          "name": "Baristolth of the Shifting Sands",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8286"
+      ],
+      "instruction": "Accept [QA8286 What Tomorrow Brings] from Baristolth of the Shifting Sands.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 8286,
+      "quest_name": "What Tomorrow Brings",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15181,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 49.2,
+              "y": 34.18
+            }
+          ],
+          "name": "Commander Mar'alith",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8304"
+      ],
+      "instruction": "Accept [QA8304 Dearest Natalia] from Commander Mar'alith.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 8304,
+      "quest_name": "Dearest Natalia",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8304"
+      ],
+      "instruction": "Complete the marked or scripted objectives. [QC8304 Dearest Natalia]",
+      "item_use_id": null,
+      "objective_hint": "Complete the marked or scripted objectives",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15221,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 40.62,
+              "y": 89.18
+            }
+          ],
+          "name": "Frankal Invisible Trigger",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15222,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 41.28,
+              "y": 88.82
+            }
+          ],
+          "name": "Rutgar Invisible Trigger",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 9,
+      "quest_id": 8304,
+      "quest_name": "Dearest Natalia",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8286"
+      ],
+      "instruction": "Complete the scripted or exploration event. [QC8286 What Tomorrow Brings]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 8286,
+      "quest_name": "What Tomorrow Brings",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15180,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 49.45,
+              "y": 36.45
+            }
+          ],
+          "name": "Baristolth of the Shifting Sands",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8286"
+      ],
+      "instruction": "Turn in [QT8286 What Tomorrow Brings] to Baristolth of the Shifting Sands",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 8286,
+      "quest_name": "What Tomorrow Brings",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15181,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 49.2,
+              "y": 34.18
+            }
+          ],
+          "name": "Commander Mar'alith",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8304"
+      ],
+      "instruction": "Turn in [QT8304 Dearest Natalia] to Commander Mar'alith",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 8304,
+      "quest_name": "Dearest Natalia",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15181,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 49.2,
+              "y": 34.18
+            }
+          ],
+          "name": "Commander Mar'alith",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8306"
+      ],
+      "instruction": "Accept [QA8306 Into The Maw of Madness] from Commander Mar'alith.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 8306,
+      "quest_name": "Into The Maw of Madness",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8306"
+      ],
+      "instruction": "Complete the required NPC or creature objective: Mistress Natalia Mar'alith. [QC8306 Into The Maw of Madness]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Mistress Natalia Mar'alith",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15215,
+          "kind": "npc",
+          "locations": [],
+          "name": "Mistress Natalia Mar'alith",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 14,
+      "quest_id": 8306,
+      "quest_name": "Into The Maw of Madness",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15181,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 49.2,
+              "y": 34.18
+            }
+          ],
+          "name": "Commander Mar'alith",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8306"
+      ],
+      "instruction": "Turn in [QT8306 Into The Maw of Madness] to Commander Mar'alith",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 8306,
+      "quest_name": "Into The Maw of Madness",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15170,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 41.28,
+              "y": 88.45
+            }
+          ],
+          "name": "Rutgar Glyphshaper",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8309"
+      ],
+      "instruction": "Accept [QA8309 Glyph Chasing] from Rutgar Glyphshaper.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 8309,
+      "quest_name": "Glyph Chasing",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15171,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 40.81,
+              "y": 88.86
+            }
+          ],
+          "name": "Frankal Stonebridge",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8310"
+      ],
+      "instruction": "Accept [QA8310 Breaking the Code] from Frankal Stonebridge.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 8310,
+      "quest_name": "Breaking the Code",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8309"
+      ],
+      "instruction": "Use the quest item [UI20453-] as directed; collect or use the required items: Hive'Ashi Rubbing, Hive'Zora Rubbing, Hive'Regal Rubbing. [QC8309 Glyph Chasing]",
+      "item_use_id": 20453,
+      "objective_hint": "Collect or use the required items: Hive'Ashi Rubbing, Hive'Zora Rubbing, Hive'Regal Rubbing",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 20455,
+          "kind": "item",
+          "locations": [],
+          "name": "Hive'Ashi Rubbing",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 20454,
+          "kind": "item",
+          "locations": [],
+          "name": "Hive'Zora Rubbing",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 20456,
+          "kind": "item",
+          "locations": [],
+          "name": "Hive'Regal Rubbing",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 18,
+      "quest_id": 8309,
+      "quest_name": "Glyph Chasing",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8310"
+      ],
+      "instruction": "Collect or use the required items: Hive'Ashi Silithid Brain, Hive'Zora Silithid Brain, Hive'Regal Silithid Brain. [QC8310 Breaking the Code]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Hive'Ashi Silithid Brain, Hive'Zora Silithid Brain, Hive'Regal Silithid Brain",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 20457,
+          "kind": "item",
+          "locations": [],
+          "name": "Hive'Ashi Silithid Brain",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 20458,
+          "kind": "item",
+          "locations": [],
+          "name": "Hive'Zora Silithid Brain",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 20459,
+          "kind": "item",
+          "locations": [],
+          "name": "Hive'Regal Silithid Brain",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 19,
+      "quest_id": 8310,
+      "quest_name": "Breaking the Code",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15171,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 40.81,
+              "y": 88.86
+            }
+          ],
+          "name": "Frankal Stonebridge",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8310"
+      ],
+      "instruction": "Turn in [QT8310 Breaking the Code] to Frankal Stonebridge",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 8310,
+      "quest_name": "Breaking the Code",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15170,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 41.28,
+              "y": 88.45
+            }
+          ],
+          "name": "Rutgar Glyphshaper",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8309"
+      ],
+      "instruction": "Turn in [QT8309 Glyph Chasing] to Rutgar Glyphshaper",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 8309,
+      "quest_name": "Glyph Chasing",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15270,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 48.62,
+              "y": 37.87
+            }
+          ],
+          "name": "Huum Wildmane",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8320"
+      ],
+      "instruction": "Accept [QA8320 Twilight Geolords] from Huum Wildmane.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 22,
+      "quest_id": 8320,
+      "quest_name": "Twilight Geolords",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8320"
+      ],
+      "instruction": "Complete the required NPC or creature objective: Twilight Geolord. [QC8320 Twilight Geolords]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Twilight Geolord",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11881,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 24.82,
+              "y": 38.48
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 37.94,
+              "y": 43.89
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 39.55,
+              "y": 42.86
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 39.04,
+              "y": 42.56
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 40.42,
+              "y": 44.84
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 37.06,
+              "y": 42.86
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 38.79,
+              "y": 40.8
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 38.14,
+              "y": 41.46
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 18.67,
+              "y": 80.23
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 17.24,
+              "y": 83.8
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 18.6,
+              "y": 85.83
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 17.58,
+              "y": 85.37
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 20.65,
+              "y": 82.74
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 17.71,
+              "y": 82.71
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 18.54,
+              "y": 82.68
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 21.49,
+              "y": 84.26
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 20.75,
+              "y": 85.66
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 20.71,
+              "y": 88.42
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 21.71,
+              "y": 85.65
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 20.68,
+              "y": 87.25
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 19.61,
+              "y": 87.06
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 25.54,
+              "y": 33.11
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 23.66,
+              "y": 34.1
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 24.62,
+              "y": 35.49
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 24.5,
+              "y": 36.87
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 25.02,
+              "y": 36.11
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 25.26,
+              "y": 36.72
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 25.24,
+              "y": 35.99
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 28.26,
+              "y": 34.08
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 27.24,
+              "y": 34.07
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 26.36,
+              "y": 34.05
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 26.97,
+              "y": 34.88
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 27.48,
+              "y": 35.6
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 27.36,
+              "y": 32.73
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 28.26,
+              "y": 32.77
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 29.1,
+              "y": 32.53
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 28.44,
+              "y": 31.91
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 41.53,
+              "y": 45.18
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 36.72,
+              "y": 45.2
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 39.15,
+              "y": 45.81
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 40.25,
+              "y": 45.93
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 41.08,
+              "y": 44.03
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 41.56,
+              "y": 45.51
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 39.84,
+              "y": 46.88
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 39.25,
+              "y": 47.21
+            }
+          ],
+          "name": "Twilight Geolord",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 23,
+      "quest_id": 8320,
+      "quest_name": "Twilight Geolords",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15270,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 48.62,
+              "y": 37.87
+            }
+          ],
+          "name": "Huum Wildmane",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8320"
+      ],
+      "instruction": "Turn in [QT8320 Twilight Geolords] to Huum Wildmane",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 24,
+      "quest_id": 8320,
+      "quest_name": "Twilight Geolords",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15270,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 48.62,
+              "y": 37.87
+            }
+          ],
+          "name": "Huum Wildmane",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8321"
+      ],
+      "instruction": "Accept [QA8321 Vyral the Vile] from Huum Wildmane.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 25,
+      "quest_id": 8321,
+      "quest_name": "Vyral the Vile",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15306,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 48.57,
+              "y": 37.78
+            }
+          ],
+          "name": "Bor Wildmane",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8361"
+      ],
+      "instruction": "Accept [QA8361 Abyssal Contacts] from Bor Wildmane.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 26,
+      "quest_id": 8361,
+      "quest_name": "Abyssal Contacts",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 20943,
+          "kind": "item",
+          "locations": [],
+          "name": "Tactical Task Briefing X",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8498"
+      ],
+      "instruction": "Accept [QA8498 Twilight Battle Orders] from Tactical Task Briefing X.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 27,
+      "quest_id": 8498,
+      "quest_name": "Twilight Battle Orders",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 21751,
+          "kind": "item",
+          "locations": [],
+          "name": "Tactical Task Briefing III",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8536"
+      ],
+      "instruction": "Accept [QA8536 Earthen Templar] from Tactical Task Briefing III.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 28,
+      "quest_id": 8536,
+      "quest_name": "Earthen Templar",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15540,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 49.98,
+              "y": 36.35
+            }
+          ],
+          "name": "Windcaller Kaldon",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8800"
+      ],
+      "instruction": "Accept [QA8800 Cenarion Battlegear] from Windcaller Kaldon.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 29,
+      "quest_id": 8800,
+      "quest_name": "Cenarion Battlegear",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 21514,
+          "kind": "item",
+          "locations": [],
+          "name": "Logistics Task Briefing XI",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8829"
+      ],
+      "instruction": "Accept [QA8829 The Ultimate Deception] from Logistics Task Briefing XI.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 30,
+      "quest_id": 8829,
+      "quest_name": "The Ultimate Deception",
+      "quest_tag": "Elite",
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8321"
+      ],
+      "instruction": "Collect or use the required item: Vyral's Signet Ring. [QC8321 Vyral the Vile]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Vyral's Signet Ring",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 20466,
+          "kind": "item",
+          "locations": [],
+          "name": "Vyral's Signet Ring",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 31,
+      "quest_id": 8321,
+      "quest_name": "Vyral the Vile",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8361"
+      ],
+      "instruction": "Collect or use the required item: Abyssal Crest. [QC8361 Abyssal Contacts]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Abyssal Crest",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 20513,
+          "kind": "item",
+          "locations": [],
+          "name": "Abyssal Crest",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 32,
+      "quest_id": 8361,
+      "quest_name": "Abyssal Contacts",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8498"
+      ],
+      "instruction": "Collect or use the required item: Twilight Battle Orders. [QC8498 Twilight Battle Orders]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Twilight Battle Orders",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 20803,
+          "kind": "item",
+          "locations": [],
+          "name": "Twilight Battle Orders",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 33,
+      "quest_id": 8498,
+      "quest_name": "Twilight Battle Orders",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8536"
+      ],
+      "instruction": "Use the quest item [UI21751-] as directed; complete the required NPC or creature objective: Earthen Templar. [QC8536 Earthen Templar]",
+      "item_use_id": 21751,
+      "objective_hint": "Complete the required NPC or creature objective: Earthen Templar",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15307,
+          "kind": "npc",
+          "locations": [],
+          "name": "Earthen Templar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 34,
+      "quest_id": 8536,
+      "quest_name": "Earthen Templar",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8800"
+      ],
+      "instruction": "Complete [QC8800 Cenarion Battlegear]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 35,
+      "quest_id": 8800,
+      "quest_name": "Cenarion Battlegear",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "before_quest_id": 8829,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8829:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 33,
+      "map_name": "Stranglethorn Vale",
+      "optional": true,
+      "order": 36,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        8829
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 14.5,
+      "y": 15.83
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8829"
+      ],
+      "instruction": "Elite/group recommended \u2014 Collect or use the required items: Skin of Shadow, Frayed Abomination Stitching, Twilight Cultist Robe. [QC8829 The Ultimate Deception]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Skin of Shadow, Frayed Abomination Stitching, Twilight Cultist Robe",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 12753,
+          "kind": "item",
+          "locations": [],
+          "name": "Skin of Shadow",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 12735,
+          "kind": "item",
+          "locations": [],
+          "name": "Frayed Abomination Stitching",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 20407,
+          "kind": "item",
+          "locations": [],
+          "name": "Twilight Cultist Robe",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 37,
+      "quest_id": 8829,
+      "quest_name": "The Ultimate Deception",
+      "quest_tag": "Elite",
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15306,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 48.57,
+              "y": 37.78
+            }
+          ],
+          "name": "Bor Wildmane",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8361"
+      ],
+      "instruction": "Turn in [QT8361 Abyssal Contacts] to Bor Wildmane",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 38,
+      "quest_id": 8361,
+      "quest_name": "Abyssal Contacts",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15306,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 48.57,
+              "y": 37.78
+            }
+          ],
+          "name": "Bor Wildmane",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8536"
+      ],
+      "instruction": "Turn in [QT8536 Earthen Templar] to Bor Wildmane",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 39,
+      "quest_id": 8536,
+      "quest_name": "Earthen Templar",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15270,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 48.62,
+              "y": 37.87
+            }
+          ],
+          "name": "Huum Wildmane",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8321"
+      ],
+      "instruction": "Turn in [QT8321 Vyral the Vile] to Huum Wildmane",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 40,
+      "quest_id": 8321,
+      "quest_name": "Vyral the Vile",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15176,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 51.23,
+              "y": 38.86
+            }
+          ],
+          "name": "Vargus",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8800"
+      ],
+      "instruction": "Turn in [QT8800 Cenarion Battlegear] to Vargus",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 41,
+      "quest_id": 8800,
+      "quest_name": "Cenarion Battlegear",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15282,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 51.96,
+              "y": 38.16
+            }
+          ],
+          "name": "Aurel Goldleaf",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8829"
+      ],
+      "instruction": "Turn in [QT8829 The Ultimate Deception] to Aurel Goldleaf",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 42,
+      "quest_id": 8829,
+      "quest_name": "The Ultimate Deception",
+      "quest_tag": "Elite",
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15181,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 49.2,
+              "y": 34.18
+            }
+          ],
+          "name": "Commander Mar'alith",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8498"
+      ],
+      "instruction": "Turn in [QT8498 Twilight Battle Orders] to Commander Mar'alith",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 43,
+      "quest_id": 8498,
+      "quest_name": "Twilight Battle Orders",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    }
+  ],
+  "title": "88 Silithus"
+}

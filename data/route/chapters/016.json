@@ -1,0 +1,683 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 15 Loch Modan & Wetlands, or select this chapter on a partially completed character. Begin in The Barrens with Sputtervalve. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 17,
+    "map_name": "The Barrens",
+    "x": 62.98,
+    "y": 37.22
+  },
+  "entry_zone_or_sort": 17,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 406,
+    "map_name": "Stonetalon Mountains",
+    "quest_id": 1096,
+    "tag": "QT",
+    "x": 58.99,
+    "y": 62.6
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/016_world_16.lua",
+  "id": "016-primary-16-the-barrens-&-stonetalon-mountains",
+  "maximum_level": 21,
+  "minimum_level": 21,
+  "next_chapter": "17 Ashenvale",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "15 Loch Modan & Wetlands",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 1483,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:306:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1483:starter",
+        "travel-network:ratchet-booty-bay",
+        "https://www.wowhead.com/tbc/quest=1040/passage-to-booty-bay"
+      ],
+      "instruction": "Travel from Wetlands to The Barrens: Take the ship between Ratchet and Booty Bay. Continue to [G62.98,37.22 The Barrens]. [O]",
+      "map_id": 17,
+      "map_name": "The Barrens",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 11,
+      "origin_map_name": "Wetlands",
+      "origin_x": 11.5,
+      "origin_y": 52.17,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [
+        "ratchet-booty-bay"
+      ],
+      "type": "transport",
+      "verification": "questie_endpoints_and_tbc_transport_network",
+      "x": 62.98,
+      "y": 37.22
+    },
+    {
+      "before_quest_id": 1483,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1483:starter"
+      ],
+      "instruction": "Before you begin: travel to The Barrens and meet the first quest giver at [G62.98,37.22 The Barrens]. Leave at least two quest-log slots open. [O]",
+      "map_id": 17,
+      "map_name": "The Barrens",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 62.98,
+      "y": 37.22
+    },
+    {
+      "before_quest_id": 1483,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1483:requiredLevel"
+      ],
+      "instruction": "Reach level 21 before accepting Ziz Fizziks. [XP21 Level 21]",
+      "map_id": 17,
+      "map_name": "The Barrens",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 21,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 62.98,
+      "y": 37.22
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3442,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 62.98,
+              "y": 37.22
+            }
+          ],
+          "name": "Sputtervalve",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1483"
+      ],
+      "instruction": "Accept [QA1483 Ziz Fizziks] from Sputtervalve.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 1483,
+      "quest_name": "Ziz Fizziks",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 17,
+      "zone_or_sort_name": "The Barrens"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1483"
+      ],
+      "instruction": "Complete [QC1483 Ziz Fizziks]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 1483,
+      "quest_name": "Ziz Fizziks",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 17,
+      "zone_or_sort_name": "The Barrens"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4201,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 58.99,
+              "y": 62.6
+            }
+          ],
+          "name": "Ziz Fizziks",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1483"
+      ],
+      "instruction": "Turn in [QT1483 Ziz Fizziks] to Ziz Fizziks",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 1483,
+      "quest_name": "Ziz Fizziks",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 17,
+      "zone_or_sort_name": "The Barrens"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4201,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 58.99,
+              "y": 62.6
+            }
+          ],
+          "name": "Ziz Fizziks",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1093"
+      ],
+      "instruction": "Accept [QA1093 Super Reaper 6000] from Ziz Fizziks.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 1093,
+      "quest_name": "Super Reaper 6000",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1093"
+      ],
+      "instruction": "Collect or use the required item: Super Reaper 6000 Blueprints. [QC1093 Super Reaper 6000]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Super Reaper 6000 Blueprints",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 5734,
+          "kind": "item",
+          "locations": [],
+          "name": "Super Reaper 6000 Blueprints",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 8,
+      "quest_id": 1093,
+      "quest_name": "Super Reaper 6000",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4201,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 58.99,
+              "y": 62.6
+            }
+          ],
+          "name": "Ziz Fizziks",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1093"
+      ],
+      "instruction": "Turn in [QT1093 Super Reaper 6000] to Ziz Fizziks",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 1093,
+      "quest_name": "Super Reaper 6000",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4201,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 58.99,
+              "y": 62.6
+            }
+          ],
+          "name": "Ziz Fizziks",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1094"
+      ],
+      "instruction": "Accept [QA1094 Further Instructions] from Ziz Fizziks.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 1094,
+      "quest_name": "Further Instructions",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1094"
+      ],
+      "instruction": "Complete [QC1094 Further Instructions]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 1094,
+      "quest_name": "Further Instructions",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3442,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 62.98,
+              "y": 37.22
+            }
+          ],
+          "name": "Sputtervalve",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1094"
+      ],
+      "instruction": "Turn in [QT1094 Further Instructions] to Sputtervalve",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 1094,
+      "quest_name": "Further Instructions",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3442,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 62.98,
+              "y": 37.22
+            }
+          ],
+          "name": "Sputtervalve",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1095"
+      ],
+      "instruction": "Accept [QA1095 Further Instructions] from Sputtervalve.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 1095,
+      "quest_name": "Further Instructions",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1095"
+      ],
+      "instruction": "Complete [QC1095 Further Instructions]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 1095,
+      "quest_name": "Further Instructions",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4201,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 58.99,
+              "y": 62.6
+            }
+          ],
+          "name": "Ziz Fizziks",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1095"
+      ],
+      "instruction": "Turn in [QT1095 Further Instructions] to Ziz Fizziks",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 1095,
+      "quest_name": "Further Instructions",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4201,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 58.99,
+              "y": 62.6
+            }
+          ],
+          "name": "Ziz Fizziks",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1096"
+      ],
+      "instruction": "Accept [QA1096 Gerenzo Wrenchwhistle] from Ziz Fizziks.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 1096,
+      "quest_name": "Gerenzo Wrenchwhistle",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1096"
+      ],
+      "instruction": "Collect or use the required item: Gerenzo's Mechanical Arm. [QC1096 Gerenzo Wrenchwhistle]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Gerenzo's Mechanical Arm",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 5736,
+          "kind": "item",
+          "locations": [],
+          "name": "Gerenzo's Mechanical Arm",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 17,
+      "quest_id": 1096,
+      "quest_name": "Gerenzo Wrenchwhistle",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4201,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 58.99,
+              "y": 62.6
+            }
+          ],
+          "name": "Ziz Fizziks",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1096"
+      ],
+      "instruction": "Turn in [QT1096 Gerenzo Wrenchwhistle] to Ziz Fizziks",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 1096,
+      "quest_name": "Gerenzo Wrenchwhistle",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    }
+  ],
+  "title": "16 The Barrens & Stonetalon Mountains"
+}

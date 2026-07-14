@@ -1,0 +1,1582 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 35 Alterac Mountains, or select this chapter on a partially completed character. Begin in Stranglethorn Vale with Krazek. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 33,
+    "map_name": "Stranglethorn Vale",
+    "x": 26.94,
+    "y": 77.21
+  },
+  "entry_zone_or_sort": 400,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 400,
+    "map_name": "Thousand Needles",
+    "quest_id": 1190,
+    "tag": "QT",
+    "x": 77.21,
+    "y": 77.39
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/036_world_36.lua",
+  "id": "036-primary-36-thousand-needles-&-desolace",
+  "maximum_level": 34,
+  "minimum_level": 31,
+  "next_chapter": "37 Dustwallow Marsh",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "35 Alterac Mountains",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 1117,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:231:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1117:starter"
+      ],
+      "instruction": "Travel from Duskwood to Stranglethorn Vale. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G26.94,77.21 Stranglethorn Vale]. [O]",
+      "map_id": 33,
+      "map_name": "Stranglethorn Vale",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 10,
+      "origin_map_name": "Duskwood",
+      "origin_x": 17.73,
+      "origin_y": 29.08,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 26.94,
+      "y": 77.21
+    },
+    {
+      "before_quest_id": 1117,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1117:starter"
+      ],
+      "instruction": "Before you begin: travel to Stranglethorn Vale and meet the first quest giver at [G26.94,77.21 Stranglethorn Vale]. Leave at least two quest-log slots open. [O]",
+      "map_id": 33,
+      "map_name": "Stranglethorn Vale",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 26.94,
+      "y": 77.21
+    },
+    {
+      "before_quest_id": 1117,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1117:requiredLevel"
+      ],
+      "instruction": "Reach level 31 before accepting Rumors for Kravel. [XP31 Level 31]",
+      "map_id": 33,
+      "map_name": "Stranglethorn Vale",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 31,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 26.94,
+      "y": 77.21
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 773,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 26.94,
+              "y": 77.21
+            }
+          ],
+          "name": "Krazek",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1117"
+      ],
+      "instruction": "Accept [QA1117 Rumors for Kravel] from Krazek.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 1117,
+      "quest_name": "Rumors for Kravel",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 400,
+      "zone_or_sort_name": "Thousand Needles"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1117"
+      ],
+      "instruction": "Complete [QC1117 Rumors for Kravel]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 1117,
+      "quest_name": "Rumors for Kravel",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 400,
+      "zone_or_sort_name": "Thousand Needles"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4452,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 400,
+              "map_name": "Thousand Needles",
+              "verification": "questie_structured_source_only",
+              "x": 77.79,
+              "y": 77.27
+            }
+          ],
+          "name": "Kravel Koalbeard",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1117"
+      ],
+      "instruction": "Turn in [QT1117 Rumors for Kravel] to Kravel Koalbeard",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 1117,
+      "quest_name": "Rumors for Kravel",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 400,
+      "zone_or_sort_name": "Thousand Needles"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5638,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 66.2,
+              "y": 9.63
+            }
+          ],
+          "name": "Kreldig Ungor",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1454"
+      ],
+      "instruction": "Accept [QA1454 The Karnitol Shipwreck] from Kreldig Ungor.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 1454,
+      "quest_name": "The Karnitol Shipwreck",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1454"
+      ],
+      "instruction": "Complete [QC1454 The Karnitol Shipwreck]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 1454,
+      "quest_name": "The Karnitol Shipwreck",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 35251,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 36.11,
+              "y": 30.45
+            }
+          ],
+          "name": "Karnitol's Chest",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1454"
+      ],
+      "instruction": "Turn in [QT1454 The Karnitol Shipwreck] to Karnitol's Chest",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 1454,
+      "quest_name": "The Karnitol Shipwreck",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 35251,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 36.11,
+              "y": 30.45
+            }
+          ],
+          "name": "Karnitol's Chest",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1455"
+      ],
+      "instruction": "Accept [QA1455 The Karnitol Shipwreck] from Karnitol's Chest.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 1455,
+      "quest_name": "The Karnitol Shipwreck",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1455"
+      ],
+      "instruction": "Complete [QC1455 The Karnitol Shipwreck]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 1455,
+      "quest_name": "The Karnitol Shipwreck",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5638,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 66.2,
+              "y": 9.63
+            }
+          ],
+          "name": "Kreldig Ungor",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1455"
+      ],
+      "instruction": "Turn in [QT1455 The Karnitol Shipwreck] to Kreldig Ungor",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 1455,
+      "quest_name": "The Karnitol Shipwreck",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5638,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 66.2,
+              "y": 9.63
+            }
+          ],
+          "name": "Kreldig Ungor",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1456"
+      ],
+      "instruction": "Accept [QA1456 The Karnitol Shipwreck] from Kreldig Ungor.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 1456,
+      "quest_name": "The Karnitol Shipwreck",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1456"
+      ],
+      "instruction": "Collect or use the required item: Karnitol's Satchel. [QC1456 The Karnitol Shipwreck]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Karnitol's Satchel",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 6245,
+          "kind": "item",
+          "locations": [],
+          "name": "Karnitol's Satchel",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 14,
+      "quest_id": 1456,
+      "quest_name": "The Karnitol Shipwreck",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5638,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 66.2,
+              "y": 9.63
+            }
+          ],
+          "name": "Kreldig Ungor",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1456"
+      ],
+      "instruction": "Turn in [QT1456 The Karnitol Shipwreck] to Kreldig Ungor",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 1456,
+      "quest_name": "The Karnitol Shipwreck",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5638,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 66.2,
+              "y": 9.63
+            }
+          ],
+          "name": "Kreldig Ungor",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1457"
+      ],
+      "instruction": "Accept [QA1457 The Karnitol Shipwreck] from Kreldig Ungor.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 1457,
+      "quest_name": "The Karnitol Shipwreck",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5638,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 66.2,
+              "y": 9.63
+            }
+          ],
+          "name": "Kreldig Ungor",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1458"
+      ],
+      "instruction": "Accept [QA1458 Reagents for Reclaimers Inc.] from Kreldig Ungor.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 1458,
+      "quest_name": "Reagents for Reclaimers Inc.",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1457"
+      ],
+      "instruction": "Complete [QC1457 The Karnitol Shipwreck]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 1457,
+      "quest_name": "The Karnitol Shipwreck",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1458"
+      ],
+      "instruction": "Collect or use the required items: Hatefury Claw, Hatefury Horn. [QC1458 Reagents for Reclaimers Inc.]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Hatefury Claw, Hatefury Horn",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 6246,
+          "kind": "item",
+          "locations": [],
+          "name": "Hatefury Claw",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 6247,
+          "kind": "item",
+          "locations": [],
+          "name": "Hatefury Horn",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 19,
+      "quest_id": 1458,
+      "quest_name": "Reagents for Reclaimers Inc.",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5638,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 66.2,
+              "y": 9.63
+            }
+          ],
+          "name": "Kreldig Ungor",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1458"
+      ],
+      "instruction": "Turn in [QT1458 Reagents for Reclaimers Inc.] to Kreldig Ungor",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 1458,
+      "quest_name": "Reagents for Reclaimers Inc.",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5637,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 69.95,
+              "y": 21.26
+            }
+          ],
+          "name": "Roetten Stonehammer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1457"
+      ],
+      "instruction": "Turn in [QT1457 The Karnitol Shipwreck] to Roetten Stonehammer",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 1457,
+      "quest_name": "The Karnitol Shipwreck",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5638,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 66.2,
+              "y": 9.63
+            }
+          ],
+          "name": "Kreldig Ungor",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1459"
+      ],
+      "instruction": "Accept [QA1459 Reagents for Reclaimers Inc.] from Kreldig Ungor.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 22,
+      "quest_id": 1459,
+      "quest_name": "Reagents for Reclaimers Inc.",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1459"
+      ],
+      "instruction": "Collect or use the required items: Scorpashi Venom, Aged Kodo Hide. [QC1459 Reagents for Reclaimers Inc.]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Scorpashi Venom, Aged Kodo Hide",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 6248,
+          "kind": "item",
+          "locations": [],
+          "name": "Scorpashi Venom",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 6249,
+          "kind": "item",
+          "locations": [],
+          "name": "Aged Kodo Hide",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 23,
+      "quest_id": 1459,
+      "quest_name": "Reagents for Reclaimers Inc.",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5638,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 66.2,
+              "y": 9.63
+            }
+          ],
+          "name": "Kreldig Ungor",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1459"
+      ],
+      "instruction": "Turn in [QT1459 Reagents for Reclaimers Inc.] to Kreldig Ungor",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 24,
+      "quest_id": 1459,
+      "quest_name": "Reagents for Reclaimers Inc.",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5638,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 66.2,
+              "y": 9.63
+            }
+          ],
+          "name": "Kreldig Ungor",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1466"
+      ],
+      "instruction": "Accept [QA1466 Reagents for Reclaimers Inc.] from Kreldig Ungor.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 25,
+      "quest_id": 1466,
+      "quest_name": "Reagents for Reclaimers Inc.",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1466"
+      ],
+      "instruction": "Collect or use the required items: Felhound Brain, Nether Wing, Doomwarder Blood. [QC1466 Reagents for Reclaimers Inc.]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Felhound Brain, Nether Wing, Doomwarder Blood",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 6250,
+          "kind": "item",
+          "locations": [],
+          "name": "Felhound Brain",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 6251,
+          "kind": "item",
+          "locations": [],
+          "name": "Nether Wing",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 6252,
+          "kind": "item",
+          "locations": [],
+          "name": "Doomwarder Blood",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 26,
+      "quest_id": 1466,
+      "quest_name": "Reagents for Reclaimers Inc.",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5638,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 66.2,
+              "y": 9.63
+            }
+          ],
+          "name": "Kreldig Ungor",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1466"
+      ],
+      "instruction": "Turn in [QT1466 Reagents for Reclaimers Inc.] to Kreldig Ungor",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 27,
+      "quest_id": 1466,
+      "quest_name": "Reagents for Reclaimers Inc.",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5638,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 66.2,
+              "y": 9.63
+            }
+          ],
+          "name": "Kreldig Ungor",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1467"
+      ],
+      "instruction": "Accept [QA1467 Reagents for Reclaimers Inc.] from Kreldig Ungor.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 28,
+      "quest_id": 1467,
+      "quest_name": "Reagents for Reclaimers Inc.",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1467"
+      ],
+      "instruction": "Complete [QC1467 Reagents for Reclaimers Inc.]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 29,
+      "quest_id": 1467,
+      "quest_name": "Reagents for Reclaimers Inc.",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5637,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 69.95,
+              "y": 21.26
+            }
+          ],
+          "name": "Roetten Stonehammer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1467"
+      ],
+      "instruction": "Turn in [QT1467 Reagents for Reclaimers Inc.] to Roetten Stonehammer",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 30,
+      "quest_id": 1467,
+      "quest_name": "Reagents for Reclaimers Inc.",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "before_quest_id": 5943,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5943:requiredLevel"
+      ],
+      "instruction": "Reach level 32 before accepting Gizelton Caravan. [XP32 Level 32]",
+      "map_id": 405,
+      "map_name": "Desolace",
+      "optional": false,
+      "order": 31,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 32,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 66.72,
+      "y": 58.62
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11626,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 66.72,
+              "y": 58.62
+            }
+          ],
+          "name": "Rigger Gizelton",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5943"
+      ],
+      "instruction": "Accept [QA5943 Gizelton Caravan] from Rigger Gizelton.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 32,
+      "quest_id": 5943,
+      "quest_name": "Gizelton Caravan",
+      "quest_tag": null,
+      "required_level": 32,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5943"
+      ],
+      "instruction": "Complete the scripted or exploration event. [QC5943 Gizelton Caravan]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 33,
+      "quest_id": 5943,
+      "quest_name": "Gizelton Caravan",
+      "quest_tag": null,
+      "required_level": 32,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11596,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 60.86,
+              "y": 61.86
+            }
+          ],
+          "name": "Smeed Scrabblescrew",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5943"
+      ],
+      "instruction": "Turn in [QT5943 Gizelton Caravan] to Smeed Scrabblescrew",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 34,
+      "quest_id": 5943,
+      "quest_name": "Gizelton Caravan",
+      "quest_tag": null,
+      "required_level": 32,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "before_quest_id": 5501,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5501:requiredLevel"
+      ],
+      "instruction": "Reach level 33 before accepting Bone Collector. [XP33 Level 33]",
+      "map_id": 405,
+      "map_name": "Desolace",
+      "optional": false,
+      "order": 35,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 33,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 62.33,
+      "y": 38.99
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11438,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 62.33,
+              "y": 38.99
+            }
+          ],
+          "name": "Bibbly F'utzbuckle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5501"
+      ],
+      "instruction": "Accept [QA5501 Bone Collector] from Bibbly F'utzbuckle.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 36,
+      "quest_id": 5501,
+      "quest_name": "Bone Collector",
+      "quest_tag": null,
+      "required_level": 33,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5501"
+      ],
+      "instruction": "Collect or use the required item: Kodo Bone. [QC5501 Bone Collector]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Kodo Bone",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 13703,
+          "kind": "item",
+          "locations": [],
+          "name": "Kodo Bone",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 37,
+      "quest_id": 5501,
+      "quest_name": "Bone Collector",
+      "quest_tag": null,
+      "required_level": 33,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11438,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 62.33,
+              "y": 38.99
+            }
+          ],
+          "name": "Bibbly F'utzbuckle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5501"
+      ],
+      "instruction": "Turn in [QT5501 Bone Collector] to Bibbly F'utzbuckle",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 38,
+      "quest_id": 5501,
+      "quest_name": "Bone Collector",
+      "quest_tag": null,
+      "required_level": 33,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "before_quest_id": 1190,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1190:requiredLevel"
+      ],
+      "instruction": "Reach level 34 before accepting Keeping Pace. [XP34 Level 34]",
+      "map_id": 400,
+      "map_name": "Thousand Needles",
+      "optional": false,
+      "order": 39,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 34,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 80.18,
+      "y": 75.88
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4630,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 400,
+              "map_name": "Thousand Needles",
+              "verification": "questie_structured_source_only",
+              "x": 80.18,
+              "y": 75.88
+            }
+          ],
+          "name": "Pozzik",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1190"
+      ],
+      "instruction": "Accept [QA1190 Keeping Pace] from Pozzik.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 40,
+      "quest_id": 1190,
+      "quest_name": "Keeping Pace",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 400,
+      "zone_or_sort_name": "Thousand Needles"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1190"
+      ],
+      "instruction": "Complete [QC1190 Keeping Pace]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 41,
+      "quest_id": 1190,
+      "quest_name": "Keeping Pace",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 400,
+      "zone_or_sort_name": "Thousand Needles"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 20805,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 400,
+              "map_name": "Thousand Needles",
+              "verification": "questie_structured_source_only",
+              "x": 77.21,
+              "y": 77.39
+            }
+          ],
+          "name": "Rizzle's Unguarded Plans",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1190"
+      ],
+      "instruction": "Turn in [QT1190 Keeping Pace] to Rizzle's Unguarded Plans",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 42,
+      "quest_id": 1190,
+      "quest_name": "Keeping Pace",
+      "quest_tag": null,
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 400,
+      "zone_or_sort_name": "Thousand Needles"
+    }
+  ],
+  "title": "36 Thousand Needles & Desolace"
+}

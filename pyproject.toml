@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mads-loremaster"
+version = "1.0.0a1"
+description = "Questie-backed generator, runtime, and auditor for Mad's TBC Loremaster"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Mad"}]
+
+[project.scripts]
+mads-loremaster = "mads_loremaster.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "tools"}
+
+[tool.setuptools.packages.find]
+where = ["tools"]
+
+[tool.pytest.ini_options]
+pythonpath = ["tools"]
+testpaths = ["tests"]

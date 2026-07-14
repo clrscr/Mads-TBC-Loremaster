@@ -1,0 +1,5376 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 41 Badlands, or select this chapter on a partially completed character. Begin in Stranglethorn Vale with Corporal Kaleb. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 33,
+    "map_name": "Stranglethorn Vale",
+    "x": 37.74,
+    "y": 3.3
+  },
+  "entry_zone_or_sort": 33,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 15,
+    "map_name": "Dustwallow Marsh",
+    "quest_id": 623,
+    "tag": "QT",
+    "x": 68.84,
+    "y": 53.22
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/042_world_42.lua",
+  "id": "042-primary-42-stranglethorn-vale",
+  "maximum_level": 40,
+  "minimum_level": 35,
+  "next_chapter": "43 Searing Gorge",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "41 Badlands",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 210,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:737:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:210:starter"
+      ],
+      "instruction": "Travel from Badlands to Stranglethorn Vale. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G37.74,3.30 Stranglethorn Vale]. [O]",
+      "map_id": 33,
+      "map_name": "Stranglethorn Vale",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 3,
+      "origin_map_name": "Badlands",
+      "origin_x": 51.39,
+      "origin_y": 76.87,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 37.74,
+      "y": 3.3
+    },
+    {
+      "before_quest_id": 210,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:210:starter"
+      ],
+      "instruction": "Before you begin: travel to Stranglethorn Vale and meet the first quest giver at [G37.74,3.30 Stranglethorn Vale]. Leave at least two quest-log slots open. [O]",
+      "map_id": 33,
+      "map_name": "Stranglethorn Vale",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 37.74,
+      "y": 3.3
+    },
+    {
+      "before_quest_id": 210,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:210:requiredLevel"
+      ],
+      "instruction": "Reach level 35 before accepting Krazek's Cookery. [XP35 Level 35]",
+      "map_id": 33,
+      "map_name": "Stranglethorn Vale",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 35,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 37.74,
+      "y": 3.3
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 770,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 37.74,
+              "y": 3.3
+            }
+          ],
+          "name": "Corporal Kaleb",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:210"
+      ],
+      "instruction": "Accept [QA210 Krazek's Cookery] from Corporal Kaleb.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 210,
+      "quest_name": "Krazek's Cookery",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:210"
+      ],
+      "instruction": "Complete [QC210 Krazek's Cookery]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 210,
+      "quest_name": "Krazek's Cookery",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 773,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 26.94,
+              "y": 77.21
+            }
+          ],
+          "name": "Krazek",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:210"
+      ],
+      "instruction": "Turn in [QT210 Krazek's Cookery] to Krazek",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 210,
+      "quest_name": "Krazek's Cookery",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 773,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 26.94,
+              "y": 77.21
+            }
+          ],
+          "name": "Krazek",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:616"
+      ],
+      "instruction": "Accept [QA616 The Haunted Isle] from Krazek.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 616,
+      "quest_name": "The Haunted Isle",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:616"
+      ],
+      "instruction": "Complete [QC616 The Haunted Isle]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 616,
+      "quest_name": "The Haunted Isle",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2496,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 27.23,
+              "y": 76.87
+            }
+          ],
+          "name": "Baron Revilgaz",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:616"
+      ],
+      "instruction": "Turn in [QT616 The Haunted Isle] to Baron Revilgaz",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 616,
+      "quest_name": "The Haunted Isle",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2496,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 27.23,
+              "y": 76.87
+            }
+          ],
+          "name": "Baron Revilgaz",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:578"
+      ],
+      "instruction": "Accept [QA578 The Stone of the Tides] from Baron Revilgaz.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 578,
+      "quest_name": "The Stone of the Tides",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:578"
+      ],
+      "instruction": "Complete the scripted or exploration event. [QC578 The Stone of the Tides]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 578,
+      "quest_name": "The Stone of the Tides",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2496,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 27.23,
+              "y": 76.87
+            }
+          ],
+          "name": "Baron Revilgaz",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:578"
+      ],
+      "instruction": "Turn in [QT578 The Stone of the Tides] to Baron Revilgaz",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 578,
+      "quest_name": "The Stone of the Tides",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2496,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 27.23,
+              "y": 76.87
+            }
+          ],
+          "name": "Baron Revilgaz",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:601"
+      ],
+      "instruction": "Accept [QA601 Water Elementals] from Baron Revilgaz.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 601,
+      "quest_name": "Water Elementals",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:601"
+      ],
+      "instruction": "Collect or use the required item: Water Elemental Bracers. [QC601 Water Elementals]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Water Elemental Bracers",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 3923,
+          "kind": "item",
+          "locations": [],
+          "name": "Water Elemental Bracers",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 14,
+      "quest_id": 601,
+      "quest_name": "Water Elementals",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2496,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 27.23,
+              "y": 76.87
+            }
+          ],
+          "name": "Baron Revilgaz",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:601"
+      ],
+      "instruction": "Turn in [QT601 Water Elementals] to Baron Revilgaz",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 601,
+      "quest_name": "Water Elementals",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2496,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 27.23,
+              "y": 76.87
+            }
+          ],
+          "name": "Baron Revilgaz",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:602"
+      ],
+      "instruction": "Accept [QA602 Magical Analysis] from Baron Revilgaz.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 602,
+      "quest_name": "Magical Analysis",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 773,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 26.94,
+              "y": 77.21
+            }
+          ],
+          "name": "Krazek",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:627"
+      ],
+      "instruction": "Accept [QA627 Favor for Krazek] from Krazek.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 627,
+      "quest_name": "Favor for Krazek",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:602"
+      ],
+      "instruction": "Complete [QC602 Magical Analysis]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 602,
+      "quest_name": "Magical Analysis",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:627"
+      ],
+      "instruction": "Collect or use the required item: Lesser Bloodstone Ore. [QC627 Favor for Krazek]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Lesser Bloodstone Ore",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4278,
+          "kind": "item",
+          "locations": [],
+          "name": "Lesser Bloodstone Ore",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 19,
+      "quest_id": 627,
+      "quest_name": "Favor for Krazek",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 773,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 26.94,
+              "y": 77.21
+            }
+          ],
+          "name": "Krazek",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:627"
+      ],
+      "instruction": "Turn in [QT627 Favor for Krazek] to Krazek",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 627,
+      "quest_name": "Favor for Krazek",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2543,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 18.84,
+              "y": 78.49
+            }
+          ],
+          "name": "Archmage Ansirem Runeweaver",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:602"
+      ],
+      "instruction": "Turn in [QT602 Magical Analysis] to Archmage Ansirem Runeweaver",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 602,
+      "quest_name": "Magical Analysis",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 773,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 26.94,
+              "y": 77.21
+            }
+          ],
+          "name": "Krazek",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:622"
+      ],
+      "instruction": "Accept [QA622 Return to Corporal Kaleb] from Krazek.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 22,
+      "quest_id": 622,
+      "quest_name": "Return to Corporal Kaleb",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:622"
+      ],
+      "instruction": "Complete [QC622 Return to Corporal Kaleb]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 23,
+      "quest_id": 622,
+      "quest_name": "Return to Corporal Kaleb",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 770,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 37.74,
+              "y": 3.3
+            }
+          ],
+          "name": "Corporal Kaleb",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:622"
+      ],
+      "instruction": "Turn in [QT622 Return to Corporal Kaleb] to Corporal Kaleb",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 24,
+      "quest_id": 622,
+      "quest_name": "Return to Corporal Kaleb",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17127,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 25.75,
+              "y": 31.79
+            }
+          ],
+          "name": "Anchorite Avuun",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9448"
+      ],
+      "instruction": "Accept [QA9448 Mercy for the Cursed] from Anchorite Avuun.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 25,
+      "quest_id": 9448,
+      "quest_name": "Mercy for the Cursed",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 8,
+      "zone_or_sort_name": "Swamp of Sorrows"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17127,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 25.75,
+              "y": 31.79
+            }
+          ],
+          "name": "Anchorite Avuun",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9609"
+      ],
+      "instruction": "Accept [QA9609 Help Watcher Biggs] from Anchorite Avuun.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 26,
+      "quest_id": 9609,
+      "quest_name": "Help Watcher Biggs",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 8,
+      "zone_or_sort_name": "Swamp of Sorrows"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9448"
+      ],
+      "instruction": "Complete the required NPC or creature objective: Cursed Lost One. [QC9448 Mercy for the Cursed]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Cursed Lost One",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17115,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 56.52,
+              "y": 29.11
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 65.33,
+              "y": 15.3
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 66.28,
+              "y": 24.46
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 62.98,
+              "y": 20.32
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 59.81,
+              "y": 25.8
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 59.44,
+              "y": 21.03
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 62.9,
+              "y": 25.3
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 64.92,
+              "y": 19.01
+            }
+          ],
+          "name": "Cursed Lost One",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 27,
+      "quest_id": 9448,
+      "quest_name": "Mercy for the Cursed",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 8,
+      "zone_or_sort_name": "Swamp of Sorrows"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9609"
+      ],
+      "instruction": "Complete [QC9609 Help Watcher Biggs]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 28,
+      "quest_id": 9609,
+      "quest_name": "Help Watcher Biggs",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 8,
+      "zone_or_sort_name": "Swamp of Sorrows"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17127,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 25.75,
+              "y": 31.79
+            }
+          ],
+          "name": "Anchorite Avuun",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9448"
+      ],
+      "instruction": "Turn in [QT9448 Mercy for the Cursed] to Anchorite Avuun",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 29,
+      "quest_id": 9448,
+      "quest_name": "Mercy for the Cursed",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 8,
+      "zone_or_sort_name": "Swamp of Sorrows"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5476,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 26.74,
+              "y": 59.83
+            }
+          ],
+          "name": "Watcher Biggs",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9609"
+      ],
+      "instruction": "Turn in [QT9609 Help Watcher Biggs] to Watcher Biggs",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 30,
+      "quest_id": 9609,
+      "quest_name": "Help Watcher Biggs",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 8,
+      "zone_or_sort_name": "Swamp of Sorrows"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5476,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 26.74,
+              "y": 59.83
+            }
+          ],
+          "name": "Watcher Biggs",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1396"
+      ],
+      "instruction": "Accept [QA1396 Encroaching Wildlife] from Watcher Biggs.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 31,
+      "quest_id": 1396,
+      "quest_name": "Encroaching Wildlife",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 8,
+      "zone_or_sort_name": "Swamp of Sorrows"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1396"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Young Sawtooth Crocolisk, Sorrow Spinner, Swamp Jaguar. [QC1396 Encroaching Wildlife]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Young Sawtooth Crocolisk, Sorrow Spinner, Swamp Jaguar",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1084,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 30.44,
+              "y": 38.94
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 35.72,
+              "y": 36.86
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 29.32,
+              "y": 36.4
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 31.09,
+              "y": 33.79
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 32.72,
+              "y": 38.9
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 25.53,
+              "y": 35.95
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 42.13,
+              "y": 34.43
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 38.61,
+              "y": 35.27
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 24.61,
+              "y": 42.55
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 32.0,
+              "y": 47.18
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 24.57,
+              "y": 39.23
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 34.09,
+              "y": 33.01
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 27.1,
+              "y": 55.13
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 37.61,
+              "y": 51.23
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 34.41,
+              "y": 51.77
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 25.88,
+              "y": 52.18
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 24.1,
+              "y": 50.33
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 30.32,
+              "y": 54.77
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 28.6,
+              "y": 55.96
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 23.26,
+              "y": 44.94
+            }
+          ],
+          "name": "Young Sawtooth Crocolisk",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 858,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 25.97,
+              "y": 49.55
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 47.77,
+              "y": 33.77
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 27.67,
+              "y": 43.37
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 36.55,
+              "y": 30.86
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 43.24,
+              "y": 29.04
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 28.34,
+              "y": 62.04
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 39.5,
+              "y": 30.81
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 40.84,
+              "y": 29.78
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 37.14,
+              "y": 28.61
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 33.21,
+              "y": 28.93
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 37.47,
+              "y": 32.08
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 71.44,
+              "y": 29.97
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 31.6,
+              "y": 50.54
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 34.48,
+              "y": 55.15
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 22.54,
+              "y": 37.72
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 38.84,
+              "y": 37.48
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 26.75,
+              "y": 48.64
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 26.45,
+              "y": 45.89
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 29.34,
+              "y": 53.26
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 22.31,
+              "y": 58.98
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 19.79,
+              "y": 52.86
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 22.67,
+              "y": 62.2
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 24.86,
+              "y": 64.01
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 25.38,
+              "y": 59.33
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 26.13,
+              "y": 61.95
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 17.62,
+              "y": 53.42
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 21.26,
+              "y": 42.52
+            }
+          ],
+          "name": "Sorrow Spinner",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 767,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 37.48,
+              "y": 37.62
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 14.59,
+              "y": 46.08
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 33.39,
+              "y": 35.54
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 28.66,
+              "y": 43.62
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 36.89,
+              "y": 39.88
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 36.3,
+              "y": 39.58
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 26.43,
+              "y": 47.42
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 25.28,
+              "y": 41.28
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 43.54,
+              "y": 41.24
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 40.44,
+              "y": 37.32
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 39.92,
+              "y": 31.23
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 37.42,
+              "y": 30.95
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 41.03,
+              "y": 38.82
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 35.88,
+              "y": 53.94
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 23.52,
+              "y": 38.67
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 20.23,
+              "y": 42.84
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 33.16,
+              "y": 43.18
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 23.06,
+              "y": 42.36
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 34.69,
+              "y": 30.28
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 39.19,
+              "y": 39.25
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 39.86,
+              "y": 41.0
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 31.66,
+              "y": 29.4
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 26.98,
+              "y": 39.57
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 26.44,
+              "y": 34.3
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 22.42,
+              "y": 57.9
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 23.48,
+              "y": 60.08
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 33.58,
+              "y": 54.37
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 27.16,
+              "y": 63.96
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 53.79,
+              "y": 41.56
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 55.54,
+              "y": 45.24
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 56.86,
+              "y": 43.81
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 47.71,
+              "y": 40.75
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 26.33,
+              "y": 60.73
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 16.74,
+              "y": 60.14
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 12.04,
+              "y": 59.42
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 30.02,
+              "y": 52.49
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 32.03,
+              "y": 49.96
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 36.51,
+              "y": 48.45
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 37.24,
+              "y": 45.15
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 39.14,
+              "y": 47.32
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 41.9,
+              "y": 43.38
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 40.35,
+              "y": 45.26
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 43.31,
+              "y": 45.13
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 44.73,
+              "y": 43.4
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 53.2,
+              "y": 38.43
+            },
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 29.06,
+              "y": 34.26
+            }
+          ],
+          "name": "Swamp Jaguar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 32,
+      "quest_id": 1396,
+      "quest_name": "Encroaching Wildlife",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 8,
+      "zone_or_sort_name": "Swamp of Sorrows"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5476,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 26.74,
+              "y": 59.83
+            }
+          ],
+          "name": "Watcher Biggs",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1396"
+      ],
+      "instruction": "Turn in [QT1396 Encroaching Wildlife] to Watcher Biggs",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 33,
+      "quest_id": 1396,
+      "quest_name": "Encroaching Wildlife",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 8,
+      "zone_or_sort_name": "Swamp of Sorrows"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5476,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 26.74,
+              "y": 59.83
+            }
+          ],
+          "name": "Watcher Biggs",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1421"
+      ],
+      "instruction": "Accept [QA1421 The Lost Caravan] from Watcher Biggs.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 34,
+      "quest_id": 1421,
+      "quest_name": "The Lost Caravan",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 8,
+      "zone_or_sort_name": "Swamp of Sorrows"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1421"
+      ],
+      "instruction": "Collect or use the required item: Wizards' Reagents. [QC1421 The Lost Caravan]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Wizards' Reagents",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 6170,
+          "kind": "item",
+          "locations": [],
+          "name": "Wizards' Reagents",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 35,
+      "quest_id": 1421,
+      "quest_name": "The Lost Caravan",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 8,
+      "zone_or_sort_name": "Swamp of Sorrows"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5476,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 26.74,
+              "y": 59.83
+            }
+          ],
+          "name": "Watcher Biggs",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1421"
+      ],
+      "instruction": "Turn in [QT1421 The Lost Caravan] to Watcher Biggs",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 36,
+      "quest_id": 1421,
+      "quest_name": "The Lost Caravan",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 8,
+      "zone_or_sort_name": "Swamp of Sorrows"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5476,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 26.74,
+              "y": 59.83
+            }
+          ],
+          "name": "Watcher Biggs",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1398"
+      ],
+      "instruction": "Accept [QA1398 Driftwood] from Watcher Biggs.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 37,
+      "quest_id": 1398,
+      "quest_name": "Driftwood",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 8,
+      "zone_or_sort_name": "Swamp of Sorrows"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1398"
+      ],
+      "instruction": "Collect or use the required item: Sundried Driftwood. [QC1398 Driftwood]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Sundried Driftwood",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 6146,
+          "kind": "item",
+          "locations": [],
+          "name": "Sundried Driftwood",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 38,
+      "quest_id": 1398,
+      "quest_name": "Driftwood",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 8,
+      "zone_or_sort_name": "Swamp of Sorrows"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5476,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 26.74,
+              "y": 59.83
+            }
+          ],
+          "name": "Watcher Biggs",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1398"
+      ],
+      "instruction": "Turn in [QT1398 Driftwood] to Watcher Biggs",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 39,
+      "quest_id": 1398,
+      "quest_name": "Driftwood",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 8,
+      "zone_or_sort_name": "Swamp of Sorrows"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5476,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 26.74,
+              "y": 59.83
+            }
+          ],
+          "name": "Watcher Biggs",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1425"
+      ],
+      "instruction": "Accept [QA1425 Deliver the Shipment] from Watcher Biggs.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 40,
+      "quest_id": 1425,
+      "quest_name": "Deliver the Shipment",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 8,
+      "zone_or_sort_name": "Swamp of Sorrows"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1425"
+      ],
+      "instruction": "Complete [QC1425 Deliver the Shipment]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 41,
+      "quest_id": 1425,
+      "quest_name": "Deliver the Shipment",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 8,
+      "zone_or_sort_name": "Swamp of Sorrows"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5393,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 4,
+              "map_name": "Blasted Lands",
+              "verification": "questie_structured_source_only",
+              "x": 66.52,
+              "y": 21.39
+            }
+          ],
+          "name": "Quartermaster Lungertz",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1425"
+      ],
+      "instruction": "Turn in [QT1425 Deliver the Shipment] to Quartermaster Lungertz",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 42,
+      "quest_id": 1425,
+      "quest_name": "Deliver the Shipment",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 8,
+      "zone_or_sort_name": "Swamp of Sorrows"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2543,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 18.84,
+              "y": 78.49
+            }
+          ],
+          "name": "Archmage Ansirem Runeweaver",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:603"
+      ],
+      "instruction": "Accept [QA603 Ansirem's Key] from Archmage Ansirem Runeweaver.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 43,
+      "quest_id": 603,
+      "quest_name": "Ansirem's Key",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:603"
+      ],
+      "instruction": "Complete [QC603 Ansirem's Key]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 44,
+      "quest_id": 603,
+      "quest_name": "Ansirem's Key",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "before_quest_id": 603,
+      "before_tag": "QT",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:npc:2859",
+        "authored-route:guidelime-tugs-tbc-alliance-2.50:31-36STV,Desolace.lua:58"
+      ],
+      "instruction": "Optional: learn the flight path from Gyll. [P][G27.53,77.79 Stranglethorn Vale][O]",
+      "map_id": 33,
+      "map_name": "Stranglethorn Vale",
+      "optional": true,
+      "order": 45,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "acquire_flight_path",
+      "verification": "cross_verified_questie_and_authored_route",
+      "x": 27.53,
+      "y": 77.79
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2542,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 27.28,
+              "y": 77.53
+            }
+          ],
+          "name": "Catelyn the Blade",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:603"
+      ],
+      "instruction": "Turn in [QT603 Ansirem's Key] to Catelyn the Blade",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 46,
+      "quest_id": 603,
+      "quest_name": "Ansirem's Key",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2542,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 27.28,
+              "y": 77.53
+            }
+          ],
+          "name": "Catelyn the Blade",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:610"
+      ],
+      "instruction": "Accept [QA610 \"Pretty Boy\" Duncan] from Catelyn the Blade.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 47,
+      "quest_id": 610,
+      "quest_name": "\"Pretty Boy\" Duncan",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:610"
+      ],
+      "instruction": "Collect or use the required item: Catelyn's Blade. [QC610 \"Pretty Boy\" Duncan]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Catelyn's Blade",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4027,
+          "kind": "item",
+          "locations": [],
+          "name": "Catelyn's Blade",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 48,
+      "quest_id": 610,
+      "quest_name": "\"Pretty Boy\" Duncan",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2542,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 27.28,
+              "y": 77.53
+            }
+          ],
+          "name": "Catelyn the Blade",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:610"
+      ],
+      "instruction": "Turn in [QT610 \"Pretty Boy\" Duncan] to Catelyn the Blade",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 49,
+      "quest_id": 610,
+      "quest_name": "\"Pretty Boy\" Duncan",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2542,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 27.28,
+              "y": 77.53
+            }
+          ],
+          "name": "Catelyn the Blade",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:611"
+      ],
+      "instruction": "Accept [QA611 The Curse of the Tides] from Catelyn the Blade.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 50,
+      "quest_id": 611,
+      "quest_name": "The Curse of the Tides",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2498,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 27.12,
+              "y": 77.21
+            }
+          ],
+          "name": "Crank Fizzlebub",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:621"
+      ],
+      "instruction": "Accept [QA621 Zanzil's Secret] from Crank Fizzlebub.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 51,
+      "quest_id": 621,
+      "quest_name": "Zanzil's Secret",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 3985,
+          "kind": "item",
+          "locations": [],
+          "name": "Monogrammed Sash",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8552"
+      ],
+      "instruction": "Accept [QA8552 The Monogrammed Sash] from Monogrammed Sash.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 52,
+      "quest_id": 8552,
+      "quest_name": "The Monogrammed Sash",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:611"
+      ],
+      "instruction": "Collect or use the required item: Stone of the Tides. [QC611 The Curse of the Tides]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Stone of the Tides",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4034,
+          "kind": "item",
+          "locations": [],
+          "name": "Stone of the Tides",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 53,
+      "quest_id": 611,
+      "quest_name": "The Curse of the Tides",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:621"
+      ],
+      "instruction": "Collect or use the required item: Zanzil's Mixture. [QC621 Zanzil's Secret]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Zanzil's Mixture",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4016,
+          "kind": "item",
+          "locations": [],
+          "name": "Zanzil's Mixture",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 54,
+      "quest_id": 621,
+      "quest_name": "Zanzil's Secret",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8552"
+      ],
+      "instruction": "Complete [QC8552 The Monogrammed Sash]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 55,
+      "quest_id": 8552,
+      "quest_name": "The Monogrammed Sash",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2498,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 27.12,
+              "y": 77.21
+            }
+          ],
+          "name": "Crank Fizzlebub",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:621"
+      ],
+      "instruction": "Turn in [QT621 Zanzil's Secret] to Crank Fizzlebub",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 56,
+      "quest_id": 621,
+      "quest_name": "Zanzil's Secret",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2496,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 27.23,
+              "y": 76.87
+            }
+          ],
+          "name": "Baron Revilgaz",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:611"
+      ],
+      "instruction": "Turn in [QT611 The Curse of the Tides] to Baron Revilgaz",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 57,
+      "quest_id": 611,
+      "quest_name": "The Curse of the Tides",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2500,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 26.69,
+              "y": 73.61
+            }
+          ],
+          "name": "Captain Hecklebury Smotts",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8552"
+      ],
+      "instruction": "Turn in [QT8552 The Monogrammed Sash] to Captain Hecklebury Smotts",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 58,
+      "quest_id": 8552,
+      "quest_name": "The Monogrammed Sash",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2500,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 26.69,
+              "y": 73.61
+            }
+          ],
+          "name": "Captain Hecklebury Smotts",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8553"
+      ],
+      "instruction": "Accept [QA8553 The Captain's Cutlass] from Captain Hecklebury Smotts.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 59,
+      "quest_id": 8553,
+      "quest_name": "The Captain's Cutlass",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8553"
+      ],
+      "instruction": "Complete [QC8553 The Captain's Cutlass]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 60,
+      "quest_id": 8553,
+      "quest_name": "The Captain's Cutlass",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2594,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 26.66,
+              "y": 73.64
+            }
+          ],
+          "name": "Sprogger",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8553"
+      ],
+      "instruction": "Turn in [QT8553 The Captain's Cutlass] to Sprogger",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 61,
+      "quest_id": 8553,
+      "quest_name": "The Captain's Cutlass",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2594,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 26.66,
+              "y": 73.64
+            }
+          ],
+          "name": "Sprogger",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8554"
+      ],
+      "instruction": "Accept [QA8554 Facing Negolash] from Sprogger.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 62,
+      "quest_id": 8554,
+      "quest_name": "Facing Negolash",
+      "quest_tag": "Elite",
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "before_quest_id": 209,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:209:requiredLevel"
+      ],
+      "instruction": "Reach level 37 before accepting Skullsplitter Tusks. [XP37 Level 37]",
+      "map_id": 33,
+      "map_name": "Stranglethorn Vale",
+      "optional": false,
+      "order": 63,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 37,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 27.0,
+      "y": 77.13
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 737,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 27.0,
+              "y": 77.13
+            }
+          ],
+          "name": "Kebok",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:209"
+      ],
+      "instruction": "Accept [QA209 Skullsplitter Tusks] from Kebok.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 64,
+      "quest_id": 209,
+      "quest_name": "Skullsplitter Tusks",
+      "quest_tag": null,
+      "required_level": 37,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2490,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 28.1,
+              "y": 76.22
+            }
+          ],
+          "name": "First Mate Crazz",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:595"
+      ],
+      "instruction": "Accept [QA595 The Bloodsail Buccaneers] from First Mate Crazz.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 65,
+      "quest_id": 595,
+      "quest_name": "The Bloodsail Buccaneers",
+      "quest_tag": null,
+      "required_level": 37,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "before_quest_id": 8554,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8554:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 33,
+      "map_name": "Stranglethorn Vale",
+      "optional": true,
+      "order": 66,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        8554
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 37.74,
+      "y": 3.3
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8554"
+      ],
+      "instruction": "Elite/group recommended \u2014 Collect or use the required item: Smotts' Cutlass. [QC8554 Facing Negolash]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Smotts' Cutlass",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 3935,
+          "kind": "item",
+          "locations": [],
+          "name": "Smotts' Cutlass",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 67,
+      "quest_id": 8554,
+      "quest_name": "Facing Negolash",
+      "quest_tag": "Elite",
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:209"
+      ],
+      "instruction": "Collect or use the required item: Skullsplitter Tusk. [QC209 Skullsplitter Tusks]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Skullsplitter Tusk",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 1524,
+          "kind": "item",
+          "locations": [],
+          "name": "Skullsplitter Tusk",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 68,
+      "quest_id": 209,
+      "quest_name": "Skullsplitter Tusks",
+      "quest_tag": null,
+      "required_level": 37,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:595"
+      ],
+      "instruction": "Complete [QC595 The Bloodsail Buccaneers]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 69,
+      "quest_id": 595,
+      "quest_name": "The Bloodsail Buccaneers",
+      "quest_tag": null,
+      "required_level": 37,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 737,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 27.0,
+              "y": 77.13
+            }
+          ],
+          "name": "Kebok",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:209"
+      ],
+      "instruction": "Turn in [QT209 Skullsplitter Tusks] to Kebok",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 70,
+      "quest_id": 209,
+      "quest_name": "Skullsplitter Tusks",
+      "quest_tag": null,
+      "required_level": 37,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2500,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 26.69,
+              "y": 73.61
+            }
+          ],
+          "name": "Captain Hecklebury Smotts",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8554"
+      ],
+      "instruction": "Turn in [QT8554 Facing Negolash] to Captain Hecklebury Smotts",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 71,
+      "quest_id": 8554,
+      "quest_name": "Facing Negolash",
+      "quest_tag": "Elite",
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 2083,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 27.28,
+              "y": 69.52
+            }
+          ],
+          "name": "Bloodsail Correspondence",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:595"
+      ],
+      "instruction": "Turn in [QT595 The Bloodsail Buccaneers] to Bloodsail Correspondence",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 72,
+      "quest_id": 595,
+      "quest_name": "The Bloodsail Buccaneers",
+      "quest_tag": null,
+      "required_level": 37,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2493,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 28.59,
+              "y": 75.9
+            }
+          ],
+          "name": "Dizzy One-Eye",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:576"
+      ],
+      "instruction": "Accept [QA576 Keep An Eye Out] from Dizzy One-Eye.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 73,
+      "quest_id": 576,
+      "quest_name": "Keep An Eye Out",
+      "quest_tag": null,
+      "required_level": 37,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2488,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 26.92,
+              "y": 77.35
+            }
+          ],
+          "name": "Deeg",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:587"
+      ],
+      "instruction": "Accept [QA587 Up to Snuff] from Deeg.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 74,
+      "quest_id": 587,
+      "quest_name": "Up to Snuff",
+      "quest_tag": null,
+      "required_level": 37,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 2083,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 27.28,
+              "y": 69.52
+            }
+          ],
+          "name": "Bloodsail Correspondence",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:597"
+      ],
+      "instruction": "Accept [QA597 The Bloodsail Buccaneers] from Bloodsail Correspondence.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 75,
+      "quest_id": 597,
+      "quest_name": "The Bloodsail Buccaneers",
+      "quest_tag": null,
+      "required_level": 37,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:576"
+      ],
+      "instruction": "Collect or use the required item: Dizzy's Eye. [QC576 Keep An Eye Out]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Dizzy's Eye",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 3897,
+          "kind": "item",
+          "locations": [],
+          "name": "Dizzy's Eye",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 76,
+      "quest_id": 576,
+      "quest_name": "Keep An Eye Out",
+      "quest_tag": null,
+      "required_level": 37,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:587"
+      ],
+      "instruction": "Collect or use the required item: Snuff. [QC587 Up to Snuff]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Snuff",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 3910,
+          "kind": "item",
+          "locations": [],
+          "name": "Snuff",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 77,
+      "quest_id": 587,
+      "quest_name": "Up to Snuff",
+      "quest_tag": null,
+      "required_level": 37,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:597"
+      ],
+      "instruction": "Complete [QC597 The Bloodsail Buccaneers]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 78,
+      "quest_id": 597,
+      "quest_name": "The Bloodsail Buccaneers",
+      "quest_tag": null,
+      "required_level": 37,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2493,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 28.59,
+              "y": 75.9
+            }
+          ],
+          "name": "Dizzy One-Eye",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:576"
+      ],
+      "instruction": "Turn in [QT576 Keep An Eye Out] to Dizzy One-Eye",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 79,
+      "quest_id": 576,
+      "quest_name": "Keep An Eye Out",
+      "quest_tag": null,
+      "required_level": 37,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2490,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 28.1,
+              "y": 76.22
+            }
+          ],
+          "name": "First Mate Crazz",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:597"
+      ],
+      "instruction": "Turn in [QT597 The Bloodsail Buccaneers] to First Mate Crazz",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 80,
+      "quest_id": 597,
+      "quest_name": "The Bloodsail Buccaneers",
+      "quest_tag": null,
+      "required_level": 37,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2488,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 26.92,
+              "y": 77.35
+            }
+          ],
+          "name": "Deeg",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:587"
+      ],
+      "instruction": "Turn in [QT587 Up to Snuff] to Deeg",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 81,
+      "quest_id": 587,
+      "quest_name": "Up to Snuff",
+      "quest_tag": null,
+      "required_level": 37,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2490,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 28.1,
+              "y": 76.22
+            }
+          ],
+          "name": "First Mate Crazz",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:599"
+      ],
+      "instruction": "Accept [QA599 The Bloodsail Buccaneers] from First Mate Crazz.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 82,
+      "quest_id": 599,
+      "quest_name": "The Bloodsail Buccaneers",
+      "quest_tag": null,
+      "required_level": 37,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:599"
+      ],
+      "instruction": "Complete [QC599 The Bloodsail Buccaneers]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 83,
+      "quest_id": 599,
+      "quest_name": "The Bloodsail Buccaneers",
+      "quest_tag": null,
+      "required_level": 37,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2487,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 27.17,
+              "y": 77.01
+            }
+          ],
+          "name": "Fleet Master Seahorn",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:599"
+      ],
+      "instruction": "Turn in [QT599 The Bloodsail Buccaneers] to Fleet Master Seahorn",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 84,
+      "quest_id": 599,
+      "quest_name": "The Bloodsail Buccaneers",
+      "quest_tag": null,
+      "required_level": 37,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2487,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 27.17,
+              "y": 77.01
+            }
+          ],
+          "name": "Fleet Master Seahorn",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:604"
+      ],
+      "instruction": "Accept [QA604 The Bloodsail Buccaneers] from Fleet Master Seahorn.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 85,
+      "quest_id": 604,
+      "quest_name": "The Bloodsail Buccaneers",
+      "quest_tag": null,
+      "required_level": 37,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:604"
+      ],
+      "instruction": "Complete the required objectives \u2014 NPCs or creatures: Bloodsail Swashbuckler; items: Bloodsail Charts, Bloodsail Orders. [QC604 The Bloodsail Buccaneers]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required objectives \u2014 NPCs or creatures: Bloodsail Swashbuckler; items: Bloodsail Charts, Bloodsail Orders",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1563,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 24.08,
+              "y": 55.96
+            },
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 30.1,
+              "y": 87.5
+            },
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 30.96,
+              "y": 81.07
+            },
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 31.95,
+              "y": 79.47
+            },
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 32.98,
+              "y": 77.25
+            },
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 26.67,
+              "y": 82.84
+            },
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 27.2,
+              "y": 83.37
+            },
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 26.53,
+              "y": 83.51
+            },
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 26.91,
+              "y": 82.98
+            },
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 26.86,
+              "y": 83.85
+            },
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 27.02,
+              "y": 83.01
+            },
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 28.23,
+              "y": 82.4
+            },
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 33.85,
+              "y": 86.16
+            },
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 23.86,
+              "y": 53.8
+            },
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 23.16,
+              "y": 52.79
+            },
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 24.44,
+              "y": 53.82
+            },
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 24.38,
+              "y": 54.06
+            },
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 24.49,
+              "y": 53.96
+            }
+          ],
+          "name": "Bloodsail Swashbuckler",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 3920,
+          "kind": "item",
+          "locations": [],
+          "name": "Bloodsail Charts",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 3921,
+          "kind": "item",
+          "locations": [],
+          "name": "Bloodsail Orders",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 86,
+      "quest_id": 604,
+      "quest_name": "The Bloodsail Buccaneers",
+      "quest_tag": null,
+      "required_level": 37,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2487,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 27.17,
+              "y": 77.01
+            }
+          ],
+          "name": "Fleet Master Seahorn",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:604"
+      ],
+      "instruction": "Turn in [QT604 The Bloodsail Buccaneers] to Fleet Master Seahorn",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 87,
+      "quest_id": 604,
+      "quest_name": "The Bloodsail Buccaneers",
+      "quest_tag": null,
+      "required_level": 37,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2487,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 27.17,
+              "y": 77.01
+            }
+          ],
+          "name": "Fleet Master Seahorn",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:608"
+      ],
+      "instruction": "Accept [QA608 The Bloodsail Buccaneers] from Fleet Master Seahorn.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 88,
+      "quest_id": 608,
+      "quest_name": "The Bloodsail Buccaneers",
+      "quest_tag": null,
+      "required_level": 37,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4056,
+          "kind": "item",
+          "locations": [],
+          "name": "Cortello's Riddle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:624"
+      ],
+      "instruction": "Accept [QA624 Cortello's Riddle] from Cortello's Riddle.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 89,
+      "quest_id": 624,
+      "quest_name": "Cortello's Riddle",
+      "quest_tag": null,
+      "required_level": 37,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:608"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Captain Stillwater, Captain Keelhaul, Fleet Master Firallon. [QC608 The Bloodsail Buccaneers]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Captain Stillwater, Captain Keelhaul, Fleet Master Firallon",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2550,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 32.87,
+              "y": 88.2
+            }
+          ],
+          "name": "Captain Stillwater",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2548,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 29.32,
+              "y": 88.29
+            }
+          ],
+          "name": "Captain Keelhaul",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2546,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 30.58,
+              "y": 90.63
+            }
+          ],
+          "name": "Fleet Master Firallon",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 90,
+      "quest_id": 608,
+      "quest_name": "The Bloodsail Buccaneers",
+      "quest_tag": null,
+      "required_level": 37,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:624"
+      ],
+      "instruction": "Complete [QC624 Cortello's Riddle]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 91,
+      "quest_id": 624,
+      "quest_name": "Cortello's Riddle",
+      "quest_tag": null,
+      "required_level": 37,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2487,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 27.17,
+              "y": 77.01
+            }
+          ],
+          "name": "Fleet Master Seahorn",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:608"
+      ],
+      "instruction": "Turn in [QT608 The Bloodsail Buccaneers] to Fleet Master Seahorn",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 92,
+      "quest_id": 608,
+      "quest_name": "The Bloodsail Buccaneers",
+      "quest_tag": null,
+      "required_level": 37,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 2553,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 22.87,
+              "y": 48.19
+            }
+          ],
+          "name": "A Soggy Scroll",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:624"
+      ],
+      "instruction": "Turn in [QT624 Cortello's Riddle] to A Soggy Scroll",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 93,
+      "quest_id": 624,
+      "quest_name": "Cortello's Riddle",
+      "quest_tag": null,
+      "required_level": 37,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 2553,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 22.87,
+              "y": 48.19
+            }
+          ],
+          "name": "A Soggy Scroll",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:625"
+      ],
+      "instruction": "Accept [QA625 Cortello's Riddle] from A Soggy Scroll.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 94,
+      "quest_id": 625,
+      "quest_name": "Cortello's Riddle",
+      "quest_tag": null,
+      "required_level": 37,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:625"
+      ],
+      "instruction": "Complete [QC625 Cortello's Riddle]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 95,
+      "quest_id": 625,
+      "quest_name": "Cortello's Riddle",
+      "quest_tag": null,
+      "required_level": 37,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 2555,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 31.1,
+              "y": 66.14
+            }
+          ],
+          "name": "Musty Scroll",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:625"
+      ],
+      "instruction": "Turn in [QT625 Cortello's Riddle] to Musty Scroll",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 96,
+      "quest_id": 625,
+      "quest_name": "Cortello's Riddle",
+      "quest_tag": null,
+      "required_level": 37,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 2555,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 31.1,
+              "y": 66.14
+            }
+          ],
+          "name": "Musty Scroll",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:626"
+      ],
+      "instruction": "Accept [QA626 Cortello's Riddle] from Musty Scroll.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 97,
+      "quest_id": 626,
+      "quest_name": "Cortello's Riddle",
+      "quest_tag": null,
+      "required_level": 37,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:626"
+      ],
+      "instruction": "Complete [QC626 Cortello's Riddle]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 98,
+      "quest_id": 626,
+      "quest_name": "Cortello's Riddle",
+      "quest_tag": null,
+      "required_level": 37,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 2556,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 47,
+              "map_name": "The Hinterlands",
+              "verification": "questie_structured_source_only",
+              "x": 80.79,
+              "y": 46.82
+            }
+          ],
+          "name": "Cortello's Treasure",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:626"
+      ],
+      "instruction": "Turn in [QT626 Cortello's Riddle] to Cortello's Treasure",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 99,
+      "quest_id": 626,
+      "quest_name": "Cortello's Riddle",
+      "quest_tag": null,
+      "required_level": 37,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "before_quest_id": 9610,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9610:requiredLevel"
+      ],
+      "instruction": "Reach level 38 before accepting Pool of Tears. [XP38 Level 38]",
+      "map_id": 8,
+      "map_name": "Swamp of Sorrows",
+      "optional": false,
+      "order": 100,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 38,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 25.87,
+      "y": 32.42
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18221,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 25.87,
+              "y": 32.42
+            }
+          ],
+          "name": "Holaaru",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9610"
+      ],
+      "instruction": "Accept [QA9610 Pool of Tears] from Holaaru.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 101,
+      "quest_id": 9610,
+      "quest_name": "Pool of Tears",
+      "quest_tag": null,
+      "required_level": 38,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 8,
+      "zone_or_sort_name": "Swamp of Sorrows"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9610"
+      ],
+      "instruction": "Collect or use the required item: Atal'ai Artifact. [QC9610 Pool of Tears]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Atal'ai Artifact",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 6175,
+          "kind": "item",
+          "locations": [],
+          "name": "Atal'ai Artifact",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 102,
+      "quest_id": 9610,
+      "quest_name": "Pool of Tears",
+      "quest_tag": null,
+      "required_level": 38,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 8,
+      "zone_or_sort_name": "Swamp of Sorrows"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18221,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 25.87,
+              "y": 32.42
+            }
+          ],
+          "name": "Holaaru",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9610"
+      ],
+      "instruction": "Turn in [QT9610 Pool of Tears] to Holaaru",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 103,
+      "quest_id": 9610,
+      "quest_name": "Pool of Tears",
+      "quest_tag": null,
+      "required_level": 38,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 8,
+      "zone_or_sort_name": "Swamp of Sorrows"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2494,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 26.76,
+              "y": 76.38
+            }
+          ],
+          "name": "Privateer Bloads",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:617"
+      ],
+      "instruction": "Accept [QA617 Akiris by the Bundle] from Privateer Bloads.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 104,
+      "quest_id": 617,
+      "quest_name": "Akiris by the Bundle",
+      "quest_tag": null,
+      "required_level": 38,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:617"
+      ],
+      "instruction": "Collect or use the required item: Akiris Reed. [QC617 Akiris by the Bundle]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Akiris Reed",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4029,
+          "kind": "item",
+          "locations": [],
+          "name": "Akiris Reed",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 105,
+      "quest_id": 617,
+      "quest_name": "Akiris by the Bundle",
+      "quest_tag": null,
+      "required_level": 38,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2494,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 26.76,
+              "y": 76.38
+            }
+          ],
+          "name": "Privateer Bloads",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:617"
+      ],
+      "instruction": "Turn in [QT617 Akiris by the Bundle] to Privateer Bloads",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 106,
+      "quest_id": 617,
+      "quest_name": "Akiris by the Bundle",
+      "quest_tag": null,
+      "required_level": 38,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2494,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 26.76,
+              "y": 76.38
+            }
+          ],
+          "name": "Privateer Bloads",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:623"
+      ],
+      "instruction": "Accept [QA623 Akiris by the Bundle] from Privateer Bloads.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 107,
+      "quest_id": 623,
+      "quest_name": "Akiris by the Bundle",
+      "quest_tag": null,
+      "required_level": 38,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "before_quest_id": 348,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:348:requiredLevel"
+      ],
+      "instruction": "Reach level 40 before accepting Stranglethorn Fever. [XP40 Level 40]",
+      "map_id": 33,
+      "map_name": "Stranglethorn Vale",
+      "optional": false,
+      "order": 108,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 40,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 27.61,
+      "y": 76.74
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2486,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 27.61,
+              "y": 76.74
+            }
+          ],
+          "name": "Fin Fizracket",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:348"
+      ],
+      "instruction": "Accept [QA348 Stranglethorn Fever] from Fin Fizracket.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 109,
+      "quest_id": 348,
+      "quest_name": "Stranglethorn Fever",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2491,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 27.14,
+              "y": 77.45
+            }
+          ],
+          "name": "Whiskey Slim",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:580"
+      ],
+      "instruction": "Accept [QA580 Whiskey Slim's Lost Grog] from Whiskey Slim.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 110,
+      "quest_id": 580,
+      "quest_name": "Whiskey Slim's Lost Grog",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2500,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 26.69,
+              "y": 73.61
+            }
+          ],
+          "name": "Captain Hecklebury Smotts",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8551"
+      ],
+      "instruction": "Accept [QA8551 The Captain's Chest] from Captain Hecklebury Smotts.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 111,
+      "quest_id": 8551,
+      "quest_name": "The Captain's Chest",
+      "quest_tag": "Elite",
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:623"
+      ],
+      "instruction": "Complete [QC623 Akiris by the Bundle]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 112,
+      "quest_id": 623,
+      "quest_name": "Akiris by the Bundle",
+      "quest_tag": null,
+      "required_level": 38,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:348"
+      ],
+      "instruction": "Collect or use the required item: Heart of Mokk. [QC348 Stranglethorn Fever]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Heart of Mokk",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 2797,
+          "kind": "item",
+          "locations": [],
+          "name": "Heart of Mokk",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 113,
+      "quest_id": 348,
+      "quest_name": "Stranglethorn Fever",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:580"
+      ],
+      "instruction": "Collect or use the required item: Pupellyverbos Port. [QC580 Whiskey Slim's Lost Grog]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Pupellyverbos Port",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 3900,
+          "kind": "item",
+          "locations": [],
+          "name": "Pupellyverbos Port",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 114,
+      "quest_id": 580,
+      "quest_name": "Whiskey Slim's Lost Grog",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8551"
+      ],
+      "instruction": "Elite/group recommended \u2014 Collect or use the required item: Smotts' Chest. [QC8551 The Captain's Chest]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Smotts' Chest",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 3932,
+          "kind": "item",
+          "locations": [],
+          "name": "Smotts' Chest",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 115,
+      "quest_id": 8551,
+      "quest_name": "The Captain's Chest",
+      "quest_tag": "Elite",
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2500,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 26.69,
+              "y": 73.61
+            }
+          ],
+          "name": "Captain Hecklebury Smotts",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8551"
+      ],
+      "instruction": "Turn in [QT8551 The Captain's Chest] to Captain Hecklebury Smotts",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 116,
+      "quest_id": 8551,
+      "quest_name": "The Captain's Chest",
+      "quest_tag": "Elite",
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2486,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 27.61,
+              "y": 76.74
+            }
+          ],
+          "name": "Fin Fizracket",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:348"
+      ],
+      "instruction": "Turn in [QT348 Stranglethorn Fever] to Fin Fizracket",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 117,
+      "quest_id": 348,
+      "quest_name": "Stranglethorn Fever",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2491,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 27.14,
+              "y": 77.45
+            }
+          ],
+          "name": "Whiskey Slim",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:580"
+      ],
+      "instruction": "Turn in [QT580 Whiskey Slim's Lost Grog] to Whiskey Slim",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 118,
+      "quest_id": 580,
+      "quest_name": "Whiskey Slim's Lost Grog",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2616,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 68.84,
+              "y": 53.22
+            }
+          ],
+          "name": "Privateer Groy",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:623"
+      ],
+      "instruction": "Turn in [QT623 Akiris by the Bundle] to Privateer Groy",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 119,
+      "quest_id": 623,
+      "quest_name": "Akiris by the Bundle",
+      "quest_tag": null,
+      "required_level": 38,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    }
+  ],
+  "title": "42 Stranglethorn Vale"
+}

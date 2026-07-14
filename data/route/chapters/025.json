@@ -1,0 +1,425 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 24 Dun Morogh & Stormwind City, or select this chapter on a partially completed character. Begin in Bloodmyst Isle with Prince Toreth. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 3525,
+    "map_name": "Bloodmyst Isle",
+    "x": 74.47,
+    "y": 33.46
+  },
+  "entry_zone_or_sort": 3525,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 3557,
+    "map_name": "The Exodar",
+    "quest_id": 7798,
+    "tag": "QT",
+    "x": 63.51,
+    "y": 67.74
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/025_world_25.lua",
+  "id": "025-primary-25-bloodmyst-isle-&-the-exodar",
+  "maximum_level": 26,
+  "minimum_level": 21,
+  "next_chapter": "26 Duskwood",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "24 Dun Morogh & Stormwind City",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 9689,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:542:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9689:starter",
+        "travel-network:auberdine-menethil",
+        "travel-network:auberdine-exodar",
+        "https://www.wowhead.com/tbc/quest=942/the-absent-minded-prospector",
+        "https://www.wowhead.com/tbc/guide/how-to-get-to-the-exodar-in-burning-crusade-classic"
+      ],
+      "instruction": "Travel from Stormwind City to Bloodmyst Isle: Take the ship between Auberdine and Menethil Harbor; then take the ship between Auberdine and Valnaar's Berth outside the Exodar. Continue to [G74.47,33.46 Bloodmyst Isle]. [O]",
+      "map_id": 3525,
+      "map_name": "Bloodmyst Isle",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 1519,
+      "origin_map_name": "Stormwind City",
+      "origin_x": 74.18,
+      "origin_y": 7.46,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [
+        "auberdine-menethil",
+        "auberdine-exodar"
+      ],
+      "type": "transport",
+      "verification": "questie_endpoints_and_tbc_transport_network",
+      "x": 74.47,
+      "y": 33.46
+    },
+    {
+      "before_quest_id": 9689,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9689:starter"
+      ],
+      "instruction": "Before you begin: travel to Bloodmyst Isle and meet the first quest giver at [G74.47,33.46 Bloodmyst Isle]. Leave at least two quest-log slots open. [O]",
+      "map_id": 3525,
+      "map_name": "Bloodmyst Isle",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 74.47,
+      "y": 33.46
+    },
+    {
+      "before_quest_id": 9689,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9689:requiredLevel"
+      ],
+      "instruction": "Reach level 21 before accepting Razormaw. [XP21 Level 21]",
+      "map_id": 3525,
+      "map_name": "Bloodmyst Isle",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 21,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 74.47,
+      "y": 33.46
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17674,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 74.47,
+              "y": 33.46
+            }
+          ],
+          "name": "Prince Toreth",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9689"
+      ],
+      "instruction": "Accept [QA9689 Razormaw] from Prince Toreth.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 9689,
+      "quest_name": "Razormaw",
+      "quest_tag": "Elite",
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "before_quest_id": 9689,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9689:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 3525,
+      "map_name": "Bloodmyst Isle",
+      "optional": true,
+      "order": 5,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        9689
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 73.8,
+      "y": 29.6
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9689"
+      ],
+      "instruction": "Elite/group recommended \u2014 Complete the required NPC or creature objective: Razormaw. [QC9689 Razormaw]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Razormaw",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17592,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 73.8,
+              "y": 29.6
+            }
+          ],
+          "name": "Razormaw",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 6,
+      "quest_id": 9689,
+      "quest_name": "Razormaw",
+      "quest_tag": "Elite",
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17674,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3525,
+              "map_name": "Bloodmyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 74.47,
+              "y": 33.46
+            }
+          ],
+          "name": "Prince Toreth",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9689"
+      ],
+      "instruction": "Turn in [QT9689 Razormaw] to Prince Toreth",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 9689,
+      "quest_name": "Razormaw",
+      "quest_tag": "Elite",
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3525,
+      "zone_or_sort_name": "Bloodmyst Isle"
+    },
+    {
+      "before_quest_id": 7798,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7798:requiredLevel"
+      ],
+      "instruction": "Reach level 26 before accepting A Donation of Silk. [XP26 Level 26]",
+      "map_id": 3557,
+      "map_name": "The Exodar",
+      "optional": false,
+      "order": 8,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 26,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 63.51,
+      "y": 67.74
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 20604,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3557,
+              "map_name": "The Exodar",
+              "verification": "questie_structured_source_only",
+              "x": 63.51,
+              "y": 67.74
+            }
+          ],
+          "name": "Dugiru",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7798"
+      ],
+      "instruction": "Accept [QA7798 A Donation of Silk] from Dugiru.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 7798,
+      "quest_name": "A Donation of Silk",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3557,
+      "zone_or_sort_name": "The Exodar"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7798"
+      ],
+      "instruction": "Collect or use the required item: Silk Cloth. [QC7798 A Donation of Silk]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Silk Cloth",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4306,
+          "kind": "item",
+          "locations": [],
+          "name": "Silk Cloth",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 10,
+      "quest_id": 7798,
+      "quest_name": "A Donation of Silk",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3557,
+      "zone_or_sort_name": "The Exodar"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 20604,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3557,
+              "map_name": "The Exodar",
+              "verification": "questie_structured_source_only",
+              "x": 63.51,
+              "y": 67.74
+            }
+          ],
+          "name": "Dugiru",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7798"
+      ],
+      "instruction": "Turn in [QT7798 A Donation of Silk] to Dugiru",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 7798,
+      "quest_name": "A Donation of Silk",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3557,
+      "zone_or_sort_name": "The Exodar"
+    }
+  ],
+  "title": "25 Bloodmyst Isle & The Exodar"
+}

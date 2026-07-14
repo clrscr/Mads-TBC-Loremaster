@@ -1,0 +1,2518 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 66 Tanaris, or select this chapter on a partially completed character. Begin in Un'Goro Crater with Williden Marshal. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 490,
+    "map_name": "Un'Goro Crater",
+    "x": 43.95,
+    "y": 7.14
+  },
+  "entry_zone_or_sort": 490,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 618,
+    "map_name": "Winterspring",
+    "quest_id": 980,
+    "tag": "QT",
+    "x": 31.27,
+    "y": 45.16
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/067_world_67.lua",
+  "id": "067-primary-67-un'goro-crater",
+  "maximum_level": 52,
+  "minimum_level": 52,
+  "next_chapter": "68 Silithus & Winterspring",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "66 Tanaris",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 3881,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4504:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3881:starter"
+      ],
+      "instruction": "Travel from Tanaris to Un'Goro Crater. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G43.95,7.14 Un'Goro Crater]. [O]",
+      "map_id": 490,
+      "map_name": "Un'Goro Crater",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 440,
+      "origin_map_name": "Tanaris",
+      "origin_x": 51.57,
+      "origin_y": 26.76,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 43.95,
+      "y": 7.14
+    },
+    {
+      "before_quest_id": 3881,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3881:starter"
+      ],
+      "instruction": "Before you begin: travel to Un'Goro Crater and meet the first quest giver at [G43.95,7.14 Un'Goro Crater]. Leave at least two quest-log slots open. [O]",
+      "map_id": 490,
+      "map_name": "Un'Goro Crater",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 43.95,
+      "y": 7.14
+    },
+    {
+      "before_quest_id": 3881,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:npc:10583",
+        "authored-route:guidelime-tugs-tbc-alliance-2.50:49-51Un'Goro.lua:26"
+      ],
+      "instruction": "Optional: learn the flight path from Gryfe. [P][G45.23,5.83 Un'Goro Crater][O]",
+      "map_id": 490,
+      "map_name": "Un'Goro Crater",
+      "optional": true,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "acquire_flight_path",
+      "verification": "cross_verified_questie_and_authored_route",
+      "x": 45.23,
+      "y": 5.83
+    },
+    {
+      "before_quest_id": 3881,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3881:requiredLevel"
+      ],
+      "instruction": "Reach level 52 before accepting Expedition Salvation. [XP52 Level 52]",
+      "map_id": 490,
+      "map_name": "Un'Goro Crater",
+      "optional": false,
+      "order": 4,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 52,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 43.95,
+      "y": 7.14
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9270,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 490,
+              "map_name": "Un'Goro Crater",
+              "verification": "questie_structured_source_only",
+              "x": 43.95,
+              "y": 7.14
+            }
+          ],
+          "name": "Williden Marshal",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3881"
+      ],
+      "instruction": "Accept [QA3881 Expedition Salvation] from Williden Marshal.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 3881,
+      "quest_name": "Expedition Salvation",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9271,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 490,
+              "map_name": "Un'Goro Crater",
+              "verification": "questie_structured_source_only",
+              "x": 43.89,
+              "y": 7.24
+            }
+          ],
+          "name": "Hol'anyee Marshal",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3883"
+      ],
+      "instruction": "Accept [QA3883 Alien Ecology] from Hol'anyee Marshal.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 3883,
+      "quest_name": "Alien Ecology",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 11116,
+          "kind": "item",
+          "locations": [],
+          "name": "A Mangled Journal",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3884"
+      ],
+      "instruction": "Accept [QA3884 Williden's Journal] from A Mangled Journal.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 3884,
+      "quest_name": "Williden's Journal",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9618,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 490,
+              "map_name": "Un'Goro Crater",
+              "verification": "questie_structured_source_only",
+              "x": 46.38,
+              "y": 13.44
+            }
+          ],
+          "name": "Karna Remtravel",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4243"
+      ],
+      "instruction": "Accept [QA4243 Chasing A-Me 01] from Karna Remtravel.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 4243,
+      "quest_name": "Chasing A-Me 01",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3881"
+      ],
+      "instruction": "Collect or use the required items: Crate of Foodstuffs, Research Equipment. [QC3881 Expedition Salvation]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Crate of Foodstuffs, Research Equipment",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 11113,
+          "kind": "item",
+          "locations": [],
+          "name": "Crate of Foodstuffs",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 11112,
+          "kind": "item",
+          "locations": [],
+          "name": "Research Equipment",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 9,
+      "quest_id": 3881,
+      "quest_name": "Expedition Salvation",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3883"
+      ],
+      "instruction": "Use the quest item [UI11132-] as directed; collect or use the required item: Hive Wall Sample. [QC3883 Alien Ecology]",
+      "item_use_id": 11132,
+      "objective_hint": "Collect or use the required item: Hive Wall Sample",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 11131,
+          "kind": "item",
+          "locations": [],
+          "name": "Hive Wall Sample",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 10,
+      "quest_id": 3883,
+      "quest_name": "Alien Ecology",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3884"
+      ],
+      "instruction": "Complete [QC3884 Williden's Journal]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 3884,
+      "quest_name": "Williden's Journal",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4243"
+      ],
+      "instruction": "Complete [QC4243 Chasing A-Me 01]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 4243,
+      "quest_name": "Chasing A-Me 01",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9271,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 490,
+              "map_name": "Un'Goro Crater",
+              "verification": "questie_structured_source_only",
+              "x": 43.89,
+              "y": 7.24
+            }
+          ],
+          "name": "Hol'anyee Marshal",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3883"
+      ],
+      "instruction": "Turn in [QT3883 Alien Ecology] to Hol'anyee Marshal",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 3883,
+      "quest_name": "Alien Ecology",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9270,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 490,
+              "map_name": "Un'Goro Crater",
+              "verification": "questie_structured_source_only",
+              "x": 43.95,
+              "y": 7.14
+            }
+          ],
+          "name": "Williden Marshal",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3881"
+      ],
+      "instruction": "Turn in [QT3881 Expedition Salvation] to Williden Marshal",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 3881,
+      "quest_name": "Expedition Salvation",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9270,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 490,
+              "map_name": "Un'Goro Crater",
+              "verification": "questie_structured_source_only",
+              "x": 43.95,
+              "y": 7.14
+            }
+          ],
+          "name": "Williden Marshal",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3884"
+      ],
+      "instruction": "Turn in [QT3884 Williden's Journal] to Williden Marshal",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 3884,
+      "quest_name": "Williden's Journal",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9623,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 490,
+              "map_name": "Un'Goro Crater",
+              "verification": "questie_structured_source_only",
+              "x": 67.66,
+              "y": 16.76
+            }
+          ],
+          "name": "A-Me 01",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4243"
+      ],
+      "instruction": "Turn in [QT4243 Chasing A-Me 01] to A-Me 01",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 4243,
+      "quest_name": "Chasing A-Me 01",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9623,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 490,
+              "map_name": "Un'Goro Crater",
+              "verification": "questie_structured_source_only",
+              "x": 67.66,
+              "y": 16.76
+            }
+          ],
+          "name": "A-Me 01",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4244"
+      ],
+      "instruction": "Accept [QA4244 Chasing A-Me 01] from A-Me 01.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 4244,
+      "quest_name": "Chasing A-Me 01",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4244"
+      ],
+      "instruction": "Collect or use the required item: Mithril Casing. [QC4244 Chasing A-Me 01]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Mithril Casing",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 10561,
+          "kind": "item",
+          "locations": [],
+          "name": "Mithril Casing",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 18,
+      "quest_id": 4244,
+      "quest_name": "Chasing A-Me 01",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9623,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 490,
+              "map_name": "Un'Goro Crater",
+              "verification": "questie_structured_source_only",
+              "x": 67.66,
+              "y": 16.76
+            }
+          ],
+          "name": "A-Me 01",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4244"
+      ],
+      "instruction": "Turn in [QT4244 Chasing A-Me 01] to A-Me 01",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 4244,
+      "quest_name": "Chasing A-Me 01",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9623,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 490,
+              "map_name": "Un'Goro Crater",
+              "verification": "questie_structured_source_only",
+              "x": 67.66,
+              "y": 16.76
+            }
+          ],
+          "name": "A-Me 01",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4245"
+      ],
+      "instruction": "Accept [QA4245 Chasing A-Me 01] from A-Me 01.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 4245,
+      "quest_name": "Chasing A-Me 01",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4245"
+      ],
+      "instruction": "Complete the scripted or exploration event. [QC4245 Chasing A-Me 01]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 4245,
+      "quest_name": "Chasing A-Me 01",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9618,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 490,
+              "map_name": "Un'Goro Crater",
+              "verification": "questie_structured_source_only",
+              "x": 46.38,
+              "y": 13.44
+            }
+          ],
+          "name": "Karna Remtravel",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4245"
+      ],
+      "instruction": "Turn in [QT4245 Chasing A-Me 01] to Karna Remtravel",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 22,
+      "quest_id": 4245,
+      "quest_name": "Chasing A-Me 01",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9619,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 490,
+              "map_name": "Un'Goro Crater",
+              "verification": "questie_structured_source_only",
+              "x": 71.64,
+              "y": 75.96
+            }
+          ],
+          "name": "Torwa Pathfinder",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4290"
+      ],
+      "instruction": "Accept [QA4290 The Fare of Lar'korwi] from Torwa Pathfinder.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 23,
+      "quest_id": 4290,
+      "quest_name": "The Fare of Lar'korwi",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4290"
+      ],
+      "instruction": "Collect or use the required item: Piece of Threshadon Carcass. [QC4290 The Fare of Lar'korwi]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Piece of Threshadon Carcass",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 11504,
+          "kind": "item",
+          "locations": [],
+          "name": "Piece of Threshadon Carcass",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 24,
+      "quest_id": 4290,
+      "quest_name": "The Fare of Lar'korwi",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9619,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 490,
+              "map_name": "Un'Goro Crater",
+              "verification": "questie_structured_source_only",
+              "x": 71.64,
+              "y": 75.96
+            }
+          ],
+          "name": "Torwa Pathfinder",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4290"
+      ],
+      "instruction": "Turn in [QT4290 The Fare of Lar'korwi] to Torwa Pathfinder",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 25,
+      "quest_id": 4290,
+      "quest_name": "The Fare of Lar'korwi",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9619,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 490,
+              "map_name": "Un'Goro Crater",
+              "verification": "questie_structured_source_only",
+              "x": 71.64,
+              "y": 75.96
+            }
+          ],
+          "name": "Torwa Pathfinder",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4291"
+      ],
+      "instruction": "Accept [QA4291 The Scent of Lar'korwi] from Torwa Pathfinder.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 26,
+      "quest_id": 4291,
+      "quest_name": "The Scent of Lar'korwi",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4291"
+      ],
+      "instruction": "Collect or use the required item: Ravasaur Pheromone Gland. [QC4291 The Scent of Lar'korwi]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Ravasaur Pheromone Gland",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 11509,
+          "kind": "item",
+          "locations": [],
+          "name": "Ravasaur Pheromone Gland",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 27,
+      "quest_id": 4291,
+      "quest_name": "The Scent of Lar'korwi",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9619,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 490,
+              "map_name": "Un'Goro Crater",
+              "verification": "questie_structured_source_only",
+              "x": 71.64,
+              "y": 75.96
+            }
+          ],
+          "name": "Torwa Pathfinder",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4291"
+      ],
+      "instruction": "Turn in [QT4291 The Scent of Lar'korwi] to Torwa Pathfinder",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 28,
+      "quest_id": 4291,
+      "quest_name": "The Scent of Lar'korwi",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9619,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 490,
+              "map_name": "Un'Goro Crater",
+              "verification": "questie_structured_source_only",
+              "x": 71.64,
+              "y": 75.96
+            }
+          ],
+          "name": "Torwa Pathfinder",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4292"
+      ],
+      "instruction": "Accept [QA4292 The Bait for Lar'korwi] from Torwa Pathfinder.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 29,
+      "quest_id": 4292,
+      "quest_name": "The Bait for Lar'korwi",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4292"
+      ],
+      "instruction": "Use the quest item [UI11568-] as directed; collect or use the required item: Lar'korwi's Head. [QC4292 The Bait for Lar'korwi]",
+      "item_use_id": 11568,
+      "objective_hint": "Collect or use the required item: Lar'korwi's Head",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 11510,
+          "kind": "item",
+          "locations": [],
+          "name": "Lar'korwi's Head",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 30,
+      "quest_id": 4292,
+      "quest_name": "The Bait for Lar'korwi",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9619,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 490,
+              "map_name": "Un'Goro Crater",
+              "verification": "questie_structured_source_only",
+              "x": 71.64,
+              "y": 75.96
+            }
+          ],
+          "name": "Torwa Pathfinder",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4292"
+      ],
+      "instruction": "Turn in [QT4292 The Bait for Lar'korwi] to Torwa Pathfinder",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 31,
+      "quest_id": 4292,
+      "quest_name": "The Bait for Lar'korwi",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9272,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 490,
+              "map_name": "Un'Goro Crater",
+              "verification": "questie_structured_source_only",
+              "x": 43.5,
+              "y": 7.42
+            }
+          ],
+          "name": "Spark Nilminer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3882"
+      ],
+      "instruction": "Accept [QA3882 Roll the Bones] from Spark Nilminer.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 32,
+      "quest_id": 3882,
+      "quest_name": "Roll the Bones",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3882"
+      ],
+      "instruction": "Collect or use the required item: Dinosaur Bone. [QC3882 Roll the Bones]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Dinosaur Bone",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 11114,
+          "kind": "item",
+          "locations": [],
+          "name": "Dinosaur Bone",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 33,
+      "quest_id": 3882,
+      "quest_name": "Roll the Bones",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9272,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 490,
+              "map_name": "Un'Goro Crater",
+              "verification": "questie_structured_source_only",
+              "x": 43.5,
+              "y": 7.42
+            }
+          ],
+          "name": "Spark Nilminer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3882"
+      ],
+      "instruction": "Turn in [QT3882 Roll the Bones] to Spark Nilminer",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 34,
+      "quest_id": 3882,
+      "quest_name": "Roll the Bones",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8496,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 62.45,
+              "y": 38.73
+            }
+          ],
+          "name": "Liv Rizzlefix",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4502"
+      ],
+      "instruction": "Accept [QA4502 Volcanic Activity] from Liv Rizzlefix.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 35,
+      "quest_id": 4502,
+      "quest_name": "Volcanic Activity",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4502"
+      ],
+      "instruction": "Collect or use the required item: Un'Goro Ash. [QC4502 Volcanic Activity]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Un'Goro Ash",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 11829,
+          "kind": "item",
+          "locations": [],
+          "name": "Un'Goro Ash",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 36,
+      "quest_id": 4502,
+      "quest_name": "Volcanic Activity",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8496,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 62.45,
+              "y": 38.73
+            }
+          ],
+          "name": "Liv Rizzlefix",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4502"
+      ],
+      "instruction": "Turn in [QT4502 Volcanic Activity] to Liv Rizzlefix",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 37,
+      "quest_id": 4502,
+      "quest_name": "Volcanic Activity",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9998,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 490,
+              "map_name": "Un'Goro Crater",
+              "verification": "questie_structured_source_only",
+              "x": 44.23,
+              "y": 11.59
+            }
+          ],
+          "name": "Shizzle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4503"
+      ],
+      "instruction": "Accept [QA4503 Shizzle's Flyer] from Shizzle.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 38,
+      "quest_id": 4503,
+      "quest_name": "Shizzle's Flyer",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4503"
+      ],
+      "instruction": "Collect or use the required items: Webbed Diemetradon Scale, Webbed Pterrordax Scale. [QC4503 Shizzle's Flyer]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Webbed Diemetradon Scale, Webbed Pterrordax Scale",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 11830,
+          "kind": "item",
+          "locations": [],
+          "name": "Webbed Diemetradon Scale",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 11831,
+          "kind": "item",
+          "locations": [],
+          "name": "Webbed Pterrordax Scale",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 39,
+      "quest_id": 4503,
+      "quest_name": "Shizzle's Flyer",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9998,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 490,
+              "map_name": "Un'Goro Crater",
+              "verification": "questie_structured_source_only",
+              "x": 44.23,
+              "y": 11.59
+            }
+          ],
+          "name": "Shizzle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4503"
+      ],
+      "instruction": "Turn in [QT4503 Shizzle's Flyer] to Shizzle",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 40,
+      "quest_id": 4503,
+      "quest_name": "Shizzle's Flyer",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5594,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 50.89,
+              "y": 26.96
+            }
+          ],
+          "name": "Alchemist Pestlezugg",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4496"
+      ],
+      "instruction": "Accept [QA4496 Bungle in the Jungle] from Alchemist Pestlezugg.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 41,
+      "quest_id": 4496,
+      "quest_name": "Bungle in the Jungle",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4496"
+      ],
+      "instruction": "Collect or use the required items: Gorishi Scent Gland, Un'Goro Soil. [QC4496 Bungle in the Jungle]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Gorishi Scent Gland, Un'Goro Soil",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 11837,
+          "kind": "item",
+          "locations": [],
+          "name": "Gorishi Scent Gland",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 11018,
+          "kind": "item",
+          "locations": [],
+          "name": "Un'Goro Soil",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 42,
+      "quest_id": 4496,
+      "quest_name": "Bungle in the Jungle",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5594,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 50.89,
+              "y": 26.96
+            }
+          ],
+          "name": "Alchemist Pestlezugg",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4496"
+      ],
+      "instruction": "Turn in [QT4496 Bungle in the Jungle] to Alchemist Pestlezugg",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 43,
+      "quest_id": 4496,
+      "quest_name": "Bungle in the Jungle",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5594,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 50.89,
+              "y": 26.96
+            }
+          ],
+          "name": "Alchemist Pestlezugg",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4507"
+      ],
+      "instruction": "Accept [QA4507 Pawn Captures Queen] from Alchemist Pestlezugg.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 44,
+      "quest_id": 4507,
+      "quest_name": "Pawn Captures Queen",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4507"
+      ],
+      "instruction": "Collect or use the required item: Gorishi Queen Brain. [QC4507 Pawn Captures Queen]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Gorishi Queen Brain",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 11835,
+          "kind": "item",
+          "locations": [],
+          "name": "Gorishi Queen Brain",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 45,
+      "quest_id": 4507,
+      "quest_name": "Pawn Captures Queen",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5594,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 50.89,
+              "y": 26.96
+            }
+          ],
+          "name": "Alchemist Pestlezugg",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4507"
+      ],
+      "instruction": "Turn in [QT4507 Pawn Captures Queen] to Alchemist Pestlezugg",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 46,
+      "quest_id": 4507,
+      "quest_name": "Pawn Captures Queen",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5594,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 50.89,
+              "y": 26.96
+            }
+          ],
+          "name": "Alchemist Pestlezugg",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4508"
+      ],
+      "instruction": "Accept [QA4508 Calm Before the Storm] from Alchemist Pestlezugg.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 47,
+      "quest_id": 4508,
+      "quest_name": "Calm Before the Storm",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4508"
+      ],
+      "instruction": "Complete [QC4508 Calm Before the Storm]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 48,
+      "quest_id": 4508,
+      "quest_name": "Calm Before the Storm",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7740,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1657,
+              "map_name": "Darnassus",
+              "verification": "questie_structured_source_only",
+              "x": 41.83,
+              "y": 85.62
+            }
+          ],
+          "name": "Gracina Spiritmight",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4508"
+      ],
+      "instruction": "Turn in [QT4508 Calm Before the Storm] to Gracina Spiritmight",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 49,
+      "quest_id": 4508,
+      "quest_name": "Calm Before the Storm",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9619,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 490,
+              "map_name": "Un'Goro Crater",
+              "verification": "questie_structured_source_only",
+              "x": 71.64,
+              "y": 75.96
+            }
+          ],
+          "name": "Torwa Pathfinder",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4301"
+      ],
+      "instruction": "Accept [QA4301 The Mighty U'cha] from Torwa Pathfinder.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 50,
+      "quest_id": 4301,
+      "quest_name": "The Mighty U'cha",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4301"
+      ],
+      "instruction": "Collect or use the required item: U'cha's Pelt. [QC4301 The Mighty U'cha]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: U'cha's Pelt",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 11476,
+          "kind": "item",
+          "locations": [],
+          "name": "U'cha's Pelt",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 51,
+      "quest_id": 4301,
+      "quest_name": "The Mighty U'cha",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9619,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 490,
+              "map_name": "Un'Goro Crater",
+              "verification": "questie_structured_source_only",
+              "x": 71.64,
+              "y": 75.96
+            }
+          ],
+          "name": "Torwa Pathfinder",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4301"
+      ],
+      "instruction": "Turn in [QT4301 The Mighty U'cha] to Torwa Pathfinder",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 52,
+      "quest_id": 4301,
+      "quest_name": "The Mighty U'cha",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9997,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 490,
+              "map_name": "Un'Goro Crater",
+              "verification": "questie_structured_source_only",
+              "x": 43.62,
+              "y": 8.5
+            }
+          ],
+          "name": "Spraggle Frock",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4492"
+      ],
+      "instruction": "Accept [QA4492 Lost!] from Spraggle Frock.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 53,
+      "quest_id": 4492,
+      "quest_name": "Lost!",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4492"
+      ],
+      "instruction": "Complete [QC4492 Lost!]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 54,
+      "quest_id": 4492,
+      "quest_name": "Lost!",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9999,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 490,
+              "map_name": "Un'Goro Crater",
+              "verification": "questie_structured_source_only",
+              "x": 51.9,
+              "y": 49.85
+            }
+          ],
+          "name": "Ringo",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4492"
+      ],
+      "instruction": "Turn in [QT4492 Lost!] to Ringo",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 55,
+      "quest_id": 4492,
+      "quest_name": "Lost!",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9999,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 490,
+              "map_name": "Un'Goro Crater",
+              "verification": "questie_structured_source_only",
+              "x": 51.9,
+              "y": 49.85
+            }
+          ],
+          "name": "Ringo",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4491"
+      ],
+      "instruction": "Accept [QA4491 A Little Help From My Friends] from Ringo.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 56,
+      "quest_id": 4491,
+      "quest_name": "A Little Help From My Friends",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4491"
+      ],
+      "instruction": "Use the quest item [UI11804-] as directed. [QC4491 A Little Help From My Friends]",
+      "item_use_id": 11804,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 57,
+      "quest_id": 4491,
+      "quest_name": "A Little Help From My Friends",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9997,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 490,
+              "map_name": "Un'Goro Crater",
+              "verification": "questie_structured_source_only",
+              "x": 43.62,
+              "y": 8.5
+            }
+          ],
+          "name": "Spraggle Frock",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4491"
+      ],
+      "instruction": "Turn in [QT4491 A Little Help From My Friends] to Spraggle Frock",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 58,
+      "quest_id": 4491,
+      "quest_name": "A Little Help From My Friends",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10302,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 490,
+              "map_name": "Un'Goro Crater",
+              "verification": "questie_structured_source_only",
+              "x": 30.93,
+              "y": 50.44
+            }
+          ],
+          "name": "Krakle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:974"
+      ],
+      "instruction": "Accept [QA974 Finding the Source] from Krakle.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 59,
+      "quest_id": 974,
+      "quest_name": "Finding the Source",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:974"
+      ],
+      "instruction": "Complete the required NPC or creature objective: Krakle's Thermometer. [QC974 Finding the Source]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Krakle's Thermometer",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10541,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 490,
+              "map_name": "Un'Goro Crater",
+              "verification": "questie_structured_source_only",
+              "x": 49.71,
+              "y": 45.64
+            },
+            {
+              "map_id": 490,
+              "map_name": "Un'Goro Crater",
+              "verification": "questie_structured_source_only",
+              "x": 48.08,
+              "y": 53.34
+            },
+            {
+              "map_id": 490,
+              "map_name": "Un'Goro Crater",
+              "verification": "questie_structured_source_only",
+              "x": 54.04,
+              "y": 47.59
+            },
+            {
+              "map_id": 490,
+              "map_name": "Un'Goro Crater",
+              "verification": "questie_structured_source_only",
+              "x": 45.46,
+              "y": 48.53
+            },
+            {
+              "map_id": 490,
+              "map_name": "Un'Goro Crater",
+              "verification": "questie_structured_source_only",
+              "x": 53.95,
+              "y": 55.21
+            }
+          ],
+          "name": "Krakle's Thermometer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 60,
+      "quest_id": 974,
+      "quest_name": "Finding the Source",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10302,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 490,
+              "map_name": "Un'Goro Crater",
+              "verification": "questie_structured_source_only",
+              "x": 30.93,
+              "y": 50.44
+            }
+          ],
+          "name": "Krakle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:974"
+      ],
+      "instruction": "Turn in [QT974 Finding the Source] to Krakle",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 61,
+      "quest_id": 974,
+      "quest_name": "Finding the Source",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10302,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 490,
+              "map_name": "Un'Goro Crater",
+              "verification": "questie_structured_source_only",
+              "x": 30.93,
+              "y": 50.44
+            }
+          ],
+          "name": "Krakle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:980"
+      ],
+      "instruction": "Accept [QA980 The New Springs] from Krakle.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 62,
+      "quest_id": 980,
+      "quest_name": "The New Springs",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:980"
+      ],
+      "instruction": "Complete [QC980 The New Springs]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 63,
+      "quest_id": 980,
+      "quest_name": "The New Springs",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9298,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 31.27,
+              "y": 45.16
+            }
+          ],
+          "name": "Donova Snowden",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:980"
+      ],
+      "instruction": "Turn in [QT980 The New Springs] to Donova Snowden",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 64,
+      "quest_id": 980,
+      "quest_name": "The New Springs",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    }
+  ],
+  "title": "67 Un'Goro Crater"
+}

@@ -1,0 +1,2530 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 34 Swamp of Sorrows & Stranglethorn Vale, or select this chapter on a partially completed character. Begin in Hillsbrad Foothills with Magistrate Henry Maleb. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 267,
+    "map_name": "Hillsbrad Foothills",
+    "x": 48.14,
+    "y": 59.11
+  },
+  "entry_zone_or_sort": 36,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 10,
+    "map_name": "Duskwood",
+    "quest_id": 231,
+    "tag": "QT",
+    "x": 17.73,
+    "y": 29.08
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/035_world_35.lua",
+  "id": "035-primary-35-alterac-mountains",
+  "maximum_level": 31,
+  "minimum_level": 31,
+  "next_chapter": "36 Thousand Needles & Desolace",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "34 Swamp of Sorrows & Stranglethorn Vale",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 505,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:628:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:505:starter"
+      ],
+      "instruction": "Travel from Stranglethorn Vale to Hillsbrad Foothills. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G48.14,59.11 Hillsbrad Foothills]. [O]",
+      "map_id": 267,
+      "map_name": "Hillsbrad Foothills",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 33,
+      "origin_map_name": "Stranglethorn Vale",
+      "origin_x": 28.29,
+      "origin_y": 77.59,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 48.14,
+      "y": 59.11
+    },
+    {
+      "before_quest_id": 505,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:505:starter"
+      ],
+      "instruction": "Before you begin: travel to Hillsbrad Foothills and meet the first quest giver at [G48.14,59.11 Hillsbrad Foothills]. Leave at least two quest-log slots open. [O]",
+      "map_id": 267,
+      "map_name": "Hillsbrad Foothills",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 48.14,
+      "y": 59.11
+    },
+    {
+      "before_quest_id": 505,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:505:requiredLevel"
+      ],
+      "instruction": "Reach level 31 before accepting Syndicate Assassins. [XP31 Level 31]",
+      "map_id": 267,
+      "map_name": "Hillsbrad Foothills",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 31,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 48.14,
+      "y": 59.11
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2276,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 48.14,
+              "y": 59.11
+            }
+          ],
+          "name": "Magistrate Henry Maleb",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:505"
+      ],
+      "instruction": "Accept [QA505 Syndicate Assassins] from Magistrate Henry Maleb.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 505,
+      "quest_name": "Syndicate Assassins",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 36,
+      "zone_or_sort_name": "Alterac Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:505"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Syndicate Footpad, Syndicate Thief. [QC505 Syndicate Assassins]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Syndicate Footpad, Syndicate Thief",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2240,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 47.75,
+              "y": 82.9
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 48.34,
+              "y": 79.29
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 47.78,
+              "y": 81.18
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 47.68,
+              "y": 81.86
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 57.77,
+              "y": 66.16
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 59.0,
+              "y": 67.22
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 58.68,
+              "y": 68.42
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 58.35,
+              "y": 66.7
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 59.49,
+              "y": 68.04
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 57.71,
+              "y": 67.64
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 56.48,
+              "y": 66.05
+            }
+          ],
+          "name": "Syndicate Footpad",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2241,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 48.74,
+              "y": 82.99
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 48.32,
+              "y": 80.78
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 46.56,
+              "y": 81.49
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 47.29,
+              "y": 81.87
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 48.03,
+              "y": 81.88
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 47.81,
+              "y": 82.37
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 58.44,
+              "y": 70.0
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 58.89,
+              "y": 69.46
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 58.35,
+              "y": 67.71
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 57.6,
+              "y": 68.54
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 58.17,
+              "y": 68.44
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 59.02,
+              "y": 69.33
+            }
+          ],
+          "name": "Syndicate Thief",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 5,
+      "quest_id": 505,
+      "quest_name": "Syndicate Assassins",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 36,
+      "zone_or_sort_name": "Alterac Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2276,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 48.14,
+              "y": 59.11
+            }
+          ],
+          "name": "Magistrate Henry Maleb",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:505"
+      ],
+      "instruction": "Turn in [QT505 Syndicate Assassins] to Magistrate Henry Maleb",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 505,
+      "quest_name": "Syndicate Assassins",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 36,
+      "zone_or_sort_name": "Alterac Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 1740,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 58.32,
+              "y": 67.92
+            }
+          ],
+          "name": "Syndicate Documents",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 186420,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 47.94,
+              "y": 82.15
+            }
+          ],
+          "name": "Syndicate Documents",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:510"
+      ],
+      "instruction": "Accept [QA510 Foreboding Plans] from Syndicate Documents.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 510,
+      "quest_name": "Foreboding Plans",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 36,
+      "zone_or_sort_name": "Alterac Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:510"
+      ],
+      "instruction": "Complete [QC510 Foreboding Plans]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 510,
+      "quest_name": "Foreboding Plans",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 36,
+      "zone_or_sort_name": "Alterac Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2276,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 48.14,
+              "y": 59.11
+            }
+          ],
+          "name": "Magistrate Henry Maleb",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:510"
+      ],
+      "instruction": "Turn in [QT510 Foreboding Plans] to Magistrate Henry Maleb",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 510,
+      "quest_name": "Foreboding Plans",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 36,
+      "zone_or_sort_name": "Alterac Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2276,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 48.14,
+              "y": 59.11
+            }
+          ],
+          "name": "Magistrate Henry Maleb",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:512"
+      ],
+      "instruction": "Accept [QA512 Noble Deaths] from Magistrate Henry Maleb.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 512,
+      "quest_name": "Noble Deaths",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 36,
+      "zone_or_sort_name": "Alterac Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2263,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 49.47,
+              "y": 58.73
+            }
+          ],
+          "name": "Marshal Redpath",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:500"
+      ],
+      "instruction": "Accept [QA500 Crushridge Bounty] from Marshal Redpath.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 500,
+      "quest_name": "Crushridge Bounty",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 36,
+      "zone_or_sort_name": "Alterac Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:512"
+      ],
+      "instruction": "Collect or use the required item: Alterac Signet Ring. [QC512 Noble Deaths]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Alterac Signet Ring",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 3505,
+          "kind": "item",
+          "locations": [],
+          "name": "Alterac Signet Ring",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 12,
+      "quest_id": 512,
+      "quest_name": "Noble Deaths",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 36,
+      "zone_or_sort_name": "Alterac Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:500"
+      ],
+      "instruction": "Collect or use the required item: Dirty Knucklebones. [QC500 Crushridge Bounty]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Dirty Knucklebones",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 2843,
+          "kind": "item",
+          "locations": [],
+          "name": "Dirty Knucklebones",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 13,
+      "quest_id": 500,
+      "quest_name": "Crushridge Bounty",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 36,
+      "zone_or_sort_name": "Alterac Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2263,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 49.47,
+              "y": 58.73
+            }
+          ],
+          "name": "Marshal Redpath",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:500"
+      ],
+      "instruction": "Turn in [QT500 Crushridge Bounty] to Marshal Redpath",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 500,
+      "quest_name": "Crushridge Bounty",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 36,
+      "zone_or_sort_name": "Alterac Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2276,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 48.14,
+              "y": 59.11
+            }
+          ],
+          "name": "Magistrate Henry Maleb",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:512"
+      ],
+      "instruction": "Turn in [QT512 Noble Deaths] to Magistrate Henry Maleb",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 512,
+      "quest_name": "Noble Deaths",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 36,
+      "zone_or_sort_name": "Alterac Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2263,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 49.47,
+              "y": 58.73
+            }
+          ],
+          "name": "Marshal Redpath",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:504"
+      ],
+      "instruction": "Accept [QA504 Crushridge Warmongers] from Marshal Redpath.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 504,
+      "quest_name": "Crushridge Warmongers",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 36,
+      "zone_or_sort_name": "Alterac Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:504"
+      ],
+      "instruction": "Complete the required NPC or creature objective: Crushridge Warmonger. [QC504 Crushridge Warmongers]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Crushridge Warmonger",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2287,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 36.75,
+              "y": 58.02
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 38.08,
+              "y": 55.98
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 38.36,
+              "y": 57.8
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 39.24,
+              "y": 59.55
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 39.16,
+              "y": 54.5
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 37.03,
+              "y": 53.15
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 35.71,
+              "y": 51.04
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 36.83,
+              "y": 49.08
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 35.83,
+              "y": 54.31
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 36.26,
+              "y": 54.99
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 35.77,
+              "y": 53.86
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 37.04,
+              "y": 54.46
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 35.88,
+              "y": 55.57
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 36.32,
+              "y": 52.51
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 35.07,
+              "y": 53.29
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 36.16,
+              "y": 54.95
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 35.57,
+              "y": 53.23
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 35.91,
+              "y": 52.76
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 36.3,
+              "y": 53.79
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 36.37,
+              "y": 52.31
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 35.69,
+              "y": 55.52
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 36.37,
+              "y": 53.93
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 36.25,
+              "y": 53.62
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 40.53,
+              "y": 52.96
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 35.56,
+              "y": 53.19
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 34.94,
+              "y": 53.45
+            }
+          ],
+          "name": "Crushridge Warmonger",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 17,
+      "quest_id": 504,
+      "quest_name": "Crushridge Warmongers",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 36,
+      "zone_or_sort_name": "Alterac Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2263,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 49.47,
+              "y": 58.73
+            }
+          ],
+          "name": "Marshal Redpath",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:504"
+      ],
+      "instruction": "Turn in [QT504 Crushridge Warmongers] to Marshal Redpath",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 504,
+      "quest_name": "Crushridge Warmongers",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 36,
+      "zone_or_sort_name": "Alterac Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 1740,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 58.32,
+              "y": 67.92
+            }
+          ],
+          "name": "Syndicate Documents",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 186420,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 47.94,
+              "y": 82.15
+            }
+          ],
+          "name": "Syndicate Documents",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:511"
+      ],
+      "instruction": "Accept [QA511 Encrypted Letter] from Syndicate Documents.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 511,
+      "quest_name": "Encrypted Letter",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 36,
+      "zone_or_sort_name": "Alterac Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:511"
+      ],
+      "instruction": "Complete [QC511 Encrypted Letter]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 511,
+      "quest_name": "Encrypted Letter",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 36,
+      "zone_or_sort_name": "Alterac Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2277,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 50.57,
+              "y": 57.09
+            }
+          ],
+          "name": "Loremaster Dibbs",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:511"
+      ],
+      "instruction": "Turn in [QT511 Encrypted Letter] to Loremaster Dibbs",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 511,
+      "quest_name": "Encrypted Letter",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 36,
+      "zone_or_sort_name": "Alterac Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2277,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 50.57,
+              "y": 57.09
+            }
+          ],
+          "name": "Loremaster Dibbs",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:514"
+      ],
+      "instruction": "Accept [QA514 Letter to Stormpike] from Loremaster Dibbs.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 22,
+      "quest_id": 514,
+      "quest_name": "Letter to Stormpike",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 36,
+      "zone_or_sort_name": "Alterac Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 3668,
+          "kind": "item",
+          "locations": [],
+          "name": "Assassin's Contract",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:522"
+      ],
+      "instruction": "Accept [QA522 Assassin's Contract] from Assassin's Contract.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 23,
+      "quest_id": 522,
+      "quest_name": "Assassin's Contract",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 36,
+      "zone_or_sort_name": "Alterac Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:514"
+      ],
+      "instruction": "Complete [QC514 Letter to Stormpike]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 24,
+      "quest_id": 514,
+      "quest_name": "Letter to Stormpike",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 36,
+      "zone_or_sort_name": "Alterac Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:522"
+      ],
+      "instruction": "Complete [QC522 Assassin's Contract]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 25,
+      "quest_id": 522,
+      "quest_name": "Assassin's Contract",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 36,
+      "zone_or_sort_name": "Alterac Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2276,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 48.14,
+              "y": 59.11
+            }
+          ],
+          "name": "Magistrate Henry Maleb",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:522"
+      ],
+      "instruction": "Turn in [QT522 Assassin's Contract] to Magistrate Henry Maleb",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 26,
+      "quest_id": 522,
+      "quest_name": "Assassin's Contract",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 36,
+      "zone_or_sort_name": "Alterac Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1356,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 74.64,
+              "y": 11.74
+            }
+          ],
+          "name": "Prospector Stormpike",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:514"
+      ],
+      "instruction": "Turn in [QT514 Letter to Stormpike] to Prospector Stormpike",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 27,
+      "quest_id": 514,
+      "quest_name": "Letter to Stormpike",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 36,
+      "zone_or_sort_name": "Alterac Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2276,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 48.14,
+              "y": 59.11
+            }
+          ],
+          "name": "Magistrate Henry Maleb",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:523"
+      ],
+      "instruction": "Accept [QA523 Baron's Demise] from Magistrate Henry Maleb.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 28,
+      "quest_id": 523,
+      "quest_name": "Baron's Demise",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 36,
+      "zone_or_sort_name": "Alterac Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:523"
+      ],
+      "instruction": "Collect or use the required item: Head of Baron Vardus. [QC523 Baron's Demise]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Head of Baron Vardus",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 3626,
+          "kind": "item",
+          "locations": [],
+          "name": "Head of Baron Vardus",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 29,
+      "quest_id": 523,
+      "quest_name": "Baron's Demise",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 36,
+      "zone_or_sort_name": "Alterac Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2276,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 48.14,
+              "y": 59.11
+            }
+          ],
+          "name": "Magistrate Henry Maleb",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:523"
+      ],
+      "instruction": "Turn in [QT523 Baron's Demise] to Magistrate Henry Maleb",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 30,
+      "quest_id": 523,
+      "quest_name": "Baron's Demise",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 36,
+      "zone_or_sort_name": "Alterac Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1356,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 74.64,
+              "y": 11.74
+            }
+          ],
+          "name": "Prospector Stormpike",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:525"
+      ],
+      "instruction": "Accept [QA525 Further Mysteries] from Prospector Stormpike.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 31,
+      "quest_id": 525,
+      "quest_name": "Further Mysteries",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 36,
+      "zone_or_sort_name": "Alterac Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:525"
+      ],
+      "instruction": "Complete [QC525 Further Mysteries]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 32,
+      "quest_id": 525,
+      "quest_name": "Further Mysteries",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 36,
+      "zone_or_sort_name": "Alterac Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2276,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 48.14,
+              "y": 59.11
+            }
+          ],
+          "name": "Magistrate Henry Maleb",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:525"
+      ],
+      "instruction": "Turn in [QT525 Further Mysteries] to Magistrate Henry Maleb",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 33,
+      "quest_id": 525,
+      "quest_name": "Further Mysteries",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 36,
+      "zone_or_sort_name": "Alterac Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2276,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 48.14,
+              "y": 59.11
+            }
+          ],
+          "name": "Magistrate Henry Maleb",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:537"
+      ],
+      "instruction": "Accept [QA537 Dark Council] from Magistrate Henry Maleb.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 34,
+      "quest_id": 537,
+      "quest_name": "Dark Council",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 36,
+      "zone_or_sort_name": "Alterac Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 3706,
+          "kind": "item",
+          "locations": [],
+          "name": "Ensorcelled Parchment",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:551"
+      ],
+      "instruction": "Accept [QA551 The Ensorcelled Parchment] from Ensorcelled Parchment.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 35,
+      "quest_id": 551,
+      "quest_name": "The Ensorcelled Parchment",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 36,
+      "zone_or_sort_name": "Alterac Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:537"
+      ],
+      "instruction": "Complete the required objectives \u2014 NPCs or creatures: Argus Shadow Mage; items: Head of Nagaz. [QC537 Dark Council]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required objectives \u2014 NPCs or creatures: Argus Shadow Mage; items: Head of Nagaz",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2318,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 62.34,
+              "y": 40.58
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 63.63,
+              "y": 43.7
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 61.25,
+              "y": 45.83
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 60.26,
+              "y": 43.98
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 57.43,
+              "y": 46.21
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 53.28,
+              "y": 20.73
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 47.79,
+              "y": 17.45
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 56.11,
+              "y": 27.3
+            },
+            {
+              "map_id": 36,
+              "map_name": "Alterac Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 58.7,
+              "y": 30.52
+            }
+          ],
+          "name": "Argus Shadow Mage",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 3672,
+          "kind": "item",
+          "locations": [],
+          "name": "Head of Nagaz",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 36,
+      "quest_id": 537,
+      "quest_name": "Dark Council",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 36,
+      "zone_or_sort_name": "Alterac Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:551"
+      ],
+      "instruction": "Complete [QC551 The Ensorcelled Parchment]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 37,
+      "quest_id": 551,
+      "quest_name": "The Ensorcelled Parchment",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 36,
+      "zone_or_sort_name": "Alterac Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2276,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 48.14,
+              "y": 59.11
+            }
+          ],
+          "name": "Magistrate Henry Maleb",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:537"
+      ],
+      "instruction": "Turn in [QT537 Dark Council] to Magistrate Henry Maleb",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 38,
+      "quest_id": 537,
+      "quest_name": "Dark Council",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 36,
+      "zone_or_sort_name": "Alterac Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2277,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 50.57,
+              "y": 57.09
+            }
+          ],
+          "name": "Loremaster Dibbs",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:551"
+      ],
+      "instruction": "Turn in [QT551 The Ensorcelled Parchment] to Loremaster Dibbs",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 39,
+      "quest_id": 551,
+      "quest_name": "The Ensorcelled Parchment",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 36,
+      "zone_or_sort_name": "Alterac Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2277,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 50.57,
+              "y": 57.09
+            }
+          ],
+          "name": "Loremaster Dibbs",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:554"
+      ],
+      "instruction": "Accept [QA554 Stormpike's Deciphering] from Loremaster Dibbs.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 40,
+      "quest_id": 554,
+      "quest_name": "Stormpike's Deciphering",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 36,
+      "zone_or_sort_name": "Alterac Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:554"
+      ],
+      "instruction": "Complete [QC554 Stormpike's Deciphering]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 41,
+      "quest_id": 554,
+      "quest_name": "Stormpike's Deciphering",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 36,
+      "zone_or_sort_name": "Alterac Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1356,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 74.64,
+              "y": 11.74
+            }
+          ],
+          "name": "Prospector Stormpike",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:554"
+      ],
+      "instruction": "Turn in [QT554 Stormpike's Deciphering] to Prospector Stormpike",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 42,
+      "quest_id": 554,
+      "quest_name": "Stormpike's Deciphering",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 36,
+      "zone_or_sort_name": "Alterac Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 268,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 72.62,
+              "y": 47.62
+            }
+          ],
+          "name": "Sirra Von'Indi",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:227"
+      ],
+      "instruction": "Accept [QA227 Morgan Ladimore] from Sirra Von'Indi.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 43,
+      "quest_id": 227,
+      "quest_name": "Morgan Ladimore",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:227"
+      ],
+      "instruction": "Complete [QC227 Morgan Ladimore]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 44,
+      "quest_id": 227,
+      "quest_name": "Morgan Ladimore",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 264,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 73.54,
+              "y": 46.82
+            }
+          ],
+          "name": "Commander Althea Ebonlocke",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:227"
+      ],
+      "instruction": "Turn in [QT227 Morgan Ladimore] to Commander Althea Ebonlocke",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 45,
+      "quest_id": 227,
+      "quest_name": "Morgan Ladimore",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 264,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 73.54,
+              "y": 46.82
+            }
+          ],
+          "name": "Commander Althea Ebonlocke",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:228"
+      ],
+      "instruction": "Accept [QA228 Mor'Ladim] from Commander Althea Ebonlocke.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 46,
+      "quest_id": 228,
+      "quest_name": "Mor'Ladim",
+      "quest_tag": "Elite",
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "before_quest_id": 228,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:228:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 267,
+      "map_name": "Hillsbrad Foothills",
+      "optional": true,
+      "order": 47,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        228
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 48.14,
+      "y": 59.11
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:228"
+      ],
+      "instruction": "Elite/group recommended \u2014 Collect or use the required item: Mor'Ladim's Skull. [QC228 Mor'Ladim]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Mor'Ladim's Skull",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 3514,
+          "kind": "item",
+          "locations": [],
+          "name": "Mor'Ladim's Skull",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 48,
+      "quest_id": 228,
+      "quest_name": "Mor'Ladim",
+      "quest_tag": "Elite",
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 264,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 73.54,
+              "y": 46.82
+            }
+          ],
+          "name": "Commander Althea Ebonlocke",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:228"
+      ],
+      "instruction": "Turn in [QT228 Mor'Ladim] to Commander Althea Ebonlocke",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 49,
+      "quest_id": 228,
+      "quest_name": "Mor'Ladim",
+      "quest_tag": "Elite",
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 264,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 73.54,
+              "y": 46.82
+            }
+          ],
+          "name": "Commander Althea Ebonlocke",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:229"
+      ],
+      "instruction": "Accept [QA229 The Daughter Who Lived] from Commander Althea Ebonlocke.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 50,
+      "quest_id": 229,
+      "quest_name": "The Daughter Who Lived",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:229"
+      ],
+      "instruction": "Complete [QC229 The Daughter Who Lived]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 51,
+      "quest_id": 229,
+      "quest_name": "The Daughter Who Lived",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 576,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 74.02,
+              "y": 47.82
+            }
+          ],
+          "name": "Watcher Ladimore",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:229"
+      ],
+      "instruction": "Turn in [QT229 The Daughter Who Lived] to Watcher Ladimore",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 52,
+      "quest_id": 229,
+      "quest_name": "The Daughter Who Lived",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 576,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 74.02,
+              "y": 47.82
+            }
+          ],
+          "name": "Watcher Ladimore",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:231"
+      ],
+      "instruction": "Accept [QA231 A Daughter's Love] from Watcher Ladimore.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 53,
+      "quest_id": 231,
+      "quest_name": "A Daughter's Love",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:231"
+      ],
+      "instruction": "Complete [QC231 A Daughter's Love]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 54,
+      "quest_id": 231,
+      "quest_name": "A Daughter's Love",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 61,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 17.73,
+              "y": 29.08
+            }
+          ],
+          "name": "A Weathered Grave",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:231"
+      ],
+      "instruction": "Turn in [QT231 A Daughter's Love] to A Weathered Grave",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 55,
+      "quest_id": 231,
+      "quest_name": "A Daughter's Love",
+      "quest_tag": null,
+      "required_level": 31,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    }
+  ],
+  "title": "35 Alterac Mountains"
+}

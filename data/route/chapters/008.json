@@ -1,0 +1,5213 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 07 Westfall & Dun Morogh, or select this chapter on a partially completed character. Begin in Loch Modan with Mountaineer Cobbleflint. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 38,
+    "map_name": "Loch Modan",
+    "x": 22.07,
+    "y": 73.13
+  },
+  "entry_zone_or_sort": 38,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 33,
+    "map_name": "Stranglethorn Vale",
+    "quest_id": 7810,
+    "tag": "QT",
+    "x": 29.59,
+    "y": 47.38
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/008_world_08.lua",
+  "id": "008-primary-08-loch-modan",
+  "maximum_level": 15,
+  "minimum_level": 15,
+  "next_chapter": "09 Stormwind City",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "07 Westfall & Dun Morogh",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 224,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5541:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:224:starter"
+      ],
+      "instruction": "Travel from Dun Morogh to Loch Modan. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G22.07,73.13 Loch Modan]. [O]",
+      "map_id": 38,
+      "map_name": "Loch Modan",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 1,
+      "origin_map_name": "Dun Morogh",
+      "origin_x": 40.68,
+      "origin_y": 65.13,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 22.07,
+      "y": 73.13
+    },
+    {
+      "before_quest_id": 224,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:224:starter"
+      ],
+      "instruction": "Before you begin: travel to Loch Modan and meet the first quest giver at [G22.07,73.13 Loch Modan]. Leave at least two quest-log slots open. [O]",
+      "map_id": 38,
+      "map_name": "Loch Modan",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 22.07,
+      "y": 73.13
+    },
+    {
+      "before_quest_id": 224,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:224:requiredLevel"
+      ],
+      "instruction": "Reach level 15 before accepting In Defense of the King's Lands. [XP15 Level 15]",
+      "map_id": 38,
+      "map_name": "Loch Modan",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 15,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 22.07,
+      "y": 73.13
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1089,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 22.07,
+              "y": 73.13
+            }
+          ],
+          "name": "Mountaineer Cobbleflint",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:224"
+      ],
+      "instruction": "Accept [QA224 In Defense of the King's Lands] from Mountaineer Cobbleflint.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 224,
+      "quest_name": "In Defense of the King's Lands",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:224"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Stonesplinter Trogg, Stonesplinter Scout. [QC224 In Defense of the King's Lands]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Stonesplinter Trogg, Stonesplinter Scout",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1161,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 33.14,
+              "y": 70.92
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 34.74,
+              "y": 71.32
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 32.37,
+              "y": 72.36
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 33.8,
+              "y": 71.16
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 34.71,
+              "y": 73.95
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 33.36,
+              "y": 77.84
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 35.24,
+              "y": 71.92
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 32.12,
+              "y": 70.49
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 34.93,
+              "y": 72.48
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 30.7,
+              "y": 75.49
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 31.54,
+              "y": 75.71
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 30.84,
+              "y": 74.03
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 31.56,
+              "y": 77.17
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 32.07,
+              "y": 77.88
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 30.81,
+              "y": 74.34
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 30.94,
+              "y": 75.16
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 31.44,
+              "y": 76.49
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 31.65,
+              "y": 75.35
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 33.07,
+              "y": 70.0
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 30.06,
+              "y": 71.91
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 32.05,
+              "y": 79.15
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 29.63,
+              "y": 72.54
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 33.36,
+              "y": 70.26
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 31.25,
+              "y": 79.95
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 31.55,
+              "y": 80.75
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 33.47,
+              "y": 70.36
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 32.78,
+              "y": 79.34
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 30.17,
+              "y": 72.66
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 32.11,
+              "y": 79.59
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 28.33,
+              "y": 48.89
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 27.13,
+              "y": 54.2
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 26.07,
+              "y": 51.8
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 26.28,
+              "y": 48.41
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 27.15,
+              "y": 46.69
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 26.58,
+              "y": 49.02
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 26.15,
+              "y": 49.04
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 26.57,
+              "y": 50.17
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 27.32,
+              "y": 50.19
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 26.98,
+              "y": 56.54
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 27.19,
+              "y": 57.08
+            }
+          ],
+          "name": "Stonesplinter Trogg",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1162,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 35.26,
+              "y": 70.99
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 33.73,
+              "y": 71.84
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 33.45,
+              "y": 74.21
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 35.41,
+              "y": 71.04
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 33.3,
+              "y": 75.89
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 28.43,
+              "y": 59.36
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 31.69,
+              "y": 76.66
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 31.01,
+              "y": 71.74
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 30.55,
+              "y": 75.23
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 32.57,
+              "y": 79.89
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 31.37,
+              "y": 80.9
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 33.85,
+              "y": 70.8
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 32.0,
+              "y": 74.93
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 31.29,
+              "y": 74.43
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 31.86,
+              "y": 74.4
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 32.72,
+              "y": 80.04
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 30.78,
+              "y": 80.83
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 29.57,
+              "y": 72.89
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 34.96,
+              "y": 76.29
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 34.7,
+              "y": 76.78
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 35.12,
+              "y": 76.54
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 34.5,
+              "y": 76.19
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 27.76,
+              "y": 48.55
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 27.39,
+              "y": 55.94
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 26.71,
+              "y": 57.42
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 27.58,
+              "y": 57.78
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 26.54,
+              "y": 56.74
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 26.37,
+              "y": 57.33
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 25.83,
+              "y": 48.62
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 25.92,
+              "y": 49.04
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 26.11,
+              "y": 49.37
+            }
+          ],
+          "name": "Stonesplinter Scout",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 5,
+      "quest_id": 224,
+      "quest_name": "In Defense of the King's Lands",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1089,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 22.07,
+              "y": 73.13
+            }
+          ],
+          "name": "Mountaineer Cobbleflint",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:224"
+      ],
+      "instruction": "Turn in [QT224 In Defense of the King's Lands] to Mountaineer Cobbleflint",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 224,
+      "quest_name": "In Defense of the King's Lands",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1091,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 23.54,
+              "y": 76.4
+            }
+          ],
+          "name": "Mountaineer Gravelgaw",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:237"
+      ],
+      "instruction": "Accept [QA237 In Defense of the King's Lands] from Mountaineer Gravelgaw.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 237,
+      "quest_name": "In Defense of the King's Lands",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:237"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Stonesplinter Skullthumper, Stonesplinter Seer. [QC237 In Defense of the King's Lands]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Stonesplinter Skullthumper, Stonesplinter Seer",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1163,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 36.35,
+              "y": 88.36
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 34.38,
+              "y": 87.63
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 34.9,
+              "y": 88.73
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 32.76,
+              "y": 89.86
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 34.15,
+              "y": 85.91
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 35.15,
+              "y": 84.03
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 35.34,
+              "y": 82.93
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 35.64,
+              "y": 80.86
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 36.5,
+              "y": 81.42
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 47.79,
+              "y": 28.49
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 28.93,
+              "y": 84.93
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 29.02,
+              "y": 81.22
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 36.11,
+              "y": 83.55
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 36.3,
+              "y": 83.63
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 37.12,
+              "y": 85.35
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 35.91,
+              "y": 84.2
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 35.98,
+              "y": 84.66
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 35.47,
+              "y": 87.48
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 36.18,
+              "y": 86.53
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 31.31,
+              "y": 85.37
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 28.71,
+              "y": 86.22
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 28.31,
+              "y": 87.03
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 28.19,
+              "y": 86.9
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 48.13,
+              "y": 29.1
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 48.31,
+              "y": 21.18
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 48.12,
+              "y": 20.93
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 48.25,
+              "y": 20.65
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 50.52,
+              "y": 23.98
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 27.51,
+              "y": 85.89
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 51.25,
+              "y": 23.66
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 27.98,
+              "y": 81.18
+            }
+          ],
+          "name": "Stonesplinter Skullthumper",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1166,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 34.87,
+              "y": 90.05
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 35.64,
+              "y": 89.5
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 33.75,
+              "y": 89.06
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 35.23,
+              "y": 87.46
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 34.01,
+              "y": 85.01
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 34.63,
+              "y": 84.87
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 36.61,
+              "y": 79.71
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 35.45,
+              "y": 80.1
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 35.3,
+              "y": 82.56
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 34.37,
+              "y": 81.78
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 34.75,
+              "y": 82.41
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 48.67,
+              "y": 28.88
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 50.11,
+              "y": 27.24
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 29.05,
+              "y": 80.89
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 28.49,
+              "y": 83.71
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 29.58,
+              "y": 81.46
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 36.33,
+              "y": 82.98
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 36.65,
+              "y": 84.19
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 36.75,
+              "y": 77.75
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 33.55,
+              "y": 88.46
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 30.09,
+              "y": 83.99
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 29.42,
+              "y": 86.72
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 33.74,
+              "y": 87.41
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 36.36,
+              "y": 85.99
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 27.93,
+              "y": 83.39
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 28.08,
+              "y": 83.46
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 29.01,
+              "y": 87.71
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 29.22,
+              "y": 87.61
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 48.04,
+              "y": 19.11
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 49.96,
+              "y": 23.57
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 47.84,
+              "y": 23.08
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 46.5,
+              "y": 21.2
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 48.66,
+              "y": 20.99
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 49.59,
+              "y": 29.96
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 49.03,
+              "y": 21.96
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 47.69,
+              "y": 21.08
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 48.61,
+              "y": 29.93
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 50.59,
+              "y": 25.05
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 48.9,
+              "y": 29.92
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 48.83,
+              "y": 29.46
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 50.87,
+              "y": 24.05
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 27.45,
+              "y": 85.55
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 27.97,
+              "y": 86.05
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 51.04,
+              "y": 23.32
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 34.57,
+              "y": 89.78
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 34.98,
+              "y": 90.9
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 27.88,
+              "y": 81.45
+            }
+          ],
+          "name": "Stonesplinter Seer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 8,
+      "quest_id": 237,
+      "quest_name": "In Defense of the King's Lands",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1091,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 23.54,
+              "y": 76.4
+            }
+          ],
+          "name": "Mountaineer Gravelgaw",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:237"
+      ],
+      "instruction": "Turn in [QT237 In Defense of the King's Lands] to Mountaineer Gravelgaw",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 237,
+      "quest_name": "In Defense of the King's Lands",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 256,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 37.3,
+              "y": 46.52
+            }
+          ],
+          "name": "WANTED",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:256"
+      ],
+      "instruction": "Accept [QA256 WANTED: Chok'sul] from WANTED.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 256,
+      "quest_name": "WANTED: Chok'sul",
+      "quest_tag": "Elite",
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "before_quest_id": 256,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:256:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 38,
+      "map_name": "Loch Modan",
+      "optional": true,
+      "order": 11,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        256
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 22.07,
+      "y": 73.13
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:256"
+      ],
+      "instruction": "Elite/group recommended \u2014 Collect or use the required item: Chok'sul's Head. [QC256 WANTED: Chok'sul]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Chok'sul's Head",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 2561,
+          "kind": "item",
+          "locations": [],
+          "name": "Chok'sul's Head",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 12,
+      "quest_id": 256,
+      "quest_name": "WANTED: Chok'sul",
+      "quest_tag": "Elite",
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1139,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 34.6,
+              "y": 44.47
+            }
+          ],
+          "name": "Magistrate Bluntnose",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:256"
+      ],
+      "instruction": "Turn in [QT256 WANTED: Chok'sul] to Magistrate Bluntnose",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 256,
+      "quest_name": "WANTED: Chok'sul",
+      "quest_tag": "Elite",
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1090,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 23.47,
+              "y": 74.51
+            }
+          ],
+          "name": "Mountaineer Wallbang",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:263"
+      ],
+      "instruction": "Accept [QA263 In Defense of the King's Lands] from Mountaineer Wallbang.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 263,
+      "quest_name": "In Defense of the King's Lands",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:263"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Stonesplinter Shaman, Stonesplinter Bonesnapper. [QC263 In Defense of the King's Lands]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Stonesplinter Shaman, Stonesplinter Bonesnapper",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1197,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 34.27,
+              "y": 91.62
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 33.8,
+              "y": 93.87
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 38.1,
+              "y": 87.73
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 38.23,
+              "y": 87.7
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 37.47,
+              "y": 86.23
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 36.25,
+              "y": 91.02
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 37.52,
+              "y": 90.07
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 36.1,
+              "y": 92.53
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 36.15,
+              "y": 94.15
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 34.67,
+              "y": 94.81
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 34.76,
+              "y": 94.35
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 34.49,
+              "y": 94.57
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 55.17,
+              "y": 26.96
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 51.78,
+              "y": 24.63
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 54.03,
+              "y": 27.17
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 54.51,
+              "y": 26.43
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 53.68,
+              "y": 25.08
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 54.15,
+              "y": 25.98
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 51.92,
+              "y": 23.54
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 52.55,
+              "y": 23.89
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 36.44,
+              "y": 93.54
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 36.77,
+              "y": 93.89
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 35.07,
+              "y": 91.42
+            }
+          ],
+          "name": "Stonesplinter Shaman",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1164,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 32.99,
+              "y": 91.27
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 33.34,
+              "y": 90.99
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 34.56,
+              "y": 91.52
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 37.88,
+              "y": 87.01
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 35.85,
+              "y": 92.09
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 35.47,
+              "y": 94.08
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 35.87,
+              "y": 93.93
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 52.16,
+              "y": 24.74
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 52.81,
+              "y": 26.77
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 52.69,
+              "y": 24.94
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 54.54,
+              "y": 26.99
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 54.41,
+              "y": 26.71
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 52.17,
+              "y": 21.79
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 53.12,
+              "y": 22.83
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 52.23,
+              "y": 24.09
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 37.33,
+              "y": 92.38
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 37.27,
+              "y": 93.22
+            }
+          ],
+          "name": "Stonesplinter Bonesnapper",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 15,
+      "quest_id": 263,
+      "quest_name": "In Defense of the King's Lands",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1090,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 23.47,
+              "y": 74.51
+            }
+          ],
+          "name": "Mountaineer Wallbang",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:263"
+      ],
+      "instruction": "Turn in [QT263 In Defense of the King's Lands] to Mountaineer Wallbang",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 263,
+      "quest_name": "In Defense of the King's Lands",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1092,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 23.23,
+              "y": 73.68
+            }
+          ],
+          "name": "Captain Rugelfuss",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:217"
+      ],
+      "instruction": "Accept [QA217 In Defense of the King's Lands] from Captain Rugelfuss.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 217,
+      "quest_name": "In Defense of the King's Lands",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1092,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 23.23,
+              "y": 73.68
+            }
+          ],
+          "name": "Captain Rugelfuss",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:267"
+      ],
+      "instruction": "Accept [QA267 The Trogg Threat] from Captain Rugelfuss.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 267,
+      "quest_name": "The Trogg Threat",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:217"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Grawmug, Gnasher, Brawler. [QC217 In Defense of the King's Lands]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Grawmug, Gnasher, Brawler",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1205,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 34.77,
+              "y": 90.45
+            }
+          ],
+          "name": "Grawmug",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1206,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 34.71,
+              "y": 90.82
+            }
+          ],
+          "name": "Gnasher",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1207,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 34.64,
+              "y": 90.55
+            }
+          ],
+          "name": "Brawler",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 19,
+      "quest_id": 217,
+      "quest_name": "In Defense of the King's Lands",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:267"
+      ],
+      "instruction": "Collect or use the required item: Trogg Stone Tooth. [QC267 The Trogg Threat]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Trogg Stone Tooth",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 2536,
+          "kind": "item",
+          "locations": [],
+          "name": "Trogg Stone Tooth",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 20,
+      "quest_id": 267,
+      "quest_name": "The Trogg Threat",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1092,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 23.23,
+              "y": 73.68
+            }
+          ],
+          "name": "Captain Rugelfuss",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:217"
+      ],
+      "instruction": "Turn in [QT217 In Defense of the King's Lands] to Captain Rugelfuss",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 217,
+      "quest_name": "In Defense of the King's Lands",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1092,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 23.23,
+              "y": 73.68
+            }
+          ],
+          "name": "Captain Rugelfuss",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:267"
+      ],
+      "instruction": "Turn in [QT267 The Trogg Threat] to Captain Rugelfuss",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 22,
+      "quest_id": 267,
+      "quest_name": "The Trogg Threat",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1344,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 65.93,
+              "y": 65.62
+            }
+          ],
+          "name": "Prospector Ironband",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:298"
+      ],
+      "instruction": "Accept [QA298 Excavation Progress Report] from Prospector Ironband.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 23,
+      "quest_id": 298,
+      "quest_name": "Excavation Progress Report",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:298"
+      ],
+      "instruction": "Complete [QC298 Excavation Progress Report]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 24,
+      "quest_id": 298,
+      "quest_name": "Excavation Progress Report",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1105,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 37.24,
+              "y": 47.38
+            }
+          ],
+          "name": "Jern Hornhelm",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:298"
+      ],
+      "instruction": "Turn in [QT298 Excavation Progress Report] to Jern Hornhelm",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 25,
+      "quest_id": 298,
+      "quest_name": "Excavation Progress Report",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1105,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 37.24,
+              "y": 47.38
+            }
+          ],
+          "name": "Jern Hornhelm",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:301"
+      ],
+      "instruction": "Accept [QA301 Report to Ironforge] from Jern Hornhelm.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 26,
+      "quest_id": 301,
+      "quest_name": "Report to Ironforge",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:301"
+      ],
+      "instruction": "Complete [QC301 Report to Ironforge]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 27,
+      "quest_id": 301,
+      "quest_name": "Report to Ironforge",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1356,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 74.64,
+              "y": 11.74
+            }
+          ],
+          "name": "Prospector Stormpike",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:301"
+      ],
+      "instruction": "Turn in [QT301 Report to Ironforge] to Prospector Stormpike",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 28,
+      "quest_id": 301,
+      "quest_name": "Report to Ironforge",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1356,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 74.64,
+              "y": 11.74
+            }
+          ],
+          "name": "Prospector Stormpike",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:302"
+      ],
+      "instruction": "Accept [QA302 Powder to Ironband] from Prospector Stormpike.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 29,
+      "quest_id": 302,
+      "quest_name": "Powder to Ironband",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:302"
+      ],
+      "instruction": "Complete [QC302 Powder to Ironband]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 30,
+      "quest_id": 302,
+      "quest_name": "Powder to Ironband",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1105,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 37.24,
+              "y": 47.38
+            }
+          ],
+          "name": "Jern Hornhelm",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:302"
+      ],
+      "instruction": "Turn in [QT302 Powder to Ironband] to Jern Hornhelm",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 31,
+      "quest_id": 302,
+      "quest_name": "Powder to Ironband",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1105,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 37.24,
+              "y": 47.38
+            }
+          ],
+          "name": "Jern Hornhelm",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:273"
+      ],
+      "instruction": "Accept [QA273 Resupplying the Excavation] from Jern Hornhelm.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 32,
+      "quest_id": 273,
+      "quest_name": "Resupplying the Excavation",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:273"
+      ],
+      "instruction": "Complete the scripted or exploration event. [QC273 Resupplying the Excavation]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 33,
+      "quest_id": 273,
+      "quest_name": "Resupplying the Excavation",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2057,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 52.19,
+              "y": 69.32
+            }
+          ],
+          "name": "Huldar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:273"
+      ],
+      "instruction": "Turn in [QT273 Resupplying the Excavation] to Huldar",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 34,
+      "quest_id": 273,
+      "quest_name": "Resupplying the Excavation",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1343,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 24.76,
+              "y": 18.4
+            }
+          ],
+          "name": "Mountaineer Stormpike",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:307"
+      ],
+      "instruction": "Accept [QA307 Filthy Paws] from Mountaineer Stormpike.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 35,
+      "quest_id": 307,
+      "quest_name": "Filthy Paws",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:307"
+      ],
+      "instruction": "Collect or use the required item: Miners' Gear. [QC307 Filthy Paws]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Miners' Gear",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 2640,
+          "kind": "item",
+          "locations": [],
+          "name": "Miners' Gear",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 36,
+      "quest_id": 307,
+      "quest_name": "Filthy Paws",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1343,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 24.76,
+              "y": 18.4
+            }
+          ],
+          "name": "Mountaineer Stormpike",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:307"
+      ],
+      "instruction": "Turn in [QT307 Filthy Paws] to Mountaineer Stormpike",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 37,
+      "quest_id": 307,
+      "quest_name": "Filthy Paws",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1154,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 81.76,
+              "y": 61.66
+            }
+          ],
+          "name": "Marek Ironheart",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:385"
+      ],
+      "instruction": "Accept [QA385 Crocolisk Hunting] from Marek Ironheart.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 38,
+      "quest_id": 385,
+      "quest_name": "Crocolisk Hunting",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:385"
+      ],
+      "instruction": "Collect or use the required items: Crocolisk Meat, Crocolisk Skin. [QC385 Crocolisk Hunting]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Crocolisk Meat, Crocolisk Skin",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 2924,
+          "kind": "item",
+          "locations": [],
+          "name": "Crocolisk Meat",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 2925,
+          "kind": "item",
+          "locations": [],
+          "name": "Crocolisk Skin",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 39,
+      "quest_id": 385,
+      "quest_name": "Crocolisk Hunting",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1154,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 81.76,
+              "y": 61.66
+            }
+          ],
+          "name": "Marek Ironheart",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:385"
+      ],
+      "instruction": "Turn in [QT385 Crocolisk Hunting] to Marek Ironheart",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 40,
+      "quest_id": 385,
+      "quest_name": "Crocolisk Hunting",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1340,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 34.17,
+              "y": 47.84
+            }
+          ],
+          "name": "Mountaineer Kadrell",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:416"
+      ],
+      "instruction": "Accept [QA416 Rat Catching] from Mountaineer Kadrell.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 41,
+      "quest_id": 416,
+      "quest_name": "Rat Catching",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "before_quest_id": 418,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:npc:1572",
+        "authored-route:guidelime-tugs-tbc-alliance-2.50:9-11 Dun Morogh, Loch Modan.lua:29"
+      ],
+      "instruction": "Optional: learn the flight path from Thorgrum Borrelson. [P][G33.94,50.95 Loch Modan][O]",
+      "map_id": 38,
+      "map_name": "Loch Modan",
+      "optional": true,
+      "order": 42,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "acquire_flight_path",
+      "verification": "cross_verified_questie_and_authored_route",
+      "x": 33.94,
+      "y": 50.95
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1963,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 34.83,
+              "y": 49.28
+            }
+          ],
+          "name": "Vidra Hearthstove",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:418"
+      ],
+      "instruction": "Accept [QA418 Thelsamar Blood Sausages] from Vidra Hearthstove.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 43,
+      "quest_id": 418,
+      "quest_name": "Thelsamar Blood Sausages",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:416"
+      ],
+      "instruction": "Collect or use the required item: Tunnel Rat Ear. [QC416 Rat Catching]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Tunnel Rat Ear",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 3110,
+          "kind": "item",
+          "locations": [],
+          "name": "Tunnel Rat Ear",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 44,
+      "quest_id": 416,
+      "quest_name": "Rat Catching",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:418"
+      ],
+      "instruction": "Collect or use the required items: Boar Intestines, Bear Meat, Spider Ichor. [QC418 Thelsamar Blood Sausages]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Boar Intestines, Bear Meat, Spider Ichor",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 3172,
+          "kind": "item",
+          "locations": [],
+          "name": "Boar Intestines",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 3173,
+          "kind": "item",
+          "locations": [],
+          "name": "Bear Meat",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 3174,
+          "kind": "item",
+          "locations": [],
+          "name": "Spider Ichor",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 45,
+      "quest_id": 418,
+      "quest_name": "Thelsamar Blood Sausages",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1963,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 34.83,
+              "y": 49.28
+            }
+          ],
+          "name": "Vidra Hearthstove",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:418"
+      ],
+      "instruction": "Turn in [QT418 Thelsamar Blood Sausages] to Vidra Hearthstove",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 46,
+      "quest_id": 418,
+      "quest_name": "Thelsamar Blood Sausages",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1340,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 34.17,
+              "y": 47.84
+            }
+          ],
+          "name": "Mountaineer Kadrell",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:416"
+      ],
+      "instruction": "Turn in [QT416 Rat Catching] to Mountaineer Kadrell",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 47,
+      "quest_id": 416,
+      "quest_name": "Rat Catching",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2057,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 52.19,
+              "y": 69.32
+            }
+          ],
+          "name": "Huldar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:454"
+      ],
+      "instruction": "Accept [QA454 After the Ambush] from Huldar.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 48,
+      "quest_id": 454,
+      "quest_name": "After the Ambush",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:454"
+      ],
+      "instruction": "Complete [QC454 After the Ambush]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 49,
+      "quest_id": 454,
+      "quest_name": "After the Ambush",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1379,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 52.21,
+              "y": 69.43
+            }
+          ],
+          "name": "Miran",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:454"
+      ],
+      "instruction": "Turn in [QT454 After the Ambush] to Miran",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 50,
+      "quest_id": 454,
+      "quest_name": "After the Ambush",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1379,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 52.21,
+              "y": 69.43
+            }
+          ],
+          "name": "Miran",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:309"
+      ],
+      "instruction": "Accept [QA309 Protecting the Shipment] from Miran.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 51,
+      "quest_id": 309,
+      "quest_name": "Protecting the Shipment",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:309"
+      ],
+      "instruction": "Complete the scripted or exploration event. [QC309 Protecting the Shipment]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 52,
+      "quest_id": 309,
+      "quest_name": "Protecting the Shipment",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1344,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 65.93,
+              "y": 65.62
+            }
+          ],
+          "name": "Prospector Ironband",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:309"
+      ],
+      "instruction": "Turn in [QT309 Protecting the Shipment] to Prospector Ironband",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 53,
+      "quest_id": 309,
+      "quest_name": "Protecting the Shipment",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1340,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 34.17,
+              "y": 47.84
+            }
+          ],
+          "name": "Mountaineer Kadrell",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1339"
+      ],
+      "instruction": "Accept [QA1339 Mountaineer Stormpike's Task] from Mountaineer Kadrell.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 54,
+      "quest_id": 1339,
+      "quest_name": "Mountaineer Stormpike's Task",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1339"
+      ],
+      "instruction": "Complete [QC1339 Mountaineer Stormpike's Task]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 55,
+      "quest_id": 1339,
+      "quest_name": "Mountaineer Stormpike's Task",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1343,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 24.76,
+              "y": 18.4
+            }
+          ],
+          "name": "Mountaineer Stormpike",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1339"
+      ],
+      "instruction": "Turn in [QT1339 Mountaineer Stormpike's Task] to Mountaineer Stormpike",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 56,
+      "quest_id": 1339,
+      "quest_name": "Mountaineer Stormpike's Task",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1343,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 24.76,
+              "y": 18.4
+            }
+          ],
+          "name": "Mountaineer Stormpike",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1338"
+      ],
+      "instruction": "Accept [QA1338 Stormpike's Order] from Mountaineer Stormpike.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 57,
+      "quest_id": 1338,
+      "quest_name": "Stormpike's Order",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1338"
+      ],
+      "instruction": "Complete [QC1338 Stormpike's Order]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 58,
+      "quest_id": 1338,
+      "quest_name": "Stormpike's Order",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5413,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 58.09,
+              "y": 16.54
+            }
+          ],
+          "name": "Furen Longbeard",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1338"
+      ],
+      "instruction": "Turn in [QT1338 Stormpike's Order] to Furen Longbeard",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 59,
+      "quest_id": 1338,
+      "quest_name": "Stormpike's Order",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1187,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 83.47,
+              "y": 65.46
+            }
+          ],
+          "name": "Daryl the Youngling",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:257"
+      ],
+      "instruction": "Accept [QA257 A Hunter's Boast] from Daryl the Youngling.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 60,
+      "quest_id": 257,
+      "quest_name": "A Hunter's Boast",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:257"
+      ],
+      "instruction": "Complete the required NPC or creature objective: Mountain Buzzard. [QC257 A Hunter's Boast]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Mountain Buzzard",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1194,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 74.48,
+              "y": 64.27
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 78.04,
+              "y": 72.44
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 68.47,
+              "y": 75.83
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 77.32,
+              "y": 75.27
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 78.16,
+              "y": 76.03
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 78.55,
+              "y": 76.86
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 79.33,
+              "y": 66.86
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 74.45,
+              "y": 72.53
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 74.73,
+              "y": 67.67
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 75.79,
+              "y": 70.46
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 75.89,
+              "y": 72.33
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 76.97,
+              "y": 74.0
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 78.87,
+              "y": 59.18
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 77.18,
+              "y": 57.33
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 78.52,
+              "y": 57.96
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 76.86,
+              "y": 55.59
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 77.09,
+              "y": 58.32
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 79.2,
+              "y": 63.69
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 76.27,
+              "y": 74.78
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 76.77,
+              "y": 63.67
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 68.38,
+              "y": 50.52
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 70.86,
+              "y": 52.61
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 71.08,
+              "y": 72.42
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 70.56,
+              "y": 74.11
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 71.08,
+              "y": 74.81
+            }
+          ],
+          "name": "Mountain Buzzard",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 61,
+      "quest_id": 257,
+      "quest_name": "A Hunter's Boast",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1187,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 83.47,
+              "y": 65.46
+            }
+          ],
+          "name": "Daryl the Youngling",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:257"
+      ],
+      "instruction": "Turn in [QT257 A Hunter's Boast] to Daryl the Youngling",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 62,
+      "quest_id": 257,
+      "quest_name": "A Hunter's Boast",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1187,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 83.47,
+              "y": 65.46
+            }
+          ],
+          "name": "Daryl the Youngling",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:258"
+      ],
+      "instruction": "Accept [QA258 A Hunter's Challenge] from Daryl the Youngling.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 63,
+      "quest_id": 258,
+      "quest_name": "A Hunter's Challenge",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:258"
+      ],
+      "instruction": "Complete the required NPC or creature objective: Elder Mountain Boar. [QC258 A Hunter's Challenge]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Elder Mountain Boar",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1192,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 60.35,
+              "y": 36.22
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 74.78,
+              "y": 50.69
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 75.72,
+              "y": 46.64
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 74.77,
+              "y": 42.14
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 60.21,
+              "y": 33.91
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 77.29,
+              "y": 47.08
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 60.0,
+              "y": 37.89
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 62.98,
+              "y": 39.95
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 61.33,
+              "y": 41.4
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 63.2,
+              "y": 35.1
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 62.38,
+              "y": 38.38
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 65.37,
+              "y": 41.94
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 66.33,
+              "y": 40.12
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 66.14,
+              "y": 38.31
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 67.08,
+              "y": 39.42
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 67.37,
+              "y": 41.3
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 64.94,
+              "y": 38.83
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 61.18,
+              "y": 39.62
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 70.12,
+              "y": 37.77
+            }
+          ],
+          "name": "Elder Mountain Boar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 64,
+      "quest_id": 258,
+      "quest_name": "A Hunter's Challenge",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1187,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 83.47,
+              "y": 65.46
+            }
+          ],
+          "name": "Daryl the Youngling",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:258"
+      ],
+      "instruction": "Turn in [QT258 A Hunter's Challenge] to Daryl the Youngling",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 65,
+      "quest_id": 258,
+      "quest_name": "A Hunter's Challenge",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1105,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 37.24,
+              "y": 47.38
+            }
+          ],
+          "name": "Jern Hornhelm",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:436"
+      ],
+      "instruction": "Accept [QA436 Ironband's Excavation] from Jern Hornhelm.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 66,
+      "quest_id": 436,
+      "quest_name": "Ironband's Excavation",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:436"
+      ],
+      "instruction": "Complete [QC436 Ironband's Excavation]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 67,
+      "quest_id": 436,
+      "quest_name": "Ironband's Excavation",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1345,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 64.9,
+              "y": 66.66
+            }
+          ],
+          "name": "Magmar Fellhew",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:436"
+      ],
+      "instruction": "Turn in [QT436 Ironband's Excavation] to Magmar Fellhew",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 68,
+      "quest_id": 436,
+      "quest_name": "Ironband's Excavation",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1345,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 64.9,
+              "y": 66.66
+            }
+          ],
+          "name": "Magmar Fellhew",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:297"
+      ],
+      "instruction": "Accept [QA297 Gathering Idols] from Magmar Fellhew.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 69,
+      "quest_id": 297,
+      "quest_name": "Gathering Idols",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:297"
+      ],
+      "instruction": "Collect or use the required item: Carved Stone Idol. [QC297 Gathering Idols]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Carved Stone Idol",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 2636,
+          "kind": "item",
+          "locations": [],
+          "name": "Carved Stone Idol",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 70,
+      "quest_id": 297,
+      "quest_name": "Gathering Idols",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1345,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 64.9,
+              "y": 66.66
+            }
+          ],
+          "name": "Magmar Fellhew",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:297"
+      ],
+      "instruction": "Turn in [QT297 Gathering Idols] to Magmar Fellhew",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 71,
+      "quest_id": 297,
+      "quest_name": "Gathering Idols",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1139,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 34.6,
+              "y": 44.47
+            }
+          ],
+          "name": "Magistrate Bluntnose",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:255"
+      ],
+      "instruction": "Accept [QA255 Mercenaries] from Magistrate Bluntnose.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 72,
+      "quest_id": 255,
+      "quest_name": "Mercenaries",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:255"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Mo'grosh Ogre, Mo'grosh Brute, Mo'grosh Enforcer. [QC255 Mercenaries]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Mo'grosh Ogre, Mo'grosh Brute, Mo'grosh Enforcer",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1178,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 68.54,
+              "y": 21.33
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 65.98,
+              "y": 21.59
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 69.48,
+              "y": 22.55
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 63.62,
+              "y": 25.06
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 69.33,
+              "y": 21.05
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 63.58,
+              "y": 21.38
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 72.23,
+              "y": 23.25
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 73.57,
+              "y": 25.9
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 75.67,
+              "y": 32.33
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 69.62,
+              "y": 26.85
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 70.8,
+              "y": 25.59
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 69.67,
+              "y": 25.54
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 67.13,
+              "y": 33.89
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 68.75,
+              "y": 28.37
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 68.57,
+              "y": 31.82
+            }
+          ],
+          "name": "Mo'grosh Ogre",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1180,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 75.63,
+              "y": 18.42
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 68.84,
+              "y": 20.25
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 79.79,
+              "y": 15.2
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 79.51,
+              "y": 14.95
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 77.47,
+              "y": 13.91
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 77.29,
+              "y": 13.78
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 75.84,
+              "y": 17.51
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 75.09,
+              "y": 15.98
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 74.73,
+              "y": 25.18
+            }
+          ],
+          "name": "Mo'grosh Brute",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1179,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 72.03,
+              "y": 19.78
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 64.85,
+              "y": 19.88
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 69.32,
+              "y": 22.34
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 67.37,
+              "y": 23.21
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 68.27,
+              "y": 30.34
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 73.93,
+              "y": 24.7
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 72.06,
+              "y": 25.23
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 73.43,
+              "y": 28.77
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 70.83,
+              "y": 23.85
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 67.37,
+              "y": 30.23
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 66.41,
+              "y": 32.21
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 76.87,
+              "y": 13.83
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 75.89,
+              "y": 15.08
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 75.96,
+              "y": 15.3
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 78.35,
+              "y": 15.68
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 76.87,
+              "y": 16.17
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 70.47,
+              "y": 20.58
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 70.72,
+              "y": 22.79
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 68.93,
+              "y": 24.54
+            },
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 73.72,
+              "y": 33.4
+            }
+          ],
+          "name": "Mo'grosh Enforcer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 73,
+      "quest_id": 255,
+      "quest_name": "Mercenaries",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1139,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 34.6,
+              "y": 44.47
+            }
+          ],
+          "name": "Magistrate Bluntnose",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:255"
+      ],
+      "instruction": "Turn in [QT255 Mercenaries] to Magistrate Bluntnose",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 74,
+      "quest_id": 255,
+      "quest_name": "Mercenaries",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1156,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 81.73,
+              "y": 64.14
+            }
+          ],
+          "name": "Vyrin Swiftwind",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:271"
+      ],
+      "instruction": "Accept [QA271 Vyrin's Revenge] from Vyrin Swiftwind.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 75,
+      "quest_id": 271,
+      "quest_name": "Vyrin's Revenge",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:271"
+      ],
+      "instruction": "Collect or use the required item: Ol' Sooty's Head. [QC271 Vyrin's Revenge]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Ol' Sooty's Head",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 2713,
+          "kind": "item",
+          "locations": [],
+          "name": "Ol' Sooty's Head",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 76,
+      "quest_id": 271,
+      "quest_name": "Vyrin's Revenge",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1187,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 83.47,
+              "y": 65.46
+            }
+          ],
+          "name": "Daryl the Youngling",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:271"
+      ],
+      "instruction": "Turn in [QT271 Vyrin's Revenge] to Daryl the Youngling",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 77,
+      "quest_id": 271,
+      "quest_name": "Vyrin's Revenge",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1187,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 83.47,
+              "y": 65.46
+            }
+          ],
+          "name": "Daryl the Youngling",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:531"
+      ],
+      "instruction": "Accept [QA531 Vyrin's Revenge] from Daryl the Youngling.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 78,
+      "quest_id": 531,
+      "quest_name": "Vyrin's Revenge",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:531"
+      ],
+      "instruction": "Complete [QC531 Vyrin's Revenge]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 79,
+      "quest_id": 531,
+      "quest_name": "Vyrin's Revenge",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1156,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 81.73,
+              "y": 64.14
+            }
+          ],
+          "name": "Vyrin Swiftwind",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:531"
+      ],
+      "instruction": "Turn in [QT531 Vyrin's Revenge] to Vyrin Swiftwind",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 80,
+      "quest_id": 531,
+      "quest_name": "Vyrin's Revenge",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "pvp",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 18706,
+          "kind": "item",
+          "locations": [],
+          "name": "Arena Master",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7810"
+      ],
+      "instruction": "Accept [QA7810 Arena Master] from Arena Master.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 81,
+      "quest_id": 7810,
+      "quest_name": "Arena Master",
+      "quest_tag": "PvP",
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "pvp",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7810"
+      ],
+      "instruction": "Complete [QC7810 Arena Master]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 82,
+      "quest_id": 7810,
+      "quest_name": "Arena Master",
+      "quest_tag": "PvP",
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "pvp",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14508,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 29.59,
+              "y": 47.38
+            }
+          ],
+          "name": "Short John Mithril",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7810"
+      ],
+      "instruction": "Turn in [QT7810 Arena Master] to Short John Mithril",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 83,
+      "quest_id": 7810,
+      "quest_name": "Arena Master",
+      "quest_tag": "PvP",
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    }
+  ],
+  "title": "08 Loch Modan"
+}

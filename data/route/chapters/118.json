@@ -1,0 +1,515 @@
+{
+  "branch": "optional_content",
+  "entry_contract": "Complete the relevant shared prerequisites. Begin in Eastern Plaguelands with Menethil's Gift. Leave at least two quest-log slots open; group and reputation gates remain explicit.",
+  "entry_route_point": {
+    "map_id": 139,
+    "map_name": "Eastern Plaguelands",
+    "x": 81.73,
+    "y": 57.83
+  },
+  "entry_zone_or_sort": 139,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 28,
+    "map_name": "Western Plaguelands",
+    "quest_id": 5466,
+    "tag": "QT",
+    "x": 70.57,
+    "y": 74.11
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Optional Content",
+  "guide_file": "Guides/optional_content/118_world_22.lua",
+  "id": "118-optional_content-optional-content-22---eastern-plaguelands-&-western-plaguelands",
+  "maximum_level": null,
+  "minimum_level": null,
+  "next_chapter": "Optional Content 23 - Azshara & Tanaris",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "Optional Content 21 - Terokkar Forest & Shattrath City",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 5464,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5463:QA",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5464:finisher"
+      ],
+      "instruction": "Continue within Eastern Plaguelands to the next route hub at [G81.73,57.83 Eastern Plaguelands]. [O]",
+      "map_id": 139,
+      "map_name": "Eastern Plaguelands",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 139,
+      "origin_map_name": "Eastern Plaguelands",
+      "origin_x": 81.73,
+      "origin_y": 57.83,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 81.73,
+      "y": 57.83
+    },
+    {
+      "before_quest_id": 5464,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "route-branch:optional_content"
+      ],
+      "instruction": "Optional entry requirements: complete the relevant shared prerequisites. [O]",
+      "map_id": 139,
+      "map_name": "Eastern Plaguelands",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "branch_entry",
+      "verification": "route_dependency_graph",
+      "x": 81.73,
+      "y": 57.83
+    },
+    {
+      "before_quest_id": 5464,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5464:finisher"
+      ],
+      "instruction": "Optional chapter: travel to Eastern Plaguelands and begin at [G81.73,57.83 Eastern Plaguelands]. Leave at least two quest-log slots open. [O]",
+      "map_id": 139,
+      "map_name": "Eastern Plaguelands",
+      "optional": true,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 81.73,
+      "y": 57.83
+    },
+    {
+      "before_quest_id": 5464,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5464:requiredLevel"
+      ],
+      "instruction": "Reach level 62 before accepting Menethil's Gift. [XP62 Level 62]",
+      "map_id": 139,
+      "map_name": "Eastern Plaguelands",
+      "optional": false,
+      "order": 4,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 62,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": null,
+      "y": null
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 176631,
+          "kind": "object",
+          "locations": [],
+          "name": "Menethil's Gift",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5464"
+      ],
+      "instruction": "Accept [QA5464 Menethil's Gift] from Menethil's Gift.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 5464,
+      "quest_name": "Menethil's Gift",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 139,
+      "zone_or_sort_name": "Eastern Plaguelands"
+    },
+    {
+      "before_quest_id": 5464,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5464:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 139,
+      "map_name": "Eastern Plaguelands",
+      "optional": true,
+      "order": 6,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        5464
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 81.73,
+      "y": 57.83
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5464"
+      ],
+      "instruction": "Elite/group recommended \u2014 Complete [QC5464 Menethil's Gift]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 5464,
+      "quest_name": "Menethil's Gift",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 139,
+      "zone_or_sort_name": "Eastern Plaguelands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11036,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 139,
+              "map_name": "Eastern Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 81.73,
+              "y": 57.83
+            }
+          ],
+          "name": "Leonid Barthalomew the Revered",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5464"
+      ],
+      "instruction": "Turn in [QT5464 Menethil's Gift] to Leonid Barthalomew the Revered",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 5464,
+      "quest_name": "Menethil's Gift",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 139,
+      "zone_or_sort_name": "Eastern Plaguelands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11036,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 139,
+              "map_name": "Eastern Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 81.73,
+              "y": 57.83
+            }
+          ],
+          "name": "Leonid Barthalomew the Revered",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5465"
+      ],
+      "instruction": "Accept [QA5465 Soulbound Keepsake] from Leonid Barthalomew the Revered.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 5465,
+      "quest_name": "Soulbound Keepsake",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 28,
+      "zone_or_sort_name": "Western Plaguelands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5465"
+      ],
+      "instruction": "Elite/group recommended \u2014 Complete [QC5465 Soulbound Keepsake]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 5465,
+      "quest_name": "Soulbound Keepsake",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 28,
+      "zone_or_sort_name": "Western Plaguelands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11286,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 28,
+              "map_name": "Western Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 70.57,
+              "y": 74.11
+            }
+          ],
+          "name": "Magistrate Marduke",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5465"
+      ],
+      "instruction": "Turn in [QT5465 Soulbound Keepsake] to Magistrate Marduke",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 5465,
+      "quest_name": "Soulbound Keepsake",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 28,
+      "zone_or_sort_name": "Western Plaguelands"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11286,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 28,
+              "map_name": "Western Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 70.57,
+              "y": 74.11
+            }
+          ],
+          "name": "Magistrate Marduke",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5466"
+      ],
+      "instruction": "Accept [QA5466 The Lich, Ras Frostwhisper] from Magistrate Marduke.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 5466,
+      "quest_name": "The Lich, Ras Frostwhisper",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 2057,
+      "zone_or_sort_name": "Scholomance"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5466"
+      ],
+      "instruction": "Dungeon \u2014 Use the quest item [UI13752-] as directed; collect or use the required item: Human Head of Ras Frostwhisper. [QC5466 The Lich, Ras Frostwhisper]",
+      "item_use_id": 13752,
+      "objective_hint": "Collect or use the required item: Human Head of Ras Frostwhisper",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 13626,
+          "kind": "item",
+          "locations": [],
+          "name": "Human Head of Ras Frostwhisper",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 13,
+      "quest_id": 5466,
+      "quest_name": "The Lich, Ras Frostwhisper",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 2057,
+      "zone_or_sort_name": "Scholomance"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11286,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 28,
+              "map_name": "Western Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 70.57,
+              "y": 74.11
+            }
+          ],
+          "name": "Magistrate Marduke",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5466"
+      ],
+      "instruction": "Turn in [QT5466 The Lich, Ras Frostwhisper] to Magistrate Marduke",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 5466,
+      "quest_name": "The Lich, Ras Frostwhisper",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 2057,
+      "zone_or_sort_name": "Scholomance"
+    }
+  ],
+  "title": "Optional Content 22 - Eastern Plaguelands & Western Plaguelands"
+}

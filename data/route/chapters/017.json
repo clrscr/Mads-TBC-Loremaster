@@ -1,0 +1,453 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 16 The Barrens & Stonetalon Mountains, or select this chapter on a partially completed character. Begin in Ashenvale with Sentinel Thenysil. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 331,
+    "map_name": "Ashenvale",
+    "x": 34.89,
+    "y": 49.79
+  },
+  "entry_zone_or_sort": 331,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 406,
+    "map_name": "Stonetalon Mountains",
+    "quest_id": 1085,
+    "tag": "QT",
+    "x": 59.52,
+    "y": 67.15
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/017_world_17.lua",
+  "id": "017-primary-17-ashenvale",
+  "maximum_level": 21,
+  "minimum_level": 21,
+  "next_chapter": "18 Stonetalon Mountains & Ashenvale",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "16 The Barrens & Stonetalon Mountains",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 1070,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1096:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1070:starter"
+      ],
+      "instruction": "Travel from Stonetalon Mountains to Ashenvale. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G34.89,49.79 Ashenvale]. [O]",
+      "map_id": 331,
+      "map_name": "Ashenvale",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 406,
+      "origin_map_name": "Stonetalon Mountains",
+      "origin_x": 58.99,
+      "origin_y": 62.6,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 34.89,
+      "y": 49.79
+    },
+    {
+      "before_quest_id": 1070,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1070:starter"
+      ],
+      "instruction": "Before you begin: travel to Ashenvale and meet the first quest giver at [G34.89,49.79 Ashenvale]. Leave at least two quest-log slots open. [O]",
+      "map_id": 331,
+      "map_name": "Ashenvale",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 34.89,
+      "y": 49.79
+    },
+    {
+      "before_quest_id": 1070,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1070:requiredLevel"
+      ],
+      "instruction": "Reach level 21 before accepting On Guard in Stonetalon. [XP21 Level 21]",
+      "map_id": 331,
+      "map_name": "Ashenvale",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 21,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 34.89,
+      "y": 49.79
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4079,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 34.89,
+              "y": 49.79
+            }
+          ],
+          "name": "Sentinel Thenysil",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1070"
+      ],
+      "instruction": "Accept [QA1070 On Guard in Stonetalon] from Sentinel Thenysil.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 1070,
+      "quest_name": "On Guard in Stonetalon",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1070"
+      ],
+      "instruction": "Complete [QC1070 On Guard in Stonetalon]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 1070,
+      "quest_name": "On Guard in Stonetalon",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4080,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 59.9,
+              "y": 66.85
+            }
+          ],
+          "name": "Kaela Shadowspear",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1070"
+      ],
+      "instruction": "Turn in [QT1070 On Guard in Stonetalon] to Kaela Shadowspear",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 1070,
+      "quest_name": "On Guard in Stonetalon",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11218,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 148,
+              "map_name": "Darkshore",
+              "verification": "questie_structured_source_only",
+              "x": 44.4,
+              "y": 76.43
+            }
+          ],
+          "name": "Kerlonian Evershade",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5321"
+      ],
+      "instruction": "Accept [QA5321 The Sleeper Has Awakened] from Kerlonian Evershade.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 5321,
+      "quest_name": "The Sleeper Has Awakened",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 148,
+      "zone_or_sort_name": "Darkshore"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5321"
+      ],
+      "instruction": "Complete the scripted or exploration event; collect or use the required item: Horn of Awakening. [QC5321 The Sleeper Has Awakened]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Horn of Awakening",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 13536,
+          "kind": "item",
+          "locations": [],
+          "name": "Horn of Awakening",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 8,
+      "quest_id": 5321,
+      "quest_name": "The Sleeper Has Awakened",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 148,
+      "zone_or_sort_name": "Darkshore"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11219,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 27.26,
+              "y": 35.58
+            }
+          ],
+          "name": "Liladris Moonriver",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5321"
+      ],
+      "instruction": "Turn in [QT5321 The Sleeper Has Awakened] to Liladris Moonriver",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 5321,
+      "quest_name": "The Sleeper Has Awakened",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 148,
+      "zone_or_sort_name": "Darkshore"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4080,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 59.9,
+              "y": 66.85
+            }
+          ],
+          "name": "Kaela Shadowspear",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1085"
+      ],
+      "instruction": "Accept [QA1085 On Guard in Stonetalon] from Kaela Shadowspear.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 1085,
+      "quest_name": "On Guard in Stonetalon",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1085"
+      ],
+      "instruction": "Complete [QC1085 On Guard in Stonetalon]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 1085,
+      "quest_name": "On Guard in Stonetalon",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4077,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 59.52,
+              "y": 67.15
+            }
+          ],
+          "name": "Gaxim Rustfizzle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1085"
+      ],
+      "instruction": "Turn in [QT1085 On Guard in Stonetalon] to Gaxim Rustfizzle",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 1085,
+      "quest_name": "On Guard in Stonetalon",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    }
+  ],
+  "title": "17 Ashenvale"
+}

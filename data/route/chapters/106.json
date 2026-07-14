@@ -1,0 +1,2032 @@
+{
+  "branch": "optional_content",
+  "entry_contract": "Complete The True Masters; complete A Visit to Gregan. Begin in Blackrock Depths with Spectral Chalice. Leave at least two quest-log slots open; group and reputation gates remain explicit.",
+  "entry_route_point": {
+    "map_id": 1584,
+    "map_name": "Blackrock Depths",
+    "x": null,
+    "y": null
+  },
+  "entry_zone_or_sort": 1584,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 490,
+    "map_name": "Un'Goro Crater",
+    "quest_id": 4144,
+    "tag": "QT",
+    "x": 42.94,
+    "y": 9.64
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [
+    [
+      4224
+    ],
+    [
+      4142
+    ]
+  ],
+  "external_prerequisite_quest_ids": [
+    4142,
+    4224
+  ],
+  "group": "Mad's Loremaster Guide - Optional Content",
+  "guide_file": "Guides/optional_content/106_dungeon_10.lua",
+  "id": "106-optional_content-optional-content-10---blackrock-depths",
+  "maximum_level": null,
+  "minimum_level": null,
+  "next_chapter": "Optional Content 11 - Sunken Temple & Ironforge",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "Optional Content 09 - The Hinterlands & Sunken Temple",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 4083,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3528:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4083:objective"
+      ],
+      "instruction": "Travel from Tanaris to Blackrock Depths. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to Blackrock Depths. [O]",
+      "map_id": 1584,
+      "map_name": "Blackrock Depths",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 440,
+      "origin_map_name": "Tanaris",
+      "origin_x": 66.99,
+      "origin_y": 22.36,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": null,
+      "y": null
+    },
+    {
+      "before_quest_id": 4083,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4142:dependency",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4224:dependency"
+      ],
+      "instruction": "Optional entry requirements: complete The True Masters; complete A Visit to Gregan. [O]",
+      "map_id": 1584,
+      "map_name": "Blackrock Depths",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        4142,
+        4224
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "branch_entry",
+      "verification": "route_dependency_graph",
+      "x": null,
+      "y": null
+    },
+    {
+      "before_quest_id": 4083,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4083:objective"
+      ],
+      "instruction": "Optional chapter: enter Blackrock Depths. Leave at least two quest-log slots open. [O]",
+      "map_id": 1584,
+      "map_name": "Blackrock Depths",
+      "optional": true,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": null,
+      "y": null
+    },
+    {
+      "before_quest_id": 4083,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4083:requiredLevel"
+      ],
+      "instruction": "Reach level 45 before accepting The Spectral Chalice. [XP45 Level 45]",
+      "map_id": 1584,
+      "map_name": "Blackrock Depths",
+      "optional": false,
+      "order": 4,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 45,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": null,
+      "y": null
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 164869,
+          "kind": "object",
+          "locations": [],
+          "name": "Spectral Chalice",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4083"
+      ],
+      "instruction": "Accept [QA4083 The Spectral Chalice] from Spectral Chalice.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 4083,
+      "quest_name": "The Spectral Chalice",
+      "quest_tag": "Dungeon",
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1584,
+      "zone_or_sort_name": "Blackrock Depths"
+    },
+    {
+      "before_quest_id": 4241,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4241:requiredLevel"
+      ],
+      "instruction": "Reach level 48 before accepting Marshal Windsor. [XP48 Level 48]",
+      "map_id": 46,
+      "map_name": "Burning Steppes",
+      "optional": false,
+      "order": 6,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 48,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 84.74,
+      "y": 69.02
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9560,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 46,
+              "map_name": "Burning Steppes",
+              "verification": "questie_structured_source_only",
+              "x": 84.74,
+              "y": 69.02
+            }
+          ],
+          "name": "Marshal Maxwell",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4241"
+      ],
+      "instruction": "Accept [QA4241 Marshal Windsor] from Marshal Maxwell.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 4241,
+      "quest_name": "Marshal Windsor",
+      "quest_tag": "Dungeon",
+      "required_level": 48,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1584,
+      "zone_or_sort_name": "Blackrock Depths"
+    },
+    {
+      "before_quest_id": 4083,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4083:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 1584,
+      "map_name": "Blackrock Depths",
+      "optional": true,
+      "order": 8,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        4083
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": null,
+      "y": null
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4083"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required items: Star Ruby, Gold Bar, Truesilver Bar. [QC4083 The Spectral Chalice]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Star Ruby, Gold Bar, Truesilver Bar",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 7910,
+          "kind": "item",
+          "locations": [],
+          "name": "Star Ruby",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 3577,
+          "kind": "item",
+          "locations": [],
+          "name": "Gold Bar",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 6037,
+          "kind": "item",
+          "locations": [],
+          "name": "Truesilver Bar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 9,
+      "quest_id": 4083,
+      "quest_name": "The Spectral Chalice",
+      "quest_tag": "Dungeon",
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1584,
+      "zone_or_sort_name": "Blackrock Depths"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4241"
+      ],
+      "instruction": "Dungeon \u2014 Complete [QC4241 Marshal Windsor]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 4241,
+      "quest_name": "Marshal Windsor",
+      "quest_tag": "Dungeon",
+      "required_level": 48,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1584,
+      "zone_or_sort_name": "Blackrock Depths"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 164869,
+          "kind": "object",
+          "locations": [],
+          "name": "Spectral Chalice",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4083"
+      ],
+      "instruction": "Turn in [QT4083 The Spectral Chalice] to Spectral Chalice",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 4083,
+      "quest_name": "The Spectral Chalice",
+      "quest_tag": "Dungeon",
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1584,
+      "zone_or_sort_name": "Blackrock Depths"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9023,
+          "kind": "npc",
+          "locations": [],
+          "name": "Marshal Windsor",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4241"
+      ],
+      "instruction": "Turn in [QT4241 Marshal Windsor] to Marshal Windsor",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 4241,
+      "quest_name": "Marshal Windsor",
+      "quest_tag": "Dungeon",
+      "required_level": 48,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1584,
+      "zone_or_sort_name": "Blackrock Depths"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9023,
+          "kind": "npc",
+          "locations": [],
+          "name": "Marshal Windsor",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4242"
+      ],
+      "instruction": "Accept [QA4242 Abandoned Hope] from Marshal Windsor.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 4242,
+      "quest_name": "Abandoned Hope",
+      "quest_tag": "Dungeon",
+      "required_level": 48,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1584,
+      "zone_or_sort_name": "Blackrock Depths"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9706,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 67.04,
+              "y": 24.01
+            }
+          ],
+          "name": "Yorba Screwspigot",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4324"
+      ],
+      "instruction": "Accept [QA4324 Yuka Screwspigot] from Yorba Screwspigot.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 4324,
+      "quest_name": "Yuka Screwspigot",
+      "quest_tag": "Dungeon",
+      "required_level": 48,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1584,
+      "zone_or_sort_name": "Blackrock Depths"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4242"
+      ],
+      "instruction": "Dungeon \u2014 Complete [QC4242 Abandoned Hope]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 4242,
+      "quest_name": "Abandoned Hope",
+      "quest_tag": "Dungeon",
+      "required_level": 48,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1584,
+      "zone_or_sort_name": "Blackrock Depths"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4324"
+      ],
+      "instruction": "Dungeon \u2014 Complete [QC4324 Yuka Screwspigot]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 4324,
+      "quest_name": "Yuka Screwspigot",
+      "quest_tag": "Dungeon",
+      "required_level": 48,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1584,
+      "zone_or_sort_name": "Blackrock Depths"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9560,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 46,
+              "map_name": "Burning Steppes",
+              "verification": "questie_structured_source_only",
+              "x": 84.74,
+              "y": 69.02
+            }
+          ],
+          "name": "Marshal Maxwell",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4242"
+      ],
+      "instruction": "Turn in [QT4242 Abandoned Hope] to Marshal Maxwell",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 4242,
+      "quest_name": "Abandoned Hope",
+      "quest_tag": "Dungeon",
+      "required_level": 48,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1584,
+      "zone_or_sort_name": "Blackrock Depths"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9544,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 46,
+              "map_name": "Burning Steppes",
+              "verification": "questie_structured_source_only",
+              "x": 66.06,
+              "y": 21.95
+            }
+          ],
+          "name": "Yuka Screwspigot",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4324"
+      ],
+      "instruction": "Turn in [QT4324 Yuka Screwspigot] to Yuka Screwspigot",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 4324,
+      "quest_name": "Yuka Screwspigot",
+      "quest_tag": "Dungeon",
+      "required_level": 48,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1584,
+      "zone_or_sort_name": "Blackrock Depths"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9544,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 46,
+              "map_name": "Burning Steppes",
+              "verification": "questie_structured_source_only",
+              "x": 66.06,
+              "y": 21.95
+            }
+          ],
+          "name": "Yuka Screwspigot",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4136"
+      ],
+      "instruction": "Accept [QA4136 Ribbly Screwspigot] from Yuka Screwspigot.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 4136,
+      "quest_name": "Ribbly Screwspigot",
+      "quest_tag": "Dungeon",
+      "required_level": 48,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1584,
+      "zone_or_sort_name": "Blackrock Depths"
+    },
+    {
+      "before_quest_id": 3801,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3801:requiredLevel"
+      ],
+      "instruction": "Reach level 50 before accepting Dark Iron Legacy. [XP50 Level 50]",
+      "map_id": 1584,
+      "map_name": "Blackrock Depths",
+      "optional": false,
+      "order": 20,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 50,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": null,
+      "y": null
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8888,
+          "kind": "npc",
+          "locations": [],
+          "name": "Franclorn Forgewright",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3801"
+      ],
+      "instruction": "Accept [QA3801 Dark Iron Legacy] from Franclorn Forgewright.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 3801,
+      "quest_name": "Dark Iron Legacy",
+      "quest_tag": "Dungeon",
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1584,
+      "zone_or_sort_name": "Blackrock Depths"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4136"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required item: Ribbly's Head. [QC4136 Ribbly Screwspigot]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Ribbly's Head",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 11313,
+          "kind": "item",
+          "locations": [],
+          "name": "Ribbly's Head",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 22,
+      "quest_id": 4136,
+      "quest_name": "Ribbly Screwspigot",
+      "quest_tag": "Dungeon",
+      "required_level": 48,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1584,
+      "zone_or_sort_name": "Blackrock Depths"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3801"
+      ],
+      "instruction": "Dungeon \u2014 Complete the scripted or exploration event. [QC3801 Dark Iron Legacy]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 23,
+      "quest_id": 3801,
+      "quest_name": "Dark Iron Legacy",
+      "quest_tag": "Dungeon",
+      "required_level": 50,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 1584,
+      "zone_or_sort_name": "Blackrock Depths"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9544,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 46,
+              "map_name": "Burning Steppes",
+              "verification": "questie_structured_source_only",
+              "x": 66.06,
+              "y": 21.95
+            }
+          ],
+          "name": "Yuka Screwspigot",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4136"
+      ],
+      "instruction": "Turn in [QT4136 Ribbly Screwspigot] to Yuka Screwspigot",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 24,
+      "quest_id": 4136,
+      "quest_name": "Ribbly Screwspigot",
+      "quest_tag": "Dungeon",
+      "required_level": 48,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1584,
+      "zone_or_sort_name": "Blackrock Depths"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8888,
+          "kind": "npc",
+          "locations": [],
+          "name": "Franclorn Forgewright",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3801"
+      ],
+      "instruction": "Turn in [QT3801 Dark Iron Legacy] to Franclorn Forgewright",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 25,
+      "quest_id": 3801,
+      "quest_name": "Dark Iron Legacy",
+      "quest_tag": "Dungeon",
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1584,
+      "zone_or_sort_name": "Blackrock Depths"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8888,
+          "kind": "npc",
+          "locations": [],
+          "name": "Franclorn Forgewright",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3802"
+      ],
+      "instruction": "Accept [QA3802 Dark Iron Legacy] from Franclorn Forgewright.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 26,
+      "quest_id": 3802,
+      "quest_name": "Dark Iron Legacy",
+      "quest_tag": "Dungeon",
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1584,
+      "zone_or_sort_name": "Blackrock Depths"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9536,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 46,
+              "map_name": "Burning Steppes",
+              "verification": "questie_structured_source_only",
+              "x": 65.15,
+              "y": 23.91
+            }
+          ],
+          "name": "Maxwort Uberglint",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4123"
+      ],
+      "instruction": "Accept [QA4123 The Heart of the Mountain] from Maxwort Uberglint.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 27,
+      "quest_id": 4123,
+      "quest_name": "The Heart of the Mountain",
+      "quest_tag": "Dungeon",
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1584,
+      "zone_or_sort_name": "Blackrock Depths"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3802"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required item: Ironfel. [QC3802 Dark Iron Legacy]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Ironfel",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 10999,
+          "kind": "item",
+          "locations": [],
+          "name": "Ironfel",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 28,
+      "quest_id": 3802,
+      "quest_name": "Dark Iron Legacy",
+      "quest_tag": "Dungeon",
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1584,
+      "zone_or_sort_name": "Blackrock Depths"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4123"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required item: The Heart of the Mountain. [QC4123 The Heart of the Mountain]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: The Heart of the Mountain",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 11309,
+          "kind": "item",
+          "locations": [],
+          "name": "The Heart of the Mountain",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 29,
+      "quest_id": 4123,
+      "quest_name": "The Heart of the Mountain",
+      "quest_tag": "Dungeon",
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1584,
+      "zone_or_sort_name": "Blackrock Depths"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9536,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 46,
+              "map_name": "Burning Steppes",
+              "verification": "questie_structured_source_only",
+              "x": 65.15,
+              "y": 23.91
+            }
+          ],
+          "name": "Maxwort Uberglint",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4123"
+      ],
+      "instruction": "Turn in [QT4123 The Heart of the Mountain] to Maxwort Uberglint",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 30,
+      "quest_id": 4123,
+      "quest_name": "The Heart of the Mountain",
+      "quest_tag": "Dungeon",
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1584,
+      "zone_or_sort_name": "Blackrock Depths"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 164689,
+          "kind": "object",
+          "locations": [],
+          "name": "Monument of Franclorn Forgewright",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3802"
+      ],
+      "instruction": "Turn in [QT3802 Dark Iron Legacy] to Monument of Franclorn Forgewright",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 31,
+      "quest_id": 3802,
+      "quest_name": "Dark Iron Legacy",
+      "quest_tag": "Dungeon",
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1584,
+      "zone_or_sort_name": "Blackrock Depths"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9540,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 4,
+              "map_name": "Blasted Lands",
+              "verification": "questie_structured_source_only",
+              "x": 63.63,
+              "y": 20.63
+            }
+          ],
+          "name": "Enohar Thunderbrew",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4128"
+      ],
+      "instruction": "Accept [QA4128 Ragnar Thunderbrew] from Enohar Thunderbrew.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 32,
+      "quest_id": 4128,
+      "quest_name": "Ragnar Thunderbrew",
+      "quest_tag": "Dungeon",
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1584,
+      "zone_or_sort_name": "Blackrock Depths"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4128"
+      ],
+      "instruction": "Dungeon \u2014 Complete [QC4128 Ragnar Thunderbrew]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 33,
+      "quest_id": 4128,
+      "quest_name": "Ragnar Thunderbrew",
+      "quest_tag": "Dungeon",
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1584,
+      "zone_or_sort_name": "Blackrock Depths"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1267,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 46.83,
+              "y": 52.36
+            }
+          ],
+          "name": "Ragnar Thunderbrew",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4128"
+      ],
+      "instruction": "Turn in [QT4128 Ragnar Thunderbrew] to Ragnar Thunderbrew",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 34,
+      "quest_id": 4128,
+      "quest_name": "Ragnar Thunderbrew",
+      "quest_tag": "Dungeon",
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1584,
+      "zone_or_sort_name": "Blackrock Depths"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1267,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 46.83,
+              "y": 52.36
+            }
+          ],
+          "name": "Ragnar Thunderbrew",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4126"
+      ],
+      "instruction": "Accept [QA4126 Hurley Blackbreath] from Ragnar Thunderbrew.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 35,
+      "quest_id": 4126,
+      "quest_name": "Hurley Blackbreath",
+      "quest_tag": "Dungeon",
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1584,
+      "zone_or_sort_name": "Blackrock Depths"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9500,
+          "kind": "npc",
+          "locations": [],
+          "name": "Mistress Nagmara",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4201"
+      ],
+      "instruction": "Accept [QA4201 The Love Potion] from Mistress Nagmara.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 36,
+      "quest_id": 4201,
+      "quest_name": "The Love Potion",
+      "quest_tag": "Dungeon",
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1584,
+      "zone_or_sort_name": "Blackrock Depths"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "item_triggered",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 11446,
+          "kind": "item",
+          "locations": [],
+          "name": "A Crumpled Up Note",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4264"
+      ],
+      "instruction": "Accept [QA4264 A Crumpled Up Note] from A Crumpled Up Note.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 37,
+      "quest_id": 4264,
+      "quest_name": "A Crumpled Up Note",
+      "quest_tag": "Dungeon",
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1584,
+      "zone_or_sort_name": "Blackrock Depths"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4126"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required item: Lost Thunderbrew Recipe. [QC4126 Hurley Blackbreath]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Lost Thunderbrew Recipe",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 11312,
+          "kind": "item",
+          "locations": [],
+          "name": "Lost Thunderbrew Recipe",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 38,
+      "quest_id": 4126,
+      "quest_name": "Hurley Blackbreath",
+      "quest_tag": "Dungeon",
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1584,
+      "zone_or_sort_name": "Blackrock Depths"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4201"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required items: Gromsblood, Giant Silver Vein, Nagmara's Filled Vial. [QC4201 The Love Potion]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Gromsblood, Giant Silver Vein, Nagmara's Filled Vial",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 8846,
+          "kind": "item",
+          "locations": [],
+          "name": "Gromsblood",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 11405,
+          "kind": "item",
+          "locations": [],
+          "name": "Giant Silver Vein",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 11413,
+          "kind": "item",
+          "locations": [],
+          "name": "Nagmara's Filled Vial",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 39,
+      "quest_id": 4201,
+      "quest_name": "The Love Potion",
+      "quest_tag": "Dungeon",
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1584,
+      "zone_or_sort_name": "Blackrock Depths"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "item_triggered",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4264"
+      ],
+      "instruction": "Dungeon \u2014 Complete [QC4264 A Crumpled Up Note]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 40,
+      "quest_id": 4264,
+      "quest_name": "A Crumpled Up Note",
+      "quest_tag": "Dungeon",
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1584,
+      "zone_or_sort_name": "Blackrock Depths"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1267,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 46.83,
+              "y": 52.36
+            }
+          ],
+          "name": "Ragnar Thunderbrew",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4126"
+      ],
+      "instruction": "Turn in [QT4126 Hurley Blackbreath] to Ragnar Thunderbrew",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 41,
+      "quest_id": 4126,
+      "quest_name": "Hurley Blackbreath",
+      "quest_tag": "Dungeon",
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1584,
+      "zone_or_sort_name": "Blackrock Depths"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9500,
+          "kind": "npc",
+          "locations": [],
+          "name": "Mistress Nagmara",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4201"
+      ],
+      "instruction": "Turn in [QT4201 The Love Potion] to Mistress Nagmara",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 42,
+      "quest_id": 4201,
+      "quest_name": "The Love Potion",
+      "quest_tag": "Dungeon",
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1584,
+      "zone_or_sort_name": "Blackrock Depths"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "item_triggered",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9023,
+          "kind": "npc",
+          "locations": [],
+          "name": "Marshal Windsor",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4264"
+      ],
+      "instruction": "Turn in [QT4264 A Crumpled Up Note] to Marshal Windsor",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 43,
+      "quest_id": 4264,
+      "quest_name": "A Crumpled Up Note",
+      "quest_tag": "Dungeon",
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1584,
+      "zone_or_sort_name": "Blackrock Depths"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9177,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 46,
+              "map_name": "Burning Steppes",
+              "verification": "questie_structured_source_only",
+              "x": 84.56,
+              "y": 68.68
+            }
+          ],
+          "name": "Oralius",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4286"
+      ],
+      "instruction": "Accept [QA4286 The Good Stuff] from Oralius.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 44,
+      "quest_id": 4286,
+      "quest_name": "The Good Stuff",
+      "quest_tag": "Dungeon",
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1584,
+      "zone_or_sort_name": "Blackrock Depths"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4286"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required item: Dark Iron Fanny Pack. [QC4286 The Good Stuff]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Dark Iron Fanny Pack",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 11468,
+          "kind": "item",
+          "locations": [],
+          "name": "Dark Iron Fanny Pack",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 45,
+      "quest_id": 4286,
+      "quest_name": "The Good Stuff",
+      "quest_tag": "Dungeon",
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1584,
+      "zone_or_sort_name": "Blackrock Depths"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9177,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 46,
+              "map_name": "Burning Steppes",
+              "verification": "questie_structured_source_only",
+              "x": 84.56,
+              "y": 68.68
+            }
+          ],
+          "name": "Oralius",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4286"
+      ],
+      "instruction": "Turn in [QT4286 The Good Stuff] to Oralius",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 46,
+      "quest_id": 4286,
+      "quest_name": "The Good Stuff",
+      "quest_tag": "Dungeon",
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1584,
+      "zone_or_sort_name": "Blackrock Depths"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7918,
+          "kind": "npc",
+          "locations": [],
+          "name": "Stone Watcher of Norgannon",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2954"
+      ],
+      "instruction": "Accept [QA2954 The Stone Watcher] from Stone Watcher of Norgannon.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 47,
+      "quest_id": 2954,
+      "quest_name": "The Stone Watcher",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2954"
+      ],
+      "instruction": "Complete the scripted or exploration event. [QC2954 The Stone Watcher]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 48,
+      "quest_id": 2954,
+      "quest_name": "The Stone Watcher",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 142343,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 37.63,
+              "y": 81.4
+            }
+          ],
+          "name": "Uldum Pedestal",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2954"
+      ],
+      "instruction": "Turn in [QT2954 The Stone Watcher] to Uldum Pedestal",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 49,
+      "quest_id": 2954,
+      "quest_name": "The Stone Watcher",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7775,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 357,
+              "map_name": "Feralas",
+              "verification": "questie_structured_source_only",
+              "x": 45.12,
+              "y": 25.57
+            }
+          ],
+          "name": "Gregan Brewspewer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4143"
+      ],
+      "instruction": "Accept [QA4143 Haze of Evil] from Gregan Brewspewer.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 50,
+      "quest_id": 4143,
+      "quest_name": "Haze of Evil",
+      "quest_tag": "Dungeon",
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4143"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required item: Atal'ai Haze. [QC4143 Haze of Evil]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Atal'ai Haze",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 11318,
+          "kind": "item",
+          "locations": [],
+          "name": "Atal'ai Haze",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 51,
+      "quest_id": 4143,
+      "quest_name": "Haze of Evil",
+      "quest_tag": "Dungeon",
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9119,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 490,
+              "map_name": "Un'Goro Crater",
+              "verification": "questie_structured_source_only",
+              "x": 42.94,
+              "y": 9.64
+            }
+          ],
+          "name": "Muigin",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4143"
+      ],
+      "instruction": "Turn in [QT4143 Haze of Evil] to Muigin",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 52,
+      "quest_id": 4143,
+      "quest_name": "Haze of Evil",
+      "quest_tag": "Dungeon",
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9119,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 490,
+              "map_name": "Un'Goro Crater",
+              "verification": "questie_structured_source_only",
+              "x": 42.94,
+              "y": 9.64
+            }
+          ],
+          "name": "Muigin",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4144"
+      ],
+      "instruction": "Accept [QA4144 Bloodpetal Sprouts] from Muigin.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 53,
+      "quest_id": 4144,
+      "quest_name": "Bloodpetal Sprouts",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4144"
+      ],
+      "instruction": "Collect or use the required item: Bloodpetal Sprout. [QC4144 Bloodpetal Sprouts]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Bloodpetal Sprout",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 11315,
+          "kind": "item",
+          "locations": [],
+          "name": "Bloodpetal Sprout",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 54,
+      "quest_id": 4144,
+      "quest_name": "Bloodpetal Sprouts",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9119,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 490,
+              "map_name": "Un'Goro Crater",
+              "verification": "questie_structured_source_only",
+              "x": 42.94,
+              "y": 9.64
+            }
+          ],
+          "name": "Muigin",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4144"
+      ],
+      "instruction": "Turn in [QT4144 Bloodpetal Sprouts] to Muigin",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 55,
+      "quest_id": 4144,
+      "quest_name": "Bloodpetal Sprouts",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 490,
+      "zone_or_sort_name": "Un'Goro Crater"
+    }
+  ],
+  "title": "Optional Content 10 - Blackrock Depths"
+}

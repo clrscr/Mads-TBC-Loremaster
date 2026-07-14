@@ -1,0 +1,609 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 72 Eastern Plaguelands & Western Plaguelands, or select this chapter on a partially completed character. Begin in Stormwind City with Crier Goodman. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 1519,
+    "map_name": "Stormwind City",
+    "x": 47.45,
+    "y": 64.17
+  },
+  "entry_zone_or_sort": 1519,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 1519,
+    "map_name": "Stormwind City",
+    "quest_id": 6183,
+    "tag": "QT",
+    "x": 75.78,
+    "y": 59.84
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/073_world_73.lua",
+  "id": "073-primary-73-stormwind-city",
+  "maximum_level": 56,
+  "minimum_level": 55,
+  "next_chapter": "74 Burning Steppes & Blasted Lands",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "72 Eastern Plaguelands & Western Plaguelands",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 1015,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6041:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1015:starter"
+      ],
+      "instruction": "Travel from Eastern Plaguelands to Stormwind City. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G47.45,64.17 Stormwind City]. [O]",
+      "map_id": 1519,
+      "map_name": "Stormwind City",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 139,
+      "origin_map_name": "Eastern Plaguelands",
+      "origin_x": 80.61,
+      "origin_y": 57.98,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 47.45,
+      "y": 64.17
+    },
+    {
+      "before_quest_id": 1015,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1015:starter"
+      ],
+      "instruction": "Before you begin: travel to Stormwind City and meet the first quest giver at [G47.45,64.17 Stormwind City]. Leave at least two quest-log slots open. [O]",
+      "map_id": 1519,
+      "map_name": "Stormwind City",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 47.45,
+      "y": 64.17
+    },
+    {
+      "before_quest_id": 1015,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1015:requiredLevel"
+      ],
+      "instruction": "Reach level 55 before accepting The New Frontier. [XP55 Level 55]",
+      "map_id": 1519,
+      "map_name": "Stormwind City",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 55,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 47.45,
+      "y": 64.17
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2198,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 47.45,
+              "y": 64.17
+            }
+          ],
+          "name": "Crier Goodman",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1015"
+      ],
+      "instruction": "Accept [QA1015 The New Frontier] from Crier Goodman.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 1015,
+      "quest_name": "The New Frontier",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1015"
+      ],
+      "instruction": "Complete [QC1015 The New Frontier]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 1015,
+      "quest_name": "The New Frontier",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3516,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1657,
+              "map_name": "Darnassus",
+              "verification": "questie_structured_source_only",
+              "x": 34.81,
+              "y": 9.26
+            }
+          ],
+          "name": "Arch Druid Fandral Staghelm",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1015"
+      ],
+      "instruction": "Turn in [QT1015 The New Frontier] to Arch Druid Fandral Staghelm",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 1015,
+      "quest_name": "The New Frontier",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15187,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 58.54,
+              "y": 47.32
+            }
+          ],
+          "name": "Cenarion Emissary Jademoon",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8275"
+      ],
+      "instruction": "Accept [QA8275 Taking Back Silithus] from Cenarion Emissary Jademoon.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 8275,
+      "quest_name": "Taking Back Silithus",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8275"
+      ],
+      "instruction": "Complete [QC8275 Taking Back Silithus]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 8275,
+      "quest_name": "Taking Back Silithus",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15191,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 51.15,
+              "y": 38.29
+            }
+          ],
+          "name": "Windcaller Proudhorn",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8275"
+      ],
+      "instruction": "Turn in [QT8275 Taking Back Silithus] to Windcaller Proudhorn",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 8275,
+      "quest_name": "Taking Back Silithus",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "before_quest_id": 6182,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6182:requiredLevel"
+      ],
+      "instruction": "Reach level 56 before accepting The First and the Last. [XP56 Level 56]",
+      "map_id": 1519,
+      "map_name": "Stormwind City",
+      "optional": false,
+      "order": 10,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 56,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 78.22,
+      "y": 17.98
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1748,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 78.22,
+              "y": 17.98
+            }
+          ],
+          "name": "Highlord Bolvar Fordragon",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6182"
+      ],
+      "instruction": "Accept [QA6182 The First and the Last] from Highlord Bolvar Fordragon.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 6182,
+      "quest_name": "The First and the Last",
+      "quest_tag": "Elite",
+      "required_level": 56,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "before_quest_id": 6182,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6182:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 1519,
+      "map_name": "Stormwind City",
+      "optional": true,
+      "order": 12,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        6182
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 47.45,
+      "y": 64.17
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6182"
+      ],
+      "instruction": "Elite/group recommended \u2014 Complete [QC6182 The First and the Last]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 6182,
+      "quest_name": "The First and the Last",
+      "quest_tag": "Elite",
+      "required_level": 56,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 332,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 75.78,
+              "y": 59.84
+            }
+          ],
+          "name": "Master Mathias Shaw",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6182"
+      ],
+      "instruction": "Turn in [QT6182 The First and the Last] to Master Mathias Shaw",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 6182,
+      "quest_name": "The First and the Last",
+      "quest_tag": "Elite",
+      "required_level": 56,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 332,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 75.78,
+              "y": 59.84
+            }
+          ],
+          "name": "Master Mathias Shaw",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6183"
+      ],
+      "instruction": "Accept [QA6183 Honor the Dead] from Master Mathias Shaw.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 6183,
+      "quest_name": "Honor the Dead",
+      "quest_tag": "Elite",
+      "required_level": 56,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6183"
+      ],
+      "instruction": "Elite/group recommended \u2014 Complete [QC6183 Honor the Dead]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 6183,
+      "quest_name": "Honor the Dead",
+      "quest_tag": "Elite",
+      "required_level": 56,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 332,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 75.78,
+              "y": 59.84
+            }
+          ],
+          "name": "Master Mathias Shaw",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6183"
+      ],
+      "instruction": "Turn in [QT6183 Honor the Dead] to Master Mathias Shaw",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 6183,
+      "quest_name": "Honor the Dead",
+      "quest_tag": "Elite",
+      "required_level": 56,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    }
+  ],
+  "title": "73 Stormwind City"
+}

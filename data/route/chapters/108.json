@@ -1,0 +1,648 @@
+{
+  "branch": "optional_content",
+  "entry_contract": "Complete the relevant shared prerequisites. Begin in Swamp of Sorrows with Oathstone of Ysera's Dragonflight. Leave at least two quest-log slots open; group and reputation gates remain explicit.",
+  "entry_route_point": {
+    "map_id": 8,
+    "map_name": "Swamp of Sorrows",
+    "x": 13.67,
+    "y": 71.72
+  },
+  "entry_zone_or_sort": 8,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 46,
+    "map_name": "Burning Steppes",
+    "quest_id": 4262,
+    "tag": "QT",
+    "x": 85.41,
+    "y": 70.06
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Optional Content",
+  "guide_file": "Guides/optional_content/108_world_12.lua",
+  "id": "108-optional_content-optional-content-12---swamp-of-sorrows-&-stranglethorn-vale",
+  "maximum_level": null,
+  "minimum_level": null,
+  "next_chapter": "Optional Content 13 - Blackrock Depths",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "Optional Content 11 - Sunken Temple & Ironforge",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 3374,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3447:QA",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3374:finisher",
+        "travel-network:ratchet-booty-bay",
+        "https://www.wowhead.com/tbc/quest=1040/passage-to-booty-bay"
+      ],
+      "instruction": "Travel from Tanaris to Swamp of Sorrows: Take the ship between Ratchet and Booty Bay. Continue to [G13.67,71.72 Swamp of Sorrows]. [O]",
+      "map_id": 8,
+      "map_name": "Swamp of Sorrows",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 440,
+      "origin_map_name": "Tanaris",
+      "origin_x": 52.71,
+      "origin_y": 45.92,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [
+        "ratchet-booty-bay"
+      ],
+      "type": "transport",
+      "verification": "questie_endpoints_and_tbc_transport_network",
+      "x": 13.67,
+      "y": 71.72
+    },
+    {
+      "before_quest_id": 3374,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "route-branch:optional_content"
+      ],
+      "instruction": "Optional entry requirements: complete the relevant shared prerequisites. [O]",
+      "map_id": 8,
+      "map_name": "Swamp of Sorrows",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "branch_entry",
+      "verification": "route_dependency_graph",
+      "x": 13.67,
+      "y": 71.72
+    },
+    {
+      "before_quest_id": 3374,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3374:finisher"
+      ],
+      "instruction": "Optional chapter: travel to Swamp of Sorrows and begin at [G13.67,71.72 Swamp of Sorrows]. Leave at least two quest-log slots open. [O]",
+      "map_id": 8,
+      "map_name": "Swamp of Sorrows",
+      "optional": true,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 13.67,
+      "y": 71.72
+    },
+    {
+      "before_quest_id": 3374,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3374:requiredLevel"
+      ],
+      "instruction": "Reach level 50 before accepting The Essence of Eranikus. [XP50 Level 50]",
+      "map_id": 8,
+      "map_name": "Swamp of Sorrows",
+      "optional": false,
+      "order": 4,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 50,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": null,
+      "y": null
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 10589,
+          "kind": "item",
+          "locations": [],
+          "name": "Oathstone of Ysera's Dragonflight",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3374"
+      ],
+      "instruction": "Accept [QA3374 The Essence of Eranikus] from Oathstone of Ysera's Dragonflight.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 3374,
+      "quest_name": "The Essence of Eranikus",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 8,
+      "zone_or_sort_name": "Swamp of Sorrows"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3374"
+      ],
+      "instruction": "Collect or use the required item: Chained Essence of Eranikus. [QC3374 The Essence of Eranikus]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Chained Essence of Eranikus",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 10455,
+          "kind": "item",
+          "locations": [],
+          "name": "Chained Essence of Eranikus",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 6,
+      "quest_id": 3374,
+      "quest_name": "The Essence of Eranikus",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 8,
+      "zone_or_sort_name": "Swamp of Sorrows"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5353,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 13.67,
+              "y": 71.72
+            }
+          ],
+          "name": "Itharius",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3374"
+      ],
+      "instruction": "Turn in [QT3374 The Essence of Eranikus] to Itharius",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 3374,
+      "quest_name": "The Essence of Eranikus",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 8,
+      "zone_or_sort_name": "Swamp of Sorrows"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2546,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 30.58,
+              "y": 90.63
+            }
+          ],
+          "name": "Fleet Master Firallon",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9272"
+      ],
+      "instruction": "Accept [QA9272 Dressing the Part] from Fleet Master Firallon.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 9272,
+      "quest_name": "Dressing the Part",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9272"
+      ],
+      "instruction": "Complete [QC9272 Dressing the Part]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 9272,
+      "quest_name": "Dressing the Part",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2546,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 30.58,
+              "y": 90.63
+            }
+          ],
+          "name": "Fleet Master Firallon",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9272"
+      ],
+      "instruction": "Turn in [QT9272 Dressing the Part] to Fleet Master Firallon",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 9272,
+      "quest_name": "Dressing the Part",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "before_quest_id": 3512,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3512:requiredLevel"
+      ],
+      "instruction": "Reach level 52 before accepting In Eranikus' Own Words. [XP52 Level 52]",
+      "map_id": 8,
+      "map_name": "Swamp of Sorrows",
+      "optional": false,
+      "order": 11,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 52,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 13.67,
+      "y": 71.72
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5353,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 13.67,
+              "y": 71.72
+            }
+          ],
+          "name": "Itharius",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3512"
+      ],
+      "instruction": "Accept [QA3512 In Eranikus' Own Words] from Itharius.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 3512,
+      "quest_name": "In Eranikus' Own Words",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 8,
+      "zone_or_sort_name": "Swamp of Sorrows"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3512"
+      ],
+      "instruction": "Complete [QC3512 In Eranikus' Own Words]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 3512,
+      "quest_name": "In Eranikus' Own Words",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 8,
+      "zone_or_sort_name": "Swamp of Sorrows"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8588,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 67.81,
+              "y": 27.43
+            }
+          ],
+          "name": "Umbranse the Spiritspeaker",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3512"
+      ],
+      "instruction": "Turn in [QT3512 In Eranikus' Own Words] to Umbranse the Spiritspeaker",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 3512,
+      "quest_name": "In Eranikus' Own Words",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 8,
+      "zone_or_sort_name": "Swamp of Sorrows"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9561,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 46,
+              "map_name": "Burning Steppes",
+              "verification": "questie_structured_source_only",
+              "x": 85.41,
+              "y": 70.06
+            }
+          ],
+          "name": "Jalinda Sprig",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4262"
+      ],
+      "instruction": "Accept [QA4262 Overmaster Pyron] from Jalinda Sprig.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 4262,
+      "quest_name": "Overmaster Pyron",
+      "quest_tag": "Dungeon",
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 25,
+      "zone_or_sort_name": "Map or sort 25"
+    },
+    {
+      "before_quest_id": 4262,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4262:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 8,
+      "map_name": "Swamp of Sorrows",
+      "optional": true,
+      "order": 16,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        4262
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 13.67,
+      "y": 71.72
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4262"
+      ],
+      "instruction": "Dungeon \u2014 Complete the required NPC or creature objective: Overmaster Pyron. [QC4262 Overmaster Pyron]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Overmaster Pyron",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9026,
+          "kind": "npc",
+          "locations": [],
+          "name": "Overmaster Pyron",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 17,
+      "quest_id": 4262,
+      "quest_name": "Overmaster Pyron",
+      "quest_tag": "Dungeon",
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 25,
+      "zone_or_sort_name": "Map or sort 25"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9561,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 46,
+              "map_name": "Burning Steppes",
+              "verification": "questie_structured_source_only",
+              "x": 85.41,
+              "y": 70.06
+            }
+          ],
+          "name": "Jalinda Sprig",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4262"
+      ],
+      "instruction": "Turn in [QT4262 Overmaster Pyron] to Jalinda Sprig",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 4262,
+      "quest_name": "Overmaster Pyron",
+      "quest_tag": "Dungeon",
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 25,
+      "zone_or_sort_name": "Map or sort 25"
+    }
+  ],
+  "title": "Optional Content 12 - Swamp of Sorrows & Stranglethorn Vale"
+}

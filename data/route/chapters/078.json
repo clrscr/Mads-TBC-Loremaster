@@ -1,0 +1,1990 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 77 Moonglade & Silithus, or select this chapter on a partially completed character. Begin in Azshara with Duke Hydraxis. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 16,
+    "map_name": "Azshara",
+    "x": 79.28,
+    "y": 73.7
+  },
+  "entry_zone_or_sort": 16,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 8,
+    "map_name": "Swamp of Sorrows",
+    "quest_id": 3626,
+    "tag": "QT",
+    "x": 34.29,
+    "y": 66.14
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/078_world_78.lua",
+  "id": "078-primary-78-azshara",
+  "maximum_level": 58,
+  "minimum_level": 58,
+  "next_chapter": "79 Blasted Lands & Western Plaguelands",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "77 Moonglade & Silithus",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 6804,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1185:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6804:starter"
+      ],
+      "instruction": "Travel from Moonglade to Azshara. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G79.28,73.70 Azshara]. [O]",
+      "map_id": 16,
+      "map_name": "Azshara",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 493,
+      "origin_map_name": "Moonglade",
+      "origin_x": 44.88,
+      "origin_y": 35.6,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 79.28,
+      "y": 73.7
+    },
+    {
+      "before_quest_id": 6804,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6804:starter"
+      ],
+      "instruction": "Before you begin: travel to Azshara and meet the first quest giver at [G79.28,73.70 Azshara]. Leave at least two quest-log slots open. [O]",
+      "map_id": 16,
+      "map_name": "Azshara",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 79.28,
+      "y": 73.7
+    },
+    {
+      "before_quest_id": 6804,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6804:requiredLevel"
+      ],
+      "instruction": "Reach level 58 before accepting Poisoned Water. [XP58 Level 58]",
+      "map_id": 16,
+      "map_name": "Azshara",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 58,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 79.28,
+      "y": 73.7
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 13278,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 79.28,
+              "y": 73.7
+            }
+          ],
+          "name": "Duke Hydraxis",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6804"
+      ],
+      "instruction": "Accept [QA6804 Poisoned Water] from Duke Hydraxis.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 6804,
+      "quest_name": "Poisoned Water",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 13278,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 79.28,
+              "y": 73.7
+            }
+          ],
+          "name": "Duke Hydraxis",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6805"
+      ],
+      "instruction": "Accept [QA6805 Stormers and Rumblers] from Duke Hydraxis.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 6805,
+      "quest_name": "Stormers and Rumblers",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6805"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Dust Stormer, Desert Rumbler. [QC6805 Stormers and Rumblers]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Dust Stormer, Desert Rumbler",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11744,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 27.49,
+              "y": 18.13
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 28.47,
+              "y": 19.96
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 30.17,
+              "y": 13.88
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 30.37,
+              "y": 16.82
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 29.25,
+              "y": 15.28
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 32.1,
+              "y": 14.26
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 32.05,
+              "y": 16.82
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 31.22,
+              "y": 16.03
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 31.19,
+              "y": 18.16
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 33.25,
+              "y": 12.89
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 32.95,
+              "y": 15.27
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 34.21,
+              "y": 13.5
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 34.71,
+              "y": 12.45
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 28.53,
+              "y": 22.51
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 29.51,
+              "y": 21.45
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 29.39,
+              "y": 18.51
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 30.16,
+              "y": 20.12
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 28.41,
+              "y": 17.51
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 34.73,
+              "y": 25.49
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 61.89,
+              "y": 16.98
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 67.38,
+              "y": 21.05
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 41.4,
+              "y": 37.14
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 22.78,
+              "y": 28.24
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 19.68,
+              "y": 27.37
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 18.57,
+              "y": 25.46
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 52.21,
+              "y": 33.65
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 62.73,
+              "y": 31.26
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 56.06,
+              "y": 23.51
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 23.65,
+              "y": 27.15
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 18.97,
+              "y": 22.24
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 19.59,
+              "y": 21.27
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 18.73,
+              "y": 19.9
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 17.62,
+              "y": 23.56
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 17.61,
+              "y": 26.59
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 17.04,
+              "y": 24.91
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 18.7,
+              "y": 28.5
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 17.09,
+              "y": 26.72
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 18.01,
+              "y": 29.51
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 19.98,
+              "y": 29.55
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 22.63,
+              "y": 25.15
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 19.9,
+              "y": 18.2
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 21.71,
+              "y": 24.19
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 22.46,
+              "y": 22.77
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 21.81,
+              "y": 21.27
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 20.48,
+              "y": 23.06
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 21.81,
+              "y": 26.95
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 20.75,
+              "y": 25.49
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 21.55,
+              "y": 30.04
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 20.37,
+              "y": 31.18
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 19.86,
+              "y": 32.0
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 20.59,
+              "y": 28.25
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 18.11,
+              "y": 32.46
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 68.67,
+              "y": 32.58
+            }
+          ],
+          "name": "Dust Stormer",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11746,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 27.0,
+              "y": 15.53
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 18.73,
+              "y": 17.13
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 22.63,
+              "y": 19.54
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 25.45,
+              "y": 15.16
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 26.91,
+              "y": 10.98
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 28.31,
+              "y": 14.1
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 25.53,
+              "y": 12.26
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 26.48,
+              "y": 14.24
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 22.04,
+              "y": 11.62
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 24.61,
+              "y": 11.32
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 25.25,
+              "y": 9.65
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 24.58,
+              "y": 13.77
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 23.45,
+              "y": 15.51
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 23.65,
+              "y": 9.9
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 46.36,
+              "y": 53.45
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 21.83,
+              "y": 15.84
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 20.68,
+              "y": 16.6
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 20.82,
+              "y": 14.0
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 21.62,
+              "y": 10.01
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 21.06,
+              "y": 10.57
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 22.18,
+              "y": 8.63
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 21.82,
+              "y": 12.73
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 22.7,
+              "y": 14.46
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 19.97,
+              "y": 15.7
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 23.49,
+              "y": 17.91
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 22.72,
+              "y": 17.4
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 21.48,
+              "y": 17.76
+            },
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 21.49,
+              "y": 40.3
+            }
+          ],
+          "name": "Desert Rumbler",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 6,
+      "quest_id": 6805,
+      "quest_name": "Stormers and Rumblers",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6804"
+      ],
+      "instruction": "Use the quest item [UI17310-] as directed; collect or use the required item: Discordant Bracers. [QC6804 Poisoned Water]",
+      "item_use_id": 17310,
+      "objective_hint": "Collect or use the required item: Discordant Bracers",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 17309,
+          "kind": "item",
+          "locations": [],
+          "name": "Discordant Bracers",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 7,
+      "quest_id": 6804,
+      "quest_name": "Poisoned Water",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 13278,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 79.28,
+              "y": 73.7
+            }
+          ],
+          "name": "Duke Hydraxis",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6804"
+      ],
+      "instruction": "Turn in [QT6804 Poisoned Water] to Duke Hydraxis",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 6804,
+      "quest_name": "Poisoned Water",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 13278,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 79.28,
+              "y": 73.7
+            }
+          ],
+          "name": "Duke Hydraxis",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6805"
+      ],
+      "instruction": "Turn in [QT6805 Stormers and Rumblers] to Duke Hydraxis",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 6805,
+      "quest_name": "Stormers and Rumblers",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7783,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 60.82,
+              "y": 66.35
+            }
+          ],
+          "name": "Loramus Thalipedes",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3141"
+      ],
+      "instruction": "Accept [QA3141 Loramus] from Loramus Thalipedes.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 3141,
+      "quest_name": "Loramus",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3141"
+      ],
+      "instruction": "Complete the scripted or exploration event. [QC3141 Loramus]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 3141,
+      "quest_name": "Loramus",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7783,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 60.82,
+              "y": 66.35
+            }
+          ],
+          "name": "Loramus Thalipedes",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3141"
+      ],
+      "instruction": "Turn in [QT3141 Loramus] to Loramus Thalipedes",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 3141,
+      "quest_name": "Loramus",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7783,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 60.82,
+              "y": 66.35
+            }
+          ],
+          "name": "Loramus Thalipedes",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3508"
+      ],
+      "instruction": "Accept [QA3508 Breaking the Ward] from Loramus Thalipedes.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 3508,
+      "quest_name": "Breaking the Ward",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3508"
+      ],
+      "instruction": "Complete [QC3508 Breaking the Ward]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 3508,
+      "quest_name": "Breaking the Ward",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7783,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 60.82,
+              "y": 66.35
+            }
+          ],
+          "name": "Loramus Thalipedes",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3508"
+      ],
+      "instruction": "Turn in [QT3508 Breaking the Ward] to Loramus Thalipedes",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 3508,
+      "quest_name": "Breaking the Ward",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7783,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 60.82,
+              "y": 66.35
+            }
+          ],
+          "name": "Loramus Thalipedes",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3509"
+      ],
+      "instruction": "Accept [QA3509 The Name of the Beast] from Loramus Thalipedes.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 3509,
+      "quest_name": "The Name of the Beast",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3509"
+      ],
+      "instruction": "Complete [QC3509 The Name of the Beast]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 3509,
+      "quest_name": "The Name of the Beast",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 6134,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 77.13,
+              "y": 42.79
+            }
+          ],
+          "name": "Lord Arkkoroc",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3509"
+      ],
+      "instruction": "Turn in [QT3509 The Name of the Beast] to Lord Arkkoroc",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 3509,
+      "quest_name": "The Name of the Beast",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 6134,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 77.13,
+              "y": 42.79
+            }
+          ],
+          "name": "Lord Arkkoroc",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3510"
+      ],
+      "instruction": "Accept [QA3510 The Name of the Beast] from Lord Arkkoroc.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 3510,
+      "quest_name": "The Name of the Beast",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3510"
+      ],
+      "instruction": "Collect or use the required items: Hetaera's Beaten Head, Hetaera's Bloodied Head, Hetaera's Bruised Head. [QC3510 The Name of the Beast]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Hetaera's Beaten Head, Hetaera's Bloodied Head, Hetaera's Bruised Head",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 10599,
+          "kind": "item",
+          "locations": [],
+          "name": "Hetaera's Beaten Head",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 10598,
+          "kind": "item",
+          "locations": [],
+          "name": "Hetaera's Bloodied Head",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 10600,
+          "kind": "item",
+          "locations": [],
+          "name": "Hetaera's Bruised Head",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 20,
+      "quest_id": 3510,
+      "quest_name": "The Name of the Beast",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 6134,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 77.13,
+              "y": 42.79
+            }
+          ],
+          "name": "Lord Arkkoroc",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3510"
+      ],
+      "instruction": "Turn in [QT3510 The Name of the Beast] to Lord Arkkoroc",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 3510,
+      "quest_name": "The Name of the Beast",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 6134,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 77.13,
+              "y": 42.79
+            }
+          ],
+          "name": "Lord Arkkoroc",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3511"
+      ],
+      "instruction": "Accept [QA3511 The Name of the Beast] from Lord Arkkoroc.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 22,
+      "quest_id": 3511,
+      "quest_name": "The Name of the Beast",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3511"
+      ],
+      "instruction": "Complete [QC3511 The Name of the Beast]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 23,
+      "quest_id": 3511,
+      "quest_name": "The Name of the Beast",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7783,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 60.82,
+              "y": 66.35
+            }
+          ],
+          "name": "Loramus Thalipedes",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3511"
+      ],
+      "instruction": "Turn in [QT3511 The Name of the Beast] to Loramus Thalipedes",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 24,
+      "quest_id": 3511,
+      "quest_name": "The Name of the Beast",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7783,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 60.82,
+              "y": 66.35
+            }
+          ],
+          "name": "Loramus Thalipedes",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3602"
+      ],
+      "instruction": "Accept [QA3602 Azsharite] from Loramus Thalipedes.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 25,
+      "quest_id": 3602,
+      "quest_name": "Azsharite",
+      "quest_tag": "Elite",
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "before_quest_id": 3602,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3602:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 16,
+      "map_name": "Azshara",
+      "optional": true,
+      "order": 26,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        3602
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 79.28,
+      "y": 73.7
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3602"
+      ],
+      "instruction": "Elite/group recommended \u2014 Use the quest item [UI10834-] as directed; collect or use the required item: Crystallized Azsharite. [QC3602 Azsharite]",
+      "item_use_id": 10834,
+      "objective_hint": "Collect or use the required item: Crystallized Azsharite",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 10714,
+          "kind": "item",
+          "locations": [],
+          "name": "Crystallized Azsharite",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 27,
+      "quest_id": 3602,
+      "quest_name": "Azsharite",
+      "quest_tag": "Elite",
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7783,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 60.82,
+              "y": 66.35
+            }
+          ],
+          "name": "Loramus Thalipedes",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3602"
+      ],
+      "instruction": "Turn in [QT3602 Azsharite] to Loramus Thalipedes",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 28,
+      "quest_id": 3602,
+      "quest_name": "Azsharite",
+      "quest_tag": "Elite",
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7783,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 60.82,
+              "y": 66.35
+            }
+          ],
+          "name": "Loramus Thalipedes",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3621"
+      ],
+      "instruction": "Accept [QA3621 The Formation of Felbane] from Loramus Thalipedes.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 29,
+      "quest_id": 3621,
+      "quest_name": "The Formation of Felbane",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3621"
+      ],
+      "instruction": "Complete [QC3621 The Formation of Felbane]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 30,
+      "quest_id": 3621,
+      "quest_name": "The Formation of Felbane",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7802,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 50.62,
+              "y": 20.48
+            }
+          ],
+          "name": "Galvan the Ancient",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3621"
+      ],
+      "instruction": "Turn in [QT3621 The Formation of Felbane] to Galvan the Ancient",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 31,
+      "quest_id": 3621,
+      "quest_name": "The Formation of Felbane",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7802,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 50.62,
+              "y": 20.48
+            }
+          ],
+          "name": "Galvan the Ancient",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3625"
+      ],
+      "instruction": "Accept [QA3625 Enchanted Azsharite Fel Weaponry] from Galvan the Ancient.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 32,
+      "quest_id": 3625,
+      "quest_name": "Enchanted Azsharite Fel Weaponry",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3625"
+      ],
+      "instruction": "Complete the scripted or exploration event. [QC3625 Enchanted Azsharite Fel Weaponry]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 33,
+      "quest_id": 3625,
+      "quest_name": "Enchanted Azsharite Fel Weaponry",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7802,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 50.62,
+              "y": 20.48
+            }
+          ],
+          "name": "Galvan the Ancient",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3625"
+      ],
+      "instruction": "Turn in [QT3625 Enchanted Azsharite Fel Weaponry] to Galvan the Ancient",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 34,
+      "quest_id": 3625,
+      "quest_name": "Enchanted Azsharite Fel Weaponry",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7802,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 50.62,
+              "y": 20.48
+            }
+          ],
+          "name": "Galvan the Ancient",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3626"
+      ],
+      "instruction": "Accept [QA3626 Return to the Blasted Lands] from Galvan the Ancient.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 35,
+      "quest_id": 3626,
+      "quest_name": "Return to the Blasted Lands",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3626"
+      ],
+      "instruction": "Complete [QC3626 Return to the Blasted Lands]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 36,
+      "quest_id": 3626,
+      "quest_name": "Return to the Blasted Lands",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7572,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 34.29,
+              "y": 66.14
+            }
+          ],
+          "name": "Fallen Hero of the Horde",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3626"
+      ],
+      "instruction": "Turn in [QT3626 Return to the Blasted Lands] to Fallen Hero of the Horde",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 37,
+      "quest_id": 3626,
+      "quest_name": "Return to the Blasted Lands",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    }
+  ],
+  "title": "78 Azshara"
+}

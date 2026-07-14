@@ -1,0 +1,717 @@
+{
+  "branch": "optional_content",
+  "entry_contract": "Complete the relevant shared prerequisites. Begin in Alcaz Island with Bodley. Leave at least two quest-log slots open; group and reputation gates remain explicit.",
+  "entry_route_point": {
+    "map_id": 2079,
+    "map_name": "Alcaz Island",
+    "x": null,
+    "y": null
+  },
+  "entry_zone_or_sort": 2079,
+  "exit_route_point": {
+    "basis": "chapter_entry_fallback_no_mapped_operation",
+    "map_id": 2079,
+    "map_name": "Alcaz Island",
+    "quest_id": null,
+    "tag": null,
+    "x": null,
+    "y": null
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Optional Content",
+  "guide_file": "Guides/optional_content/127_world_31.lua",
+  "id": "127-optional_content-optional-content-31---alcaz-island-&-blackrock-spire",
+  "maximum_level": null,
+  "minimum_level": null,
+  "next_chapter": "Optional Content 32 - Scholomance & Dire Maul",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "Optional Content 30 - Legendary",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 8970,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7787:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8970:objective"
+      ],
+      "instruction": "Travel from Silithus to Alcaz Island. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to Alcaz Island. [O]",
+      "map_id": 2079,
+      "map_name": "Alcaz Island",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 1377,
+      "origin_map_name": "Silithus",
+      "origin_x": 21.71,
+      "origin_y": 8.57,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": null,
+      "y": null
+    },
+    {
+      "before_quest_id": 8970,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "route-branch:optional_content"
+      ],
+      "instruction": "Optional entry requirements: complete the relevant shared prerequisites. [O]",
+      "map_id": 2079,
+      "map_name": "Alcaz Island",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "branch_entry",
+      "verification": "route_dependency_graph",
+      "x": null,
+      "y": null
+    },
+    {
+      "before_quest_id": 8970,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8970:objective"
+      ],
+      "instruction": "Optional chapter: enter Alcaz Island. Leave at least two quest-log slots open. [O]",
+      "map_id": 2079,
+      "map_name": "Alcaz Island",
+      "optional": true,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": null,
+      "y": null
+    },
+    {
+      "before_quest_id": 8970,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8970:requiredLevel"
+      ],
+      "instruction": "Reach level 62 before accepting I See Alcaz Island In Your Future... [XP62 Level 62]",
+      "map_id": 2079,
+      "map_name": "Alcaz Island",
+      "optional": false,
+      "order": 4,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 62,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": null,
+      "y": null
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16033,
+          "kind": "npc",
+          "locations": [],
+          "name": "Bodley",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8970"
+      ],
+      "instruction": "Accept [QA8970 I See Alcaz Island In Your Future...] from Bodley.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 8970,
+      "quest_name": "I See Alcaz Island In Your Future...",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 2079,
+      "zone_or_sort_name": "Alcaz Island"
+    },
+    {
+      "before_quest_id": 8970,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8970:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 2079,
+      "map_name": "Alcaz Island",
+      "optional": true,
+      "order": 6,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        8970
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": null,
+      "y": null
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8970"
+      ],
+      "instruction": "Elite/group recommended \u2014 Collect or use the required item: Bloodkelp. [QC8970 I See Alcaz Island In Your Future...]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Bloodkelp",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 22094,
+          "kind": "item",
+          "locations": [],
+          "name": "Bloodkelp",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 7,
+      "quest_id": 8970,
+      "quest_name": "I See Alcaz Island In Your Future...",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 2079,
+      "zone_or_sort_name": "Alcaz Island"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16033,
+          "kind": "npc",
+          "locations": [],
+          "name": "Bodley",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8970"
+      ],
+      "instruction": "Turn in [QT8970 I See Alcaz Island In Your Future...] to Bodley",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 8970,
+      "quest_name": "I See Alcaz Island In Your Future...",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 2079,
+      "zone_or_sort_name": "Alcaz Island"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16033,
+          "kind": "npc",
+          "locations": [],
+          "name": "Bodley",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8985"
+      ],
+      "instruction": "Accept [QA8985 More Components of Importance] from Bodley.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 8985,
+      "quest_name": "More Components of Importance",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 25,
+      "zone_or_sort_name": "Map or sort 25"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16033,
+          "kind": "npc",
+          "locations": [],
+          "name": "Bodley",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8986"
+      ],
+      "instruction": "Accept [QA8986 More Components of Importance] from Bodley.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 8986,
+      "quest_name": "More Components of Importance",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 25,
+      "zone_or_sort_name": "Map or sort 25"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16033,
+          "kind": "npc",
+          "locations": [],
+          "name": "Bodley",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8988"
+      ],
+      "instruction": "Accept [QA8988 More Components of Importance] from Bodley.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 8988,
+      "quest_name": "More Components of Importance",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 25,
+      "zone_or_sort_name": "Map or sort 25"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8985"
+      ],
+      "instruction": "Elite/group recommended \u2014 Collect or use the required item: Starbreeze Village Relic. [QC8985 More Components of Importance]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Starbreeze Village Relic",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 22227,
+          "kind": "item",
+          "locations": [],
+          "name": "Starbreeze Village Relic",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 12,
+      "quest_id": 8985,
+      "quest_name": "More Components of Importance",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 25,
+      "zone_or_sort_name": "Map or sort 25"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8986"
+      ],
+      "instruction": "Elite/group recommended \u2014 Collect or use the required item: Druidical Remains. [QC8986 More Components of Importance]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Druidical Remains",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 22226,
+          "kind": "item",
+          "locations": [],
+          "name": "Druidical Remains",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 13,
+      "quest_id": 8986,
+      "quest_name": "More Components of Importance",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 25,
+      "zone_or_sort_name": "Map or sort 25"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8988"
+      ],
+      "instruction": "Elite/group recommended \u2014 Collect or use the required item: Soul Ashes of the Banished. [QC8988 More Components of Importance]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Soul Ashes of the Banished",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 22229,
+          "kind": "item",
+          "locations": [],
+          "name": "Soul Ashes of the Banished",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 14,
+      "quest_id": 8988,
+      "quest_name": "More Components of Importance",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 25,
+      "zone_or_sort_name": "Map or sort 25"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16033,
+          "kind": "npc",
+          "locations": [],
+          "name": "Bodley",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8985"
+      ],
+      "instruction": "Turn in [QT8985 More Components of Importance] to Bodley",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 8985,
+      "quest_name": "More Components of Importance",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 25,
+      "zone_or_sort_name": "Map or sort 25"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16033,
+          "kind": "npc",
+          "locations": [],
+          "name": "Bodley",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8986"
+      ],
+      "instruction": "Turn in [QT8986 More Components of Importance] to Bodley",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 8986,
+      "quest_name": "More Components of Importance",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 25,
+      "zone_or_sort_name": "Map or sort 25"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16033,
+          "kind": "npc",
+          "locations": [],
+          "name": "Bodley",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8988"
+      ],
+      "instruction": "Turn in [QT8988 More Components of Importance] to Bodley",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 8988,
+      "quest_name": "More Components of Importance",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 25,
+      "zone_or_sort_name": "Map or sort 25"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16033,
+          "kind": "npc",
+          "locations": [],
+          "name": "Bodley",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8989"
+      ],
+      "instruction": "Accept [QA8989 The Right Piece of Lord Valthalak's Amulet] from Bodley.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 8989,
+      "quest_name": "The Right Piece of Lord Valthalak's Amulet",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1583,
+      "zone_or_sort_name": "Blackrock Spire"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8989"
+      ],
+      "instruction": "Dungeon \u2014 Use the quest item [UI22049-] as directed; complete the required objectives \u2014 NPCs or creatures: Mor Grayhoof; items: Lord Valthalak's Amulet. [QC8989 The Right Piece of Lord Valthalak's Amulet]",
+      "item_use_id": 22049,
+      "objective_hint": "Complete the required objectives \u2014 NPCs or creatures: Mor Grayhoof; items: Lord Valthalak's Amulet",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16080,
+          "kind": "npc",
+          "locations": [],
+          "name": "Mor Grayhoof",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 22048,
+          "kind": "item",
+          "locations": [],
+          "name": "Lord Valthalak's Amulet",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 19,
+      "quest_id": 8989,
+      "quest_name": "The Right Piece of Lord Valthalak's Amulet",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1583,
+      "zone_or_sort_name": "Blackrock Spire"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16033,
+          "kind": "npc",
+          "locations": [],
+          "name": "Bodley",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8989"
+      ],
+      "instruction": "Turn in [QT8989 The Right Piece of Lord Valthalak's Amulet] to Bodley",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 8989,
+      "quest_name": "The Right Piece of Lord Valthalak's Amulet",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1583,
+      "zone_or_sort_name": "Blackrock Spire"
+    }
+  ],
+  "title": "Optional Content 31 - Alcaz Island & Blackrock Spire"
+}

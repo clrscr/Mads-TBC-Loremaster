@@ -1,0 +1,587 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 62 Winterspring, or select this chapter on a partially completed character. Begin in Stormwind City with Tannysa. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 1519,
+    "map_name": "Stormwind City",
+    "x": 44.73,
+    "y": 77.11
+  },
+  "entry_zone_or_sort": 1519,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 28,
+    "map_name": "Western Plaguelands",
+    "quest_id": 5066,
+    "tag": "QT",
+    "x": 42.7,
+    "y": 84.03
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/063_world_63.lua",
+  "id": "063-primary-63-stormwind-city-&-ironforge",
+  "maximum_level": 52,
+  "minimum_level": 52,
+  "next_chapter": "64 Eastern Plaguelands & Western Plaguelands",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "62 Winterspring",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 3787,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7800:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3787:starter",
+        "travel-network:auberdine-menethil",
+        "https://www.wowhead.com/tbc/quest=942/the-absent-minded-prospector"
+      ],
+      "instruction": "Travel from Darnassus to Stormwind City: Take the ship between Auberdine and Menethil Harbor. Continue to [G44.73,77.11 Stormwind City]. [O]",
+      "map_id": 1519,
+      "map_name": "Stormwind City",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 1657,
+      "origin_map_name": "Darnassus",
+      "origin_x": 64.02,
+      "origin_y": 23.0,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [
+        "auberdine-menethil"
+      ],
+      "type": "transport",
+      "verification": "questie_endpoints_and_tbc_transport_network",
+      "x": 44.73,
+      "y": 77.11
+    },
+    {
+      "before_quest_id": 3787,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3787:starter"
+      ],
+      "instruction": "Before you begin: travel to Stormwind City and meet the first quest giver at [G44.73,77.11 Stormwind City]. Leave at least two quest-log slots open. [O]",
+      "map_id": 1519,
+      "map_name": "Stormwind City",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 44.73,
+      "y": 77.11
+    },
+    {
+      "before_quest_id": 3787,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3787:requiredLevel"
+      ],
+      "instruction": "Reach level 52 before accepting Jonespyre's Request. [XP52 Level 52]",
+      "map_id": 1519,
+      "map_name": "Stormwind City",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 52,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 44.73,
+      "y": 77.11
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5566,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 44.73,
+              "y": 77.11
+            }
+          ],
+          "name": "Tannysa",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3787"
+      ],
+      "instruction": "Accept [QA3787 Jonespyre's Request] from Tannysa.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 3787,
+      "quest_name": "Jonespyre's Request",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3787"
+      ],
+      "instruction": "Complete [QC3787 Jonespyre's Request]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 3787,
+      "quest_name": "Jonespyre's Request",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7879,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 357,
+              "map_name": "Feralas",
+              "verification": "questie_structured_source_only",
+              "x": 32.45,
+              "y": 43.79
+            }
+          ],
+          "name": "Quintis Jonespyre",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3787"
+      ],
+      "instruction": "Turn in [QT3787 Jonespyre's Request] to Quintis Jonespyre",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 3787,
+      "quest_name": "Jonespyre's Request",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9616,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 75.77,
+              "y": 23.38
+            }
+          ],
+          "name": "Laris Geardawdle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4512"
+      ],
+      "instruction": "Accept [QA4512 A Little Slime Goes a Long Way] from Laris Geardawdle.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 4512,
+      "quest_name": "A Little Slime Goes a Long Way",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4512"
+      ],
+      "instruction": "Collect or use the required items: Filled Cursed Ooze Jar, Filled Tainted Ooze Jar. [QC4512 A Little Slime Goes a Long Way]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Filled Cursed Ooze Jar, Filled Tainted Ooze Jar",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 11947,
+          "kind": "item",
+          "locations": [],
+          "name": "Filled Cursed Ooze Jar",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 11949,
+          "kind": "item",
+          "locations": [],
+          "name": "Filled Tainted Ooze Jar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 8,
+      "quest_id": 4512,
+      "quest_name": "A Little Slime Goes a Long Way",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9616,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 75.77,
+              "y": 23.38
+            }
+          ],
+          "name": "Laris Geardawdle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4512"
+      ],
+      "instruction": "Turn in [QT4512 A Little Slime Goes a Long Way] to Laris Geardawdle",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 4512,
+      "quest_name": "A Little Slime Goes a Long Way",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9616,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 75.77,
+              "y": 23.38
+            }
+          ],
+          "name": "Laris Geardawdle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4513"
+      ],
+      "instruction": "Accept [QA4513 A Little Slime Goes a Long Way] from Laris Geardawdle.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 4513,
+      "quest_name": "A Little Slime Goes a Long Way",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4513"
+      ],
+      "instruction": "Collect or use the required item: Filled Pure Sample Jar. [QC4513 A Little Slime Goes a Long Way]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Filled Pure Sample Jar",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 11954,
+          "kind": "item",
+          "locations": [],
+          "name": "Filled Pure Sample Jar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 11,
+      "quest_id": 4513,
+      "quest_name": "A Little Slime Goes a Long Way",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9616,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 75.77,
+              "y": 23.38
+            }
+          ],
+          "name": "Laris Geardawdle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4513"
+      ],
+      "instruction": "Turn in [QT4513 A Little Slime Goes a Long Way] to Laris Geardawdle",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 4513,
+      "quest_name": "A Little Slime Goes a Long Way",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2198,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 47.45,
+              "y": 64.17
+            }
+          ],
+          "name": "Crier Goodman",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5066"
+      ],
+      "instruction": "Accept [QA5066 A Call to Arms: The Plaguelands!] from Crier Goodman.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 5066,
+      "quest_name": "A Call to Arms: The Plaguelands!",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5066"
+      ],
+      "instruction": "Complete [QC5066 A Call to Arms: The Plaguelands!]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 5066,
+      "quest_name": "A Call to Arms: The Plaguelands!",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10838,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 28,
+              "map_name": "Western Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 42.7,
+              "y": 84.03
+            }
+          ],
+          "name": "Commander Ashlam Valorfist",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5066"
+      ],
+      "instruction": "Turn in [QT5066 A Call to Arms: The Plaguelands!] to Commander Ashlam Valorfist",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 5066,
+      "quest_name": "A Call to Arms: The Plaguelands!",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1519,
+      "zone_or_sort_name": "Stormwind City"
+    }
+  ],
+  "title": "63 Stormwind City & Ironforge"
+}

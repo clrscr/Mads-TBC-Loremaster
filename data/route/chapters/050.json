@@ -1,0 +1,1036 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 49 The Exodar & Westfall, or select this chapter on a partially completed character. Begin in Duskwood with Watchmaster Sorigal. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 10,
+    "map_name": "Duskwood",
+    "x": 75.78,
+    "y": 46.16
+  },
+  "entry_zone_or_sort": 10,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 1537,
+    "map_name": "Ironforge",
+    "quest_id": 3483,
+    "tag": "QT",
+    "x": 70.87,
+    "y": 94.56
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/050_world_50.lua",
+  "id": "050-primary-50-duskwood-&-ironforge",
+  "maximum_level": 45,
+  "minimum_level": 43,
+  "next_chapter": "51 Badlands",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "49 The Exodar & Westfall",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 1395,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:53:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1395:starter"
+      ],
+      "instruction": "Travel from Westfall to Duskwood. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G75.78,46.16 Duskwood]. [O]",
+      "map_id": 10,
+      "map_name": "Duskwood",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 40,
+      "origin_map_name": "Westfall",
+      "origin_x": 44.62,
+      "origin_y": 80.25,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 75.78,
+      "y": 46.16
+    },
+    {
+      "before_quest_id": 1395,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1395:starter"
+      ],
+      "instruction": "Before you begin: travel to Duskwood and meet the first quest giver at [G75.78,46.16 Duskwood]. Leave at least two quest-log slots open. [O]",
+      "map_id": 10,
+      "map_name": "Duskwood",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 75.78,
+      "y": 46.16
+    },
+    {
+      "before_quest_id": 1395,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1395:requiredLevel"
+      ],
+      "instruction": "Reach level 43 before accepting Supplies for Nethergarde. [XP43 Level 43]",
+      "map_id": 10,
+      "map_name": "Duskwood",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 43,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 75.78,
+      "y": 46.16
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5464,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 75.78,
+              "y": 46.16
+            }
+          ],
+          "name": "Watchmaster Sorigal",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1395"
+      ],
+      "instruction": "Accept [QA1395 Supplies for Nethergarde] from Watchmaster Sorigal.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 1395,
+      "quest_name": "Supplies for Nethergarde",
+      "quest_tag": null,
+      "required_level": 43,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1395"
+      ],
+      "instruction": "Complete [QC1395 Supplies for Nethergarde]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 1395,
+      "quest_name": "Supplies for Nethergarde",
+      "quest_tag": null,
+      "required_level": 43,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5393,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 4,
+              "map_name": "Blasted Lands",
+              "verification": "questie_structured_source_only",
+              "x": 66.52,
+              "y": 21.39
+            }
+          ],
+          "name": "Quartermaster Lungertz",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1395"
+      ],
+      "instruction": "Turn in [QT1395 Supplies for Nethergarde] to Quartermaster Lungertz",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 1395,
+      "quest_name": "Supplies for Nethergarde",
+      "quest_tag": null,
+      "required_level": 43,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8256,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 71.5,
+              "y": 15.74
+            }
+          ],
+          "name": "Curator Thorius",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3201"
+      ],
+      "instruction": "Accept [QA3201 At Last!] from Curator Thorius.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 3201,
+      "quest_name": "At Last!",
+      "quest_tag": null,
+      "required_level": 43,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "before_quest_id": 3448,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3448:requiredLevel"
+      ],
+      "instruction": "Reach level 45 before accepting Passing the Burden. [XP45 Level 45]",
+      "map_id": 1537,
+      "map_name": "Ironforge",
+      "optional": false,
+      "order": 8,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 45,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 77.54,
+      "y": 11.82
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2916,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 77.54,
+              "y": 11.82
+            }
+          ],
+          "name": "Historian Karnik",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3448"
+      ],
+      "instruction": "Accept [QA3448 Passing the Burden] from Historian Karnik.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 3448,
+      "quest_name": "Passing the Burden",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3201"
+      ],
+      "instruction": "Complete [QC3201 At Last!]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 3201,
+      "quest_name": "At Last!",
+      "quest_tag": null,
+      "required_level": 43,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3448"
+      ],
+      "instruction": "Complete [QC3448 Passing the Burden]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 3448,
+      "quest_name": "Passing the Burden",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8507,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 30.96,
+              "y": 4.83
+            }
+          ],
+          "name": "Tymor",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3448"
+      ],
+      "instruction": "Turn in [QT3448 Passing the Burden] to Tymor",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 3448,
+      "quest_name": "Passing the Burden",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3836,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 18.18,
+              "y": 84.01
+            }
+          ],
+          "name": "Mountaineer Pebblebitty",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3201"
+      ],
+      "instruction": "Turn in [QT3201 At Last!] to Mountaineer Pebblebitty",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 3201,
+      "quest_name": "At Last!",
+      "quest_tag": null,
+      "required_level": 43,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8507,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 30.96,
+              "y": 4.83
+            }
+          ],
+          "name": "Tymor",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3449"
+      ],
+      "instruction": "Accept [QA3449 Arcane Runes] from Tymor.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 3449,
+      "quest_name": "Arcane Runes",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8507,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 30.96,
+              "y": 4.83
+            }
+          ],
+          "name": "Tymor",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3450"
+      ],
+      "instruction": "Accept [QA3450 An Easy Pickup] from Tymor.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 3450,
+      "quest_name": "An Easy Pickup",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3449"
+      ],
+      "instruction": "Use the quest item [UI10445-] as directed; collect or use the required items: Rubbing: Rune of Beth'Amara, Rubbing: Rune of Jin'yael, Rubbing: Rune of Markri, plus 1 more. [QC3449 Arcane Runes]",
+      "item_use_id": 10445,
+      "objective_hint": "Collect or use the required items: Rubbing: Rune of Beth'Amara, Rubbing: Rune of Jin'yael, Rubbing: Rune of Markri, plus 1 more",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 10563,
+          "kind": "item",
+          "locations": [],
+          "name": "Rubbing: Rune of Beth'Amara",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 10564,
+          "kind": "item",
+          "locations": [],
+          "name": "Rubbing: Rune of Jin'yael",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 10565,
+          "kind": "item",
+          "locations": [],
+          "name": "Rubbing: Rune of Markri",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 10566,
+          "kind": "item",
+          "locations": [],
+          "name": "Rubbing: Rune of Sael'hai",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 16,
+      "quest_id": 3449,
+      "quest_name": "Arcane Runes",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3450"
+      ],
+      "instruction": "Complete [QC3450 An Easy Pickup]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 3450,
+      "quest_name": "An Easy Pickup",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8517,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 70.87,
+              "y": 94.56
+            }
+          ],
+          "name": "Xiggs Fuselighter",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3450"
+      ],
+      "instruction": "Turn in [QT3450 An Easy Pickup] to Xiggs Fuselighter",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 3450,
+      "quest_name": "An Easy Pickup",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8392,
+          "kind": "npc",
+          "locations": [],
+          "name": "Pilot Xiggs Fuselighter",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3449"
+      ],
+      "instruction": "Turn in [QT3449 Arcane Runes] to Pilot Xiggs Fuselighter",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 3449,
+      "quest_name": "Arcane Runes",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8517,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 70.87,
+              "y": 94.56
+            }
+          ],
+          "name": "Xiggs Fuselighter",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3451"
+      ],
+      "instruction": "Accept [QA3451 Signal for Pickup] from Xiggs Fuselighter.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 3451,
+      "quest_name": "Signal for Pickup",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8392,
+          "kind": "npc",
+          "locations": [],
+          "name": "Pilot Xiggs Fuselighter",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3461"
+      ],
+      "instruction": "Accept [QA3461 Return to Tymor] from Pilot Xiggs Fuselighter.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 3461,
+      "quest_name": "Return to Tymor",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3451"
+      ],
+      "instruction": "Complete [QC3451 Signal for Pickup]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 22,
+      "quest_id": 3451,
+      "quest_name": "Signal for Pickup",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3461"
+      ],
+      "instruction": "Complete [QC3461 Return to Tymor]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 23,
+      "quest_id": 3461,
+      "quest_name": "Return to Tymor",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8517,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 70.87,
+              "y": 94.56
+            }
+          ],
+          "name": "Xiggs Fuselighter",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3451"
+      ],
+      "instruction": "Turn in [QT3451 Signal for Pickup] to Xiggs Fuselighter",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 24,
+      "quest_id": 3451,
+      "quest_name": "Signal for Pickup",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8507,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 30.96,
+              "y": 4.83
+            }
+          ],
+          "name": "Tymor",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3461"
+      ],
+      "instruction": "Turn in [QT3461 Return to Tymor] to Tymor",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 25,
+      "quest_id": 3461,
+      "quest_name": "Return to Tymor",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8517,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 70.87,
+              "y": 94.56
+            }
+          ],
+          "name": "Xiggs Fuselighter",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3483"
+      ],
+      "instruction": "Accept [QA3483 Signal for Pickup] from Xiggs Fuselighter.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 26,
+      "quest_id": 3483,
+      "quest_name": "Signal for Pickup",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3483"
+      ],
+      "instruction": "Complete [QC3483 Signal for Pickup]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 27,
+      "quest_id": 3483,
+      "quest_name": "Signal for Pickup",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8517,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 70.87,
+              "y": 94.56
+            }
+          ],
+          "name": "Xiggs Fuselighter",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3483"
+      ],
+      "instruction": "Turn in [QT3483 Signal for Pickup] to Xiggs Fuselighter",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 28,
+      "quest_id": 3483,
+      "quest_name": "Signal for Pickup",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    }
+  ],
+  "title": "50 Duskwood & Ironforge"
+}

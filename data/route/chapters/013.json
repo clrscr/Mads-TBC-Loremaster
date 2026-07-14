@@ -1,0 +1,2650 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 12 Deeprun Tram, or select this chapter on a partially completed character. Begin in Azuremyst Isle with Technician Zhanaa. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 3524,
+    "map_name": "Azuremyst Isle",
+    "x": 79.42,
+    "y": 51.23
+  },
+  "entry_zone_or_sort": 3526,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 3524,
+    "map_name": "Azuremyst Isle",
+    "quest_id": 9313,
+    "tag": "QT",
+    "x": 48.71,
+    "y": 50.27
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/013_world_13.lua",
+  "id": "013-primary-13-azuremyst-isle",
+  "maximum_level": 15,
+  "minimum_level": 15,
+  "next_chapter": "14 Bloodmyst Isle",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "12 Deeprun Tram",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 9305,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3522:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9305:starter",
+        "travel-network:auberdine-exodar",
+        "https://www.wowhead.com/tbc/guide/how-to-get-to-the-exodar-in-burning-crusade-classic"
+      ],
+      "instruction": "Travel from Teldrassil to Azuremyst Isle: Take the ship between Auberdine and Valnaar's Berth outside the Exodar. Continue to [G79.42,51.23 Azuremyst Isle]. [O]",
+      "map_id": 3524,
+      "map_name": "Azuremyst Isle",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 141,
+      "origin_map_name": "Teldrassil",
+      "origin_x": 54.59,
+      "origin_y": 32.99,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [
+        "auberdine-exodar"
+      ],
+      "type": "transport",
+      "verification": "questie_endpoints_and_tbc_transport_network",
+      "x": 79.42,
+      "y": 51.23
+    },
+    {
+      "before_quest_id": 9305,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9305:starter"
+      ],
+      "instruction": "Before you begin: travel to Azuremyst Isle and meet the first quest giver at [G79.42,51.23 Azuremyst Isle]. Leave at least two quest-log slots open. [O]",
+      "map_id": 3524,
+      "map_name": "Azuremyst Isle",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 79.42,
+      "y": 51.23
+    },
+    {
+      "before_quest_id": 9305,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9305:requiredLevel"
+      ],
+      "instruction": "Reach level 15 before accepting Spare Parts. [XP15 Level 15]",
+      "map_id": 3524,
+      "map_name": "Azuremyst Isle",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 15,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 79.42,
+      "y": 51.23
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17071,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 79.42,
+              "y": 51.23
+            }
+          ],
+          "name": "Technician Zhanaa",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9305"
+      ],
+      "instruction": "Accept [QA9305 Spare Parts] from Technician Zhanaa.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 9305,
+      "quest_name": "Spare Parts",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3526,
+      "zone_or_sort_name": "Map or sort 3526"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16477,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 80.42,
+              "y": 45.89
+            }
+          ],
+          "name": "Proenitus",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9369"
+      ],
+      "instruction": "Accept [QA9369 Replenishing the Healing Crystals] from Proenitus.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 9369,
+      "quest_name": "Replenishing the Healing Crystals",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3526,
+      "zone_or_sort_name": "Map or sort 3526"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9305"
+      ],
+      "instruction": "Collect or use the required item: Emitter Spare Part. [QC9305 Spare Parts]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Emitter Spare Part",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 22978,
+          "kind": "item",
+          "locations": [],
+          "name": "Emitter Spare Part",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 6,
+      "quest_id": 9305,
+      "quest_name": "Spare Parts",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3526,
+      "zone_or_sort_name": "Map or sort 3526"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9369"
+      ],
+      "instruction": "Collect or use the required item: Vial of Moth Blood. [QC9369 Replenishing the Healing Crystals]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Vial of Moth Blood",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 22889,
+          "kind": "item",
+          "locations": [],
+          "name": "Vial of Moth Blood",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 7,
+      "quest_id": 9369,
+      "quest_name": "Replenishing the Healing Crystals",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3526,
+      "zone_or_sort_name": "Map or sort 3526"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16477,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 80.42,
+              "y": 45.89
+            }
+          ],
+          "name": "Proenitus",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9369"
+      ],
+      "instruction": "Turn in [QT9369 Replenishing the Healing Crystals] to Proenitus",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 9369,
+      "quest_name": "Replenishing the Healing Crystals",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3526,
+      "zone_or_sort_name": "Map or sort 3526"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17071,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 79.42,
+              "y": 51.23
+            }
+          ],
+          "name": "Technician Zhanaa",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9305"
+      ],
+      "instruction": "Turn in [QT9305 Spare Parts] to Technician Zhanaa",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 9305,
+      "quest_name": "Spare Parts",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3526,
+      "zone_or_sort_name": "Map or sort 3526"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16477,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 80.42,
+              "y": 45.89
+            }
+          ],
+          "name": "Proenitus",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9409"
+      ],
+      "instruction": "Accept [QA9409 Urgent Delivery!] from Proenitus.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 9409,
+      "quest_name": "Urgent Delivery!",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3526,
+      "zone_or_sort_name": "Map or sort 3526"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9409"
+      ],
+      "instruction": "Complete [QC9409 Urgent Delivery!]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 9409,
+      "quest_name": "Urgent Delivery!",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3526,
+      "zone_or_sort_name": "Map or sort 3526"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16502,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 80.13,
+              "y": 48.89
+            }
+          ],
+          "name": "Zalduun",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9409"
+      ],
+      "instruction": "Turn in [QT9409 Urgent Delivery!] to Zalduun",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 9409,
+      "quest_name": "Urgent Delivery!",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3526,
+      "zone_or_sort_name": "Map or sort 3526"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16477,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 80.42,
+              "y": 45.89
+            }
+          ],
+          "name": "Proenitus",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9371"
+      ],
+      "instruction": "Accept [QA9371 Botanist Taerix] from Proenitus.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 9371,
+      "quest_name": "Botanist Taerix",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3526,
+      "zone_or_sort_name": "Map or sort 3526"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16514,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 79.14,
+              "y": 46.54
+            }
+          ],
+          "name": "Botanist Taerix",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10302"
+      ],
+      "instruction": "Accept [QA10302 Volatile Mutations] from Botanist Taerix.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 10302,
+      "quest_name": "Volatile Mutations",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3526,
+      "zone_or_sort_name": "Map or sort 3526"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10302"
+      ],
+      "instruction": "Complete the required NPC or creature objective: Volatile Mutation. [QC10302 Volatile Mutations]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Volatile Mutation",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16516,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 70.77,
+              "y": 57.54
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 70.59,
+              "y": 58.07
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 72.34,
+              "y": 59.1
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 72.49,
+              "y": 58.65
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 75.1,
+              "y": 61.2
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 75.66,
+              "y": 60.94
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 78.93,
+              "y": 56.93
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 79.03,
+              "y": 57.14
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 78.56,
+              "y": 56.54
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 78.21,
+              "y": 56.46
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 83.74,
+              "y": 52.59
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 82.12,
+              "y": 52.52
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 82.59,
+              "y": 52.08
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 81.35,
+              "y": 49.12
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 81.25,
+              "y": 48.22
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 81.4,
+              "y": 41.49
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 81.29,
+              "y": 41.13
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 79.39,
+              "y": 43.31
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 78.1,
+              "y": 44.09
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 78.12,
+              "y": 43.43
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 78.23,
+              "y": 51.75
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 78.08,
+              "y": 51.12
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 77.31,
+              "y": 53.58
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 76.68,
+              "y": 53.4
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 74.09,
+              "y": 56.24
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 74.95,
+              "y": 53.45
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 73.32,
+              "y": 54.48
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 73.86,
+              "y": 49.82
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 74.39,
+              "y": 50.34
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 75.11,
+              "y": 50.18
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 75.55,
+              "y": 49.67
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 73.39,
+              "y": 51.37
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 73.41,
+              "y": 48.92
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 72.61,
+              "y": 52.62
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 74.92,
+              "y": 47.27
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 75.61,
+              "y": 47.75
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 71.86,
+              "y": 48.67
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 75.87,
+              "y": 47.27
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 73.94,
+              "y": 43.13
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 74.36,
+              "y": 43.28
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 74.72,
+              "y": 41.47
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 75.28,
+              "y": 41.58
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 75.91,
+              "y": 41.22
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 75.87,
+              "y": 41.8
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 77.86,
+              "y": 42.81
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 77.99,
+              "y": 42.01
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 77.35,
+              "y": 41.49
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 78.58,
+              "y": 40.81
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 78.58,
+              "y": 42.79
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 79.75,
+              "y": 40.28
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 78.8,
+              "y": 45.42
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 76.45,
+              "y": 45.59
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 76.41,
+              "y": 46.5
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 70.5,
+              "y": 53.44
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 71.14,
+              "y": 53.18
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 78.89,
+              "y": 46.61
+            }
+          ],
+          "name": "Volatile Mutation",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 15,
+      "quest_id": 10302,
+      "quest_name": "Volatile Mutations",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3526,
+      "zone_or_sort_name": "Map or sort 3526"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9371"
+      ],
+      "instruction": "Complete [QC9371 Botanist Taerix]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 9371,
+      "quest_name": "Botanist Taerix",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3526,
+      "zone_or_sort_name": "Map or sort 3526"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16514,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 79.14,
+              "y": 46.54
+            }
+          ],
+          "name": "Botanist Taerix",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9371"
+      ],
+      "instruction": "Turn in [QT9371 Botanist Taerix] to Botanist Taerix",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 9371,
+      "quest_name": "Botanist Taerix",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3526,
+      "zone_or_sort_name": "Map or sort 3526"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16514,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 79.14,
+              "y": 46.54
+            }
+          ],
+          "name": "Botanist Taerix",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10302"
+      ],
+      "instruction": "Turn in [QT10302 Volatile Mutations] to Botanist Taerix",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 10302,
+      "quest_name": "Volatile Mutations",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3526,
+      "zone_or_sort_name": "Map or sort 3526"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16514,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 79.14,
+              "y": 46.54
+            }
+          ],
+          "name": "Botanist Taerix",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9293"
+      ],
+      "instruction": "Accept [QA9293 What Must Be Done...] from Botanist Taerix.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 9293,
+      "quest_name": "What Must Be Done...",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3526,
+      "zone_or_sort_name": "Map or sort 3526"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9293"
+      ],
+      "instruction": "Collect or use the required item: Lasher Sample. [QC9293 What Must Be Done...]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Lasher Sample",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 22934,
+          "kind": "item",
+          "locations": [],
+          "name": "Lasher Sample",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 20,
+      "quest_id": 9293,
+      "quest_name": "What Must Be Done...",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3526,
+      "zone_or_sort_name": "Map or sort 3526"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16514,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 79.14,
+              "y": 46.54
+            }
+          ],
+          "name": "Botanist Taerix",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9293"
+      ],
+      "instruction": "Turn in [QT9293 What Must Be Done...] to Botanist Taerix",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 9293,
+      "quest_name": "What Must Be Done...",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3526,
+      "zone_or_sort_name": "Map or sort 3526"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16514,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 79.14,
+              "y": 46.54
+            }
+          ],
+          "name": "Botanist Taerix",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9294"
+      ],
+      "instruction": "Accept [QA9294 Healing the Lake] from Botanist Taerix.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 22,
+      "quest_id": 9294,
+      "quest_name": "Healing the Lake",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3526,
+      "zone_or_sort_name": "Map or sort 3526"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 20233,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 79.07,
+              "y": 46.63
+            }
+          ],
+          "name": "Apprentice Vishael",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9799"
+      ],
+      "instruction": "Accept [QA9799 Botanical Legwork] from Apprentice Vishael.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 23,
+      "quest_id": 9799,
+      "quest_name": "Botanical Legwork",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3526,
+      "zone_or_sort_name": "Map or sort 3526"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9294"
+      ],
+      "instruction": "Interact with the required object: Irradiated Power Crystal. [QC9294 Healing the Lake]",
+      "item_use_id": null,
+      "objective_hint": "Interact with the required object: Irradiated Power Crystal",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 181433,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 77.22,
+              "y": 59.0
+            }
+          ],
+          "name": "Irradiated Power Crystal",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 24,
+      "quest_id": 9294,
+      "quest_name": "Healing the Lake",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3526,
+      "zone_or_sort_name": "Map or sort 3526"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9799"
+      ],
+      "instruction": "Collect or use the required item: Corrupted Flower. [QC9799 Botanical Legwork]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Corrupted Flower",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 24416,
+          "kind": "item",
+          "locations": [],
+          "name": "Corrupted Flower",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 25,
+      "quest_id": 9799,
+      "quest_name": "Botanical Legwork",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3526,
+      "zone_or_sort_name": "Map or sort 3526"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 20233,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 79.07,
+              "y": 46.63
+            }
+          ],
+          "name": "Apprentice Vishael",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9799"
+      ],
+      "instruction": "Turn in [QT9799 Botanical Legwork] to Apprentice Vishael",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 26,
+      "quest_id": 9799,
+      "quest_name": "Botanical Legwork",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3526,
+      "zone_or_sort_name": "Map or sort 3526"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16514,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 79.14,
+              "y": 46.54
+            }
+          ],
+          "name": "Botanist Taerix",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9294"
+      ],
+      "instruction": "Turn in [QT9294 Healing the Lake] to Botanist Taerix",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 27,
+      "quest_id": 9294,
+      "quest_name": "Healing the Lake",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3526,
+      "zone_or_sort_name": "Map or sort 3526"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16514,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 79.14,
+              "y": 46.54
+            }
+          ],
+          "name": "Botanist Taerix",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10304"
+      ],
+      "instruction": "Accept [QA10304 Vindicator Aldar] from Botanist Taerix.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 28,
+      "quest_id": 10304,
+      "quest_name": "Vindicator Aldar",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3526,
+      "zone_or_sort_name": "Map or sort 3526"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16535,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 79.49,
+              "y": 51.62
+            }
+          ],
+          "name": "Vindicator Aldar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9303"
+      ],
+      "instruction": "Accept [QA9303 Inoculation] from Vindicator Aldar.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 29,
+      "quest_id": 9303,
+      "quest_name": "Inoculation",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3526,
+      "zone_or_sort_name": "Map or sort 3526"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9303"
+      ],
+      "instruction": "Use the quest item [UI22962-] as directed; complete the required NPC or creature objective: Nestlewood Owlkin. [QC9303 Inoculation]",
+      "item_use_id": 22962,
+      "objective_hint": "Complete the required NPC or creature objective: Nestlewood Owlkin",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16518,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 87.09,
+              "y": 63.72
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 86.09,
+              "y": 66.79
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 85.05,
+              "y": 64.72
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 86.21,
+              "y": 66.17
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 88.97,
+              "y": 61.93
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 83.12,
+              "y": 60.16
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 84.92,
+              "y": 58.89
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 81.66,
+              "y": 57.54
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 80.18,
+              "y": 60.73
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 78.88,
+              "y": 58.88
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 78.01,
+              "y": 61.84
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 86.22,
+              "y": 68.25
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 85.14,
+              "y": 69.02
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 84.39,
+              "y": 67.93
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 85.5,
+              "y": 67.35
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 80.8,
+              "y": 58.93
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 78.22,
+              "y": 60.49
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 87.09,
+              "y": 63.72
+            }
+          ],
+          "name": "Nestlewood Owlkin",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 30,
+      "quest_id": 9303,
+      "quest_name": "Inoculation",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3526,
+      "zone_or_sort_name": "Map or sort 3526"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10304"
+      ],
+      "instruction": "Complete [QC10304 Vindicator Aldar]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 31,
+      "quest_id": 10304,
+      "quest_name": "Vindicator Aldar",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3526,
+      "zone_or_sort_name": "Map or sort 3526"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16535,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 79.49,
+              "y": 51.62
+            }
+          ],
+          "name": "Vindicator Aldar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10304"
+      ],
+      "instruction": "Turn in [QT10304 Vindicator Aldar] to Vindicator Aldar",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 32,
+      "quest_id": 10304,
+      "quest_name": "Vindicator Aldar",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3526,
+      "zone_or_sort_name": "Map or sort 3526"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16535,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 79.49,
+              "y": 51.62
+            }
+          ],
+          "name": "Vindicator Aldar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9303"
+      ],
+      "instruction": "Turn in [QT9303 Inoculation] to Vindicator Aldar",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 33,
+      "quest_id": 9303,
+      "quest_name": "Inoculation",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3526,
+      "zone_or_sort_name": "Map or sort 3526"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16535,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 79.49,
+              "y": 51.62
+            }
+          ],
+          "name": "Vindicator Aldar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9309"
+      ],
+      "instruction": "Accept [QA9309 The Missing Scout] from Vindicator Aldar.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 34,
+      "quest_id": 9309,
+      "quest_name": "The Missing Scout",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3526,
+      "zone_or_sort_name": "Map or sort 3526"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9309"
+      ],
+      "instruction": "Complete [QC9309 The Missing Scout]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 35,
+      "quest_id": 9309,
+      "quest_name": "The Missing Scout",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3526,
+      "zone_or_sort_name": "Map or sort 3526"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16546,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 72.0,
+              "y": 60.85
+            }
+          ],
+          "name": "Tolaan",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9309"
+      ],
+      "instruction": "Turn in [QT9309 The Missing Scout] to Tolaan",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 36,
+      "quest_id": 9309,
+      "quest_name": "The Missing Scout",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3526,
+      "zone_or_sort_name": "Map or sort 3526"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 24414,
+          "kind": "item",
+          "locations": [],
+          "name": "Blood Elf Plans",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9798"
+      ],
+      "instruction": "Accept [QA9798 Blood Elf Plans] from Blood Elf Plans.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 37,
+      "quest_id": 9798,
+      "quest_name": "Blood Elf Plans",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3526,
+      "zone_or_sort_name": "Map or sort 3526"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16546,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 72.0,
+              "y": 60.85
+            }
+          ],
+          "name": "Tolaan",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10303"
+      ],
+      "instruction": "Accept [QA10303 The Blood Elves] from Tolaan.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 38,
+      "quest_id": 10303,
+      "quest_name": "The Blood Elves",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3526,
+      "zone_or_sort_name": "Map or sort 3526"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10303"
+      ],
+      "instruction": "Complete the required NPC or creature objective: Blood Elf Scout. [QC10303 The Blood Elves]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Blood Elf Scout",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16521,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 69.17,
+              "y": 65.72
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 70.82,
+              "y": 64.99
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 69.03,
+              "y": 64.37
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 69.34,
+              "y": 64.8
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 69.23,
+              "y": 63.89
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 69.85,
+              "y": 65.27
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 69.55,
+              "y": 61.71
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 70.34,
+              "y": 61.56
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 70.66,
+              "y": 61.18
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 71.89,
+              "y": 62.67
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 71.24,
+              "y": 63.24
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 71.54,
+              "y": 62.62
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 69.9,
+              "y": 61.27
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 70.56,
+              "y": 62.76
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 69.97,
+              "y": 64.4
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 70.58,
+              "y": 64.37
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 69.67,
+              "y": 62.66
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 69.8,
+              "y": 62.67
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 69.95,
+              "y": 62.45
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 70.16,
+              "y": 63.19
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 69.45,
+              "y": 64.17
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 69.33,
+              "y": 64.46
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 68.98,
+              "y": 63.15
+            },
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 69.57,
+              "y": 65.12
+            }
+          ],
+          "name": "Blood Elf Scout",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 39,
+      "quest_id": 10303,
+      "quest_name": "The Blood Elves",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3526,
+      "zone_or_sort_name": "Map or sort 3526"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9798"
+      ],
+      "instruction": "Complete [QC9798 Blood Elf Plans]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 40,
+      "quest_id": 9798,
+      "quest_name": "Blood Elf Plans",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3526,
+      "zone_or_sort_name": "Map or sort 3526"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16546,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 72.0,
+              "y": 60.85
+            }
+          ],
+          "name": "Tolaan",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10303"
+      ],
+      "instruction": "Turn in [QT10303 The Blood Elves] to Tolaan",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 41,
+      "quest_id": 10303,
+      "quest_name": "The Blood Elves",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3526,
+      "zone_or_sort_name": "Map or sort 3526"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16535,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 79.49,
+              "y": 51.62
+            }
+          ],
+          "name": "Vindicator Aldar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9798"
+      ],
+      "instruction": "Turn in [QT9798 Blood Elf Plans] to Vindicator Aldar",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 42,
+      "quest_id": 9798,
+      "quest_name": "Blood Elf Plans",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3526,
+      "zone_or_sort_name": "Map or sort 3526"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16546,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 72.0,
+              "y": 60.85
+            }
+          ],
+          "name": "Tolaan",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9311"
+      ],
+      "instruction": "Accept [QA9311 Blood Elf Spy] from Tolaan.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 43,
+      "quest_id": 9311,
+      "quest_name": "Blood Elf Spy",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3526,
+      "zone_or_sort_name": "Map or sort 3526"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9311"
+      ],
+      "instruction": "Complete the required NPC or creature objective: Surveyor Candress. [QC9311 Blood Elf Spy]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Surveyor Candress",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16522,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 69.27,
+              "y": 65.78
+            }
+          ],
+          "name": "Surveyor Candress",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 44,
+      "quest_id": 9311,
+      "quest_name": "Blood Elf Spy",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3526,
+      "zone_or_sort_name": "Map or sort 3526"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16535,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 79.49,
+              "y": 51.62
+            }
+          ],
+          "name": "Vindicator Aldar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9311"
+      ],
+      "instruction": "Turn in [QT9311 Blood Elf Spy] to Vindicator Aldar",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 45,
+      "quest_id": 9311,
+      "quest_name": "Blood Elf Spy",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3526,
+      "zone_or_sort_name": "Map or sort 3526"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16535,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 79.49,
+              "y": 51.62
+            }
+          ],
+          "name": "Vindicator Aldar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9312"
+      ],
+      "instruction": "Accept [QA9312 The Emitter] from Vindicator Aldar.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 46,
+      "quest_id": 9312,
+      "quest_name": "The Emitter",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3526,
+      "zone_or_sort_name": "Map or sort 3526"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9312"
+      ],
+      "instruction": "Complete [QC9312 The Emitter]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 47,
+      "quest_id": 9312,
+      "quest_name": "The Emitter",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3526,
+      "zone_or_sort_name": "Map or sort 3526"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17071,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 79.42,
+              "y": 51.23
+            }
+          ],
+          "name": "Technician Zhanaa",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9312"
+      ],
+      "instruction": "Turn in [QT9312 The Emitter] to Technician Zhanaa",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 48,
+      "quest_id": 9312,
+      "quest_name": "The Emitter",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3526,
+      "zone_or_sort_name": "Map or sort 3526"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17071,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 79.42,
+              "y": 51.23
+            }
+          ],
+          "name": "Technician Zhanaa",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9313"
+      ],
+      "instruction": "Accept [QA9313 Travel to Azure Watch] from Technician Zhanaa.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 49,
+      "quest_id": 9313,
+      "quest_name": "Travel to Azure Watch",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3524,
+      "zone_or_sort_name": "Azuremyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9313"
+      ],
+      "instruction": "Complete [QC9313 Travel to Azure Watch]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 50,
+      "quest_id": 9313,
+      "quest_name": "Travel to Azure Watch",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3524,
+      "zone_or_sort_name": "Azuremyst Isle"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16551,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3524,
+              "map_name": "Azuremyst Isle",
+              "verification": "questie_structured_source_only",
+              "x": 48.71,
+              "y": 50.27
+            }
+          ],
+          "name": "Technician Dyvuun",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9313"
+      ],
+      "instruction": "Turn in [QT9313 Travel to Azure Watch] to Technician Dyvuun",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 51,
+      "quest_id": 9313,
+      "quest_name": "Travel to Azure Watch",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3524,
+      "zone_or_sort_name": "Azuremyst Isle"
+    }
+  ],
+  "title": "13 Azuremyst Isle"
+}

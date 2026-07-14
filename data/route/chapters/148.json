@@ -1,0 +1,621 @@
+{
+  "branch": "optional_content",
+  "entry_contract": "Complete the relevant shared prerequisites. Begin in Hellfire Peninsula with Magtheridon's Head. Leave at least two quest-log slots open; group and reputation gates remain explicit.",
+  "entry_route_point": {
+    "map_id": 3483,
+    "map_name": "Hellfire Peninsula",
+    "x": 56.64,
+    "y": 66.7
+  },
+  "entry_zone_or_sort": 3483,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 3519,
+    "map_name": "Terokkar Forest",
+    "quest_id": 10679,
+    "tag": "QT",
+    "x": 77.58,
+    "y": 38.72
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Optional Content",
+  "guide_file": "Guides/optional_content/148_world_52.lua",
+  "id": "148-optional_content-optional-content-52---shadowmoon-valley-&-hellfire-peninsula",
+  "maximum_level": null,
+  "minimum_level": null,
+  "next_chapter": "Optional Content 53 - Karazhan & The Slave Pens",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "Optional Content 51 - Shattrath City & Karazhan",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 11002,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9680:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11002:finisher",
+        "travel-network:dark-portal",
+        "https://www.wowhead.com/tbc/guide/how-to-get-to-the-dark-portal-hellfire-peninsula-in-burning-crusade-classic"
+      ],
+      "instruction": "Travel from Deadwind Pass to Hellfire Peninsula: Cross the Dark Portal between the Blasted Lands and Hellfire Peninsula. Continue to [G56.64,66.70 Hellfire Peninsula]. [O]",
+      "map_id": 3483,
+      "map_name": "Hellfire Peninsula",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 41,
+      "origin_map_name": "Deadwind Pass",
+      "origin_x": 47.28,
+      "origin_y": 75.21,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [
+        "dark-portal"
+      ],
+      "type": "transport",
+      "verification": "questie_endpoints_and_tbc_transport_network",
+      "x": 56.64,
+      "y": 66.7
+    },
+    {
+      "before_quest_id": 11002,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "route-branch:optional_content"
+      ],
+      "instruction": "Optional entry requirements: complete the relevant shared prerequisites. [O]",
+      "map_id": 3483,
+      "map_name": "Hellfire Peninsula",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "branch_entry",
+      "verification": "route_dependency_graph",
+      "x": 56.64,
+      "y": 66.7
+    },
+    {
+      "before_quest_id": 11002,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11002:finisher"
+      ],
+      "instruction": "Optional chapter: travel to Hellfire Peninsula and begin at [G56.64,66.70 Hellfire Peninsula]. Leave at least two quest-log slots open. [O]",
+      "map_id": 3483,
+      "map_name": "Hellfire Peninsula",
+      "optional": true,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 56.64,
+      "y": 66.7
+    },
+    {
+      "before_quest_id": 11002,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11002:requiredLevel"
+      ],
+      "instruction": "Reach level 70 before accepting The Fall of Magtheridon. [XP70 Level 70]",
+      "map_id": 3483,
+      "map_name": "Hellfire Peninsula",
+      "optional": false,
+      "order": 4,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 70,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": null,
+      "y": null
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 32385,
+          "kind": "item",
+          "locations": [],
+          "name": "Magtheridon's Head",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11002"
+      ],
+      "instruction": "Accept [QA11002 The Fall of Magtheridon] from Magtheridon's Head.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 11002,
+      "quest_name": "The Fall of Magtheridon",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3483,
+      "zone_or_sort_name": "Hellfire Peninsula"
+    },
+    {
+      "before_quest_id": 11002,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11002:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 3483,
+      "map_name": "Hellfire Peninsula",
+      "optional": true,
+      "order": 6,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        11002
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 56.64,
+      "y": 66.7
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11002"
+      ],
+      "instruction": "Raid \u2014 Complete [QC11002 The Fall of Magtheridon]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 11002,
+      "quest_name": "The Fall of Magtheridon",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3483,
+      "zone_or_sort_name": "Hellfire Peninsula"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16819,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 56.64,
+              "y": 66.7
+            }
+          ],
+          "name": "Force Commander Danath Trollbane",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11002"
+      ],
+      "instruction": "Turn in [QT11002 The Fall of Magtheridon] to Force Commander Danath Trollbane",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 11002,
+      "quest_name": "The Fall of Magtheridon",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3483,
+      "zone_or_sort_name": "Hellfire Peninsula"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17613,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 41,
+              "map_name": "Deadwind Pass",
+              "verification": "questie_structured_source_only",
+              "x": 47.28,
+              "y": 75.21
+            }
+          ],
+          "name": "Archmage Alturus",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9631"
+      ],
+      "instruction": "Accept [QA9631 A Colleague's Aid] from Archmage Alturus.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 9631,
+      "quest_name": "A Colleague's Aid",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9631"
+      ],
+      "instruction": "Complete [QC9631 A Colleague's Aid]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 9631,
+      "quest_name": "A Colleague's Aid",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17636,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 32.22,
+              "y": 63.6
+            }
+          ],
+          "name": "Kalynna Lathred",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9631"
+      ],
+      "instruction": "Turn in [QT9631 A Colleague's Aid] to Kalynna Lathred",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 9631,
+      "quest_name": "A Colleague's Aid",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 21465,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 77.58,
+              "y": 38.72
+            }
+          ],
+          "name": "David Wayne",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10676"
+      ],
+      "instruction": "Accept [QA10676 Bane of the Illidari] from David Wayne.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 10676,
+      "quest_name": "Bane of the Illidari",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3520,
+      "zone_or_sort_name": "Shadowmoon Valley"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10676"
+      ],
+      "instruction": "Complete [QC10676 Bane of the Illidari]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 10676,
+      "quest_name": "Bane of the Illidari",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3520,
+      "zone_or_sort_name": "Shadowmoon Valley"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 21465,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 77.58,
+              "y": 38.72
+            }
+          ],
+          "name": "David Wayne",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10676"
+      ],
+      "instruction": "Turn in [QT10676 Bane of the Illidari] to David Wayne",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 10676,
+      "quest_name": "Bane of the Illidari",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3520,
+      "zone_or_sort_name": "Shadowmoon Valley"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 21465,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 77.58,
+              "y": 38.72
+            }
+          ],
+          "name": "David Wayne",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10679"
+      ],
+      "instruction": "Accept [QA10679 Quenching the Blade] from David Wayne.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 10679,
+      "quest_name": "Quenching the Blade",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3520,
+      "zone_or_sort_name": "Shadowmoon Valley"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10679"
+      ],
+      "instruction": "Use the quest item [UI30875-] as directed; collect or use the required item: Quenched Illidari-Bane Blade. [QC10679 Quenching the Blade]",
+      "item_use_id": 30875,
+      "objective_hint": "Collect or use the required item: Quenched Illidari-Bane Blade",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 30876,
+          "kind": "item",
+          "locations": [],
+          "name": "Quenched Illidari-Bane Blade",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 16,
+      "quest_id": 10679,
+      "quest_name": "Quenching the Blade",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3520,
+      "zone_or_sort_name": "Shadowmoon Valley"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 21465,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 77.58,
+              "y": 38.72
+            }
+          ],
+          "name": "David Wayne",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10679"
+      ],
+      "instruction": "Turn in [QT10679 Quenching the Blade] to David Wayne",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 10679,
+      "quest_name": "Quenching the Blade",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3520,
+      "zone_or_sort_name": "Shadowmoon Valley"
+    }
+  ],
+  "title": "Optional Content 52 - Shadowmoon Valley & Hellfire Peninsula"
+}

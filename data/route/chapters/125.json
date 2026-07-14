@@ -1,0 +1,1372 @@
+{
+  "branch": "optional_content",
+  "entry_contract": "Complete the relevant shared prerequisites. Begin in Moonglade with Nightmare Engulfed Object. Leave at least two quest-log slots open; group and reputation gates remain explicit.",
+  "entry_route_point": {
+    "map_id": 493,
+    "map_name": "Moonglade",
+    "x": 36.18,
+    "y": 41.79
+  },
+  "entry_zone_or_sort": -1,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 1537,
+    "map_name": "Ironforge",
+    "quest_id": 8960,
+    "tag": "QA",
+    "x": 43.53,
+    "y": 52.64
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Optional Content",
+  "guide_file": "Guides/optional_content/125_raid_29.lua",
+  "id": "125-optional_content-optional-content-29---hunter-&-epic",
+  "maximum_level": null,
+  "minimum_level": null,
+  "next_chapter": "Optional Content 30 - Legendary",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "Optional Content 28 - Winterspring & Hellfire Citadel",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 8446,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8952:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8446:finisher",
+        "travel-network:auberdine-menethil",
+        "https://www.wowhead.com/tbc/quest=942/the-absent-minded-prospector"
+      ],
+      "instruction": "Travel from Ironforge to Moonglade: Take the ship between Auberdine and Menethil Harbor. Continue to [G36.18,41.79 Moonglade]. [O]",
+      "map_id": 493,
+      "map_name": "Moonglade",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 1537,
+      "origin_map_name": "Ironforge",
+      "origin_x": 43.53,
+      "origin_y": 52.64,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [
+        "auberdine-menethil"
+      ],
+      "type": "transport",
+      "verification": "questie_endpoints_and_tbc_transport_network",
+      "x": 36.18,
+      "y": 41.79
+    },
+    {
+      "before_quest_id": 8446,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "route-branch:optional_content"
+      ],
+      "instruction": "Optional entry requirements: complete the relevant shared prerequisites. [O]",
+      "map_id": 493,
+      "map_name": "Moonglade",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "branch_entry",
+      "verification": "route_dependency_graph",
+      "x": 36.18,
+      "y": 41.79
+    },
+    {
+      "before_quest_id": 8446,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8446:finisher"
+      ],
+      "instruction": "Optional chapter: travel to Moonglade and begin at [G36.18,41.79 Moonglade]. Leave at least two quest-log slots open. [O]",
+      "map_id": 493,
+      "map_name": "Moonglade",
+      "optional": true,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 36.18,
+      "y": 41.79
+    },
+    {
+      "before_quest_id": 8446,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8446:requiredLevel"
+      ],
+      "instruction": "Reach level 62 before accepting Shrouded in Nightmare. [XP62 Level 62]",
+      "map_id": -1,
+      "map_name": "Epic",
+      "optional": false,
+      "order": 4,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 62,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": null,
+      "y": null
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 20644,
+          "kind": "item",
+          "locations": [],
+          "name": "Nightmare Engulfed Object",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8446"
+      ],
+      "instruction": "Accept [QA8446 Shrouded in Nightmare] from Nightmare Engulfed Object.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 8446,
+      "quest_name": "Shrouded in Nightmare",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": -1,
+      "zone_or_sort_name": "Epic"
+    },
+    {
+      "before_quest_id": 8446,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8446:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 493,
+      "map_name": "Moonglade",
+      "optional": true,
+      "order": 6,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        8446
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 36.18,
+      "y": 41.79
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8446"
+      ],
+      "instruction": "Raid \u2014 Complete [QC8446 Shrouded in Nightmare]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 8446,
+      "quest_name": "Shrouded in Nightmare",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": -1,
+      "zone_or_sort_name": "Epic"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11832,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 493,
+              "map_name": "Moonglade",
+              "verification": "questie_structured_source_only",
+              "x": 36.18,
+              "y": 41.79
+            }
+          ],
+          "name": "Keeper Remulos",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8446"
+      ],
+      "instruction": "Turn in [QT8446 Shrouded in Nightmare] to Keeper Remulos",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 8446,
+      "quest_name": "Shrouded in Nightmare",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": -1,
+      "zone_or_sort_name": "Epic"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11832,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 493,
+              "map_name": "Moonglade",
+              "verification": "questie_structured_source_only",
+              "x": 36.18,
+              "y": 41.79
+            }
+          ],
+          "name": "Keeper Remulos",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8447"
+      ],
+      "instruction": "Accept [QA8447 Waking Legends] from Keeper Remulos.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 8447,
+      "quest_name": "Waking Legends",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": -1,
+      "zone_or_sort_name": "Epic"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8447"
+      ],
+      "instruction": "Raid \u2014 Complete the scripted or exploration event. [QC8447 Waking Legends]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 8447,
+      "quest_name": "Waking Legends",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": -1,
+      "zone_or_sort_name": "Epic"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11832,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 493,
+              "map_name": "Moonglade",
+              "verification": "questie_structured_source_only",
+              "x": 36.18,
+              "y": 41.79
+            }
+          ],
+          "name": "Keeper Remulos",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8447"
+      ],
+      "instruction": "Turn in [QT8447 Waking Legends] to Keeper Remulos",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 8447,
+      "quest_name": "Waking Legends",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": -1,
+      "zone_or_sort_name": "Epic"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16013,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 43.53,
+              "y": 52.64
+            }
+          ],
+          "name": "Deliana",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8960"
+      ],
+      "instruction": "Accept [QA8960 Bodley's Unfortunate Fate] from Deliana.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 8960,
+      "quest_name": "Bodley's Unfortunate Fate",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 25,
+      "zone_or_sort_name": "Map or sort 25"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8960"
+      ],
+      "instruction": "Complete [QC8960 Bodley's Unfortunate Fate]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 8960,
+      "quest_name": "Bodley's Unfortunate Fate",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 25,
+      "zone_or_sort_name": "Map or sort 25"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16033,
+          "kind": "npc",
+          "locations": [],
+          "name": "Bodley",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8960"
+      ],
+      "instruction": "Turn in [QT8960 Bodley's Unfortunate Fate] to Bodley",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 8960,
+      "quest_name": "Bodley's Unfortunate Fate",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 25,
+      "zone_or_sort_name": "Map or sort 25"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16033,
+          "kind": "npc",
+          "locations": [],
+          "name": "Bodley",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8961"
+      ],
+      "instruction": "Accept [QA8961 Three Kings of Flame] from Bodley.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 8961,
+      "quest_name": "Three Kings of Flame",
+      "quest_tag": "Raid",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 25,
+      "zone_or_sort_name": "Map or sort 25"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8961"
+      ],
+      "instruction": "Raid \u2014 Collect or use the required items: Incendicite of Incendius, Ember of Emberseer, Cinder of Cynders, plus 1 more. [QC8961 Three Kings of Flame]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Incendicite of Incendius, Ember of Emberseer, Cinder of Cynders, plus 1 more",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 21987,
+          "kind": "item",
+          "locations": [],
+          "name": "Incendicite of Incendius",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 21988,
+          "kind": "item",
+          "locations": [],
+          "name": "Ember of Emberseer",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 21989,
+          "kind": "item",
+          "locations": [],
+          "name": "Cinder of Cynders",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 22014,
+          "kind": "item",
+          "locations": [],
+          "name": "Hallowed Brazier",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 16,
+      "quest_id": 8961,
+      "quest_name": "Three Kings of Flame",
+      "quest_tag": "Raid",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 25,
+      "zone_or_sort_name": "Map or sort 25"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16033,
+          "kind": "npc",
+          "locations": [],
+          "name": "Bodley",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8961"
+      ],
+      "instruction": "Turn in [QT8961 Three Kings of Flame] to Bodley",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 8961,
+      "quest_name": "Three Kings of Flame",
+      "quest_tag": "Raid",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 25,
+      "zone_or_sort_name": "Map or sort 25"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16033,
+          "kind": "npc",
+          "locations": [],
+          "name": "Bodley",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8962"
+      ],
+      "instruction": "Accept [QA8962 Components of Importance] from Bodley.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 8962,
+      "quest_name": "Components of Importance",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 25,
+      "zone_or_sort_name": "Map or sort 25"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8962"
+      ],
+      "instruction": "Elite/group recommended \u2014 Collect or use the required item: Druidical Remains. [QC8962 Components of Importance]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Druidical Remains",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 22226,
+          "kind": "item",
+          "locations": [],
+          "name": "Druidical Remains",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 19,
+      "quest_id": 8962,
+      "quest_name": "Components of Importance",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 25,
+      "zone_or_sort_name": "Map or sort 25"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16033,
+          "kind": "npc",
+          "locations": [],
+          "name": "Bodley",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8962"
+      ],
+      "instruction": "Turn in [QT8962 Components of Importance] to Bodley",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 8962,
+      "quest_name": "Components of Importance",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 25,
+      "zone_or_sort_name": "Map or sort 25"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16033,
+          "kind": "npc",
+          "locations": [],
+          "name": "Bodley",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8987"
+      ],
+      "instruction": "Accept [QA8987 More Components of Importance] from Bodley.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 8987,
+      "quest_name": "More Components of Importance",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 25,
+      "zone_or_sort_name": "Map or sort 25"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8987"
+      ],
+      "instruction": "Elite/group recommended \u2014 Collect or use the required item: Brilliant Sword of Zealotry. [QC8987 More Components of Importance]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Brilliant Sword of Zealotry",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 22228,
+          "kind": "item",
+          "locations": [],
+          "name": "Brilliant Sword of Zealotry",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 22,
+      "quest_id": 8987,
+      "quest_name": "More Components of Importance",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 25,
+      "zone_or_sort_name": "Map or sort 25"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16033,
+          "kind": "npc",
+          "locations": [],
+          "name": "Bodley",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8987"
+      ],
+      "instruction": "Turn in [QT8987 More Components of Importance] to Bodley",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 23,
+      "quest_id": 8987,
+      "quest_name": "More Components of Importance",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 25,
+      "zone_or_sort_name": "Map or sort 25"
+    },
+    {
+      "category": "hunter",
+      "conditional_categories": [
+        "hunter",
+        "item_mechanic",
+        "item_triggered",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 18703,
+          "kind": "item",
+          "locations": [],
+          "name": "Ancient Petrified Leaf",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7632"
+      ],
+      "instruction": "Accept [QA7632 The Ancient Leaf] from Ancient Petrified Leaf.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 24,
+      "quest_id": 7632,
+      "quest_name": "The Ancient Leaf",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": -261,
+      "zone_or_sort_name": "Hunter"
+    },
+    {
+      "category": "hunter",
+      "conditional_categories": [
+        "hunter",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14524,
+          "kind": "npc",
+          "locations": [],
+          "name": "Vartrus the Ancient",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7633"
+      ],
+      "instruction": "Accept [QA7633 An Introduction] from Vartrus the Ancient.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 25,
+      "quest_id": 7633,
+      "quest_name": "An Introduction",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": -261,
+      "zone_or_sort_name": "Hunter"
+    },
+    {
+      "category": "hunter",
+      "conditional_categories": [
+        "hunter",
+        "item_mechanic",
+        "item_triggered",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7632"
+      ],
+      "instruction": "Complete [QC7632 The Ancient Leaf]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 26,
+      "quest_id": 7632,
+      "quest_name": "The Ancient Leaf",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": -261,
+      "zone_or_sort_name": "Hunter"
+    },
+    {
+      "category": "hunter",
+      "conditional_categories": [
+        "hunter",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7633"
+      ],
+      "instruction": "Complete [QC7633 An Introduction]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 27,
+      "quest_id": 7633,
+      "quest_name": "An Introduction",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": -261,
+      "zone_or_sort_name": "Hunter"
+    },
+    {
+      "category": "hunter",
+      "conditional_categories": [
+        "hunter",
+        "item_mechanic",
+        "item_triggered",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14524,
+          "kind": "npc",
+          "locations": [],
+          "name": "Vartrus the Ancient",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7632"
+      ],
+      "instruction": "Turn in [QT7632 The Ancient Leaf] to Vartrus the Ancient",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 28,
+      "quest_id": 7632,
+      "quest_name": "The Ancient Leaf",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": -261,
+      "zone_or_sort_name": "Hunter"
+    },
+    {
+      "category": "hunter",
+      "conditional_categories": [
+        "hunter",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14524,
+          "kind": "npc",
+          "locations": [],
+          "name": "Vartrus the Ancient",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7633"
+      ],
+      "instruction": "Turn in [QT7633 An Introduction] to Vartrus the Ancient",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 29,
+      "quest_id": 7633,
+      "quest_name": "An Introduction",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": -261,
+      "zone_or_sort_name": "Hunter"
+    },
+    {
+      "category": "hunter",
+      "conditional_categories": [
+        "hunter",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14524,
+          "kind": "npc",
+          "locations": [],
+          "name": "Vartrus the Ancient",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7636"
+      ],
+      "instruction": "Accept [QA7636 Stave of the Ancients] from Vartrus the Ancient.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 30,
+      "quest_id": 7636,
+      "quest_name": "Stave of the Ancients",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": -261,
+      "zone_or_sort_name": "Hunter"
+    },
+    {
+      "category": "hunter",
+      "conditional_categories": [
+        "hunter",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7636"
+      ],
+      "instruction": "Collect or use the required items: Simone's Head, Klinfran's Head, Solenor's Head, plus 1 more. [QC7636 Stave of the Ancients]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Simone's Head, Klinfran's Head, Solenor's Head, plus 1 more",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 18952,
+          "kind": "item",
+          "locations": [],
+          "name": "Simone's Head",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 18953,
+          "kind": "item",
+          "locations": [],
+          "name": "Klinfran's Head",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 18954,
+          "kind": "item",
+          "locations": [],
+          "name": "Solenor's Head",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 18955,
+          "kind": "item",
+          "locations": [],
+          "name": "Artorius's Head",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 31,
+      "quest_id": 7636,
+      "quest_name": "Stave of the Ancients",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": -261,
+      "zone_or_sort_name": "Hunter"
+    },
+    {
+      "category": "hunter",
+      "conditional_categories": [
+        "hunter",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14524,
+          "kind": "npc",
+          "locations": [],
+          "name": "Vartrus the Ancient",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7636"
+      ],
+      "instruction": "Turn in [QT7636 Stave of the Ancients] to Vartrus the Ancient",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 32,
+      "quest_id": 7636,
+      "quest_name": "Stave of the Ancients",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": -261,
+      "zone_or_sort_name": "Hunter"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14526,
+          "kind": "npc",
+          "locations": [],
+          "name": "Hastat the Ancient",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7634"
+      ],
+      "instruction": "Accept [QA7634 Ancient Sinew Wrapped Lamina] from Hastat the Ancient.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 33,
+      "quest_id": 7634,
+      "quest_name": "Ancient Sinew Wrapped Lamina",
+      "quest_tag": "Raid",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": -261,
+      "zone_or_sort_name": "Hunter"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14525,
+          "kind": "npc",
+          "locations": [],
+          "name": "Stoma the Ancient",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7635"
+      ],
+      "instruction": "Accept [QA7635 A Proper String] from Stoma the Ancient.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 34,
+      "quest_id": 7635,
+      "quest_name": "A Proper String",
+      "quest_tag": "Raid",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": -261,
+      "zone_or_sort_name": "Hunter"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7634"
+      ],
+      "instruction": "Raid \u2014 Collect or use the required item: Mature Blue Dragon Sinew. [QC7634 Ancient Sinew Wrapped Lamina]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Mature Blue Dragon Sinew",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 18704,
+          "kind": "item",
+          "locations": [],
+          "name": "Mature Blue Dragon Sinew",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 35,
+      "quest_id": 7634,
+      "quest_name": "Ancient Sinew Wrapped Lamina",
+      "quest_tag": "Raid",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": -261,
+      "zone_or_sort_name": "Hunter"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7635"
+      ],
+      "instruction": "Raid \u2014 Collect or use the required item: Mature Black Dragon Sinew. [QC7635 A Proper String]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Mature Black Dragon Sinew",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 18705,
+          "kind": "item",
+          "locations": [],
+          "name": "Mature Black Dragon Sinew",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 36,
+      "quest_id": 7635,
+      "quest_name": "A Proper String",
+      "quest_tag": "Raid",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": -261,
+      "zone_or_sort_name": "Hunter"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14526,
+          "kind": "npc",
+          "locations": [],
+          "name": "Hastat the Ancient",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7634"
+      ],
+      "instruction": "Turn in [QT7634 Ancient Sinew Wrapped Lamina] to Hastat the Ancient",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 37,
+      "quest_id": 7634,
+      "quest_name": "Ancient Sinew Wrapped Lamina",
+      "quest_tag": "Raid",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": -261,
+      "zone_or_sort_name": "Hunter"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14525,
+          "kind": "npc",
+          "locations": [],
+          "name": "Stoma the Ancient",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7635"
+      ],
+      "instruction": "Turn in [QT7635 A Proper String] to Stoma the Ancient",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 38,
+      "quest_id": 7635,
+      "quest_name": "A Proper String",
+      "quest_tag": "Raid",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": -261,
+      "zone_or_sort_name": "Hunter"
+    }
+  ],
+  "title": "Optional Content 29 - Hunter & Epic"
+}

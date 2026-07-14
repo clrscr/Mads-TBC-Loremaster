@@ -1,0 +1,1067 @@
+{
+  "branch": "optional_content",
+  "entry_contract": "Complete The Stone Circle. Begin in Tanaris with Uldum Pedestal. Leave at least two quest-log slots open; group and reputation gates remain explicit.",
+  "entry_route_point": {
+    "map_id": 440,
+    "map_name": "Tanaris",
+    "x": 37.63,
+    "y": 81.4
+  },
+  "entry_zone_or_sort": 1537,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 440,
+    "map_name": "Tanaris",
+    "quest_id": 3447,
+    "tag": "QA",
+    "x": 52.71,
+    "y": 45.92
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [
+    [
+      3444
+    ]
+  ],
+  "external_prerequisite_quest_ids": [
+    3444
+  ],
+  "group": "Mad's Loremaster Guide - Optional Content",
+  "guide_file": "Guides/optional_content/107_reputation_11.lua",
+  "id": "107-optional_content-optional-content-11---sunken-temple-&-ironforge",
+  "maximum_level": null,
+  "minimum_level": null,
+  "next_chapter": "Optional Content 12 - Swamp of Sorrows & Stranglethorn Vale",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "Optional Content 10 - Blackrock Depths",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 2977,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4144:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2977:starter"
+      ],
+      "instruction": "Travel from Un'Goro Crater to Tanaris. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G37.63,81.40 Tanaris]. [O]",
+      "map_id": 440,
+      "map_name": "Tanaris",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 490,
+      "origin_map_name": "Un'Goro Crater",
+      "origin_x": 42.94,
+      "origin_y": 9.64,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 37.63,
+      "y": 81.4
+    },
+    {
+      "before_quest_id": 2977,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3444:dependency"
+      ],
+      "instruction": "Optional entry requirements: complete The Stone Circle. [O]",
+      "map_id": 440,
+      "map_name": "Tanaris",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        3444
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "branch_entry",
+      "verification": "route_dependency_graph",
+      "x": 37.63,
+      "y": 81.4
+    },
+    {
+      "before_quest_id": 2977,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2977:starter"
+      ],
+      "instruction": "Optional chapter: travel to Tanaris and begin at [G37.63,81.40 Tanaris]. Leave at least two quest-log slots open. [O]",
+      "map_id": 440,
+      "map_name": "Tanaris",
+      "optional": true,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 37.63,
+      "y": 81.4
+    },
+    {
+      "before_quest_id": 2977,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2977:requiredLevel"
+      ],
+      "instruction": "Reach level 50 before accepting Return to Ironforge. [XP50 Level 50]",
+      "map_id": 440,
+      "map_name": "Tanaris",
+      "optional": false,
+      "order": 4,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 50,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 37.63,
+      "y": 81.4
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 142343,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 37.63,
+              "y": 81.4
+            }
+          ],
+          "name": "Uldum Pedestal",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2977"
+      ],
+      "instruction": "Accept [QA2977 Return to Ironforge] from Uldum Pedestal.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 2977,
+      "quest_name": "Return to Ironforge",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2977"
+      ],
+      "instruction": "Complete [QC2977 Return to Ironforge]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 2977,
+      "quest_name": "Return to Ironforge",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2916,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 77.54,
+              "y": 11.82
+            }
+          ],
+          "name": "Historian Karnik",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2977"
+      ],
+      "instruction": "Turn in [QT2977 Return to Ironforge] to Historian Karnik",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 2977,
+      "quest_name": "Return to Ironforge",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2916,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 77.54,
+              "y": 11.82
+            }
+          ],
+          "name": "Historian Karnik",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2964"
+      ],
+      "instruction": "Accept [QA2964 A Future Task] from Historian Karnik.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 2964,
+      "quest_name": "A Future Task",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2964"
+      ],
+      "instruction": "Complete [QC2964 A Future Task]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 2964,
+      "quest_name": "A Future Task",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5387,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 69.93,
+              "y": 18.55
+            }
+          ],
+          "name": "High Explorer Magellas",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2964"
+      ],
+      "instruction": "Turn in [QT2964 A Future Task] to High Explorer Magellas",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 2964,
+      "quest_name": "A Future Task",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11555,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 65.18,
+              "y": 2.68
+            }
+          ],
+          "name": "Gorn One Eye",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8481"
+      ],
+      "instruction": "Accept [QA8481 The Root of All Evil] from Gorn One Eye.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 8481,
+      "quest_name": "The Root of All Evil",
+      "quest_tag": "Elite",
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1769,
+      "zone_or_sort_name": "Map or sort 1769"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11555,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 65.18,
+              "y": 2.68
+            }
+          ],
+          "name": "Gorn One Eye",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8484"
+      ],
+      "instruction": "Accept [QA8484 The Brokering of Peace] from Gorn One Eye.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 8484,
+      "quest_name": "The Brokering of Peace",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1769,
+      "zone_or_sort_name": "Map or sort 1769"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11557,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 65.69,
+              "y": 2.81
+            }
+          ],
+          "name": "Meilosh",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6031"
+      ],
+      "instruction": "Accept [QA6031 Runecloth] from Meilosh.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 6031,
+      "quest_name": "Runecloth",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1769,
+      "zone_or_sort_name": "Map or sort 1769"
+    },
+    {
+      "before_quest_id": 8481,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8481:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 440,
+      "map_name": "Tanaris",
+      "optional": true,
+      "order": 14,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        8481
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 37.63,
+      "y": 81.4
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8481"
+      ],
+      "instruction": "Elite/group recommended \u2014 Use the quest item [UI21144-] as directed; collect or use the required item: Essence of Xandivious. [QC8481 The Root of All Evil]",
+      "item_use_id": 21144,
+      "objective_hint": "Collect or use the required item: Essence of Xandivious",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 21145,
+          "kind": "item",
+          "locations": [],
+          "name": "Essence of Xandivious",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 15,
+      "quest_id": 8481,
+      "quest_name": "The Root of All Evil",
+      "quest_tag": "Elite",
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1769,
+      "zone_or_sort_name": "Map or sort 1769"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8484"
+      ],
+      "instruction": "Complete [QC8484 The Brokering of Peace]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 8484,
+      "quest_name": "The Brokering of Peace",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1769,
+      "zone_or_sort_name": "Map or sort 1769"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6031"
+      ],
+      "instruction": "Collect or use the required item: Runecloth. [QC6031 Runecloth]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Runecloth",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 14047,
+          "kind": "item",
+          "locations": [],
+          "name": "Runecloth",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 17,
+      "quest_id": 6031,
+      "quest_name": "Runecloth",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1769,
+      "zone_or_sort_name": "Map or sort 1769"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11557,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 65.69,
+              "y": 2.81
+            }
+          ],
+          "name": "Meilosh",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6031"
+      ],
+      "instruction": "Turn in [QT6031 Runecloth] to Meilosh",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 6031,
+      "quest_name": "Runecloth",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1769,
+      "zone_or_sort_name": "Map or sort 1769"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11555,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 65.18,
+              "y": 2.68
+            }
+          ],
+          "name": "Gorn One Eye",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8481"
+      ],
+      "instruction": "Turn in [QT8481 The Root of All Evil] to Gorn One Eye",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 8481,
+      "quest_name": "The Root of All Evil",
+      "quest_tag": "Elite",
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1769,
+      "zone_or_sort_name": "Map or sort 1769"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2784,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 39.09,
+              "y": 56.2
+            }
+          ],
+          "name": "King Magni Bronzebeard",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8484"
+      ],
+      "instruction": "Turn in [QT8484 The Brokering of Peace] to King Magni Bronzebeard",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 8484,
+      "quest_name": "The Brokering of Peace",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1769,
+      "zone_or_sort_name": "Map or sort 1769"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7771,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 52.71,
+              "y": 45.92
+            }
+          ],
+          "name": "Marvon Rivetseeker",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3446"
+      ],
+      "instruction": "Accept [QA3446 Into the Depths] from Marvon Rivetseeker.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 3446,
+      "quest_name": "Into the Depths",
+      "quest_tag": "Dungeon",
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1417,
+      "zone_or_sort_name": "Sunken Temple"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7771,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 52.71,
+              "y": 45.92
+            }
+          ],
+          "name": "Marvon Rivetseeker",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3447"
+      ],
+      "instruction": "Accept [QA3447 Secret of the Circle] from Marvon Rivetseeker.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 22,
+      "quest_id": 3447,
+      "quest_name": "Secret of the Circle",
+      "quest_tag": "Dungeon",
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1417,
+      "zone_or_sort_name": "Sunken Temple"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "item_triggered",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 10454,
+          "kind": "item",
+          "locations": [],
+          "name": "Essence of Eranikus",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3373"
+      ],
+      "instruction": "Accept [QA3373 The Essence of Eranikus] from Essence of Eranikus.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 23,
+      "quest_id": 3373,
+      "quest_name": "The Essence of Eranikus",
+      "quest_tag": "Dungeon",
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1417,
+      "zone_or_sort_name": "Sunken Temple"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3446"
+      ],
+      "instruction": "Dungeon \u2014 Complete [QC3446 Into the Depths]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 24,
+      "quest_id": 3446,
+      "quest_name": "Into the Depths",
+      "quest_tag": "Dungeon",
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1417,
+      "zone_or_sort_name": "Sunken Temple"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3447"
+      ],
+      "instruction": "Dungeon \u2014 Complete [QC3447 Secret of the Circle]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 25,
+      "quest_id": 3447,
+      "quest_name": "Secret of the Circle",
+      "quest_tag": "Dungeon",
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1417,
+      "zone_or_sort_name": "Sunken Temple"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "item_triggered",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3373"
+      ],
+      "instruction": "Dungeon \u2014 Use the quest item [UI10454-] as directed. [QC3373 The Essence of Eranikus]",
+      "item_use_id": 10454,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 26,
+      "quest_id": 3373,
+      "quest_name": "The Essence of Eranikus",
+      "quest_tag": "Dungeon",
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1417,
+      "zone_or_sort_name": "Sunken Temple"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 148836,
+          "kind": "object",
+          "locations": [],
+          "name": "Altar of Hakkar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3446"
+      ],
+      "instruction": "Turn in [QT3446 Into the Depths] to Altar of Hakkar",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 27,
+      "quest_id": 3446,
+      "quest_name": "Into the Depths",
+      "quest_tag": "Dungeon",
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1417,
+      "zone_or_sort_name": "Sunken Temple"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 148838,
+          "kind": "object",
+          "locations": [],
+          "name": "Idol of Hakkar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3447"
+      ],
+      "instruction": "Turn in [QT3447 Secret of the Circle] to Idol of Hakkar",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 28,
+      "quest_id": 3447,
+      "quest_name": "Secret of the Circle",
+      "quest_tag": "Dungeon",
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1417,
+      "zone_or_sort_name": "Sunken Temple"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "item_triggered",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 148512,
+          "kind": "object",
+          "locations": [],
+          "name": "Essence Font",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3373"
+      ],
+      "instruction": "Turn in [QT3373 The Essence of Eranikus] to Essence Font",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 29,
+      "quest_id": 3373,
+      "quest_name": "The Essence of Eranikus",
+      "quest_tag": "Dungeon",
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1417,
+      "zone_or_sort_name": "Sunken Temple"
+    }
+  ],
+  "title": "Optional Content 11 - Sunken Temple & Ironforge"
+}

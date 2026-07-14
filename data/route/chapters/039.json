@@ -1,0 +1,6164 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 38 Desolace, or select this chapter on a partially completed character. Begin in Dustwallow Marsh with Captain Darill. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 15,
+    "map_name": "Dustwallow Marsh",
+    "x": 46.62,
+    "y": 24.6
+  },
+  "entry_zone_or_sort": 15,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 3,
+    "map_name": "Badlands",
+    "quest_id": 687,
+    "tag": "QT",
+    "x": 51.39,
+    "y": 76.87
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/039_world_39.lua",
+  "id": "039-primary-39-dustwallow-marsh-&-arathi-highlands",
+  "maximum_level": 35,
+  "minimum_level": 35,
+  "next_chapter": "40 Badlands",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "38 Desolace",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 11149,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1118:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11149:starter",
+        "travel-network:ratchet-booty-bay",
+        "https://www.wowhead.com/tbc/quest=1040/passage-to-booty-bay"
+      ],
+      "instruction": "Travel from Stranglethorn Vale to Dustwallow Marsh: Take the ship between Ratchet and Booty Bay. Continue to [G46.62,24.60 Dustwallow Marsh]. [O]",
+      "map_id": 15,
+      "map_name": "Dustwallow Marsh",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 33,
+      "origin_map_name": "Stranglethorn Vale",
+      "origin_x": 27.12,
+      "origin_y": 77.21,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [
+        "ratchet-booty-bay"
+      ],
+      "type": "transport",
+      "verification": "questie_endpoints_and_tbc_transport_network",
+      "x": 46.62,
+      "y": 24.6
+    },
+    {
+      "before_quest_id": 11149,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11149:starter"
+      ],
+      "instruction": "Before you begin: travel to Dustwallow Marsh and meet the first quest giver at [G46.62,24.60 Dustwallow Marsh]. Leave at least two quest-log slots open. [O]",
+      "map_id": 15,
+      "map_name": "Dustwallow Marsh",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 46.62,
+      "y": 24.6
+    },
+    {
+      "before_quest_id": 11149,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11149:requiredLevel"
+      ],
+      "instruction": "Reach level 35 before accepting Tabetha's Assistance. [XP35 Level 35]",
+      "map_id": 15,
+      "map_name": "Dustwallow Marsh",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 35,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 46.62,
+      "y": 24.6
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23568,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.62,
+              "y": 24.6
+            }
+          ],
+          "name": "Captain Darill",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11149"
+      ],
+      "instruction": "Accept [QA11149 Tabetha's Assistance] from Captain Darill.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 11149,
+      "quest_name": "Tabetha's Assistance",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11149"
+      ],
+      "instruction": "Complete [QC11149 Tabetha's Assistance]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 11149,
+      "quest_name": "Tabetha's Assistance",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 6546,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.06,
+              "y": 57.09
+            }
+          ],
+          "name": "Tabetha",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11149"
+      ],
+      "instruction": "Turn in [QT11149 Tabetha's Assistance] to Tabetha",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 11149,
+      "quest_name": "Tabetha's Assistance",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 6546,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.06,
+              "y": 57.09
+            }
+          ],
+          "name": "Tabetha",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11150"
+      ],
+      "instruction": "Accept [QA11150 Raze Direhorn Post!] from Tabetha.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 11150,
+      "quest_name": "Raze Direhorn Post!",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11150"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: North Tent, Northeast Tent, East Tent. [QC11150 Raze Direhorn Post!]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: North Tent, Northeast Tent, East Tent",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23751,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.6,
+              "y": 45.93
+            }
+          ],
+          "name": "North Tent",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23752,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 47.25,
+              "y": 46.54
+            }
+          ],
+          "name": "Northeast Tent",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23753,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 47.53,
+              "y": 47.65
+            }
+          ],
+          "name": "East Tent",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 8,
+      "quest_id": 11150,
+      "quest_name": "Raze Direhorn Post!",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 6546,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.06,
+              "y": 57.09
+            }
+          ],
+          "name": "Tabetha",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11150"
+      ],
+      "instruction": "Turn in [QT11150 Raze Direhorn Post!] to Tabetha",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 11150,
+      "quest_name": "Raze Direhorn Post!",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 6546,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.06,
+              "y": 57.09
+            }
+          ],
+          "name": "Tabetha",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11151"
+      ],
+      "instruction": "Accept [QA11151 Justice for the Hyals] from Tabetha.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 11151,
+      "quest_name": "Justice for the Hyals",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11151"
+      ],
+      "instruction": "Complete [QC11151 Justice for the Hyals]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 11151,
+      "quest_name": "Justice for the Hyals",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4944,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 68.21,
+              "y": 48.62
+            }
+          ],
+          "name": "Captain Garran Vimes",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11151"
+      ],
+      "instruction": "Turn in [QT11151 Justice for the Hyals] to Captain Garran Vimes",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 11151,
+      "quest_name": "Justice for the Hyals",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4944,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 68.21,
+              "y": 48.62
+            }
+          ],
+          "name": "Captain Garran Vimes",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11152"
+      ],
+      "instruction": "Accept [QA11152 Peace at Last] from Captain Garran Vimes.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 11152,
+      "quest_name": "Peace at Last",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11152"
+      ],
+      "instruction": "Interact with the required object: Hyal Family Monument. [QC11152 Peace at Last]",
+      "item_use_id": null,
+      "objective_hint": "Interact with the required object: Hyal Family Monument",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 186322,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 63.68,
+              "y": 42.82
+            }
+          ],
+          "name": "Hyal Family Monument",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 14,
+      "quest_id": 11152,
+      "quest_name": "Peace at Last",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4944,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 68.21,
+              "y": 48.62
+            }
+          ],
+          "name": "Captain Garran Vimes",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11152"
+      ],
+      "instruction": "Turn in [QT11152 Peace at Last] to Captain Garran Vimes",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 11152,
+      "quest_name": "Peace at Last",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23600,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.1,
+              "y": 57.43
+            }
+          ],
+          "name": "Apprentice Morlann",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11156"
+      ],
+      "instruction": "Accept [QA11156 Direhorn Raiders] from Apprentice Morlann.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 11156,
+      "quest_name": "Direhorn Raiders",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11156"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Grimtotem Earthbinder, Grimtotem Destroyer. [QC11156 Direhorn Raiders]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Grimtotem Earthbinder, Grimtotem Destroyer",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23595,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.62,
+              "y": 45.99
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.06,
+              "y": 45.87
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.18,
+              "y": 46.3
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.24,
+              "y": 47.9
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 47.43,
+              "y": 47.57
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 45.96,
+              "y": 47.28
+            }
+          ],
+          "name": "Grimtotem Earthbinder",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23594,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 47.66,
+              "y": 46.67
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 47.59,
+              "y": 44.75
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 47.1,
+              "y": 45.3
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 45.47,
+              "y": 45.32
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 45.69,
+              "y": 45.48
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.37,
+              "y": 45.42
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.67,
+              "y": 50.35
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.94,
+              "y": 48.62
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.68,
+              "y": 48.87
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 47.06,
+              "y": 47.94
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.48,
+              "y": 47.15
+            }
+          ],
+          "name": "Grimtotem Destroyer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 17,
+      "quest_id": 11156,
+      "quest_name": "Direhorn Raiders",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23600,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.1,
+              "y": 57.43
+            }
+          ],
+          "name": "Apprentice Morlann",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11156"
+      ],
+      "instruction": "Turn in [QT11156 Direhorn Raiders] to Apprentice Morlann",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 11156,
+      "quest_name": "Direhorn Raiders",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23579,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 41.86,
+              "y": 73.97
+            }
+          ],
+          "name": "Brogg",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11158"
+      ],
+      "instruction": "Accept [QA11158 Bloodfen Feathers] from Brogg.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 11158,
+      "quest_name": "Bloodfen Feathers",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11158"
+      ],
+      "instruction": "Collect or use the required item: Bloodfen Feather. [QC11158 Bloodfen Feathers]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Bloodfen Feather",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 33085,
+          "kind": "item",
+          "locations": [],
+          "name": "Bloodfen Feather",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 20,
+      "quest_id": 11158,
+      "quest_name": "Bloodfen Feathers",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23579,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 41.86,
+              "y": 73.97
+            }
+          ],
+          "name": "Brogg",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11158"
+      ],
+      "instruction": "Turn in [QT11158 Bloodfen Feathers] to Brogg",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 11158,
+      "quest_name": "Bloodfen Feathers",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23579,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 41.86,
+              "y": 73.97
+            }
+          ],
+          "name": "Brogg",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11160"
+      ],
+      "instruction": "Accept [QA11160 Banner of the Stonemaul] from Brogg.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 22,
+      "quest_id": 11160,
+      "quest_name": "Banner of the Stonemaul",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23579,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 41.86,
+              "y": 73.97
+            }
+          ],
+          "name": "Brogg",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11161"
+      ],
+      "instruction": "Accept [QA11161 The Essence of Enmity] from Brogg.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 23,
+      "quest_id": 11161,
+      "quest_name": "The Essence of Enmity",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11160"
+      ],
+      "instruction": "Collect or use the required item: Stonemaul Banner. [QC11160 Banner of the Stonemaul]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Stonemaul Banner",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 33086,
+          "kind": "item",
+          "locations": [],
+          "name": "Stonemaul Banner",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 24,
+      "quest_id": 11160,
+      "quest_name": "Banner of the Stonemaul",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11161"
+      ],
+      "instruction": "Collect or use the required item: Black Dragonkin Essence. [QC11161 The Essence of Enmity]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Black Dragonkin Essence",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 33087,
+          "kind": "item",
+          "locations": [],
+          "name": "Black Dragonkin Essence",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 25,
+      "quest_id": 11161,
+      "quest_name": "The Essence of Enmity",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23579,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 41.86,
+              "y": 73.97
+            }
+          ],
+          "name": "Brogg",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11160"
+      ],
+      "instruction": "Turn in [QT11160 Banner of the Stonemaul] to Brogg",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 26,
+      "quest_id": 11160,
+      "quest_name": "Banner of the Stonemaul",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23579,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 41.86,
+              "y": 73.97
+            }
+          ],
+          "name": "Brogg",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11161"
+      ],
+      "instruction": "Turn in [QT11161 The Essence of Enmity] to Brogg",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 27,
+      "quest_id": 11161,
+      "quest_name": "The Essence of Enmity",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23579,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 41.86,
+              "y": 73.97
+            }
+          ],
+          "name": "Brogg",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11159"
+      ],
+      "instruction": "Accept [QA11159 Spirits of Stonemaul Hold] from Brogg.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 28,
+      "quest_id": 11159,
+      "quest_name": "Spirits of Stonemaul Hold",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11159"
+      ],
+      "instruction": "Complete the required NPC or creature objective: Stonemaul Spirit. [QC11159 Spirits of Stonemaul Hold]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Stonemaul Spirit",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23786,
+          "kind": "npc",
+          "locations": [],
+          "name": "Stonemaul Spirit",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 29,
+      "quest_id": 11159,
+      "quest_name": "Spirits of Stonemaul Hold",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23579,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 41.86,
+              "y": 73.97
+            }
+          ],
+          "name": "Brogg",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11159"
+      ],
+      "instruction": "Turn in [QT11159 Spirits of Stonemaul Hold] to Brogg",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 30,
+      "quest_id": 11159,
+      "quest_name": "Spirits of Stonemaul Hold",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23579,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 41.86,
+              "y": 73.97
+            }
+          ],
+          "name": "Brogg",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11162"
+      ],
+      "instruction": "Accept [QA11162 Challenge to the Black Flight] from Brogg.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 31,
+      "quest_id": 11162,
+      "quest_name": "Challenge to the Black Flight",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11162"
+      ],
+      "instruction": "Use the quest item [UI33095-] as directed; complete the required NPC or creature objective: Smolderwing. [QC11162 Challenge to the Black Flight]",
+      "item_use_id": 33095,
+      "objective_hint": "Complete the required NPC or creature objective: Smolderwing",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23789,
+          "kind": "npc",
+          "locations": [],
+          "name": "Smolderwing",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 32,
+      "quest_id": 11162,
+      "quest_name": "Challenge to the Black Flight",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23579,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 41.86,
+              "y": 73.97
+            }
+          ],
+          "name": "Brogg",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11162"
+      ],
+      "instruction": "Turn in [QT11162 Challenge to the Black Flight] to Brogg",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 33,
+      "quest_id": 11162,
+      "quest_name": "Challenge to the Black Flight",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23601,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.05,
+              "y": 57.24
+            }
+          ],
+          "name": "Apprentice Garion",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11169"
+      ],
+      "instruction": "Accept [QA11169 The Grimtotem Weapon] from Apprentice Garion.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 34,
+      "quest_id": 11169,
+      "quest_name": "The Grimtotem Weapon",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23600,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.1,
+              "y": 57.43
+            }
+          ],
+          "name": "Apprentice Morlann",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11172"
+      ],
+      "instruction": "Accept [QA11172 The Zeppelin Crash] from Apprentice Morlann.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 35,
+      "quest_id": 11172,
+      "quest_name": "The Zeppelin Crash",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23601,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.05,
+              "y": 57.24
+            }
+          ],
+          "name": "Apprentice Garion",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11173"
+      ],
+      "instruction": "Accept [QA11173 The Reagent Thief] from Apprentice Garion.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 36,
+      "quest_id": 11173,
+      "quest_name": "The Reagent Thief",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23797,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 53.57,
+              "y": 56.92
+            }
+          ],
+          "name": "Moxie Steelgrille",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11174"
+      ],
+      "instruction": "Accept [QA11174 Corrosion Prevention] from Moxie Steelgrille.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 37,
+      "quest_id": 11174,
+      "quest_name": "Corrosion Prevention",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11174"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Corrosive Swamp Ooze, Acidic Swamp Ooze, Bubbling Swamp Ooze. [QC11174 Corrosion Prevention]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Corrosive Swamp Ooze, Acidic Swamp Ooze, Bubbling Swamp Ooze",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4392,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 45.16,
+              "y": 58.39
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 44.25,
+              "y": 58.62
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 54.13,
+              "y": 57.73
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 53.05,
+              "y": 56.05
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 49.26,
+              "y": 55.73
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 44.93,
+              "y": 54.9
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 54.48,
+              "y": 54.65
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 51.81,
+              "y": 54.62
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 53.3,
+              "y": 52.96
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 47.62,
+              "y": 51.7
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 50.97,
+              "y": 50.28
+            }
+          ],
+          "name": "Corrosive Swamp Ooze",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4393,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 49.22,
+              "y": 49.86
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 51.65,
+              "y": 55.64
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 52.14,
+              "y": 58.54
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 51.02,
+              "y": 56.75
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 52.31,
+              "y": 52.92
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 54.16,
+              "y": 53.73
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 54.68,
+              "y": 52.88
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 55.41,
+              "y": 53.71
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 51.03,
+              "y": 51.38
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 50.13,
+              "y": 50.08
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 51.38,
+              "y": 52.07
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 53.01,
+              "y": 54.94
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 53.39,
+              "y": 58.18
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 53.25,
+              "y": 54.78
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 54.48,
+              "y": 56.77
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 54.59,
+              "y": 55.04
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 52.95,
+              "y": 58.68
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 54.7,
+              "y": 53.97
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 52.77,
+              "y": 54.3
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 52.46,
+              "y": 56.93
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 53.54,
+              "y": 58.44
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 50.99,
+              "y": 58.46
+            }
+          ],
+          "name": "Acidic Swamp Ooze",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4394,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 48.45,
+              "y": 54.82
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 49.32,
+              "y": 51.26
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 52.0,
+              "y": 54.62
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 54.21,
+              "y": 58.21
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 51.57,
+              "y": 59.51
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 50.56,
+              "y": 57.12
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 53.2,
+              "y": 52.09
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 53.34,
+              "y": 52.61
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 49.13,
+              "y": 51.93
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 49.4,
+              "y": 55.54
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 51.74,
+              "y": 57.56
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 52.53,
+              "y": 57.19
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 52.99,
+              "y": 55.89
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 54.64,
+              "y": 54.52
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 48.76,
+              "y": 53.65
+            }
+          ],
+          "name": "Bubbling Swamp Ooze",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 38,
+      "quest_id": 11174,
+      "quest_name": "Corrosion Prevention",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11169"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Mottled Drywallow Crocolisk, Drywallow Daggermaw. [QC11169 The Grimtotem Weapon]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Mottled Drywallow Crocolisk, Drywallow Daggermaw",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4344,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 41.4,
+              "y": 57.76
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 40.53,
+              "y": 58.45
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 38.75,
+              "y": 59.96
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 39.55,
+              "y": 58.7
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 42.42,
+              "y": 49.82
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 43.68,
+              "y": 49.6
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 40.81,
+              "y": 54.82
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 38.99,
+              "y": 53.54
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 37.72,
+              "y": 53.84
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 39.57,
+              "y": 53.1
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 38.4,
+              "y": 54.6
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 36.84,
+              "y": 60.75
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 36.2,
+              "y": 59.46
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 42.58,
+              "y": 48.03
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 43.44,
+              "y": 47.46
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 44.61,
+              "y": 49.55
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 39.97,
+              "y": 52.06
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 45.8,
+              "y": 49.45
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 39.53,
+              "y": 48.85
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 38.52,
+              "y": 49.11
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 37.64,
+              "y": 46.31
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 37.63,
+              "y": 50.09
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 36.43,
+              "y": 48.21
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 37.98,
+              "y": 47.19
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 43.28,
+              "y": 50.81
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 42.72,
+              "y": 48.93
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 35.0,
+              "y": 55.36
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 34.36,
+              "y": 47.17
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 35.96,
+              "y": 58.07
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 34.86,
+              "y": 60.96
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 35.27,
+              "y": 57.45
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 34.8,
+              "y": 58.35
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 36.43,
+              "y": 58.8
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 35.69,
+              "y": 60.96
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 42.64,
+              "y": 53.76
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 45.12,
+              "y": 51.71
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 44.65,
+              "y": 51.24
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 41.71,
+              "y": 56.03
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 41.99,
+              "y": 54.87
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 38.84,
+              "y": 47.82
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 45.2,
+              "y": 47.89
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 44.54,
+              "y": 46.95
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 38.61,
+              "y": 57.52
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 37.57,
+              "y": 57.78
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 37.93,
+              "y": 59.61
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 43.01,
+              "y": 56.32
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 41.12,
+              "y": 60.63
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 35.47,
+              "y": 47.36
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 36.93,
+              "y": 47.13
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 35.95,
+              "y": 48.56
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 34.43,
+              "y": 49.51
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 35.22,
+              "y": 49.25
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 40.24,
+              "y": 50.34
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 37.25,
+              "y": 51.51
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 39.28,
+              "y": 50.19
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 39.67,
+              "y": 51.18
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 43.92,
+              "y": 58.14
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 43.37,
+              "y": 56.63
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 43.34,
+              "y": 58.49
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 45.99,
+              "y": 52.95
+            }
+          ],
+          "name": "Mottled Drywallow Crocolisk",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4345,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 54.24,
+              "y": 72.1
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 43.79,
+              "y": 75.94
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 43.44,
+              "y": 77.01
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 42.07,
+              "y": 69.16
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 45.41,
+              "y": 61.72
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.42,
+              "y": 70.13
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 47.21,
+              "y": 71.0
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 47.67,
+              "y": 71.72
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 38.44,
+              "y": 71.21
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 47.04,
+              "y": 78.76
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.38,
+              "y": 78.85
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 47.72,
+              "y": 77.64
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 43.92,
+              "y": 68.51
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.97,
+              "y": 68.95
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 48.9,
+              "y": 64.72
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 45.89,
+              "y": 60.57
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 44.39,
+              "y": 72.48
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 42.62,
+              "y": 70.34
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 44.9,
+              "y": 69.82
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 50.35,
+              "y": 68.64
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 52.23,
+              "y": 69.46
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 52.62,
+              "y": 70.83
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 48.43,
+              "y": 70.68
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 43.19,
+              "y": 63.5
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 50.53,
+              "y": 69.23
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 50.34,
+              "y": 70.03
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 48.39,
+              "y": 68.67
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.04,
+              "y": 76.5
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 45.77,
+              "y": 75.0
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 48.91,
+              "y": 78.17
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 49.46,
+              "y": 64.71
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 50.33,
+              "y": 63.36
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 47.28,
+              "y": 51.49
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 50.14,
+              "y": 60.2
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 38.91,
+              "y": 69.79
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 47.15,
+              "y": 64.32
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.46,
+              "y": 75.91
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 49.25,
+              "y": 79.2
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 45.09,
+              "y": 79.24
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 44.12,
+              "y": 79.74
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 53.0,
+              "y": 71.64
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.65,
+              "y": 73.82
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 47.15,
+              "y": 74.61
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 45.37,
+              "y": 77.56
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 41.34,
+              "y": 63.26
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 43.23,
+              "y": 78.69
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 55.29,
+              "y": 73.77
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 47.69,
+              "y": 75.83
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.55,
+              "y": 50.66
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 54.94,
+              "y": 71.01
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 52.14,
+              "y": 72.88
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 48.45,
+              "y": 49.14
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 41.31,
+              "y": 66.28
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 53.59,
+              "y": 70.74
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 50.88,
+              "y": 60.85
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 51.22,
+              "y": 72.75
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 41.94,
+              "y": 63.91
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 50.98,
+              "y": 70.58
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 50.65,
+              "y": 62.18
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 56.31,
+              "y": 72.97
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 56.47,
+              "y": 71.59
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 56.83,
+              "y": 70.16
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 51.05,
+              "y": 74.84
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 55.21,
+              "y": 69.78
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 48.31,
+              "y": 63.91
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 50.76,
+              "y": 76.53
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 56.11,
+              "y": 68.83
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 55.51,
+              "y": 71.87
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 54.24,
+              "y": 69.13
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 50.55,
+              "y": 80.92
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 49.85,
+              "y": 79.94
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 47.29,
+              "y": 72.74
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 43.91,
+              "y": 61.81
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 50.43,
+              "y": 53.63
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 47.87,
+              "y": 79.51
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.59,
+              "y": 61.31
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.07,
+              "y": 63.16
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 44.51,
+              "y": 62.42
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 45.84,
+              "y": 62.41
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 48.06,
+              "y": 55.09
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 47.95,
+              "y": 53.53
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 49.44,
+              "y": 53.04
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 50.68,
+              "y": 52.58
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 48.59,
+              "y": 56.78
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 43.23,
+              "y": 60.94
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 42.65,
+              "y": 61.39
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 41.41,
+              "y": 69.08
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 39.71,
+              "y": 72.0
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 37.51,
+              "y": 71.65
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 38.37,
+              "y": 72.51
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 44.55,
+              "y": 70.79
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 49.17,
+              "y": 58.28
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 49.68,
+              "y": 58.56
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.44,
+              "y": 59.17
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 47.08,
+              "y": 54.82
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 50.38,
+              "y": 55.82
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 49.74,
+              "y": 56.76
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 50.95,
+              "y": 54.69
+            },
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.07,
+              "y": 53.75
+            }
+          ],
+          "name": "Drywallow Daggermaw",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 39,
+      "quest_id": 11169,
+      "quest_name": "The Grimtotem Weapon",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11172"
+      ],
+      "instruction": "Complete [QC11172 The Zeppelin Crash]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 40,
+      "quest_id": 11172,
+      "quest_name": "The Zeppelin Crash",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11173"
+      ],
+      "instruction": "Collect or use the required item: Marsh Venom. [QC11173 The Reagent Thief]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Marsh Venom",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 33103,
+          "kind": "item",
+          "locations": [],
+          "name": "Marsh Venom",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 41,
+      "quest_id": 11173,
+      "quest_name": "The Reagent Thief",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23797,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 53.57,
+              "y": 56.92
+            }
+          ],
+          "name": "Moxie Steelgrille",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11172"
+      ],
+      "instruction": "Turn in [QT11172 The Zeppelin Crash] to Moxie Steelgrille",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 42,
+      "quest_id": 11172,
+      "quest_name": "The Zeppelin Crash",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23797,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 53.57,
+              "y": 56.92
+            }
+          ],
+          "name": "Moxie Steelgrille",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11174"
+      ],
+      "instruction": "Turn in [QT11174 Corrosion Prevention] to Moxie Steelgrille",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 43,
+      "quest_id": 11174,
+      "quest_name": "Corrosion Prevention",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23601,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.05,
+              "y": 57.24
+            }
+          ],
+          "name": "Apprentice Garion",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11169"
+      ],
+      "instruction": "Turn in [QT11169 The Grimtotem Weapon] to Apprentice Garion",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 44,
+      "quest_id": 11169,
+      "quest_name": "The Grimtotem Weapon",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23601,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 46.05,
+              "y": 57.24
+            }
+          ],
+          "name": "Apprentice Garion",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11173"
+      ],
+      "instruction": "Turn in [QT11173 The Reagent Thief] to Apprentice Garion",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 45,
+      "quest_id": 11173,
+      "quest_name": "The Reagent Thief",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 186426,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 41.75,
+              "y": 73.13
+            }
+          ],
+          "name": "Wanted Poster",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11184"
+      ],
+      "instruction": "Accept [QA11184 WANTED: Goreclaw the Ravenous] from Wanted Poster.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 46,
+      "quest_id": 11184,
+      "quest_name": "WANTED: Goreclaw the Ravenous",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11184"
+      ],
+      "instruction": "Complete the required NPC or creature objective: Goreclaw the Ravenous. [QC11184 WANTED: Goreclaw the Ravenous]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Goreclaw the Ravenous",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23873,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 32.17,
+              "y": 65.66
+            }
+          ],
+          "name": "Goreclaw the Ravenous",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 47,
+      "quest_id": 11184,
+      "quest_name": "WANTED: Goreclaw the Ravenous",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23572,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 42.33,
+              "y": 72.93
+            }
+          ],
+          "name": "Drazzit Dripvalve",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11184"
+      ],
+      "instruction": "Turn in [QT11184 WANTED: Goreclaw the Ravenous] to Drazzit Dripvalve",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 48,
+      "quest_id": 11184,
+      "quest_name": "WANTED: Goreclaw the Ravenous",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23797,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 53.57,
+              "y": 56.92
+            }
+          ],
+          "name": "Moxie Steelgrille",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11207"
+      ],
+      "instruction": "Accept [QA11207 Secure the Cargo!] from Moxie Steelgrille.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 49,
+      "quest_id": 11207,
+      "quest_name": "Secure the Cargo!",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11207"
+      ],
+      "instruction": "Collect or use the required item: Zeppelin Cargo. [QC11207 Secure the Cargo!]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Zeppelin Cargo",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 33163,
+          "kind": "item",
+          "locations": [],
+          "name": "Zeppelin Cargo",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 50,
+      "quest_id": 11207,
+      "quest_name": "Secure the Cargo!",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23797,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 53.57,
+              "y": 56.92
+            }
+          ],
+          "name": "Moxie Steelgrille",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11207"
+      ],
+      "instruction": "Turn in [QT11207 Secure the Cargo!] to Moxie Steelgrille",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 51,
+      "quest_id": 11207,
+      "quest_name": "Secure the Cargo!",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23797,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 53.57,
+              "y": 56.92
+            }
+          ],
+          "name": "Moxie Steelgrille",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11208"
+      ],
+      "instruction": "Accept [QA11208 Delivery for Drazzit] from Moxie Steelgrille.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 52,
+      "quest_id": 11208,
+      "quest_name": "Delivery for Drazzit",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11208"
+      ],
+      "instruction": "Complete [QC11208 Delivery for Drazzit]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 53,
+      "quest_id": 11208,
+      "quest_name": "Delivery for Drazzit",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23572,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 42.33,
+              "y": 72.93
+            }
+          ],
+          "name": "Drazzit Dripvalve",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11208"
+      ],
+      "instruction": "Turn in [QT11208 Delivery for Drazzit] to Drazzit Dripvalve",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 54,
+      "quest_id": 11208,
+      "quest_name": "Delivery for Drazzit",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 15,
+      "zone_or_sort_name": "Dustwallow Marsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2788,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 46.2,
+              "y": 47.75
+            }
+          ],
+          "name": "Apprentice Kryten",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:691"
+      ],
+      "instruction": "Accept [QA691 Worth Its Weight in Gold] from Apprentice Kryten.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 55,
+      "quest_id": 691,
+      "quest_name": "Worth Its Weight in Gold",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:691"
+      ],
+      "instruction": "Collect or use the required items: Witherbark Tusk, Witherbark Medicine Pouch, Shadow Hunter Knife. [QC691 Worth Its Weight in Gold]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Witherbark Tusk, Witherbark Medicine Pouch, Shadow Hunter Knife",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4503,
+          "kind": "item",
+          "locations": [],
+          "name": "Witherbark Tusk",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4522,
+          "kind": "item",
+          "locations": [],
+          "name": "Witherbark Medicine Pouch",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 5040,
+          "kind": "item",
+          "locations": [],
+          "name": "Shadow Hunter Knife",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 56,
+      "quest_id": 691,
+      "quest_name": "Worth Its Weight in Gold",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2788,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 46.2,
+              "y": 47.75
+            }
+          ],
+          "name": "Apprentice Kryten",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:691"
+      ],
+      "instruction": "Turn in [QT691 Worth Its Weight in Gold] to Apprentice Kryten",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 57,
+      "quest_id": 691,
+      "quest_name": "Worth Its Weight in Gold",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2789,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 46.65,
+              "y": 47.01
+            }
+          ],
+          "name": "Skuerto",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:693"
+      ],
+      "instruction": "Accept [QA693 Wand over Fist] from Skuerto.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 58,
+      "quest_id": 693,
+      "quest_name": "Wand over Fist",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:693"
+      ],
+      "instruction": "Collect or use the required item: Trelane's Wand of Invocation. [QC693 Wand over Fist]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Trelane's Wand of Invocation",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4525,
+          "kind": "item",
+          "locations": [],
+          "name": "Trelane's Wand of Invocation",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 59,
+      "quest_id": 693,
+      "quest_name": "Wand over Fist",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2789,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 46.65,
+              "y": 47.01
+            }
+          ],
+          "name": "Skuerto",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:693"
+      ],
+      "instruction": "Turn in [QT693 Wand over Fist] to Skuerto",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 60,
+      "quest_id": 693,
+      "quest_name": "Wand over Fist",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2789,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 46.65,
+              "y": 47.01
+            }
+          ],
+          "name": "Skuerto",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:694"
+      ],
+      "instruction": "Accept [QA694 Trelane's Defenses] from Skuerto.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 61,
+      "quest_id": 694,
+      "quest_name": "Trelane's Defenses",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:694"
+      ],
+      "instruction": "Collect or use the required item: Azure Agate. [QC694 Trelane's Defenses]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Azure Agate",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4527,
+          "kind": "item",
+          "locations": [],
+          "name": "Azure Agate",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 62,
+      "quest_id": 694,
+      "quest_name": "Trelane's Defenses",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2788,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 46.2,
+              "y": 47.75
+            }
+          ],
+          "name": "Apprentice Kryten",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:694"
+      ],
+      "instruction": "Turn in [QT694 Trelane's Defenses] to Apprentice Kryten",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 63,
+      "quest_id": 694,
+      "quest_name": "Trelane's Defenses",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2788,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 46.2,
+              "y": 47.75
+            }
+          ],
+          "name": "Apprentice Kryten",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:695"
+      ],
+      "instruction": "Accept [QA695 An Apprentice's Enchantment] from Apprentice Kryten.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 64,
+      "quest_id": 695,
+      "quest_name": "An Apprentice's Enchantment",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:695"
+      ],
+      "instruction": "Complete [QC695 An Apprentice's Enchantment]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 65,
+      "quest_id": 695,
+      "quest_name": "An Apprentice's Enchantment",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2789,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 46.65,
+              "y": 47.01
+            }
+          ],
+          "name": "Skuerto",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:695"
+      ],
+      "instruction": "Turn in [QT695 An Apprentice's Enchantment] to Skuerto",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 66,
+      "quest_id": 695,
+      "quest_name": "An Apprentice's Enchantment",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2789,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 46.65,
+              "y": 47.01
+            }
+          ],
+          "name": "Skuerto",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:696"
+      ],
+      "instruction": "Accept [QA696 Attack on the Tower] from Skuerto.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 67,
+      "quest_id": 696,
+      "quest_name": "Attack on the Tower",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:696"
+      ],
+      "instruction": "Collect or use the required items: Trelane's Phylactery, Trelane's Orb, Trelane's Ember Agate. [QC696 Attack on the Tower]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Trelane's Phylactery, Trelane's Orb, Trelane's Ember Agate",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4530,
+          "kind": "item",
+          "locations": [],
+          "name": "Trelane's Phylactery",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4531,
+          "kind": "item",
+          "locations": [],
+          "name": "Trelane's Orb",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4532,
+          "kind": "item",
+          "locations": [],
+          "name": "Trelane's Ember Agate",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 68,
+      "quest_id": 696,
+      "quest_name": "Attack on the Tower",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2789,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 46.65,
+              "y": 47.01
+            }
+          ],
+          "name": "Skuerto",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:696"
+      ],
+      "instruction": "Turn in [QT696 Attack on the Tower] to Skuerto",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 69,
+      "quest_id": 696,
+      "quest_name": "Attack on the Tower",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2789,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 46.65,
+              "y": 47.01
+            }
+          ],
+          "name": "Skuerto",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:697"
+      ],
+      "instruction": "Accept [QA697 Malin's Request] from Skuerto.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 70,
+      "quest_id": 697,
+      "quest_name": "Malin's Request",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:697"
+      ],
+      "instruction": "Complete [QC697 Malin's Request]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 71,
+      "quest_id": 697,
+      "quest_name": "Malin's Request",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2708,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 39.84,
+              "y": 81.46
+            }
+          ],
+          "name": "Archmage Malin",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:697"
+      ],
+      "instruction": "Turn in [QT697 Malin's Request] to Archmage Malin",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 72,
+      "quest_id": 697,
+      "quest_name": "Malin's Request",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 2688,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 36.08,
+              "y": 58.09
+            }
+          ],
+          "name": "Keystone",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:653"
+      ],
+      "instruction": "Accept [QA653 Myzrael's Allies] from Keystone.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 73,
+      "quest_id": 653,
+      "quest_name": "Myzrael's Allies",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:653"
+      ],
+      "instruction": "Complete [QC653 Myzrael's Allies]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 74,
+      "quest_id": 653,
+      "quest_name": "Myzrael's Allies",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2786,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 50.83,
+              "y": 5.62
+            }
+          ],
+          "name": "Gerrig Bonegrip",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:653"
+      ],
+      "instruction": "Turn in [QT653 Myzrael's Allies] to Gerrig Bonegrip",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 75,
+      "quest_id": 653,
+      "quest_name": "Myzrael's Allies",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2766,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 31.78,
+              "y": 82.68
+            }
+          ],
+          "name": "Lolo the Lookout",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:663"
+      ],
+      "instruction": "Accept [QA663 Land Ho!] from Lolo the Lookout.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 76,
+      "quest_id": 663,
+      "quest_name": "Land Ho!",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:663"
+      ],
+      "instruction": "Complete [QC663 Land Ho!]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 77,
+      "quest_id": 663,
+      "quest_name": "Land Ho!",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2610,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 32.28,
+              "y": 81.38
+            }
+          ],
+          "name": "Shakes O'Breen",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:663"
+      ],
+      "instruction": "Turn in [QT663 Land Ho!] to Shakes O'Breen",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 78,
+      "quest_id": 663,
+      "quest_name": "Land Ho!",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2767,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 32.8,
+              "y": 81.48
+            }
+          ],
+          "name": "First Mate Nilzlix",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:662"
+      ],
+      "instruction": "Accept [QA662 Deep Sea Salvage] from First Mate Nilzlix.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 79,
+      "quest_id": 662,
+      "quest_name": "Deep Sea Salvage",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2769,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 34.0,
+              "y": 80.8
+            }
+          ],
+          "name": "Captain Steelgut",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:664"
+      ],
+      "instruction": "Accept [QA664 Drowned Sorrows] from Captain Steelgut.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 80,
+      "quest_id": 664,
+      "quest_name": "Drowned Sorrows",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2768,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 33.87,
+              "y": 80.55
+            }
+          ],
+          "name": "Professor Phizzlethorpe",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:665"
+      ],
+      "instruction": "Accept [QA665 Sunken Treasure] from Professor Phizzlethorpe.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 81,
+      "quest_id": 665,
+      "quest_name": "Sunken Treasure",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:664"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Daggerspine Raider, Daggerspine Sorceress. [QC664 Drowned Sorrows]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Daggerspine Raider, Daggerspine Sorceress",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2595,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 25.51,
+              "y": 91.22
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 25.05,
+              "y": 89.66
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 21.93,
+              "y": 83.92
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 20.04,
+              "y": 84.0
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 19.07,
+              "y": 83.86
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 18.89,
+              "y": 85.03
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 18.98,
+              "y": 86.8
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 24.49,
+              "y": 86.66
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 24.14,
+              "y": 88.51
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 22.4,
+              "y": 89.93
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 21.05,
+              "y": 90.04
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 20.97,
+              "y": 89.77
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 20.07,
+              "y": 86.93
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 20.62,
+              "y": 85.36
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 21.19,
+              "y": 84.31
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 21.85,
+              "y": 86.84
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 23.24,
+              "y": 88.1
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 21.81,
+              "y": 85.55
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 23.31,
+              "y": 86.52
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 23.43,
+              "y": 84.88
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 23.26,
+              "y": 84.78
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 23.02,
+              "y": 84.34
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 23.49,
+              "y": 84.95
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 22.99,
+              "y": 90.34
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 22.61,
+              "y": 86.76
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 21.2,
+              "y": 84.3
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 25.42,
+              "y": 85.23
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 25.5,
+              "y": 87.43
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 20.7,
+              "y": 86.74
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 24.65,
+              "y": 85.28
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 22.57,
+              "y": 86.91
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 21.13,
+              "y": 89.87
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 22.39,
+              "y": 90.09
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 25.13,
+              "y": 89.43
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 20.2,
+              "y": 87.05
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 21.11,
+              "y": 86.9
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 25.52,
+              "y": 91.39
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 18.18,
+              "y": 90.21
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 21.86,
+              "y": 86.45
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 17.01,
+              "y": 88.38
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 19.13,
+              "y": 86.8
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 23.37,
+              "y": 86.44
+            }
+          ],
+          "name": "Daggerspine Raider",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2596,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 23.78,
+              "y": 89.85
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 21.83,
+              "y": 89.82
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 21.27,
+              "y": 84.08
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 20.65,
+              "y": 85.0
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 20.55,
+              "y": 84.8
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 22.74,
+              "y": 84.63
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 23.75,
+              "y": 84.84
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 22.45,
+              "y": 84.35
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 21.87,
+              "y": 89.93
+            },
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 18.16,
+              "y": 87.01
+            }
+          ],
+          "name": "Daggerspine Sorceress",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 82,
+      "quest_id": 664,
+      "quest_name": "Drowned Sorrows",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:662"
+      ],
+      "instruction": "Collect or use the required items: Maiden's Folly Charts, Maiden's Folly Log, Spirit of Silverpine Charts, plus 1 more. [QC662 Deep Sea Salvage]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Maiden's Folly Charts, Maiden's Folly Log, Spirit of Silverpine Charts, plus 1 more",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4487,
+          "kind": "item",
+          "locations": [],
+          "name": "Maiden's Folly Charts",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4489,
+          "kind": "item",
+          "locations": [],
+          "name": "Maiden's Folly Log",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4488,
+          "kind": "item",
+          "locations": [],
+          "name": "Spirit of Silverpine Charts",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4490,
+          "kind": "item",
+          "locations": [],
+          "name": "Spirit of Silverpine Log",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 83,
+      "quest_id": 662,
+      "quest_name": "Deep Sea Salvage",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:665"
+      ],
+      "instruction": "Complete the scripted or exploration event. [QC665 Sunken Treasure]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 84,
+      "quest_id": 665,
+      "quest_name": "Sunken Treasure",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2767,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 32.8,
+              "y": 81.48
+            }
+          ],
+          "name": "First Mate Nilzlix",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:662"
+      ],
+      "instruction": "Turn in [QT662 Deep Sea Salvage] to First Mate Nilzlix",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 85,
+      "quest_id": 662,
+      "quest_name": "Deep Sea Salvage",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2769,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 34.0,
+              "y": 80.8
+            }
+          ],
+          "name": "Captain Steelgut",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:664"
+      ],
+      "instruction": "Turn in [QT664 Drowned Sorrows] to Captain Steelgut",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 86,
+      "quest_id": 664,
+      "quest_name": "Drowned Sorrows",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2774,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 33.86,
+              "y": 80.45
+            }
+          ],
+          "name": "Doctor Draxlegauge",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:665"
+      ],
+      "instruction": "Turn in [QT665 Sunken Treasure] to Doctor Draxlegauge",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 87,
+      "quest_id": 665,
+      "quest_name": "Sunken Treasure",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2774,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 33.86,
+              "y": 80.45
+            }
+          ],
+          "name": "Doctor Draxlegauge",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:666"
+      ],
+      "instruction": "Accept [QA666 Sunken Treasure] from Doctor Draxlegauge.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 88,
+      "quest_id": 666,
+      "quest_name": "Sunken Treasure",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:666"
+      ],
+      "instruction": "Collect or use the required item: Elven Gem. [QC666 Sunken Treasure]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Elven Gem",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4492,
+          "kind": "item",
+          "locations": [],
+          "name": "Elven Gem",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 89,
+      "quest_id": 666,
+      "quest_name": "Sunken Treasure",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2774,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 33.86,
+              "y": 80.45
+            }
+          ],
+          "name": "Doctor Draxlegauge",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:666"
+      ],
+      "instruction": "Turn in [QT666 Sunken Treasure] to Doctor Draxlegauge",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 90,
+      "quest_id": 666,
+      "quest_name": "Sunken Treasure",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2774,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 33.86,
+              "y": 80.45
+            }
+          ],
+          "name": "Doctor Draxlegauge",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:668"
+      ],
+      "instruction": "Accept [QA668 Sunken Treasure] from Doctor Draxlegauge.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 91,
+      "quest_id": 668,
+      "quest_name": "Sunken Treasure",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:668"
+      ],
+      "instruction": "Complete [QC668 Sunken Treasure]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 92,
+      "quest_id": 668,
+      "quest_name": "Sunken Treasure",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2610,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 32.28,
+              "y": 81.38
+            }
+          ],
+          "name": "Shakes O'Breen",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:668"
+      ],
+      "instruction": "Turn in [QT668 Sunken Treasure] to Shakes O'Breen",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 93,
+      "quest_id": 668,
+      "quest_name": "Sunken Treasure",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2610,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 32.28,
+              "y": 81.38
+            }
+          ],
+          "name": "Shakes O'Breen",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:669"
+      ],
+      "instruction": "Accept [QA669 Sunken Treasure] from Shakes O'Breen.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 94,
+      "quest_id": 669,
+      "quest_name": "Sunken Treasure",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:669"
+      ],
+      "instruction": "Complete [QC669 Sunken Treasure]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 95,
+      "quest_id": 669,
+      "quest_name": "Sunken Treasure",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2487,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 27.17,
+              "y": 77.01
+            }
+          ],
+          "name": "Fleet Master Seahorn",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:669"
+      ],
+      "instruction": "Turn in [QT669 Sunken Treasure] to Fleet Master Seahorn",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 96,
+      "quest_id": 669,
+      "quest_name": "Sunken Treasure",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2487,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 27.17,
+              "y": 77.01
+            }
+          ],
+          "name": "Fleet Master Seahorn",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:670"
+      ],
+      "instruction": "Accept [QA670 Sunken Treasure] from Fleet Master Seahorn.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 97,
+      "quest_id": 670,
+      "quest_name": "Sunken Treasure",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:670"
+      ],
+      "instruction": "Complete [QC670 Sunken Treasure]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 98,
+      "quest_id": 670,
+      "quest_name": "Sunken Treasure",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2610,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 32.28,
+              "y": 81.38
+            }
+          ],
+          "name": "Shakes O'Breen",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:670"
+      ],
+      "instruction": "Turn in [QT670 Sunken Treasure] to Shakes O'Breen",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 99,
+      "quest_id": 670,
+      "quest_name": "Sunken Treasure",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2610,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 32.28,
+              "y": 81.38
+            }
+          ],
+          "name": "Shakes O'Breen",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:667"
+      ],
+      "instruction": "Accept [QA667 Death From Below] from Shakes O'Breen.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 100,
+      "quest_id": 667,
+      "quest_name": "Death From Below",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:667"
+      ],
+      "instruction": "Complete the scripted or exploration event. [QC667 Death From Below]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 101,
+      "quest_id": 667,
+      "quest_name": "Death From Below",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2610,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 32.28,
+              "y": 81.38
+            }
+          ],
+          "name": "Shakes O'Breen",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:667"
+      ],
+      "instruction": "Turn in [QT667 Death From Below] to Shakes O'Breen",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 102,
+      "quest_id": 667,
+      "quest_name": "Death From Below",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2786,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 50.83,
+              "y": 5.62
+            }
+          ],
+          "name": "Gerrig Bonegrip",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2787,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 74.54,
+              "y": 35.64
+            }
+          ],
+          "name": "Zaruk",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:687"
+      ],
+      "instruction": "Accept [QA687 Theldurin the Lost] from Gerrig Bonegrip or Zaruk.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 103,
+      "quest_id": 687,
+      "quest_name": "Theldurin the Lost",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:687"
+      ],
+      "instruction": "Complete [QC687 Theldurin the Lost]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 104,
+      "quest_id": 687,
+      "quest_name": "Theldurin the Lost",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2785,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3,
+              "map_name": "Badlands",
+              "verification": "questie_structured_source_only",
+              "x": 51.39,
+              "y": 76.87
+            }
+          ],
+          "name": "Theldurin the Lost",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:687"
+      ],
+      "instruction": "Turn in [QT687 Theldurin the Lost] to Theldurin the Lost",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 105,
+      "quest_id": 687,
+      "quest_name": "Theldurin the Lost",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 45,
+      "zone_or_sort_name": "Arathi Highlands"
+    }
+  ],
+  "title": "39 Dustwallow Marsh & Arathi Highlands"
+}

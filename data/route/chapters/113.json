@@ -1,0 +1,3259 @@
+{
+  "branch": "optional_content",
+  "entry_contract": "Complete Report to Marshal Bluewall. Begin in Feralas with Azj'Tordin. Leave at least two quest-log slots open; group and reputation gates remain explicit.",
+  "entry_route_point": {
+    "map_id": 357,
+    "map_name": "Feralas",
+    "x": 76.91,
+    "y": 37.35
+  },
+  "entry_zone_or_sort": 2557,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 1377,
+    "map_name": "Silithus",
+    "quest_id": 8348,
+    "tag": "QT",
+    "x": 48.57,
+    "y": 37.78
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [
+    [
+      9415
+    ]
+  ],
+  "external_prerequisite_quest_ids": [
+    9415
+  ],
+  "group": "Mad's Loremaster Guide - Optional Content",
+  "guide_file": "Guides/optional_content/113_dungeon_17.lua",
+  "id": "113-optional_content-optional-content-17---dire-maul-&-silithus",
+  "maximum_level": null,
+  "minimum_level": null,
+  "next_chapter": "Optional Content 18 - Stranglethorn Vale & Molten Core",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "Optional Content 16 - Western Plaguelands & Scholomance",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 7441,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5942:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7441:starter",
+        "travel-network:ratchet-booty-bay",
+        "https://www.wowhead.com/tbc/quest=1040/passage-to-booty-bay"
+      ],
+      "instruction": "Travel from Eastern Plaguelands to Feralas: Take the ship between Ratchet and Booty Bay. Continue to [G76.91,37.35 Feralas]. [O]",
+      "map_id": 357,
+      "map_name": "Feralas",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 139,
+      "origin_map_name": "Eastern Plaguelands",
+      "origin_x": 36.2,
+      "origin_y": 90.58,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [
+        "ratchet-booty-bay"
+      ],
+      "type": "transport",
+      "verification": "questie_endpoints_and_tbc_transport_network",
+      "x": 76.91,
+      "y": 37.35
+    },
+    {
+      "before_quest_id": 7441,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9415:dependency"
+      ],
+      "instruction": "Optional entry requirements: complete Report to Marshal Bluewall. [O]",
+      "map_id": 357,
+      "map_name": "Feralas",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        9415
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "branch_entry",
+      "verification": "route_dependency_graph",
+      "x": 76.91,
+      "y": 37.35
+    },
+    {
+      "before_quest_id": 7441,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7441:starter"
+      ],
+      "instruction": "Optional chapter: travel to Feralas and begin at [G76.91,37.35 Feralas]. Leave at least two quest-log slots open. [O]",
+      "map_id": 357,
+      "map_name": "Feralas",
+      "optional": true,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 76.91,
+      "y": 37.35
+    },
+    {
+      "before_quest_id": 7441,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7441:requiredLevel"
+      ],
+      "instruction": "Reach level 59 before accepting Pusillin and the Elder Azj'Tordin. [XP59 Level 59]",
+      "map_id": 357,
+      "map_name": "Feralas",
+      "optional": false,
+      "order": 4,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 59,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 76.91,
+      "y": 37.35
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14355,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 357,
+              "map_name": "Feralas",
+              "verification": "questie_structured_source_only",
+              "x": 76.91,
+              "y": 37.35
+            }
+          ],
+          "name": "Azj'Tordin",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7441"
+      ],
+      "instruction": "Accept [QA7441 Pusillin and the Elder Azj'Tordin] from Azj'Tordin.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 7441,
+      "quest_name": "Pusillin and the Elder Azj'Tordin",
+      "quest_tag": "Dungeon",
+      "required_level": 59,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "before_quest_id": 7441,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7441:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 357,
+      "map_name": "Feralas",
+      "optional": true,
+      "order": 6,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        7441
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 76.91,
+      "y": 37.35
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7441"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required item: Book of Incantations. [QC7441 Pusillin and the Elder Azj'Tordin]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Book of Incantations",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 18261,
+          "kind": "item",
+          "locations": [],
+          "name": "Book of Incantations",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 7,
+      "quest_id": 7441,
+      "quest_name": "Pusillin and the Elder Azj'Tordin",
+      "quest_tag": "Dungeon",
+      "required_level": 59,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14355,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 357,
+              "map_name": "Feralas",
+              "verification": "questie_structured_source_only",
+              "x": 76.91,
+              "y": 37.35
+            }
+          ],
+          "name": "Azj'Tordin",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7441"
+      ],
+      "instruction": "Turn in [QT7441 Pusillin and the Elder Azj'Tordin] to Azj'Tordin",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 7441,
+      "quest_name": "Pusillin and the Elder Azj'Tordin",
+      "quest_tag": "Dungeon",
+      "required_level": 59,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14374,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 357,
+              "map_name": "Feralas",
+              "verification": "questie_structured_source_only",
+              "x": 31.65,
+              "y": 43.45
+            }
+          ],
+          "name": "Scholar Runethorn",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7482"
+      ],
+      "instruction": "Accept [QA7482 Elven Legends] from Scholar Runethorn.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 7482,
+      "quest_name": "Elven Legends",
+      "quest_tag": "Dungeon",
+      "required_level": 59,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14368,
+          "kind": "npc",
+          "locations": [],
+          "name": "Lorekeeper Lydros",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7484"
+      ],
+      "instruction": "Accept [QA7484 Libram of Focus] from Lorekeeper Lydros.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 7484,
+      "quest_name": "Libram of Focus",
+      "quest_tag": "Dungeon",
+      "required_level": 59,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7482"
+      ],
+      "instruction": "Dungeon \u2014 Complete the scripted or exploration event. [QC7482 Elven Legends]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 7482,
+      "quest_name": "Elven Legends",
+      "quest_tag": "Dungeon",
+      "required_level": 59,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7484"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required items: Libram of Focus, Pristine Black Diamond, Large Brilliant Shard, plus 1 more. [QC7484 Libram of Focus]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Libram of Focus, Pristine Black Diamond, Large Brilliant Shard, plus 1 more",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 18333,
+          "kind": "item",
+          "locations": [],
+          "name": "Libram of Focus",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 18335,
+          "kind": "item",
+          "locations": [],
+          "name": "Pristine Black Diamond",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 14344,
+          "kind": "item",
+          "locations": [],
+          "name": "Large Brilliant Shard",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 12753,
+          "kind": "item",
+          "locations": [],
+          "name": "Skin of Shadow",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 12,
+      "quest_id": 7484,
+      "quest_name": "Libram of Focus",
+      "quest_tag": "Dungeon",
+      "required_level": 59,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14374,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 357,
+              "map_name": "Feralas",
+              "verification": "questie_structured_source_only",
+              "x": 31.65,
+              "y": 43.45
+            }
+          ],
+          "name": "Scholar Runethorn",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7482"
+      ],
+      "instruction": "Turn in [QT7482 Elven Legends] to Scholar Runethorn",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 7482,
+      "quest_name": "Elven Legends",
+      "quest_tag": "Dungeon",
+      "required_level": 59,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14368,
+          "kind": "npc",
+          "locations": [],
+          "name": "Lorekeeper Lydros",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7484"
+      ],
+      "instruction": "Turn in [QT7484 Libram of Focus] to Lorekeeper Lydros",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 7484,
+      "quest_name": "Libram of Focus",
+      "quest_tag": "Dungeon",
+      "required_level": 59,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2198,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 47.45,
+              "y": 64.17
+            }
+          ],
+          "name": "Crier Goodman",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10877,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 55.92,
+              "y": 81.39
+            }
+          ],
+          "name": "Courier Hammerfall",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10878,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1657,
+              "map_name": "Darnassus",
+              "verification": "questie_structured_source_only",
+              "x": 47.81,
+              "y": 81.97
+            }
+          ],
+          "name": "Herald Moonstalker",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7494"
+      ],
+      "instruction": "Accept [QA7494 Feathermoon Stronghold] from Crier Goodman or Courier Hammerfall (plus 1 other source).",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 7494,
+      "quest_name": "Feathermoon Stronghold",
+      "quest_tag": "Dungeon",
+      "required_level": 59,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7494"
+      ],
+      "instruction": "Dungeon \u2014 Complete [QC7494 Feathermoon Stronghold]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 7494,
+      "quest_name": "Feathermoon Stronghold",
+      "quest_tag": "Dungeon",
+      "required_level": 59,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7877,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 357,
+              "map_name": "Feralas",
+              "verification": "questie_structured_source_only",
+              "x": 30.38,
+              "y": 46.17
+            }
+          ],
+          "name": "Latronicus Moonspear",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7494"
+      ],
+      "instruction": "Turn in [QT7494 Feathermoon Stronghold] to Latronicus Moonspear",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 7494,
+      "quest_name": "Feathermoon Stronghold",
+      "quest_tag": "Dungeon",
+      "required_level": 59,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7877,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 357,
+              "map_name": "Feralas",
+              "verification": "questie_structured_source_only",
+              "x": 30.38,
+              "y": 46.17
+            }
+          ],
+          "name": "Latronicus Moonspear",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7488"
+      ],
+      "instruction": "Accept [QA7488 Lethtendris's Web] from Latronicus Moonspear.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 7488,
+      "quest_name": "Lethtendris's Web",
+      "quest_tag": "Dungeon",
+      "required_level": 59,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "item_triggered",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 18361,
+          "kind": "item",
+          "locations": [],
+          "name": "The Greatest Race of Hunters",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7503"
+      ],
+      "instruction": "Accept [QA7503 The Greatest Race of Hunters] from The Greatest Race of Hunters.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 7503,
+      "quest_name": "The Greatest Race of Hunters",
+      "quest_tag": "Dungeon",
+      "required_level": 59,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 179485,
+          "kind": "object",
+          "locations": [],
+          "name": "Broken Trap",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1193"
+      ],
+      "instruction": "Accept [QA1193 A Broken Trap] from Broken Trap.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 1193,
+      "quest_name": "A Broken Trap",
+      "quest_tag": "Dungeon",
+      "required_level": 59,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14338,
+          "kind": "npc",
+          "locations": [],
+          "name": "Knot Thimblejack",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5518"
+      ],
+      "instruction": "Accept [QA5518 The Gordok Ogre Suit] from Knot Thimblejack.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 5518,
+      "quest_name": "The Gordok Ogre Suit",
+      "quest_tag": "Dungeon",
+      "required_level": 59,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14358,
+          "kind": "npc",
+          "locations": [],
+          "name": "Shen'dralar Ancient",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7461"
+      ],
+      "instruction": "Accept [QA7461 The Madness Within] from Shen'dralar Ancient.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 22,
+      "quest_id": 7461,
+      "quest_name": "The Madness Within",
+      "quest_tag": "Dungeon",
+      "required_level": 59,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14325,
+          "kind": "npc",
+          "locations": [],
+          "name": "Captain Kromcrush",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7703"
+      ],
+      "instruction": "Accept [QA7703 Unfinished Gordok Business] from Captain Kromcrush.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 23,
+      "quest_id": 7703,
+      "quest_name": "Unfinished Gordok Business",
+      "quest_tag": "Dungeon",
+      "required_level": 59,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7488"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required item: Lethtendris's Web. [QC7488 Lethtendris's Web]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Lethtendris's Web",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 18426,
+          "kind": "item",
+          "locations": [],
+          "name": "Lethtendris's Web",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 24,
+      "quest_id": 7488,
+      "quest_name": "Lethtendris's Web",
+      "quest_tag": "Dungeon",
+      "required_level": 59,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "item_triggered",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7503"
+      ],
+      "instruction": "Dungeon \u2014 Complete [QC7503 The Greatest Race of Hunters]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 25,
+      "quest_id": 7503,
+      "quest_name": "The Greatest Race of Hunters",
+      "quest_tag": "Dungeon",
+      "required_level": 59,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1193"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required items: Thorium Widget, Frost Oil. [QC1193 A Broken Trap]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Thorium Widget, Frost Oil",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 15994,
+          "kind": "item",
+          "locations": [],
+          "name": "Thorium Widget",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 3829,
+          "kind": "item",
+          "locations": [],
+          "name": "Frost Oil",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 26,
+      "quest_id": 1193,
+      "quest_name": "A Broken Trap",
+      "quest_tag": "Dungeon",
+      "required_level": 59,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5518"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required items: Bolt of Runecloth, Rugged Leather, Rune Thread, plus 1 more. [QC5518 The Gordok Ogre Suit]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Bolt of Runecloth, Rugged Leather, Rune Thread, plus 1 more",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 14048,
+          "kind": "item",
+          "locations": [],
+          "name": "Bolt of Runecloth",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 8170,
+          "kind": "item",
+          "locations": [],
+          "name": "Rugged Leather",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 14341,
+          "kind": "item",
+          "locations": [],
+          "name": "Rune Thread",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 18240,
+          "kind": "item",
+          "locations": [],
+          "name": "Ogre Tannin",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 27,
+      "quest_id": 5518,
+      "quest_name": "The Gordok Ogre Suit",
+      "quest_tag": "Dungeon",
+      "required_level": 59,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7461"
+      ],
+      "instruction": "Dungeon \u2014 Complete the required NPC or creature objectives: Immol'thar, Prince Tortheldrin. [QC7461 The Madness Within]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Immol'thar, Prince Tortheldrin",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11496,
+          "kind": "npc",
+          "locations": [],
+          "name": "Immol'thar",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11486,
+          "kind": "npc",
+          "locations": [],
+          "name": "Prince Tortheldrin",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 28,
+      "quest_id": 7461,
+      "quest_name": "The Madness Within",
+      "quest_tag": "Dungeon",
+      "required_level": 59,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7703"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required item: Gauntlet of Gordok Might. [QC7703 Unfinished Gordok Business]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Gauntlet of Gordok Might",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 18336,
+          "kind": "item",
+          "locations": [],
+          "name": "Gauntlet of Gordok Might",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 29,
+      "quest_id": 7703,
+      "quest_name": "Unfinished Gordok Business",
+      "quest_tag": "Dungeon",
+      "required_level": 59,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7877,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 357,
+              "map_name": "Feralas",
+              "verification": "questie_structured_source_only",
+              "x": 30.38,
+              "y": 46.17
+            }
+          ],
+          "name": "Latronicus Moonspear",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7488"
+      ],
+      "instruction": "Turn in [QT7488 Lethtendris's Web] to Latronicus Moonspear",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 30,
+      "quest_id": 7488,
+      "quest_name": "Lethtendris's Web",
+      "quest_tag": "Dungeon",
+      "required_level": 59,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "item_triggered",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14382,
+          "kind": "npc",
+          "locations": [],
+          "name": "Lorekeeper Mykos",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7503"
+      ],
+      "instruction": "Turn in [QT7503 The Greatest Race of Hunters] to Lorekeeper Mykos",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 31,
+      "quest_id": 7503,
+      "quest_name": "The Greatest Race of Hunters",
+      "quest_tag": "Dungeon",
+      "required_level": 59,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 179485,
+          "kind": "object",
+          "locations": [],
+          "name": "Broken Trap",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1193"
+      ],
+      "instruction": "Turn in [QT1193 A Broken Trap] to Broken Trap",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 32,
+      "quest_id": 1193,
+      "quest_name": "A Broken Trap",
+      "quest_tag": "Dungeon",
+      "required_level": 59,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14338,
+          "kind": "npc",
+          "locations": [],
+          "name": "Knot Thimblejack",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5518"
+      ],
+      "instruction": "Turn in [QT5518 The Gordok Ogre Suit] to Knot Thimblejack",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 33,
+      "quest_id": 5518,
+      "quest_name": "The Gordok Ogre Suit",
+      "quest_tag": "Dungeon",
+      "required_level": 59,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14358,
+          "kind": "npc",
+          "locations": [],
+          "name": "Shen'dralar Ancient",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7461"
+      ],
+      "instruction": "Turn in [QT7461 The Madness Within] to Shen'dralar Ancient",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 34,
+      "quest_id": 7461,
+      "quest_name": "The Madness Within",
+      "quest_tag": "Dungeon",
+      "required_level": 59,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14325,
+          "kind": "npc",
+          "locations": [],
+          "name": "Captain Kromcrush",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7703"
+      ],
+      "instruction": "Turn in [QT7703 Unfinished Gordok Business] to Captain Kromcrush",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 35,
+      "quest_id": 7703,
+      "quest_name": "Unfinished Gordok Business",
+      "quest_tag": "Dungeon",
+      "required_level": 59,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "before_quest_id": 5525,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5525:requiredLevel"
+      ],
+      "instruction": "Reach level 60 before accepting Free Knot! [XP60 Level 60]",
+      "map_id": 2557,
+      "map_name": "Dire Maul",
+      "optional": false,
+      "order": 36,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 60,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": null,
+      "y": null
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14338,
+          "kind": "npc",
+          "locations": [],
+          "name": "Knot Thimblejack",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5525"
+      ],
+      "instruction": "Accept [QA5525 Free Knot!] from Knot Thimblejack.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 37,
+      "quest_id": 5525,
+      "quest_name": "Free Knot!",
+      "quest_tag": "Dungeon",
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14322,
+          "kind": "npc",
+          "locations": [],
+          "name": "Stomper Kreeg",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5528"
+      ],
+      "instruction": "Accept [QA5528 The Gordok Taste Test] from Stomper Kreeg.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 38,
+      "quest_id": 5528,
+      "quest_name": "The Gordok Taste Test",
+      "quest_tag": "Dungeon",
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "item_triggered",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 18401,
+          "kind": "item",
+          "locations": [],
+          "name": "Foror's Compendium of Dragon Slaying",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7507"
+      ],
+      "instruction": "Accept [QA7507 Foror's Compendium] from Foror's Compendium of Dragon Slaying.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 39,
+      "quest_id": 7507,
+      "quest_name": "Foror's Compendium",
+      "quest_tag": "Dungeon",
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5525"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required item: Gordok Shackle Key. [QC5525 Free Knot!]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Gordok Shackle Key",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 18250,
+          "kind": "item",
+          "locations": [],
+          "name": "Gordok Shackle Key",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 40,
+      "quest_id": 5525,
+      "quest_name": "Free Knot!",
+      "quest_tag": "Dungeon",
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5528"
+      ],
+      "instruction": "Dungeon \u2014 Complete [QC5528 The Gordok Taste Test]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 41,
+      "quest_id": 5528,
+      "quest_name": "The Gordok Taste Test",
+      "quest_tag": "Dungeon",
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "item_triggered",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7507"
+      ],
+      "instruction": "Dungeon \u2014 Complete [QC7507 Foror's Compendium]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 42,
+      "quest_id": 7507,
+      "quest_name": "Foror's Compendium",
+      "quest_tag": "Dungeon",
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14338,
+          "kind": "npc",
+          "locations": [],
+          "name": "Knot Thimblejack",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5525"
+      ],
+      "instruction": "Turn in [QT5525 Free Knot!] to Knot Thimblejack",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 43,
+      "quest_id": 5525,
+      "quest_name": "Free Knot!",
+      "quest_tag": "Dungeon",
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14322,
+          "kind": "npc",
+          "locations": [],
+          "name": "Stomper Kreeg",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5528"
+      ],
+      "instruction": "Turn in [QT5528 The Gordok Taste Test] to Stomper Kreeg",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 44,
+      "quest_id": 5528,
+      "quest_name": "The Gordok Taste Test",
+      "quest_tag": "Dungeon",
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "item_triggered",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14368,
+          "kind": "npc",
+          "locations": [],
+          "name": "Lorekeeper Lydros",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7507"
+      ],
+      "instruction": "Turn in [QT7507 Foror's Compendium] to Lorekeeper Lydros",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 45,
+      "quest_id": 7507,
+      "quest_name": "Foror's Compendium",
+      "quest_tag": "Dungeon",
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "item_triggered",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 18513,
+          "kind": "item",
+          "locations": [],
+          "name": "A Dull and Flat Elven Blade",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7508"
+      ],
+      "instruction": "Accept [QA7508 The Forging of Quel'Serrar] from A Dull and Flat Elven Blade.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 46,
+      "quest_id": 7508,
+      "quest_name": "The Forging of Quel'Serrar",
+      "quest_tag": "Dungeon",
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "item_triggered",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7508"
+      ],
+      "instruction": "Dungeon \u2014 Complete [QC7508 The Forging of Quel'Serrar]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 47,
+      "quest_id": 7508,
+      "quest_name": "The Forging of Quel'Serrar",
+      "quest_tag": "Dungeon",
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "item_triggered",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14368,
+          "kind": "npc",
+          "locations": [],
+          "name": "Lorekeeper Lydros",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7508"
+      ],
+      "instruction": "Turn in [QT7508 The Forging of Quel'Serrar] to Lorekeeper Lydros",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 48,
+      "quest_id": 7508,
+      "quest_name": "The Forging of Quel'Serrar",
+      "quest_tag": "Dungeon",
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "pvp",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17080,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 33.29,
+              "y": 51.06
+            }
+          ],
+          "name": "Marshal Bluewall",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9419"
+      ],
+      "instruction": "Accept [QA9419 Scouring the Desert] from Marshal Bluewall.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 49,
+      "quest_id": 9419,
+      "quest_name": "Scouring the Desert",
+      "quest_tag": "PvP",
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "pvp",
+        "raid"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9419"
+      ],
+      "instruction": "Raid \u2014 Complete the required NPC or creature objective: Silithus Dust Turnin Quest Doodad. [QC9419 Scouring the Desert]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Silithus Dust Turnin Quest Doodad",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17090,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 32.95,
+              "y": 50.81
+            }
+          ],
+          "name": "Silithus Dust Turnin Quest Doodad",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 50,
+      "quest_id": 9419,
+      "quest_name": "Scouring the Desert",
+      "quest_tag": "PvP",
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "pvp",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17080,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 33.29,
+              "y": 51.06
+            }
+          ],
+          "name": "Marshal Bluewall",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9419"
+      ],
+      "instruction": "Turn in [QT9419 Scouring the Desert] to Marshal Bluewall",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 51,
+      "quest_id": 9419,
+      "quest_name": "Scouring the Desert",
+      "quest_tag": "PvP",
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10929,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 54.55,
+              "y": 51.2
+            }
+          ],
+          "name": "Haleh",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5161"
+      ],
+      "instruction": "Accept [QA5161 Wrath of the Blue Flight] from Haleh.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 52,
+      "quest_id": 5161,
+      "quest_name": "Wrath of the Blue Flight",
+      "quest_tag": null,
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 618,
+      "zone_or_sort_name": "Winterspring"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5161"
+      ],
+      "instruction": "Complete [QC5161 Wrath of the Blue Flight]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 53,
+      "quest_id": 5161,
+      "quest_name": "Wrath of the Blue Flight",
+      "quest_tag": null,
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 618,
+      "zone_or_sort_name": "Winterspring"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10929,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 54.55,
+              "y": 51.2
+            }
+          ],
+          "name": "Haleh",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5161"
+      ],
+      "instruction": "Turn in [QT5161 Wrath of the Blue Flight] to Haleh",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 54,
+      "quest_id": 5161,
+      "quest_name": "Wrath of the Blue Flight",
+      "quest_tag": null,
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 618,
+      "zone_or_sort_name": "Winterspring"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15282,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 51.96,
+              "y": 38.16
+            }
+          ],
+          "name": "Aurel Goldleaf",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9248"
+      ],
+      "instruction": "Accept [QA9248 A Humble Offering] from Aurel Goldleaf.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 55,
+      "quest_id": 9248,
+      "quest_name": "A Humble Offering",
+      "quest_tag": null,
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16091,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 52.13,
+              "y": 39.14
+            }
+          ],
+          "name": "Dirk Thunderwood",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9023"
+      ],
+      "instruction": "Accept [QA9023 The Perfect Poison] from Dirk Thunderwood.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 56,
+      "quest_id": 9023,
+      "quest_name": "The Perfect Poison",
+      "quest_tag": "Raid",
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9248"
+      ],
+      "instruction": "Raid \u2014 Collect or use the required item: Abyssal Scepter. [QC9248 A Humble Offering]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Abyssal Scepter",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 20515,
+          "kind": "item",
+          "locations": [],
+          "name": "Abyssal Scepter",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 57,
+      "quest_id": 9248,
+      "quest_name": "A Humble Offering",
+      "quest_tag": null,
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9023"
+      ],
+      "instruction": "Raid \u2014 Collect or use the required items: Venoxis's Venom Sac, Kurinnaxx's Venom Sac. [QC9023 The Perfect Poison]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Venoxis's Venom Sac, Kurinnaxx's Venom Sac",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 22216,
+          "kind": "item",
+          "locations": [],
+          "name": "Venoxis's Venom Sac",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 22217,
+          "kind": "item",
+          "locations": [],
+          "name": "Kurinnaxx's Venom Sac",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 58,
+      "quest_id": 9023,
+      "quest_name": "The Perfect Poison",
+      "quest_tag": "Raid",
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16091,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 52.13,
+              "y": 39.14
+            }
+          ],
+          "name": "Dirk Thunderwood",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9023"
+      ],
+      "instruction": "Turn in [QT9023 The Perfect Poison] to Dirk Thunderwood",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 59,
+      "quest_id": 9023,
+      "quest_name": "The Perfect Poison",
+      "quest_tag": "Raid",
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15282,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 51.96,
+              "y": 38.16
+            }
+          ],
+          "name": "Aurel Goldleaf",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9248"
+      ],
+      "instruction": "Turn in [QT9248 A Humble Offering] to Aurel Goldleaf",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 60,
+      "quest_id": 9248,
+      "quest_name": "A Humble Offering",
+      "quest_tag": null,
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15270,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 48.62,
+              "y": 37.87
+            }
+          ],
+          "name": "Huum Wildmane",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8331"
+      ],
+      "instruction": "Accept [QA8331 Aurel Goldleaf] from Huum Wildmane.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 61,
+      "quest_id": 8331,
+      "quest_name": "Aurel Goldleaf",
+      "quest_tag": null,
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8331"
+      ],
+      "instruction": "Complete [QC8331 Aurel Goldleaf]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 62,
+      "quest_id": 8331,
+      "quest_name": "Aurel Goldleaf",
+      "quest_tag": null,
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15282,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 51.96,
+              "y": 38.16
+            }
+          ],
+          "name": "Aurel Goldleaf",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8331"
+      ],
+      "instruction": "Turn in [QT8331 Aurel Goldleaf] to Aurel Goldleaf",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 63,
+      "quest_id": 8331,
+      "quest_name": "Aurel Goldleaf",
+      "quest_tag": null,
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15282,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 51.96,
+              "y": 38.16
+            }
+          ],
+          "name": "Aurel Goldleaf",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8332"
+      ],
+      "instruction": "Accept [QA8332 Dukes of the Council] from Aurel Goldleaf.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 64,
+      "quest_id": 8332,
+      "quest_name": "Dukes of the Council",
+      "quest_tag": null,
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15270,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 48.62,
+              "y": 37.87
+            }
+          ],
+          "name": "Huum Wildmane",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8343"
+      ],
+      "instruction": "Accept [QA8343 Goldleaf's Discovery] from Huum Wildmane.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 65,
+      "quest_id": 8343,
+      "quest_name": "Goldleaf's Discovery",
+      "quest_tag": null,
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8332"
+      ],
+      "instruction": "Collect or use the required items: Large Brilliant Shard, Abyssal Crest. [QC8332 Dukes of the Council]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Large Brilliant Shard, Abyssal Crest",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 14344,
+          "kind": "item",
+          "locations": [],
+          "name": "Large Brilliant Shard",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 20513,
+          "kind": "item",
+          "locations": [],
+          "name": "Abyssal Crest",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 66,
+      "quest_id": 8332,
+      "quest_name": "Dukes of the Council",
+      "quest_tag": null,
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8343"
+      ],
+      "instruction": "Complete [QC8343 Goldleaf's Discovery]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 67,
+      "quest_id": 8343,
+      "quest_name": "Goldleaf's Discovery",
+      "quest_tag": null,
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15282,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 51.96,
+              "y": 38.16
+            }
+          ],
+          "name": "Aurel Goldleaf",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8332"
+      ],
+      "instruction": "Turn in [QT8332 Dukes of the Council] to Aurel Goldleaf",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 68,
+      "quest_id": 8332,
+      "quest_name": "Dukes of the Council",
+      "quest_tag": null,
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15282,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 51.96,
+              "y": 38.16
+            }
+          ],
+          "name": "Aurel Goldleaf",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8343"
+      ],
+      "instruction": "Turn in [QT8343 Goldleaf's Discovery] to Aurel Goldleaf",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 69,
+      "quest_id": 8343,
+      "quest_name": "Goldleaf's Discovery",
+      "quest_tag": null,
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15282,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 51.96,
+              "y": 38.16
+            }
+          ],
+          "name": "Aurel Goldleaf",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8341"
+      ],
+      "instruction": "Accept [QA8341 Lords of the Council] from Aurel Goldleaf.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 70,
+      "quest_id": 8341,
+      "quest_name": "Lords of the Council",
+      "quest_tag": "Elite",
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8341"
+      ],
+      "instruction": "Elite/group recommended \u2014 Collect or use the required items: Large Brilliant Shard, Abyssal Signet. [QC8341 Lords of the Council]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Large Brilliant Shard, Abyssal Signet",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 14344,
+          "kind": "item",
+          "locations": [],
+          "name": "Large Brilliant Shard",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 20514,
+          "kind": "item",
+          "locations": [],
+          "name": "Abyssal Signet",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 71,
+      "quest_id": 8341,
+      "quest_name": "Lords of the Council",
+      "quest_tag": "Elite",
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15282,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 51.96,
+              "y": 38.16
+            }
+          ],
+          "name": "Aurel Goldleaf",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8341"
+      ],
+      "instruction": "Turn in [QT8341 Lords of the Council] to Aurel Goldleaf",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 72,
+      "quest_id": 8341,
+      "quest_name": "Lords of the Council",
+      "quest_tag": "Elite",
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15282,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 51.96,
+              "y": 38.16
+            }
+          ],
+          "name": "Aurel Goldleaf",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8351"
+      ],
+      "instruction": "Accept [QA8351 Bor Wishes to Speak] from Aurel Goldleaf.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 73,
+      "quest_id": 8351,
+      "quest_name": "Bor Wishes to Speak",
+      "quest_tag": "Raid",
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8351"
+      ],
+      "instruction": "Raid \u2014 Complete [QC8351 Bor Wishes to Speak]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 74,
+      "quest_id": 8351,
+      "quest_name": "Bor Wishes to Speak",
+      "quest_tag": "Raid",
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15306,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 48.57,
+              "y": 37.78
+            }
+          ],
+          "name": "Bor Wildmane",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8351"
+      ],
+      "instruction": "Turn in [QT8351 Bor Wishes to Speak] to Bor Wildmane",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 75,
+      "quest_id": 8351,
+      "quest_name": "Bor Wishes to Speak",
+      "quest_tag": "Raid",
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15306,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 48.57,
+              "y": 37.78
+            }
+          ],
+          "name": "Bor Wildmane",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8352"
+      ],
+      "instruction": "Accept [QA8352 Scepter of the Council] from Bor Wildmane.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 76,
+      "quest_id": 8352,
+      "quest_name": "Scepter of the Council",
+      "quest_tag": "Raid",
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8352"
+      ],
+      "instruction": "Raid \u2014 Collect or use the required item: Abyssal Scepter. [QC8352 Scepter of the Council]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Abyssal Scepter",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 20515,
+          "kind": "item",
+          "locations": [],
+          "name": "Abyssal Scepter",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 77,
+      "quest_id": 8352,
+      "quest_name": "Scepter of the Council",
+      "quest_tag": "Raid",
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15306,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 48.57,
+              "y": 37.78
+            }
+          ],
+          "name": "Bor Wildmane",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8352"
+      ],
+      "instruction": "Turn in [QT8352 Scepter of the Council] to Bor Wildmane",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 78,
+      "quest_id": 8352,
+      "quest_name": "Scepter of the Council",
+      "quest_tag": "Raid",
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15282,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 51.96,
+              "y": 38.16
+            }
+          ],
+          "name": "Aurel Goldleaf",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8349"
+      ],
+      "instruction": "Accept [QA8349 Bor Wildmane] from Aurel Goldleaf.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 79,
+      "quest_id": 8349,
+      "quest_name": "Bor Wildmane",
+      "quest_tag": null,
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8349"
+      ],
+      "instruction": "Complete [QC8349 Bor Wildmane]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 80,
+      "quest_id": 8349,
+      "quest_name": "Bor Wildmane",
+      "quest_tag": null,
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15306,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 48.57,
+              "y": 37.78
+            }
+          ],
+          "name": "Bor Wildmane",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8349"
+      ],
+      "instruction": "Turn in [QT8349 Bor Wildmane] to Bor Wildmane",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 81,
+      "quest_id": 8349,
+      "quest_name": "Bor Wildmane",
+      "quest_tag": null,
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15306,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 48.57,
+              "y": 37.78
+            }
+          ],
+          "name": "Bor Wildmane",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8348"
+      ],
+      "instruction": "Accept [QA8348 Signet of the Dukes] from Bor Wildmane.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 82,
+      "quest_id": 8348,
+      "quest_name": "Signet of the Dukes",
+      "quest_tag": "Elite",
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8348"
+      ],
+      "instruction": "Elite/group recommended \u2014 Collect or use the required item: Abyssal Signet. [QC8348 Signet of the Dukes]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Abyssal Signet",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 20514,
+          "kind": "item",
+          "locations": [],
+          "name": "Abyssal Signet",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 83,
+      "quest_id": 8348,
+      "quest_name": "Signet of the Dukes",
+      "quest_tag": "Elite",
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15306,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 48.57,
+              "y": 37.78
+            }
+          ],
+          "name": "Bor Wildmane",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8348"
+      ],
+      "instruction": "Turn in [QT8348 Signet of the Dukes] to Bor Wildmane",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 84,
+      "quest_id": 8348,
+      "quest_name": "Signet of the Dukes",
+      "quest_tag": "Elite",
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    }
+  ],
+  "title": "Optional Content 17 - Dire Maul & Silithus"
+}

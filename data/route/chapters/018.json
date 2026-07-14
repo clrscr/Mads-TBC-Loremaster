@@ -1,0 +1,346 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 17 Ashenvale, or select this chapter on a partially completed character. Begin in Stormwind City with Collin Mauren. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 1519,
+    "map_name": "Stormwind City",
+    "x": 43.09,
+    "y": 80.39
+  },
+  "entry_zone_or_sort": 406,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 331,
+    "map_name": "Ashenvale",
+    "quest_id": 991,
+    "tag": "QT",
+    "x": 20.31,
+    "y": 42.33
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/018_world_18.lua",
+  "id": "018-primary-18-stonetalon-mountains-&-ashenvale",
+  "maximum_level": 21,
+  "minimum_level": 21,
+  "next_chapter": "19 Darkshore & Ashenvale",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "17 Ashenvale",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 1078,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1085:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1078:starter",
+        "travel-network:auberdine-menethil",
+        "https://www.wowhead.com/tbc/quest=942/the-absent-minded-prospector"
+      ],
+      "instruction": "Travel from Stonetalon Mountains to Stormwind City: Take the ship between Auberdine and Menethil Harbor. Continue to [G43.09,80.39 Stormwind City]. [O]",
+      "map_id": 1519,
+      "map_name": "Stormwind City",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 406,
+      "origin_map_name": "Stonetalon Mountains",
+      "origin_x": 59.52,
+      "origin_y": 67.15,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [
+        "auberdine-menethil"
+      ],
+      "type": "transport",
+      "verification": "questie_endpoints_and_tbc_transport_network",
+      "x": 43.09,
+      "y": 80.39
+    },
+    {
+      "before_quest_id": 1078,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1078:starter"
+      ],
+      "instruction": "Before you begin: travel to Stormwind City and meet the first quest giver at [G43.09,80.39 Stormwind City]. Leave at least two quest-log slots open. [O]",
+      "map_id": 1519,
+      "map_name": "Stormwind City",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 43.09,
+      "y": 80.39
+    },
+    {
+      "before_quest_id": 1078,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1078:requiredLevel"
+      ],
+      "instruction": "Reach level 21 before accepting Retrieval for Mauren. [XP21 Level 21]",
+      "map_id": 1519,
+      "map_name": "Stormwind City",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 21,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 43.09,
+      "y": 80.39
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4078,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 43.09,
+              "y": 80.39
+            }
+          ],
+          "name": "Collin Mauren",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1078"
+      ],
+      "instruction": "Accept [QA1078 Retrieval for Mauren] from Collin Mauren.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 1078,
+      "quest_name": "Retrieval for Mauren",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1078"
+      ],
+      "instruction": "Collect or use the required item: Crystalized Scales. [QC1078 Retrieval for Mauren]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Crystalized Scales",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 5675,
+          "kind": "item",
+          "locations": [],
+          "name": "Crystalized Scales",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 5,
+      "quest_id": 1078,
+      "quest_name": "Retrieval for Mauren",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4078,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 43.09,
+              "y": 80.39
+            }
+          ],
+          "name": "Collin Mauren",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1078"
+      ],
+      "instruction": "Turn in [QT1078 Retrieval for Mauren] to Collin Mauren",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 1078,
+      "quest_name": "Retrieval for Mauren",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3691,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 36.62,
+              "y": 49.58
+            }
+          ],
+          "name": "Raene Wolfrunner",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:991"
+      ],
+      "instruction": "Accept [QA991 Raene's Cleansing] from Raene Wolfrunner.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 991,
+      "quest_name": "Raene's Cleansing",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:991"
+      ],
+      "instruction": "Complete [QC991 Raene's Cleansing]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 991,
+      "quest_name": "Raene's Cleansing",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3891,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 20.31,
+              "y": 42.33
+            }
+          ],
+          "name": "Teronis' Corpse",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:991"
+      ],
+      "instruction": "Turn in [QT991 Raene's Cleansing] to Teronis' Corpse",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 991,
+      "quest_name": "Raene's Cleansing",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    }
+  ],
+  "title": "18 Stonetalon Mountains & Ashenvale"
+}

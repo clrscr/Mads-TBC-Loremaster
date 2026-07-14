@@ -1,0 +1,1007 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 40 Badlands, or select this chapter on a partially completed character. Begin in Loch Modan with Prospector Ironband. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 38,
+    "map_name": "Loch Modan",
+    "x": 65.93,
+    "y": 65.62
+  },
+  "entry_zone_or_sort": 1517,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 3,
+    "map_name": "Badlands",
+    "quest_id": 737,
+    "tag": "QT",
+    "x": 51.39,
+    "y": 76.87
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/041_world_41.lua",
+  "id": "041-primary-41-badlands",
+  "maximum_level": 35,
+  "minimum_level": 35,
+  "next_chapter": "42 Stranglethorn Vale",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "40 Badlands",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 704,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:656:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:704:starter"
+      ],
+      "instruction": "Travel from Arathi Highlands to Loch Modan. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G65.93,65.62 Loch Modan]. [O]",
+      "map_id": 38,
+      "map_name": "Loch Modan",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 45,
+      "origin_map_name": "Arathi Highlands",
+      "origin_x": 62.5,
+      "origin_y": 33.73,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 65.93,
+      "y": 65.62
+    },
+    {
+      "before_quest_id": 704,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:704:starter"
+      ],
+      "instruction": "Before you begin: travel to Loch Modan and meet the first quest giver at [G65.93,65.62 Loch Modan]. Leave at least two quest-log slots open. [O]",
+      "map_id": 38,
+      "map_name": "Loch Modan",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 65.93,
+      "y": 65.62
+    },
+    {
+      "before_quest_id": 704,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:704:requiredLevel"
+      ],
+      "instruction": "Reach level 35 before accepting Agmond's Fate. [XP35 Level 35]",
+      "map_id": 38,
+      "map_name": "Loch Modan",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 35,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 65.93,
+      "y": 65.62
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1344,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 65.93,
+              "y": 65.62
+            }
+          ],
+          "name": "Prospector Ironband",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:704"
+      ],
+      "instruction": "Accept [QA704 Agmond's Fate] from Prospector Ironband.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 704,
+      "quest_name": "Agmond's Fate",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:704"
+      ],
+      "instruction": "Collect or use the required item: Carved Stone Urn. [QC704 Agmond's Fate]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Carved Stone Urn",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4610,
+          "kind": "item",
+          "locations": [],
+          "name": "Carved Stone Urn",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 5,
+      "quest_id": 704,
+      "quest_name": "Agmond's Fate",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1344,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 65.93,
+              "y": 65.62
+            }
+          ],
+          "name": "Prospector Ironband",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:704"
+      ],
+      "instruction": "Turn in [QT704 Agmond's Fate] to Prospector Ironband",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 704,
+      "quest_name": "Agmond's Fate",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2785,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3,
+              "map_name": "Badlands",
+              "verification": "questie_structured_source_only",
+              "x": 51.39,
+              "y": 76.87
+            }
+          ],
+          "name": "Theldurin the Lost",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:709"
+      ],
+      "instruction": "Accept [QA709 Solution to Doom] from Theldurin the Lost.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 709,
+      "quest_name": "Solution to Doom",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:709"
+      ],
+      "instruction": "Collect or use the required item: Tablet of Ryun'eh. [QC709 Solution to Doom]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Tablet of Ryun'eh",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4631,
+          "kind": "item",
+          "locations": [],
+          "name": "Tablet of Ryun'eh",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 8,
+      "quest_id": 709,
+      "quest_name": "Solution to Doom",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2785,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3,
+              "map_name": "Badlands",
+              "verification": "questie_structured_source_only",
+              "x": 51.39,
+              "y": 76.87
+            }
+          ],
+          "name": "Theldurin the Lost",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:709"
+      ],
+      "instruction": "Turn in [QT709 Solution to Doom] to Theldurin the Lost",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 709,
+      "quest_name": "Solution to Doom",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2817,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3,
+              "map_name": "Badlands",
+              "verification": "questie_structured_source_only",
+              "x": 42.39,
+              "y": 52.93
+            }
+          ],
+          "name": "Rigglefuzz",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2418"
+      ],
+      "instruction": "Accept [QA2418 Power Stones] from Rigglefuzz.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 2418,
+      "quest_name": "Power Stones",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2418"
+      ],
+      "instruction": "Collect or use the required items: Dentrium Power Stone, An'Alleum Power Stone. [QC2418 Power Stones]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Dentrium Power Stone, An'Alleum Power Stone",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 8009,
+          "kind": "item",
+          "locations": [],
+          "name": "Dentrium Power Stone",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 8052,
+          "kind": "item",
+          "locations": [],
+          "name": "An'Alleum Power Stone",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 11,
+      "quest_id": 2418,
+      "quest_name": "Power Stones",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2817,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3,
+              "map_name": "Badlands",
+              "verification": "questie_structured_source_only",
+              "x": 42.39,
+              "y": 52.93
+            }
+          ],
+          "name": "Rigglefuzz",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2418"
+      ],
+      "instruction": "Turn in [QT2418 Power Stones] to Rigglefuzz",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 2418,
+      "quest_name": "Power Stones",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 6294,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 74.19,
+              "y": 9.39
+            }
+          ],
+          "name": "Krom Stoutarm",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1360"
+      ],
+      "instruction": "Accept [QA1360 Reclaimed Treasures] from Krom Stoutarm.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 1360,
+      "quest_name": "Reclaimed Treasures",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1360"
+      ],
+      "instruction": "Collect or use the required item: Krom Stoutarm's Treasure. [QC1360 Reclaimed Treasures]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Krom Stoutarm's Treasure",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 8027,
+          "kind": "item",
+          "locations": [],
+          "name": "Krom Stoutarm's Treasure",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 14,
+      "quest_id": 1360,
+      "quest_name": "Reclaimed Treasures",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 6294,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 74.19,
+              "y": 9.39
+            }
+          ],
+          "name": "Krom Stoutarm",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1360"
+      ],
+      "instruction": "Turn in [QT1360 Reclaimed Treasures] to Krom Stoutarm",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 1360,
+      "quest_name": "Reclaimed Treasures",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2785,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3,
+              "map_name": "Badlands",
+              "verification": "questie_structured_source_only",
+              "x": 51.39,
+              "y": 76.87
+            }
+          ],
+          "name": "Theldurin the Lost",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:727"
+      ],
+      "instruction": "Accept [QA727 To Ironforge for Yagyin's Digest] from Theldurin the Lost.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 727,
+      "quest_name": "To Ironforge for Yagyin's Digest",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3,
+      "zone_or_sort_name": "Badlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:727"
+      ],
+      "instruction": "Complete [QC727 To Ironforge for Yagyin's Digest]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 727,
+      "quest_name": "To Ironforge for Yagyin's Digest",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3,
+      "zone_or_sort_name": "Badlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2786,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 50.83,
+              "y": 5.62
+            }
+          ],
+          "name": "Gerrig Bonegrip",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:727"
+      ],
+      "instruction": "Turn in [QT727 To Ironforge for Yagyin's Digest] to Gerrig Bonegrip",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 727,
+      "quest_name": "To Ironforge for Yagyin's Digest",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3,
+      "zone_or_sort_name": "Badlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2786,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 50.83,
+              "y": 5.62
+            }
+          ],
+          "name": "Gerrig Bonegrip",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:735"
+      ],
+      "instruction": "Accept [QA735 The Star, the Hand and the Heart] from Gerrig Bonegrip.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 735,
+      "quest_name": "The Star, the Hand and the Heart",
+      "quest_tag": "Elite",
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3,
+      "zone_or_sort_name": "Badlands"
+    },
+    {
+      "before_quest_id": 735,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:735:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 38,
+      "map_name": "Loch Modan",
+      "optional": true,
+      "order": 20,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        735
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 65.93,
+      "y": 65.62
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:735"
+      ],
+      "instruction": "Elite/group recommended \u2014 Collect or use the required items: Star of Xil'yeh, Hand of Dagun, The Legacy Heart. [QC735 The Star, the Hand and the Heart]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Star of Xil'yeh, Hand of Dagun, The Legacy Heart",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4646,
+          "kind": "item",
+          "locations": [],
+          "name": "Star of Xil'yeh",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4641,
+          "kind": "item",
+          "locations": [],
+          "name": "Hand of Dagun",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4644,
+          "kind": "item",
+          "locations": [],
+          "name": "The Legacy Heart",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 21,
+      "quest_id": 735,
+      "quest_name": "The Star, the Hand and the Heart",
+      "quest_tag": "Elite",
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3,
+      "zone_or_sort_name": "Badlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2786,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 50.83,
+              "y": 5.62
+            }
+          ],
+          "name": "Gerrig Bonegrip",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:735"
+      ],
+      "instruction": "Turn in [QT735 The Star, the Hand and the Heart] to Gerrig Bonegrip",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 22,
+      "quest_id": 735,
+      "quest_name": "The Star, the Hand and the Heart",
+      "quest_tag": "Elite",
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3,
+      "zone_or_sort_name": "Badlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2786,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 50.83,
+              "y": 5.62
+            }
+          ],
+          "name": "Gerrig Bonegrip",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2934,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1497,
+              "map_name": "Undercity",
+              "verification": "questie_structured_source_only",
+              "x": 53.74,
+              "y": 54.46
+            }
+          ],
+          "name": "Keeper Bel'dugur",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:737"
+      ],
+      "instruction": "Accept [QA737 Forbidden Knowledge] from Gerrig Bonegrip or Keeper Bel'dugur.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 23,
+      "quest_id": 737,
+      "quest_name": "Forbidden Knowledge",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3,
+      "zone_or_sort_name": "Badlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:737"
+      ],
+      "instruction": "Complete [QC737 Forbidden Knowledge]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 24,
+      "quest_id": 737,
+      "quest_name": "Forbidden Knowledge",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3,
+      "zone_or_sort_name": "Badlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2785,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3,
+              "map_name": "Badlands",
+              "verification": "questie_structured_source_only",
+              "x": 51.39,
+              "y": 76.87
+            }
+          ],
+          "name": "Theldurin the Lost",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:737"
+      ],
+      "instruction": "Turn in [QT737 Forbidden Knowledge] to Theldurin the Lost",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 25,
+      "quest_id": 737,
+      "quest_name": "Forbidden Knowledge",
+      "quest_tag": null,
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3,
+      "zone_or_sort_name": "Badlands"
+    }
+  ],
+  "title": "41 Badlands"
+}

@@ -1,0 +1,28 @@
+{
+  "schema_version": 2,
+  "priority": [
+    "Blizzard announcements, patch notes, and observed in-game behavior",
+    "phase-matched Questie data and runtime corrections",
+    "version-appropriate Wowhead TBC records",
+    "a second compatible structured addon dataset",
+    "an independent authored route used only for route comparison",
+    "archived/community evidence with an explicit version limitation"
+  ],
+  "minimum_public_quest_evidence": {
+    "structured_phase_aware_record": 1,
+    "official_source_for_release_phase": true,
+    "independent_route_comparison_when_available": true,
+    "independent_source_required_for_version_sensitive_conflicts": true,
+    "blanket_second_source_required_for_low_risk_catalog_rows": false,
+    "route_changes_require_field_level_support": true,
+    "conflicts_require_resolution_or_uncertain_status": true,
+    "emitted_coordinates_require_map_and_version_provenance": true,
+    "live_behavior_requires_in_game_verification": true
+  },
+  "rationale": "The public gate is risk-based. Pinned phase-aware Questie data is authoritative for ordinary identity and dependency structure; official Blizzard evidence controls the selected phase; independently authored routes corroborate placement where they overlap; emitted travel coordinates require stronger provenance; and behavior that depends on the live client remains an in-game gate. Requiring a second source for every excluded or low-risk catalog row would not materially improve player safety and would overstate community sources as independent authorities.",
+  "prohibited_as_direct_evidence": [
+    "Retail", "Classic Era", "Season of Discovery", "Wrath Classic", "Cataclysm Classic",
+    "Mists of Pandaria Classic", "later expansions", "private servers",
+    "unlabelled original-2007 or 2021 TBC behavior"
+  ]
+}

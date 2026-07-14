@@ -1,0 +1,1331 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 02 Darkshore, or select this chapter on a partially completed character. Begin in Ashenvale with Shindrell Swiftfire. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 331,
+    "map_name": "Ashenvale",
+    "x": 34.67,
+    "y": 48.84
+  },
+  "entry_zone_or_sort": 331,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 331,
+    "map_name": "Ashenvale",
+    "quest_id": 990,
+    "tag": "QT",
+    "x": 36.62,
+    "y": 49.58
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/003_world_03.lua",
+  "id": "003-primary-03-ashenvale-&-darkshore",
+  "maximum_level": 15,
+  "minimum_level": 14,
+  "next_chapter": "04 The Barrens & Azuremyst Isle",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "02 Darkshore",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 1008,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4733:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1008:starter"
+      ],
+      "instruction": "Travel from Darkshore to Ashenvale. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G34.67,48.84 Ashenvale]. [O]",
+      "map_id": 331,
+      "map_name": "Ashenvale",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 148,
+      "origin_map_name": "Darkshore",
+      "origin_x": 36.62,
+      "origin_y": 45.59,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 34.67,
+      "y": 48.84
+    },
+    {
+      "before_quest_id": 1008,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1008:starter"
+      ],
+      "instruction": "Before you begin: travel to Ashenvale and meet the first quest giver at [G34.67,48.84 Ashenvale]. Leave at least two quest-log slots open. [O]",
+      "map_id": 331,
+      "map_name": "Ashenvale",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 34.67,
+      "y": 48.84
+    },
+    {
+      "before_quest_id": 1008,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:npc:4267",
+        "authored-route:guidelime-tugs-tbc-alliance-2.50:21-22 Ashenvale.lua:25"
+      ],
+      "instruction": "Optional: learn the flight path from Daelyshia. [P][G34.41,47.99 Ashenvale][O]",
+      "map_id": 331,
+      "map_name": "Ashenvale",
+      "optional": true,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "acquire_flight_path",
+      "verification": "cross_verified_questie_and_authored_route",
+      "x": 34.41,
+      "y": 47.99
+    },
+    {
+      "before_quest_id": 1008,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1008:requiredLevel"
+      ],
+      "instruction": "Reach level 14 before accepting The Zoram Strand. [XP14 Level 14]",
+      "map_id": 331,
+      "map_name": "Ashenvale",
+      "optional": false,
+      "order": 4,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 14,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 34.67,
+      "y": 48.84
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3845,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 34.67,
+              "y": 48.84
+            }
+          ],
+          "name": "Shindrell Swiftfire",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1008"
+      ],
+      "instruction": "Accept [QA1008 The Zoram Strand] from Shindrell Swiftfire.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 1008,
+      "quest_name": "The Zoram Strand",
+      "quest_tag": null,
+      "required_level": 14,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1008"
+      ],
+      "instruction": "Collect or use the required item: Wrathtail Head. [QC1008 The Zoram Strand]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Wrathtail Head",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 5490,
+          "kind": "item",
+          "locations": [],
+          "name": "Wrathtail Head",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 6,
+      "quest_id": 1008,
+      "quest_name": "The Zoram Strand",
+      "quest_tag": null,
+      "required_level": 14,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3845,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 34.67,
+              "y": 48.84
+            }
+          ],
+          "name": "Shindrell Swiftfire",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1008"
+      ],
+      "instruction": "Turn in [QT1008 The Zoram Strand] to Shindrell Swiftfire",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 1008,
+      "quest_name": "The Zoram Strand",
+      "quest_tag": null,
+      "required_level": 14,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "before_quest_id": 729,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:729:requiredLevel"
+      ],
+      "instruction": "Reach level 15 before accepting The Absent Minded Prospector. [XP15 Level 15]",
+      "map_id": 148,
+      "map_name": "Darkshore",
+      "optional": false,
+      "order": 8,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 15,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 37.44,
+      "y": 41.84
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2913,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 148,
+              "map_name": "Darkshore",
+              "verification": "questie_structured_source_only",
+              "x": 37.44,
+              "y": 41.84
+            }
+          ],
+          "name": "Archaeologist Hollee",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:729"
+      ],
+      "instruction": "Accept [QA729 The Absent Minded Prospector] from Archaeologist Hollee.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 729,
+      "quest_name": "The Absent Minded Prospector",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 148,
+      "zone_or_sort_name": "Darkshore"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:729"
+      ],
+      "instruction": "Complete [QC729 The Absent Minded Prospector]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 729,
+      "quest_name": "The Absent Minded Prospector",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 148,
+      "zone_or_sort_name": "Darkshore"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2917,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 148,
+              "map_name": "Darkshore",
+              "verification": "questie_structured_source_only",
+              "x": 35.73,
+              "y": 83.7
+            }
+          ],
+          "name": "Prospector Remtravel",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:729"
+      ],
+      "instruction": "Turn in [QT729 The Absent Minded Prospector] to Prospector Remtravel",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 729,
+      "quest_name": "The Absent Minded Prospector",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 148,
+      "zone_or_sort_name": "Darkshore"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2917,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 148,
+              "map_name": "Darkshore",
+              "verification": "questie_structured_source_only",
+              "x": 35.73,
+              "y": 83.7
+            }
+          ],
+          "name": "Prospector Remtravel",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:731"
+      ],
+      "instruction": "Accept [QA731 The Absent Minded Prospector] from Prospector Remtravel.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 731,
+      "quest_name": "The Absent Minded Prospector",
+      "quest_tag": "Elite",
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 148,
+      "zone_or_sort_name": "Darkshore"
+    },
+    {
+      "before_quest_id": 731,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:731:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 331,
+      "map_name": "Ashenvale",
+      "optional": true,
+      "order": 13,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        731
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 34.67,
+      "y": 48.84
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:731"
+      ],
+      "instruction": "Elite/group recommended \u2014 Complete the scripted or exploration event. [QC731 The Absent Minded Prospector]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 731,
+      "quest_name": "The Absent Minded Prospector",
+      "quest_tag": "Elite",
+      "required_level": 15,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 148,
+      "zone_or_sort_name": "Darkshore"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2913,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 148,
+              "map_name": "Darkshore",
+              "verification": "questie_structured_source_only",
+              "x": 37.44,
+              "y": 41.84
+            }
+          ],
+          "name": "Archaeologist Hollee",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:731"
+      ],
+      "instruction": "Turn in [QT731 The Absent Minded Prospector] to Archaeologist Hollee",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 731,
+      "quest_name": "The Absent Minded Prospector",
+      "quest_tag": "Elite",
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 148,
+      "zone_or_sort_name": "Darkshore"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2913,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 148,
+              "map_name": "Darkshore",
+              "verification": "questie_structured_source_only",
+              "x": 37.44,
+              "y": 41.84
+            }
+          ],
+          "name": "Archaeologist Hollee",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:741"
+      ],
+      "instruction": "Accept [QA741 The Absent Minded Prospector] from Archaeologist Hollee.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 741,
+      "quest_name": "The Absent Minded Prospector",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 148,
+      "zone_or_sort_name": "Darkshore"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:741"
+      ],
+      "instruction": "Complete [QC741 The Absent Minded Prospector]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 741,
+      "quest_name": "The Absent Minded Prospector",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 148,
+      "zone_or_sort_name": "Darkshore"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2912,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1657,
+              "map_name": "Darnassus",
+              "verification": "questie_structured_source_only",
+              "x": 31.24,
+              "y": 84.51
+            }
+          ],
+          "name": "Chief Archaeologist Greywhisker",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:741"
+      ],
+      "instruction": "Turn in [QT741 The Absent Minded Prospector] to Chief Archaeologist Greywhisker",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 741,
+      "quest_name": "The Absent Minded Prospector",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 148,
+      "zone_or_sort_name": "Darkshore"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2912,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1657,
+              "map_name": "Darnassus",
+              "verification": "questie_structured_source_only",
+              "x": 31.24,
+              "y": 84.51
+            }
+          ],
+          "name": "Chief Archaeologist Greywhisker",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:942"
+      ],
+      "instruction": "Accept [QA942 The Absent Minded Prospector] from Chief Archaeologist Greywhisker.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 942,
+      "quest_name": "The Absent Minded Prospector",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 148,
+      "zone_or_sort_name": "Darkshore"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:942"
+      ],
+      "instruction": "Complete [QC942 The Absent Minded Prospector]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 942,
+      "quest_name": "The Absent Minded Prospector",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 148,
+      "zone_or_sort_name": "Darkshore"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2911,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 10.84,
+              "y": 60.43
+            }
+          ],
+          "name": "Archaeologist Flagongut",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:942"
+      ],
+      "instruction": "Turn in [QT942 The Absent Minded Prospector] to Archaeologist Flagongut",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 942,
+      "quest_name": "The Absent Minded Prospector",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 148,
+      "zone_or_sort_name": "Darkshore"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2911,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 10.84,
+              "y": 60.43
+            }
+          ],
+          "name": "Archaeologist Flagongut",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:943"
+      ],
+      "instruction": "Accept [QA943 The Absent Minded Prospector] from Archaeologist Flagongut.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 22,
+      "quest_id": 943,
+      "quest_name": "The Absent Minded Prospector",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 148,
+      "zone_or_sort_name": "Darkshore"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:943"
+      ],
+      "instruction": "Collect or use the required items: Stone of Relu, Flagongut's Fossil. [QC943 The Absent Minded Prospector]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Stone of Relu, Flagongut's Fossil",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 5233,
+          "kind": "item",
+          "locations": [],
+          "name": "Stone of Relu",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 5234,
+          "kind": "item",
+          "locations": [],
+          "name": "Flagongut's Fossil",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 23,
+      "quest_id": 943,
+      "quest_name": "The Absent Minded Prospector",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 148,
+      "zone_or_sort_name": "Darkshore"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2911,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 10.84,
+              "y": 60.43
+            }
+          ],
+          "name": "Archaeologist Flagongut",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:943"
+      ],
+      "instruction": "Turn in [QT943 The Absent Minded Prospector] to Archaeologist Flagongut",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 24,
+      "quest_id": 943,
+      "quest_name": "The Absent Minded Prospector",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 148,
+      "zone_or_sort_name": "Darkshore"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10216,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 148,
+              "map_name": "Darkshore",
+              "verification": "questie_structured_source_only",
+              "x": 36.1,
+              "y": 44.93
+            }
+          ],
+          "name": "Gubber Blump",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1138"
+      ],
+      "instruction": "Accept [QA1138 Fruit of the Sea] from Gubber Blump.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 25,
+      "quest_id": 1138,
+      "quest_name": "Fruit of the Sea",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 148,
+      "zone_or_sort_name": "Darkshore"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1138"
+      ],
+      "instruction": "Collect or use the required item: Fine Crab Chunks. [QC1138 Fruit of the Sea]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Fine Crab Chunks",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 12237,
+          "kind": "item",
+          "locations": [],
+          "name": "Fine Crab Chunks",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 26,
+      "quest_id": 1138,
+      "quest_name": "Fruit of the Sea",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 148,
+      "zone_or_sort_name": "Darkshore"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10216,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 148,
+              "map_name": "Darkshore",
+              "verification": "questie_structured_source_only",
+              "x": 36.1,
+              "y": 44.93
+            }
+          ],
+          "name": "Gubber Blump",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1138"
+      ],
+      "instruction": "Turn in [QT1138 Fruit of the Sea] to Gubber Blump",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 27,
+      "quest_id": 1138,
+      "quest_name": "Fruit of the Sea",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 148,
+      "zone_or_sort_name": "Darkshore"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 176191,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 148,
+              "map_name": "Darkshore",
+              "verification": "questie_structured_source_only",
+              "x": 31.23,
+              "y": 85.6
+            }
+          ],
+          "name": "Beached Sea Turtle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4732"
+      ],
+      "instruction": "Accept [QA4732 Beached Sea Turtle] from Beached Sea Turtle.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 28,
+      "quest_id": 4732,
+      "quest_name": "Beached Sea Turtle",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 148,
+      "zone_or_sort_name": "Darkshore"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4732"
+      ],
+      "instruction": "Complete [QC4732 Beached Sea Turtle]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 29,
+      "quest_id": 4732,
+      "quest_name": "Beached Sea Turtle",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 148,
+      "zone_or_sort_name": "Darkshore"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10219,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 148,
+              "map_name": "Darkshore",
+              "verification": "questie_structured_source_only",
+              "x": 36.62,
+              "y": 45.59
+            }
+          ],
+          "name": "Gwennyth Bly'Leggonde",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4732"
+      ],
+      "instruction": "Turn in [QT4732 Beached Sea Turtle] to Gwennyth Bly'Leggonde",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 30,
+      "quest_id": 4732,
+      "quest_name": "Beached Sea Turtle",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 148,
+      "zone_or_sort_name": "Darkshore"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3649,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 148,
+              "map_name": "Darkshore",
+              "verification": "questie_structured_source_only",
+              "x": 37.4,
+              "y": 40.13
+            }
+          ],
+          "name": "Thundris Windweaver",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4763"
+      ],
+      "instruction": "Accept [QA4763 The Blackwood Corrupted] from Thundris Windweaver.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 31,
+      "quest_id": 4763,
+      "quest_name": "The Blackwood Corrupted",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 148,
+      "zone_or_sort_name": "Darkshore"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4763"
+      ],
+      "instruction": "Use the quest item [UI12346-] as directed; collect or use the required item: Talisman of Corruption. [QC4763 The Blackwood Corrupted]",
+      "item_use_id": 12346,
+      "objective_hint": "Collect or use the required item: Talisman of Corruption",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 12355,
+          "kind": "item",
+          "locations": [],
+          "name": "Talisman of Corruption",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 32,
+      "quest_id": 4763,
+      "quest_name": "The Blackwood Corrupted",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 148,
+      "zone_or_sort_name": "Darkshore"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3649,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 148,
+              "map_name": "Darkshore",
+              "verification": "questie_structured_source_only",
+              "x": 37.4,
+              "y": 40.13
+            }
+          ],
+          "name": "Thundris Windweaver",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4763"
+      ],
+      "instruction": "Turn in [QT4763 The Blackwood Corrupted] to Thundris Windweaver",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 33,
+      "quest_id": 4763,
+      "quest_name": "The Blackwood Corrupted",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 148,
+      "zone_or_sort_name": "Darkshore"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3694,
+          "kind": "npc",
+          "locations": [],
+          "name": "Sentinel Selarin",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:990"
+      ],
+      "instruction": "Accept [QA990 Trek to Ashenvale] from Sentinel Selarin.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 34,
+      "quest_id": 990,
+      "quest_name": "Trek to Ashenvale",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:990"
+      ],
+      "instruction": "Complete [QC990 Trek to Ashenvale]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 35,
+      "quest_id": 990,
+      "quest_name": "Trek to Ashenvale",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3691,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 36.62,
+              "y": 49.58
+            }
+          ],
+          "name": "Raene Wolfrunner",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:990"
+      ],
+      "instruction": "Turn in [QT990 Trek to Ashenvale] to Raene Wolfrunner",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 36,
+      "quest_id": 990,
+      "quest_name": "Trek to Ashenvale",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    }
+  ],
+  "title": "03 Ashenvale & Darkshore"
+}

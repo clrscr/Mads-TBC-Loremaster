@@ -1,0 +1,2689 @@
+{
+  "branch": "optional_content",
+  "entry_contract": "Complete The Corruption Abroad. Begin in Wetlands with James Halloran. Leave at least two quest-log slots open; group and reputation gates remain explicit.",
+  "entry_route_point": {
+    "map_id": 11,
+    "map_name": "Wetlands",
+    "x": 8.55,
+    "y": 55.74
+  },
+  "entry_zone_or_sort": 11,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 1537,
+    "map_name": "Ironforge",
+    "quest_id": 2930,
+    "tag": "QT",
+    "x": 69.83,
+    "y": 48.1
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [
+    [
+      3765
+    ]
+  ],
+  "external_prerequisite_quest_ids": [
+    3765
+  ],
+  "group": "Mad's Loremaster Guide - Optional Content",
+  "guide_file": "Guides/optional_content/099_dungeon_03.lua",
+  "id": "099-optional_content-optional-content-03---wetlands-&-gnomeregan",
+  "maximum_level": null,
+  "minimum_level": null,
+  "next_chapter": "Optional Content 04 - The Stockade & Ashenvale",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "Optional Content 02 - The Barrens & Stormwind City",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 484,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:396:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:484:starter"
+      ],
+      "instruction": "Travel from Stormwind City to Wetlands. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G8.55,55.74 Wetlands]. [O]",
+      "map_id": 11,
+      "map_name": "Wetlands",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 1519,
+      "origin_map_name": "Stormwind City",
+      "origin_x": 78.1,
+      "origin_y": 17.75,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 8.55,
+      "y": 55.74
+    },
+    {
+      "before_quest_id": 484,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3765:dependency"
+      ],
+      "instruction": "Optional entry requirements: complete The Corruption Abroad. [O]",
+      "map_id": 11,
+      "map_name": "Wetlands",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        3765
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "branch_entry",
+      "verification": "route_dependency_graph",
+      "x": 8.55,
+      "y": 55.74
+    },
+    {
+      "before_quest_id": 484,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:484:starter"
+      ],
+      "instruction": "Optional chapter: travel to Wetlands and begin at [G8.55,55.74 Wetlands]. Leave at least two quest-log slots open. [O]",
+      "map_id": 11,
+      "map_name": "Wetlands",
+      "optional": true,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 8.55,
+      "y": 55.74
+    },
+    {
+      "before_quest_id": 484,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:484:requiredLevel"
+      ],
+      "instruction": "Reach level 18 before accepting Young Crocolisk Skins. [XP18 Level 18]",
+      "map_id": 11,
+      "map_name": "Wetlands",
+      "optional": false,
+      "order": 4,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 18,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 8.55,
+      "y": 55.74
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2094,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 8.55,
+              "y": 55.74
+            }
+          ],
+          "name": "James Halloran",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:484"
+      ],
+      "instruction": "Accept [QA484 Young Crocolisk Skins] from James Halloran.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 484,
+      "quest_name": "Young Crocolisk Skins",
+      "quest_tag": null,
+      "required_level": 18,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:484"
+      ],
+      "instruction": "Collect or use the required item: Young Crocolisk Skin. [QC484 Young Crocolisk Skins]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Young Crocolisk Skin",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 3397,
+          "kind": "item",
+          "locations": [],
+          "name": "Young Crocolisk Skin",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 6,
+      "quest_id": 484,
+      "quest_name": "Young Crocolisk Skins",
+      "quest_tag": null,
+      "required_level": 18,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2094,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 8.55,
+              "y": 55.74
+            }
+          ],
+          "name": "James Halloran",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:484"
+      ],
+      "instruction": "Turn in [QT484 Young Crocolisk Skins] to James Halloran",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 484,
+      "quest_name": "Young Crocolisk Skins",
+      "quest_tag": null,
+      "required_level": 18,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2094,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 8.55,
+              "y": 55.74
+            }
+          ],
+          "name": "James Halloran",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:471"
+      ],
+      "instruction": "Accept [QA471 Apprentice's Duties] from James Halloran.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 471,
+      "quest_name": "Apprentice's Duties",
+      "quest_tag": null,
+      "required_level": 18,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:471"
+      ],
+      "instruction": "Collect or use the required item: Giant Crocolisk Skin. [QC471 Apprentice's Duties]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Giant Crocolisk Skin",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 3348,
+          "kind": "item",
+          "locations": [],
+          "name": "Giant Crocolisk Skin",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 9,
+      "quest_id": 471,
+      "quest_name": "Apprentice's Duties",
+      "quest_tag": null,
+      "required_level": 18,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2094,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 8.55,
+              "y": 55.74
+            }
+          ],
+          "name": "James Halloran",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:471"
+      ],
+      "instruction": "Turn in [QT471 Apprentice's Duties] to James Halloran",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 471,
+      "quest_name": "Apprentice's Duties",
+      "quest_tag": null,
+      "required_level": 18,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8997,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 148,
+              "map_name": "Darkshore",
+              "verification": "questie_structured_source_only",
+              "x": 38.33,
+              "y": 43.04
+            }
+          ],
+          "name": "Gershala Nightwhisper",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1275"
+      ],
+      "instruction": "Accept [QA1275 Researching the Corruption] from Gershala Nightwhisper.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 1275,
+      "quest_name": "Researching the Corruption",
+      "quest_tag": "Dungeon",
+      "required_level": 18,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 719,
+      "zone_or_sort_name": "Blackfathom Deeps"
+    },
+    {
+      "before_quest_id": 1275,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1275:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 11,
+      "map_name": "Wetlands",
+      "optional": true,
+      "order": 12,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        1275
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 8.55,
+      "y": 55.74
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1275"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required item: Corrupted Brain Stem. [QC1275 Researching the Corruption]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Corrupted Brain Stem",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 5952,
+          "kind": "item",
+          "locations": [],
+          "name": "Corrupted Brain Stem",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 13,
+      "quest_id": 1275,
+      "quest_name": "Researching the Corruption",
+      "quest_tag": "Dungeon",
+      "required_level": 18,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 719,
+      "zone_or_sort_name": "Blackfathom Deeps"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8997,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 148,
+              "map_name": "Darkshore",
+              "verification": "questie_structured_source_only",
+              "x": 38.33,
+              "y": 43.04
+            }
+          ],
+          "name": "Gershala Nightwhisper",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1275"
+      ],
+      "instruction": "Turn in [QT1275 Researching the Corruption] to Gershala Nightwhisper",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 1275,
+      "quest_name": "Researching the Corruption",
+      "quest_tag": "Dungeon",
+      "required_level": 18,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 719,
+      "zone_or_sort_name": "Blackfathom Deeps"
+    },
+    {
+      "before_quest_id": 971,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:971:requiredLevel"
+      ],
+      "instruction": "Reach level 19 before accepting Knowledge in the Deeps. [XP19 Level 19]",
+      "map_id": 1537,
+      "map_name": "Ironforge",
+      "optional": false,
+      "order": 15,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 19,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 50.83,
+      "y": 5.62
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2786,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 50.83,
+              "y": 5.62
+            }
+          ],
+          "name": "Gerrig Bonegrip",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:971"
+      ],
+      "instruction": "Accept [QA971 Knowledge in the Deeps] from Gerrig Bonegrip.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 971,
+      "quest_name": "Knowledge in the Deeps",
+      "quest_tag": "Dungeon",
+      "required_level": 19,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 719,
+      "zone_or_sort_name": "Blackfathom Deeps"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:971"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required item: Lorgalis Manuscript. [QC971 Knowledge in the Deeps]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Lorgalis Manuscript",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 5359,
+          "kind": "item",
+          "locations": [],
+          "name": "Lorgalis Manuscript",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 17,
+      "quest_id": 971,
+      "quest_name": "Knowledge in the Deeps",
+      "quest_tag": "Dungeon",
+      "required_level": 19,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 719,
+      "zone_or_sort_name": "Blackfathom Deeps"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2786,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 50.83,
+              "y": 5.62
+            }
+          ],
+          "name": "Gerrig Bonegrip",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:971"
+      ],
+      "instruction": "Turn in [QT971 Knowledge in the Deeps] to Gerrig Bonegrip",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 971,
+      "quest_name": "Knowledge in the Deeps",
+      "quest_tag": "Dungeon",
+      "required_level": 19,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 719,
+      "zone_or_sort_name": "Blackfathom Deeps"
+    },
+    {
+      "before_quest_id": 1198,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1198:requiredLevel"
+      ],
+      "instruction": "Reach level 20 before accepting In Search of Thaelrid. [XP20 Level 20]",
+      "map_id": 1657,
+      "map_name": "Darnassus",
+      "optional": false,
+      "order": 19,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 20,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 55.36,
+      "y": 25.03
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4786,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1657,
+              "map_name": "Darnassus",
+              "verification": "questie_structured_source_only",
+              "x": 55.36,
+              "y": 25.03
+            }
+          ],
+          "name": "Dawnwatcher Shaedlass",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1198"
+      ],
+      "instruction": "Accept [QA1198 In Search of Thaelrid] from Dawnwatcher Shaedlass.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 1198,
+      "quest_name": "In Search of Thaelrid",
+      "quest_tag": "Dungeon",
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 719,
+      "zone_or_sort_name": "Blackfathom Deeps"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1198"
+      ],
+      "instruction": "Dungeon \u2014 Complete [QC1198 In Search of Thaelrid]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 1198,
+      "quest_name": "In Search of Thaelrid",
+      "quest_tag": "Dungeon",
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 719,
+      "zone_or_sort_name": "Blackfathom Deeps"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4787,
+          "kind": "npc",
+          "locations": [],
+          "name": "Argent Guard Thaelrid",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1198"
+      ],
+      "instruction": "Turn in [QT1198 In Search of Thaelrid] to Argent Guard Thaelrid",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 22,
+      "quest_id": 1198,
+      "quest_name": "In Search of Thaelrid",
+      "quest_tag": "Dungeon",
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 719,
+      "zone_or_sort_name": "Blackfathom Deeps"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4787,
+          "kind": "npc",
+          "locations": [],
+          "name": "Argent Guard Thaelrid",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1200"
+      ],
+      "instruction": "Accept [QA1200 Blackfathom Villainy] from Argent Guard Thaelrid.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 23,
+      "quest_id": 1200,
+      "quest_name": "Blackfathom Villainy",
+      "quest_tag": "Dungeon",
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 719,
+      "zone_or_sort_name": "Blackfathom Deeps"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4784,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1657,
+              "map_name": "Darnassus",
+              "verification": "questie_structured_source_only",
+              "x": 55.24,
+              "y": 23.99
+            }
+          ],
+          "name": "Argent Guard Manados",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1199"
+      ],
+      "instruction": "Accept [QA1199 Twilight Falls] from Argent Guard Manados.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 24,
+      "quest_id": 1199,
+      "quest_name": "Twilight Falls",
+      "quest_tag": "Dungeon",
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 719,
+      "zone_or_sort_name": "Blackfathom Deeps"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1200"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required item: Head of Kelris. [QC1200 Blackfathom Villainy]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Head of Kelris",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 5881,
+          "kind": "item",
+          "locations": [],
+          "name": "Head of Kelris",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 25,
+      "quest_id": 1200,
+      "quest_name": "Blackfathom Villainy",
+      "quest_tag": "Dungeon",
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 719,
+      "zone_or_sort_name": "Blackfathom Deeps"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1199"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required item: Twilight Pendant. [QC1199 Twilight Falls]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Twilight Pendant",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 5879,
+          "kind": "item",
+          "locations": [],
+          "name": "Twilight Pendant",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 26,
+      "quest_id": 1199,
+      "quest_name": "Twilight Falls",
+      "quest_tag": "Dungeon",
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 719,
+      "zone_or_sort_name": "Blackfathom Deeps"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4784,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1657,
+              "map_name": "Darnassus",
+              "verification": "questie_structured_source_only",
+              "x": 55.24,
+              "y": 23.99
+            }
+          ],
+          "name": "Argent Guard Manados",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1199"
+      ],
+      "instruction": "Turn in [QT1199 Twilight Falls] to Argent Guard Manados",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 27,
+      "quest_id": 1199,
+      "quest_name": "Twilight Falls",
+      "quest_tag": "Dungeon",
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 719,
+      "zone_or_sort_name": "Blackfathom Deeps"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4783,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1657,
+              "map_name": "Darnassus",
+              "verification": "questie_structured_source_only",
+              "x": 56.16,
+              "y": 24.39
+            }
+          ],
+          "name": "Dawnwatcher Selgorm",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1200"
+      ],
+      "instruction": "Turn in [QT1200 Blackfathom Villainy] to Dawnwatcher Selgorm",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 28,
+      "quest_id": 1200,
+      "quest_name": "Blackfathom Villainy",
+      "quest_tag": "Dungeon",
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 719,
+      "zone_or_sort_name": "Blackfathom Deeps"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7850,
+          "kind": "npc",
+          "locations": [],
+          "name": "Kernobee",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2904"
+      ],
+      "instruction": "Accept [QA2904 A Fine Mess] from Kernobee.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 29,
+      "quest_id": 2904,
+      "quest_name": "A Fine Mess",
+      "quest_tag": "Dungeon",
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7917,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 40.55,
+              "y": 30.96
+            }
+          ],
+          "name": "Brother Sarno",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2923"
+      ],
+      "instruction": "Accept [QA2923 Tinkmaster Overspark] from Brother Sarno.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 30,
+      "quest_id": 2923,
+      "quest_name": "Tinkmaster Overspark",
+      "quest_tag": "Dungeon",
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2904"
+      ],
+      "instruction": "Dungeon \u2014 Complete the scripted or exploration event. [QC2904 A Fine Mess]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 31,
+      "quest_id": 2904,
+      "quest_name": "A Fine Mess",
+      "quest_tag": "Dungeon",
+      "required_level": 20,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2923"
+      ],
+      "instruction": "Dungeon \u2014 Complete [QC2923 Tinkmaster Overspark]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 32,
+      "quest_id": 2923,
+      "quest_name": "Tinkmaster Overspark",
+      "quest_tag": "Dungeon",
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7853,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 27.6,
+              "y": 77.48
+            }
+          ],
+          "name": "Scooty",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2904"
+      ],
+      "instruction": "Turn in [QT2904 A Fine Mess] to Scooty",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 33,
+      "quest_id": 2904,
+      "quest_name": "A Fine Mess",
+      "quest_tag": "Dungeon",
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7944,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 69.55,
+              "y": 50.33
+            }
+          ],
+          "name": "Tinkmaster Overspark",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2923"
+      ],
+      "instruction": "Turn in [QT2923 Tinkmaster Overspark] to Tinkmaster Overspark",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 34,
+      "quest_id": 2923,
+      "quest_name": "Tinkmaster Overspark",
+      "quest_tag": "Dungeon",
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7944,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 69.55,
+              "y": 50.33
+            }
+          ],
+          "name": "Tinkmaster Overspark",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2922"
+      ],
+      "instruction": "Accept [QA2922 Save Techbot's Brain!] from Tinkmaster Overspark.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 35,
+      "quest_id": 2922,
+      "quest_name": "Save Techbot's Brain!",
+      "quest_tag": "Dungeon",
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 6569,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 69.18,
+              "y": 50.55
+            }
+          ],
+          "name": "Gnoarn",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2927"
+      ],
+      "instruction": "Accept [QA2927 The Day After] from Gnoarn.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 36,
+      "quest_id": 2927,
+      "quest_name": "The Day After",
+      "quest_tag": "Dungeon",
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2922"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required item: Techbot's Memory Core. [QC2922 Save Techbot's Brain!]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Techbot's Memory Core",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 9277,
+          "kind": "item",
+          "locations": [],
+          "name": "Techbot's Memory Core",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 37,
+      "quest_id": 2922,
+      "quest_name": "Save Techbot's Brain!",
+      "quest_tag": "Dungeon",
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2927"
+      ],
+      "instruction": "Dungeon \u2014 Complete [QC2927 The Day After]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 38,
+      "quest_id": 2927,
+      "quest_name": "The Day After",
+      "quest_tag": "Dungeon",
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7944,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 69.55,
+              "y": 50.33
+            }
+          ],
+          "name": "Tinkmaster Overspark",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2922"
+      ],
+      "instruction": "Turn in [QT2922 Save Techbot's Brain!] to Tinkmaster Overspark",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 39,
+      "quest_id": 2922,
+      "quest_name": "Save Techbot's Brain!",
+      "quest_tag": "Dungeon",
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1268,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 45.89,
+              "y": 49.38
+            }
+          ],
+          "name": "Ozzie Togglevolt",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2927"
+      ],
+      "instruction": "Turn in [QT2927 The Day After] to Ozzie Togglevolt",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 40,
+      "quest_id": 2927,
+      "quest_name": "The Day After",
+      "quest_tag": "Dungeon",
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1268,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 45.89,
+              "y": 49.38
+            }
+          ],
+          "name": "Ozzie Togglevolt",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2926"
+      ],
+      "instruction": "Accept [QA2926 Gnogaine] from Ozzie Togglevolt.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 41,
+      "quest_id": 2926,
+      "quest_name": "Gnogaine",
+      "quest_tag": "Dungeon",
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2926"
+      ],
+      "instruction": "Dungeon \u2014 Use the quest item [UI9283-] as directed; collect or use the required item: Full Leaden Collection Phial. [QC2926 Gnogaine]",
+      "item_use_id": 9283,
+      "objective_hint": "Collect or use the required item: Full Leaden Collection Phial",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 9284,
+          "kind": "item",
+          "locations": [],
+          "name": "Full Leaden Collection Phial",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 42,
+      "quest_id": 2926,
+      "quest_name": "Gnogaine",
+      "quest_tag": "Dungeon",
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1268,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 45.89,
+              "y": 49.38
+            }
+          ],
+          "name": "Ozzie Togglevolt",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2926"
+      ],
+      "instruction": "Turn in [QT2926 Gnogaine] to Ozzie Togglevolt",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 43,
+      "quest_id": 2926,
+      "quest_name": "Gnogaine",
+      "quest_tag": "Dungeon",
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 6579,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 55.51,
+              "y": 12.51
+            }
+          ],
+          "name": "Shoni the Shilent",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2928"
+      ],
+      "instruction": "Accept [QA2928 Gyrodrillmatic Excavationators] from Shoni the Shilent.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 44,
+      "quest_id": 2928,
+      "quest_name": "Gyrodrillmatic Excavationators",
+      "quest_tag": "Dungeon",
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2928"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required item: Robo-mechanical Guts. [QC2928 Gyrodrillmatic Excavationators]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Robo-mechanical Guts",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 9309,
+          "kind": "item",
+          "locations": [],
+          "name": "Robo-mechanical Guts",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 45,
+      "quest_id": 2928,
+      "quest_name": "Gyrodrillmatic Excavationators",
+      "quest_tag": "Dungeon",
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 6579,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 55.51,
+              "y": 12.51
+            }
+          ],
+          "name": "Shoni the Shilent",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2928"
+      ],
+      "instruction": "Turn in [QT2928 Gyrodrillmatic Excavationators] to Shoni the Shilent",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 46,
+      "quest_id": 2928,
+      "quest_name": "Gyrodrillmatic Excavationators",
+      "quest_tag": "Dungeon",
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1268,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 45.89,
+              "y": 49.38
+            }
+          ],
+          "name": "Ozzie Togglevolt",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2962"
+      ],
+      "instruction": "Accept [QA2962 The Only Cure is More Green Glow] from Ozzie Togglevolt.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 47,
+      "quest_id": 2962,
+      "quest_name": "The Only Cure is More Green Glow",
+      "quest_tag": "Dungeon",
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2962"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required item: High Potency Radioactive Fallout. [QC2962 The Only Cure is More Green Glow]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: High Potency Radioactive Fallout",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 9365,
+          "kind": "item",
+          "locations": [],
+          "name": "High Potency Radioactive Fallout",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 48,
+      "quest_id": 2962,
+      "quest_name": "The Only Cure is More Green Glow",
+      "quest_tag": "Dungeon",
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1268,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 45.89,
+              "y": 49.38
+            }
+          ],
+          "name": "Ozzie Togglevolt",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2962"
+      ],
+      "instruction": "Turn in [QT2962 The Only Cure is More Green Glow] to Ozzie Togglevolt",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 49,
+      "quest_id": 2962,
+      "quest_name": "The Only Cure is More Green Glow",
+      "quest_tag": "Dungeon",
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "before_quest_id": 2925,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2925:requiredLevel"
+      ],
+      "instruction": "Reach level 24 before accepting Klockmort's Essentials. [XP24 Level 24]",
+      "map_id": 1657,
+      "map_name": "Darnassus",
+      "optional": false,
+      "order": 50,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 24,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 59.51,
+      "y": 45.38
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 6142,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1657,
+              "map_name": "Darnassus",
+              "verification": "questie_structured_source_only",
+              "x": 59.51,
+              "y": 45.38
+            }
+          ],
+          "name": "Mathiel",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2925"
+      ],
+      "instruction": "Accept [QA2925 Klockmort's Essentials] from Mathiel.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 51,
+      "quest_id": 2925,
+      "quest_name": "Klockmort's Essentials",
+      "quest_tag": "Dungeon",
+      "required_level": 24,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2925"
+      ],
+      "instruction": "Dungeon \u2014 Complete [QC2925 Klockmort's Essentials]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 52,
+      "quest_id": 2925,
+      "quest_name": "Klockmort's Essentials",
+      "quest_tag": "Dungeon",
+      "required_level": 24,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 6169,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 67.92,
+              "y": 46.1
+            }
+          ],
+          "name": "Klockmort Spannerspan",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2925"
+      ],
+      "instruction": "Turn in [QT2925 Klockmort's Essentials] to Klockmort Spannerspan",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 53,
+      "quest_id": 2925,
+      "quest_name": "Klockmort's Essentials",
+      "quest_tag": "Dungeon",
+      "required_level": 24,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 6169,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 67.92,
+              "y": 46.1
+            }
+          ],
+          "name": "Klockmort Spannerspan",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2924"
+      ],
+      "instruction": "Accept [QA2924 Essential Artificials] from Klockmort Spannerspan.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 54,
+      "quest_id": 2924,
+      "quest_name": "Essential Artificials",
+      "quest_tag": "Dungeon",
+      "required_level": 24,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "before_quest_id": 2929,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2929:requiredLevel"
+      ],
+      "instruction": "Reach level 25 before accepting The Grand Betrayal. [XP25 Level 25]",
+      "map_id": 1537,
+      "map_name": "Ironforge",
+      "optional": false,
+      "order": 55,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 25,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 68.75,
+      "y": 48.97
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7937,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 68.75,
+              "y": 48.97
+            }
+          ],
+          "name": "High Tinker Mekkatorque",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2929"
+      ],
+      "instruction": "Accept [QA2929 The Grand Betrayal] from High Tinker Mekkatorque.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 56,
+      "quest_id": 2929,
+      "quest_name": "The Grand Betrayal",
+      "quest_tag": "Dungeon",
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2924"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required item: Essential Artificial. [QC2924 Essential Artificials]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Essential Artificial",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 9278,
+          "kind": "item",
+          "locations": [],
+          "name": "Essential Artificial",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 57,
+      "quest_id": 2924,
+      "quest_name": "Essential Artificials",
+      "quest_tag": "Dungeon",
+      "required_level": 24,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2929"
+      ],
+      "instruction": "Dungeon \u2014 Complete the required NPC or creature objective: Mekgineer Thermaplugg. [QC2929 The Grand Betrayal]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Mekgineer Thermaplugg",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7800,
+          "kind": "npc",
+          "locations": [],
+          "name": "Mekgineer Thermaplugg",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 58,
+      "quest_id": 2929,
+      "quest_name": "The Grand Betrayal",
+      "quest_tag": "Dungeon",
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7937,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 68.75,
+              "y": 48.97
+            }
+          ],
+          "name": "High Tinker Mekkatorque",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2929"
+      ],
+      "instruction": "Turn in [QT2929 The Grand Betrayal] to High Tinker Mekkatorque",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 59,
+      "quest_id": 2929,
+      "quest_name": "The Grand Betrayal",
+      "quest_tag": "Dungeon",
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 6169,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 67.92,
+              "y": 46.1
+            }
+          ],
+          "name": "Klockmort Spannerspan",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2924"
+      ],
+      "instruction": "Turn in [QT2924 Essential Artificials] to Klockmort Spannerspan",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 60,
+      "quest_id": 2924,
+      "quest_name": "Essential Artificials",
+      "quest_tag": "Dungeon",
+      "required_level": 24,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4077,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 59.52,
+              "y": 67.15
+            }
+          ],
+          "name": "Gaxim Rustfizzle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2931"
+      ],
+      "instruction": "Accept [QA2931 Castpipe's Task] from Gaxim Rustfizzle.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 61,
+      "quest_id": 2931,
+      "quest_name": "Castpipe's Task",
+      "quest_tag": "Dungeon",
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2931"
+      ],
+      "instruction": "Dungeon \u2014 Complete [QC2931 Castpipe's Task]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 62,
+      "quest_id": 2931,
+      "quest_name": "Castpipe's Task",
+      "quest_tag": "Dungeon",
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7950,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 69.83,
+              "y": 48.1
+            }
+          ],
+          "name": "Master Mechanic Castpipe",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2931"
+      ],
+      "instruction": "Turn in [QT2931 Castpipe's Task] to Master Mechanic Castpipe",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 63,
+      "quest_id": 2931,
+      "quest_name": "Castpipe's Task",
+      "quest_tag": "Dungeon",
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7950,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 69.83,
+              "y": 48.1
+            }
+          ],
+          "name": "Master Mechanic Castpipe",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2930"
+      ],
+      "instruction": "Accept [QA2930 Data Rescue] from Master Mechanic Castpipe.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 64,
+      "quest_id": 2930,
+      "quest_name": "Data Rescue",
+      "quest_tag": "Dungeon",
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 142487,
+          "kind": "object",
+          "locations": [],
+          "name": "The Sparklematic 5200",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2951"
+      ],
+      "instruction": "Accept [QA2951 The Sparklematic 5200!] from The Sparklematic 5200.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 65,
+      "quest_id": 2951,
+      "quest_name": "The Sparklematic 5200!",
+      "quest_tag": "Dungeon",
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2930"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required item: Prismatic Punch Card. [QC2930 Data Rescue]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Prismatic Punch Card",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 9316,
+          "kind": "item",
+          "locations": [],
+          "name": "Prismatic Punch Card",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 66,
+      "quest_id": 2930,
+      "quest_name": "Data Rescue",
+      "quest_tag": "Dungeon",
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2951"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required item: Grime-Encrusted Object. [QC2951 The Sparklematic 5200!]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Grime-Encrusted Object",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 9308,
+          "kind": "item",
+          "locations": [],
+          "name": "Grime-Encrusted Object",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 67,
+      "quest_id": 2951,
+      "quest_name": "The Sparklematic 5200!",
+      "quest_tag": "Dungeon",
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7950,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 69.83,
+              "y": 48.1
+            }
+          ],
+          "name": "Master Mechanic Castpipe",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2930"
+      ],
+      "instruction": "Turn in [QT2930 Data Rescue] to Master Mechanic Castpipe",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 68,
+      "quest_id": 2930,
+      "quest_name": "Data Rescue",
+      "quest_tag": "Dungeon",
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 142487,
+          "kind": "object",
+          "locations": [],
+          "name": "The Sparklematic 5200",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2951"
+      ],
+      "instruction": "Turn in [QT2951 The Sparklematic 5200!] to The Sparklematic 5200",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 69,
+      "quest_id": 2951,
+      "quest_name": "The Sparklematic 5200!",
+      "quest_tag": "Dungeon",
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 142487,
+          "kind": "object",
+          "locations": [],
+          "name": "The Sparklematic 5200",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2952"
+      ],
+      "instruction": "Accept [QA2952 The Sparklematic 5200!] from The Sparklematic 5200.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 70,
+      "quest_id": 2952,
+      "quest_name": "The Sparklematic 5200!",
+      "quest_tag": "Dungeon",
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2952"
+      ],
+      "instruction": "Dungeon \u2014 Complete [QC2952 The Sparklematic 5200!]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 71,
+      "quest_id": 2952,
+      "quest_name": "The Sparklematic 5200!",
+      "quest_tag": "Dungeon",
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 142487,
+          "kind": "object",
+          "locations": [],
+          "name": "The Sparklematic 5200",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2952"
+      ],
+      "instruction": "Turn in [QT2952 The Sparklematic 5200!] to The Sparklematic 5200",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 72,
+      "quest_id": 2952,
+      "quest_name": "The Sparklematic 5200!",
+      "quest_tag": "Dungeon",
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    }
+  ],
+  "title": "Optional Content 03 - Wetlands & Gnomeregan"
+}

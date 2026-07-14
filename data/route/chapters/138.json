@@ -1,0 +1,920 @@
+{
+  "branch": "optional_content",
+  "entry_contract": "Complete the relevant shared prerequisites. Begin in Terokkar Forest with Nexus-Prince Haramad. Leave at least two quest-log slots open; group and reputation gates remain explicit.",
+  "entry_route_point": {
+    "map_id": 3519,
+    "map_name": "Terokkar Forest",
+    "x": 39.37,
+    "y": 58.48
+  },
+  "entry_zone_or_sort": 3792,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 3518,
+    "map_name": "Nagrand",
+    "quest_id": 10252,
+    "tag": "QT",
+    "x": 51.82,
+    "y": 56.84
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Optional Content",
+  "guide_file": "Guides/optional_content/138_dungeon_42.lua",
+  "id": "138-optional_content-optional-content-42---mana-tombs-&-nagrand",
+  "maximum_level": null,
+  "minimum_level": null,
+  "next_chapter": "Optional Content 43 - Auchindoun & Auchindoun Dungeons",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "Optional Content 41 - Shattrath City & Nagrand",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 10165,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10228:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10165:starter"
+      ],
+      "instruction": "Travel from Shattrath City to Terokkar Forest. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G39.37,58.48 Terokkar Forest]. [O]",
+      "map_id": 3519,
+      "map_name": "Terokkar Forest",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 3703,
+      "origin_map_name": "Shattrath City",
+      "origin_x": 49.12,
+      "origin_y": 35.9,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 39.37,
+      "y": 58.48
+    },
+    {
+      "before_quest_id": 10165,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "route-branch:optional_content"
+      ],
+      "instruction": "Optional entry requirements: complete the relevant shared prerequisites. [O]",
+      "map_id": 3519,
+      "map_name": "Terokkar Forest",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "branch_entry",
+      "verification": "route_dependency_graph",
+      "x": 39.37,
+      "y": 58.48
+    },
+    {
+      "before_quest_id": 10165,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10165:starter"
+      ],
+      "instruction": "Optional chapter: travel to Terokkar Forest and begin at [G39.37,58.48 Terokkar Forest]. Leave at least two quest-log slots open. [O]",
+      "map_id": 3519,
+      "map_name": "Terokkar Forest",
+      "optional": true,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 39.37,
+      "y": 58.48
+    },
+    {
+      "before_quest_id": 10165,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10165:requiredLevel"
+      ],
+      "instruction": "Reach level 68 before accepting Undercutting the Competition. [XP68 Level 68]",
+      "map_id": 3519,
+      "map_name": "Terokkar Forest",
+      "optional": false,
+      "order": 4,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 68,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 39.37,
+      "y": 58.48
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19674,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 39.37,
+              "y": 58.48
+            }
+          ],
+          "name": "Nexus-Prince Haramad",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10165"
+      ],
+      "instruction": "Accept [QA10165 Undercutting the Competition] from Nexus-Prince Haramad.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 10165,
+      "quest_name": "Undercutting the Competition",
+      "quest_tag": "Dungeon",
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3792,
+      "zone_or_sort_name": "Mana-Tombs"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19670,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 39.42,
+              "y": 58.51
+            }
+          ],
+          "name": "Artificer Morphalius",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10216"
+      ],
+      "instruction": "Accept [QA10216 Safety Is Job One] from Artificer Morphalius.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 10216,
+      "quest_name": "Safety Is Job One",
+      "quest_tag": "Dungeon",
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3792,
+      "zone_or_sort_name": "Mana-Tombs"
+    },
+    {
+      "before_quest_id": 10165,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10165:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 3519,
+      "map_name": "Terokkar Forest",
+      "optional": true,
+      "order": 7,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        10165
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 39.37,
+      "y": 58.48
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10165"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required item: Shaffar's Wrappings. [QC10165 Undercutting the Competition]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Shaffar's Wrappings",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 28490,
+          "kind": "item",
+          "locations": [],
+          "name": "Shaffar's Wrappings",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 8,
+      "quest_id": 10165,
+      "quest_name": "Undercutting the Competition",
+      "quest_tag": "Dungeon",
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3792,
+      "zone_or_sort_name": "Mana-Tombs"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10216"
+      ],
+      "instruction": "Dungeon \u2014 Complete the required NPC or creature objectives: Ethereal Crypt Raider, Nexus Stalker, Ethereal Sorcerer, plus 1 more. [QC10216 Safety Is Job One]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Ethereal Crypt Raider, Nexus Stalker, Ethereal Sorcerer, plus 1 more",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18311,
+          "kind": "npc",
+          "locations": [],
+          "name": "Ethereal Crypt Raider",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18314,
+          "kind": "npc",
+          "locations": [],
+          "name": "Nexus Stalker",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18313,
+          "kind": "npc",
+          "locations": [],
+          "name": "Ethereal Sorcerer",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18312,
+          "kind": "npc",
+          "locations": [],
+          "name": "Ethereal Spellbinder",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 9,
+      "quest_id": 10216,
+      "quest_name": "Safety Is Job One",
+      "quest_tag": "Dungeon",
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3792,
+      "zone_or_sort_name": "Mana-Tombs"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19674,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 39.37,
+              "y": 58.48
+            }
+          ],
+          "name": "Nexus-Prince Haramad",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10165"
+      ],
+      "instruction": "Turn in [QT10165 Undercutting the Competition] to Nexus-Prince Haramad",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 10165,
+      "quest_name": "Undercutting the Competition",
+      "quest_tag": "Dungeon",
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3792,
+      "zone_or_sort_name": "Mana-Tombs"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 183877,
+          "kind": "object",
+          "locations": [],
+          "name": "Ethereal Transporter Control Panel",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10216"
+      ],
+      "instruction": "Turn in [QT10216 Safety Is Job One] to Ethereal Transporter Control Panel",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 10216,
+      "quest_name": "Safety Is Job One",
+      "quest_tag": "Dungeon",
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3792,
+      "zone_or_sort_name": "Mana-Tombs"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19671,
+          "kind": "npc",
+          "locations": [],
+          "name": "Cryo-Engineer Sha'heen",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10218"
+      ],
+      "instruction": "Accept [QA10218 Someone Else's Hard Work Pays Off] from Cryo-Engineer Sha'heen.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 10218,
+      "quest_name": "Someone Else's Hard Work Pays Off",
+      "quest_tag": "Dungeon",
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3792,
+      "zone_or_sort_name": "Mana-Tombs"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10218"
+      ],
+      "instruction": "Dungeon \u2014 Complete the scripted or exploration event. [QC10218 Someone Else's Hard Work Pays Off]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 10218,
+      "quest_name": "Someone Else's Hard Work Pays Off",
+      "quest_tag": "Dungeon",
+      "required_level": 68,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 3792,
+      "zone_or_sort_name": "Mana-Tombs"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19674,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 39.37,
+              "y": 58.48
+            }
+          ],
+          "name": "Nexus-Prince Haramad",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10218"
+      ],
+      "instruction": "Turn in [QT10218 Someone Else's Hard Work Pays Off] to Nexus-Prince Haramad",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 10218,
+      "quest_name": "Someone Else's Hard Work Pays Off",
+      "quest_tag": "Dungeon",
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3792,
+      "zone_or_sort_name": "Mana-Tombs"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19715,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 49.12,
+              "y": 35.9
+            }
+          ],
+          "name": "Ezekiel",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10231"
+      ],
+      "instruction": "Accept [QA10231 What Book? I Don't See Any Book.] from Ezekiel.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 10231,
+      "quest_name": "What Book? I Don't See Any Book.",
+      "quest_tag": "Elite",
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10231"
+      ],
+      "instruction": "Elite/group recommended \u2014 Complete the scripted or exploration event; complete the required NPC or creature objective: \"Dirty\" Larry. [QC10231 What Book? I Don't See Any Book.]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: \"Dirty\" Larry",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19720,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 43.63,
+              "y": 29.76
+            }
+          ],
+          "name": "\"Dirty\" Larry",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 16,
+      "quest_id": 10231,
+      "quest_name": "What Book? I Don't See Any Book.",
+      "quest_tag": "Elite",
+      "required_level": 68,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19720,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 43.63,
+              "y": 29.76
+            }
+          ],
+          "name": "\"Dirty\" Larry",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10231"
+      ],
+      "instruction": "Turn in [QT10231 What Book? I Don't See Any Book.] to \"Dirty\" Larry",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 10231,
+      "quest_name": "What Book? I Don't See Any Book.",
+      "quest_tag": "Elite",
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19720,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 43.63,
+              "y": 29.76
+            }
+          ],
+          "name": "\"Dirty\" Larry",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10251"
+      ],
+      "instruction": "Accept [QA10251 The Master's Grand Design?] from \"Dirty\" Larry.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 10251,
+      "quest_name": "The Master's Grand Design?",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10251"
+      ],
+      "instruction": "Complete [QC10251 The Master's Grand Design?]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 10251,
+      "quest_name": "The Master's Grand Design?",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19844,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 51.82,
+              "y": 56.84
+            }
+          ],
+          "name": "Nitrin the Learned",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10251"
+      ],
+      "instruction": "Turn in [QT10251 The Master's Grand Design?] to Nitrin the Learned",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 10251,
+      "quest_name": "The Master's Grand Design?",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19844,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 51.82,
+              "y": 56.84
+            }
+          ],
+          "name": "Nitrin the Learned",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10252"
+      ],
+      "instruction": "Accept [QA10252 Vision of the Dead] from Nitrin the Learned.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 10252,
+      "quest_name": "Vision of the Dead",
+      "quest_tag": "Elite",
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10252"
+      ],
+      "instruction": "Elite/group recommended \u2014 Collect or use the required items: Mountain Gronn Eyeball, Flawless Greater Windroc Beak, Aged Clefthoof Blubber. [QC10252 Vision of the Dead]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Mountain Gronn Eyeball, Flawless Greater Windroc Beak, Aged Clefthoof Blubber",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 28665,
+          "kind": "item",
+          "locations": [],
+          "name": "Mountain Gronn Eyeball",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 28667,
+          "kind": "item",
+          "locations": [],
+          "name": "Flawless Greater Windroc Beak",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 28668,
+          "kind": "item",
+          "locations": [],
+          "name": "Aged Clefthoof Blubber",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 22,
+      "quest_id": 10252,
+      "quest_name": "Vision of the Dead",
+      "quest_tag": "Elite",
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19844,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 51.82,
+              "y": 56.84
+            }
+          ],
+          "name": "Nitrin the Learned",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10252"
+      ],
+      "instruction": "Turn in [QT10252 Vision of the Dead] to Nitrin the Learned",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 23,
+      "quest_id": 10252,
+      "quest_name": "Vision of the Dead",
+      "quest_tag": "Elite",
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    }
+  ],
+  "title": "Optional Content 42 - Mana-Tombs & Nagrand"
+}

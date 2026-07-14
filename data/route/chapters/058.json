@@ -1,0 +1,4499 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 57 Ironforge & Searing Gorge, or select this chapter on a partially completed character. Begin in Teldrassil with Erelas Ambersky. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 141,
+    "map_name": "Teldrassil",
+    "x": 55.5,
+    "y": 92.05
+  },
+  "entry_zone_or_sort": 702,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 361,
+    "map_name": "Felwood",
+    "quest_id": 5385,
+    "tag": "QT",
+    "x": 51.35,
+    "y": 82.01
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/058_world_58.lua",
+  "id": "058-primary-58-felwood",
+  "maximum_level": 49,
+  "minimum_level": 47,
+  "next_chapter": "59 Winterspring & Blasted Lands",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "57 Ironforge & Searing Gorge",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 3661,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3566:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3661:starter",
+        "travel-network:auberdine-menethil",
+        "https://www.wowhead.com/tbc/quest=942/the-absent-minded-prospector"
+      ],
+      "instruction": "Travel from Ironforge to Teldrassil: Take the ship between Auberdine and Menethil Harbor. Continue to [G55.50,92.05 Teldrassil]. [O]",
+      "map_id": 141,
+      "map_name": "Teldrassil",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 1537,
+      "origin_map_name": "Ironforge",
+      "origin_x": 71.5,
+      "origin_y": 15.74,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [
+        "auberdine-menethil"
+      ],
+      "type": "transport",
+      "verification": "questie_endpoints_and_tbc_transport_network",
+      "x": 55.5,
+      "y": 92.05
+    },
+    {
+      "before_quest_id": 3661,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3661:starter"
+      ],
+      "instruction": "Before you begin: travel to Teldrassil and meet the first quest giver at [G55.50,92.05 Teldrassil]. Leave at least two quest-log slots open. [O]",
+      "map_id": 141,
+      "map_name": "Teldrassil",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 55.5,
+      "y": 92.05
+    },
+    {
+      "before_quest_id": 3661,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3661:requiredLevel"
+      ],
+      "instruction": "Reach level 47 before accepting Favored of Elune? [XP47 Level 47]",
+      "map_id": 141,
+      "map_name": "Teldrassil",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 47,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 55.5,
+      "y": 92.05
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7916,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 55.5,
+              "y": 92.05
+            }
+          ],
+          "name": "Erelas Ambersky",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3661"
+      ],
+      "instruction": "Accept [QA3661 Favored of Elune?] from Erelas Ambersky.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 3661,
+      "quest_name": "Favored of Elune?",
+      "quest_tag": null,
+      "required_level": 47,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 702,
+      "zone_or_sort_name": "Map or sort 702"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3661"
+      ],
+      "instruction": "Collect or use the required item: Wildkin Feather. [QC3661 Favored of Elune?]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Wildkin Feather",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 10819,
+          "kind": "item",
+          "locations": [],
+          "name": "Wildkin Feather",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 5,
+      "quest_id": 3661,
+      "quest_name": "Favored of Elune?",
+      "quest_tag": null,
+      "required_level": 47,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 702,
+      "zone_or_sort_name": "Map or sort 702"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7916,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 55.5,
+              "y": 92.05
+            }
+          ],
+          "name": "Erelas Ambersky",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3661"
+      ],
+      "instruction": "Turn in [QT3661 Favored of Elune?] to Erelas Ambersky",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 3661,
+      "quest_name": "Favored of Elune?",
+      "quest_tag": null,
+      "required_level": 47,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 702,
+      "zone_or_sort_name": "Map or sort 702"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11554,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 50.93,
+              "y": 85.01
+            }
+          ],
+          "name": "Grazle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8460"
+      ],
+      "instruction": "Accept [QA8460 Timbermaw Ally] from Grazle.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 8460,
+      "quest_name": "Timbermaw Ally",
+      "quest_tag": null,
+      "required_level": 47,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8460"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Deadwood Warrior, Deadwood Pathfinder, Deadwood Gardener. [QC8460 Timbermaw Ally]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Deadwood Warrior, Deadwood Pathfinder, Deadwood Gardener",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7153,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 49.73,
+              "y": 88.18
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 46.63,
+              "y": 91.98
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 48.66,
+              "y": 91.93
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 49.67,
+              "y": 91.62
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 48.17,
+              "y": 92.95
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 48.98,
+              "y": 90.97
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 48.72,
+              "y": 92.61
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 48.09,
+              "y": 93.73
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 47.75,
+              "y": 94.03
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 48.59,
+              "y": 93.96
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 46.26,
+              "y": 89.24
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 48.34,
+              "y": 90.89
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 48.85,
+              "y": 90.49
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 48.97,
+              "y": 91.43
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 48.39,
+              "y": 91.4
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 48.76,
+              "y": 88.92
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 47.92,
+              "y": 89.29
+            }
+          ],
+          "name": "Deadwood Warrior",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7155,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 47.42,
+              "y": 93.41
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 46.14,
+              "y": 89.87
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 49.22,
+              "y": 91.69
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 48.3,
+              "y": 89.46
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 46.37,
+              "y": 88.94
+            }
+          ],
+          "name": "Deadwood Pathfinder",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7154,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 46.3,
+              "y": 90.62
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 48.99,
+              "y": 92.57
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 47.38,
+              "y": 92.62
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 48.93,
+              "y": 89.08
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 49.23,
+              "y": 91.44
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 48.77,
+              "y": 88.88
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 48.42,
+              "y": 89.84
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 46.76,
+              "y": 88.31
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 46.24,
+              "y": 89.98
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 48.26,
+              "y": 91.45
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 47.68,
+              "y": 88.76
+            }
+          ],
+          "name": "Deadwood Gardener",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 8,
+      "quest_id": 8460,
+      "quest_name": "Timbermaw Ally",
+      "quest_tag": null,
+      "required_level": 47,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11554,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 50.93,
+              "y": 85.01
+            }
+          ],
+          "name": "Grazle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8460"
+      ],
+      "instruction": "Turn in [QT8460 Timbermaw Ally] to Grazle",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 8460,
+      "quest_name": "Timbermaw Ally",
+      "quest_tag": null,
+      "required_level": 47,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11554,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 50.93,
+              "y": 85.01
+            }
+          ],
+          "name": "Grazle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8462"
+      ],
+      "instruction": "Accept [QA8462 Speak to Nafien] from Grazle.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 8462,
+      "quest_name": "Speak to Nafien",
+      "quest_tag": null,
+      "required_level": 47,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 20741,
+          "kind": "item",
+          "locations": [],
+          "name": "Deadwood Ritual Totem",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8470"
+      ],
+      "instruction": "Accept [QA8470 Deadwood Ritual Totem] from Deadwood Ritual Totem.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 8470,
+      "quest_name": "Deadwood Ritual Totem",
+      "quest_tag": null,
+      "required_level": 47,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "before_quest_id": 4101,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4101:requiredLevel"
+      ],
+      "instruction": "Reach level 48 before accepting Cleansing Felwood. [XP48 Level 48]",
+      "map_id": 361,
+      "map_name": "Felwood",
+      "optional": false,
+      "order": 12,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 48,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 54.15,
+      "y": 86.83
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9528,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 54.15,
+              "y": 86.83
+            }
+          ],
+          "name": "Arathandris Silversky",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4101"
+      ],
+      "instruction": "Accept [QA4101 Cleansing Felwood] from Arathandris Silversky.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 4101,
+      "quest_name": "Cleansing Felwood",
+      "quest_tag": null,
+      "required_level": 48,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8462"
+      ],
+      "instruction": "Complete [QC8462 Speak to Nafien]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 8462,
+      "quest_name": "Speak to Nafien",
+      "quest_tag": null,
+      "required_level": 47,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8470"
+      ],
+      "instruction": "Use the quest item [UI20741-] as directed. [QC8470 Deadwood Ritual Totem]",
+      "item_use_id": 20741,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 8470,
+      "quest_name": "Deadwood Ritual Totem",
+      "quest_tag": null,
+      "required_level": 47,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4101"
+      ],
+      "instruction": "Collect or use the required item: Blood Amber. [QC4101 Cleansing Felwood]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Blood Amber",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 11503,
+          "kind": "item",
+          "locations": [],
+          "name": "Blood Amber",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 16,
+      "quest_id": 4101,
+      "quest_name": "Cleansing Felwood",
+      "quest_tag": null,
+      "required_level": 48,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9528,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 54.15,
+              "y": 86.83
+            }
+          ],
+          "name": "Arathandris Silversky",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4101"
+      ],
+      "instruction": "Turn in [QT4101 Cleansing Felwood] to Arathandris Silversky",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 4101,
+      "quest_name": "Cleansing Felwood",
+      "quest_tag": null,
+      "required_level": 48,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15395,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 64.77,
+              "y": 8.13
+            }
+          ],
+          "name": "Nafien",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8462"
+      ],
+      "instruction": "Turn in [QT8462 Speak to Nafien] to Nafien",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 8462,
+      "quest_name": "Speak to Nafien",
+      "quest_tag": null,
+      "required_level": 47,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11558,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 65.5,
+              "y": 3.52
+            }
+          ],
+          "name": "Kernda",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8470"
+      ],
+      "instruction": "Turn in [QT8470 Deadwood Ritual Totem] to Kernda",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 8470,
+      "quest_name": "Deadwood Ritual Totem",
+      "quest_tag": null,
+      "required_level": 47,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9528,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 54.15,
+              "y": 86.83
+            }
+          ],
+          "name": "Arathandris Silversky",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4103"
+      ],
+      "instruction": "Accept [QA4103 Salve via Hunting] from Arathandris Silversky.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 4103,
+      "quest_name": "Salve via Hunting",
+      "quest_tag": null,
+      "required_level": 48,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10922,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 51.21,
+              "y": 82.11
+            }
+          ],
+          "name": "Greta Mosshoof",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5155"
+      ],
+      "instruction": "Accept [QA5155 Forces of Jaedenar] from Greta Mosshoof.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 5155,
+      "quest_name": "Forces of Jaedenar",
+      "quest_tag": null,
+      "required_level": 48,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10921,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 50.89,
+              "y": 81.62
+            }
+          ],
+          "name": "Taronn Redfeather",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5156"
+      ],
+      "instruction": "Accept [QA5156 Verifying the Corruption] from Taronn Redfeather.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 22,
+      "quest_id": 5156,
+      "quest_name": "Verifying the Corruption",
+      "quest_tag": null,
+      "required_level": 48,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5155"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Jaedenar Hound, Jaedenar Guardian, Jaedenar Adept, plus 1 more. [QC5155 Forces of Jaedenar]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Jaedenar Hound, Jaedenar Guardian, Jaedenar Adept, plus 1 more",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7125,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 38.38,
+              "y": 61.07
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 38.7,
+              "y": 61.87
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 38.5,
+              "y": 61.41
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 38.83,
+              "y": 60.38
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 39.07,
+              "y": 59.18
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 35.78,
+              "y": 60.55
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 36.46,
+              "y": 61.85
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 34.47,
+              "y": 60.42
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 34.47,
+              "y": 60.13
+            }
+          ],
+          "name": "Jaedenar Hound",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7113,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 37.96,
+              "y": 61.35
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 38.07,
+              "y": 60.74
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 34.97,
+              "y": 59.4
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 36.41,
+              "y": 62.43
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 38.54,
+              "y": 61.13
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 38.76,
+              "y": 60.24
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 35.54,
+              "y": 58.89
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 38.46,
+              "y": 57.71
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 39.25,
+              "y": 59.27
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 38.34,
+              "y": 59.42
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 36.92,
+              "y": 61.28
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 37.5,
+              "y": 61.4
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 36.09,
+              "y": 62.1
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 35.89,
+              "y": 60.68
+            }
+          ],
+          "name": "Jaedenar Guardian",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7115,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 38.03,
+              "y": 62.08
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 37.66,
+              "y": 61.23
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 38.25,
+              "y": 61.45
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 38.95,
+              "y": 62.01
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 38.57,
+              "y": 60.58
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 39.17,
+              "y": 58.48
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 37.98,
+              "y": 60.65
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 38.23,
+              "y": 60.4
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 36.35,
+              "y": 61.34
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 35.38,
+              "y": 61.36
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 34.53,
+              "y": 59.73
+            }
+          ],
+          "name": "Jaedenar Adept",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7112,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 38.12,
+              "y": 62.16
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 37.72,
+              "y": 61.33
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 38.69,
+              "y": 61.55
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 38.46,
+              "y": 61.72
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 38.95,
+              "y": 62.2
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 38.15,
+              "y": 61.13
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 39.47,
+              "y": 58.18
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 36.46,
+              "y": 61.41
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 35.88,
+              "y": 61.38
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 35.13,
+              "y": 61.21
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 35.42,
+              "y": 60.05
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 34.9,
+              "y": 60.32
+            }
+          ],
+          "name": "Jaedenar Cultist",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 23,
+      "quest_id": 5155,
+      "quest_name": "Forces of Jaedenar",
+      "quest_tag": null,
+      "required_level": 48,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5156"
+      ],
+      "instruction": "Complete the scripted or exploration event; complete the required NPC or creature objectives: Entropic Beast, Entropic Horror. [QC5156 Verifying the Corruption]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Entropic Beast, Entropic Horror",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9878,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 43.91,
+              "y": 40.81
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 44.64,
+              "y": 40.98
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 42.77,
+              "y": 41.4
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 41.23,
+              "y": 37.83
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 42.66,
+              "y": 38.19
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 45.7,
+              "y": 38.6
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 45.11,
+              "y": 40.97
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 40.33,
+              "y": 38.98
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 43.35,
+              "y": 38.75
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 40.35,
+              "y": 41.18
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 44.46,
+              "y": 38.6
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 41.62,
+              "y": 41.37
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 41.73,
+              "y": 40.15
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 42.04,
+              "y": 37.74
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 41.25,
+              "y": 43.75
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 40.98,
+              "y": 39.65
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 43.45,
+              "y": 40.38
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 40.47,
+              "y": 42.17
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 44.45,
+              "y": 40.39
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 42.46,
+              "y": 41.17
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 40.14,
+              "y": 43.45
+            }
+          ],
+          "name": "Entropic Beast",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9879,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 43.91,
+              "y": 40.81
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 44.64,
+              "y": 40.98
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 42.77,
+              "y": 41.4
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 41.23,
+              "y": 37.83
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 42.66,
+              "y": 38.19
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 45.7,
+              "y": 38.6
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 45.11,
+              "y": 40.97
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 40.33,
+              "y": 38.98
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 43.35,
+              "y": 38.75
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 40.35,
+              "y": 41.18
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 44.46,
+              "y": 38.6
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 41.62,
+              "y": 41.37
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 41.73,
+              "y": 40.15
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 42.04,
+              "y": 37.74
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 41.25,
+              "y": 43.75
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 40.98,
+              "y": 39.65
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 43.45,
+              "y": 40.38
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 40.47,
+              "y": 42.17
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 44.45,
+              "y": 40.39
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 42.46,
+              "y": 41.17
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 40.14,
+              "y": 43.45
+            }
+          ],
+          "name": "Entropic Horror",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 24,
+      "quest_id": 5156,
+      "quest_name": "Verifying the Corruption",
+      "quest_tag": null,
+      "required_level": 48,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4103"
+      ],
+      "instruction": "Collect or use the required item: Corrupted Soul Shard. [QC4103 Salve via Hunting]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Corrupted Soul Shard",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 11515,
+          "kind": "item",
+          "locations": [],
+          "name": "Corrupted Soul Shard",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 25,
+      "quest_id": 4103,
+      "quest_name": "Salve via Hunting",
+      "quest_tag": null,
+      "required_level": 48,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10921,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 50.89,
+              "y": 81.62
+            }
+          ],
+          "name": "Taronn Redfeather",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5156"
+      ],
+      "instruction": "Turn in [QT5156 Verifying the Corruption] to Taronn Redfeather",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 26,
+      "quest_id": 5156,
+      "quest_name": "Verifying the Corruption",
+      "quest_tag": null,
+      "required_level": 48,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10922,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 51.21,
+              "y": 82.11
+            }
+          ],
+          "name": "Greta Mosshoof",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5155"
+      ],
+      "instruction": "Turn in [QT5155 Forces of Jaedenar] to Greta Mosshoof",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 27,
+      "quest_id": 5155,
+      "quest_name": "Forces of Jaedenar",
+      "quest_tag": null,
+      "required_level": 48,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9528,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 54.15,
+              "y": 86.83
+            }
+          ],
+          "name": "Arathandris Silversky",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4103"
+      ],
+      "instruction": "Turn in [QT4103 Salve via Hunting] to Arathandris Silversky",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 28,
+      "quest_id": 4103,
+      "quest_name": "Salve via Hunting",
+      "quest_tag": null,
+      "required_level": 48,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10922,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 51.21,
+              "y": 82.11
+            }
+          ],
+          "name": "Greta Mosshoof",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5157"
+      ],
+      "instruction": "Accept [QA5157 Collection of the Corrupt Water] from Greta Mosshoof.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 29,
+      "quest_id": 5157,
+      "quest_name": "Collection of the Corrupt Water",
+      "quest_tag": null,
+      "required_level": 48,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5157"
+      ],
+      "instruction": "Collect or use the required item: Corrupt Moonwell Water. [QC5157 Collection of the Corrupt Water]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Corrupt Moonwell Water",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 12907,
+          "kind": "item",
+          "locations": [],
+          "name": "Corrupt Moonwell Water",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 30,
+      "quest_id": 5157,
+      "quest_name": "Collection of the Corrupt Water",
+      "quest_tag": null,
+      "required_level": 48,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10922,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 51.21,
+              "y": 82.11
+            }
+          ],
+          "name": "Greta Mosshoof",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5157"
+      ],
+      "instruction": "Turn in [QT5157 Collection of the Corrupt Water] to Greta Mosshoof",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 31,
+      "quest_id": 5157,
+      "quest_name": "Collection of the Corrupt Water",
+      "quest_tag": null,
+      "required_level": 48,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10922,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 51.21,
+              "y": 82.11
+            }
+          ],
+          "name": "Greta Mosshoof",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5158"
+      ],
+      "instruction": "Accept [QA5158 Seeking Spiritual Aid] from Greta Mosshoof.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 32,
+      "quest_id": 5158,
+      "quest_name": "Seeking Spiritual Aid",
+      "quest_tag": null,
+      "required_level": 48,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5158"
+      ],
+      "instruction": "Complete [QC5158 Seeking Spiritual Aid]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 33,
+      "quest_id": 5158,
+      "quest_name": "Seeking Spiritual Aid",
+      "quest_tag": null,
+      "required_level": 48,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5901,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 65.83,
+              "y": 43.78
+            }
+          ],
+          "name": "Islen Waterseer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5158"
+      ],
+      "instruction": "Turn in [QT5158 Seeking Spiritual Aid] to Islen Waterseer",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 34,
+      "quest_id": 5158,
+      "quest_name": "Seeking Spiritual Aid",
+      "quest_tag": null,
+      "required_level": 48,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5901,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 65.83,
+              "y": 43.78
+            }
+          ],
+          "name": "Islen Waterseer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5159"
+      ],
+      "instruction": "Accept [QA5159 Cleansed Water Returns to Felwood] from Islen Waterseer.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 35,
+      "quest_id": 5159,
+      "quest_name": "Cleansed Water Returns to Felwood",
+      "quest_tag": null,
+      "required_level": 48,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5159"
+      ],
+      "instruction": "Complete [QC5159 Cleansed Water Returns to Felwood]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 36,
+      "quest_id": 5159,
+      "quest_name": "Cleansed Water Returns to Felwood",
+      "quest_tag": null,
+      "required_level": 48,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10922,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 51.21,
+              "y": 82.11
+            }
+          ],
+          "name": "Greta Mosshoof",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5159"
+      ],
+      "instruction": "Turn in [QT5159 Cleansed Water Returns to Felwood] to Greta Mosshoof",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 37,
+      "quest_id": 5159,
+      "quest_name": "Cleansed Water Returns to Felwood",
+      "quest_tag": null,
+      "required_level": 48,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10922,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 51.21,
+              "y": 82.11
+            }
+          ],
+          "name": "Greta Mosshoof",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5165"
+      ],
+      "instruction": "Accept [QA5165 Dousing the Flames of Protection] from Greta Mosshoof.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 38,
+      "quest_id": 5165,
+      "quest_name": "Dousing the Flames of Protection",
+      "quest_tag": null,
+      "required_level": 48,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5165"
+      ],
+      "instruction": "Use the quest item [UI12906-] as directed; interact with the required objects: Brazier of Pain, Brazier of Malice, Brazier of Suffering, plus 1 more. [QC5165 Dousing the Flames of Protection]",
+      "item_use_id": 12906,
+      "objective_hint": "Interact with the required objects: Brazier of Pain, Brazier of Malice, Brazier of Suffering, plus 1 more",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 176158,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 36.27,
+              "y": 56.3
+            }
+          ],
+          "name": "Brazier of Pain",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 176159,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 37.68,
+              "y": 52.69
+            }
+          ],
+          "name": "Brazier of Malice",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 176160,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 36.73,
+              "y": 53.27
+            }
+          ],
+          "name": "Brazier of Suffering",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 176161,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 36.48,
+              "y": 55.19
+            }
+          ],
+          "name": "Brazier of Hatred",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 39,
+      "quest_id": 5165,
+      "quest_name": "Dousing the Flames of Protection",
+      "quest_tag": null,
+      "required_level": 48,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10922,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 51.21,
+              "y": 82.11
+            }
+          ],
+          "name": "Greta Mosshoof",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5165"
+      ],
+      "instruction": "Turn in [QT5165 Dousing the Flames of Protection] to Greta Mosshoof",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 40,
+      "quest_id": 5165,
+      "quest_name": "Dousing the Flames of Protection",
+      "quest_tag": null,
+      "required_level": 48,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10922,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 51.21,
+              "y": 82.11
+            }
+          ],
+          "name": "Greta Mosshoof",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5242"
+      ],
+      "instruction": "Accept [QA5242 A Final Blow] from Greta Mosshoof.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 41,
+      "quest_id": 5242,
+      "quest_name": "A Final Blow",
+      "quest_tag": null,
+      "required_level": 48,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "before_quest_id": 939,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:939:requiredLevel"
+      ],
+      "instruction": "Reach level 49 before accepting Flute of Xavaric. [XP49 Level 49]",
+      "map_id": 361,
+      "map_name": "Felwood",
+      "optional": false,
+      "order": 42,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 49,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": null,
+      "y": null
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 11668,
+          "kind": "item",
+          "locations": [],
+          "name": "Flute of Xavaric",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:939"
+      ],
+      "instruction": "Accept [QA939 Flute of Xavaric] from Flute of Xavaric.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 43,
+      "quest_id": 939,
+      "quest_name": "Flute of Xavaric",
+      "quest_tag": null,
+      "required_level": 49,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9116,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 51.35,
+              "y": 81.51
+            }
+          ],
+          "name": "Eridan Bluewind",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4421"
+      ],
+      "instruction": "Accept [QA4421 The Corruption of the Jadefire] from Eridan Bluewind.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 44,
+      "quest_id": 4421,
+      "quest_name": "The Corruption of the Jadefire",
+      "quest_tag": null,
+      "required_level": 49,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4421"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Jadefire Felsworn, Jadefire Shadowstalker, Jadefire Rogue, plus 1 more. [QC4421 The Corruption of the Jadefire]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Jadefire Felsworn, Jadefire Shadowstalker, Jadefire Rogue, plus 1 more",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7109,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 44.15,
+              "y": 86.41
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 44.02,
+              "y": 88.89
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 42.94,
+              "y": 83.89
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 42.66,
+              "y": 83.26
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 43.18,
+              "y": 87.85
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 42.87,
+              "y": 88.14
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 43.13,
+              "y": 88.12
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 43.11,
+              "y": 88.84
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 40.66,
+              "y": 85.54
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 40.23,
+              "y": 84.52
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 38.88,
+              "y": 82.62
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 38.63,
+              "y": 81.41
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 39.19,
+              "y": 82.24
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 40.69,
+              "y": 83.79
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 36.81,
+              "y": 68.83
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 32.29,
+              "y": 67.26
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 35.39,
+              "y": 67.03
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 37.42,
+              "y": 67.48
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 37.51,
+              "y": 67.18
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 35.3,
+              "y": 66.63
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 32.95,
+              "y": 66.43
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 33.38,
+              "y": 66.72
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 42.03,
+              "y": 85.05
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 42.24,
+              "y": 86.36
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 39.76,
+              "y": 85.84
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 40.39,
+              "y": 86.42
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 39.96,
+              "y": 85.71
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 38.88,
+              "y": 82.98
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 38.85,
+              "y": 83.2
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 37.15,
+              "y": 69.87
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 37.84,
+              "y": 69.48
+            }
+          ],
+          "name": "Jadefire Felsworn",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7110,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 31.93,
+              "y": 66.14
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 37.39,
+              "y": 68.84
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 37.04,
+              "y": 68.13
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 37.13,
+              "y": 67.29
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 37.58,
+              "y": 66.53
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 32.76,
+              "y": 66.24
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 32.36,
+              "y": 65.92
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 33.91,
+              "y": 66.64
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 38.01,
+              "y": 69.09
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 36.95,
+              "y": 69.1
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 37.73,
+              "y": 69.26
+            }
+          ],
+          "name": "Jadefire Shadowstalker",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7106,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 37.37,
+              "y": 66.1
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 31.92,
+              "y": 66.95
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 36.9,
+              "y": 66.85
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 35.52,
+              "y": 66.76
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 37.34,
+              "y": 66.67
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 37.49,
+              "y": 66.35
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 37.66,
+              "y": 68.58
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 38.12,
+              "y": 69.46
+            }
+          ],
+          "name": "Jadefire Rogue",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9454,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 32.23,
+              "y": 67.11
+            }
+          ],
+          "name": "Xavathras",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 45,
+      "quest_id": 4421,
+      "quest_name": "The Corruption of the Jadefire",
+      "quest_tag": null,
+      "required_level": 49,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5242"
+      ],
+      "instruction": "Complete the required objectives \u2014 NPCs or creatures: Moora, Salia; items: Shadow Lord Fel'dan's Head. [QC5242 A Final Blow]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required objectives \u2014 NPCs or creatures: Moora, Salia; items: Shadow Lord Fel'dan's Head",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9861,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 38.81,
+              "y": 46.87
+            }
+          ],
+          "name": "Moora",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9860,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 38.79,
+              "y": 46.7
+            }
+          ],
+          "name": "Salia",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 13207,
+          "kind": "item",
+          "locations": [],
+          "name": "Shadow Lord Fel'dan's Head",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 46,
+      "quest_id": 5242,
+      "quest_name": "A Final Blow",
+      "quest_tag": null,
+      "required_level": 48,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:939"
+      ],
+      "instruction": "Collect or use the required item: Jadefire Felbind. [QC939 Flute of Xavaric]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Jadefire Felbind",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 11674,
+          "kind": "item",
+          "locations": [],
+          "name": "Jadefire Felbind",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 47,
+      "quest_id": 939,
+      "quest_name": "Flute of Xavaric",
+      "quest_tag": null,
+      "required_level": 49,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9116,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 51.35,
+              "y": 81.51
+            }
+          ],
+          "name": "Eridan Bluewind",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:939"
+      ],
+      "instruction": "Turn in [QT939 Flute of Xavaric] to Eridan Bluewind",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 48,
+      "quest_id": 939,
+      "quest_name": "Flute of Xavaric",
+      "quest_tag": null,
+      "required_level": 49,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9116,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 51.35,
+              "y": 81.51
+            }
+          ],
+          "name": "Eridan Bluewind",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4421"
+      ],
+      "instruction": "Turn in [QT4421 The Corruption of the Jadefire] to Eridan Bluewind",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 49,
+      "quest_id": 4421,
+      "quest_name": "The Corruption of the Jadefire",
+      "quest_tag": null,
+      "required_level": 49,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10922,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 51.21,
+              "y": 82.11
+            }
+          ],
+          "name": "Greta Mosshoof",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5242"
+      ],
+      "instruction": "Turn in [QT5242 A Final Blow] to Greta Mosshoof",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 50,
+      "quest_id": 5242,
+      "quest_name": "A Final Blow",
+      "quest_tag": null,
+      "required_level": 48,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9116,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 51.35,
+              "y": 81.51
+            }
+          ],
+          "name": "Eridan Bluewind",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4441"
+      ],
+      "instruction": "Accept [QA4441 Felbound Ancients] from Eridan Bluewind.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 51,
+      "quest_id": 4441,
+      "quest_name": "Felbound Ancients",
+      "quest_tag": null,
+      "required_level": 49,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4441"
+      ],
+      "instruction": "Use the quest item [UI11682-] as directed; collect or use the required item: Vial of Blessed Water. [QC4441 Felbound Ancients]",
+      "item_use_id": 11682,
+      "objective_hint": "Collect or use the required item: Vial of Blessed Water",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 5646,
+          "kind": "item",
+          "locations": [],
+          "name": "Vial of Blessed Water",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 52,
+      "quest_id": 4441,
+      "quest_name": "Felbound Ancients",
+      "quest_tag": null,
+      "required_level": 49,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9116,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 51.35,
+              "y": 81.51
+            }
+          ],
+          "name": "Eridan Bluewind",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4441"
+      ],
+      "instruction": "Turn in [QT4441 Felbound Ancients] to Eridan Bluewind",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 53,
+      "quest_id": 4441,
+      "quest_name": "Felbound Ancients",
+      "quest_tag": null,
+      "required_level": 49,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9116,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 51.35,
+              "y": 81.51
+            }
+          ],
+          "name": "Eridan Bluewind",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4442"
+      ],
+      "instruction": "Accept [QA4442 Purified!] from Eridan Bluewind.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 54,
+      "quest_id": 4442,
+      "quest_name": "Purified!",
+      "quest_tag": null,
+      "required_level": 49,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4442"
+      ],
+      "instruction": "Complete [QC4442 Purified!]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 55,
+      "quest_id": 4442,
+      "quest_name": "Purified!",
+      "quest_tag": null,
+      "required_level": 49,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9116,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 51.35,
+              "y": 81.51
+            }
+          ],
+          "name": "Eridan Bluewind",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4442"
+      ],
+      "instruction": "Turn in [QT4442 Purified!] to Eridan Bluewind",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 56,
+      "quest_id": 4442,
+      "quest_name": "Purified!",
+      "quest_tag": null,
+      "required_level": 49,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9598,
+          "kind": "npc",
+          "locations": [],
+          "name": "Arei",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4261"
+      ],
+      "instruction": "Accept [QA4261 Ancient Spirit] from Arei.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 57,
+      "quest_id": 4261,
+      "quest_name": "Ancient Spirit",
+      "quest_tag": null,
+      "required_level": 49,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9116,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 51.35,
+              "y": 81.51
+            }
+          ],
+          "name": "Eridan Bluewind",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4906"
+      ],
+      "instruction": "Accept [QA4906 Further Corruption] from Eridan Bluewind.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 58,
+      "quest_id": 4906,
+      "quest_name": "Further Corruption",
+      "quest_tag": null,
+      "required_level": 49,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 13140,
+          "kind": "item",
+          "locations": [],
+          "name": "Blood Red Key",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5202"
+      ],
+      "instruction": "Accept [QA5202 A Strange Red Key] from Blood Red Key.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 59,
+      "quest_id": 5202,
+      "quest_name": "A Strange Red Key",
+      "quest_tag": null,
+      "required_level": 49,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4906"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Jadefire Hellcaller, Jadefire Betrayer, Jadefire Trickster, plus 1 more. [QC4906 Further Corruption]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Jadefire Hellcaller, Jadefire Betrayer, Jadefire Trickster, plus 1 more",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7111,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 42.45,
+              "y": 14.49
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 43.29,
+              "y": 14.29
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 42.86,
+              "y": 14.99
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 43.31,
+              "y": 14.43
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 41.71,
+              "y": 21.69
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 39.3,
+              "y": 21.81
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 39.88,
+              "y": 22.24
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 39.61,
+              "y": 22.01
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 36.75,
+              "y": 56.5
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 41.21,
+              "y": 20.64
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 41.05,
+              "y": 18.86
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 39.39,
+              "y": 21.0
+            }
+          ],
+          "name": "Jadefire Hellcaller",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7108,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 42.53,
+              "y": 14.41
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 45.12,
+              "y": 14.34
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 39.24,
+              "y": 22.28
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 38.95,
+              "y": 22.05
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 42.46,
+              "y": 19.72
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 42.37,
+              "y": 17.05
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 42.14,
+              "y": 18.67
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 41.63,
+              "y": 19.6
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 41.78,
+              "y": 19.13
+            }
+          ],
+          "name": "Jadefire Betrayer",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7107,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 42.7,
+              "y": 15.91
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 42.81,
+              "y": 16.94
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 43.08,
+              "y": 15.61
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 43.2,
+              "y": 15.14
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 42.57,
+              "y": 14.72
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 43.4,
+              "y": 16.1
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 46.22,
+              "y": 14.4
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 42.52,
+              "y": 18.47
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 44.04,
+              "y": 13.78
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 44.86,
+              "y": 13.97
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 42.68,
+              "y": 17.98
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 36.67,
+              "y": 56.8
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 41.02,
+              "y": 20.41
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 40.72,
+              "y": 19.81
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 42.76,
+              "y": 18.67
+            },
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 41.35,
+              "y": 20.39
+            }
+          ],
+          "name": "Jadefire Trickster",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10648,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 39.07,
+              "y": 22.35
+            }
+          ],
+          "name": "Xavaric",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 60,
+      "quest_id": 4906,
+      "quest_name": "Further Corruption",
+      "quest_tag": null,
+      "required_level": 49,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4261"
+      ],
+      "instruction": "Complete the scripted or exploration event. [QC4261 Ancient Spirit]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 61,
+      "quest_id": 4261,
+      "quest_name": "Ancient Spirit",
+      "quest_tag": null,
+      "required_level": 49,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5202"
+      ],
+      "instruction": "Complete [QC5202 A Strange Red Key]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 62,
+      "quest_id": 5202,
+      "quest_name": "A Strange Red Key",
+      "quest_tag": null,
+      "required_level": 49,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11016,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 36.21,
+              "y": 55.47
+            }
+          ],
+          "name": "Captured Arko'narin",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5202"
+      ],
+      "instruction": "Turn in [QT5202 A Strange Red Key] to Captured Arko'narin",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 63,
+      "quest_id": 5202,
+      "quest_name": "A Strange Red Key",
+      "quest_tag": null,
+      "required_level": 49,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9116,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 51.35,
+              "y": 81.51
+            }
+          ],
+          "name": "Eridan Bluewind",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4906"
+      ],
+      "instruction": "Turn in [QT4906 Further Corruption] to Eridan Bluewind",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 64,
+      "quest_id": 4906,
+      "quest_name": "Further Corruption",
+      "quest_tag": null,
+      "required_level": 49,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3848,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 85.24,
+              "y": 44.71
+            }
+          ],
+          "name": "Kayneth Stillwind",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4261"
+      ],
+      "instruction": "Turn in [QT4261 Ancient Spirit] to Kayneth Stillwind",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 65,
+      "quest_id": 4261,
+      "quest_name": "Ancient Spirit",
+      "quest_tag": null,
+      "required_level": 49,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11016,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 36.21,
+              "y": 55.47
+            }
+          ],
+          "name": "Captured Arko'narin",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5203"
+      ],
+      "instruction": "Accept [QA5203 Rescue From Jaedenar] from Captured Arko'narin.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 66,
+      "quest_id": 5203,
+      "quest_name": "Rescue From Jaedenar",
+      "quest_tag": null,
+      "required_level": 49,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5203"
+      ],
+      "instruction": "Complete the scripted or exploration event. [QC5203 Rescue From Jaedenar]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 67,
+      "quest_id": 5203,
+      "quest_name": "Rescue From Jaedenar",
+      "quest_tag": null,
+      "required_level": 49,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11019,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 51.35,
+              "y": 82.01
+            }
+          ],
+          "name": "Jessir Moonbow",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5203"
+      ],
+      "instruction": "Turn in [QT5203 Rescue From Jaedenar] to Jessir Moonbow",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 68,
+      "quest_id": 5203,
+      "quest_name": "Rescue From Jaedenar",
+      "quest_tag": null,
+      "required_level": 49,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11019,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 51.35,
+              "y": 82.01
+            }
+          ],
+          "name": "Jessir Moonbow",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5204"
+      ],
+      "instruction": "Accept [QA5204 Retribution of the Light] from Jessir Moonbow.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 69,
+      "quest_id": 5204,
+      "quest_name": "Retribution of the Light",
+      "quest_tag": null,
+      "required_level": 49,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5204"
+      ],
+      "instruction": "Complete the required NPC or creature objective: Rakaiah. [QC5204 Retribution of the Light]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Rakaiah",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9518,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 38.3,
+              "y": 50.51
+            }
+          ],
+          "name": "Rakaiah",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 70,
+      "quest_id": 5204,
+      "quest_name": "Retribution of the Light",
+      "quest_tag": null,
+      "required_level": 49,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11020,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 38.5,
+              "y": 50.41
+            }
+          ],
+          "name": "Remains of Trey Lightforge",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5204"
+      ],
+      "instruction": "Turn in [QT5204 Retribution of the Light] to Remains of Trey Lightforge",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 71,
+      "quest_id": 5204,
+      "quest_name": "Retribution of the Light",
+      "quest_tag": null,
+      "required_level": 49,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11020,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 38.5,
+              "y": 50.41
+            }
+          ],
+          "name": "Remains of Trey Lightforge",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5385"
+      ],
+      "instruction": "Accept [QA5385 The Remains of Trey Lightforge] from Remains of Trey Lightforge.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 72,
+      "quest_id": 5385,
+      "quest_name": "The Remains of Trey Lightforge",
+      "quest_tag": null,
+      "required_level": 49,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5385"
+      ],
+      "instruction": "Complete [QC5385 The Remains of Trey Lightforge]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 73,
+      "quest_id": 5385,
+      "quest_name": "The Remains of Trey Lightforge",
+      "quest_tag": null,
+      "required_level": 49,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11019,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 51.35,
+              "y": 82.01
+            }
+          ],
+          "name": "Jessir Moonbow",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5385"
+      ],
+      "instruction": "Turn in [QT5385 The Remains of Trey Lightforge] to Jessir Moonbow",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 74,
+      "quest_id": 5385,
+      "quest_name": "The Remains of Trey Lightforge",
+      "quest_tag": null,
+      "required_level": 49,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 361,
+      "zone_or_sort_name": "Felwood"
+    }
+  ],
+  "title": "58 Felwood"
+}

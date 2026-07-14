@@ -1,0 +1,783 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 74 Burning Steppes & Blasted Lands, or select this chapter on a partially completed character. Begin in Teldrassil with Erelas Ambersky. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 141,
+    "map_name": "Teldrassil",
+    "x": 55.5,
+    "y": 92.05
+  },
+  "entry_zone_or_sort": 702,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 1657,
+    "map_name": "Darnassus",
+    "quest_id": 5253,
+    "tag": "QT",
+    "x": 34.81,
+    "y": 9.26
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/075_world_75.lua",
+  "id": "075-primary-75-winterspring",
+  "maximum_level": 56,
+  "minimum_level": 56,
+  "next_chapter": "76 Silithus",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "74 Burning Steppes & Blasted Lands",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 978,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2744:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:978:starter"
+      ],
+      "instruction": "Travel from Azshara to Teldrassil. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G55.50,92.05 Teldrassil]. [O]",
+      "map_id": 141,
+      "map_name": "Teldrassil",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 16,
+      "origin_map_name": "Azshara",
+      "origin_x": 60.82,
+      "origin_y": 66.35,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 55.5,
+      "y": 92.05
+    },
+    {
+      "before_quest_id": 978,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:978:starter"
+      ],
+      "instruction": "Before you begin: travel to Teldrassil and meet the first quest giver at [G55.50,92.05 Teldrassil]. Leave at least two quest-log slots open. [O]",
+      "map_id": 141,
+      "map_name": "Teldrassil",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 55.5,
+      "y": 92.05
+    },
+    {
+      "before_quest_id": 978,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:978:requiredLevel"
+      ],
+      "instruction": "Reach level 56 before accepting Moontouched Wildkin. [XP56 Level 56]",
+      "map_id": 141,
+      "map_name": "Teldrassil",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 56,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 55.5,
+      "y": 92.05
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7916,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 55.5,
+              "y": 92.05
+            }
+          ],
+          "name": "Erelas Ambersky",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:978"
+      ],
+      "instruction": "Accept [QA978 Moontouched Wildkin] from Erelas Ambersky.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 978,
+      "quest_name": "Moontouched Wildkin",
+      "quest_tag": null,
+      "required_level": 56,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 702,
+      "zone_or_sort_name": "Map or sort 702"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:978"
+      ],
+      "instruction": "Collect or use the required item: Moontouched Feather. [QC978 Moontouched Wildkin]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Moontouched Feather",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 12383,
+          "kind": "item",
+          "locations": [],
+          "name": "Moontouched Feather",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 5,
+      "quest_id": 978,
+      "quest_name": "Moontouched Wildkin",
+      "quest_tag": null,
+      "required_level": 56,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 702,
+      "zone_or_sort_name": "Map or sort 702"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7916,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 55.5,
+              "y": 92.05
+            }
+          ],
+          "name": "Erelas Ambersky",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:978"
+      ],
+      "instruction": "Turn in [QT978 Moontouched Wildkin] to Erelas Ambersky",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 978,
+      "quest_name": "Moontouched Wildkin",
+      "quest_tag": null,
+      "required_level": 56,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 702,
+      "zone_or_sort_name": "Map or sort 702"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7916,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 55.5,
+              "y": 92.05
+            }
+          ],
+          "name": "Erelas Ambersky",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:979"
+      ],
+      "instruction": "Accept [QA979 Find Ranshalla] from Erelas Ambersky.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 979,
+      "quest_name": "Find Ranshalla",
+      "quest_tag": null,
+      "required_level": 56,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 702,
+      "zone_or_sort_name": "Map or sort 702"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:979"
+      ],
+      "instruction": "Complete [QC979 Find Ranshalla]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 979,
+      "quest_name": "Find Ranshalla",
+      "quest_tag": null,
+      "required_level": 56,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 702,
+      "zone_or_sort_name": "Map or sort 702"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10300,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 63.07,
+              "y": 59.48
+            }
+          ],
+          "name": "Ranshalla",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:979"
+      ],
+      "instruction": "Turn in [QT979 Find Ranshalla] to Ranshalla",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 979,
+      "quest_name": "Find Ranshalla",
+      "quest_tag": null,
+      "required_level": 56,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 702,
+      "zone_or_sort_name": "Map or sort 702"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10300,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 63.07,
+              "y": 59.48
+            }
+          ],
+          "name": "Ranshalla",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4901"
+      ],
+      "instruction": "Accept [QA4901 Guardians of the Altar] from Ranshalla.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 4901,
+      "quest_name": "Guardians of the Altar",
+      "quest_tag": null,
+      "required_level": 56,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 618,
+      "zone_or_sort_name": "Winterspring"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4901"
+      ],
+      "instruction": "Complete the scripted or exploration event. [QC4901 Guardians of the Altar]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 4901,
+      "quest_name": "Guardians of the Altar",
+      "quest_tag": null,
+      "required_level": 56,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 618,
+      "zone_or_sort_name": "Winterspring"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7916,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 55.5,
+              "y": 92.05
+            }
+          ],
+          "name": "Erelas Ambersky",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4901"
+      ],
+      "instruction": "Turn in [QT4901 Guardians of the Altar] to Erelas Ambersky",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 4901,
+      "quest_name": "Guardians of the Altar",
+      "quest_tag": null,
+      "required_level": 56,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 618,
+      "zone_or_sort_name": "Winterspring"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7916,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 55.5,
+              "y": 92.05
+            }
+          ],
+          "name": "Erelas Ambersky",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4902"
+      ],
+      "instruction": "Accept [QA4902 Wildkin of Elune] from Erelas Ambersky.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 4902,
+      "quest_name": "Wildkin of Elune",
+      "quest_tag": null,
+      "required_level": 56,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 618,
+      "zone_or_sort_name": "Winterspring"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4902"
+      ],
+      "instruction": "Complete [QC4902 Wildkin of Elune]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 4902,
+      "quest_name": "Wildkin of Elune",
+      "quest_tag": null,
+      "required_level": 56,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 618,
+      "zone_or_sort_name": "Winterspring"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3516,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1657,
+              "map_name": "Darnassus",
+              "verification": "questie_structured_source_only",
+              "x": 34.81,
+              "y": 9.26
+            }
+          ],
+          "name": "Arch Druid Fandral Staghelm",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4902"
+      ],
+      "instruction": "Turn in [QT4902 Wildkin of Elune] to Arch Druid Fandral Staghelm",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 4902,
+      "quest_name": "Wildkin of Elune",
+      "quest_tag": null,
+      "required_level": 56,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 618,
+      "zone_or_sort_name": "Winterspring"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10684,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 56.14,
+              "y": 44.36
+            }
+          ],
+          "name": "Remorseful Highborne",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5252"
+      ],
+      "instruction": "Accept [QA5252 Remorseful Highborne] from Remorseful Highborne.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 5252,
+      "quest_name": "Remorseful Highborne",
+      "quest_tag": null,
+      "required_level": 56,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 618,
+      "zone_or_sort_name": "Winterspring"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5252"
+      ],
+      "instruction": "Use the quest item [UI13347-] as directed. [QC5252 Remorseful Highborne]",
+      "item_use_id": 13347,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 5252,
+      "quest_name": "Remorseful Highborne",
+      "quest_tag": null,
+      "required_level": 56,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 618,
+      "zone_or_sort_name": "Winterspring"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11079,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 51.97,
+              "y": 30.39
+            }
+          ],
+          "name": "Wynd Nightchaser",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5252"
+      ],
+      "instruction": "Turn in [QT5252 Remorseful Highborne] to Wynd Nightchaser",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 5252,
+      "quest_name": "Remorseful Highborne",
+      "quest_tag": null,
+      "required_level": 56,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 618,
+      "zone_or_sort_name": "Winterspring"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11079,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 51.97,
+              "y": 30.39
+            }
+          ],
+          "name": "Wynd Nightchaser",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5253"
+      ],
+      "instruction": "Accept [QA5253 The Crystal of Zin-Malor] from Wynd Nightchaser.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 5253,
+      "quest_name": "The Crystal of Zin-Malor",
+      "quest_tag": null,
+      "required_level": 56,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 618,
+      "zone_or_sort_name": "Winterspring"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5253"
+      ],
+      "instruction": "Complete [QC5253 The Crystal of Zin-Malor]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 5253,
+      "quest_name": "The Crystal of Zin-Malor",
+      "quest_tag": null,
+      "required_level": 56,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 618,
+      "zone_or_sort_name": "Winterspring"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3516,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1657,
+              "map_name": "Darnassus",
+              "verification": "questie_structured_source_only",
+              "x": 34.81,
+              "y": 9.26
+            }
+          ],
+          "name": "Arch Druid Fandral Staghelm",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5253"
+      ],
+      "instruction": "Turn in [QT5253 The Crystal of Zin-Malor] to Arch Druid Fandral Staghelm",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 5253,
+      "quest_name": "The Crystal of Zin-Malor",
+      "quest_tag": null,
+      "required_level": 56,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 618,
+      "zone_or_sort_name": "Winterspring"
+    }
+  ],
+  "title": "75 Winterspring"
+}

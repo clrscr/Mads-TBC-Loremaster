@@ -1,0 +1,1011 @@
+{
+  "branch": "optional_content",
+  "entry_contract": "Complete the relevant shared prerequisites. Begin in Tanaris with Frame of Atiesh. Leave at least two quest-log slots open; group and reputation gates remain explicit.",
+  "entry_route_point": {
+    "map_id": 440,
+    "map_name": "Tanaris",
+    "x": 64.2,
+    "y": 51.42
+  },
+  "entry_zone_or_sort": -344,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 1377,
+    "map_name": "Silithus",
+    "quest_id": 7787,
+    "tag": "QT",
+    "x": 21.71,
+    "y": 8.57
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Optional Content",
+  "guide_file": "Guides/optional_content/126_raid_30.lua",
+  "id": "126-optional_content-optional-content-30---legendary",
+  "maximum_level": null,
+  "minimum_level": null,
+  "next_chapter": "Optional Content 31 - Alcaz Island & Blackrock Spire",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "Optional Content 29 - Hunter & Epic",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 9250,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8960:QA",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9250:finisher",
+        "travel-network:ratchet-booty-bay",
+        "https://www.wowhead.com/tbc/quest=1040/passage-to-booty-bay"
+      ],
+      "instruction": "Travel from Ironforge to Tanaris: Take the ship between Ratchet and Booty Bay. Continue to [G64.20,51.42 Tanaris]. [O]",
+      "map_id": 440,
+      "map_name": "Tanaris",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 1537,
+      "origin_map_name": "Ironforge",
+      "origin_x": 43.53,
+      "origin_y": 52.64,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [
+        "ratchet-booty-bay"
+      ],
+      "type": "transport",
+      "verification": "questie_endpoints_and_tbc_transport_network",
+      "x": 64.2,
+      "y": 51.42
+    },
+    {
+      "before_quest_id": 9250,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "route-branch:optional_content"
+      ],
+      "instruction": "Optional entry requirements: complete the relevant shared prerequisites. [O]",
+      "map_id": 440,
+      "map_name": "Tanaris",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "branch_entry",
+      "verification": "route_dependency_graph",
+      "x": 64.2,
+      "y": 51.42
+    },
+    {
+      "before_quest_id": 9250,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9250:finisher"
+      ],
+      "instruction": "Optional chapter: travel to Tanaris and begin at [G64.20,51.42 Tanaris]. Leave at least two quest-log slots open. [O]",
+      "map_id": 440,
+      "map_name": "Tanaris",
+      "optional": true,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 64.2,
+      "y": 51.42
+    },
+    {
+      "before_quest_id": 9250,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9250:requiredLevel"
+      ],
+      "instruction": "Reach level 62 before accepting Frame of Atiesh. [XP62 Level 62]",
+      "map_id": -344,
+      "map_name": "Legendary",
+      "optional": false,
+      "order": 4,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 62,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": null,
+      "y": null
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 22727,
+          "kind": "item",
+          "locations": [],
+          "name": "Frame of Atiesh",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9250"
+      ],
+      "instruction": "Accept [QA9250 Frame of Atiesh] from Frame of Atiesh.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 9250,
+      "quest_name": "Frame of Atiesh",
+      "quest_tag": "Raid",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": -344,
+      "zone_or_sort_name": "Legendary"
+    },
+    {
+      "before_quest_id": 9250,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9250:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 440,
+      "map_name": "Tanaris",
+      "optional": true,
+      "order": 6,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        9250
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 64.2,
+      "y": 51.42
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9250"
+      ],
+      "instruction": "Raid \u2014 Complete [QC9250 Frame of Atiesh]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 9250,
+      "quest_name": "Frame of Atiesh",
+      "quest_tag": "Raid",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": -344,
+      "zone_or_sort_name": "Legendary"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15192,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 64.2,
+              "y": 51.42
+            }
+          ],
+          "name": "Anachronos",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9250"
+      ],
+      "instruction": "Turn in [QT9250 Frame of Atiesh] to Anachronos",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 9250,
+      "quest_name": "Frame of Atiesh",
+      "quest_tag": "Raid",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": -344,
+      "zone_or_sort_name": "Legendary"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15192,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 64.2,
+              "y": 51.42
+            }
+          ],
+          "name": "Anachronos",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9251"
+      ],
+      "instruction": "Accept [QA9251 Atiesh, the Befouled Greatstaff] from Anachronos.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 9251,
+      "quest_name": "Atiesh, the Befouled Greatstaff",
+      "quest_tag": "Raid",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": -344,
+      "zone_or_sort_name": "Legendary"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9251"
+      ],
+      "instruction": "Raid \u2014 Collect or use the required items: Staff Head of Atiesh, Base of Atiesh. [QC9251 Atiesh, the Befouled Greatstaff]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Staff Head of Atiesh, Base of Atiesh",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 22733,
+          "kind": "item",
+          "locations": [],
+          "name": "Staff Head of Atiesh",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 22734,
+          "kind": "item",
+          "locations": [],
+          "name": "Base of Atiesh",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 10,
+      "quest_id": 9251,
+      "quest_name": "Atiesh, the Befouled Greatstaff",
+      "quest_tag": "Raid",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": -344,
+      "zone_or_sort_name": "Legendary"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15192,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 64.2,
+              "y": 51.42
+            }
+          ],
+          "name": "Anachronos",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9251"
+      ],
+      "instruction": "Turn in [QT9251 Atiesh, the Befouled Greatstaff] to Anachronos",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 9251,
+      "quest_name": "Atiesh, the Befouled Greatstaff",
+      "quest_tag": "Raid",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": -344,
+      "zone_or_sort_name": "Legendary"
+    },
+    {
+      "category": "legendary",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "legendary",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 19016,
+          "kind": "item",
+          "locations": [],
+          "name": "Vessel of Rebirth",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7785"
+      ],
+      "instruction": "Accept [QA7785 Examine the Vessel] from Vessel of Rebirth.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 7785,
+      "quest_name": "Examine the Vessel",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": -344,
+      "zone_or_sort_name": "Legendary"
+    },
+    {
+      "category": "legendary",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "legendary",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7785"
+      ],
+      "instruction": "Complete [QC7785 Examine the Vessel]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 7785,
+      "quest_name": "Examine the Vessel",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": -344,
+      "zone_or_sort_name": "Legendary"
+    },
+    {
+      "category": "legendary",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "legendary",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14347,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 21.71,
+              "y": 8.57
+            }
+          ],
+          "name": "Highlord Demitrian",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7785"
+      ],
+      "instruction": "Turn in [QT7785 Examine the Vessel] to Highlord Demitrian",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 7785,
+      "quest_name": "Examine the Vessel",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": -344,
+      "zone_or_sort_name": "Legendary"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14347,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 21.71,
+              "y": 8.57
+            }
+          ],
+          "name": "Highlord Demitrian",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7786"
+      ],
+      "instruction": "Accept [QA7786 Thunderaan the Windseeker] from Highlord Demitrian.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 7786,
+      "quest_name": "Thunderaan the Windseeker",
+      "quest_tag": "Raid",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": -344,
+      "zone_or_sort_name": "Legendary"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7786"
+      ],
+      "instruction": "Raid \u2014 Collect or use the required items: Elementium Bar, Essence of the Firelord, Bindings of the Windseeker. [QC7786 Thunderaan the Windseeker]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Elementium Bar, Essence of the Firelord, Bindings of the Windseeker",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 17771,
+          "kind": "item",
+          "locations": [],
+          "name": "Elementium Bar",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 19017,
+          "kind": "item",
+          "locations": [],
+          "name": "Essence of the Firelord",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 18563,
+          "kind": "item",
+          "locations": [],
+          "name": "Bindings of the Windseeker",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 18564,
+          "kind": "item",
+          "locations": [],
+          "name": "Bindings of the Windseeker",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 16,
+      "quest_id": 7786,
+      "quest_name": "Thunderaan the Windseeker",
+      "quest_tag": "Raid",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": -344,
+      "zone_or_sort_name": "Legendary"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14347,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 21.71,
+              "y": 8.57
+            }
+          ],
+          "name": "Highlord Demitrian",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7786"
+      ],
+      "instruction": "Turn in [QT7786 Thunderaan the Windseeker] to Highlord Demitrian",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 7786,
+      "quest_name": "Thunderaan the Windseeker",
+      "quest_tag": "Raid",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": -344,
+      "zone_or_sort_name": "Legendary"
+    },
+    {
+      "category": "legendary",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "legendary",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 19018,
+          "kind": "item",
+          "locations": [],
+          "name": "Dormant Wind Kissed Blade",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7787"
+      ],
+      "instruction": "Accept [QA7787 Rise, Thunderfury!] from Dormant Wind Kissed Blade.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 7787,
+      "quest_name": "Rise, Thunderfury!",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": -344,
+      "zone_or_sort_name": "Legendary"
+    },
+    {
+      "category": "legendary",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "legendary",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7787"
+      ],
+      "instruction": "Complete [QC7787 Rise, Thunderfury!]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 7787,
+      "quest_name": "Rise, Thunderfury!",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": -344,
+      "zone_or_sort_name": "Legendary"
+    },
+    {
+      "category": "legendary",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "legendary",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14347,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 21.71,
+              "y": 8.57
+            }
+          ],
+          "name": "Highlord Demitrian",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7787"
+      ],
+      "instruction": "Turn in [QT7787 Rise, Thunderfury!] to Highlord Demitrian",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 7787,
+      "quest_name": "Rise, Thunderfury!",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": -344,
+      "zone_or_sort_name": "Legendary"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16033,
+          "kind": "npc",
+          "locations": [],
+          "name": "Bodley",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8966"
+      ],
+      "instruction": "Accept [QA8966 The Left Piece of Lord Valthalak's Amulet] from Bodley.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 8966,
+      "quest_name": "The Left Piece of Lord Valthalak's Amulet",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1583,
+      "zone_or_sort_name": "Blackrock Spire"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8966"
+      ],
+      "instruction": "Dungeon \u2014 Use the quest item [UI22049-] as directed; complete the required objectives \u2014 NPCs or creatures: Mor Grayhoof; items: Left Piece of Lord Valthalak's Amulet. [QC8966 The Left Piece of Lord Valthalak's Amulet]",
+      "item_use_id": 22049,
+      "objective_hint": "Complete the required objectives \u2014 NPCs or creatures: Mor Grayhoof; items: Left Piece of Lord Valthalak's Amulet",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16080,
+          "kind": "npc",
+          "locations": [],
+          "name": "Mor Grayhoof",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 21984,
+          "kind": "item",
+          "locations": [],
+          "name": "Left Piece of Lord Valthalak's Amulet",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 22,
+      "quest_id": 8966,
+      "quest_name": "The Left Piece of Lord Valthalak's Amulet",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1583,
+      "zone_or_sort_name": "Blackrock Spire"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16033,
+          "kind": "npc",
+          "locations": [],
+          "name": "Bodley",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8966"
+      ],
+      "instruction": "Turn in [QT8966 The Left Piece of Lord Valthalak's Amulet] to Bodley",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 23,
+      "quest_id": 8966,
+      "quest_name": "The Left Piece of Lord Valthalak's Amulet",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1583,
+      "zone_or_sort_name": "Blackrock Spire"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16033,
+          "kind": "npc",
+          "locations": [],
+          "name": "Bodley",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8991"
+      ],
+      "instruction": "Accept [QA8991 The Right Piece of Lord Valthalak's Amulet] from Bodley.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 24,
+      "quest_id": 8991,
+      "quest_name": "The Right Piece of Lord Valthalak's Amulet",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 2017,
+      "zone_or_sort_name": "Stratholme"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8991"
+      ],
+      "instruction": "Dungeon \u2014 Use the quest item [UI22051-] as directed; complete the required objectives \u2014 NPCs or creatures: Jarien, Sothos; items: Lord Valthalak's Amulet. [QC8991 The Right Piece of Lord Valthalak's Amulet]",
+      "item_use_id": 22051,
+      "objective_hint": "Complete the required objectives \u2014 NPCs or creatures: Jarien, Sothos; items: Lord Valthalak's Amulet",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16101,
+          "kind": "npc",
+          "locations": [],
+          "name": "Jarien",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16102,
+          "kind": "npc",
+          "locations": [],
+          "name": "Sothos",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 22048,
+          "kind": "item",
+          "locations": [],
+          "name": "Lord Valthalak's Amulet",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 25,
+      "quest_id": 8991,
+      "quest_name": "The Right Piece of Lord Valthalak's Amulet",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 2017,
+      "zone_or_sort_name": "Stratholme"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16033,
+          "kind": "npc",
+          "locations": [],
+          "name": "Bodley",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8991"
+      ],
+      "instruction": "Turn in [QT8991 The Right Piece of Lord Valthalak's Amulet] to Bodley",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 26,
+      "quest_id": 8991,
+      "quest_name": "The Right Piece of Lord Valthalak's Amulet",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 2017,
+      "zone_or_sort_name": "Stratholme"
+    }
+  ],
+  "title": "Optional Content 30 - Legendary"
+}

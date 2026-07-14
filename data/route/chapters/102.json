@@ -1,0 +1,2726 @@
+{
+  "branch": "optional_content",
+  "entry_contract": "Complete Down the Scarlet Path; complete A Sign of Hope. Begin in Ironforge with Librarian Mae Paledust. Leave at least two quest-log slots open; group and reputation gates remain explicit.",
+  "entry_route_point": {
+    "map_id": 1537,
+    "map_name": "Ironforge",
+    "x": 74.97,
+    "y": 12.48
+  },
+  "entry_zone_or_sort": 796,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 1537,
+    "map_name": "Ironforge",
+    "quest_id": 2279,
+    "tag": "QT",
+    "x": 69.93,
+    "y": 18.55
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [
+    [
+      1052
+    ],
+    [
+      720
+    ]
+  ],
+  "external_prerequisite_quest_ids": [
+    720,
+    1052
+  ],
+  "group": "Mad's Loremaster Guide - Optional Content",
+  "guide_file": "Guides/optional_content/102_dungeon_06.lua",
+  "id": "102-optional_content-optional-content-06---razorfen-downs-&-scarlet-monastery",
+  "maximum_level": null,
+  "minimum_level": null,
+  "next_chapter": "Optional Content 07 - Badlands & Sunken Temple",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "Optional Content 05 - Gnomeregan & Arathi Basin",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 1050,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2948:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1050:starter"
+      ],
+      "instruction": "Continue within Ironforge to the next route hub at [G74.97,12.48 Ironforge]. [O]",
+      "map_id": 1537,
+      "map_name": "Ironforge",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 1537,
+      "origin_map_name": "Ironforge",
+      "origin_x": 36.38,
+      "origin_y": 3.61,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 74.97,
+      "y": 12.48
+    },
+    {
+      "before_quest_id": 1050,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:720:dependency",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1052:dependency"
+      ],
+      "instruction": "Optional entry requirements: complete Down the Scarlet Path; complete A Sign of Hope. [O]",
+      "map_id": 1537,
+      "map_name": "Ironforge",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        720,
+        1052
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "branch_entry",
+      "verification": "route_dependency_graph",
+      "x": 74.97,
+      "y": 12.48
+    },
+    {
+      "before_quest_id": 1050,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1050:starter"
+      ],
+      "instruction": "Optional chapter: travel to Ironforge and begin at [G74.97,12.48 Ironforge]. Leave at least two quest-log slots open. [O]",
+      "map_id": 1537,
+      "map_name": "Ironforge",
+      "optional": true,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 74.97,
+      "y": 12.48
+    },
+    {
+      "before_quest_id": 1050,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1050:requiredLevel"
+      ],
+      "instruction": "Reach level 28 before accepting Mythology of the Titans. [XP28 Level 28]",
+      "map_id": 1537,
+      "map_name": "Ironforge",
+      "optional": false,
+      "order": 4,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 28,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 74.97,
+      "y": 12.48
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3979,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 74.97,
+              "y": 12.48
+            }
+          ],
+          "name": "Librarian Mae Paledust",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1050"
+      ],
+      "instruction": "Accept [QA1050 Mythology of the Titans] from Librarian Mae Paledust.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 1050,
+      "quest_name": "Mythology of the Titans",
+      "quest_tag": "Dungeon",
+      "required_level": 28,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 796,
+      "zone_or_sort_name": "Scarlet Monastery"
+    },
+    {
+      "before_quest_id": 1050,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1050:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 1537,
+      "map_name": "Ironforge",
+      "optional": true,
+      "order": 6,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        1050
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 74.97,
+      "y": 12.48
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1050"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required item: Mythology of the Titans. [QC1050 Mythology of the Titans]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Mythology of the Titans",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 5536,
+          "kind": "item",
+          "locations": [],
+          "name": "Mythology of the Titans",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 7,
+      "quest_id": 1050,
+      "quest_name": "Mythology of the Titans",
+      "quest_tag": "Dungeon",
+      "required_level": 28,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 796,
+      "zone_or_sort_name": "Scarlet Monastery"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3979,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 74.97,
+              "y": 12.48
+            }
+          ],
+          "name": "Librarian Mae Paledust",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1050"
+      ],
+      "instruction": "Turn in [QT1050 Mythology of the Titans] to Librarian Mae Paledust",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 1050,
+      "quest_name": "Mythology of the Titans",
+      "quest_tag": "Dungeon",
+      "required_level": 28,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 796,
+      "zone_or_sort_name": "Scarlet Monastery"
+    },
+    {
+      "before_quest_id": 1053,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1053:requiredLevel"
+      ],
+      "instruction": "Reach level 34 before accepting In the Name of the Light. [XP34 Level 34]",
+      "map_id": 267,
+      "map_name": "Hillsbrad Foothills",
+      "optional": false,
+      "order": 9,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 34,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 51.47,
+      "y": 58.35
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3980,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 51.47,
+              "y": 58.35
+            }
+          ],
+          "name": "Raleigh the Devout",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1053"
+      ],
+      "instruction": "Accept [QA1053 In the Name of the Light] from Raleigh the Devout.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 1053,
+      "quest_name": "In the Name of the Light",
+      "quest_tag": "Dungeon",
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 796,
+      "zone_or_sort_name": "Scarlet Monastery"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1053"
+      ],
+      "instruction": "Dungeon \u2014 Complete the required NPC or creature objectives: High Inquisitor Whitemane, Scarlet Commander Mograine, Herod, plus 1 more. [QC1053 In the Name of the Light]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: High Inquisitor Whitemane, Scarlet Commander Mograine, Herod, plus 1 more",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3977,
+          "kind": "npc",
+          "locations": [],
+          "name": "High Inquisitor Whitemane",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3976,
+          "kind": "npc",
+          "locations": [],
+          "name": "Scarlet Commander Mograine",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3975,
+          "kind": "npc",
+          "locations": [],
+          "name": "Herod",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3974,
+          "kind": "npc",
+          "locations": [],
+          "name": "Houndmaster Loksey",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 11,
+      "quest_id": 1053,
+      "quest_name": "In the Name of the Light",
+      "quest_tag": "Dungeon",
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 796,
+      "zone_or_sort_name": "Scarlet Monastery"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3980,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 51.47,
+              "y": 58.35
+            }
+          ],
+          "name": "Raleigh the Devout",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1053"
+      ],
+      "instruction": "Turn in [QT1053 In the Name of the Light] to Raleigh the Devout",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 1053,
+      "quest_name": "In the Name of the Light",
+      "quest_tag": "Dungeon",
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 796,
+      "zone_or_sort_name": "Scarlet Monastery"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 12866,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 49.01,
+              "y": 94.94
+            }
+          ],
+          "name": "Myriam Moonsinger",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6626"
+      ],
+      "instruction": "Accept [QA6626 A Host of Evil] from Myriam Moonsinger.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 6626,
+      "quest_name": "A Host of Evil",
+      "quest_tag": "Dungeon",
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 722,
+      "zone_or_sort_name": "Razorfen Downs"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8516,
+          "kind": "npc",
+          "locations": [],
+          "name": "Belnistrasz",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3523"
+      ],
+      "instruction": "Accept [QA3523 Scourge of the Downs] from Belnistrasz.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 3523,
+      "quest_name": "Scourge of the Downs",
+      "quest_tag": "Dungeon",
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 722,
+      "zone_or_sort_name": "Razorfen Downs"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6626"
+      ],
+      "instruction": "Dungeon \u2014 Complete the required NPC or creature objectives: Razorfen Battleguard, Razorfen Thornweaver, Death's Head Cultist. [QC6626 A Host of Evil]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Razorfen Battleguard, Razorfen Thornweaver, Death's Head Cultist",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7873,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 48.07,
+              "y": 94.0
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 48.24,
+              "y": 92.05
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 48.38,
+              "y": 91.66
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 48.47,
+              "y": 91.66
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 48.6,
+              "y": 93.4
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 45.7,
+              "y": 89.92
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 46.87,
+              "y": 92.65
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 46.86,
+              "y": 92.13
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 48.13,
+              "y": 92.99
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 46.56,
+              "y": 91.32
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 46.92,
+              "y": 91.75
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 46.67,
+              "y": 91.57
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 47.56,
+              "y": 92.84
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 46.22,
+              "y": 90.41
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 46.07,
+              "y": 89.82
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 47.8,
+              "y": 95.16
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 48.13,
+              "y": 94.86
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 48.51,
+              "y": 89.91
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 48.27,
+              "y": 90.36
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 48.4,
+              "y": 90.64
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 48.32,
+              "y": 90.85
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 47.88,
+              "y": 88.52
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 47.71,
+              "y": 88.68
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 47.47,
+              "y": 88.88
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 47.36,
+              "y": 89.12
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 46.72,
+              "y": 90.1
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 47.48,
+              "y": 89.12
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 47.3,
+              "y": 89.89
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 47.11,
+              "y": 90.05
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 47.07,
+              "y": 89.91
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 48.01,
+              "y": 94.55
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 48.43,
+              "y": 94.14
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 48.53,
+              "y": 95.46
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 48.86,
+              "y": 95.59
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 48.06,
+              "y": 88.88
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 46.7,
+              "y": 87.61
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 46.4,
+              "y": 89.76
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 46.4,
+              "y": 87.83
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 45.8,
+              "y": 87.84
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 46.01,
+              "y": 87.51
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 48.0,
+              "y": 90.43
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 46.67,
+              "y": 88.06
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 48.15,
+              "y": 90.12
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 46.28,
+              "y": 87.8
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 47.2,
+              "y": 88.6
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 48.3,
+              "y": 89.21
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 48.69,
+              "y": 89.85
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 47.31,
+              "y": 88.45
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 47.06,
+              "y": 88.31
+            }
+          ],
+          "name": "Razorfen Battleguard",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7874,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 48.67,
+              "y": 91.39
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 48.25,
+              "y": 92.54
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 48.45,
+              "y": 92.97
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 48.12,
+              "y": 92.23
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 47.55,
+              "y": 92.91
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 46.52,
+              "y": 92.26
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 48.33,
+              "y": 92.23
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 46.46,
+              "y": 90.74
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 47.05,
+              "y": 91.74
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 47.78,
+              "y": 92.71
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 47.14,
+              "y": 92.73
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 46.25,
+              "y": 90.99
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 45.87,
+              "y": 90.35
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 46.23,
+              "y": 90.28
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 48.11,
+              "y": 94.14
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 48.47,
+              "y": 94.55
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 47.85,
+              "y": 90.64
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 48.17,
+              "y": 90.68
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 48.57,
+              "y": 95.58
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 48.64,
+              "y": 95.15
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 45.83,
+              "y": 87.62
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 48.34,
+              "y": 89.78
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 46.15,
+              "y": 87.67
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 48.65,
+              "y": 89.71
+            },
+            {
+              "map_id": 400,
+              "map_name": "Thousand Needles",
+              "verification": "questie_structured_source_only",
+              "x": 40.11,
+              "y": 29.73
+            }
+          ],
+          "name": "Razorfen Thornweaver",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7872,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 48.3,
+              "y": 92.43
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 48.15,
+              "y": 92.41
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 46.77,
+              "y": 92.11
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 46.96,
+              "y": 91.8
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 46.19,
+              "y": 90.2
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 47.86,
+              "y": 90.73
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 47.95,
+              "y": 88.55
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 47.3,
+              "y": 89.79
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 47.96,
+              "y": 94.44
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 48.65,
+              "y": 95.56
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 46.75,
+              "y": 87.66
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 45.88,
+              "y": 87.71
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 48.06,
+              "y": 90.28
+            },
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 48.61,
+              "y": 89.93
+            },
+            {
+              "map_id": 400,
+              "map_name": "Thousand Needles",
+              "verification": "questie_structured_source_only",
+              "x": 40.34,
+              "y": 29.98
+            }
+          ],
+          "name": "Death's Head Cultist",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 15,
+      "quest_id": 6626,
+      "quest_name": "A Host of Evil",
+      "quest_tag": "Dungeon",
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 722,
+      "zone_or_sort_name": "Razorfen Downs"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3523"
+      ],
+      "instruction": "Dungeon \u2014 Complete [QC3523 Scourge of the Downs]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 3523,
+      "quest_name": "Scourge of the Downs",
+      "quest_tag": "Dungeon",
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 722,
+      "zone_or_sort_name": "Razorfen Downs"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 12866,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 49.01,
+              "y": 94.94
+            }
+          ],
+          "name": "Myriam Moonsinger",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6626"
+      ],
+      "instruction": "Turn in [QT6626 A Host of Evil] to Myriam Moonsinger",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 6626,
+      "quest_name": "A Host of Evil",
+      "quest_tag": "Dungeon",
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 722,
+      "zone_or_sort_name": "Razorfen Downs"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8516,
+          "kind": "npc",
+          "locations": [],
+          "name": "Belnistrasz",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3523"
+      ],
+      "instruction": "Turn in [QT3523 Scourge of the Downs] to Belnistrasz",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 3523,
+      "quest_name": "Scourge of the Downs",
+      "quest_tag": "Dungeon",
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 722,
+      "zone_or_sort_name": "Razorfen Downs"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8516,
+          "kind": "npc",
+          "locations": [],
+          "name": "Belnistrasz",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3525"
+      ],
+      "instruction": "Accept [QA3525 Extinguishing the Idol] from Belnistrasz.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 3525,
+      "quest_name": "Extinguishing the Idol",
+      "quest_tag": "Dungeon",
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 722,
+      "zone_or_sort_name": "Razorfen Downs"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1284,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 39.59,
+              "y": 27.19
+            }
+          ],
+          "name": "Archbishop Benedictus",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3636"
+      ],
+      "instruction": "Accept [QA3636 Bring the Light] from Archbishop Benedictus.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 3636,
+      "quest_name": "Bring the Light",
+      "quest_tag": "Dungeon",
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 722,
+      "zone_or_sort_name": "Razorfen Downs"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3525"
+      ],
+      "instruction": "Dungeon \u2014 Complete the scripted or exploration event. [QC3525 Extinguishing the Idol]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 3525,
+      "quest_name": "Extinguishing the Idol",
+      "quest_tag": "Dungeon",
+      "required_level": 34,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 722,
+      "zone_or_sort_name": "Razorfen Downs"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3636"
+      ],
+      "instruction": "Dungeon \u2014 Complete the required NPC or creature objective: Amnennar the Coldbringer. [QC3636 Bring the Light]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Amnennar the Coldbringer",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7358,
+          "kind": "npc",
+          "locations": [],
+          "name": "Amnennar the Coldbringer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 22,
+      "quest_id": 3636,
+      "quest_name": "Bring the Light",
+      "quest_tag": "Dungeon",
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 722,
+      "zone_or_sort_name": "Razorfen Downs"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1284,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 39.59,
+              "y": 27.19
+            }
+          ],
+          "name": "Archbishop Benedictus",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3636"
+      ],
+      "instruction": "Turn in [QT3636 Bring the Light] to Archbishop Benedictus",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 23,
+      "quest_id": 3636,
+      "quest_name": "Bring the Light",
+      "quest_tag": "Dungeon",
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 722,
+      "zone_or_sort_name": "Razorfen Downs"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 152097,
+          "kind": "object",
+          "locations": [],
+          "name": "Belnistrasz's Brazier",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3525"
+      ],
+      "instruction": "Turn in [QT3525 Extinguishing the Idol] to Belnistrasz's Brazier",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 24,
+      "quest_id": 3525,
+      "quest_name": "Extinguishing the Idol",
+      "quest_tag": "Dungeon",
+      "required_level": 34,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 722,
+      "zone_or_sort_name": "Razorfen Downs"
+    },
+    {
+      "before_quest_id": 721,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:721:requiredLevel"
+      ],
+      "instruction": "Reach level 35 before accepting A Sign of Hope. [XP35 Level 35]",
+      "map_id": 3,
+      "map_name": "Badlands",
+      "optional": false,
+      "order": 25,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 35,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 53.42,
+      "y": 43.39
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2910,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3,
+              "map_name": "Badlands",
+              "verification": "questie_structured_source_only",
+              "x": 53.42,
+              "y": 43.39
+            }
+          ],
+          "name": "Prospector Ryedol",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:721"
+      ],
+      "instruction": "Accept [QA721 A Sign of Hope] from Prospector Ryedol.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 26,
+      "quest_id": 721,
+      "quest_name": "A Sign of Hope",
+      "quest_tag": "Dungeon",
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:721"
+      ],
+      "instruction": "Dungeon \u2014 Complete [QC721 A Sign of Hope]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 27,
+      "quest_id": 721,
+      "quest_name": "A Sign of Hope",
+      "quest_tag": "Dungeon",
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2909,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 37.28,
+              "y": 85.78
+            }
+          ],
+          "name": "Hammertoe Grez",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:721"
+      ],
+      "instruction": "Turn in [QT721 A Sign of Hope] to Hammertoe Grez",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 28,
+      "quest_id": 721,
+      "quest_name": "A Sign of Hope",
+      "quest_tag": "Dungeon",
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2909,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 37.28,
+              "y": 85.78
+            }
+          ],
+          "name": "Hammertoe Grez",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:722"
+      ],
+      "instruction": "Accept [QA722 Amulet of Secrets] from Hammertoe Grez.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 29,
+      "quest_id": 722,
+      "quest_name": "Amulet of Secrets",
+      "quest_tag": "Dungeon",
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:722"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required item: Hammertoe's Amulet. [QC722 Amulet of Secrets]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Hammertoe's Amulet",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4635,
+          "kind": "item",
+          "locations": [],
+          "name": "Hammertoe's Amulet",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 30,
+      "quest_id": 722,
+      "quest_name": "Amulet of Secrets",
+      "quest_tag": "Dungeon",
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2909,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 37.28,
+              "y": 85.78
+            }
+          ],
+          "name": "Hammertoe Grez",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:722"
+      ],
+      "instruction": "Turn in [QT722 Amulet of Secrets] to Hammertoe Grez",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 31,
+      "quest_id": 722,
+      "quest_name": "Amulet of Secrets",
+      "quest_tag": "Dungeon",
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1356,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 74.64,
+              "y": 11.74
+            }
+          ],
+          "name": "Prospector Stormpike",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2398"
+      ],
+      "instruction": "Accept [QA2398 The Lost Dwarves] from Prospector Stormpike.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 32,
+      "quest_id": 2398,
+      "quest_name": "The Lost Dwarves",
+      "quest_tag": "Dungeon",
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2398"
+      ],
+      "instruction": "Dungeon \u2014 Complete [QC2398 The Lost Dwarves]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 33,
+      "quest_id": 2398,
+      "quest_name": "The Lost Dwarves",
+      "quest_tag": "Dungeon",
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 6906,
+          "kind": "npc",
+          "locations": [],
+          "name": "Baelog",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2398"
+      ],
+      "instruction": "Turn in [QT2398 The Lost Dwarves] to Baelog",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 34,
+      "quest_id": 2398,
+      "quest_name": "The Lost Dwarves",
+      "quest_tag": "Dungeon",
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 6906,
+          "kind": "npc",
+          "locations": [],
+          "name": "Baelog",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2240"
+      ],
+      "instruction": "Accept [QA2240 The Hidden Chamber] from Baelog.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 35,
+      "quest_id": 2240,
+      "quest_name": "The Hidden Chamber",
+      "quest_tag": "Dungeon",
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "before_quest_id": 2198,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2198:requiredLevel"
+      ],
+      "instruction": "Reach level 37 before accepting The Shattered Necklace. [XP37 Level 37]",
+      "map_id": 1517,
+      "map_name": "Map or sort 1517",
+      "optional": false,
+      "order": 36,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 37,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": null,
+      "y": null
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "item_triggered",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 7666,
+          "kind": "item",
+          "locations": [],
+          "name": "Shattered Necklace",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2198"
+      ],
+      "instruction": "Accept [QA2198 The Shattered Necklace] from Shattered Necklace.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 37,
+      "quest_id": 2198,
+      "quest_name": "The Shattered Necklace",
+      "quest_tag": "Dungeon",
+      "required_level": 37,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2240"
+      ],
+      "instruction": "Dungeon \u2014 Complete the scripted or exploration event. [QC2240 The Hidden Chamber]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 38,
+      "quest_id": 2240,
+      "quest_name": "The Hidden Chamber",
+      "quest_tag": "Dungeon",
+      "required_level": 35,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "item_triggered",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2198"
+      ],
+      "instruction": "Dungeon \u2014 Complete [QC2198 The Shattered Necklace]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 39,
+      "quest_id": 2198,
+      "quest_name": "The Shattered Necklace",
+      "quest_tag": "Dungeon",
+      "required_level": 37,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1356,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 74.64,
+              "y": 11.74
+            }
+          ],
+          "name": "Prospector Stormpike",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2240"
+      ],
+      "instruction": "Turn in [QT2240 The Hidden Chamber] to Prospector Stormpike",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 40,
+      "quest_id": 2240,
+      "quest_name": "The Hidden Chamber",
+      "quest_tag": "Dungeon",
+      "required_level": 35,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "item_triggered",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 6826,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 36.38,
+              "y": 3.61
+            }
+          ],
+          "name": "Talvash del Kissel",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2198"
+      ],
+      "instruction": "Turn in [QT2198 The Shattered Necklace] to Talvash del Kissel",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 41,
+      "quest_id": 2198,
+      "quest_name": "The Shattered Necklace",
+      "quest_tag": "Dungeon",
+      "required_level": 37,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 6826,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 36.38,
+              "y": 3.61
+            }
+          ],
+          "name": "Talvash del Kissel",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2199"
+      ],
+      "instruction": "Accept [QA2199 Lore for a Price] from Talvash del Kissel.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 42,
+      "quest_id": 2199,
+      "quest_name": "Lore for a Price",
+      "quest_tag": "Dungeon",
+      "required_level": 37,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2199"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required item: Silver Bar. [QC2199 Lore for a Price]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Silver Bar",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 2842,
+          "kind": "item",
+          "locations": [],
+          "name": "Silver Bar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 43,
+      "quest_id": 2199,
+      "quest_name": "Lore for a Price",
+      "quest_tag": "Dungeon",
+      "required_level": 37,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 6826,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 36.38,
+              "y": 3.61
+            }
+          ],
+          "name": "Talvash del Kissel",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2199"
+      ],
+      "instruction": "Turn in [QT2199 Lore for a Price] to Talvash del Kissel",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 44,
+      "quest_id": 2199,
+      "quest_name": "Lore for a Price",
+      "quest_tag": "Dungeon",
+      "required_level": 37,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 6826,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 36.38,
+              "y": 3.61
+            }
+          ],
+          "name": "Talvash del Kissel",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2200"
+      ],
+      "instruction": "Accept [QA2200 Back to Uldaman] from Talvash del Kissel.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 45,
+      "quest_id": 2200,
+      "quest_name": "Back to Uldaman",
+      "quest_tag": "Dungeon",
+      "required_level": 37,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2200"
+      ],
+      "instruction": "Dungeon \u2014 Complete [QC2200 Back to Uldaman]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 46,
+      "quest_id": 2200,
+      "quest_name": "Back to Uldaman",
+      "quest_tag": "Dungeon",
+      "required_level": 37,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 6912,
+          "kind": "npc",
+          "locations": [],
+          "name": "Remains of a Paladin",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2200"
+      ],
+      "instruction": "Turn in [QT2200 Back to Uldaman] to Remains of a Paladin",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 47,
+      "quest_id": 2200,
+      "quest_name": "Back to Uldaman",
+      "quest_tag": "Dungeon",
+      "required_level": 37,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 6912,
+          "kind": "npc",
+          "locations": [],
+          "name": "Remains of a Paladin",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2201"
+      ],
+      "instruction": "Accept [QA2201 Find the Gems] from Remains of a Paladin.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 48,
+      "quest_id": 2201,
+      "quest_name": "Find the Gems",
+      "quest_tag": "Dungeon",
+      "required_level": 37,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "before_quest_id": 2278,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2278:requiredLevel"
+      ],
+      "instruction": "Reach level 40 before accepting The Platinum Discs. [XP40 Level 40]",
+      "map_id": 1517,
+      "map_name": "Map or sort 1517",
+      "optional": false,
+      "order": 49,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 40,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": null,
+      "y": null
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 131474,
+          "kind": "object",
+          "locations": [],
+          "name": "The Discs of Norgannon",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2278"
+      ],
+      "instruction": "Accept [QA2278 The Platinum Discs] from The Discs of Norgannon.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 50,
+      "quest_id": 2278,
+      "quest_name": "The Platinum Discs",
+      "quest_tag": "Dungeon",
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2201"
+      ],
+      "instruction": "Dungeon \u2014 Use the quest item [UI7668-] as directed; collect or use the required items: Shattered Necklace Ruby, Shattered Necklace Sapphire, Shattered Necklace Topaz. [QC2201 Find the Gems]",
+      "item_use_id": 7668,
+      "objective_hint": "Collect or use the required items: Shattered Necklace Ruby, Shattered Necklace Sapphire, Shattered Necklace Topaz",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 7669,
+          "kind": "item",
+          "locations": [],
+          "name": "Shattered Necklace Ruby",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 7670,
+          "kind": "item",
+          "locations": [],
+          "name": "Shattered Necklace Sapphire",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 7671,
+          "kind": "item",
+          "locations": [],
+          "name": "Shattered Necklace Topaz",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 51,
+      "quest_id": 2201,
+      "quest_name": "Find the Gems",
+      "quest_tag": "Dungeon",
+      "required_level": 37,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2278"
+      ],
+      "instruction": "Dungeon \u2014 Complete the scripted or exploration event. [QC2278 The Platinum Discs]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 52,
+      "quest_id": 2278,
+      "quest_name": "The Platinum Discs",
+      "quest_tag": "Dungeon",
+      "required_level": 40,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 112877,
+          "kind": "object",
+          "locations": [],
+          "name": "Talvash's Scrying Bowl",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2201"
+      ],
+      "instruction": "Turn in [QT2201 Find the Gems] to Talvash's Scrying Bowl",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 53,
+      "quest_id": 2201,
+      "quest_name": "Find the Gems",
+      "quest_tag": "Dungeon",
+      "required_level": 37,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 131474,
+          "kind": "object",
+          "locations": [],
+          "name": "The Discs of Norgannon",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2278"
+      ],
+      "instruction": "Turn in [QT2278 The Platinum Discs] to The Discs of Norgannon",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 54,
+      "quest_id": 2278,
+      "quest_name": "The Platinum Discs",
+      "quest_tag": "Dungeon",
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 131474,
+          "kind": "object",
+          "locations": [],
+          "name": "The Discs of Norgannon",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2279"
+      ],
+      "instruction": "Accept [QA2279 The Platinum Discs] from The Discs of Norgannon.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 55,
+      "quest_id": 2279,
+      "quest_name": "The Platinum Discs",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2279"
+      ],
+      "instruction": "Complete [QC2279 The Platinum Discs]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 56,
+      "quest_id": 2279,
+      "quest_name": "The Platinum Discs",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5387,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 69.93,
+              "y": 18.55
+            }
+          ],
+          "name": "High Explorer Magellas",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2279"
+      ],
+      "instruction": "Turn in [QT2279 The Platinum Discs] to High Explorer Magellas",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 57,
+      "quest_id": 2279,
+      "quest_name": "The Platinum Discs",
+      "quest_tag": null,
+      "required_level": 40,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    }
+  ],
+  "title": "Optional Content 06 - Razorfen Downs & Scarlet Monastery"
+}

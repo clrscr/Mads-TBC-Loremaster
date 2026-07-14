@@ -1,0 +1,3154 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 95 Caverns of Time & Hellfire Peninsula, or select this chapter on a partially completed character. Begin in Shattrath City with Grok. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 3703,
+    "map_name": "Shattrath City",
+    "x": 64.93,
+    "y": 68.14
+  },
+  "entry_zone_or_sort": 3522,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 3522,
+    "map_name": "Blade's Edge Mountains",
+    "quest_id": 11079,
+    "tag": "QT",
+    "x": 28.48,
+    "y": 58.08
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/096_world_96.lua",
+  "id": "096-primary-96-blade's-edge-mountains",
+  "maximum_level": 70,
+  "minimum_level": 70,
+  "next_chapter": null,
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "95 Caverns of Time & Hellfire Peninsula",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 10983,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10764:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10983:starter"
+      ],
+      "instruction": "Travel from Hellfire Peninsula to Shattrath City. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G64.93,68.14 Shattrath City]. [O]",
+      "map_id": 3703,
+      "map_name": "Shattrath City",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 3483,
+      "origin_map_name": "Hellfire Peninsula",
+      "origin_x": 51.12,
+      "origin_y": 60.3,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 64.93,
+      "y": 68.14
+    },
+    {
+      "before_quest_id": 10983,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10983:starter"
+      ],
+      "instruction": "Before you begin: travel to Shattrath City and meet the first quest giver at [G64.93,68.14 Shattrath City]. Leave at least two quest-log slots open. [O]",
+      "map_id": 3703,
+      "map_name": "Shattrath City",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 64.93,
+      "y": 68.14
+    },
+    {
+      "before_quest_id": 10983,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10983:requiredLevel"
+      ],
+      "instruction": "Reach level 70 before accepting Mog'dorg the Wizened. [XP70 Level 70]",
+      "map_id": 3703,
+      "map_name": "Shattrath City",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 70,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 64.93,
+      "y": 68.14
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22940,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 64.93,
+              "y": 68.14
+            }
+          ],
+          "name": "Grok",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10983"
+      ],
+      "instruction": "Accept [QA10983 Mog'dorg the Wizened] from Grok.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 10983,
+      "quest_name": "Mog'dorg the Wizened",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10983"
+      ],
+      "instruction": "Complete [QC10983 Mog'dorg the Wizened]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 10983,
+      "quest_name": "Mog'dorg the Wizened",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22941,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 55.49,
+              "y": 44.86
+            }
+          ],
+          "name": "Mog'dorg the Wizened",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10983"
+      ],
+      "instruction": "Turn in [QT10983 Mog'dorg the Wizened] to Mog'dorg the Wizened",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 10983,
+      "quest_name": "Mog'dorg the Wizened",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22941,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 55.49,
+              "y": 44.86
+            }
+          ],
+          "name": "Mog'dorg the Wizened",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10995"
+      ],
+      "instruction": "Accept [QA10995 Grulloc Has Two Skulls] from Mog'dorg the Wizened.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 10995,
+      "quest_name": "Grulloc Has Two Skulls",
+      "quest_tag": "Elite",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22941,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 55.49,
+              "y": 44.86
+            }
+          ],
+          "name": "Mog'dorg the Wizened",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10996"
+      ],
+      "instruction": "Accept [QA10996 Maggoc's Treasure Chest] from Mog'dorg the Wizened.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 10996,
+      "quest_name": "Maggoc's Treasure Chest",
+      "quest_tag": "Elite",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "before_quest_id": 10995,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10995:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 3703,
+      "map_name": "Shattrath City",
+      "optional": true,
+      "order": 9,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        10995
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 64.93,
+      "y": 68.14
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10995"
+      ],
+      "instruction": "Elite/group recommended \u2014 Collect or use the required item: Grulloc's Dragon Skull. [QC10995 Grulloc Has Two Skulls]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Grulloc's Dragon Skull",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 32379,
+          "kind": "item",
+          "locations": [],
+          "name": "Grulloc's Dragon Skull",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 10,
+      "quest_id": 10995,
+      "quest_name": "Grulloc Has Two Skulls",
+      "quest_tag": "Elite",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10996"
+      ],
+      "instruction": "Elite/group recommended \u2014 Collect or use the required item: Maggoc's Treasure Chest. [QC10996 Maggoc's Treasure Chest]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Maggoc's Treasure Chest",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 32380,
+          "kind": "item",
+          "locations": [],
+          "name": "Maggoc's Treasure Chest",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 11,
+      "quest_id": 10996,
+      "quest_name": "Maggoc's Treasure Chest",
+      "quest_tag": "Elite",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22941,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 55.49,
+              "y": 44.86
+            }
+          ],
+          "name": "Mog'dorg the Wizened",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10995"
+      ],
+      "instruction": "Turn in [QT10995 Grulloc Has Two Skulls] to Mog'dorg the Wizened",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 10995,
+      "quest_name": "Grulloc Has Two Skulls",
+      "quest_tag": "Elite",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22941,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 55.49,
+              "y": 44.86
+            }
+          ],
+          "name": "Mog'dorg the Wizened",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10996"
+      ],
+      "instruction": "Turn in [QT10996 Maggoc's Treasure Chest] to Mog'dorg the Wizened",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 10996,
+      "quest_name": "Maggoc's Treasure Chest",
+      "quest_tag": "Elite",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22941,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 55.49,
+              "y": 44.86
+            }
+          ],
+          "name": "Mog'dorg the Wizened",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10997"
+      ],
+      "instruction": "Accept [QA10997 Even Gronn Have Standards] from Mog'dorg the Wizened.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 10997,
+      "quest_name": "Even Gronn Have Standards",
+      "quest_tag": "Elite",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3696,
+      "zone_or_sort_name": "Map or sort 3696"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10997"
+      ],
+      "instruction": "Elite/group recommended \u2014 Collect or use the required item: Slaag's Standard. [QC10997 Even Gronn Have Standards]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Slaag's Standard",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 32382,
+          "kind": "item",
+          "locations": [],
+          "name": "Slaag's Standard",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 15,
+      "quest_id": 10997,
+      "quest_name": "Even Gronn Have Standards",
+      "quest_tag": "Elite",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3696,
+      "zone_or_sort_name": "Map or sort 3696"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22941,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 55.49,
+              "y": 44.86
+            }
+          ],
+          "name": "Mog'dorg the Wizened",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10997"
+      ],
+      "instruction": "Turn in [QT10997 Even Gronn Have Standards] to Mog'dorg the Wizened",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 10997,
+      "quest_name": "Even Gronn Have Standards",
+      "quest_tag": "Elite",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3696,
+      "zone_or_sort_name": "Map or sort 3696"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22941,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 55.49,
+              "y": 44.86
+            }
+          ],
+          "name": "Mog'dorg the Wizened",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10998"
+      ],
+      "instruction": "Accept [QA10998 Grim(oire) Business] from Mog'dorg the Wizened.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 10998,
+      "quest_name": "Grim(oire) Business",
+      "quest_tag": "Elite",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10998"
+      ],
+      "instruction": "Elite/group recommended \u2014 Collect or use the required item: Vim'gol's Vile Grimoire. [QC10998 Grim(oire) Business]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Vim'gol's Vile Grimoire",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 32358,
+          "kind": "item",
+          "locations": [],
+          "name": "Vim'gol's Vile Grimoire",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 18,
+      "quest_id": 10998,
+      "quest_name": "Grim(oire) Business",
+      "quest_tag": "Elite",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22941,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 55.49,
+              "y": 44.86
+            }
+          ],
+          "name": "Mog'dorg the Wizened",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10998"
+      ],
+      "instruction": "Turn in [QT10998 Grim(oire) Business] to Mog'dorg the Wizened",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 10998,
+      "quest_name": "Grim(oire) Business",
+      "quest_tag": "Elite",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22941,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 55.49,
+              "y": 44.86
+            }
+          ],
+          "name": "Mog'dorg the Wizened",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11000"
+      ],
+      "instruction": "Accept [QA11000 Into the Soulgrinder] from Mog'dorg the Wizened.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 11000,
+      "quest_name": "Into the Soulgrinder",
+      "quest_tag": "Elite",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11000"
+      ],
+      "instruction": "Elite/group recommended \u2014 Collect or use the required item: Skulloc's Soul. [QC11000 Into the Soulgrinder]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Skulloc's Soul",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 32383,
+          "kind": "item",
+          "locations": [],
+          "name": "Skulloc's Soul",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 21,
+      "quest_id": 11000,
+      "quest_name": "Into the Soulgrinder",
+      "quest_tag": "Elite",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22941,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 55.49,
+              "y": 44.86
+            }
+          ],
+          "name": "Mog'dorg the Wizened",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11000"
+      ],
+      "instruction": "Turn in [QT11000 Into the Soulgrinder] to Mog'dorg the Wizened",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 22,
+      "quest_id": 11000,
+      "quest_name": "Into the Soulgrinder",
+      "quest_tag": "Elite",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23053,
+          "kind": "npc",
+          "locations": [],
+          "name": "Bladespire Supplicant",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11022"
+      ],
+      "instruction": "Accept [QA11022 Speak with Mog'dorg] from Bladespire Supplicant.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 23,
+      "quest_id": 11022,
+      "quest_name": "Speak with Mog'dorg",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22941,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 55.49,
+              "y": 44.86
+            }
+          ],
+          "name": "Mog'dorg the Wizened",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11009"
+      ],
+      "instruction": "Accept [QA11009 Ogre Heaven] from Mog'dorg the Wizened.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 24,
+      "quest_id": 11009,
+      "quest_name": "Ogre Heaven",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11022"
+      ],
+      "instruction": "Complete [QC11022 Speak with Mog'dorg]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 25,
+      "quest_id": 11022,
+      "quest_name": "Speak with Mog'dorg",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11009"
+      ],
+      "instruction": "Complete [QC11009 Ogre Heaven]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 26,
+      "quest_id": 11009,
+      "quest_name": "Ogre Heaven",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22941,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 55.49,
+              "y": 44.86
+            }
+          ],
+          "name": "Mog'dorg the Wizened",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11022"
+      ],
+      "instruction": "Turn in [QT11022 Speak with Mog'dorg] to Mog'dorg the Wizened",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 27,
+      "quest_id": 11022,
+      "quest_name": "Speak with Mog'dorg",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23233,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 28.76,
+              "y": 57.36
+            }
+          ],
+          "name": "Chu'a'lor",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11009"
+      ],
+      "instruction": "Turn in [QT11009 Ogre Heaven] to Chu'a'lor",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 28,
+      "quest_id": 11009,
+      "quest_name": "Ogre Heaven",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23233,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 28.76,
+              "y": 57.36
+            }
+          ],
+          "name": "Chu'a'lor",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11025"
+      ],
+      "instruction": "Accept [QA11025 The Crystals] from Chu'a'lor.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 29,
+      "quest_id": 11025,
+      "quest_name": "The Crystals",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11025"
+      ],
+      "instruction": "Collect or use the required item: Apexis Shard. [QC11025 The Crystals]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Apexis Shard",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 32569,
+          "kind": "item",
+          "locations": [],
+          "name": "Apexis Shard",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 30,
+      "quest_id": 11025,
+      "quest_name": "The Crystals",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23233,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 28.76,
+              "y": 57.36
+            }
+          ],
+          "name": "Chu'a'lor",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11025"
+      ],
+      "instruction": "Turn in [QT11025 The Crystals] to Chu'a'lor",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 31,
+      "quest_id": 11025,
+      "quest_name": "The Crystals",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23316,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 28.38,
+              "y": 57.64
+            }
+          ],
+          "name": "Torkus",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11030"
+      ],
+      "instruction": "Accept [QA11030 Our Boy Wants To Be A Skyguard Ranger] from Torkus.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 32,
+      "quest_id": 11030,
+      "quest_name": "Our Boy Wants To Be A Skyguard Ranger",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23233,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 28.76,
+              "y": 57.36
+            }
+          ],
+          "name": "Chu'a'lor",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11058"
+      ],
+      "instruction": "Accept [QA11058 An Apexis Relic] from Chu'a'lor.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 33,
+      "quest_id": 11058,
+      "quest_name": "An Apexis Relic",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11058"
+      ],
+      "instruction": "Complete the scripted or exploration event; interact with the required object: Apexis Relic. [QC11058 An Apexis Relic]",
+      "item_use_id": null,
+      "objective_hint": "Interact with the required object: Apexis Relic",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 185890,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 33.71,
+              "y": 51.38
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 27.67,
+              "y": 69.03
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 27.11,
+              "y": 69.03
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 27.67,
+              "y": 68.09
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 27.12,
+              "y": 68.07
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 31.49,
+              "y": 64.22
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 31.5,
+              "y": 63.35
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 32.05,
+              "y": 64.24
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 32.05,
+              "y": 63.34
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 29.05,
+              "y": 47.01
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 33.14,
+              "y": 52.31
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 33.71,
+              "y": 52.32
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 64.36,
+              "y": 11.2
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 69.36,
+              "y": 13.51
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 28.51,
+              "y": 47.0
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 28.52,
+              "y": 46.01
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 59.75,
+              "y": 9.09
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 60.29,
+              "y": 9.11
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 33.14,
+              "y": 51.38
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 69.35,
+              "y": 14.25
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 59.75,
+              "y": 9.91
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 29.05,
+              "y": 46.04
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 60.29,
+              "y": 9.91
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 68.66,
+              "y": 14.27
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 68.67,
+              "y": 13.5
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 64.36,
+              "y": 10.54
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 64.98,
+              "y": 11.21
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 64.99,
+              "y": 10.55
+            }
+          ],
+          "name": "Apexis Relic",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 34,
+      "quest_id": 11058,
+      "quest_name": "An Apexis Relic",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11030"
+      ],
+      "instruction": "Collect or use the required item: Unstable Flask of the Beast. [QC11030 Our Boy Wants To Be A Skyguard Ranger]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Unstable Flask of the Beast",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 32598,
+          "kind": "item",
+          "locations": [],
+          "name": "Unstable Flask of the Beast",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 35,
+      "quest_id": 11030,
+      "quest_name": "Our Boy Wants To Be A Skyguard Ranger",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23316,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 28.38,
+              "y": 57.64
+            }
+          ],
+          "name": "Torkus",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11030"
+      ],
+      "instruction": "Turn in [QT11030 Our Boy Wants To Be A Skyguard Ranger] to Torkus",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 36,
+      "quest_id": 11030,
+      "quest_name": "Our Boy Wants To Be A Skyguard Ranger",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23233,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 28.76,
+              "y": 57.36
+            }
+          ],
+          "name": "Chu'a'lor",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11058"
+      ],
+      "instruction": "Turn in [QT11058 An Apexis Relic] to Chu'a'lor",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 37,
+      "quest_id": 11058,
+      "quest_name": "An Apexis Relic",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23316,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 28.38,
+              "y": 57.64
+            }
+          ],
+          "name": "Torkus",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11061"
+      ],
+      "instruction": "Accept [QA11061 A Father's Duty] from Torkus.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 38,
+      "quest_id": 11061,
+      "quest_name": "A Father's Duty",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23233,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 28.76,
+              "y": 57.36
+            }
+          ],
+          "name": "Chu'a'lor",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11062"
+      ],
+      "instruction": "Accept [QA11062 The Skyguard Outpost] from Chu'a'lor.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 39,
+      "quest_id": 11062,
+      "quest_name": "The Skyguard Outpost",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11061"
+      ],
+      "instruction": "Collect or use the required item: Unstable Flask of the Sorcerer. [QC11061 A Father's Duty]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Unstable Flask of the Sorcerer",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 32601,
+          "kind": "item",
+          "locations": [],
+          "name": "Unstable Flask of the Sorcerer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 40,
+      "quest_id": 11061,
+      "quest_name": "A Father's Duty",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11062"
+      ],
+      "instruction": "Complete [QC11062 The Skyguard Outpost]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 41,
+      "quest_id": 11062,
+      "quest_name": "The Skyguard Outpost",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23316,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 28.38,
+              "y": 57.64
+            }
+          ],
+          "name": "Torkus",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11061"
+      ],
+      "instruction": "Turn in [QT11061 A Father's Duty] to Torkus",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 42,
+      "quest_id": 11061,
+      "quest_name": "A Father's Duty",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23334,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 27.38,
+              "y": 52.68
+            }
+          ],
+          "name": "Sky Commander Keller",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11062"
+      ],
+      "instruction": "Turn in [QT11062 The Skyguard Outpost] to Sky Commander Keller",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 43,
+      "quest_id": 11062,
+      "quest_name": "The Skyguard Outpost",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23120,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 27.56,
+              "y": 52.9
+            }
+          ],
+          "name": "Sky Sergeant Vanderlip",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11010"
+      ],
+      "instruction": "Accept [QA11010 Bombing Run] from Sky Sergeant Vanderlip.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 44,
+      "quest_id": 11010,
+      "quest_name": "Bombing Run",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23233,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 28.76,
+              "y": 57.36
+            }
+          ],
+          "name": "Chu'a'lor",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11059"
+      ],
+      "instruction": "Accept [QA11059 Guardian of the Monument] from Chu'a'lor.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 45,
+      "quest_id": 11059,
+      "quest_name": "Guardian of the Monument",
+      "quest_tag": "Elite",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11010"
+      ],
+      "instruction": "Interact with the required object: Fel Cannonball Stack. [QC11010 Bombing Run]",
+      "item_use_id": null,
+      "objective_hint": "Interact with the required object: Fel Cannonball Stack",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 185861,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 32.06,
+              "y": 40.6
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 37.24,
+              "y": 40.64
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 32.28,
+              "y": 40.83
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 33.77,
+              "y": 40.85
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 33.45,
+              "y": 41.01
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 33.62,
+              "y": 43.7
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 33.2,
+              "y": 43.79
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 33.36,
+              "y": 44.84
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 33.57,
+              "y": 45.45
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 27.06,
+              "y": 74.21
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 27.52,
+              "y": 74.77
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 27.76,
+              "y": 74.89
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 30.22,
+              "y": 76.27
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 29.62,
+              "y": 76.45
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 29.9,
+              "y": 76.61
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 28.52,
+              "y": 79.61
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 29.86,
+              "y": 79.74
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 30.16,
+              "y": 80.19
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 30.19,
+              "y": 81.85
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 29.83,
+              "y": 81.93
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 28.42,
+              "y": 81.94
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 28.69,
+              "y": 82.15
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 27.37,
+              "y": 82.83
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 31.05,
+              "y": 84.24
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 30.3,
+              "y": 84.43
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 30.02,
+              "y": 84.79
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 28.49,
+              "y": 84.84
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 30.51,
+              "y": 85.85
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 37.34,
+              "y": 38.15
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 36.63,
+              "y": 38.29
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 37.7,
+              "y": 38.29
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 36.27,
+              "y": 38.63
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 33.25,
+              "y": 38.92
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 33.16,
+              "y": 39.38
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 36.03,
+              "y": 39.54
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 36.23,
+              "y": 40.0
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 36.53,
+              "y": 40.17
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 37.47,
+              "y": 40.36
+            }
+          ],
+          "name": "Fel Cannonball Stack",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 46,
+      "quest_id": 11010,
+      "quest_name": "Bombing Run",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11059"
+      ],
+      "instruction": "Elite/group recommended \u2014 Collect or use the required item: Apexis Guardian's Head. [QC11059 Guardian of the Monument]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Apexis Guardian's Head",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 32697,
+          "kind": "item",
+          "locations": [],
+          "name": "Apexis Guardian's Head",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 47,
+      "quest_id": 11059,
+      "quest_name": "Guardian of the Monument",
+      "quest_tag": "Elite",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23120,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 27.56,
+              "y": 52.9
+            }
+          ],
+          "name": "Sky Sergeant Vanderlip",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11010"
+      ],
+      "instruction": "Turn in [QT11010 Bombing Run] to Sky Sergeant Vanderlip",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 48,
+      "quest_id": 11010,
+      "quest_name": "Bombing Run",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23233,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 28.76,
+              "y": 57.36
+            }
+          ],
+          "name": "Chu'a'lor",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11059"
+      ],
+      "instruction": "Turn in [QT11059 Guardian of the Monument] to Chu'a'lor",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 49,
+      "quest_id": 11059,
+      "quest_name": "Guardian of the Monument",
+      "quest_tag": "Elite",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23335,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 27.95,
+              "y": 51.45
+            }
+          ],
+          "name": "Skyguard Khatie",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11065"
+      ],
+      "instruction": "Accept [QA11065 Wrangle Some Aether Rays!] from Skyguard Khatie.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 50,
+      "quest_id": 11065,
+      "quest_name": "Wrangle Some Aether Rays!",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11065"
+      ],
+      "instruction": "Complete the required NPC or creature objective: Aether Ray. [QC11065 Wrangle Some Aether Rays!]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Aether Ray",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22181,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 66.53,
+              "y": 8.82
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 64.1,
+              "y": 8.36
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 64.5,
+              "y": 9.86
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 64.68,
+              "y": 11.84
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 64.11,
+              "y": 14.75
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 59.75,
+              "y": 13.91
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 61.1,
+              "y": 12.7
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 61.6,
+              "y": 7.79
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 61.38,
+              "y": 8.65
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 58.28,
+              "y": 8.51
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 57.53,
+              "y": 12.34
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 57.28,
+              "y": 13.62
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 29.96,
+              "y": 45.43
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 29.59,
+              "y": 47.66
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 28.31,
+              "y": 49.15
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 30.95,
+              "y": 55.28
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 29.77,
+              "y": 53.74
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 32.53,
+              "y": 53.64
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 33.08,
+              "y": 54.62
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 31.87,
+              "y": 56.35
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 32.14,
+              "y": 59.93
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 33.46,
+              "y": 60.5
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 28.01,
+              "y": 61.68
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 32.11,
+              "y": 62.12
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 28.87,
+              "y": 66.03
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 28.25,
+              "y": 65.21
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 31.96,
+              "y": 70.68
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 31.43,
+              "y": 67.31
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 30.0,
+              "y": 70.73
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 27.43,
+              "y": 71.96
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 67.44,
+              "y": 9.54
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 69.45,
+              "y": 14.21
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 69.21,
+              "y": 11.55
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 72.1,
+              "y": 8.73
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 71.44,
+              "y": 9.95
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 73.94,
+              "y": 13.0
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 73.12,
+              "y": 13.01
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 72.96,
+              "y": 12.49
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 67.56,
+              "y": 13.11
+            },
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 57.16,
+              "y": 12.9
+            }
+          ],
+          "name": "Aether Ray",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 51,
+      "quest_id": 11065,
+      "quest_name": "Wrangle Some Aether Rays!",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23335,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 27.95,
+              "y": 51.45
+            }
+          ],
+          "name": "Skyguard Khatie",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11065"
+      ],
+      "instruction": "Turn in [QT11065 Wrangle Some Aether Rays!] to Skyguard Khatie",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 52,
+      "quest_id": 11065,
+      "quest_name": "Wrangle Some Aether Rays!",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23334,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 27.38,
+              "y": 52.68
+            }
+          ],
+          "name": "Sky Commander Keller",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11078"
+      ],
+      "instruction": "Accept [QA11078 To Rule The Skies] from Sky Commander Keller.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 53,
+      "quest_id": 11078,
+      "quest_name": "To Rule The Skies",
+      "quest_tag": "Elite",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23300,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 28.48,
+              "y": 58.08
+            }
+          ],
+          "name": "Gahk",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11079"
+      ],
+      "instruction": "Accept [QA11079 A Fel Whip For Gahk] from Gahk.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 54,
+      "quest_id": 11079,
+      "quest_name": "A Fel Whip For Gahk",
+      "quest_tag": "Elite",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23334,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 27.38,
+              "y": 52.68
+            }
+          ],
+          "name": "Sky Commander Keller",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11119"
+      ],
+      "instruction": "Accept [QA11119 Assault on Bash'ir Landing!] from Sky Commander Keller.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 55,
+      "quest_id": 11119,
+      "quest_name": "Assault on Bash'ir Landing!",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11078"
+      ],
+      "instruction": "Elite/group recommended \u2014 Collect or use the required item: Dragon Teeth. [QC11078 To Rule The Skies]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Dragon Teeth",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 32732,
+          "kind": "item",
+          "locations": [],
+          "name": "Dragon Teeth",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 56,
+      "quest_id": 11078,
+      "quest_name": "To Rule The Skies",
+      "quest_tag": "Elite",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11079"
+      ],
+      "instruction": "Elite/group recommended \u2014 Collect or use the required item: Fel Whip. [QC11079 A Fel Whip For Gahk]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Fel Whip",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 32733,
+          "kind": "item",
+          "locations": [],
+          "name": "Fel Whip",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 57,
+      "quest_id": 11079,
+      "quest_name": "A Fel Whip For Gahk",
+      "quest_tag": "Elite",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11119"
+      ],
+      "instruction": "Complete [QC11119 Assault on Bash'ir Landing!]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 58,
+      "quest_id": 11119,
+      "quest_name": "Assault on Bash'ir Landing!",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23334,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 27.38,
+              "y": 52.68
+            }
+          ],
+          "name": "Sky Commander Keller",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11078"
+      ],
+      "instruction": "Turn in [QT11078 To Rule The Skies] to Sky Commander Keller",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 59,
+      "quest_id": 11078,
+      "quest_name": "To Rule The Skies",
+      "quest_tag": "Elite",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23473,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 27.9,
+              "y": 52.16
+            }
+          ],
+          "name": "Aether-tech Apprentice",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11119"
+      ],
+      "instruction": "Turn in [QT11119 Assault on Bash'ir Landing!] to Aether-tech Apprentice",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 60,
+      "quest_id": 11119,
+      "quest_name": "Assault on Bash'ir Landing!",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    },
+    {
+      "before_quest_id": 11079,
+      "before_tag": "QT",
+      "evidence_refs": [
+        "ux-policy:milestone:primary-finale"
+      ],
+      "instruction": "Final primary-route turn-in ahead. After it, open Optional Content and Alternative Routes for remaining one-time group chains and mutually exclusive outcomes. [O]",
+      "map_id": 3522,
+      "map_name": "Blade's Edge Mountains",
+      "optional": true,
+      "order": 61,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "milestone",
+      "verification": "player_experience_policy",
+      "x": 28.48,
+      "y": 58.08
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23300,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3522,
+              "map_name": "Blade's Edge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 28.48,
+              "y": 58.08
+            }
+          ],
+          "name": "Gahk",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11079"
+      ],
+      "instruction": "Turn in [QT11079 A Fel Whip For Gahk] to Gahk",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 62,
+      "quest_id": 11079,
+      "quest_name": "A Fel Whip For Gahk",
+      "quest_tag": "Elite",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3522,
+      "zone_or_sort_name": "Blade's Edge Mountains"
+    }
+  ],
+  "title": "96 Blade's Edge Mountains"
+}

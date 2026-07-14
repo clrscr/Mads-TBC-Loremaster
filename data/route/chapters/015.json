@@ -1,0 +1,3997 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 14 Bloodmyst Isle, or select this chapter on a partially completed character. Begin in Loch Modan with Bingles Blastenheimer. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 38,
+    "map_name": "Loch Modan",
+    "x": 63.56,
+    "y": 47.92
+  },
+  "entry_zone_or_sort": 38,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 11,
+    "map_name": "Wetlands",
+    "quest_id": 306,
+    "tag": "QT",
+    "x": 11.5,
+    "y": 52.17
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/015_world_15.lua",
+  "id": "015-primary-15-loch-modan-&-wetlands",
+  "maximum_level": 21,
+  "minimum_level": 16,
+  "next_chapter": "16 The Barrens & Stonetalon Mountains",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "14 Bloodmyst Isle",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 2038,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10067:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2038:starter",
+        "travel-network:auberdine-exodar",
+        "travel-network:auberdine-menethil",
+        "https://www.wowhead.com/tbc/guide/how-to-get-to-the-exodar-in-burning-crusade-classic",
+        "https://www.wowhead.com/tbc/quest=942/the-absent-minded-prospector"
+      ],
+      "instruction": "Travel from Bloodmyst Isle to Loch Modan: Take the ship between Auberdine and Valnaar's Berth outside the Exodar; then take the ship between Auberdine and Menethil Harbor. Continue to [G63.56,47.92 Loch Modan]. [O]",
+      "map_id": 38,
+      "map_name": "Loch Modan",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 3525,
+      "origin_map_name": "Bloodmyst Isle",
+      "origin_x": 30.75,
+      "origin_y": 46.85,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [
+        "auberdine-exodar",
+        "auberdine-menethil"
+      ],
+      "type": "transport",
+      "verification": "questie_endpoints_and_tbc_transport_network",
+      "x": 63.56,
+      "y": 47.92
+    },
+    {
+      "before_quest_id": 2038,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2038:starter"
+      ],
+      "instruction": "Before you begin: travel to Loch Modan and meet the first quest giver at [G63.56,47.92 Loch Modan]. Leave at least two quest-log slots open. [O]",
+      "map_id": 38,
+      "map_name": "Loch Modan",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 63.56,
+      "y": 47.92
+    },
+    {
+      "before_quest_id": 2038,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2038:requiredLevel"
+      ],
+      "instruction": "Reach level 16 before accepting Bingles' Missing Supplies. [XP16 Level 16]",
+      "map_id": 38,
+      "map_name": "Loch Modan",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 16,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 63.56,
+      "y": 47.92
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 6577,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 63.56,
+              "y": 47.92
+            }
+          ],
+          "name": "Bingles Blastenheimer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2038"
+      ],
+      "instruction": "Accept [QA2038 Bingles' Missing Supplies] from Bingles Blastenheimer.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 2038,
+      "quest_name": "Bingles' Missing Supplies",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2038"
+      ],
+      "instruction": "Collect or use the required items: Bingles' Wrench, Bingles' Screwdriver, Bingles' Hammer, plus 1 more. [QC2038 Bingles' Missing Supplies]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Bingles' Wrench, Bingles' Screwdriver, Bingles' Hammer, plus 1 more",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 7343,
+          "kind": "item",
+          "locations": [],
+          "name": "Bingles' Wrench",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 7345,
+          "kind": "item",
+          "locations": [],
+          "name": "Bingles' Screwdriver",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 7346,
+          "kind": "item",
+          "locations": [],
+          "name": "Bingles' Hammer",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 7376,
+          "kind": "item",
+          "locations": [],
+          "name": "Bingles' Blastencapper",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 5,
+      "quest_id": 2038,
+      "quest_name": "Bingles' Missing Supplies",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 6577,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 63.56,
+              "y": 47.92
+            }
+          ],
+          "name": "Bingles Blastenheimer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2038"
+      ],
+      "instruction": "Turn in [QT2038 Bingles' Missing Supplies] to Bingles Blastenheimer",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 2038,
+      "quest_name": "Bingles' Missing Supplies",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1093,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 46.05,
+              "y": 13.61
+            }
+          ],
+          "name": "Chief Engineer Hinderweir VII",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:250"
+      ],
+      "instruction": "Accept [QA250 A Dark Threat Looms] from Chief Engineer Hinderweir VII.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 250,
+      "quest_name": "A Dark Threat Looms",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:250"
+      ],
+      "instruction": "Complete [QC250 A Dark Threat Looms]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 250,
+      "quest_name": "A Dark Threat Looms",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 257,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 56.05,
+              "y": 13.24
+            }
+          ],
+          "name": "Suspicious Barrel",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:250"
+      ],
+      "instruction": "Turn in [QT250 A Dark Threat Looms] to Suspicious Barrel",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 250,
+      "quest_name": "A Dark Threat Looms",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 257,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 56.05,
+              "y": 13.24
+            }
+          ],
+          "name": "Suspicious Barrel",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:199"
+      ],
+      "instruction": "Accept [QA199 A Dark Threat Looms] from Suspicious Barrel.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 199,
+      "quest_name": "A Dark Threat Looms",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:199"
+      ],
+      "instruction": "Complete [QC199 A Dark Threat Looms]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 199,
+      "quest_name": "A Dark Threat Looms",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1093,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 46.05,
+              "y": 13.61
+            }
+          ],
+          "name": "Chief Engineer Hinderweir VII",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:199"
+      ],
+      "instruction": "Turn in [QT199 A Dark Threat Looms] to Chief Engineer Hinderweir VII",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 199,
+      "quest_name": "A Dark Threat Looms",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1093,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 46.05,
+              "y": 13.61
+            }
+          ],
+          "name": "Chief Engineer Hinderweir VII",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:161"
+      ],
+      "instruction": "Accept [QA161 A Dark Threat Looms] from Chief Engineer Hinderweir VII.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 161,
+      "quest_name": "A Dark Threat Looms",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:161"
+      ],
+      "instruction": "Complete [QC161 A Dark Threat Looms]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 161,
+      "quest_name": "A Dark Threat Looms",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1073,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 50.05,
+              "y": 18.17
+            }
+          ],
+          "name": "Ashlan Stonesmirk",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:161"
+      ],
+      "instruction": "Turn in [QT161 A Dark Threat Looms] to Ashlan Stonesmirk",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 161,
+      "quest_name": "A Dark Threat Looms",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1073,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 50.05,
+              "y": 18.17
+            }
+          ],
+          "name": "Ashlan Stonesmirk",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:274"
+      ],
+      "instruction": "Accept [QA274 A Dark Threat Looms] from Ashlan Stonesmirk.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 274,
+      "quest_name": "A Dark Threat Looms",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:274"
+      ],
+      "instruction": "Complete [QC274 A Dark Threat Looms]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 274,
+      "quest_name": "A Dark Threat Looms",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1093,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 46.05,
+              "y": 13.61
+            }
+          ],
+          "name": "Chief Engineer Hinderweir VII",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:274"
+      ],
+      "instruction": "Turn in [QT274 A Dark Threat Looms] to Chief Engineer Hinderweir VII",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 274,
+      "quest_name": "A Dark Threat Looms",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1093,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 46.05,
+              "y": 13.61
+            }
+          ],
+          "name": "Chief Engineer Hinderweir VII",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:278"
+      ],
+      "instruction": "Accept [QA278 A Dark Threat Looms] from Chief Engineer Hinderweir VII.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 278,
+      "quest_name": "A Dark Threat Looms",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:278"
+      ],
+      "instruction": "Collect or use the required items: Lurker Venom, Mo'grosh Crystal, Crocolisk Tear. [QC278 A Dark Threat Looms]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Lurker Venom, Mo'grosh Crystal, Crocolisk Tear",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 2606,
+          "kind": "item",
+          "locations": [],
+          "name": "Lurker Venom",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 2607,
+          "kind": "item",
+          "locations": [],
+          "name": "Mo'grosh Crystal",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 2939,
+          "kind": "item",
+          "locations": [],
+          "name": "Crocolisk Tear",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 20,
+      "quest_id": 278,
+      "quest_name": "A Dark Threat Looms",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1093,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 46.05,
+              "y": 13.61
+            }
+          ],
+          "name": "Chief Engineer Hinderweir VII",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:278"
+      ],
+      "instruction": "Turn in [QT278 A Dark Threat Looms] to Chief Engineer Hinderweir VII",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 278,
+      "quest_name": "A Dark Threat Looms",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1093,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 46.05,
+              "y": 13.61
+            }
+          ],
+          "name": "Chief Engineer Hinderweir VII",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:280"
+      ],
+      "instruction": "Accept [QA280 A Dark Threat Looms] from Chief Engineer Hinderweir VII.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 22,
+      "quest_id": 280,
+      "quest_name": "A Dark Threat Looms",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:280"
+      ],
+      "instruction": "Complete [QC280 A Dark Threat Looms]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 23,
+      "quest_id": 280,
+      "quest_name": "A Dark Threat Looms",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 1585,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 50.58,
+              "y": 14.3
+            }
+          ],
+          "name": "Explosive Charge",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:280"
+      ],
+      "instruction": "Turn in [QT280 A Dark Threat Looms] to Explosive Charge",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 24,
+      "quest_id": 280,
+      "quest_name": "A Dark Threat Looms",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 1585,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 50.58,
+              "y": 14.3
+            }
+          ],
+          "name": "Explosive Charge",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:283"
+      ],
+      "instruction": "Accept [QA283 A Dark Threat Looms] from Explosive Charge.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 25,
+      "quest_id": 283,
+      "quest_name": "A Dark Threat Looms",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:283"
+      ],
+      "instruction": "Complete [QC283 A Dark Threat Looms]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 26,
+      "quest_id": 283,
+      "quest_name": "A Dark Threat Looms",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1093,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 46.05,
+              "y": 13.61
+            }
+          ],
+          "name": "Chief Engineer Hinderweir VII",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:283"
+      ],
+      "instruction": "Turn in [QT283 A Dark Threat Looms] to Chief Engineer Hinderweir VII",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 27,
+      "quest_id": 283,
+      "quest_name": "A Dark Threat Looms",
+      "quest_tag": null,
+      "required_level": 16,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 38,
+      "zone_or_sort_name": "Loch Modan"
+    },
+    {
+      "before_quest_id": 469,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:469:requiredLevel"
+      ],
+      "instruction": "Reach level 18 before accepting Daily Delivery. [XP18 Level 18]",
+      "map_id": 11,
+      "map_name": "Wetlands",
+      "optional": false,
+      "order": 28,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 18,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 49.92,
+      "y": 39.37
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2093,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 49.92,
+              "y": 39.37
+            }
+          ],
+          "name": "Einar Stonegrip",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:469"
+      ],
+      "instruction": "Accept [QA469 Daily Delivery] from Einar Stonegrip.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 29,
+      "quest_id": 469,
+      "quest_name": "Daily Delivery",
+      "quest_tag": null,
+      "required_level": 18,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:469"
+      ],
+      "instruction": "Complete [QC469 Daily Delivery]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 30,
+      "quest_id": 469,
+      "quest_name": "Daily Delivery",
+      "quest_tag": null,
+      "required_level": 18,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2094,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 8.55,
+              "y": 55.74
+            }
+          ],
+          "name": "James Halloran",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:469"
+      ],
+      "instruction": "Turn in [QT469 Daily Delivery] to James Halloran",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 31,
+      "quest_id": 469,
+      "quest_name": "Daily Delivery",
+      "quest_tag": null,
+      "required_level": 18,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4455,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 9.96,
+              "y": 57.96
+            }
+          ],
+          "name": "Red Jack Flint",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1132"
+      ],
+      "instruction": "Accept [QA1132 Fiora Longears] from Red Jack Flint.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 32,
+      "quest_id": 1132,
+      "quest_name": "Fiora Longears",
+      "quest_tag": null,
+      "required_level": 18,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1132"
+      ],
+      "instruction": "Complete [QC1132 Fiora Longears]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 33,
+      "quest_id": 1132,
+      "quest_name": "Fiora Longears",
+      "quest_tag": null,
+      "required_level": 18,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4456,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 148,
+              "map_name": "Darkshore",
+              "verification": "questie_structured_source_only",
+              "x": 33.77,
+              "y": 42.37
+            }
+          ],
+          "name": "Fiora Longears",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1132"
+      ],
+      "instruction": "Turn in [QT1132 Fiora Longears] to Fiora Longears",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 34,
+      "quest_id": 1132,
+      "quest_name": "Fiora Longears",
+      "quest_tag": null,
+      "required_level": 18,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "before_quest_id": 468,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:468:requiredLevel"
+      ],
+      "instruction": "Reach level 19 before accepting Report to Mountaineer Rockgar. [XP19 Level 19]",
+      "map_id": 38,
+      "map_name": "Loch Modan",
+      "optional": false,
+      "order": 35,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 19,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 34.17,
+      "y": 47.84
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1340,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 34.17,
+              "y": 47.84
+            }
+          ],
+          "name": "Mountaineer Kadrell",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:468"
+      ],
+      "instruction": "Accept [QA468 Report to Mountaineer Rockgar] from Mountaineer Kadrell.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 36,
+      "quest_id": 468,
+      "quest_name": "Report to Mountaineer Rockgar",
+      "quest_tag": null,
+      "required_level": 19,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:468"
+      ],
+      "instruction": "Complete [QC468 Report to Mountaineer Rockgar]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 37,
+      "quest_id": 468,
+      "quest_name": "Report to Mountaineer Rockgar",
+      "quest_tag": null,
+      "required_level": 19,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1342,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 25.44,
+              "y": 10.38
+            }
+          ],
+          "name": "Mountaineer Rockgar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:468"
+      ],
+      "instruction": "Turn in [QT468 Report to Mountaineer Rockgar] to Mountaineer Rockgar",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 38,
+      "quest_id": 468,
+      "quest_name": "Report to Mountaineer Rockgar",
+      "quest_tag": null,
+      "required_level": 19,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1342,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 25.44,
+              "y": 10.38
+            }
+          ],
+          "name": "Mountaineer Rockgar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:455"
+      ],
+      "instruction": "Accept [QA455 The Algaz Gauntlet] from Mountaineer Rockgar.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 39,
+      "quest_id": 455,
+      "quest_name": "The Algaz Gauntlet",
+      "quest_tag": null,
+      "required_level": 19,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:455"
+      ],
+      "instruction": "Complete the scripted or exploration event; complete the required NPC or creature objectives: Dragonmaw Scout, Dragonmaw Grunt. [QC455 The Algaz Gauntlet]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Dragonmaw Scout, Dragonmaw Grunt",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2103,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 47.88,
+              "y": 75.88
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 47.96,
+              "y": 76.24
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 47.89,
+              "y": 77.19
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 49.34,
+              "y": 79.75
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 48.24,
+              "y": 78.24
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 48.92,
+              "y": 78.94
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 49.64,
+              "y": 79.02
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 50.08,
+              "y": 79.55
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 47.77,
+              "y": 74.24
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 48.19,
+              "y": 74.03
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 48.23,
+              "y": 74.72
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 47.67,
+              "y": 76.82
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 47.47,
+              "y": 76.46
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 49.3,
+              "y": 76.95
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 51.2,
+              "y": 79.52
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 50.7,
+              "y": 76.92
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 49.93,
+              "y": 76.12
+            }
+          ],
+          "name": "Dragonmaw Scout",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2102,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 49.86,
+              "y": 69.58
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 47.25,
+              "y": 76.05
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 47.47,
+              "y": 75.12
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 47.42,
+              "y": 75.74
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 47.61,
+              "y": 75.58
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 48.21,
+              "y": 75.77
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 49.16,
+              "y": 80.12
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 47.84,
+              "y": 74.35
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 47.81,
+              "y": 74.71
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 51.5,
+              "y": 78.47
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 48.72,
+              "y": 77.26
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 49.99,
+              "y": 77.01
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 47.17,
+              "y": 77.07
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 48.06,
+              "y": 75.52
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 49.27,
+              "y": 82.64
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 47.61,
+              "y": 66.49
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 48.52,
+              "y": 65.97
+            }
+          ],
+          "name": "Dragonmaw Grunt",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 40,
+      "quest_id": 455,
+      "quest_name": "The Algaz Gauntlet",
+      "quest_tag": null,
+      "required_level": 19,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2086,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 10.1,
+              "y": 56.9
+            }
+          ],
+          "name": "Valstag Ironjaw",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:455"
+      ],
+      "instruction": "Turn in [QT455 The Algaz Gauntlet] to Valstag Ironjaw",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 41,
+      "quest_id": 455,
+      "quest_name": "The Algaz Gauntlet",
+      "quest_tag": null,
+      "required_level": 19,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2111,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 11.8,
+              "y": 57.99
+            }
+          ],
+          "name": "Sida",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:470"
+      ],
+      "instruction": "Accept [QA470 Digging Through the Ooze] from Sida.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 42,
+      "quest_id": 470,
+      "quest_name": "Digging Through the Ooze",
+      "quest_tag": null,
+      "required_level": 19,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "before_quest_id": 279,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:279:requiredLevel"
+      ],
+      "instruction": "Reach level 20 before accepting Claws from the Deep. [XP20 Level 20]",
+      "map_id": 11,
+      "map_name": "Wetlands",
+      "optional": false,
+      "order": 43,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 20,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 8.32,
+      "y": 58.57
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1242,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 8.32,
+              "y": 58.57
+            }
+          ],
+          "name": "Karl Boran",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:279"
+      ],
+      "instruction": "Accept [QA279 Claws from the Deep] from Karl Boran.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 44,
+      "quest_id": 279,
+      "quest_name": "Claws from the Deep",
+      "quest_tag": null,
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:279"
+      ],
+      "instruction": "Complete the required objectives \u2014 NPCs or creatures: Bluegill Murloc; items: Gobbler's Head. [QC279 Claws from the Deep]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required objectives \u2014 NPCs or creatures: Bluegill Murloc; items: Gobbler's Head",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1024,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 19.82,
+              "y": 40.05
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 18.95,
+              "y": 41.1
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 20.69,
+              "y": 41.15
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 15.75,
+              "y": 40.79
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 15.61,
+              "y": 38.93
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 15.43,
+              "y": 38.63
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 15.06,
+              "y": 38.72
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 15.31,
+              "y": 38.95
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 14.89,
+              "y": 39.57
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 15.26,
+              "y": 39.83
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 14.21,
+              "y": 41.25
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 18.48,
+              "y": 38.3
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 16.94,
+              "y": 39.92
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 18.62,
+              "y": 40.27
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 13.49,
+              "y": 39.91
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 13.24,
+              "y": 41.15
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 13.51,
+              "y": 42.05
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 13.99,
+              "y": 40.73
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 17.78,
+              "y": 40.85
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 12.51,
+              "y": 39.78
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 12.7,
+              "y": 42.32
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 11.87,
+              "y": 41.21
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 19.06,
+              "y": 38.64
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 10.94,
+              "y": 39.86
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 12.21,
+              "y": 39.06
+            }
+          ],
+          "name": "Bluegill Murloc",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 3618,
+          "kind": "item",
+          "locations": [],
+          "name": "Gobbler's Head",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 45,
+      "quest_id": 279,
+      "quest_name": "Claws from the Deep",
+      "quest_tag": null,
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:470"
+      ],
+      "instruction": "Collect or use the required item: Sida's Bag. [QC470 Digging Through the Ooze]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Sida's Bag",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 3349,
+          "kind": "item",
+          "locations": [],
+          "name": "Sida's Bag",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 46,
+      "quest_id": 470,
+      "quest_name": "Digging Through the Ooze",
+      "quest_tag": null,
+      "required_level": 19,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2111,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 11.8,
+              "y": 57.99
+            }
+          ],
+          "name": "Sida",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:470"
+      ],
+      "instruction": "Turn in [QT470 Digging Through the Ooze] to Sida",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 47,
+      "quest_id": 470,
+      "quest_name": "Digging Through the Ooze",
+      "quest_tag": null,
+      "required_level": 19,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1242,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 8.32,
+              "y": 58.57
+            }
+          ],
+          "name": "Karl Boran",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:279"
+      ],
+      "instruction": "Turn in [QT279 Claws from the Deep] to Karl Boran",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 48,
+      "quest_id": 279,
+      "quest_name": "Claws from the Deep",
+      "quest_tag": null,
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1242,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 8.32,
+              "y": 58.57
+            }
+          ],
+          "name": "Karl Boran",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:281"
+      ],
+      "instruction": "Accept [QA281 Reclaiming Goods] from Karl Boran.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 49,
+      "quest_id": 281,
+      "quest_name": "Reclaiming Goods",
+      "quest_tag": null,
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:281"
+      ],
+      "instruction": "Complete [QC281 Reclaiming Goods]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 50,
+      "quest_id": 281,
+      "quest_name": "Reclaiming Goods",
+      "quest_tag": null,
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 261,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 13.52,
+              "y": 41.38
+            }
+          ],
+          "name": "Damaged Crate",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:281"
+      ],
+      "instruction": "Turn in [QT281 Reclaiming Goods] to Damaged Crate",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 51,
+      "quest_id": 281,
+      "quest_name": "Reclaiming Goods",
+      "quest_tag": null,
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 261,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 13.52,
+              "y": 41.38
+            }
+          ],
+          "name": "Damaged Crate",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:284"
+      ],
+      "instruction": "Accept [QA284 The Search Continues] from Damaged Crate.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 52,
+      "quest_id": 284,
+      "quest_name": "The Search Continues",
+      "quest_tag": null,
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:284"
+      ],
+      "instruction": "Complete [QC284 The Search Continues]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 53,
+      "quest_id": 284,
+      "quest_name": "The Search Continues",
+      "quest_tag": null,
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 142151,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 13.6,
+              "y": 38.22
+            }
+          ],
+          "name": "Sealed Barrel",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:284"
+      ],
+      "instruction": "Turn in [QT284 The Search Continues] to Sealed Barrel",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 54,
+      "quest_id": 284,
+      "quest_name": "The Search Continues",
+      "quest_tag": null,
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 142151,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 13.6,
+              "y": 38.22
+            }
+          ],
+          "name": "Sealed Barrel",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:285"
+      ],
+      "instruction": "Accept [QA285 Search More Hovels] from Sealed Barrel.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 55,
+      "quest_id": 285,
+      "quest_name": "Search More Hovels",
+      "quest_tag": null,
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:285"
+      ],
+      "instruction": "Complete [QC285 Search More Hovels]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 56,
+      "quest_id": 285,
+      "quest_name": "Search More Hovels",
+      "quest_tag": null,
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 259,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 13.94,
+              "y": 34.81
+            }
+          ],
+          "name": "Half-buried Barrel",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:285"
+      ],
+      "instruction": "Turn in [QT285 Search More Hovels] to Half-buried Barrel",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 57,
+      "quest_id": 285,
+      "quest_name": "Search More Hovels",
+      "quest_tag": null,
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 259,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 13.94,
+              "y": 34.81
+            }
+          ],
+          "name": "Half-buried Barrel",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:286"
+      ],
+      "instruction": "Accept [QA286 Return the Statuette] from Half-buried Barrel.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 58,
+      "quest_id": 286,
+      "quest_name": "Return the Statuette",
+      "quest_tag": null,
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:286"
+      ],
+      "instruction": "Complete [QC286 Return the Statuette]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 59,
+      "quest_id": 286,
+      "quest_name": "Return the Statuette",
+      "quest_tag": null,
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1242,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 8.32,
+              "y": 58.57
+            }
+          ],
+          "name": "Karl Boran",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:286"
+      ],
+      "instruction": "Turn in [QT286 Return the Statuette] to Karl Boran",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 60,
+      "quest_id": 286,
+      "quest_name": "Return the Statuette",
+      "quest_tag": null,
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1239,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 10.9,
+              "y": 59.64
+            }
+          ],
+          "name": "First Mate Fitzsimmons",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:463"
+      ],
+      "instruction": "Accept [QA463 The Greenwarden] from First Mate Fitzsimmons.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 61,
+      "quest_id": 463,
+      "quest_name": "The Greenwarden",
+      "quest_tag": null,
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:463"
+      ],
+      "instruction": "Complete [QC463 The Greenwarden]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 62,
+      "quest_id": 463,
+      "quest_name": "The Greenwarden",
+      "quest_tag": null,
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1244,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 56.37,
+              "y": 40.4
+            }
+          ],
+          "name": "Rethiel the Greenwarden",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:463"
+      ],
+      "instruction": "Turn in [QT463 The Greenwarden] to Rethiel the Greenwarden",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 63,
+      "quest_id": 463,
+      "quest_name": "The Greenwarden",
+      "quest_tag": null,
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1244,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 56.37,
+              "y": 40.4
+            }
+          ],
+          "name": "Rethiel the Greenwarden",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:276"
+      ],
+      "instruction": "Accept [QA276 Tramping Paws] from Rethiel the Greenwarden.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 64,
+      "quest_id": 276,
+      "quest_name": "Tramping Paws",
+      "quest_tag": null,
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:276"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Mosshide Gnoll, Mosshide Mongrel. [QC276 Tramping Paws]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Mosshide Gnoll, Mosshide Mongrel",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1007,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 63.78,
+              "y": 62.42
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 64.25,
+              "y": 63.4
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 64.12,
+              "y": 62.47
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 66.67,
+              "y": 70.09
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 64.22,
+              "y": 64.06
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 54.37,
+              "y": 73.73
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 60.29,
+              "y": 71.44
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 61.56,
+              "y": 66.77
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 62.9,
+              "y": 69.81
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 62.38,
+              "y": 68.99
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 62.55,
+              "y": 69.85
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 62.7,
+              "y": 69.1
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 61.23,
+              "y": 72.24
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 55.43,
+              "y": 74.09
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 63.17,
+              "y": 69.09
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 55.17,
+              "y": 75.39
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 55.91,
+              "y": 75.23
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 55.48,
+              "y": 75.0
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 56.73,
+              "y": 75.04
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 56.06,
+              "y": 74.6
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 55.93,
+              "y": 75.93
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 55.69,
+              "y": 75.37
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 55.55,
+              "y": 75.18
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 61.89,
+              "y": 71.88
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 62.13,
+              "y": 72.0
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 62.58,
+              "y": 72.74
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 61.78,
+              "y": 73.08
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 61.21,
+              "y": 73.1
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 63.91,
+              "y": 63.8
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 60.51,
+              "y": 63.71
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 62.63,
+              "y": 74.97
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 60.33,
+              "y": 73.77
+            }
+          ],
+          "name": "Mosshide Gnoll",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1008,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 64.99,
+              "y": 60.64
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 65.43,
+              "y": 64.85
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 61.2,
+              "y": 55.57
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 63.64,
+              "y": 60.52
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 61.86,
+              "y": 57.98
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 63.54,
+              "y": 59.88
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 63.96,
+              "y": 63.38
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 63.79,
+              "y": 63.21
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 63.93,
+              "y": 63.17
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 61.08,
+              "y": 57.08
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 60.62,
+              "y": 58.55
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 61.28,
+              "y": 57.88
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 60.49,
+              "y": 59.36
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 60.74,
+              "y": 64.31
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 61.72,
+              "y": 61.45
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 61.53,
+              "y": 59.13
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 61.27,
+              "y": 67.88
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 62.6,
+              "y": 69.63
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 62.12,
+              "y": 69.82
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 62.82,
+              "y": 69.61
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 62.8,
+              "y": 68.39
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 62.54,
+              "y": 69.49
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 62.78,
+              "y": 69.33
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 55.74,
+              "y": 74.78
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 61.77,
+              "y": 72.53
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 61.85,
+              "y": 72.44
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 61.84,
+              "y": 72.23
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 61.54,
+              "y": 72.67
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 61.64,
+              "y": 72.34
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 61.68,
+              "y": 72.15
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 63.81,
+              "y": 63.64
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 64.05,
+              "y": 63.68
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 60.95,
+              "y": 75.13
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 59.53,
+              "y": 72.67
+            }
+          ],
+          "name": "Mosshide Mongrel",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 65,
+      "quest_id": 276,
+      "quest_name": "Tramping Paws",
+      "quest_tag": null,
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1244,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 56.37,
+              "y": 40.4
+            }
+          ],
+          "name": "Rethiel the Greenwarden",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:276"
+      ],
+      "instruction": "Turn in [QT276 Tramping Paws] to Rethiel the Greenwarden",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 66,
+      "quest_id": 276,
+      "quest_name": "Tramping Paws",
+      "quest_tag": null,
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1244,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 56.37,
+              "y": 40.4
+            }
+          ],
+          "name": "Rethiel the Greenwarden",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:277"
+      ],
+      "instruction": "Accept [QA277 Fire Taboo] from Rethiel the Greenwarden.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 67,
+      "quest_id": 277,
+      "quest_name": "Fire Taboo",
+      "quest_tag": null,
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:277"
+      ],
+      "instruction": "Collect or use the required item: Crude Flint. [QC277 Fire Taboo]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Crude Flint",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 2611,
+          "kind": "item",
+          "locations": [],
+          "name": "Crude Flint",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 68,
+      "quest_id": 277,
+      "quest_name": "Fire Taboo",
+      "quest_tag": null,
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1244,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 56.37,
+              "y": 40.4
+            }
+          ],
+          "name": "Rethiel the Greenwarden",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:277"
+      ],
+      "instruction": "Turn in [QT277 Fire Taboo] to Rethiel the Greenwarden",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 69,
+      "quest_id": 277,
+      "quest_name": "Fire Taboo",
+      "quest_tag": null,
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1244,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 56.37,
+              "y": 40.4
+            }
+          ],
+          "name": "Rethiel the Greenwarden",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:275"
+      ],
+      "instruction": "Accept [QA275 Blisters on The Land] from Rethiel the Greenwarden.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 70,
+      "quest_id": 275,
+      "quest_name": "Blisters on The Land",
+      "quest_tag": null,
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:275"
+      ],
+      "instruction": "Complete the required NPC or creature objective: Fen Creeper. [QC275 Blisters on The Land]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Fen Creeper",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1040,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 28.88,
+              "y": 20.45
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 20.79,
+              "y": 28.35
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 37.41,
+              "y": 33.39
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 40.64,
+              "y": 32.92
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 35.56,
+              "y": 33.45
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 54.0,
+              "y": 41.37
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 55.03,
+              "y": 46.43
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 54.98,
+              "y": 37.16
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 53.19,
+              "y": 36.5
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 27.15,
+              "y": 39.15
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 47.59,
+              "y": 32.79
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 25.85,
+              "y": 31.87
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 22.47,
+              "y": 30.0
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 23.58,
+              "y": 32.0
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 18.52,
+              "y": 27.74
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 46.41,
+              "y": 29.19
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 25.33,
+              "y": 35.52
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 33.01,
+              "y": 25.67
+            },
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 27.38,
+              "y": 37.12
+            }
+          ],
+          "name": "Fen Creeper",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 71,
+      "quest_id": 275,
+      "quest_name": "Blisters on The Land",
+      "quest_tag": null,
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1244,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 56.37,
+              "y": 40.4
+            }
+          ],
+          "name": "Rethiel the Greenwarden",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:275"
+      ],
+      "instruction": "Turn in [QT275 Blisters on The Land] to Rethiel the Greenwarden",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 72,
+      "quest_id": 275,
+      "quest_name": "Blisters on The Land",
+      "quest_tag": null,
+      "required_level": 20,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "before_quest_id": 305,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:305:requiredLevel"
+      ],
+      "instruction": "Reach level 21 before accepting In Search of The Excavation Team. [XP21 Level 21]",
+      "map_id": 11,
+      "map_name": "Wetlands",
+      "optional": false,
+      "order": 73,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 21,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 11.5,
+      "y": 52.17
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2096,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 11.5,
+              "y": 52.17
+            }
+          ],
+          "name": "Tarrel Rockweaver",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:305"
+      ],
+      "instruction": "Accept [QA305 In Search of The Excavation Team] from Tarrel Rockweaver.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 74,
+      "quest_id": 305,
+      "quest_name": "In Search of The Excavation Team",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:305"
+      ],
+      "instruction": "Complete [QC305 In Search of The Excavation Team]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 75,
+      "quest_id": 305,
+      "quest_name": "In Search of The Excavation Team",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1076,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 38.91,
+              "y": 52.34
+            }
+          ],
+          "name": "Merrin Rockweaver",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:305"
+      ],
+      "instruction": "Turn in [QT305 In Search of The Excavation Team] to Merrin Rockweaver",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 76,
+      "quest_id": 305,
+      "quest_name": "In Search of The Excavation Team",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1076,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 38.91,
+              "y": 52.34
+            }
+          ],
+          "name": "Merrin Rockweaver",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:306"
+      ],
+      "instruction": "Accept [QA306 In Search of The Excavation Team] from Merrin Rockweaver.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 77,
+      "quest_id": 306,
+      "quest_name": "In Search of The Excavation Team",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:306"
+      ],
+      "instruction": "Complete [QC306 In Search of The Excavation Team]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 78,
+      "quest_id": 306,
+      "quest_name": "In Search of The Excavation Team",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2096,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 11.5,
+              "y": 52.17
+            }
+          ],
+          "name": "Tarrel Rockweaver",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:306"
+      ],
+      "instruction": "Turn in [QT306 In Search of The Excavation Team] to Tarrel Rockweaver",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 79,
+      "quest_id": 306,
+      "quest_name": "In Search of The Excavation Team",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 11,
+      "zone_or_sort_name": "Wetlands"
+    }
+  ],
+  "title": "15 Loch Modan & Wetlands"
+}

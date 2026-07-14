@@ -1,0 +1,1342 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 58 Felwood, or select this chapter on a partially completed character. Begin in Winterspring with Gregor Greystone. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 618,
+    "map_name": "Winterspring",
+    "x": 61.35,
+    "y": 38.97
+  },
+  "entry_zone_or_sort": 618,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 4,
+    "map_name": "Blasted Lands",
+    "quest_id": 3501,
+    "tag": "QT",
+    "x": 51.98,
+    "y": 35.65
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/059_world_59.lua",
+  "id": "059-primary-59-winterspring-&-blasted-lands",
+  "maximum_level": 50,
+  "minimum_level": 50,
+  "next_chapter": "60 Burning Steppes",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "58 Felwood",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 6028,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5385:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6028:starter"
+      ],
+      "instruction": "Travel from Felwood to Winterspring. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G61.35,38.97 Winterspring]. [O]",
+      "map_id": 618,
+      "map_name": "Winterspring",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 361,
+      "origin_map_name": "Felwood",
+      "origin_x": 51.35,
+      "origin_y": 82.01,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 61.35,
+      "y": 38.97
+    },
+    {
+      "before_quest_id": 6028,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6028:starter"
+      ],
+      "instruction": "Before you begin: travel to Winterspring and meet the first quest giver at [G61.35,38.97 Winterspring]. Leave at least two quest-log slots open. [O]",
+      "map_id": 618,
+      "map_name": "Winterspring",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 61.35,
+      "y": 38.97
+    },
+    {
+      "before_quest_id": 6028,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6028:requiredLevel"
+      ],
+      "instruction": "Reach level 50 before accepting The Everlook Report. [XP50 Level 50]",
+      "map_id": 618,
+      "map_name": "Winterspring",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 50,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 61.35,
+      "y": 38.97
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10431,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 61.35,
+              "y": 38.97
+            }
+          ],
+          "name": "Gregor Greystone",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6028"
+      ],
+      "instruction": "Accept [QA6028 The Everlook Report] from Gregor Greystone.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 6028,
+      "quest_name": "The Everlook Report",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 618,
+      "zone_or_sort_name": "Winterspring"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10431,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 61.35,
+              "y": 38.97
+            }
+          ],
+          "name": "Gregor Greystone",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6030"
+      ],
+      "instruction": "Accept [QA6030 Duke Nicholas Zverenhoff] from Gregor Greystone.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 6030,
+      "quest_name": "Duke Nicholas Zverenhoff",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 618,
+      "zone_or_sort_name": "Winterspring"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 20742,
+          "kind": "item",
+          "locations": [],
+          "name": "Winterfall Ritual Totem",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8471"
+      ],
+      "instruction": "Accept [QA8471 Winterfall Ritual Totem] from Winterfall Ritual Totem.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 8471,
+      "quest_name": "Winterfall Ritual Totem",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 618,
+      "zone_or_sort_name": "Winterspring"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6028"
+      ],
+      "instruction": "Complete [QC6028 The Everlook Report]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 6028,
+      "quest_name": "The Everlook Report",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 618,
+      "zone_or_sort_name": "Winterspring"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6030"
+      ],
+      "instruction": "Complete [QC6030 Duke Nicholas Zverenhoff]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 6030,
+      "quest_name": "Duke Nicholas Zverenhoff",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 618,
+      "zone_or_sort_name": "Winterspring"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8471"
+      ],
+      "instruction": "Use the quest item [UI20742-] as directed. [QC8471 Winterfall Ritual Totem]",
+      "item_use_id": 20742,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 8471,
+      "quest_name": "Winterfall Ritual Totem",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 618,
+      "zone_or_sort_name": "Winterspring"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10840,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 28,
+              "map_name": "Western Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 42.97,
+              "y": 83.55
+            }
+          ],
+          "name": "Argent Officer Pureheart",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6028"
+      ],
+      "instruction": "Turn in [QT6028 The Everlook Report] to Argent Officer Pureheart",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 6028,
+      "quest_name": "The Everlook Report",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 618,
+      "zone_or_sort_name": "Winterspring"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11039,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 139,
+              "map_name": "Eastern Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 81.44,
+              "y": 59.82
+            }
+          ],
+          "name": "Duke Nicholas Zverenhoff",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6030"
+      ],
+      "instruction": "Turn in [QT6030 Duke Nicholas Zverenhoff] to Duke Nicholas Zverenhoff",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 6030,
+      "quest_name": "Duke Nicholas Zverenhoff",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 618,
+      "zone_or_sort_name": "Winterspring"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11558,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 361,
+              "map_name": "Felwood",
+              "verification": "questie_structured_source_only",
+              "x": 65.5,
+              "y": 3.52
+            }
+          ],
+          "name": "Kernda",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8471"
+      ],
+      "instruction": "Turn in [QT8471 Winterfall Ritual Totem] to Kernda",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 8471,
+      "quest_name": "Winterfall Ritual Totem",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 618,
+      "zone_or_sort_name": "Winterspring"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7363,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 4,
+              "map_name": "Blasted Lands",
+              "verification": "questie_structured_source_only",
+              "x": 51.98,
+              "y": 35.65
+            }
+          ],
+          "name": "Kum'isha the Collector",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2521"
+      ],
+      "instruction": "Accept [QA2521 To Serve Kum'isha] from Kum'isha the Collector.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 2521,
+      "quest_name": "To Serve Kum'isha",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 4,
+      "zone_or_sort_name": "Blasted Lands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2521"
+      ],
+      "instruction": "Collect or use the required item: Flawless Draenethyst Sphere. [QC2521 To Serve Kum'isha]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Flawless Draenethyst Sphere",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 8244,
+          "kind": "item",
+          "locations": [],
+          "name": "Flawless Draenethyst Sphere",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 14,
+      "quest_id": 2521,
+      "quest_name": "To Serve Kum'isha",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 4,
+      "zone_or_sort_name": "Blasted Lands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7363,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 4,
+              "map_name": "Blasted Lands",
+              "verification": "questie_structured_source_only",
+              "x": 51.98,
+              "y": 35.65
+            }
+          ],
+          "name": "Kum'isha the Collector",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2521"
+      ],
+      "instruction": "Turn in [QT2521 To Serve Kum'isha] to Kum'isha the Collector",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 2521,
+      "quest_name": "To Serve Kum'isha",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 4,
+      "zone_or_sort_name": "Blasted Lands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7505,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 4,
+              "map_name": "Blasted Lands",
+              "verification": "questie_structured_source_only",
+              "x": 50.55,
+              "y": 14.2
+            }
+          ],
+          "name": "Bloodmage Drazial",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2581"
+      ],
+      "instruction": "Accept [QA2581 Snickerfang Jowls] from Bloodmage Drazial.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 2581,
+      "quest_name": "Snickerfang Jowls",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 4,
+      "zone_or_sort_name": "Blasted Lands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7505,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 4,
+              "map_name": "Blasted Lands",
+              "verification": "questie_structured_source_only",
+              "x": 50.55,
+              "y": 14.2
+            }
+          ],
+          "name": "Bloodmage Drazial",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2583"
+      ],
+      "instruction": "Accept [QA2583 A Boar's Vitality] from Bloodmage Drazial.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 2583,
+      "quest_name": "A Boar's Vitality",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 4,
+      "zone_or_sort_name": "Blasted Lands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7505,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 4,
+              "map_name": "Blasted Lands",
+              "verification": "questie_structured_source_only",
+              "x": 50.55,
+              "y": 14.2
+            }
+          ],
+          "name": "Bloodmage Drazial",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2585"
+      ],
+      "instruction": "Accept [QA2585 The Decisive Striker] from Bloodmage Drazial.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 2585,
+      "quest_name": "The Decisive Striker",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 4,
+      "zone_or_sort_name": "Blasted Lands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7506,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 4,
+              "map_name": "Blasted Lands",
+              "verification": "questie_structured_source_only",
+              "x": 50.64,
+              "y": 14.3
+            }
+          ],
+          "name": "Bloodmage Lynnore",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2601"
+      ],
+      "instruction": "Accept [QA2601 The Basilisk's Bite] from Bloodmage Lynnore.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 2601,
+      "quest_name": "The Basilisk's Bite",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 4,
+      "zone_or_sort_name": "Blasted Lands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7506,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 4,
+              "map_name": "Blasted Lands",
+              "verification": "questie_structured_source_only",
+              "x": 50.64,
+              "y": 14.3
+            }
+          ],
+          "name": "Bloodmage Lynnore",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2603"
+      ],
+      "instruction": "Accept [QA2603 Vulture's Vigor] from Bloodmage Lynnore.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 2603,
+      "quest_name": "Vulture's Vigor",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 4,
+      "zone_or_sort_name": "Blasted Lands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2581"
+      ],
+      "instruction": "Collect or use the required items: Snickerfang Jowl, Blasted Boar Lung, Scorpok Pincer. [QC2581 Snickerfang Jowls]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Snickerfang Jowl, Blasted Boar Lung, Scorpok Pincer",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 8391,
+          "kind": "item",
+          "locations": [],
+          "name": "Snickerfang Jowl",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 8392,
+          "kind": "item",
+          "locations": [],
+          "name": "Blasted Boar Lung",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 8393,
+          "kind": "item",
+          "locations": [],
+          "name": "Scorpok Pincer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 21,
+      "quest_id": 2581,
+      "quest_name": "Snickerfang Jowls",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 4,
+      "zone_or_sort_name": "Blasted Lands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2583"
+      ],
+      "instruction": "Collect or use the required items: Blasted Boar Lung, Scorpok Pincer, Basilisk Brain. [QC2583 A Boar's Vitality]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Blasted Boar Lung, Scorpok Pincer, Basilisk Brain",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 8392,
+          "kind": "item",
+          "locations": [],
+          "name": "Blasted Boar Lung",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 8393,
+          "kind": "item",
+          "locations": [],
+          "name": "Scorpok Pincer",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 8394,
+          "kind": "item",
+          "locations": [],
+          "name": "Basilisk Brain",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 22,
+      "quest_id": 2583,
+      "quest_name": "A Boar's Vitality",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 4,
+      "zone_or_sort_name": "Blasted Lands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2585"
+      ],
+      "instruction": "Collect or use the required items: Scorpok Pincer, Vulture Gizzard, Blasted Boar Lung. [QC2585 The Decisive Striker]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Scorpok Pincer, Vulture Gizzard, Blasted Boar Lung",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 8393,
+          "kind": "item",
+          "locations": [],
+          "name": "Scorpok Pincer",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 8396,
+          "kind": "item",
+          "locations": [],
+          "name": "Vulture Gizzard",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 8392,
+          "kind": "item",
+          "locations": [],
+          "name": "Blasted Boar Lung",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 23,
+      "quest_id": 2585,
+      "quest_name": "The Decisive Striker",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 4,
+      "zone_or_sort_name": "Blasted Lands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2601"
+      ],
+      "instruction": "Collect or use the required items: Basilisk Brain, Vulture Gizzard. [QC2601 The Basilisk's Bite]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Basilisk Brain, Vulture Gizzard",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 8394,
+          "kind": "item",
+          "locations": [],
+          "name": "Basilisk Brain",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 8396,
+          "kind": "item",
+          "locations": [],
+          "name": "Vulture Gizzard",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 24,
+      "quest_id": 2601,
+      "quest_name": "The Basilisk's Bite",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 4,
+      "zone_or_sort_name": "Blasted Lands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2603"
+      ],
+      "instruction": "Collect or use the required items: Vulture Gizzard, Snickerfang Jowl. [QC2603 Vulture's Vigor]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Vulture Gizzard, Snickerfang Jowl",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 8396,
+          "kind": "item",
+          "locations": [],
+          "name": "Vulture Gizzard",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 8391,
+          "kind": "item",
+          "locations": [],
+          "name": "Snickerfang Jowl",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 25,
+      "quest_id": 2603,
+      "quest_name": "Vulture's Vigor",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 4,
+      "zone_or_sort_name": "Blasted Lands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7506,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 4,
+              "map_name": "Blasted Lands",
+              "verification": "questie_structured_source_only",
+              "x": 50.64,
+              "y": 14.3
+            }
+          ],
+          "name": "Bloodmage Lynnore",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2601"
+      ],
+      "instruction": "Turn in [QT2601 The Basilisk's Bite] to Bloodmage Lynnore",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 26,
+      "quest_id": 2601,
+      "quest_name": "The Basilisk's Bite",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 4,
+      "zone_or_sort_name": "Blasted Lands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7506,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 4,
+              "map_name": "Blasted Lands",
+              "verification": "questie_structured_source_only",
+              "x": 50.64,
+              "y": 14.3
+            }
+          ],
+          "name": "Bloodmage Lynnore",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2603"
+      ],
+      "instruction": "Turn in [QT2603 Vulture's Vigor] to Bloodmage Lynnore",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 27,
+      "quest_id": 2603,
+      "quest_name": "Vulture's Vigor",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 4,
+      "zone_or_sort_name": "Blasted Lands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7505,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 4,
+              "map_name": "Blasted Lands",
+              "verification": "questie_structured_source_only",
+              "x": 50.55,
+              "y": 14.2
+            }
+          ],
+          "name": "Bloodmage Drazial",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2581"
+      ],
+      "instruction": "Turn in [QT2581 Snickerfang Jowls] to Bloodmage Drazial",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 28,
+      "quest_id": 2581,
+      "quest_name": "Snickerfang Jowls",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 4,
+      "zone_or_sort_name": "Blasted Lands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7505,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 4,
+              "map_name": "Blasted Lands",
+              "verification": "questie_structured_source_only",
+              "x": 50.55,
+              "y": 14.2
+            }
+          ],
+          "name": "Bloodmage Drazial",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2583"
+      ],
+      "instruction": "Turn in [QT2583 A Boar's Vitality] to Bloodmage Drazial",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 29,
+      "quest_id": 2583,
+      "quest_name": "A Boar's Vitality",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 4,
+      "zone_or_sort_name": "Blasted Lands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7505,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 4,
+              "map_name": "Blasted Lands",
+              "verification": "questie_structured_source_only",
+              "x": 50.55,
+              "y": 14.2
+            }
+          ],
+          "name": "Bloodmage Drazial",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2585"
+      ],
+      "instruction": "Turn in [QT2585 The Decisive Striker] to Bloodmage Drazial",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 30,
+      "quest_id": 2585,
+      "quest_name": "The Decisive Striker",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 4,
+      "zone_or_sort_name": "Blasted Lands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7363,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 4,
+              "map_name": "Blasted Lands",
+              "verification": "questie_structured_source_only",
+              "x": 51.98,
+              "y": 35.65
+            }
+          ],
+          "name": "Kum'isha the Collector",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3501"
+      ],
+      "instruction": "Accept [QA3501 Everything Counts In Large Amounts] from Kum'isha the Collector.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 31,
+      "quest_id": 3501,
+      "quest_name": "Everything Counts In Large Amounts",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 4,
+      "zone_or_sort_name": "Blasted Lands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3501"
+      ],
+      "instruction": "Collect or use the required item: Imperfect Draenethyst Fragment. [QC3501 Everything Counts In Large Amounts]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Imperfect Draenethyst Fragment",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 10593,
+          "kind": "item",
+          "locations": [],
+          "name": "Imperfect Draenethyst Fragment",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 32,
+      "quest_id": 3501,
+      "quest_name": "Everything Counts In Large Amounts",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 4,
+      "zone_or_sort_name": "Blasted Lands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7363,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 4,
+              "map_name": "Blasted Lands",
+              "verification": "questie_structured_source_only",
+              "x": 51.98,
+              "y": 35.65
+            }
+          ],
+          "name": "Kum'isha the Collector",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3501"
+      ],
+      "instruction": "Turn in [QT3501 Everything Counts In Large Amounts] to Kum'isha the Collector",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 33,
+      "quest_id": 3501,
+      "quest_name": "Everything Counts In Large Amounts",
+      "quest_tag": null,
+      "required_level": 50,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 4,
+      "zone_or_sort_name": "Blasted Lands"
+    }
+  ],
+  "title": "59 Winterspring & Blasted Lands"
+}

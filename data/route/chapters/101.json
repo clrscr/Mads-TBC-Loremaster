@@ -1,0 +1,643 @@
+{
+  "branch": "optional_content",
+  "entry_contract": "Complete the relevant shared prerequisites. Begin in Arathi Highlands with Samuel Hawke. Leave at least two quest-log slots open; group and reputation gates remain explicit.",
+  "entry_route_point": {
+    "map_id": 45,
+    "map_name": "Arathi Highlands",
+    "x": 45.97,
+    "y": 45.21
+  },
+  "entry_zone_or_sort": 3358,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 1537,
+    "map_name": "Ironforge",
+    "quest_id": 2948,
+    "tag": "QT",
+    "x": 36.38,
+    "y": 3.61
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Optional Content",
+  "guide_file": "Guides/optional_content/101_dungeon_05.lua",
+  "id": "101-optional_content-optional-content-05---gnomeregan-&-arathi-basin",
+  "maximum_level": null,
+  "minimum_level": null,
+  "next_chapter": "Optional Content 06 - Razorfen Downs & Scarlet Monastery",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "Optional Content 04 - The Stockade & Ashenvale",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 8260,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7863:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8260:starter",
+        "travel-network:auberdine-menethil",
+        "https://www.wowhead.com/tbc/quest=942/the-absent-minded-prospector"
+      ],
+      "instruction": "Travel from Ashenvale to Arathi Highlands: Take the ship between Auberdine and Menethil Harbor. Continue to [G45.97,45.21 Arathi Highlands]. [O]",
+      "map_id": 45,
+      "map_name": "Arathi Highlands",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 331,
+      "origin_map_name": "Ashenvale",
+      "origin_x": 61.49,
+      "origin_y": 83.86,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [
+        "auberdine-menethil"
+      ],
+      "type": "transport",
+      "verification": "questie_endpoints_and_tbc_transport_network",
+      "x": 45.97,
+      "y": 45.21
+    },
+    {
+      "before_quest_id": 8260,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "route-branch:optional_content"
+      ],
+      "instruction": "Optional entry requirements: complete the relevant shared prerequisites. [O]",
+      "map_id": 45,
+      "map_name": "Arathi Highlands",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "branch_entry",
+      "verification": "route_dependency_graph",
+      "x": 45.97,
+      "y": 45.21
+    },
+    {
+      "before_quest_id": 8260,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8260:starter"
+      ],
+      "instruction": "Optional chapter: travel to Arathi Highlands and begin at [G45.97,45.21 Arathi Highlands]. Leave at least two quest-log slots open. [O]",
+      "map_id": 45,
+      "map_name": "Arathi Highlands",
+      "optional": true,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 45.97,
+      "y": 45.21
+    },
+    {
+      "before_quest_id": 8260,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8260:requiredLevel"
+      ],
+      "instruction": "Reach level 25 before accepting Arathor Basic Care Package. [XP25 Level 25]",
+      "map_id": 45,
+      "map_name": "Arathi Highlands",
+      "optional": false,
+      "order": 4,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 25,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 45.97,
+      "y": 45.21
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "pvp",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15127,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 45.97,
+              "y": 45.21
+            }
+          ],
+          "name": "Samuel Hawke",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8260"
+      ],
+      "instruction": "Accept [QA8260 Arathor Basic Care Package] from Samuel Hawke.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 8260,
+      "quest_name": "Arathor Basic Care Package",
+      "quest_tag": "PvP",
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3358,
+      "zone_or_sort_name": "Arathi Basin"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "pvp",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8260"
+      ],
+      "instruction": "Complete [QC8260 Arathor Basic Care Package]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 8260,
+      "quest_name": "Arathor Basic Care Package",
+      "quest_tag": "PvP",
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3358,
+      "zone_or_sort_name": "Arathi Basin"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "pvp",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15127,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 45,
+              "map_name": "Arathi Highlands",
+              "verification": "questie_structured_source_only",
+              "x": 45.97,
+              "y": 45.21
+            }
+          ],
+          "name": "Samuel Hawke",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8260"
+      ],
+      "instruction": "Turn in [QT8260 Arathor Basic Care Package] to Samuel Hawke",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 8260,
+      "quest_name": "Arathor Basic Care Package",
+      "quest_tag": "PvP",
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3358,
+      "zone_or_sort_name": "Arathi Basin"
+    },
+    {
+      "before_quest_id": 2945,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2945:requiredLevel"
+      ],
+      "instruction": "Reach level 28 before accepting Grime-Encrusted Ring. [XP28 Level 28]",
+      "map_id": 133,
+      "map_name": "Gnomeregan",
+      "optional": false,
+      "order": 8,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 28,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": null,
+      "y": null
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "item_triggered",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 9326,
+          "kind": "item",
+          "locations": [],
+          "name": "Grime-Encrusted Ring",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2945"
+      ],
+      "instruction": "Accept [QA2945 Grime-Encrusted Ring] from Grime-Encrusted Ring.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 2945,
+      "quest_name": "Grime-Encrusted Ring",
+      "quest_tag": "Dungeon",
+      "required_level": 28,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "before_quest_id": 2945,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2945:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 45,
+      "map_name": "Arathi Highlands",
+      "optional": true,
+      "order": 10,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        2945
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 45.97,
+      "y": 45.21
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "item_triggered",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2945"
+      ],
+      "instruction": "Dungeon \u2014 Complete [QC2945 Grime-Encrusted Ring]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 2945,
+      "quest_name": "Grime-Encrusted Ring",
+      "quest_tag": "Dungeon",
+      "required_level": 28,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "item_triggered",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 142487,
+          "kind": "object",
+          "locations": [],
+          "name": "The Sparklematic 5200",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2945"
+      ],
+      "instruction": "Turn in [QT2945 Grime-Encrusted Ring] to The Sparklematic 5200",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 2945,
+      "quest_name": "Grime-Encrusted Ring",
+      "quest_tag": "Dungeon",
+      "required_level": 28,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 142487,
+          "kind": "object",
+          "locations": [],
+          "name": "The Sparklematic 5200",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2947"
+      ],
+      "instruction": "Accept [QA2947 Return of the Ring] from The Sparklematic 5200.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 2947,
+      "quest_name": "Return of the Ring",
+      "quest_tag": "Dungeon",
+      "required_level": 28,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2947"
+      ],
+      "instruction": "Dungeon \u2014 Complete [QC2947 Return of the Ring]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 2947,
+      "quest_name": "Return of the Ring",
+      "quest_tag": "Dungeon",
+      "required_level": 28,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 6826,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 36.38,
+              "y": 3.61
+            }
+          ],
+          "name": "Talvash del Kissel",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2947"
+      ],
+      "instruction": "Turn in [QT2947 Return of the Ring] to Talvash del Kissel",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 2947,
+      "quest_name": "Return of the Ring",
+      "quest_tag": "Dungeon",
+      "required_level": 28,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 133,
+      "zone_or_sort_name": "Gnomeregan"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 6826,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 36.38,
+              "y": 3.61
+            }
+          ],
+          "name": "Talvash del Kissel",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2948"
+      ],
+      "instruction": "Accept [QA2948 Gnome Improvement] from Talvash del Kissel.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 2948,
+      "quest_name": "Gnome Improvement",
+      "quest_tag": null,
+      "required_level": 28,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2948"
+      ],
+      "instruction": "Collect or use the required items: Silver Bar, Moss Agate. [QC2948 Gnome Improvement]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Silver Bar, Moss Agate",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 2842,
+          "kind": "item",
+          "locations": [],
+          "name": "Silver Bar",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 1206,
+          "kind": "item",
+          "locations": [],
+          "name": "Moss Agate",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 17,
+      "quest_id": 2948,
+      "quest_name": "Gnome Improvement",
+      "quest_tag": null,
+      "required_level": 28,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 6826,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 36.38,
+              "y": 3.61
+            }
+          ],
+          "name": "Talvash del Kissel",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2948"
+      ],
+      "instruction": "Turn in [QT2948 Gnome Improvement] to Talvash del Kissel",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 2948,
+      "quest_name": "Gnome Improvement",
+      "quest_tag": null,
+      "required_level": 28,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    }
+  ],
+  "title": "Optional Content 05 - Gnomeregan & Arathi Basin"
+}

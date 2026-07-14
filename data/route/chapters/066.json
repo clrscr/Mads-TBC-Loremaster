@@ -1,0 +1,359 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 65 Stormwind City & Ironforge, or select this chapter on a partially completed character. Begin in Feralas with Quintis Jonespyre. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 357,
+    "map_name": "Feralas",
+    "x": 32.45,
+    "y": 43.79
+  },
+  "entry_zone_or_sort": 1116,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 440,
+    "map_name": "Tanaris",
+    "quest_id": 4504,
+    "tag": "QT",
+    "x": 51.57,
+    "y": 26.76
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/066_world_66.lua",
+  "id": "066-primary-66-tanaris",
+  "maximum_level": 52,
+  "minimum_level": 52,
+  "next_chapter": "67 Un'Goro Crater",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "65 Stormwind City & Ironforge",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 3791,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7811:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3791:starter",
+        "travel-network:ratchet-booty-bay",
+        "https://www.wowhead.com/tbc/quest=1040/passage-to-booty-bay"
+      ],
+      "instruction": "Travel from Ironforge to Feralas: Take the ship between Ratchet and Booty Bay. Continue to [G32.45,43.79 Feralas]. [O]",
+      "map_id": 357,
+      "map_name": "Feralas",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 1537,
+      "origin_map_name": "Ironforge",
+      "origin_x": 74.09,
+      "origin_y": 48.22,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [
+        "ratchet-booty-bay"
+      ],
+      "type": "transport",
+      "verification": "questie_endpoints_and_tbc_transport_network",
+      "x": 32.45,
+      "y": 43.79
+    },
+    {
+      "before_quest_id": 3791,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3791:starter"
+      ],
+      "instruction": "Before you begin: travel to Feralas and meet the first quest giver at [G32.45,43.79 Feralas]. Leave at least two quest-log slots open. [O]",
+      "map_id": 357,
+      "map_name": "Feralas",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 32.45,
+      "y": 43.79
+    },
+    {
+      "before_quest_id": 3791,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3791:requiredLevel"
+      ],
+      "instruction": "Reach level 52 before accepting The Mystery of Morrowgrain. [XP52 Level 52]",
+      "map_id": 357,
+      "map_name": "Feralas",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 52,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 32.45,
+      "y": 43.79
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7879,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 357,
+              "map_name": "Feralas",
+              "verification": "questie_structured_source_only",
+              "x": 32.45,
+              "y": 43.79
+            }
+          ],
+          "name": "Quintis Jonespyre",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3791"
+      ],
+      "instruction": "Accept [QA3791 The Mystery of Morrowgrain] from Quintis Jonespyre.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 3791,
+      "quest_name": "The Mystery of Morrowgrain",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1116,
+      "zone_or_sort_name": "Map or sort 1116"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3791"
+      ],
+      "instruction": "Collect or use the required item: Morrowgrain. [QC3791 The Mystery of Morrowgrain]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Morrowgrain",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 11040,
+          "kind": "item",
+          "locations": [],
+          "name": "Morrowgrain",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 5,
+      "quest_id": 3791,
+      "quest_name": "The Mystery of Morrowgrain",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1116,
+      "zone_or_sort_name": "Map or sort 1116"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7879,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 357,
+              "map_name": "Feralas",
+              "verification": "questie_structured_source_only",
+              "x": 32.45,
+              "y": 43.79
+            }
+          ],
+          "name": "Quintis Jonespyre",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3791"
+      ],
+      "instruction": "Turn in [QT3791 The Mystery of Morrowgrain] to Quintis Jonespyre",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 3791,
+      "quest_name": "The Mystery of Morrowgrain",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1116,
+      "zone_or_sort_name": "Map or sort 1116"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7876,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 51.57,
+              "y": 26.76
+            }
+          ],
+          "name": "Tran'rek",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4504"
+      ],
+      "instruction": "Accept [QA4504 Super Sticky] from Tran'rek.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 4504,
+      "quest_name": "Super Sticky",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4504"
+      ],
+      "instruction": "Collect or use the required item: Super Sticky Tar. [QC4504 Super Sticky]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Super Sticky Tar",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 11834,
+          "kind": "item",
+          "locations": [],
+          "name": "Super Sticky Tar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 8,
+      "quest_id": 4504,
+      "quest_name": "Super Sticky",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7876,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 51.57,
+              "y": 26.76
+            }
+          ],
+          "name": "Tran'rek",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4504"
+      ],
+      "instruction": "Turn in [QT4504 Super Sticky] to Tran'rek",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 4504,
+      "quest_name": "Super Sticky",
+      "quest_tag": null,
+      "required_level": 52,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    }
+  ],
+  "title": "66 Tanaris"
+}

@@ -1,0 +1,767 @@
+{
+  "branch": "optional_content",
+  "entry_contract": "Complete the relevant shared prerequisites. Begin in Eastern Plaguelands with Anthion Harmon. Leave at least two quest-log slots open; group and reputation gates remain explicit.",
+  "entry_route_point": {
+    "map_id": 139,
+    "map_name": "Eastern Plaguelands",
+    "x": 30.85,
+    "y": 16.75
+  },
+  "entry_zone_or_sort": 2017,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 139,
+    "map_name": "Eastern Plaguelands",
+    "quest_id": 4771,
+    "tag": "QT",
+    "x": 81.47,
+    "y": 59.66
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Optional Content",
+  "guide_file": "Guides/optional_content/122_dungeon_26.lua",
+  "id": "122-optional_content-optional-content-26---eastern-plaguelands-&-scholomance",
+  "maximum_level": null,
+  "minimum_level": null,
+  "next_chapter": "Optional Content 27 - Dire Maul & Blackrock Spire",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "Optional Content 25 - Zul'Gurub & Tanaris",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 8945,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8148:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8945:starter"
+      ],
+      "instruction": "Travel from Stranglethorn Vale to Eastern Plaguelands. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G30.85,16.75 Eastern Plaguelands]. [O]",
+      "map_id": 139,
+      "map_name": "Eastern Plaguelands",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 33,
+      "origin_map_name": "Stranglethorn Vale",
+      "origin_x": 14.08,
+      "origin_y": 13.72,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 30.85,
+      "y": 16.75
+    },
+    {
+      "before_quest_id": 8945,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "route-branch:optional_content"
+      ],
+      "instruction": "Optional entry requirements: complete the relevant shared prerequisites. [O]",
+      "map_id": 139,
+      "map_name": "Eastern Plaguelands",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "branch_entry",
+      "verification": "route_dependency_graph",
+      "x": 30.85,
+      "y": 16.75
+    },
+    {
+      "before_quest_id": 8945,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8945:starter"
+      ],
+      "instruction": "Optional chapter: travel to Eastern Plaguelands and begin at [G30.85,16.75 Eastern Plaguelands]. Leave at least two quest-log slots open. [O]",
+      "map_id": 139,
+      "map_name": "Eastern Plaguelands",
+      "optional": true,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 30.85,
+      "y": 16.75
+    },
+    {
+      "before_quest_id": 8945,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8945:requiredLevel"
+      ],
+      "instruction": "Reach level 62 before accepting Dead Man's Plea. [XP62 Level 62]",
+      "map_id": 139,
+      "map_name": "Eastern Plaguelands",
+      "optional": false,
+      "order": 4,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 62,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 30.85,
+      "y": 16.75
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16016,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 139,
+              "map_name": "Eastern Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 30.85,
+              "y": 16.75
+            }
+          ],
+          "name": "Anthion Harmon",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8945"
+      ],
+      "instruction": "Accept [QA8945 Dead Man's Plea] from Anthion Harmon.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 8945,
+      "quest_name": "Dead Man's Plea",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 2017,
+      "zone_or_sort_name": "Stratholme"
+    },
+    {
+      "before_quest_id": 8945,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8945:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 139,
+      "map_name": "Eastern Plaguelands",
+      "optional": true,
+      "order": 6,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        8945
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 30.85,
+      "y": 16.75
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8945"
+      ],
+      "instruction": "Dungeon \u2014 Complete the required NPC or creature objective: Ysida Harmon. [QC8945 Dead Man's Plea]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Ysida Harmon",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16031,
+          "kind": "npc",
+          "locations": [],
+          "name": "Ysida Harmon",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 7,
+      "quest_id": 8945,
+      "quest_name": "Dead Man's Plea",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 2017,
+      "zone_or_sort_name": "Stratholme"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16031,
+          "kind": "npc",
+          "locations": [],
+          "name": "Ysida Harmon",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8945"
+      ],
+      "instruction": "Turn in [QT8945 Dead Man's Plea] to Ysida Harmon",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 8945,
+      "quest_name": "Dead Man's Plea",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 2017,
+      "zone_or_sort_name": "Stratholme"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16031,
+          "kind": "npc",
+          "locations": [],
+          "name": "Ysida Harmon",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8946"
+      ],
+      "instruction": "Accept [QA8946 Proof of Life] from Ysida Harmon.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 8946,
+      "quest_name": "Proof of Life",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 139,
+      "zone_or_sort_name": "Eastern Plaguelands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8946"
+      ],
+      "instruction": "Complete [QC8946 Proof of Life]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 8946,
+      "quest_name": "Proof of Life",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 139,
+      "zone_or_sort_name": "Eastern Plaguelands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16016,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 139,
+              "map_name": "Eastern Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 30.85,
+              "y": 16.75
+            }
+          ],
+          "name": "Anthion Harmon",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8946"
+      ],
+      "instruction": "Turn in [QT8946 Proof of Life] to Anthion Harmon",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 8946,
+      "quest_name": "Proof of Life",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 139,
+      "zone_or_sort_name": "Eastern Plaguelands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16016,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 139,
+              "map_name": "Eastern Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 30.85,
+              "y": 16.75
+            }
+          ],
+          "name": "Anthion Harmon",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8947"
+      ],
+      "instruction": "Accept [QA8947 Anthion's Strange Request] from Anthion Harmon.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 8947,
+      "quest_name": "Anthion's Strange Request",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 139,
+      "zone_or_sort_name": "Eastern Plaguelands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8947"
+      ],
+      "instruction": "Collect or use the required items: Dark Iron Bar, Enchanted Leather, Mooncloth, plus 1 more. [QC8947 Anthion's Strange Request]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Dark Iron Bar, Enchanted Leather, Mooncloth, plus 1 more",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 11371,
+          "kind": "item",
+          "locations": [],
+          "name": "Dark Iron Bar",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 12810,
+          "kind": "item",
+          "locations": [],
+          "name": "Enchanted Leather",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 14342,
+          "kind": "item",
+          "locations": [],
+          "name": "Mooncloth",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 15407,
+          "kind": "item",
+          "locations": [],
+          "name": "Cured Rugged Hide",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 13,
+      "quest_id": 8947,
+      "quest_name": "Anthion's Strange Request",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 139,
+      "zone_or_sort_name": "Eastern Plaguelands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16016,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 139,
+              "map_name": "Eastern Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 30.85,
+              "y": 16.75
+            }
+          ],
+          "name": "Anthion Harmon",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8947"
+      ],
+      "instruction": "Turn in [QT8947 Anthion's Strange Request] to Anthion Harmon",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 8947,
+      "quest_name": "Anthion's Strange Request",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 139,
+      "zone_or_sort_name": "Eastern Plaguelands"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11036,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 139,
+              "map_name": "Eastern Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 81.73,
+              "y": 57.83
+            }
+          ],
+          "name": "Leonid Barthalomew the Revered",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5531"
+      ],
+      "instruction": "Accept [QA5531 Betina Bigglezink] from Leonid Barthalomew the Revered.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 5531,
+      "quest_name": "Betina Bigglezink",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 2057,
+      "zone_or_sort_name": "Scholomance"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5531"
+      ],
+      "instruction": "Dungeon \u2014 Complete [QC5531 Betina Bigglezink]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 5531,
+      "quest_name": "Betina Bigglezink",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 2057,
+      "zone_or_sort_name": "Scholomance"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11035,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 139,
+              "map_name": "Eastern Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 81.47,
+              "y": 59.66
+            }
+          ],
+          "name": "Betina Bigglezink",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5531"
+      ],
+      "instruction": "Turn in [QT5531 Betina Bigglezink] to Betina Bigglezink",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 5531,
+      "quest_name": "Betina Bigglezink",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 2057,
+      "zone_or_sort_name": "Scholomance"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11035,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 139,
+              "map_name": "Eastern Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 81.47,
+              "y": 59.66
+            }
+          ],
+          "name": "Betina Bigglezink",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4771"
+      ],
+      "instruction": "Accept [QA4771 Dawn's Gambit] from Betina Bigglezink.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 4771,
+      "quest_name": "Dawn's Gambit",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 2057,
+      "zone_or_sort_name": "Scholomance"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4771"
+      ],
+      "instruction": "Dungeon \u2014 Use the quest item [UI12368-] as directed; complete the required NPC or creature objective: Vectus. [QC4771 Dawn's Gambit]",
+      "item_use_id": 12368,
+      "objective_hint": "Complete the required NPC or creature objective: Vectus",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10432,
+          "kind": "npc",
+          "locations": [],
+          "name": "Vectus",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 19,
+      "quest_id": 4771,
+      "quest_name": "Dawn's Gambit",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 2057,
+      "zone_or_sort_name": "Scholomance"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11035,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 139,
+              "map_name": "Eastern Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 81.47,
+              "y": 59.66
+            }
+          ],
+          "name": "Betina Bigglezink",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4771"
+      ],
+      "instruction": "Turn in [QT4771 Dawn's Gambit] to Betina Bigglezink",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 4771,
+      "quest_name": "Dawn's Gambit",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 2057,
+      "zone_or_sort_name": "Scholomance"
+    }
+  ],
+  "title": "Optional Content 26 - Eastern Plaguelands & Scholomance"
+}

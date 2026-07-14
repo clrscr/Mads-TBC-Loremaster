@@ -1,0 +1,2683 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 19 Darkshore & Ashenvale, or select this chapter on a partially completed character. Begin in Stonetalon Mountains with Gaxim Rustfizzle. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 406,
+    "map_name": "Stonetalon Mountains",
+    "x": 59.52,
+    "y": 67.15
+  },
+  "entry_zone_or_sort": 406,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 331,
+    "map_name": "Ashenvale",
+    "quest_id": 976,
+    "tag": "QT",
+    "x": 26.2,
+    "y": 38.7
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/020_world_20.lua",
+  "id": "020-primary-20-stonetalon-mountains",
+  "maximum_level": 21,
+  "minimum_level": 21,
+  "next_chapter": "21 Darkshore & Ashenvale",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "19 Darkshore & Ashenvale",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 1071,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10752:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1071:starter"
+      ],
+      "instruction": "Travel from Ashenvale to Stonetalon Mountains. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G59.52,67.15 Stonetalon Mountains]. [O]",
+      "map_id": 406,
+      "map_name": "Stonetalon Mountains",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 331,
+      "origin_map_name": "Ashenvale",
+      "origin_x": 36.62,
+      "origin_y": 49.58,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 59.52,
+      "y": 67.15
+    },
+    {
+      "before_quest_id": 1071,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1071:starter"
+      ],
+      "instruction": "Before you begin: travel to Stonetalon Mountains and meet the first quest giver at [G59.52,67.15 Stonetalon Mountains]. Leave at least two quest-log slots open. [O]",
+      "map_id": 406,
+      "map_name": "Stonetalon Mountains",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 59.52,
+      "y": 67.15
+    },
+    {
+      "before_quest_id": 1071,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1071:requiredLevel"
+      ],
+      "instruction": "Reach level 21 before accepting A Gnome's Respite. [XP21 Level 21]",
+      "map_id": 406,
+      "map_name": "Stonetalon Mountains",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 21,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 59.52,
+      "y": 67.15
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4077,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 59.52,
+              "y": 67.15
+            }
+          ],
+          "name": "Gaxim Rustfizzle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1071"
+      ],
+      "instruction": "Accept [QA1071 A Gnome's Respite] from Gaxim Rustfizzle.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 1071,
+      "quest_name": "A Gnome's Respite",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1071"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Venture Co. Logger, Venture Co. Deforester. [QC1071 A Gnome's Respite]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Venture Co. Logger, Venture Co. Deforester",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3989,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 64.82,
+              "y": 48.13
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 64.02,
+              "y": 55.31
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 63.45,
+              "y": 55.24
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 63.61,
+              "y": 54.36
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 64.17,
+              "y": 57.46
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 68.89,
+              "y": 54.18
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 69.55,
+              "y": 55.19
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 70.94,
+              "y": 55.17
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 73.11,
+              "y": 54.01
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 72.09,
+              "y": 55.36
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 72.94,
+              "y": 51.2
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 72.23,
+              "y": 49.21
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 67.04,
+              "y": 45.12
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 66.68,
+              "y": 45.9
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 65.39,
+              "y": 46.16
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 64.29,
+              "y": 47.98
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 64.19,
+              "y": 45.52
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 64.85,
+              "y": 44.9
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 66.08,
+              "y": 49.39
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 67.66,
+              "y": 49.92
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 65.48,
+              "y": 45.22
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 66.08,
+              "y": 46.37
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 59.97,
+              "y": 53.32
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 59.44,
+              "y": 52.26
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 60.65,
+              "y": 54.11
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 61.48,
+              "y": 55.34
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 64.95,
+              "y": 56.56
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 62.7,
+              "y": 55.31
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 60.54,
+              "y": 53.51
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 60.66,
+              "y": 54.91
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 66.32,
+              "y": 56.51
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 64.8,
+              "y": 52.63
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 65.45,
+              "y": 54.1
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 66.32,
+              "y": 51.83
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 66.4,
+              "y": 51.32
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 75.12,
+              "y": 55.17
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 65.36,
+              "y": 50.5
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 71.5,
+              "y": 56.6
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 72.44,
+              "y": 51.46
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 69.6,
+              "y": 53.13
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 69.47,
+              "y": 54.21
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 67.25,
+              "y": 55.22
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 66.4,
+              "y": 52.49
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 65.77,
+              "y": 51.64
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 66.01,
+              "y": 51.73
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 65.99,
+              "y": 52.06
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 68.32,
+              "y": 50.6
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 68.67,
+              "y": 50.18
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 66.76,
+              "y": 49.49
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 68.07,
+              "y": 48.99
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 65.57,
+              "y": 49.2
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 70.34,
+              "y": 53.5
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 74.36,
+              "y": 59.68
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 70.14,
+              "y": 56.41
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 65.4,
+              "y": 57.28
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 71.58,
+              "y": 44.09
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 66.84,
+              "y": 51.26
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 66.3,
+              "y": 51.12
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 71.02,
+              "y": 44.07
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 71.62,
+              "y": 43.18
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 63.11,
+              "y": 46.13
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 70.22,
+              "y": 50.34
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 67.99,
+              "y": 57.16
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 65.63,
+              "y": 47.37
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 74.81,
+              "y": 58.92
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 74.31,
+              "y": 59.06
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 66.72,
+              "y": 55.15
+            }
+          ],
+          "name": "Venture Co. Logger",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3991,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 64.08,
+              "y": 49.03
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 67.47,
+              "y": 56.32
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 68.11,
+              "y": 55.31
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 71.55,
+              "y": 54.63
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 73.73,
+              "y": 55.25
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 73.68,
+              "y": 53.2
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 71.58,
+              "y": 47.69
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 71.03,
+              "y": 48.35
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 64.15,
+              "y": 47.23
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 64.89,
+              "y": 45.75
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 63.35,
+              "y": 56.75
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 60.58,
+              "y": 52.1
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 61.45,
+              "y": 54.0
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 61.85,
+              "y": 54.33
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 65.24,
+              "y": 53.45
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 66.18,
+              "y": 49.97
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 65.84,
+              "y": 50.57
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 70.93,
+              "y": 57.12
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 65.98,
+              "y": 58.18
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 70.32,
+              "y": 54.58
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 65.76,
+              "y": 55.41
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 66.43,
+              "y": 52.32
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 68.83,
+              "y": 56.43
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 67.58,
+              "y": 48.16
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 60.52,
+              "y": 51.48
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 74.43,
+              "y": 59.41
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 74.54,
+              "y": 59.3
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 66.89,
+              "y": 57.66
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 64.91,
+              "y": 50.94
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 66.66,
+              "y": 51.32
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 66.53,
+              "y": 50.89
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 67.22,
+              "y": 51.5
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 64.22,
+              "y": 46.03
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 74.51,
+              "y": 58.99
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 75.11,
+              "y": 59.22
+            },
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 74.56,
+              "y": 58.65
+            }
+          ],
+          "name": "Venture Co. Deforester",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 5,
+      "quest_id": 1071,
+      "quest_name": "A Gnome's Respite",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4077,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 59.52,
+              "y": 67.15
+            }
+          ],
+          "name": "Gaxim Rustfizzle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1071"
+      ],
+      "instruction": "Turn in [QT1071 A Gnome's Respite] to Gaxim Rustfizzle",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 1071,
+      "quest_name": "A Gnome's Respite",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4077,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 59.52,
+              "y": 67.15
+            }
+          ],
+          "name": "Gaxim Rustfizzle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1072"
+      ],
+      "instruction": "Accept [QA1072 An Old Colleague] from Gaxim Rustfizzle.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 1072,
+      "quest_name": "An Old Colleague",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1072"
+      ],
+      "instruction": "Complete [QC1072 An Old Colleague]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 1072,
+      "quest_name": "An Old Colleague",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4081,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 72.08,
+              "y": 51.88
+            }
+          ],
+          "name": "Lomac Gearstrip",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1072"
+      ],
+      "instruction": "Turn in [QT1072 An Old Colleague] to Lomac Gearstrip",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 1072,
+      "quest_name": "An Old Colleague",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4081,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 72.08,
+              "y": 51.88
+            }
+          ],
+          "name": "Lomac Gearstrip",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1073"
+      ],
+      "instruction": "Accept [QA1073 Ineptitude + Chemicals = Fun] from Lomac Gearstrip.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 1073,
+      "quest_name": "Ineptitude + Chemicals = Fun",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1073"
+      ],
+      "instruction": "Collect or use the required items: Minor Mana Potion, Elixir of Minor Fortitude. [QC1073 Ineptitude + Chemicals = Fun]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Minor Mana Potion, Elixir of Minor Fortitude",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 2455,
+          "kind": "item",
+          "locations": [],
+          "name": "Minor Mana Potion",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 2458,
+          "kind": "item",
+          "locations": [],
+          "name": "Elixir of Minor Fortitude",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 11,
+      "quest_id": 1073,
+      "quest_name": "Ineptitude + Chemicals = Fun",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4081,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 72.08,
+              "y": 51.88
+            }
+          ],
+          "name": "Lomac Gearstrip",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1073"
+      ],
+      "instruction": "Turn in [QT1073 Ineptitude + Chemicals = Fun] to Lomac Gearstrip",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 1073,
+      "quest_name": "Ineptitude + Chemicals = Fun",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4081,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 72.08,
+              "y": 51.88
+            }
+          ],
+          "name": "Lomac Gearstrip",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1074"
+      ],
+      "instruction": "Accept [QA1074 Ineptitude + Chemicals = Fun] from Lomac Gearstrip.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 1074,
+      "quest_name": "Ineptitude + Chemicals = Fun",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1074"
+      ],
+      "instruction": "Complete [QC1074 Ineptitude + Chemicals = Fun]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 1074,
+      "quest_name": "Ineptitude + Chemicals = Fun",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4077,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 59.52,
+              "y": 67.15
+            }
+          ],
+          "name": "Gaxim Rustfizzle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1074"
+      ],
+      "instruction": "Turn in [QT1074 Ineptitude + Chemicals = Fun] to Gaxim Rustfizzle",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 1074,
+      "quest_name": "Ineptitude + Chemicals = Fun",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4077,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 59.52,
+              "y": 67.15
+            }
+          ],
+          "name": "Gaxim Rustfizzle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1075"
+      ],
+      "instruction": "Accept [QA1075 A Scroll from Mauren] from Gaxim Rustfizzle.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 1075,
+      "quest_name": "A Scroll from Mauren",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1075"
+      ],
+      "instruction": "Complete [QC1075 A Scroll from Mauren]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 1075,
+      "quest_name": "A Scroll from Mauren",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4078,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 43.09,
+              "y": 80.39
+            }
+          ],
+          "name": "Collin Mauren",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1075"
+      ],
+      "instruction": "Turn in [QT1075 A Scroll from Mauren] to Collin Mauren",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 1075,
+      "quest_name": "A Scroll from Mauren",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4078,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 43.09,
+              "y": 80.39
+            }
+          ],
+          "name": "Collin Mauren",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1076"
+      ],
+      "instruction": "Accept [QA1076 Devils in Westfall] from Collin Mauren.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 1076,
+      "quest_name": "Devils in Westfall",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1076"
+      ],
+      "instruction": "Collect or use the required item: Dust Devil Debris. [QC1076 Devils in Westfall]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Dust Devil Debris",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 5669,
+          "kind": "item",
+          "locations": [],
+          "name": "Dust Devil Debris",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 20,
+      "quest_id": 1076,
+      "quest_name": "Devils in Westfall",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4078,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 43.09,
+              "y": 80.39
+            }
+          ],
+          "name": "Collin Mauren",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1076"
+      ],
+      "instruction": "Turn in [QT1076 Devils in Westfall] to Collin Mauren",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 1076,
+      "quest_name": "Devils in Westfall",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4078,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 43.09,
+              "y": 80.39
+            }
+          ],
+          "name": "Collin Mauren",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1077"
+      ],
+      "instruction": "Accept [QA1077 Special Delivery for Gaxim] from Collin Mauren.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 22,
+      "quest_id": 1077,
+      "quest_name": "Special Delivery for Gaxim",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1077"
+      ],
+      "instruction": "Complete [QC1077 Special Delivery for Gaxim]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 23,
+      "quest_id": 1077,
+      "quest_name": "Special Delivery for Gaxim",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4077,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 59.52,
+              "y": 67.15
+            }
+          ],
+          "name": "Gaxim Rustfizzle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1077"
+      ],
+      "instruction": "Turn in [QT1077 Special Delivery for Gaxim] to Gaxim Rustfizzle",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 24,
+      "quest_id": 1077,
+      "quest_name": "Special Delivery for Gaxim",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4077,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 59.52,
+              "y": 67.15
+            }
+          ],
+          "name": "Gaxim Rustfizzle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1079"
+      ],
+      "instruction": "Accept [QA1079 Covert Ops - Alpha] from Gaxim Rustfizzle.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 25,
+      "quest_id": 1079,
+      "quest_name": "Covert Ops - Alpha",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4077,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 59.52,
+              "y": 67.15
+            }
+          ],
+          "name": "Gaxim Rustfizzle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1080"
+      ],
+      "instruction": "Accept [QA1080 Covert Ops - Beta] from Gaxim Rustfizzle.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 26,
+      "quest_id": 1080,
+      "quest_name": "Covert Ops - Beta",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1079"
+      ],
+      "instruction": "Collect or use the required item: Venture Co. Engineering Plans. [QC1079 Covert Ops - Alpha]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Venture Co. Engineering Plans",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 5718,
+          "kind": "item",
+          "locations": [],
+          "name": "Venture Co. Engineering Plans",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 27,
+      "quest_id": 1079,
+      "quest_name": "Covert Ops - Alpha",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1080"
+      ],
+      "instruction": "Collect or use the required item: Venture Co. Letters. [QC1080 Covert Ops - Beta]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Venture Co. Letters",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 5717,
+          "kind": "item",
+          "locations": [],
+          "name": "Venture Co. Letters",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 28,
+      "quest_id": 1080,
+      "quest_name": "Covert Ops - Beta",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4077,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 59.52,
+              "y": 67.15
+            }
+          ],
+          "name": "Gaxim Rustfizzle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1079"
+      ],
+      "instruction": "Turn in [QT1079 Covert Ops - Alpha] to Gaxim Rustfizzle",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 29,
+      "quest_id": 1079,
+      "quest_name": "Covert Ops - Alpha",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4077,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 59.52,
+              "y": 67.15
+            }
+          ],
+          "name": "Gaxim Rustfizzle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1080"
+      ],
+      "instruction": "Turn in [QT1080 Covert Ops - Beta] to Gaxim Rustfizzle",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 30,
+      "quest_id": 1080,
+      "quest_name": "Covert Ops - Beta",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4077,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 59.52,
+              "y": 67.15
+            }
+          ],
+          "name": "Gaxim Rustfizzle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1091"
+      ],
+      "instruction": "Accept [QA1091 Kaela's Update] from Gaxim Rustfizzle.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 31,
+      "quest_id": 1091,
+      "quest_name": "Kaela's Update",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1091"
+      ],
+      "instruction": "Complete [QC1091 Kaela's Update]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 32,
+      "quest_id": 1091,
+      "quest_name": "Kaela's Update",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4080,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 59.9,
+              "y": 66.85
+            }
+          ],
+          "name": "Kaela Shadowspear",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1091"
+      ],
+      "instruction": "Turn in [QT1091 Kaela's Update] to Kaela Shadowspear",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 33,
+      "quest_id": 1091,
+      "quest_name": "Kaela's Update",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4080,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 59.9,
+              "y": 66.85
+            }
+          ],
+          "name": "Kaela Shadowspear",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1083"
+      ],
+      "instruction": "Accept [QA1083 Enraged Spirits] from Kaela Shadowspear.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 34,
+      "quest_id": 1083,
+      "quest_name": "Enraged Spirits",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4080,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 59.9,
+              "y": 66.85
+            }
+          ],
+          "name": "Kaela Shadowspear",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1084"
+      ],
+      "instruction": "Accept [QA1084 Wounded Ancients] from Kaela Shadowspear.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 35,
+      "quest_id": 1084,
+      "quest_name": "Wounded Ancients",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1083"
+      ],
+      "instruction": "Collect or use the required item: Smoldering Embers. [QC1083 Enraged Spirits]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Smoldering Embers",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 5659,
+          "kind": "item",
+          "locations": [],
+          "name": "Smoldering Embers",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 36,
+      "quest_id": 1083,
+      "quest_name": "Enraged Spirits",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1084"
+      ],
+      "instruction": "Collect or use the required item: Corroded Shrapnel. [QC1084 Wounded Ancients]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Corroded Shrapnel",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 5664,
+          "kind": "item",
+          "locations": [],
+          "name": "Corroded Shrapnel",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 37,
+      "quest_id": 1084,
+      "quest_name": "Wounded Ancients",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4080,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 59.9,
+              "y": 66.85
+            }
+          ],
+          "name": "Kaela Shadowspear",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1083"
+      ],
+      "instruction": "Turn in [QT1083 Enraged Spirits] to Kaela Shadowspear",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 38,
+      "quest_id": 1083,
+      "quest_name": "Enraged Spirits",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4080,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 59.9,
+              "y": 66.85
+            }
+          ],
+          "name": "Kaela Shadowspear",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1084"
+      ],
+      "instruction": "Turn in [QT1084 Wounded Ancients] to Kaela Shadowspear",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 39,
+      "quest_id": 1084,
+      "quest_name": "Wounded Ancients",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4080,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 406,
+              "map_name": "Stonetalon Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 59.9,
+              "y": 66.85
+            }
+          ],
+          "name": "Kaela Shadowspear",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1082"
+      ],
+      "instruction": "Accept [QA1082 Update for Sentinel Thenysil] from Kaela Shadowspear.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 40,
+      "quest_id": 1082,
+      "quest_name": "Update for Sentinel Thenysil",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1082"
+      ],
+      "instruction": "Complete [QC1082 Update for Sentinel Thenysil]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 41,
+      "quest_id": 1082,
+      "quest_name": "Update for Sentinel Thenysil",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4079,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 34.89,
+              "y": 49.79
+            }
+          ],
+          "name": "Sentinel Thenysil",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1082"
+      ],
+      "instruction": "Turn in [QT1082 Update for Sentinel Thenysil] to Sentinel Thenysil",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 42,
+      "quest_id": 1082,
+      "quest_name": "Update for Sentinel Thenysil",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4079,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 34.89,
+              "y": 49.79
+            }
+          ],
+          "name": "Sentinel Thenysil",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1081"
+      ],
+      "instruction": "Accept [QA1081 Reception from Tyrande] from Sentinel Thenysil.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 43,
+      "quest_id": 1081,
+      "quest_name": "Reception from Tyrande",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1081"
+      ],
+      "instruction": "Complete [QC1081 Reception from Tyrande]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 44,
+      "quest_id": 1081,
+      "quest_name": "Reception from Tyrande",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7999,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1657,
+              "map_name": "Darnassus",
+              "verification": "questie_structured_source_only",
+              "x": 39.1,
+              "y": 81.59
+            }
+          ],
+          "name": "Tyrande Whisperwind",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1081"
+      ],
+      "instruction": "Turn in [QT1081 Reception from Tyrande] to Tyrande Whisperwind",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 45,
+      "quest_id": 1081,
+      "quest_name": "Reception from Tyrande",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 406,
+      "zone_or_sort_name": "Stonetalon Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4484,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 26.21,
+              "y": 38.88
+            }
+          ],
+          "name": "Feero Ironhand",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:976"
+      ],
+      "instruction": "Accept [QA976 Supplies to Auberdine] from Feero Ironhand.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 46,
+      "quest_id": 976,
+      "quest_name": "Supplies to Auberdine",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3846,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 14.79,
+              "y": 31.29
+            }
+          ],
+          "name": "Talen",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1007"
+      ],
+      "instruction": "Accept [QA1007 The Ancient Statuette] from Talen.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 47,
+      "quest_id": 1007,
+      "quest_name": "The Ancient Statuette",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:976"
+      ],
+      "instruction": "Complete the scripted or exploration event. [QC976 Supplies to Auberdine]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 48,
+      "quest_id": 976,
+      "quest_name": "Supplies to Auberdine",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1007"
+      ],
+      "instruction": "Collect or use the required item: Ancient Statuette. [QC1007 The Ancient Statuette]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Ancient Statuette",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 5424,
+          "kind": "item",
+          "locations": [],
+          "name": "Ancient Statuette",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 49,
+      "quest_id": 1007,
+      "quest_name": "The Ancient Statuette",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3846,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 14.79,
+              "y": 31.29
+            }
+          ],
+          "name": "Talen",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1007"
+      ],
+      "instruction": "Turn in [QT1007 The Ancient Statuette] to Talen",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 50,
+      "quest_id": 1007,
+      "quest_name": "The Ancient Statuette",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3663,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 26.2,
+              "y": 38.7
+            }
+          ],
+          "name": "Delgren the Purifier",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:976"
+      ],
+      "instruction": "Turn in [QT976 Supplies to Auberdine] to Delgren the Purifier",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 51,
+      "quest_id": 976,
+      "quest_name": "Supplies to Auberdine",
+      "quest_tag": null,
+      "required_level": 21,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    }
+  ],
+  "title": "20 Stonetalon Mountains"
+}

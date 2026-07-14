@@ -1,0 +1,342 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 54 Tanaris, or select this chapter on a partially completed character. Begin in Feralas with Angelas Moonbreeze. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 357,
+    "map_name": "Feralas",
+    "x": 31.83,
+    "y": 45.61
+  },
+  "entry_zone_or_sort": 357,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 16,
+    "map_name": "Azshara",
+    "quest_id": 5534,
+    "tag": "QT",
+    "x": 53.45,
+    "y": 21.82
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/055_world_55.lua",
+  "id": "055-primary-55-feralas-&-azshara",
+  "maximum_level": 47,
+  "minimum_level": 47,
+  "next_chapter": "56 Tanaris & Un'Goro Crater",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "54 Tanaris",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 3445,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3601:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3445:starter"
+      ],
+      "instruction": "Travel from Azshara to Feralas. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G31.83,45.61 Feralas]. [O]",
+      "map_id": 357,
+      "map_name": "Feralas",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 16,
+      "origin_map_name": "Azshara",
+      "origin_x": 53.45,
+      "origin_y": 21.82,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 31.83,
+      "y": 45.61
+    },
+    {
+      "before_quest_id": 3445,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3445:starter"
+      ],
+      "instruction": "Before you begin: travel to Feralas and meet the first quest giver at [G31.83,45.61 Feralas]. Leave at least two quest-log slots open. [O]",
+      "map_id": 357,
+      "map_name": "Feralas",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 31.83,
+      "y": 45.61
+    },
+    {
+      "before_quest_id": 3445,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3445:requiredLevel"
+      ],
+      "instruction": "Reach level 47 before accepting The Sunken Temple. [XP47 Level 47]",
+      "map_id": 357,
+      "map_name": "Feralas",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 47,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 31.83,
+      "y": 45.61
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7900,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 357,
+              "map_name": "Feralas",
+              "verification": "questie_structured_source_only",
+              "x": 31.83,
+              "y": 45.61
+            }
+          ],
+          "name": "Angelas Moonbreeze",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3445"
+      ],
+      "instruction": "Accept [QA3445 The Sunken Temple] from Angelas Moonbreeze.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 3445,
+      "quest_name": "The Sunken Temple",
+      "quest_tag": null,
+      "required_level": 47,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 357,
+      "zone_or_sort_name": "Feralas"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3445"
+      ],
+      "instruction": "Complete [QC3445 The Sunken Temple]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 3445,
+      "quest_name": "The Sunken Temple",
+      "quest_tag": null,
+      "required_level": 47,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 357,
+      "zone_or_sort_name": "Feralas"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7771,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 52.71,
+              "y": 45.92
+            }
+          ],
+          "name": "Marvon Rivetseeker",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3445"
+      ],
+      "instruction": "Turn in [QT3445 The Sunken Temple] to Marvon Rivetseeker",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 3445,
+      "quest_name": "The Sunken Temple",
+      "quest_tag": null,
+      "required_level": 47,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 357,
+      "zone_or_sort_name": "Feralas"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8420,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 53.45,
+              "y": 21.82
+            }
+          ],
+          "name": "Kim'jael",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5534"
+      ],
+      "instruction": "Accept [QA5534 Kim'jael's \"Missing\" Equipment] from Kim'jael.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 5534,
+      "quest_name": "Kim'jael's \"Missing\" Equipment",
+      "quest_tag": null,
+      "required_level": 47,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5534"
+      ],
+      "instruction": "Collect or use the required item: Some Rune. [QC5534 Kim'jael's \"Missing\" Equipment]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Some Rune",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 13815,
+          "kind": "item",
+          "locations": [],
+          "name": "Some Rune",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 8,
+      "quest_id": 5534,
+      "quest_name": "Kim'jael's \"Missing\" Equipment",
+      "quest_tag": null,
+      "required_level": 47,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8420,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 53.45,
+              "y": 21.82
+            }
+          ],
+          "name": "Kim'jael",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5534"
+      ],
+      "instruction": "Turn in [QT5534 Kim'jael's \"Missing\" Equipment] to Kim'jael",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 5534,
+      "quest_name": "Kim'jael's \"Missing\" Equipment",
+      "quest_tag": null,
+      "required_level": 47,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 16,
+      "zone_or_sort_name": "Azshara"
+    }
+  ],
+  "title": "55 Feralas & Azshara"
+}

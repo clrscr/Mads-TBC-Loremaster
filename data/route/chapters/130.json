@@ -1,0 +1,884 @@
+{
+  "branch": "optional_content",
+  "entry_contract": "Complete What Tomorrow Brings. Begin in Silithus with Baristolth of the Shifting Sands. Leave at least two quest-log slots open; group and reputation gates remain explicit.",
+  "entry_route_point": {
+    "map_id": 1377,
+    "map_name": "Silithus",
+    "x": 49.45,
+    "y": 36.45
+  },
+  "entry_zone_or_sort": 2677,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 440,
+    "map_name": "Tanaris",
+    "quest_id": 8555,
+    "tag": "QT",
+    "x": 64.2,
+    "y": 51.42
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [
+    [
+      8286
+    ]
+  ],
+  "external_prerequisite_quest_ids": [
+    8286
+  ],
+  "group": "Mad's Loremaster Guide - Optional Content",
+  "guide_file": "Guides/optional_content/130_raid_34.lua",
+  "id": "130-optional_content-optional-content-34---blackwing-lair-&-silithus",
+  "maximum_level": null,
+  "minimum_level": null,
+  "next_chapter": "Optional Content 35 - Azshara & Tanaris",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "Optional Content 33 - Ironforge & Blackrock Spire",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 8288,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9000:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8288:starter",
+        "travel-network:ratchet-booty-bay",
+        "https://www.wowhead.com/tbc/quest=1040/passage-to-booty-bay"
+      ],
+      "instruction": "Travel from Ironforge to Silithus: Take the ship between Ratchet and Booty Bay. Continue to [G49.45,36.45 Silithus]. [O]",
+      "map_id": 1377,
+      "map_name": "Silithus",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 1537,
+      "origin_map_name": "Ironforge",
+      "origin_x": 43.53,
+      "origin_y": 52.64,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [
+        "ratchet-booty-bay"
+      ],
+      "type": "transport",
+      "verification": "questie_endpoints_and_tbc_transport_network",
+      "x": 49.45,
+      "y": 36.45
+    },
+    {
+      "before_quest_id": 8288,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8286:dependency"
+      ],
+      "instruction": "Optional entry requirements: complete What Tomorrow Brings. [O]",
+      "map_id": 1377,
+      "map_name": "Silithus",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        8286
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "branch_entry",
+      "verification": "route_dependency_graph",
+      "x": 49.45,
+      "y": 36.45
+    },
+    {
+      "before_quest_id": 8288,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8288:starter"
+      ],
+      "instruction": "Optional chapter: travel to Silithus and begin at [G49.45,36.45 Silithus]. Leave at least two quest-log slots open. [O]",
+      "map_id": 1377,
+      "map_name": "Silithus",
+      "optional": true,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 49.45,
+      "y": 36.45
+    },
+    {
+      "before_quest_id": 8288,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8288:requiredLevel"
+      ],
+      "instruction": "Reach level 62 before accepting Only One May Rise. [XP62 Level 62]",
+      "map_id": 1377,
+      "map_name": "Silithus",
+      "optional": false,
+      "order": 4,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 62,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 49.45,
+      "y": 36.45
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15180,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 49.45,
+              "y": 36.45
+            }
+          ],
+          "name": "Baristolth of the Shifting Sands",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8288"
+      ],
+      "instruction": "Accept [QA8288 Only One May Rise] from Baristolth of the Shifting Sands.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 8288,
+      "quest_name": "Only One May Rise",
+      "quest_tag": "Raid",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 2677,
+      "zone_or_sort_name": "Blackwing Lair"
+    },
+    {
+      "before_quest_id": 8288,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8288:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 1377,
+      "map_name": "Silithus",
+      "optional": true,
+      "order": 6,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        8288
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 49.45,
+      "y": 36.45
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8288"
+      ],
+      "instruction": "Raid \u2014 Collect or use the required item: Head of the Broodlord Lashlayer. [QC8288 Only One May Rise]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Head of the Broodlord Lashlayer",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 20383,
+          "kind": "item",
+          "locations": [],
+          "name": "Head of the Broodlord Lashlayer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 7,
+      "quest_id": 8288,
+      "quest_name": "Only One May Rise",
+      "quest_tag": "Raid",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 2677,
+      "zone_or_sort_name": "Blackwing Lair"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15180,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 49.45,
+              "y": 36.45
+            }
+          ],
+          "name": "Baristolth of the Shifting Sands",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8288"
+      ],
+      "instruction": "Turn in [QT8288 Only One May Rise] to Baristolth of the Shifting Sands",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 8288,
+      "quest_name": "Only One May Rise",
+      "quest_tag": "Raid",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 2677,
+      "zone_or_sort_name": "Blackwing Lair"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15180,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 49.45,
+              "y": 36.45
+            }
+          ],
+          "name": "Baristolth of the Shifting Sands",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8301"
+      ],
+      "instruction": "Accept [QA8301 The Path of the Righteous] from Baristolth of the Shifting Sands.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 8301,
+      "quest_name": "The Path of the Righteous",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8301"
+      ],
+      "instruction": "Raid \u2014 Collect or use the required item: Silithid Carapace Fragment. [QC8301 The Path of the Righteous]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Silithid Carapace Fragment",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 20384,
+          "kind": "item",
+          "locations": [],
+          "name": "Silithid Carapace Fragment",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 10,
+      "quest_id": 8301,
+      "quest_name": "The Path of the Righteous",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15180,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 49.45,
+              "y": 36.45
+            }
+          ],
+          "name": "Baristolth of the Shifting Sands",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8301"
+      ],
+      "instruction": "Turn in [QT8301 The Path of the Righteous] to Baristolth of the Shifting Sands",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 8301,
+      "quest_name": "The Path of the Righteous",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15180,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 49.45,
+              "y": 36.45
+            }
+          ],
+          "name": "Baristolth of the Shifting Sands",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8303"
+      ],
+      "instruction": "Accept [QA8303 Anachronos] from Baristolth of the Shifting Sands.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 8303,
+      "quest_name": "Anachronos",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8303"
+      ],
+      "instruction": "Complete [QC8303 Anachronos]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 8303,
+      "quest_name": "Anachronos",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15192,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 64.2,
+              "y": 51.42
+            }
+          ],
+          "name": "Anachronos",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8303"
+      ],
+      "instruction": "Turn in [QT8303 Anachronos] to Anachronos",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 8303,
+      "quest_name": "Anachronos",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15192,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 64.2,
+              "y": 51.42
+            }
+          ],
+          "name": "Anachronos",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8305"
+      ],
+      "instruction": "Accept [QA8305 Long Forgotten Memories] from Anachronos.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 8305,
+      "quest_name": "Long Forgotten Memories",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8305"
+      ],
+      "instruction": "Raid \u2014 Complete the scripted or exploration event. [QC8305 Long Forgotten Memories]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 8305,
+      "quest_name": "Long Forgotten Memories",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 180633,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 28.68,
+              "y": 89.14
+            }
+          ],
+          "name": "Crystalline Tear",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8305"
+      ],
+      "instruction": "Turn in [QT8305 Long Forgotten Memories] to Crystalline Tear",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 8305,
+      "quest_name": "Long Forgotten Memories",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 180633,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 28.68,
+              "y": 89.14
+            }
+          ],
+          "name": "Crystalline Tear",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8519"
+      ],
+      "instruction": "Accept [QA8519 A Pawn on the Eternal Board] from Crystalline Tear.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 8519,
+      "quest_name": "A Pawn on the Eternal Board",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8519"
+      ],
+      "instruction": "Raid \u2014 Complete the scripted or exploration event. [QC8519 A Pawn on the Eternal Board]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 8519,
+      "quest_name": "A Pawn on the Eternal Board",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15192,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 64.2,
+              "y": 51.42
+            }
+          ],
+          "name": "Anachronos",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8519"
+      ],
+      "instruction": "Turn in [QT8519 A Pawn on the Eternal Board] to Anachronos",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 8519,
+      "quest_name": "A Pawn on the Eternal Board",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15192,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 64.2,
+              "y": 51.42
+            }
+          ],
+          "name": "Anachronos",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8555"
+      ],
+      "instruction": "Accept [QA8555 The Charge of the Dragonflights] from Anachronos.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 8555,
+      "quest_name": "The Charge of the Dragonflights",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8555"
+      ],
+      "instruction": "Raid \u2014 Complete [QC8555 The Charge of the Dragonflights]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 22,
+      "quest_id": 8555,
+      "quest_name": "The Charge of the Dragonflights",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15192,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 64.2,
+              "y": 51.42
+            }
+          ],
+          "name": "Anachronos",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8555"
+      ],
+      "instruction": "Turn in [QT8555 The Charge of the Dragonflights] to Anachronos",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 23,
+      "quest_id": 8555,
+      "quest_name": "The Charge of the Dragonflights",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 440,
+      "zone_or_sort_name": "Tanaris"
+    }
+  ],
+  "title": "Optional Content 34 - Blackwing Lair & Silithus"
+}

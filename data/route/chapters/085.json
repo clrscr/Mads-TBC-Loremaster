@@ -1,0 +1,5856 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 84 Terokkar Forest & Shattrath City, or select this chapter on a partially completed character. Begin in Zangarmarsh with Watcher Leesa'oh. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 3521,
+    "map_name": "Zangarmarsh",
+    "x": 23.32,
+    "y": 66.21
+  },
+  "entry_zone_or_sort": 3521,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 3521,
+    "map_name": "Zangarmarsh",
+    "quest_id": 9911,
+    "tag": "QT",
+    "x": 23.32,
+    "y": 66.21
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/085_world_85.lua",
+  "id": "085-primary-85-zangarmarsh",
+  "maximum_level": 62,
+  "minimum_level": 62,
+  "next_chapter": "86 Terokkar Forest",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "84 Terokkar Forest & Shattrath City",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 9701,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9951:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9701:starter"
+      ],
+      "instruction": "Travel from Terokkar Forest to Zangarmarsh. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G23.32,66.21 Zangarmarsh]. [O]",
+      "map_id": 3521,
+      "map_name": "Zangarmarsh",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 3519,
+      "origin_map_name": "Terokkar Forest",
+      "origin_x": 43.44,
+      "origin_y": 22.36,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 23.32,
+      "y": 66.21
+    },
+    {
+      "before_quest_id": 9701,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9701:starter"
+      ],
+      "instruction": "Before you begin: travel to Zangarmarsh and meet the first quest giver at [G23.32,66.21 Zangarmarsh]. Leave at least two quest-log slots open. [O]",
+      "map_id": 3521,
+      "map_name": "Zangarmarsh",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 23.32,
+      "y": 66.21
+    },
+    {
+      "before_quest_id": 9701,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9701:requiredLevel"
+      ],
+      "instruction": "Reach level 62 before accepting Observing the Sporelings. [XP62 Level 62]",
+      "map_id": 3521,
+      "map_name": "Zangarmarsh",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 62,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 23.32,
+      "y": 66.21
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17831,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 23.32,
+              "y": 66.21
+            }
+          ],
+          "name": "Watcher Leesa'oh",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9701"
+      ],
+      "instruction": "Accept [QA9701 Observing the Sporelings] from Watcher Leesa'oh.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 9701,
+      "quest_name": "Observing the Sporelings",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9701"
+      ],
+      "instruction": "Complete the scripted or exploration event. [QC9701 Observing the Sporelings]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 9701,
+      "quest_name": "Observing the Sporelings",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17831,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 23.32,
+              "y": 66.21
+            }
+          ],
+          "name": "Watcher Leesa'oh",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9701"
+      ],
+      "instruction": "Turn in [QT9701 Observing the Sporelings] to Watcher Leesa'oh",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 9701,
+      "quest_name": "Observing the Sporelings",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17006,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 23.21,
+              "y": 36.66
+            }
+          ],
+          "name": "Elsaana",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9383"
+      ],
+      "instruction": "Accept [QA9383 An Ambitious Plan] from Elsaana.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 9383,
+      "quest_name": "An Ambitious Plan",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3483,
+      "zone_or_sort_name": "Hellfire Peninsula"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9383"
+      ],
+      "instruction": "Use the quest item [UI23417-] as directed; collect or use the required item: Glowing Sanctified Crystal. [QC9383 An Ambitious Plan]",
+      "item_use_id": 23417,
+      "objective_hint": "Collect or use the required item: Glowing Sanctified Crystal",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 23442,
+          "kind": "item",
+          "locations": [],
+          "name": "Glowing Sanctified Crystal",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 8,
+      "quest_id": 9383,
+      "quest_name": "An Ambitious Plan",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3483,
+      "zone_or_sort_name": "Hellfire Peninsula"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17006,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 23.21,
+              "y": 36.66
+            }
+          ],
+          "name": "Elsaana",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9383"
+      ],
+      "instruction": "Turn in [QT9383 An Ambitious Plan] to Elsaana",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 9383,
+      "quest_name": "An Ambitious Plan",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3483,
+      "zone_or_sort_name": "Hellfire Peninsula"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19293,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 15.62,
+              "y": 52.04
+            }
+          ],
+          "name": "Tola'thion",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10132"
+      ],
+      "instruction": "Accept [QA10132 Colossal Menace] from Tola'thion.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 10132,
+      "quest_name": "Colossal Menace",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3483,
+      "zone_or_sort_name": "Hellfire Peninsula"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 29476,
+          "kind": "item",
+          "locations": [],
+          "name": "Crimson Crystal Shard",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10134"
+      ],
+      "instruction": "Accept [QA10134 Crimson Crystal Clue] from Crimson Crystal Shard.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 10134,
+      "quest_name": "Crimson Crystal Clue",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3483,
+      "zone_or_sort_name": "Hellfire Peninsula"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16888,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 15.94,
+              "y": 52.17
+            }
+          ],
+          "name": "Mahuram Stouthoof",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10159"
+      ],
+      "instruction": "Accept [QA10159 Keep Thornfang Hill Clear!] from Mahuram Stouthoof.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 10159,
+      "quest_name": "Keep Thornfang Hill Clear!",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3483,
+      "zone_or_sort_name": "Hellfire Peninsula"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10159"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Thornfang Ravager, Thornfang Venomspitter. [QC10159 Keep Thornfang Hill Clear!]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Thornfang Ravager, Thornfang Venomspitter",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19349,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 11.69,
+              "y": 54.3
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 13.18,
+              "y": 53.29
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 10.9,
+              "y": 54.44
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 10.28,
+              "y": 55.65
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 9.71,
+              "y": 53.76
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 10.1,
+              "y": 53.27
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 10.25,
+              "y": 52.56
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 10.47,
+              "y": 53.11
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 9.61,
+              "y": 52.35
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 9.04,
+              "y": 53.81
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 9.65,
+              "y": 49.32
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 9.43,
+              "y": 49.16
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 7.88,
+              "y": 53.02
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 8.15,
+              "y": 49.15
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 7.72,
+              "y": 48.47
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 6.71,
+              "y": 49.29
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 4.68,
+              "y": 50.03
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 10.69,
+              "y": 47.97
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 10.18,
+              "y": 48.68
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 12.04,
+              "y": 48.2
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 12.67,
+              "y": 47.23
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 12.19,
+              "y": 46.09
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 12.12,
+              "y": 51.54
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 11.3,
+              "y": 51.12
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 11.54,
+              "y": 55.13
+            }
+          ],
+          "name": "Thornfang Ravager",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19350,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 11.83,
+              "y": 54.89
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 11.14,
+              "y": 55.67
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 12.57,
+              "y": 52.16
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 10.69,
+              "y": 53.18
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 9.5,
+              "y": 52.58
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 11.54,
+              "y": 51.44
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 8.85,
+              "y": 51.9
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 8.32,
+              "y": 50.93
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 9.01,
+              "y": 49.61
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 7.7,
+              "y": 52.67
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 7.62,
+              "y": 49.21
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 6.68,
+              "y": 50.74
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 6.04,
+              "y": 49.16
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 6.21,
+              "y": 50.08
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 5.25,
+              "y": 51.65
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 5.22,
+              "y": 49.73
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 10.99,
+              "y": 47.46
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 11.54,
+              "y": 48.13
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 12.34,
+              "y": 51.79
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 12.09,
+              "y": 47.01
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 12.3,
+              "y": 54.19
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 9.78,
+              "y": 55.97
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 12.29,
+              "y": 46.99
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 12.03,
+              "y": 54.06
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 8.19,
+              "y": 52.97
+            }
+          ],
+          "name": "Thornfang Venomspitter",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 13,
+      "quest_id": 10159,
+      "quest_name": "Keep Thornfang Hill Clear!",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3483,
+      "zone_or_sort_name": "Hellfire Peninsula"
+    },
+    {
+      "before_quest_id": 10132,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10132:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 3483,
+      "map_name": "Hellfire Peninsula",
+      "optional": true,
+      "order": 14,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        10132
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 12.43,
+      "y": 46.38
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10132"
+      ],
+      "instruction": "Elite/group recommended \u2014 Complete the required NPC or creature objective: Raging Colossus. [QC10132 Colossal Menace]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Raging Colossus",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19188,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 12.43,
+              "y": 46.38
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 14.01,
+              "y": 44.43
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 14.23,
+              "y": 43.94
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 13.26,
+              "y": 43.36
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 13.74,
+              "y": 42.39
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 12.82,
+              "y": 42.35
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 11.96,
+              "y": 42.16
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 12.85,
+              "y": 40.88
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 14.31,
+              "y": 46.11
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 11.51,
+              "y": 40.04
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 13.42,
+              "y": 38.56
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 12.7,
+              "y": 38.62
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 12.74,
+              "y": 36.74
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 14.02,
+              "y": 36.85
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 14.5,
+              "y": 38.04
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 15.14,
+              "y": 36.62
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 15.38,
+              "y": 38.5
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 12.31,
+              "y": 35.47
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 15.67,
+              "y": 40.75
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 16.55,
+              "y": 38.64
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 16.43,
+              "y": 41.23
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 16.88,
+              "y": 37.63
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 17.67,
+              "y": 42.29
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 17.86,
+              "y": 40.63
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 16.52,
+              "y": 42.49
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 19.36,
+              "y": 39.92
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 20.14,
+              "y": 42.48
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 19.25,
+              "y": 43.43
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 19.19,
+              "y": 45.33
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 17.99,
+              "y": 44.25
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 18.45,
+              "y": 44.7
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 19.75,
+              "y": 46.38
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 17.9,
+              "y": 46.41
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 16.57,
+              "y": 44.37
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 16.72,
+              "y": 46.29
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 20.44,
+              "y": 45.55
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 15.03,
+              "y": 42.36
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 12.77,
+              "y": 44.42
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 14.86,
+              "y": 35.95
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 15.45,
+              "y": 39.84
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 15.86,
+              "y": 39.14
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 19.16,
+              "y": 42.22
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 15.38,
+              "y": 44.13
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 13.63,
+              "y": 39.63
+            }
+          ],
+          "name": "Raging Colossus",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 15,
+      "quest_id": 10132,
+      "quest_name": "Colossal Menace",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3483,
+      "zone_or_sort_name": "Hellfire Peninsula"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10134"
+      ],
+      "instruction": "Elite/group recommended \u2014 Complete [QC10134 Crimson Crystal Clue]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 10134,
+      "quest_name": "Crimson Crystal Clue",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3483,
+      "zone_or_sort_name": "Hellfire Peninsula"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19293,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 15.62,
+              "y": 52.04
+            }
+          ],
+          "name": "Tola'thion",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10132"
+      ],
+      "instruction": "Turn in [QT10132 Colossal Menace] to Tola'thion",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 10132,
+      "quest_name": "Colossal Menace",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3483,
+      "zone_or_sort_name": "Hellfire Peninsula"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19293,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 15.62,
+              "y": 52.04
+            }
+          ],
+          "name": "Tola'thion",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10134"
+      ],
+      "instruction": "Turn in [QT10134 Crimson Crystal Clue] to Tola'thion",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 10134,
+      "quest_name": "Crimson Crystal Clue",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3483,
+      "zone_or_sort_name": "Hellfire Peninsula"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16888,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 15.94,
+              "y": 52.17
+            }
+          ],
+          "name": "Mahuram Stouthoof",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10159"
+      ],
+      "instruction": "Turn in [QT10159 Keep Thornfang Hill Clear!] to Mahuram Stouthoof",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 10159,
+      "quest_name": "Keep Thornfang Hill Clear!",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3483,
+      "zone_or_sort_name": "Hellfire Peninsula"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19293,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 15.62,
+              "y": 52.04
+            }
+          ],
+          "name": "Tola'thion",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10349"
+      ],
+      "instruction": "Accept [QA10349 The Earthbinder] from Tola'thion.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 10349,
+      "quest_name": "The Earthbinder",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3483,
+      "zone_or_sort_name": "Hellfire Peninsula"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10349"
+      ],
+      "instruction": "Elite/group recommended \u2014 Complete [QC10349 The Earthbinder]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 10349,
+      "quest_name": "The Earthbinder",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3483,
+      "zone_or_sort_name": "Hellfire Peninsula"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19294,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 15.96,
+              "y": 51.57
+            }
+          ],
+          "name": "Earthbinder Galandria Nightbreeze",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10349"
+      ],
+      "instruction": "Turn in [QT10349 The Earthbinder] to Earthbinder Galandria Nightbreeze",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 22,
+      "quest_id": 10349,
+      "quest_name": "The Earthbinder",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3483,
+      "zone_or_sort_name": "Hellfire Peninsula"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19294,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 15.96,
+              "y": 51.57
+            }
+          ],
+          "name": "Earthbinder Galandria Nightbreeze",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10351"
+      ],
+      "instruction": "Accept [QA10351 Natural Remedies] from Earthbinder Galandria Nightbreeze.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 23,
+      "quest_id": 10351,
+      "quest_name": "Natural Remedies",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3483,
+      "zone_or_sort_name": "Hellfire Peninsula"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10351"
+      ],
+      "instruction": "Elite/group recommended \u2014 Use the quest item [UI29478-] as directed; complete the required NPC or creature objective: Goliathon. [QC10351 Natural Remedies]",
+      "item_use_id": 29478,
+      "objective_hint": "Complete the required NPC or creature objective: Goliathon",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19305,
+          "kind": "npc",
+          "locations": [],
+          "name": "Goliathon",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 24,
+      "quest_id": 10351,
+      "quest_name": "Natural Remedies",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3483,
+      "zone_or_sort_name": "Hellfire Peninsula"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19294,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 15.96,
+              "y": 51.57
+            }
+          ],
+          "name": "Earthbinder Galandria Nightbreeze",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10351"
+      ],
+      "instruction": "Turn in [QT10351 Natural Remedies] to Earthbinder Galandria Nightbreeze",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 25,
+      "quest_id": 10351,
+      "quest_name": "Natural Remedies",
+      "quest_tag": "Elite",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3483,
+      "zone_or_sort_name": "Hellfire Peninsula"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16796,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 23.42,
+              "y": 36.54
+            }
+          ],
+          "name": "Amaan the Wise",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10443"
+      ],
+      "instruction": "Accept [QA10443 Helping the Cenarion Post] from Amaan the Wise.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 26,
+      "quest_id": 10443,
+      "quest_name": "Helping the Cenarion Post",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3483,
+      "zone_or_sort_name": "Hellfire Peninsula"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10443"
+      ],
+      "instruction": "Complete [QC10443 Helping the Cenarion Post]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 27,
+      "quest_id": 10443,
+      "quest_name": "Helping the Cenarion Post",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3483,
+      "zone_or_sort_name": "Hellfire Peninsula"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16991,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 15.7,
+              "y": 52.09
+            }
+          ],
+          "name": "Thiah Redmane",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10443"
+      ],
+      "instruction": "Turn in [QT10443 Helping the Cenarion Post] to Thiah Redmane",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 28,
+      "quest_id": 10443,
+      "quest_name": "Helping the Cenarion Post",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3483,
+      "zone_or_sort_name": "Hellfire Peninsula"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16991,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 15.7,
+              "y": 52.09
+            }
+          ],
+          "name": "Thiah Redmane",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9372"
+      ],
+      "instruction": "Accept [QA9372 Demonic Contamination] from Thiah Redmane.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 29,
+      "quest_id": 9372,
+      "quest_name": "Demonic Contamination",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3483,
+      "zone_or_sort_name": "Hellfire Peninsula"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9372"
+      ],
+      "instruction": "Collect or use the required item: Helboar Blood Sample. [QC9372 Demonic Contamination]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Helboar Blood Sample",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 23336,
+          "kind": "item",
+          "locations": [],
+          "name": "Helboar Blood Sample",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 30,
+      "quest_id": 9372,
+      "quest_name": "Demonic Contamination",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3483,
+      "zone_or_sort_name": "Hellfire Peninsula"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16991,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 15.7,
+              "y": 52.09
+            }
+          ],
+          "name": "Thiah Redmane",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9372"
+      ],
+      "instruction": "Turn in [QT9372 Demonic Contamination] to Thiah Redmane",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 31,
+      "quest_id": 9372,
+      "quest_name": "Demonic Contamination",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3483,
+      "zone_or_sort_name": "Hellfire Peninsula"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16991,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 15.7,
+              "y": 52.09
+            }
+          ],
+          "name": "Thiah Redmane",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10255"
+      ],
+      "instruction": "Accept [QA10255 Testing the Antidote] from Thiah Redmane.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 32,
+      "quest_id": 10255,
+      "quest_name": "Testing the Antidote",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3483,
+      "zone_or_sort_name": "Hellfire Peninsula"
+    },
+    {
+      "before_quest_id": 10255,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:npc:18785",
+        "authored-route:guidelime-tugs-tbc-alliance-2.50:60-61Hellfire Peninsula Part I.lua:109"
+      ],
+      "instruction": "Optional: learn the flight path from Kuma. [P][G25.19,37.23 Hellfire Peninsula][O]",
+      "map_id": 3483,
+      "map_name": "Hellfire Peninsula",
+      "optional": true,
+      "order": 33,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "acquire_flight_path",
+      "verification": "cross_verified_questie_and_authored_route",
+      "x": 25.19,
+      "y": 37.23
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10255"
+      ],
+      "instruction": "Use the quest item [UI23337-] as directed; complete the required NPC or creature objective: Hulking Helboar. [QC10255 Testing the Antidote]",
+      "item_use_id": 23337,
+      "objective_hint": "Complete the required NPC or creature objective: Hulking Helboar",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16880,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 43.24,
+              "y": 76.62
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 42.95,
+              "y": 76.43
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 42.88,
+              "y": 75.41
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 43.11,
+              "y": 78.29
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 42.58,
+              "y": 78.1
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 44.3,
+              "y": 79.35
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 43.19,
+              "y": 80.51
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 26.39,
+              "y": 67.92
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 26.2,
+              "y": 66.41
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 23.66,
+              "y": 61.87
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 24.33,
+              "y": 60.97
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 22.99,
+              "y": 58.95
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 23.72,
+              "y": 59.86
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 22.45,
+              "y": 58.09
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 24.6,
+              "y": 58.71
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 24.39,
+              "y": 57.88
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 23.65,
+              "y": 57.97
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 23.06,
+              "y": 56.98
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 24.79,
+              "y": 62.83
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 25.41,
+              "y": 63.77
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 24.78,
+              "y": 56.3
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 24.05,
+              "y": 55.43
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 24.26,
+              "y": 57.07
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 25.19,
+              "y": 53.55
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 23.41,
+              "y": 56.27
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 23.56,
+              "y": 54.34
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 24.27,
+              "y": 54.24
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 23.98,
+              "y": 52.22
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 24.61,
+              "y": 51.82
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 23.11,
+              "y": 53.18
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 23.08,
+              "y": 51.08
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 24.0,
+              "y": 50.7
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 22.46,
+              "y": 52.25
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 22.4,
+              "y": 54.07
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 21.74,
+              "y": 55.02
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 22.37,
+              "y": 55.94
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 19.96,
+              "y": 54.71
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 21.19,
+              "y": 55.99
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 20.03,
+              "y": 56.73
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 20.36,
+              "y": 57.06
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 21.79,
+              "y": 56.96
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 19.04,
+              "y": 56.28
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 19.04,
+              "y": 55.08
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 18.66,
+              "y": 56.61
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 18.32,
+              "y": 53.76
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 17.58,
+              "y": 54.21
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 16.99,
+              "y": 52.16
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 17.39,
+              "y": 53.31
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 27.45,
+              "y": 42.55
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 25.59,
+              "y": 41.21
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 26.48,
+              "y": 37.46
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 26.9,
+              "y": 37.76
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 28.07,
+              "y": 39.46
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 27.31,
+              "y": 39.01
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 26.83,
+              "y": 40.01
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 27.57,
+              "y": 41.47
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 27.15,
+              "y": 41.57
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 28.34,
+              "y": 41.75
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 28.29,
+              "y": 40.58
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 29.45,
+              "y": 43.69
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 31.44,
+              "y": 44.43
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 30.88,
+              "y": 43.32
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 31.05,
+              "y": 41.48
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 29.47,
+              "y": 39.59
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 43.58,
+              "y": 79.42
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 18.11,
+              "y": 52.1
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 26.31,
+              "y": 38.81
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 29.49,
+              "y": 40.54
+            },
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 32.71,
+              "y": 44.32
+            }
+          ],
+          "name": "Hulking Helboar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 34,
+      "quest_id": 10255,
+      "quest_name": "Testing the Antidote",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3483,
+      "zone_or_sort_name": "Hellfire Peninsula"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16991,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 15.7,
+              "y": 52.09
+            }
+          ],
+          "name": "Thiah Redmane",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10255"
+      ],
+      "instruction": "Turn in [QT10255 Testing the Antidote] to Thiah Redmane",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 35,
+      "quest_id": 10255,
+      "quest_name": "Testing the Antidote",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3483,
+      "zone_or_sort_name": "Hellfire Peninsula"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17831,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 23.32,
+              "y": 66.21
+            }
+          ],
+          "name": "Watcher Leesa'oh",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9702"
+      ],
+      "instruction": "Accept [QA9702 A Question of Gluttony] from Watcher Leesa'oh.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 36,
+      "quest_id": 9702,
+      "quest_name": "A Question of Gluttony",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9702"
+      ],
+      "instruction": "Collect or use the required item: Discarded Nutriment. [QC9702 A Question of Gluttony]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Discarded Nutriment",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 24233,
+          "kind": "item",
+          "locations": [],
+          "name": "Discarded Nutriment",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 37,
+      "quest_id": 9702,
+      "quest_name": "A Question of Gluttony",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17831,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 23.32,
+              "y": 66.21
+            }
+          ],
+          "name": "Watcher Leesa'oh",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9702"
+      ],
+      "instruction": "Turn in [QT9702 A Question of Gluttony] to Watcher Leesa'oh",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 38,
+      "quest_id": 9702,
+      "quest_name": "A Question of Gluttony",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17831,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 23.32,
+              "y": 66.21
+            }
+          ],
+          "name": "Watcher Leesa'oh",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9708"
+      ],
+      "instruction": "Accept [QA9708 Familiar Fungi] from Watcher Leesa'oh.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 39,
+      "quest_id": 9708,
+      "quest_name": "Familiar Fungi",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9708"
+      ],
+      "instruction": "Collect or use the required item: Mushroom Sample. [QC9708 Familiar Fungi]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Mushroom Sample",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 24238,
+          "kind": "item",
+          "locations": [],
+          "name": "Mushroom Sample",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 40,
+      "quest_id": 9708,
+      "quest_name": "Familiar Fungi",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17831,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 23.32,
+              "y": 66.21
+            }
+          ],
+          "name": "Watcher Leesa'oh",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9708"
+      ],
+      "instruction": "Turn in [QT9708 Familiar Fungi] to Watcher Leesa'oh",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 41,
+      "quest_id": 9708,
+      "quest_name": "Familiar Fungi",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17831,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 23.32,
+              "y": 66.21
+            }
+          ],
+          "name": "Watcher Leesa'oh",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9709"
+      ],
+      "instruction": "Accept [QA9709 Stealing Back the Mushrooms] from Watcher Leesa'oh.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 42,
+      "quest_id": 9709,
+      "quest_name": "Stealing Back the Mushrooms",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9709"
+      ],
+      "instruction": "Collect or use the required item: Box of Mushrooms. [QC9709 Stealing Back the Mushrooms]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Box of Mushrooms",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 24240,
+          "kind": "item",
+          "locations": [],
+          "name": "Box of Mushrooms",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 43,
+      "quest_id": 9709,
+      "quest_name": "Stealing Back the Mushrooms",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17831,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 23.32,
+              "y": 66.21
+            }
+          ],
+          "name": "Watcher Leesa'oh",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9709"
+      ],
+      "instruction": "Turn in [QT9709 Stealing Back the Mushrooms] to Watcher Leesa'oh",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 44,
+      "quest_id": 9709,
+      "quest_name": "Stealing Back the Mushrooms",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17841,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 78.4,
+              "y": 62.02
+            }
+          ],
+          "name": "Ysiel Windsinger",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9716"
+      ],
+      "instruction": "Accept [QA9716 Disturbance at Umbrafen Lake] from Ysiel Windsinger.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 45,
+      "quest_id": 9716,
+      "quest_name": "Disturbance at Umbrafen Lake",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9716"
+      ],
+      "instruction": "Complete the scripted or exploration event. [QC9716 Disturbance at Umbrafen Lake]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 46,
+      "quest_id": 9716,
+      "quest_name": "Disturbance at Umbrafen Lake",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17841,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 78.4,
+              "y": 62.02
+            }
+          ],
+          "name": "Ysiel Windsinger",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9716"
+      ],
+      "instruction": "Turn in [QT9716 Disturbance at Umbrafen Lake] to Ysiel Windsinger",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 47,
+      "quest_id": 9716,
+      "quest_name": "Disturbance at Umbrafen Lake",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17841,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 78.4,
+              "y": 62.02
+            }
+          ],
+          "name": "Ysiel Windsinger",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9718"
+      ],
+      "instruction": "Accept [QA9718 As the Crow Flies] from Ysiel Windsinger.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 48,
+      "quest_id": 9718,
+      "quest_name": "As the Crow Flies",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9718"
+      ],
+      "instruction": "Use the quest item [UI25465-] as directed. [QC9718 As the Crow Flies]",
+      "item_use_id": 25465,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 49,
+      "quest_id": 9718,
+      "quest_name": "As the Crow Flies",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17841,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 78.4,
+              "y": 62.02
+            }
+          ],
+          "name": "Ysiel Windsinger",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9718"
+      ],
+      "instruction": "Turn in [QT9718 As the Crow Flies] to Ysiel Windsinger",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 50,
+      "quest_id": 9718,
+      "quest_name": "As the Crow Flies",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 24330,
+          "kind": "item",
+          "locations": [],
+          "name": "Drain Schematics",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9731"
+      ],
+      "instruction": "Accept [QA9731 Drain Schematics] from Drain Schematics.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 51,
+      "quest_id": 9731,
+      "quest_name": "Drain Schematics",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17841,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 78.4,
+              "y": 62.02
+            }
+          ],
+          "name": "Ysiel Windsinger",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9720"
+      ],
+      "instruction": "Accept [QA9720 Balance Must Be Preserved] from Ysiel Windsinger.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 52,
+      "quest_id": 9720,
+      "quest_name": "Balance Must Be Preserved",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9720"
+      ],
+      "instruction": "Use the quest item [UI24355-] as directed; complete the marked or scripted objectives. [QC9720 Balance Must Be Preserved]",
+      "item_use_id": 24355,
+      "objective_hint": "Complete the marked or scripted objectives",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17998,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 70.6,
+              "y": 80.29
+            }
+          ],
+          "name": "Umbrafen Steam Pump Credit Marker",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18002,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 25.4,
+              "y": 42.86
+            }
+          ],
+          "name": "Marshlight Steam Pump Credit Marker",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18000,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 61.97,
+              "y": 40.84
+            }
+          ],
+          "name": "Serpent Steam Pump Credit Marker",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17999,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 63.11,
+              "y": 64.1
+            }
+          ],
+          "name": "Lagoon Steam Pump Credit Marker",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 53,
+      "quest_id": 9720,
+      "quest_name": "Balance Must Be Preserved",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9731"
+      ],
+      "instruction": "Complete the scripted or exploration event. [QC9731 Drain Schematics]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 54,
+      "quest_id": 9731,
+      "quest_name": "Drain Schematics",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17841,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 78.4,
+              "y": 62.02
+            }
+          ],
+          "name": "Ysiel Windsinger",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9731"
+      ],
+      "instruction": "Turn in [QT9731 Drain Schematics] to Ysiel Windsinger",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 55,
+      "quest_id": 9731,
+      "quest_name": "Drain Schematics",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17841,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 78.4,
+              "y": 62.02
+            }
+          ],
+          "name": "Ysiel Windsinger",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9720"
+      ],
+      "instruction": "Turn in [QT9720 Balance Must Be Preserved] to Ysiel Windsinger",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 56,
+      "quest_id": 9720,
+      "quest_name": "Balance Must Be Preserved",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17841,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 78.4,
+              "y": 62.02
+            }
+          ],
+          "name": "Ysiel Windsinger",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9724"
+      ],
+      "instruction": "Accept [QA9724 Warning the Cenarion Circle] from Ysiel Windsinger.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 57,
+      "quest_id": 9724,
+      "quest_name": "Warning the Cenarion Circle",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9724"
+      ],
+      "instruction": "Complete [QC9724 Warning the Cenarion Circle]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 58,
+      "quest_id": 9724,
+      "quest_name": "Warning the Cenarion Circle",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16885,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 16.04,
+              "y": 52.15
+            }
+          ],
+          "name": "Amythiel Mistwalker",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9724"
+      ],
+      "instruction": "Turn in [QT9724 Warning the Cenarion Circle] to Amythiel Mistwalker",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 59,
+      "quest_id": 9724,
+      "quest_name": "Warning the Cenarion Circle",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16885,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 16.04,
+              "y": 52.15
+            }
+          ],
+          "name": "Amythiel Mistwalker",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9732"
+      ],
+      "instruction": "Accept [QA9732 Return to the Marsh] from Amythiel Mistwalker.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 60,
+      "quest_id": 9732,
+      "quest_name": "Return to the Marsh",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9732"
+      ],
+      "instruction": "Complete [QC9732 Return to the Marsh]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 61,
+      "quest_id": 9732,
+      "quest_name": "Return to the Marsh",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17841,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 78.4,
+              "y": 62.02
+            }
+          ],
+          "name": "Ysiel Windsinger",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9732"
+      ],
+      "instruction": "Turn in [QT9732 Return to the Marsh] to Ysiel Windsinger",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 62,
+      "quest_id": 9732,
+      "quest_name": "Return to the Marsh",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17841,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 78.4,
+              "y": 62.02
+            }
+          ],
+          "name": "Ysiel Windsinger",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9778"
+      ],
+      "instruction": "Accept [QA9778 Warden Hamoot] from Ysiel Windsinger.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 63,
+      "quest_id": 9778,
+      "quest_name": "Warden Hamoot",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17858,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 79.09,
+              "y": 65.27
+            }
+          ],
+          "name": "Warden Hamoot",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9728"
+      ],
+      "instruction": "Accept [QA9728 A Warm Welcome] from Warden Hamoot.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 64,
+      "quest_id": 9728,
+      "quest_name": "A Warm Welcome",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9778"
+      ],
+      "instruction": "Complete [QC9778 Warden Hamoot]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 65,
+      "quest_id": 9778,
+      "quest_name": "Warden Hamoot",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9728"
+      ],
+      "instruction": "Collect or use the required item: Naga Claws. [QC9728 A Warm Welcome]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Naga Claws",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 24280,
+          "kind": "item",
+          "locations": [],
+          "name": "Naga Claws",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 66,
+      "quest_id": 9728,
+      "quest_name": "A Warm Welcome",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17858,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 79.09,
+              "y": 65.27
+            }
+          ],
+          "name": "Warden Hamoot",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9778"
+      ],
+      "instruction": "Turn in [QT9778 Warden Hamoot] to Warden Hamoot",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 67,
+      "quest_id": 9778,
+      "quest_name": "Warden Hamoot",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17858,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 79.09,
+              "y": 65.27
+            }
+          ],
+          "name": "Warden Hamoot",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9728"
+      ],
+      "instruction": "Turn in [QT9728 A Warm Welcome] to Warden Hamoot",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 68,
+      "quest_id": 9728,
+      "quest_name": "A Warm Welcome",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16885,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3483,
+              "map_name": "Hellfire Peninsula",
+              "verification": "questie_structured_source_only",
+              "x": 16.04,
+              "y": 52.15
+            }
+          ],
+          "name": "Amythiel Mistwalker",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9912"
+      ],
+      "instruction": "Accept [QA9912 The Cenarion Expedition] from Amythiel Mistwalker.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 69,
+      "quest_id": 9912,
+      "quest_name": "The Cenarion Expedition",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9912"
+      ],
+      "instruction": "Complete [QC9912 The Cenarion Expedition]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 70,
+      "quest_id": 9912,
+      "quest_name": "The Cenarion Expedition",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17841,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 78.4,
+              "y": 62.02
+            }
+          ],
+          "name": "Ysiel Windsinger",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9912"
+      ],
+      "instruction": "Turn in [QT9912 The Cenarion Expedition] to Ysiel Windsinger",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 71,
+      "quest_id": 9912,
+      "quest_name": "The Cenarion Expedition",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18003,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 68.2,
+              "y": 49.37
+            }
+          ],
+          "name": "Anchorite Ahuurn",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9776"
+      ],
+      "instruction": "Accept [QA9776 The Orebor Harborage] from Anchorite Ahuurn.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 72,
+      "quest_id": 9776,
+      "quest_name": "The Orebor Harborage",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18004,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 68.34,
+              "y": 50.08
+            }
+          ],
+          "name": "Vindicator Idaar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9793"
+      ],
+      "instruction": "Accept [QA9793 The Fate of Tuurem] from Vindicator Idaar.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 73,
+      "quest_id": 9793,
+      "quest_name": "The Fate of Tuurem",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9776"
+      ],
+      "instruction": "Complete [QC9776 The Orebor Harborage]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 74,
+      "quest_id": 9776,
+      "quest_name": "The Orebor Harborage",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9793"
+      ],
+      "instruction": "Complete [QC9793 The Fate of Tuurem]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 75,
+      "quest_id": 9793,
+      "quest_name": "The Fate of Tuurem",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18008,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 41.94,
+              "y": 27.19
+            }
+          ],
+          "name": "Ikuti",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9776"
+      ],
+      "instruction": "Turn in [QT9776 The Orebor Harborage] to Ikuti",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 76,
+      "quest_id": 9776,
+      "quest_name": "The Orebor Harborage",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18252,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 58.53,
+              "y": 53.56
+            }
+          ],
+          "name": "Andarl",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9793"
+      ],
+      "instruction": "Turn in [QT9793 The Fate of Tuurem] to Andarl",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 77,
+      "quest_id": 9793,
+      "quest_name": "The Fate of Tuurem",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18008,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 41.94,
+              "y": 27.19
+            }
+          ],
+          "name": "Ikuti",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9835"
+      ],
+      "instruction": "Accept [QA9835 Ango'rosh Encroachment] from Ikuti.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 78,
+      "quest_id": 9835,
+      "quest_name": "Ango'rosh Encroachment",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9835"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Ango'rosh Shaman, Ango'rosh Ogre. [QC9835 Ango'rosh Encroachment]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Ango'rosh Shaman, Ango'rosh Ogre",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18118,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 31.5,
+              "y": 38.78
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 32.78,
+              "y": 37.3
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 33.82,
+              "y": 34.76
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 32.03,
+              "y": 38.5
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 32.88,
+              "y": 33.53
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 36.22,
+              "y": 28.32
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 34.27,
+              "y": 27.13
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 34.82,
+              "y": 28.31
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 35.73,
+              "y": 27.86
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 34.6,
+              "y": 31.49
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 32.57,
+              "y": 28.32
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 31.05,
+              "y": 29.68
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 30.85,
+              "y": 26.9
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 29.77,
+              "y": 29.34
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 29.69,
+              "y": 34.32
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 30.66,
+              "y": 33.7
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 31.16,
+              "y": 34.68
+            }
+          ],
+          "name": "Ango'rosh Shaman",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18117,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 38.86,
+              "y": 28.14
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 32.26,
+              "y": 40.27
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 32.18,
+              "y": 39.11
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 31.58,
+              "y": 40.51
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 34.87,
+              "y": 37.61
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 32.69,
+              "y": 35.29
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 33.19,
+              "y": 35.35
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 33.83,
+              "y": 36.99
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 34.97,
+              "y": 34.42
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 34.38,
+              "y": 34.89
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 36.14,
+              "y": 35.77
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 35.42,
+              "y": 34.49
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 34.36,
+              "y": 33.41
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 36.86,
+              "y": 35.07
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 37.53,
+              "y": 33.63
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 38.33,
+              "y": 32.97
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 36.42,
+              "y": 31.51
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 38.75,
+              "y": 30.33
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 37.86,
+              "y": 27.55
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 37.65,
+              "y": 28.55
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 37.21,
+              "y": 27.02
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 36.21,
+              "y": 26.9
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 36.71,
+              "y": 26.92
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 35.78,
+              "y": 27.5
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 34.97,
+              "y": 26.36
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 32.24,
+              "y": 26.9
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 34.39,
+              "y": 28.26
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 33.71,
+              "y": 28.43
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 34.71,
+              "y": 30.35
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 36.06,
+              "y": 29.59
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 35.82,
+              "y": 28.9
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 34.02,
+              "y": 29.92
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 33.09,
+              "y": 29.03
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 35.4,
+              "y": 31.19
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 36.71,
+              "y": 29.49
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 36.22,
+              "y": 32.6
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 32.75,
+              "y": 31.79
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 33.1,
+              "y": 32.69
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 32.03,
+              "y": 31.19
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 32.51,
+              "y": 32.51
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 31.72,
+              "y": 30.54
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 31.8,
+              "y": 29.02
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 30.9,
+              "y": 29.92
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 30.33,
+              "y": 29.06
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 31.94,
+              "y": 27.43
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 30.94,
+              "y": 28.84
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 30.03,
+              "y": 26.92
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 30.34,
+              "y": 26.51
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 29.13,
+              "y": 26.94
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 28.89,
+              "y": 27.92
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 30.0,
+              "y": 30.03
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 29.89,
+              "y": 33.1
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 29.8,
+              "y": 32.17
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 30.7,
+              "y": 32.56
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 31.21,
+              "y": 34.91
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 31.58,
+              "y": 35.33
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 31.13,
+              "y": 39.69
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 28.76,
+              "y": 34.7
+            }
+          ],
+          "name": "Ango'rosh Ogre",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 79,
+      "quest_id": 9835,
+      "quest_name": "Ango'rosh Encroachment",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18008,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 41.94,
+              "y": 27.19
+            }
+          ],
+          "name": "Ikuti",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9835"
+      ],
+      "instruction": "Turn in [QT9835 Ango'rosh Encroachment] to Ikuti",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 80,
+      "quest_id": 9835,
+      "quest_name": "Ango'rosh Encroachment",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18008,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 41.94,
+              "y": 27.19
+            }
+          ],
+          "name": "Ikuti",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9839"
+      ],
+      "instruction": "Accept [QA9839 Overlord Gorefist] from Ikuti.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 81,
+      "quest_id": 9839,
+      "quest_name": "Overlord Gorefist",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "before_quest_id": 9848,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:npc:22485",
+        "authored-route:guidelime-tugs-tbc-alliance-2.50:62-63Zangarmarsh.lua:116"
+      ],
+      "instruction": "Optional: learn the flight path from Halu. [P][G41.28,29.00 Zangarmarsh][O]",
+      "map_id": 3521,
+      "map_name": "Zangarmarsh",
+      "optional": true,
+      "order": 82,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "acquire_flight_path",
+      "verification": "cross_verified_questie_and_authored_route",
+      "x": 41.28,
+      "y": 29.0
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18019,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 41.21,
+              "y": 28.67
+            }
+          ],
+          "name": "Timothy Daniels",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9848"
+      ],
+      "instruction": "Accept [QA9848 Secrets of the Daggerfen] from Timothy Daniels.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 83,
+      "quest_id": 9848,
+      "quest_name": "Secrets of the Daggerfen",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 25459,
+          "kind": "item",
+          "locations": [],
+          "name": "\"Count\" Ungula's Mandible",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9911"
+      ],
+      "instruction": "Accept [QA9911 The Count of the Marshes] from \"Count\" Ungula's Mandible.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 84,
+      "quest_id": 9911,
+      "quest_name": "The Count of the Marshes",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18008,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 41.94,
+              "y": 27.19
+            }
+          ],
+          "name": "Ikuti",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10115"
+      ],
+      "instruction": "Accept [QA10115 Daggerfen Deviance] from Ikuti.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 85,
+      "quest_id": 10115,
+      "quest_name": "Daggerfen Deviance",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10115"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Daggerfen Assassin, Daggerfen Muckdweller. [QC10115 Daggerfen Deviance]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Daggerfen Assassin, Daggerfen Muckdweller",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18116,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 29.0,
+              "y": 23.28
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 26.65,
+              "y": 21.5
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 26.07,
+              "y": 21.47
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 26.28,
+              "y": 22.46
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 26.48,
+              "y": 22.62
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 25.82,
+              "y": 24.48
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 26.84,
+              "y": 25.57
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 24.5,
+              "y": 26.25
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 25.07,
+              "y": 25.19
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 25.0,
+              "y": 24.63
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 24.33,
+              "y": 24.37
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 24.02,
+              "y": 22.79
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 23.75,
+              "y": 22.27
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 23.35,
+              "y": 22.21
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 23.08,
+              "y": 21.97
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 23.51,
+              "y": 20.84
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 28.0,
+              "y": 23.88
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 26.62,
+              "y": 22.82
+            }
+          ],
+          "name": "Daggerfen Assassin",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18115,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 27.98,
+              "y": 22.9
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 28.59,
+              "y": 22.07
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 27.23,
+              "y": 23.19
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 27.1,
+              "y": 21.45
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 26.43,
+              "y": 20.35
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 26.14,
+              "y": 22.9
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 25.65,
+              "y": 23.34
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 25.2,
+              "y": 22.19
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 25.07,
+              "y": 21.28
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 25.09,
+              "y": 20.24
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 27.02,
+              "y": 25.41
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 25.76,
+              "y": 24.93
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 25.66,
+              "y": 25.87
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 25.13,
+              "y": 23.78
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 26.26,
+              "y": 24.51
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 26.12,
+              "y": 26.42
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 25.76,
+              "y": 27.11
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 25.0,
+              "y": 26.77
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 24.66,
+              "y": 26.58
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 24.15,
+              "y": 26.91
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 24.16,
+              "y": 23.37
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 23.63,
+              "y": 24.29
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 23.29,
+              "y": 25.49
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 23.07,
+              "y": 23.31
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 24.18,
+              "y": 21.97
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 23.04,
+              "y": 22.88
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 23.88,
+              "y": 22.27
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 22.99,
+              "y": 21.39
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 22.37,
+              "y": 22.14
+            }
+          ],
+          "name": "Daggerfen Muckdweller",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 86,
+      "quest_id": 10115,
+      "quest_name": "Daggerfen Deviance",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9839"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Overlord Gorefist, Ango'rosh Mauler. [QC9839 Overlord Gorefist]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Overlord Gorefist, Ango'rosh Mauler",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18160,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 18.39,
+              "y": 7.79
+            }
+          ],
+          "name": "Overlord Gorefist",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18120,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 17.25,
+              "y": 13.49
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 16.9,
+              "y": 13.46
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 17.27,
+              "y": 9.3
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 16.77,
+              "y": 6.78
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 16.64,
+              "y": 5.54
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 18.08,
+              "y": 4.98
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 17.15,
+              "y": 4.28
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 16.76,
+              "y": 8.27
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 18.61,
+              "y": 7.03
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 19.71,
+              "y": 8.61
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 18.44,
+              "y": 3.5
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 19.29,
+              "y": 4.19
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 19.73,
+              "y": 3.33
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 20.93,
+              "y": 5.34
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 21.17,
+              "y": 6.73
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 17.69,
+              "y": 8.56
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 20.8,
+              "y": 2.15
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 20.4,
+              "y": 4.44
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 18.63,
+              "y": 8.78
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 17.5,
+              "y": 8.06
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 17.09,
+              "y": 13.52
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 20.93,
+              "y": 3.45
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 19.76,
+              "y": 6.57
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 18.89,
+              "y": 8.0
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 17.62,
+              "y": 9.93
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 18.9,
+              "y": 7.7
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 19.73,
+              "y": 5.44
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 20.52,
+              "y": 7.55
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 19.12,
+              "y": 9.47
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 19.86,
+              "y": 6.97
+            },
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 19.9,
+              "y": 7.24
+            }
+          ],
+          "name": "Ango'rosh Mauler",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 87,
+      "quest_id": 9839,
+      "quest_name": "Overlord Gorefist",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9848"
+      ],
+      "instruction": "Collect or use the required items: Daggerfen Poison Manual, Daggerfen Poison Vial. [QC9848 Secrets of the Daggerfen]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Daggerfen Poison Manual, Daggerfen Poison Vial",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 24499,
+          "kind": "item",
+          "locations": [],
+          "name": "Daggerfen Poison Manual",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 24500,
+          "kind": "item",
+          "locations": [],
+          "name": "Daggerfen Poison Vial",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 88,
+      "quest_id": 9848,
+      "quest_name": "Secrets of the Daggerfen",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9911"
+      ],
+      "instruction": "Complete [QC9911 The Count of the Marshes]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 89,
+      "quest_id": 9911,
+      "quest_name": "The Count of the Marshes",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18008,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 41.94,
+              "y": 27.19
+            }
+          ],
+          "name": "Ikuti",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9839"
+      ],
+      "instruction": "Turn in [QT9839 Overlord Gorefist] to Ikuti",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 90,
+      "quest_id": 9839,
+      "quest_name": "Overlord Gorefist",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18008,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 41.94,
+              "y": 27.19
+            }
+          ],
+          "name": "Ikuti",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10115"
+      ],
+      "instruction": "Turn in [QT10115 Daggerfen Deviance] to Ikuti",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 91,
+      "quest_id": 10115,
+      "quest_name": "Daggerfen Deviance",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18019,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 41.21,
+              "y": 28.67
+            }
+          ],
+          "name": "Timothy Daniels",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9848"
+      ],
+      "instruction": "Turn in [QT9848 Secrets of the Daggerfen] to Timothy Daniels",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 92,
+      "quest_id": 9848,
+      "quest_name": "Secrets of the Daggerfen",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17831,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 23.32,
+              "y": 66.21
+            }
+          ],
+          "name": "Watcher Leesa'oh",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9911"
+      ],
+      "instruction": "Turn in [QT9911 The Count of the Marshes] to Watcher Leesa'oh",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 93,
+      "quest_id": 9911,
+      "quest_name": "The Count of the Marshes",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3521,
+      "zone_or_sort_name": "Zangarmarsh"
+    }
+  ],
+  "title": "85 Zangarmarsh"
+}

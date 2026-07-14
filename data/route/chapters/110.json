@@ -1,0 +1,2208 @@
+{
+  "branch": "optional_content",
+  "entry_contract": "Complete Return to Chromie. Begin in Western Plaguelands with Argent Quartermaster Lightspark. Leave at least two quest-log slots open; group and reputation gates remain explicit.",
+  "entry_route_point": {
+    "map_id": 28,
+    "map_name": "Western Plaguelands",
+    "x": 42.84,
+    "y": 83.72
+  },
+  "entry_zone_or_sort": 28,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 16,
+    "map_name": "Azshara",
+    "quest_id": 8232,
+    "tag": "QT",
+    "x": 42.4,
+    "y": 42.62
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [
+    [
+      5941
+    ]
+  ],
+  "external_prerequisite_quest_ids": [
+    5941
+  ],
+  "group": "Mad's Loremaster Guide - Optional Content",
+  "guide_file": "Guides/optional_content/110_raid_14.lua",
+  "id": "110-optional_content-optional-content-14---western-plaguelands-&-eastern-plaguelands",
+  "maximum_level": null,
+  "minimum_level": null,
+  "next_chapter": "Optional Content 15 - Blackrock Spire & Alterac Valley",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "Optional Content 13 - Blackrock Depths",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 5507,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5281:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5507:starter"
+      ],
+      "instruction": "Travel from Eastern Plaguelands to Western Plaguelands. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G42.84,83.72 Western Plaguelands]. [O]",
+      "map_id": 28,
+      "map_name": "Western Plaguelands",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 139,
+      "origin_map_name": "Eastern Plaguelands",
+      "origin_x": 14.45,
+      "origin_y": 33.74,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 42.84,
+      "y": 83.72
+    },
+    {
+      "before_quest_id": 5507,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5941:dependency"
+      ],
+      "instruction": "Optional entry requirements: complete Return to Chromie. [O]",
+      "map_id": 28,
+      "map_name": "Western Plaguelands",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        5941
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "branch_entry",
+      "verification": "route_dependency_graph",
+      "x": 42.84,
+      "y": 83.72
+    },
+    {
+      "before_quest_id": 5507,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5507:starter"
+      ],
+      "instruction": "Optional chapter: travel to Western Plaguelands and begin at [G42.84,83.72 Western Plaguelands]. Leave at least two quest-log slots open. [O]",
+      "map_id": 28,
+      "map_name": "Western Plaguelands",
+      "optional": true,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 42.84,
+      "y": 83.72
+    },
+    {
+      "before_quest_id": 5507,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5507:requiredLevel"
+      ],
+      "instruction": "Reach level 55 before accepting Mantles of the Dawn. [XP55 Level 55]",
+      "map_id": 28,
+      "map_name": "Western Plaguelands",
+      "optional": false,
+      "order": 4,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 55,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 42.84,
+      "y": 83.72
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10857,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 28,
+              "map_name": "Western Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 42.84,
+              "y": 83.72
+            }
+          ],
+          "name": "Argent Quartermaster Lightspark",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5507"
+      ],
+      "instruction": "Accept [QA5507 Mantles of the Dawn] from Argent Quartermaster Lightspark.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 5507,
+      "quest_name": "Mantles of the Dawn",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 28,
+      "zone_or_sort_name": "Western Plaguelands"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5507"
+      ],
+      "instruction": "Collect or use the required item: Argent Dawn Valor Token. [QC5507 Mantles of the Dawn]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Argent Dawn Valor Token",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 12844,
+          "kind": "item",
+          "locations": [],
+          "name": "Argent Dawn Valor Token",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 6,
+      "quest_id": 5507,
+      "quest_name": "Mantles of the Dawn",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 28,
+      "zone_or_sort_name": "Western Plaguelands"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10857,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 28,
+              "map_name": "Western Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 42.84,
+              "y": 83.72
+            }
+          ],
+          "name": "Argent Quartermaster Lightspark",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5507"
+      ],
+      "instruction": "Turn in [QT5507 Mantles of the Dawn] to Argent Quartermaster Lightspark",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 5507,
+      "quest_name": "Mantles of the Dawn",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 28,
+      "zone_or_sort_name": "Western Plaguelands"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10667,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 28,
+              "map_name": "Western Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 39.46,
+              "y": 66.76
+            }
+          ],
+          "name": "Chromie",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5721"
+      ],
+      "instruction": "Accept [QA5721 The Battle of Darrowshire] from Chromie.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 5721,
+      "quest_name": "The Battle of Darrowshire",
+      "quest_tag": "Raid",
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 139,
+      "zone_or_sort_name": "Eastern Plaguelands"
+    },
+    {
+      "before_quest_id": 5721,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5721:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 28,
+      "map_name": "Western Plaguelands",
+      "optional": true,
+      "order": 9,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        5721
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 42.84,
+      "y": 83.72
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5721"
+      ],
+      "instruction": "Raid \u2014 Use the quest item [UI15209-] as directed; complete the required NPC or creature objective: Joseph Redpath. [QC5721 The Battle of Darrowshire]",
+      "item_use_id": 15209,
+      "objective_hint": "Complete the required NPC or creature objective: Joseph Redpath",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10936,
+          "kind": "npc",
+          "locations": [],
+          "name": "Joseph Redpath",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 10,
+      "quest_id": 5721,
+      "quest_name": "The Battle of Darrowshire",
+      "quest_tag": "Raid",
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 139,
+      "zone_or_sort_name": "Eastern Plaguelands"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10926,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 139,
+              "map_name": "Eastern Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 36.45,
+              "y": 90.8
+            }
+          ],
+          "name": "Pamela Redpath",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5721"
+      ],
+      "instruction": "Turn in [QT5721 The Battle of Darrowshire] to Pamela Redpath",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 5721,
+      "quest_name": "The Battle of Darrowshire",
+      "quest_tag": "Raid",
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 139,
+      "zone_or_sort_name": "Eastern Plaguelands"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16132,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 139,
+              "map_name": "Eastern Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 81.51,
+              "y": 58.55
+            }
+          ],
+          "name": "Huntsman Leopold",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9124"
+      ],
+      "instruction": "Accept [QA9124 Cryptstalker Armor Doesn't Make Itself...] from Huntsman Leopold.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 9124,
+      "quest_name": "Cryptstalker Armor Doesn't Make Itself...",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 139,
+      "zone_or_sort_name": "Eastern Plaguelands"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16131,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 139,
+              "map_name": "Eastern Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 81.43,
+              "y": 58.51
+            }
+          ],
+          "name": "Rohan the Assassin",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9126"
+      ],
+      "instruction": "Accept [QA9126 Bonescythe Digs] from Rohan the Assassin.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 9126,
+      "quest_name": "Bonescythe Digs",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 139,
+      "zone_or_sort_name": "Eastern Plaguelands"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16116,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 139,
+              "map_name": "Eastern Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 81.52,
+              "y": 58.27
+            }
+          ],
+          "name": "Archmage Angela Dosantos",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9128"
+      ],
+      "instruction": "Accept [QA9128 The Elemental Equation] from Archmage Angela Dosantos.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 9128,
+      "quest_name": "The Elemental Equation",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 139,
+      "zone_or_sort_name": "Eastern Plaguelands"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16112,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 139,
+              "map_name": "Eastern Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 81.8,
+              "y": 58.08
+            }
+          ],
+          "name": "Korfax, Champion of the Light",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9131"
+      ],
+      "instruction": "Accept [QA9131 Binding the Dreadnaught] from Korfax, Champion of the Light.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 9131,
+      "quest_name": "Binding the Dreadnaught",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 139,
+      "zone_or_sort_name": "Eastern Plaguelands"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16135,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 139,
+              "map_name": "Eastern Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 81.2,
+              "y": 59.0
+            }
+          ],
+          "name": "Rayne",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9136"
+      ],
+      "instruction": "Accept [QA9136 Savage Flora] from Rayne.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 9136,
+      "quest_name": "Savage Flora",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 139,
+      "zone_or_sort_name": "Eastern Plaguelands"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16212,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 139,
+              "map_name": "Eastern Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 81.05,
+              "y": 57.55
+            }
+          ],
+          "name": "Dispatch Commander Metz",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9141"
+      ],
+      "instruction": "Accept [QA9141 They Call Me \"The Rooster\"] from Dispatch Commander Metz.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 9141,
+      "quest_name": "They Call Me \"The Rooster\"",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 139,
+      "zone_or_sort_name": "Eastern Plaguelands"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9124"
+      ],
+      "instruction": "Raid \u2014 Collect or use the required item: Crypt Fiend Parts. [QC9124 Cryptstalker Armor Doesn't Make Itself...]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Crypt Fiend Parts",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 22525,
+          "kind": "item",
+          "locations": [],
+          "name": "Crypt Fiend Parts",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 18,
+      "quest_id": 9124,
+      "quest_name": "Cryptstalker Armor Doesn't Make Itself...",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 139,
+      "zone_or_sort_name": "Eastern Plaguelands"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9126"
+      ],
+      "instruction": "Raid \u2014 Collect or use the required item: Bone Fragments. [QC9126 Bonescythe Digs]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Bone Fragments",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 22526,
+          "kind": "item",
+          "locations": [],
+          "name": "Bone Fragments",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 19,
+      "quest_id": 9126,
+      "quest_name": "Bonescythe Digs",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 139,
+      "zone_or_sort_name": "Eastern Plaguelands"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9128"
+      ],
+      "instruction": "Raid \u2014 Collect or use the required item: Core of Elements. [QC9128 The Elemental Equation]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Core of Elements",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 22527,
+          "kind": "item",
+          "locations": [],
+          "name": "Core of Elements",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 20,
+      "quest_id": 9128,
+      "quest_name": "The Elemental Equation",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 139,
+      "zone_or_sort_name": "Eastern Plaguelands"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9131"
+      ],
+      "instruction": "Raid \u2014 Collect or use the required item: Dark Iron Scraps. [QC9131 Binding the Dreadnaught]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Dark Iron Scraps",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 22528,
+          "kind": "item",
+          "locations": [],
+          "name": "Dark Iron Scraps",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 21,
+      "quest_id": 9131,
+      "quest_name": "Binding the Dreadnaught",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 139,
+      "zone_or_sort_name": "Eastern Plaguelands"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9136"
+      ],
+      "instruction": "Raid \u2014 Collect or use the required item: Savage Frond. [QC9136 Savage Flora]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Savage Frond",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 22529,
+          "kind": "item",
+          "locations": [],
+          "name": "Savage Frond",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 22,
+      "quest_id": 9136,
+      "quest_name": "Savage Flora",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 139,
+      "zone_or_sort_name": "Eastern Plaguelands"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9141"
+      ],
+      "instruction": "Raid \u2014 Collect or use the required item: Argent Dawn Valor Token. [QC9141 They Call Me \"The Rooster\"]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Argent Dawn Valor Token",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 12844,
+          "kind": "item",
+          "locations": [],
+          "name": "Argent Dawn Valor Token",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 23,
+      "quest_id": 9141,
+      "quest_name": "They Call Me \"The Rooster\"",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 139,
+      "zone_or_sort_name": "Eastern Plaguelands"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16212,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 139,
+              "map_name": "Eastern Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 81.05,
+              "y": 57.55
+            }
+          ],
+          "name": "Dispatch Commander Metz",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9141"
+      ],
+      "instruction": "Turn in [QT9141 They Call Me \"The Rooster\"] to Dispatch Commander Metz",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 24,
+      "quest_id": 9141,
+      "quest_name": "They Call Me \"The Rooster\"",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 139,
+      "zone_or_sort_name": "Eastern Plaguelands"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16116,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 139,
+              "map_name": "Eastern Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 81.52,
+              "y": 58.27
+            }
+          ],
+          "name": "Archmage Angela Dosantos",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9128"
+      ],
+      "instruction": "Turn in [QT9128 The Elemental Equation] to Archmage Angela Dosantos",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 25,
+      "quest_id": 9128,
+      "quest_name": "The Elemental Equation",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 139,
+      "zone_or_sort_name": "Eastern Plaguelands"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16131,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 139,
+              "map_name": "Eastern Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 81.43,
+              "y": 58.51
+            }
+          ],
+          "name": "Rohan the Assassin",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9126"
+      ],
+      "instruction": "Turn in [QT9126 Bonescythe Digs] to Rohan the Assassin",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 26,
+      "quest_id": 9126,
+      "quest_name": "Bonescythe Digs",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 139,
+      "zone_or_sort_name": "Eastern Plaguelands"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16132,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 139,
+              "map_name": "Eastern Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 81.51,
+              "y": 58.55
+            }
+          ],
+          "name": "Huntsman Leopold",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9124"
+      ],
+      "instruction": "Turn in [QT9124 Cryptstalker Armor Doesn't Make Itself...] to Huntsman Leopold",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 27,
+      "quest_id": 9124,
+      "quest_name": "Cryptstalker Armor Doesn't Make Itself...",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 139,
+      "zone_or_sort_name": "Eastern Plaguelands"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16135,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 139,
+              "map_name": "Eastern Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 81.2,
+              "y": 59.0
+            }
+          ],
+          "name": "Rayne",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9136"
+      ],
+      "instruction": "Turn in [QT9136 Savage Flora] to Rayne",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 28,
+      "quest_id": 9136,
+      "quest_name": "Savage Flora",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 139,
+      "zone_or_sort_name": "Eastern Plaguelands"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16112,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 139,
+              "map_name": "Eastern Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 81.8,
+              "y": 58.08
+            }
+          ],
+          "name": "Korfax, Champion of the Light",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9131"
+      ],
+      "instruction": "Turn in [QT9131 Binding the Dreadnaught] to Korfax, Champion of the Light",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 29,
+      "quest_id": 9131,
+      "quest_name": "Binding the Dreadnaught",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 139,
+      "zone_or_sort_name": "Eastern Plaguelands"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11536,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 139,
+              "map_name": "Eastern Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 81.62,
+              "y": 60.0
+            }
+          ],
+          "name": "Quartermaster Miranda Breechlock",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9223"
+      ],
+      "instruction": "Accept [QA9223 Superior Armaments of Battle - Honored Amongst the Dawn] from Quartermaster Miranda Breechlock.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 30,
+      "quest_id": 9223,
+      "quest_name": "Superior Armaments of Battle - Honored Amongst the Dawn",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 139,
+      "zone_or_sort_name": "Eastern Plaguelands"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "pvp",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17069,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 139,
+              "map_name": "Eastern Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 81.31,
+              "y": 59.35
+            }
+          ],
+          "name": "Emissary Whitebeard",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9664"
+      ],
+      "instruction": "Accept [QA9664 Establishing New Outposts] from Emissary Whitebeard.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 31,
+      "quest_id": 9664,
+      "quest_name": "Establishing New Outposts",
+      "quest_tag": "PvP",
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 139,
+      "zone_or_sort_name": "Eastern Plaguelands"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "pvp",
+        "raid"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9664"
+      ],
+      "instruction": "Raid \u2014 Complete the required NPC or creature objectives: <TXT>Crown Guard Capture Quest Doodad, <TXT>Eastwall Capture Quest Doodad, <TXT>Northpass Capture Quest Doodad, plus 1 more. [QC9664 Establishing New Outposts]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: <TXT>Crown Guard Capture Quest Doodad, <TXT>Eastwall Capture Quest Doodad, <TXT>Northpass Capture Quest Doodad, plus 1 more",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17689,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 139,
+              "map_name": "Eastern Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 39.72,
+              "y": 75.39
+            }
+          ],
+          "name": "<TXT>Crown Guard Capture Quest Doodad",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17690,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 139,
+              "map_name": "Eastern Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 67.45,
+              "y": 47.96
+            }
+          ],
+          "name": "<TXT>Eastwall Capture Quest Doodad",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17696,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 139,
+              "map_name": "Eastern Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 56.57,
+              "y": 24.41
+            }
+          ],
+          "name": "<TXT>Northpass Capture Quest Doodad",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17698,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 139,
+              "map_name": "Eastern Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 22.01,
+              "y": 32.03
+            }
+          ],
+          "name": "<TXT>Plaguewood Capture Quest Doodad",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 32,
+      "quest_id": 9664,
+      "quest_name": "Establishing New Outposts",
+      "quest_tag": "PvP",
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 139,
+      "zone_or_sort_name": "Eastern Plaguelands"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9223"
+      ],
+      "instruction": "Raid \u2014 Collect or use the required items: Insignia of the Dawn, Insignia of the Crusade. [QC9223 Superior Armaments of Battle - Honored Amongst the Dawn]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Insignia of the Dawn, Insignia of the Crusade",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 22523,
+          "kind": "item",
+          "locations": [],
+          "name": "Insignia of the Dawn",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 22524,
+          "kind": "item",
+          "locations": [],
+          "name": "Insignia of the Crusade",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 33,
+      "quest_id": 9223,
+      "quest_name": "Superior Armaments of Battle - Honored Amongst the Dawn",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 139,
+      "zone_or_sort_name": "Eastern Plaguelands"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "pvp",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17069,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 139,
+              "map_name": "Eastern Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 81.31,
+              "y": 59.35
+            }
+          ],
+          "name": "Emissary Whitebeard",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9664"
+      ],
+      "instruction": "Turn in [QT9664 Establishing New Outposts] to Emissary Whitebeard",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 34,
+      "quest_id": 9664,
+      "quest_name": "Establishing New Outposts",
+      "quest_tag": "PvP",
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 139,
+      "zone_or_sort_name": "Eastern Plaguelands"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11536,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 139,
+              "map_name": "Eastern Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 81.62,
+              "y": 60.0
+            }
+          ],
+          "name": "Quartermaster Miranda Breechlock",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9223"
+      ],
+      "instruction": "Turn in [QT9223 Superior Armaments of Battle - Honored Amongst the Dawn] to Quartermaster Miranda Breechlock",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 35,
+      "quest_id": 9223,
+      "quest_name": "Superior Armaments of Battle - Honored Amongst the Dawn",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 139,
+      "zone_or_sort_name": "Eastern Plaguelands"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11536,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 139,
+              "map_name": "Eastern Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 81.62,
+              "y": 60.0
+            }
+          ],
+          "name": "Quartermaster Miranda Breechlock",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5517"
+      ],
+      "instruction": "Accept [QA5517 Chromatic Mantle of the Dawn] from Quartermaster Miranda Breechlock.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 36,
+      "quest_id": 5517,
+      "quest_name": "Chromatic Mantle of the Dawn",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 139,
+      "zone_or_sort_name": "Eastern Plaguelands"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16116,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 139,
+              "map_name": "Eastern Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 81.52,
+              "y": 58.27
+            }
+          ],
+          "name": "Archmage Angela Dosantos",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9123"
+      ],
+      "instruction": "Accept [QA9123 The Dread Citadel - Naxxramas] from Archmage Angela Dosantos.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 37,
+      "quest_id": 9123,
+      "quest_name": "The Dread Citadel - Naxxramas",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 139,
+      "zone_or_sort_name": "Eastern Plaguelands"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5517"
+      ],
+      "instruction": "Collect or use the required item: Argent Dawn Valor Token. [QC5517 Chromatic Mantle of the Dawn]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Argent Dawn Valor Token",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 12844,
+          "kind": "item",
+          "locations": [],
+          "name": "Argent Dawn Valor Token",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 38,
+      "quest_id": 5517,
+      "quest_name": "Chromatic Mantle of the Dawn",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 139,
+      "zone_or_sort_name": "Eastern Plaguelands"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9123"
+      ],
+      "instruction": "Complete [QC9123 The Dread Citadel - Naxxramas]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 39,
+      "quest_id": 9123,
+      "quest_name": "The Dread Citadel - Naxxramas",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 139,
+      "zone_or_sort_name": "Eastern Plaguelands"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16116,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 139,
+              "map_name": "Eastern Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 81.52,
+              "y": 58.27
+            }
+          ],
+          "name": "Archmage Angela Dosantos",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9123"
+      ],
+      "instruction": "Turn in [QT9123 The Dread Citadel - Naxxramas] to Archmage Angela Dosantos",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 40,
+      "quest_id": 9123,
+      "quest_name": "The Dread Citadel - Naxxramas",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 139,
+      "zone_or_sort_name": "Eastern Plaguelands"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11536,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 139,
+              "map_name": "Eastern Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 81.62,
+              "y": 60.0
+            }
+          ],
+          "name": "Quartermaster Miranda Breechlock",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5517"
+      ],
+      "instruction": "Turn in [QT5517 Chromatic Mantle of the Dawn] to Quartermaster Miranda Breechlock",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 41,
+      "quest_id": 5517,
+      "quest_name": "Chromatic Mantle of the Dawn",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 139,
+      "zone_or_sort_name": "Eastern Plaguelands"
+    },
+    {
+      "category": "hunter",
+      "conditional_categories": [
+        "hunter",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4205,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1657,
+              "map_name": "Darnassus",
+              "verification": "questie_structured_source_only",
+              "x": 42.21,
+              "y": 7.27
+            }
+          ],
+          "name": "Dorion",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5116,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 70.89,
+              "y": 83.61
+            }
+          ],
+          "name": "Olmin Burningbeard",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5516,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 61.92,
+              "y": 14.66
+            }
+          ],
+          "name": "Ulfir Ironbeard",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17505,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3557,
+              "map_name": "The Exodar",
+              "verification": "questie_structured_source_only",
+              "x": 46.34,
+              "y": 88.46
+            }
+          ],
+          "name": "Killac",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8151"
+      ],
+      "instruction": "Accept [QA8151 The Hunter's Charm] from Dorion or Olmin Burningbeard (plus 2 other sources).",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 42,
+      "quest_id": 8151,
+      "quest_name": "The Hunter's Charm",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": -261,
+      "zone_or_sort_name": "Hunter"
+    },
+    {
+      "category": "hunter",
+      "conditional_categories": [
+        "hunter",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8151"
+      ],
+      "instruction": "Complete [QC8151 The Hunter's Charm]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 43,
+      "quest_id": 8151,
+      "quest_name": "The Hunter's Charm",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": -261,
+      "zone_or_sort_name": "Hunter"
+    },
+    {
+      "category": "hunter",
+      "conditional_categories": [
+        "hunter",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8405,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 42.4,
+              "y": 42.62
+            }
+          ],
+          "name": "Ogtinc",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8151"
+      ],
+      "instruction": "Turn in [QT8151 The Hunter's Charm] to Ogtinc",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 44,
+      "quest_id": 8151,
+      "quest_name": "The Hunter's Charm",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": -261,
+      "zone_or_sort_name": "Hunter"
+    },
+    {
+      "category": "hunter",
+      "conditional_categories": [
+        "hunter",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8405,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 42.4,
+              "y": 42.62
+            }
+          ],
+          "name": "Ogtinc",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8153"
+      ],
+      "instruction": "Accept [QA8153 Courser Antlers] from Ogtinc.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 45,
+      "quest_id": 8153,
+      "quest_name": "Courser Antlers",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": -261,
+      "zone_or_sort_name": "Hunter"
+    },
+    {
+      "category": "hunter",
+      "conditional_categories": [
+        "hunter",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8153"
+      ],
+      "instruction": "Collect or use the required item: Perfect Courser Antler. [QC8153 Courser Antlers]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Perfect Courser Antler",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 20017,
+          "kind": "item",
+          "locations": [],
+          "name": "Perfect Courser Antler",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 46,
+      "quest_id": 8153,
+      "quest_name": "Courser Antlers",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": -261,
+      "zone_or_sort_name": "Hunter"
+    },
+    {
+      "category": "hunter",
+      "conditional_categories": [
+        "hunter",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8405,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 42.4,
+              "y": 42.62
+            }
+          ],
+          "name": "Ogtinc",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8153"
+      ],
+      "instruction": "Turn in [QT8153 Courser Antlers] to Ogtinc",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 47,
+      "quest_id": 8153,
+      "quest_name": "Courser Antlers",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": -261,
+      "zone_or_sort_name": "Hunter"
+    },
+    {
+      "category": "hunter",
+      "conditional_categories": [
+        "hunter",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8405,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 42.4,
+              "y": 42.62
+            }
+          ],
+          "name": "Ogtinc",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8231"
+      ],
+      "instruction": "Accept [QA8231 Wavethrashing] from Ogtinc.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 48,
+      "quest_id": 8231,
+      "quest_name": "Wavethrashing",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": -261,
+      "zone_or_sort_name": "Hunter"
+    },
+    {
+      "category": "hunter",
+      "conditional_categories": [
+        "hunter",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8231"
+      ],
+      "instruction": "Collect or use the required item: Wavethrasher Scales. [QC8231 Wavethrashing]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Wavethrasher Scales",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 20087,
+          "kind": "item",
+          "locations": [],
+          "name": "Wavethrasher Scales",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 49,
+      "quest_id": 8231,
+      "quest_name": "Wavethrashing",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": -261,
+      "zone_or_sort_name": "Hunter"
+    },
+    {
+      "category": "hunter",
+      "conditional_categories": [
+        "hunter",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8405,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 42.4,
+              "y": 42.62
+            }
+          ],
+          "name": "Ogtinc",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8231"
+      ],
+      "instruction": "Turn in [QT8231 Wavethrashing] to Ogtinc",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 50,
+      "quest_id": 8231,
+      "quest_name": "Wavethrashing",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": -261,
+      "zone_or_sort_name": "Hunter"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8405,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 42.4,
+              "y": 42.62
+            }
+          ],
+          "name": "Ogtinc",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8232"
+      ],
+      "instruction": "Accept [QA8232 The Green Drake] from Ogtinc.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 51,
+      "quest_id": 8232,
+      "quest_name": "The Green Drake",
+      "quest_tag": "Dungeon",
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": -261,
+      "zone_or_sort_name": "Hunter"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8232"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required item: Tooth of Morphaz. [QC8232 The Green Drake]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Tooth of Morphaz",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 20019,
+          "kind": "item",
+          "locations": [],
+          "name": "Tooth of Morphaz",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 52,
+      "quest_id": 8232,
+      "quest_name": "The Green Drake",
+      "quest_tag": "Dungeon",
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": -261,
+      "zone_or_sort_name": "Hunter"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8405,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 16,
+              "map_name": "Azshara",
+              "verification": "questie_structured_source_only",
+              "x": 42.4,
+              "y": 42.62
+            }
+          ],
+          "name": "Ogtinc",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8232"
+      ],
+      "instruction": "Turn in [QT8232 The Green Drake] to Ogtinc",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 53,
+      "quest_id": 8232,
+      "quest_name": "The Green Drake",
+      "quest_tag": "Dungeon",
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": -261,
+      "zone_or_sort_name": "Hunter"
+    }
+  ],
+  "title": "Optional Content 14 - Western Plaguelands & Eastern Plaguelands"
+}

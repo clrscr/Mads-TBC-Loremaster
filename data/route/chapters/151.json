@@ -1,0 +1,3621 @@
+{
+  "branch": "aldor",
+  "entry_contract": "Complete Allegiance to the Aldor, then choose this branch before its conflicting default. Begin in Shattrath City with Vindicator Aeus or Vindicator Kaan. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 3703,
+    "map_name": "Shattrath City",
+    "x": 47.24,
+    "y": 26.26
+  },
+  "entry_zone_or_sort": 3703,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 3703,
+    "map_name": "Shattrath City",
+    "quest_id": 10409,
+    "tag": "QT",
+    "x": 23.97,
+    "y": 29.73
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [
+    [
+      10551
+    ]
+  ],
+  "external_prerequisite_quest_ids": [
+    10551
+  ],
+  "group": "Mad's Loremaster Guide - Alternative Routes",
+  "guide_file": "Guides/aldor/151_reputation_01.lua",
+  "id": "151-aldor-aldor-alternative-01---shattrath-city-&-netherstorm",
+  "maximum_level": null,
+  "minimum_level": null,
+  "next_chapter": null,
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": null,
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 11038,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10551:dependency"
+      ],
+      "instruction": "Alternative entry requirements: complete Allegiance to the Aldor. Choose this branch before its conflicting default. [O]",
+      "map_id": 3703,
+      "map_name": "Shattrath City",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        10551
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "branch_entry",
+      "verification": "route_dependency_graph",
+      "x": 47.24,
+      "y": 26.26
+    },
+    {
+      "before_quest_id": 11038,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11038:starter"
+      ],
+      "instruction": "Alternative chapter: travel to Shattrath City and begin at [G47.24,26.26 Shattrath City]. Leave at least two quest-log slots open. [O]",
+      "map_id": 3703,
+      "map_name": "Shattrath City",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 47.24,
+      "y": 26.26
+    },
+    {
+      "before_quest_id": 11038,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10551:exclusiveTo"
+      ],
+      "instruction": "Choice preview: this chapter continues the Aldor outcome selected by the primary route and excludes Scryer-only quests. [O]",
+      "map_id": 3703,
+      "map_name": "Shattrath City",
+      "optional": true,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        10551
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "choice_preview",
+      "verification": "route_exclusivity_graph",
+      "x": 47.24,
+      "y": 26.26
+    },
+    {
+      "before_quest_id": 11038,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11038:requiredLevel"
+      ],
+      "instruction": "Reach level 67 before accepting Assist Exarch Orelis. [XP67 Level 67]",
+      "map_id": 3703,
+      "map_name": "Shattrath City",
+      "optional": false,
+      "order": 4,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 67,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 47.24,
+      "y": 26.26
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23270,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 47.24,
+              "y": 26.26
+            }
+          ],
+          "name": "Vindicator Aeus",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 23271,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 35.5,
+              "y": 32.01
+            }
+          ],
+          "name": "Vindicator Kaan",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11038"
+      ],
+      "instruction": "Accept [QA11038 Assist Exarch Orelis] from Vindicator Aeus or Vindicator Kaan.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 11038,
+      "quest_name": "Assist Exarch Orelis",
+      "quest_tag": null,
+      "required_level": 67,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11038"
+      ],
+      "instruction": "Complete [QC11038 Assist Exarch Orelis]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 11038,
+      "quest_name": "Assist Exarch Orelis",
+      "quest_tag": null,
+      "required_level": 67,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19466,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 32.07,
+              "y": 64.18
+            }
+          ],
+          "name": "Exarch Orelis",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11038"
+      ],
+      "instruction": "Turn in [QT11038 Assist Exarch Orelis] to Exarch Orelis",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 11038,
+      "quest_name": "Assist Exarch Orelis",
+      "quest_tag": null,
+      "required_level": 67,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "before_quest_id": 10826,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10826:requiredLevel"
+      ],
+      "instruction": "Reach level 68 before accepting Marks of Sargeras. [XP68 Level 68]",
+      "map_id": 3520,
+      "map_name": "Shadowmoon Valley",
+      "optional": false,
+      "order": 8,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 68,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 62.27,
+      "y": 29.78
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22214,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3520,
+              "map_name": "Shadowmoon Valley",
+              "verification": "questie_structured_source_only",
+              "x": 62.27,
+              "y": 29.78
+            }
+          ],
+          "name": "Harbinger Saronen",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10826"
+      ],
+      "instruction": "Accept [QA10826 Marks of Sargeras] from Harbinger Saronen.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 10826,
+      "quest_name": "Marks of Sargeras",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10826"
+      ],
+      "instruction": "Collect or use the required item: Mark of Sargeras. [QC10826 Marks of Sargeras]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Mark of Sargeras",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 30809,
+          "kind": "item",
+          "locations": [],
+          "name": "Mark of Sargeras",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 10,
+      "quest_id": 10826,
+      "quest_name": "Marks of Sargeras",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22214,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3520,
+              "map_name": "Shadowmoon Valley",
+              "verification": "questie_structured_source_only",
+              "x": 62.27,
+              "y": 29.78
+            }
+          ],
+          "name": "Harbinger Saronen",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10826"
+      ],
+      "instruction": "Turn in [QT10826 Marks of Sargeras] to Harbinger Saronen",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 10826,
+      "quest_name": "Marks of Sargeras",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19466,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 32.07,
+              "y": 64.18
+            }
+          ],
+          "name": "Exarch Orelis",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10241"
+      ],
+      "instruction": "Accept [QA10241 Distraction at Manaforge B'naar] from Exarch Orelis.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 10241,
+      "quest_name": "Distraction at Manaforge B'naar",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10241"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Sunfury Magister, Sunfury Bloodwarder. [QC10241 Distraction at Manaforge B'naar]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Sunfury Magister, Sunfury Bloodwarder",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18855,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 25.5,
+              "y": 65.68
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 25.47,
+              "y": 65.12
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 24.98,
+              "y": 65.15
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 25.24,
+              "y": 65.34
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 24.95,
+              "y": 65.5
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 25.07,
+              "y": 66.67
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 24.94,
+              "y": 65.88
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 24.84,
+              "y": 66.51
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 26.53,
+              "y": 68.25
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 25.44,
+              "y": 68.36
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 25.59,
+              "y": 68.07
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 25.43,
+              "y": 68.7
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 25.63,
+              "y": 68.82
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 26.44,
+              "y": 68.92
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 21.87,
+              "y": 75.7
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 21.98,
+              "y": 76.11
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 22.54,
+              "y": 75.21
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 22.37,
+              "y": 75.51
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 22.36,
+              "y": 75.1
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 26.23,
+              "y": 75.24
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 26.09,
+              "y": 74.85
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 26.65,
+              "y": 74.9
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 26.41,
+              "y": 74.16
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 26.13,
+              "y": 74.23
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 22.85,
+              "y": 66.07
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 22.54,
+              "y": 65.25
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 22.04,
+              "y": 65.77
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 22.04,
+              "y": 66.25
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 22.34,
+              "y": 66.45
+            }
+          ],
+          "name": "Sunfury Magister",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18853,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 20.28,
+              "y": 73.18
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 19.77,
+              "y": 71.51
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 20.4,
+              "y": 69.16
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 20.28,
+              "y": 68.93
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 28.1,
+              "y": 65.06
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 27.61,
+              "y": 64.83
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 28.04,
+              "y": 64.62
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 27.28,
+              "y": 65.61
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 27.6,
+              "y": 65.45
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 26.05,
+              "y": 66.51
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 25.75,
+              "y": 66.75
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 25.88,
+              "y": 66.96
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 25.3,
+              "y": 67.53
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 24.94,
+              "y": 67.46
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 25.02,
+              "y": 67.76
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 26.81,
+              "y": 68.35
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 26.75,
+              "y": 68.93
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 25.82,
+              "y": 70.17
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 25.71,
+              "y": 69.79
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 25.8,
+              "y": 70.02
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 25.83,
+              "y": 70.11
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 21.58,
+              "y": 69.54
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 20.73,
+              "y": 69.17
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 20.04,
+              "y": 70.42
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 19.97,
+              "y": 70.32
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 20.01,
+              "y": 71.36
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 20.17,
+              "y": 72.25
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 20.28,
+              "y": 72.67
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 22.06,
+              "y": 74.33
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 21.77,
+              "y": 74.53
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 24.47,
+              "y": 71.88
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 24.73,
+              "y": 72.04
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 24.6,
+              "y": 71.85
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 23.42,
+              "y": 72.49
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 23.29,
+              "y": 72.61
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 23.27,
+              "y": 72.44
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 26.81,
+              "y": 72.24
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 27.03,
+              "y": 72.37
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 26.96,
+              "y": 72.37
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 27.75,
+              "y": 71.59
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 27.83,
+              "y": 71.26
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 27.99,
+              "y": 71.18
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 27.68,
+              "y": 71.21
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 27.69,
+              "y": 71.38
+            }
+          ],
+          "name": "Sunfury Bloodwarder",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 13,
+      "quest_id": 10241,
+      "quest_name": "Distraction at Manaforge B'naar",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19466,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 32.07,
+              "y": 64.18
+            }
+          ],
+          "name": "Exarch Orelis",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10241"
+      ],
+      "instruction": "Turn in [QT10241 Distraction at Manaforge B'naar] to Exarch Orelis",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 10241,
+      "quest_name": "Distraction at Manaforge B'naar",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19467,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 32.04,
+              "y": 64.18
+            }
+          ],
+          "name": "Anchorite Karja",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10243"
+      ],
+      "instruction": "Accept [QA10243 Naaru Technology] from Anchorite Karja.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 10243,
+      "quest_name": "Naaru Technology",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10243"
+      ],
+      "instruction": "Use the quest item [UI28571-] as directed. [QC10243 Naaru Technology]",
+      "item_use_id": 28571,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 10243,
+      "quest_name": "Naaru Technology",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 183770,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 23.21,
+              "y": 68.25
+            }
+          ],
+          "name": "B'naar Control Console",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10243"
+      ],
+      "instruction": "Turn in [QT10243 Naaru Technology] to B'naar Control Console",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 10243,
+      "quest_name": "Naaru Technology",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 183770,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 23.21,
+              "y": 68.25
+            }
+          ],
+          "name": "B'naar Control Console",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10245"
+      ],
+      "instruction": "Accept [QA10245 B'naar Console Transcription] from B'naar Control Console.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 10245,
+      "quest_name": "B'naar Console Transcription",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10245"
+      ],
+      "instruction": "Use the quest item [UI28580-] as directed. [QC10245 B'naar Console Transcription]",
+      "item_use_id": 28580,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 10245,
+      "quest_name": "B'naar Console Transcription",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19467,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 32.04,
+              "y": 64.18
+            }
+          ],
+          "name": "Anchorite Karja",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10245"
+      ],
+      "instruction": "Turn in [QT10245 B'naar Console Transcription] to Anchorite Karja",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 10245,
+      "quest_name": "B'naar Console Transcription",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19467,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 32.04,
+              "y": 64.18
+            }
+          ],
+          "name": "Anchorite Karja",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10299"
+      ],
+      "instruction": "Accept [QA10299 Shutting Down Manaforge B'naar] from Anchorite Karja.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 10299,
+      "quest_name": "Shutting Down Manaforge B'naar",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10299"
+      ],
+      "instruction": "Complete the required objectives \u2014 objects: B'naar Control Console; items: B'naar Access Crystal. [QC10299 Shutting Down Manaforge B'naar]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required objectives \u2014 objects: B'naar Control Console; items: B'naar Access Crystal",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 183770,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 23.21,
+              "y": 68.25
+            }
+          ],
+          "name": "B'naar Control Console",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 29366,
+          "kind": "item",
+          "locations": [],
+          "name": "B'naar Access Crystal",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 22,
+      "quest_id": 10299,
+      "quest_name": "Shutting Down Manaforge B'naar",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19467,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 32.04,
+              "y": 64.18
+            }
+          ],
+          "name": "Anchorite Karja",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10299"
+      ],
+      "instruction": "Turn in [QT10299 Shutting Down Manaforge B'naar] to Anchorite Karja",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 23,
+      "quest_id": 10299,
+      "quest_name": "Shutting Down Manaforge B'naar",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19466,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 32.07,
+              "y": 64.18
+            }
+          ],
+          "name": "Exarch Orelis",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10246"
+      ],
+      "instruction": "Accept [QA10246 Attack on Manaforge Coruu] from Exarch Orelis.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 24,
+      "quest_id": 10246,
+      "quest_name": "Attack on Manaforge Coruu",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19466,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 32.07,
+              "y": 64.18
+            }
+          ],
+          "name": "Exarch Orelis",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10313"
+      ],
+      "instruction": "Accept [QA10313 Measuring Warp Energies] from Exarch Orelis.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 25,
+      "quest_id": 10313,
+      "quest_name": "Measuring Warp Energies",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19467,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 32.04,
+              "y": 64.18
+            }
+          ],
+          "name": "Anchorite Karja",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10321"
+      ],
+      "instruction": "Accept [QA10321 Shutting Down Manaforge Coruu] from Anchorite Karja.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 26,
+      "quest_id": 10321,
+      "quest_name": "Shutting Down Manaforge Coruu",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10313"
+      ],
+      "instruction": "Use the quest item [UI29324-] as directed; complete the marked or scripted objectives. [QC10313 Measuring Warp Energies]",
+      "item_use_id": 29324,
+      "objective_hint": "Complete the marked or scripted objectives",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 20333,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 25.68,
+              "y": 60.26
+            }
+          ],
+          "name": "Northern Pipe Credit Marker",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 20336,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 28.99,
+              "y": 72.37
+            }
+          ],
+          "name": "Eastern Pipe Credit Marker",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 20337,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 20.55,
+              "y": 71.03
+            }
+          ],
+          "name": "Southern Pipe Credit Marker",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 20338,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 20.93,
+              "y": 67.3
+            }
+          ],
+          "name": "Western Pipe Credit Marker",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 27,
+      "quest_id": 10313,
+      "quest_name": "Measuring Warp Energies",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10246"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Sunfury Researcher, Sunfury Arcanist. [QC10246 Attack on Manaforge Coruu]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Sunfury Researcher, Sunfury Arcanist",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 20136,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 48.15,
+              "y": 81.79
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 48.65,
+              "y": 83.05
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 53.97,
+              "y": 83.37
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 53.79,
+              "y": 83.37
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 53.58,
+              "y": 83.08
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 53.84,
+              "y": 82.93
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 48.43,
+              "y": 81.27
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 48.48,
+              "y": 81.23
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 49.17,
+              "y": 81.87
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 48.66,
+              "y": 82.09
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 54.85,
+              "y": 82.38
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 55.01,
+              "y": 82.46
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 55.23,
+              "y": 82.04
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 53.33,
+              "y": 85.62
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 53.0,
+              "y": 85.49
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 53.02,
+              "y": 86.16
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 53.31,
+              "y": 86.06
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 52.93,
+              "y": 85.79
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 52.4,
+              "y": 88.36
+            }
+          ],
+          "name": "Sunfury Researcher",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 20134,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 45.86,
+              "y": 81.06
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 47.26,
+              "y": 79.56
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 46.11,
+              "y": 81.84
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 47.14,
+              "y": 79.84
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 46.93,
+              "y": 81.6
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 46.3,
+              "y": 82.17
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 46.79,
+              "y": 81.82
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 47.01,
+              "y": 81.31
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 46.96,
+              "y": 81.91
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 48.21,
+              "y": 85.34
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 48.14,
+              "y": 85.1
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 47.82,
+              "y": 85.77
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 47.67,
+              "y": 84.36
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 47.25,
+              "y": 85.44
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 47.62,
+              "y": 85.7
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 50.61,
+              "y": 82.33
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 50.64,
+              "y": 82.08
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 51.87,
+              "y": 82.78
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 51.67,
+              "y": 81.96
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 51.46,
+              "y": 81.82
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 51.29,
+              "y": 81.98
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 51.38,
+              "y": 81.11
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 49.01,
+              "y": 79.23
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 49.2,
+              "y": 79.21
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 46.42,
+              "y": 80.57
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 46.5,
+              "y": 80.67
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 51.77,
+              "y": 81.15
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 51.86,
+              "y": 81.13
+            }
+          ],
+          "name": "Sunfury Arcanist",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 28,
+      "quest_id": 10246,
+      "quest_name": "Attack on Manaforge Coruu",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10321"
+      ],
+      "instruction": "Complete the required objectives \u2014 objects: Coruu Control Console; items: Coruu Access Crystal. [QC10321 Shutting Down Manaforge Coruu]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required objectives \u2014 objects: Coruu Control Console; items: Coruu Access Crystal",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 183956,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 48.93,
+              "y": 81.6
+            }
+          ],
+          "name": "Coruu Control Console",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 29396,
+          "kind": "item",
+          "locations": [],
+          "name": "Coruu Access Crystal",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 29,
+      "quest_id": 10321,
+      "quest_name": "Shutting Down Manaforge Coruu",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19466,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 32.07,
+              "y": 64.18
+            }
+          ],
+          "name": "Exarch Orelis",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10246"
+      ],
+      "instruction": "Turn in [QT10246 Attack on Manaforge Coruu] to Exarch Orelis",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 30,
+      "quest_id": 10246,
+      "quest_name": "Attack on Manaforge Coruu",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19466,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 32.07,
+              "y": 64.18
+            }
+          ],
+          "name": "Exarch Orelis",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10313"
+      ],
+      "instruction": "Turn in [QT10313 Measuring Warp Energies] to Exarch Orelis",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 31,
+      "quest_id": 10313,
+      "quest_name": "Measuring Warp Energies",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19467,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 32.04,
+              "y": 64.18
+            }
+          ],
+          "name": "Anchorite Karja",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10321"
+      ],
+      "instruction": "Turn in [QT10321 Shutting Down Manaforge Coruu] to Anchorite Karja",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 32,
+      "quest_id": 10321,
+      "quest_name": "Shutting Down Manaforge Coruu",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19467,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 32.04,
+              "y": 64.18
+            }
+          ],
+          "name": "Anchorite Karja",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10322"
+      ],
+      "instruction": "Accept [QA10322 Shutting Down Manaforge Duro] from Anchorite Karja.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 33,
+      "quest_id": 10322,
+      "quest_name": "Shutting Down Manaforge Duro",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10322"
+      ],
+      "instruction": "Complete the required objectives \u2014 objects: Duro Control Console; items: Duro Access Crystal. [QC10322 Shutting Down Manaforge Duro]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required objectives \u2014 objects: Duro Control Console; items: Duro Access Crystal",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 184311,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 59.17,
+              "y": 66.74
+            }
+          ],
+          "name": "Duro Control Console",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 29397,
+          "kind": "item",
+          "locations": [],
+          "name": "Duro Access Crystal",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 34,
+      "quest_id": 10322,
+      "quest_name": "Shutting Down Manaforge Duro",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19467,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 32.04,
+              "y": 64.18
+            }
+          ],
+          "name": "Anchorite Karja",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10322"
+      ],
+      "instruction": "Turn in [QT10322 Shutting Down Manaforge Duro] to Anchorite Karja",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 35,
+      "quest_id": 10322,
+      "quest_name": "Shutting Down Manaforge Duro",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19467,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 32.04,
+              "y": 64.18
+            }
+          ],
+          "name": "Anchorite Karja",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10323"
+      ],
+      "instruction": "Accept [QA10323 Shutting Down Manaforge Ara] from Anchorite Karja.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 36,
+      "quest_id": 10323,
+      "quest_name": "Shutting Down Manaforge Ara",
+      "quest_tag": "Elite",
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19466,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 32.07,
+              "y": 64.18
+            }
+          ],
+          "name": "Exarch Orelis",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10328"
+      ],
+      "instruction": "Accept [QA10328 Sunfury Briefings] from Exarch Orelis.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 37,
+      "quest_id": 10328,
+      "quest_name": "Sunfury Briefings",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "before_quest_id": 10323,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10323:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 3523,
+      "map_name": "Netherstorm",
+      "optional": true,
+      "order": 38,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        10323
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 26.07,
+      "y": 38.78
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10323"
+      ],
+      "instruction": "Elite/group recommended \u2014 Complete the required objectives \u2014 objects: Ara Control Console; items: Ara Access Crystal. [QC10323 Shutting Down Manaforge Ara]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required objectives \u2014 objects: Ara Control Console; items: Ara Access Crystal",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 184312,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 26.07,
+              "y": 38.78
+            }
+          ],
+          "name": "Ara Control Console",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 29411,
+          "kind": "item",
+          "locations": [],
+          "name": "Ara Access Crystal",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 39,
+      "quest_id": 10323,
+      "quest_name": "Shutting Down Manaforge Ara",
+      "quest_tag": "Elite",
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10328"
+      ],
+      "instruction": "Collect or use the required items: Sunfury Military Briefing, Sunfury Arcane Briefing. [QC10328 Sunfury Briefings]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Sunfury Military Briefing, Sunfury Arcane Briefing",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 29545,
+          "kind": "item",
+          "locations": [],
+          "name": "Sunfury Military Briefing",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 29546,
+          "kind": "item",
+          "locations": [],
+          "name": "Sunfury Arcane Briefing",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 40,
+      "quest_id": 10328,
+      "quest_name": "Sunfury Briefings",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19467,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 32.04,
+              "y": 64.18
+            }
+          ],
+          "name": "Anchorite Karja",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10323"
+      ],
+      "instruction": "Turn in [QT10323 Shutting Down Manaforge Ara] to Anchorite Karja",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 41,
+      "quest_id": 10323,
+      "quest_name": "Shutting Down Manaforge Ara",
+      "quest_tag": "Elite",
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19466,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 32.07,
+              "y": 64.18
+            }
+          ],
+          "name": "Exarch Orelis",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10328"
+      ],
+      "instruction": "Turn in [QT10328 Sunfury Briefings] to Exarch Orelis",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 42,
+      "quest_id": 10328,
+      "quest_name": "Sunfury Briefings",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19466,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 32.07,
+              "y": 64.18
+            }
+          ],
+          "name": "Exarch Orelis",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10431"
+      ],
+      "instruction": "Accept [QA10431 Outside Assistance] from Exarch Orelis.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 43,
+      "quest_id": 10431,
+      "quest_name": "Outside Assistance",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10431"
+      ],
+      "instruction": "Complete [QC10431 Outside Assistance]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 44,
+      "quest_id": 10431,
+      "quest_name": "Outside Assistance",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 20780,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 34.8,
+              "y": 38.3
+            }
+          ],
+          "name": "Kaylaan",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10431"
+      ],
+      "instruction": "Turn in [QT10431 Outside Assistance] to Kaylaan",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 45,
+      "quest_id": 10431,
+      "quest_name": "Outside Assistance",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 20780,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 34.8,
+              "y": 38.3
+            }
+          ],
+          "name": "Kaylaan",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10380"
+      ],
+      "instruction": "Accept [QA10380 A Dark Pact] from Kaylaan.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 46,
+      "quest_id": 10380,
+      "quest_name": "A Dark Pact",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10380"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Gan'arg Warp-Tinker, Daughter of Destiny, Mo'arg Warp-Master. [QC10380 A Dark Pact]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Gan'arg Warp-Tinker, Daughter of Destiny, Mo'arg Warp-Master",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 20285,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 28.81,
+              "y": 43.45
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 28.56,
+              "y": 43.87
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 28.28,
+              "y": 43.98
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 26.38,
+              "y": 43.08
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 26.76,
+              "y": 41.87
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 26.72,
+              "y": 41.84
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 25.69,
+              "y": 42.41
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 25.6,
+              "y": 41.58
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 25.16,
+              "y": 41.08
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 25.59,
+              "y": 41.4
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 24.67,
+              "y": 41.05
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 25.89,
+              "y": 41.19
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 24.5,
+              "y": 40.29
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 27.88,
+              "y": 40.29
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 28.13,
+              "y": 39.69
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 27.09,
+              "y": 36.74
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 26.37,
+              "y": 40.33
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 26.67,
+              "y": 39.0
+            }
+          ],
+          "name": "Gan'arg Warp-Tinker",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18860,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 30.75,
+              "y": 41.19
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 29.39,
+              "y": 43.38
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 28.4,
+              "y": 38.16
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 28.19,
+              "y": 42.28
+            }
+          ],
+          "name": "Daughter of Destiny",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 20326,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 26.57,
+              "y": 42.43
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 27.86,
+              "y": 39.46
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 26.91,
+              "y": 38.31
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 26.04,
+              "y": 38.16
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 25.6,
+              "y": 41.59
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 26.74,
+              "y": 39.7
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 25.84,
+              "y": 39.45
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 26.45,
+              "y": 39.76
+            },
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 26.4,
+              "y": 43.44
+            }
+          ],
+          "name": "Mo'arg Warp-Master",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 47,
+      "quest_id": 10380,
+      "quest_name": "A Dark Pact",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 20780,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 34.8,
+              "y": 38.3
+            }
+          ],
+          "name": "Kaylaan",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10380"
+      ],
+      "instruction": "Turn in [QT10380 A Dark Pact] to Kaylaan",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 48,
+      "quest_id": 10380,
+      "quest_name": "A Dark Pact",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 20780,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 34.8,
+              "y": 38.3
+            }
+          ],
+          "name": "Kaylaan",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10381"
+      ],
+      "instruction": "Accept [QA10381 Aldor No More] from Kaylaan.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 49,
+      "quest_id": 10381,
+      "quest_name": "Aldor No More",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10381"
+      ],
+      "instruction": "Complete [QC10381 Aldor No More]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 50,
+      "quest_id": 10381,
+      "quest_name": "Aldor No More",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19466,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 32.07,
+              "y": 64.18
+            }
+          ],
+          "name": "Exarch Orelis",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10381"
+      ],
+      "instruction": "Turn in [QT10381 Aldor No More] to Exarch Orelis",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 51,
+      "quest_id": 10381,
+      "quest_name": "Aldor No More",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19467,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 32.04,
+              "y": 64.18
+            }
+          ],
+          "name": "Anchorite Karja",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10407"
+      ],
+      "instruction": "Accept [QA10407 Socrethar's Shadow] from Anchorite Karja.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 52,
+      "quest_id": 10407,
+      "quest_name": "Socrethar's Shadow",
+      "quest_tag": "Elite",
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10407"
+      ],
+      "instruction": "Elite/group recommended \u2014 Collect or use the required items: First Half of Socrethar's Stone, Second Half of Socrethar's Stone. [QC10407 Socrethar's Shadow]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: First Half of Socrethar's Stone, Second Half of Socrethar's Stone",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 29624,
+          "kind": "item",
+          "locations": [],
+          "name": "First Half of Socrethar's Stone",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 29625,
+          "kind": "item",
+          "locations": [],
+          "name": "Second Half of Socrethar's Stone",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 53,
+      "quest_id": 10407,
+      "quest_name": "Socrethar's Shadow",
+      "quest_tag": "Elite",
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19467,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 32.04,
+              "y": 64.18
+            }
+          ],
+          "name": "Anchorite Karja",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10407"
+      ],
+      "instruction": "Turn in [QT10407 Socrethar's Shadow] to Anchorite Karja",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 54,
+      "quest_id": 10407,
+      "quest_name": "Socrethar's Shadow",
+      "quest_tag": "Elite",
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19467,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 32.04,
+              "y": 64.18
+            }
+          ],
+          "name": "Anchorite Karja",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10410"
+      ],
+      "instruction": "Accept [QA10410 Ishanah's Help] from Anchorite Karja.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 55,
+      "quest_id": 10410,
+      "quest_name": "Ishanah's Help",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10410"
+      ],
+      "instruction": "Use the quest item [UI29699-] as directed. [QC10410 Ishanah's Help]",
+      "item_use_id": 29699,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 56,
+      "quest_id": 10410,
+      "quest_name": "Ishanah's Help",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18538,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 23.97,
+              "y": 29.73
+            }
+          ],
+          "name": "Ishanah",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10410"
+      ],
+      "instruction": "Turn in [QT10410 Ishanah's Help] to Ishanah",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 57,
+      "quest_id": 10410,
+      "quest_name": "Ishanah's Help",
+      "quest_tag": null,
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "reputation",
+        "reputation_gated",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18538,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 23.97,
+              "y": 29.73
+            }
+          ],
+          "name": "Ishanah",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10409"
+      ],
+      "instruction": "Accept [QA10409 Deathblow to the Legion] from Ishanah.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 58,
+      "quest_id": 10409,
+      "quest_name": "Deathblow to the Legion",
+      "quest_tag": "Elite",
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "reputation",
+        "reputation_gated",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10409"
+      ],
+      "instruction": "Elite/group recommended \u2014 Use the quest item [UI29796-] as directed; complete the required NPC or creature objective: Socrethar. [QC10409 Deathblow to the Legion]",
+      "item_use_id": 29796,
+      "objective_hint": "Complete the required NPC or creature objective: Socrethar",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 20132,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 29.31,
+              "y": 13.7
+            }
+          ],
+          "name": "Socrethar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 59,
+      "quest_id": 10409,
+      "quest_name": "Deathblow to the Legion",
+      "quest_tag": "Elite",
+      "required_level": 68,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "reputation",
+        "reputation_gated",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18538,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 23.97,
+              "y": 29.73
+            }
+          ],
+          "name": "Ishanah",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10409"
+      ],
+      "instruction": "Turn in [QT10409 Deathblow to the Legion] to Ishanah",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 60,
+      "quest_id": 10409,
+      "quest_name": "Deathblow to the Legion",
+      "quest_tag": "Elite",
+      "required_level": 68,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3523,
+      "zone_or_sort_name": "Netherstorm"
+    }
+  ],
+  "title": "Aldor Alternative 01 - Shattrath City & Netherstorm"
+}

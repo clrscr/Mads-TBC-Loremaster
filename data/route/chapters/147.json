@@ -1,0 +1,1356 @@
+{
+  "branch": "optional_content",
+  "entry_contract": "Complete the relevant shared prerequisites. Begin in Shattrath City with Medivh. Leave at least two quest-log slots open; group and reputation gates remain explicit.",
+  "entry_route_point": {
+    "map_id": 3703,
+    "map_name": "Shattrath City",
+    "x": 54.75,
+    "y": 44.32
+  },
+  "entry_zone_or_sort": 3703,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 41,
+    "map_name": "Deadwind Pass",
+    "quest_id": 9680,
+    "tag": "QT",
+    "x": 47.28,
+    "y": 75.21
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Optional Content",
+  "guide_file": "Guides/optional_content/147_raid_51.lua",
+  "id": "147-optional_content-optional-content-51---shattrath-city-&-karazhan",
+  "maximum_level": null,
+  "minimum_level": null,
+  "next_chapter": "Optional Content 52 - Shadowmoon Valley & Hellfire Peninsula",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "Optional Content 50 - Blade's Edge Mountains & Netherstorm",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 9837,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9836:QA",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9837:finisher"
+      ],
+      "instruction": "Continue within Shattrath City to the next route hub at [G54.75,44.32 Shattrath City]. [O]",
+      "map_id": 3703,
+      "map_name": "Shattrath City",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 3703,
+      "origin_map_name": "Shattrath City",
+      "origin_x": 54.75,
+      "origin_y": 44.32,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 54.75,
+      "y": 44.32
+    },
+    {
+      "before_quest_id": 9837,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "route-branch:optional_content"
+      ],
+      "instruction": "Optional entry requirements: complete the relevant shared prerequisites. [O]",
+      "map_id": 3703,
+      "map_name": "Shattrath City",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "branch_entry",
+      "verification": "route_dependency_graph",
+      "x": 54.75,
+      "y": 44.32
+    },
+    {
+      "before_quest_id": 9837,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9837:finisher"
+      ],
+      "instruction": "Optional chapter: travel to Shattrath City and begin at [G54.75,44.32 Shattrath City]. Leave at least two quest-log slots open. [O]",
+      "map_id": 3703,
+      "map_name": "Shattrath City",
+      "optional": true,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 54.75,
+      "y": 44.32
+    },
+    {
+      "before_quest_id": 9837,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9837:requiredLevel"
+      ],
+      "instruction": "Reach level 70 before accepting Return to Khadgar. [XP70 Level 70]",
+      "map_id": 3703,
+      "map_name": "Shattrath City",
+      "optional": false,
+      "order": 4,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 70,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": null,
+      "y": null
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15608,
+          "kind": "npc",
+          "locations": [],
+          "name": "Medivh",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9837"
+      ],
+      "instruction": "Accept [QA9837 Return to Khadgar] from Medivh.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 9837,
+      "quest_name": "Return to Khadgar",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9837"
+      ],
+      "instruction": "Complete [QC9837 Return to Khadgar]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 9837,
+      "quest_name": "Return to Khadgar",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18166,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 54.75,
+              "y": 44.32
+            }
+          ],
+          "name": "Khadgar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9837"
+      ],
+      "instruction": "Turn in [QT9837 Return to Khadgar] to Khadgar",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 9837,
+      "quest_name": "Return to Khadgar",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18166,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 54.75,
+              "y": 44.32
+            }
+          ],
+          "name": "Khadgar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9838"
+      ],
+      "instruction": "Accept [QA9838 The Violet Eye] from Khadgar.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 9838,
+      "quest_name": "The Violet Eye",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3457,
+      "zone_or_sort_name": "Karazhan"
+    },
+    {
+      "before_quest_id": 9838,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9838:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 3703,
+      "map_name": "Shattrath City",
+      "optional": true,
+      "order": 9,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        9838
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 54.75,
+      "y": 44.32
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9838"
+      ],
+      "instruction": "Raid \u2014 Complete [QC9838 The Violet Eye]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 9838,
+      "quest_name": "The Violet Eye",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3457,
+      "zone_or_sort_name": "Karazhan"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17613,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 41,
+              "map_name": "Deadwind Pass",
+              "verification": "questie_structured_source_only",
+              "x": 47.28,
+              "y": 75.21
+            }
+          ],
+          "name": "Archmage Alturus",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9838"
+      ],
+      "instruction": "Turn in [QT9838 The Violet Eye] to Archmage Alturus",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 9838,
+      "quest_name": "The Violet Eye",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3457,
+      "zone_or_sort_name": "Karazhan"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17613,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 41,
+              "map_name": "Deadwind Pass",
+              "verification": "questie_structured_source_only",
+              "x": 47.28,
+              "y": 75.21
+            }
+          ],
+          "name": "Archmage Alturus",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9840"
+      ],
+      "instruction": "Accept [QA9840 Assessing the Situation] from Archmage Alturus.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 9840,
+      "quest_name": "Assessing the Situation",
+      "quest_tag": "Raid",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3457,
+      "zone_or_sort_name": "Karazhan"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17613,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 41,
+              "map_name": "Deadwind Pass",
+              "verification": "questie_structured_source_only",
+              "x": 47.28,
+              "y": 75.21
+            }
+          ],
+          "name": "Archmage Alturus",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9630"
+      ],
+      "instruction": "Accept [QA9630 Medivh's Journal] from Archmage Alturus.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 9630,
+      "quest_name": "Medivh's Journal",
+      "quest_tag": "Raid",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3457,
+      "zone_or_sort_name": "Karazhan"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9840"
+      ],
+      "instruction": "Raid \u2014 Complete [QC9840 Assessing the Situation]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 9840,
+      "quest_name": "Assessing the Situation",
+      "quest_tag": "Raid",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3457,
+      "zone_or_sort_name": "Karazhan"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9630"
+      ],
+      "instruction": "Raid \u2014 Complete [QC9630 Medivh's Journal]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 9630,
+      "quest_name": "Medivh's Journal",
+      "quest_tag": "Raid",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3457,
+      "zone_or_sort_name": "Karazhan"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16388,
+          "kind": "npc",
+          "locations": [],
+          "name": "Koren",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9840"
+      ],
+      "instruction": "Turn in [QT9840 Assessing the Situation] to Koren",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 9840,
+      "quest_name": "Assessing the Situation",
+      "quest_tag": "Raid",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3457,
+      "zone_or_sort_name": "Karazhan"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16813,
+          "kind": "npc",
+          "locations": [],
+          "name": "Wravien",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9630"
+      ],
+      "instruction": "Turn in [QT9630 Medivh's Journal] to Wravien",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 9630,
+      "quest_name": "Medivh's Journal",
+      "quest_tag": "Raid",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3457,
+      "zone_or_sort_name": "Karazhan"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16813,
+          "kind": "npc",
+          "locations": [],
+          "name": "Wravien",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9638"
+      ],
+      "instruction": "Accept [QA9638 In Good Hands] from Wravien.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 9638,
+      "quest_name": "In Good Hands",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3457,
+      "zone_or_sort_name": "Karazhan"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9638"
+      ],
+      "instruction": "Raid \u2014 Complete [QC9638 In Good Hands]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 9638,
+      "quest_name": "In Good Hands",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3457,
+      "zone_or_sort_name": "Karazhan"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16814,
+          "kind": "npc",
+          "locations": [],
+          "name": "Gradav",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9638"
+      ],
+      "instruction": "Turn in [QT9638 In Good Hands] to Gradav",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 9638,
+      "quest_name": "In Good Hands",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3457,
+      "zone_or_sort_name": "Karazhan"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16814,
+          "kind": "npc",
+          "locations": [],
+          "name": "Gradav",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9639"
+      ],
+      "instruction": "Accept [QA9639 Kamsis] from Gradav.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 9639,
+      "quest_name": "Kamsis",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3457,
+      "zone_or_sort_name": "Karazhan"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9639"
+      ],
+      "instruction": "Raid \u2014 Complete [QC9639 Kamsis]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 22,
+      "quest_id": 9639,
+      "quest_name": "Kamsis",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3457,
+      "zone_or_sort_name": "Karazhan"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16815,
+          "kind": "npc",
+          "locations": [],
+          "name": "Kamsis",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9639"
+      ],
+      "instruction": "Turn in [QT9639 Kamsis] to Kamsis",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 23,
+      "quest_id": 9639,
+      "quest_name": "Kamsis",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3457,
+      "zone_or_sort_name": "Karazhan"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16815,
+          "kind": "npc",
+          "locations": [],
+          "name": "Kamsis",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9640"
+      ],
+      "instruction": "Accept [QA9640 The Shade of Aran] from Kamsis.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 24,
+      "quest_id": 9640,
+      "quest_name": "The Shade of Aran",
+      "quest_tag": "Raid",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3457,
+      "zone_or_sort_name": "Karazhan"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9640"
+      ],
+      "instruction": "Raid \u2014 Collect or use the required item: Medivh's Journal. [QC9640 The Shade of Aran]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Medivh's Journal",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 23933,
+          "kind": "item",
+          "locations": [],
+          "name": "Medivh's Journal",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 25,
+      "quest_id": 9640,
+      "quest_name": "The Shade of Aran",
+      "quest_tag": "Raid",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3457,
+      "zone_or_sort_name": "Karazhan"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16815,
+          "kind": "npc",
+          "locations": [],
+          "name": "Kamsis",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9640"
+      ],
+      "instruction": "Turn in [QT9640 The Shade of Aran] to Kamsis",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 26,
+      "quest_id": 9640,
+      "quest_name": "The Shade of Aran",
+      "quest_tag": "Raid",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3457,
+      "zone_or_sort_name": "Karazhan"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "raid",
+        "reputation_gated",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16815,
+          "kind": "npc",
+          "locations": [],
+          "name": "Kamsis",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9645"
+      ],
+      "instruction": "Accept [QA9645 The Master's Terrace] from Kamsis.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 27,
+      "quest_id": 9645,
+      "quest_name": "The Master's Terrace",
+      "quest_tag": "Raid",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3457,
+      "zone_or_sort_name": "Karazhan"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16388,
+          "kind": "npc",
+          "locations": [],
+          "name": "Koren",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9843"
+      ],
+      "instruction": "Accept [QA9843 Keanna's Log] from Koren.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 28,
+      "quest_id": 9843,
+      "quest_name": "Keanna's Log",
+      "quest_tag": "Raid",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3457,
+      "zone_or_sort_name": "Karazhan"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "raid",
+        "reputation_gated",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9645"
+      ],
+      "instruction": "Raid \u2014 Complete the scripted or exploration event. [QC9645 The Master's Terrace]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 29,
+      "quest_id": 9645,
+      "quest_name": "The Master's Terrace",
+      "quest_tag": "Raid",
+      "required_level": 70,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 3457,
+      "zone_or_sort_name": "Karazhan"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9843"
+      ],
+      "instruction": "Raid \u2014 Collect or use the required item: Keanna's Log. [QC9843 Keanna's Log]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Keanna's Log",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 24492,
+          "kind": "item",
+          "locations": [],
+          "name": "Keanna's Log",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 30,
+      "quest_id": 9843,
+      "quest_name": "Keanna's Log",
+      "quest_tag": "Raid",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3457,
+      "zone_or_sort_name": "Karazhan"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "raid",
+        "reputation_gated",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17613,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 41,
+              "map_name": "Deadwind Pass",
+              "verification": "questie_structured_source_only",
+              "x": 47.28,
+              "y": 75.21
+            }
+          ],
+          "name": "Archmage Alturus",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9645"
+      ],
+      "instruction": "Turn in [QT9645 The Master's Terrace] to Archmage Alturus",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 31,
+      "quest_id": 9645,
+      "quest_name": "The Master's Terrace",
+      "quest_tag": "Raid",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3457,
+      "zone_or_sort_name": "Karazhan"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17613,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 41,
+              "map_name": "Deadwind Pass",
+              "verification": "questie_structured_source_only",
+              "x": 47.28,
+              "y": 75.21
+            }
+          ],
+          "name": "Archmage Alturus",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9843"
+      ],
+      "instruction": "Turn in [QT9843 Keanna's Log] to Archmage Alturus",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 32,
+      "quest_id": 9843,
+      "quest_name": "Keanna's Log",
+      "quest_tag": "Raid",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3457,
+      "zone_or_sort_name": "Karazhan"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17613,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 41,
+              "map_name": "Deadwind Pass",
+              "verification": "questie_structured_source_only",
+              "x": 47.28,
+              "y": 75.21
+            }
+          ],
+          "name": "Archmage Alturus",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9844"
+      ],
+      "instruction": "Accept [QA9844 A Demonic Presence] from Archmage Alturus.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 33,
+      "quest_id": 9844,
+      "quest_name": "A Demonic Presence",
+      "quest_tag": "Raid",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3457,
+      "zone_or_sort_name": "Karazhan"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9844"
+      ],
+      "instruction": "Raid \u2014 Complete the required NPC or creature objective: Prince Malchezaar. [QC9844 A Demonic Presence]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Prince Malchezaar",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15690,
+          "kind": "npc",
+          "locations": [],
+          "name": "Prince Malchezaar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 34,
+      "quest_id": 9844,
+      "quest_name": "A Demonic Presence",
+      "quest_tag": "Raid",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3457,
+      "zone_or_sort_name": "Karazhan"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17613,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 41,
+              "map_name": "Deadwind Pass",
+              "verification": "questie_structured_source_only",
+              "x": 47.28,
+              "y": 75.21
+            }
+          ],
+          "name": "Archmage Alturus",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9844"
+      ],
+      "instruction": "Turn in [QT9844 A Demonic Presence] to Archmage Alturus",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 35,
+      "quest_id": 9844,
+      "quest_name": "A Demonic Presence",
+      "quest_tag": "Raid",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3457,
+      "zone_or_sort_name": "Karazhan"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17613,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 41,
+              "map_name": "Deadwind Pass",
+              "verification": "questie_structured_source_only",
+              "x": 47.28,
+              "y": 75.21
+            }
+          ],
+          "name": "Archmage Alturus",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9680"
+      ],
+      "instruction": "Accept [QA9680 Digging Up the Past] from Archmage Alturus.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 36,
+      "quest_id": 9680,
+      "quest_name": "Digging Up the Past",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 41,
+      "zone_or_sort_name": "Deadwind Pass"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9680"
+      ],
+      "instruction": "Collect or use the required item: Charred Bone Fragment. [QC9680 Digging Up the Past]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Charred Bone Fragment",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 24152,
+          "kind": "item",
+          "locations": [],
+          "name": "Charred Bone Fragment",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 37,
+      "quest_id": 9680,
+      "quest_name": "Digging Up the Past",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 41,
+      "zone_or_sort_name": "Deadwind Pass"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17613,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 41,
+              "map_name": "Deadwind Pass",
+              "verification": "questie_structured_source_only",
+              "x": 47.28,
+              "y": 75.21
+            }
+          ],
+          "name": "Archmage Alturus",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9680"
+      ],
+      "instruction": "Turn in [QT9680 Digging Up the Past] to Archmage Alturus",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 38,
+      "quest_id": 9680,
+      "quest_name": "Digging Up the Past",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 41,
+      "zone_or_sort_name": "Deadwind Pass"
+    }
+  ],
+  "title": "Optional Content 51 - Shattrath City & Karazhan"
+}

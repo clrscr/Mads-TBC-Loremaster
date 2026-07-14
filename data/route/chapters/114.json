@@ -1,0 +1,663 @@
+{
+  "branch": "optional_content",
+  "entry_contract": "Complete A Reliquary of Purity. Begin in Stranglethorn Vale with \"Pretty Boy\" Duncan. Leave at least two quest-log slots open; group and reputation gates remain explicit.",
+  "entry_route_point": {
+    "map_id": 33,
+    "map_name": "Stranglethorn Vale",
+    "x": 27.39,
+    "y": 69.42
+  },
+  "entry_zone_or_sort": 33,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 493,
+    "map_name": "Moonglade",
+    "quest_id": 5526,
+    "tag": "QT",
+    "x": 51.69,
+    "y": 45.1
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [
+    [
+      5527
+    ]
+  ],
+  "external_prerequisite_quest_ids": [
+    5527
+  ],
+  "group": "Mad's Loremaster Guide - Optional Content",
+  "guide_file": "Guides/optional_content/114_reputation_18.lua",
+  "id": "114-optional_content-optional-content-18---stranglethorn-vale-&-molten-core",
+  "maximum_level": null,
+  "minimum_level": null,
+  "next_chapter": "Optional Content 19 - Western Plaguelands & Eastern Plaguelands",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "Optional Content 17 - Dire Maul & Silithus",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 1036,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8348:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1036:starter",
+        "travel-network:ratchet-booty-bay",
+        "https://www.wowhead.com/tbc/quest=1040/passage-to-booty-bay"
+      ],
+      "instruction": "Travel from Silithus to Stranglethorn Vale: Take the ship between Ratchet and Booty Bay. Continue to [G27.39,69.42 Stranglethorn Vale]. [O]",
+      "map_id": 33,
+      "map_name": "Stranglethorn Vale",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 1377,
+      "origin_map_name": "Silithus",
+      "origin_x": 48.57,
+      "origin_y": 37.78,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [
+        "ratchet-booty-bay"
+      ],
+      "type": "transport",
+      "verification": "questie_endpoints_and_tbc_transport_network",
+      "x": 27.39,
+      "y": 69.42
+    },
+    {
+      "before_quest_id": 1036,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5527:dependency"
+      ],
+      "instruction": "Optional entry requirements: complete A Reliquary of Purity. [O]",
+      "map_id": 33,
+      "map_name": "Stranglethorn Vale",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        5527
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "branch_entry",
+      "verification": "route_dependency_graph",
+      "x": 27.39,
+      "y": 69.42
+    },
+    {
+      "before_quest_id": 1036,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1036:starter"
+      ],
+      "instruction": "Optional chapter: travel to Stranglethorn Vale and begin at [G27.39,69.42 Stranglethorn Vale]. Leave at least two quest-log slots open. [O]",
+      "map_id": 33,
+      "map_name": "Stranglethorn Vale",
+      "optional": true,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 27.39,
+      "y": 69.42
+    },
+    {
+      "before_quest_id": 1036,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1036:requiredLevel"
+      ],
+      "instruction": "Reach level 60 before accepting Avast Ye, Scallywag. [XP60 Level 60]",
+      "map_id": 33,
+      "map_name": "Stranglethorn Vale",
+      "optional": false,
+      "order": 4,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 60,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 27.39,
+      "y": 69.42
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2545,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 27.39,
+              "y": 69.42
+            }
+          ],
+          "name": "\"Pretty Boy\" Duncan",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1036"
+      ],
+      "instruction": "Accept [QA1036 Avast Ye, Scallywag] from \"Pretty Boy\" Duncan.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 1036,
+      "quest_name": "Avast Ye, Scallywag",
+      "quest_tag": null,
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1036"
+      ],
+      "instruction": "Complete [QC1036 Avast Ye, Scallywag]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 1036,
+      "quest_name": "Avast Ye, Scallywag",
+      "quest_tag": null,
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2546,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 30.58,
+              "y": 90.63
+            }
+          ],
+          "name": "Fleet Master Firallon",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1036"
+      ],
+      "instruction": "Turn in [QT1036 Avast Ye, Scallywag] to Fleet Master Firallon",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 1036,
+      "quest_name": "Avast Ye, Scallywag",
+      "quest_tag": null,
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2546,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 30.58,
+              "y": 90.63
+            }
+          ],
+          "name": "Fleet Master Firallon",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4621"
+      ],
+      "instruction": "Accept [QA4621 Avast Ye, Admiral!] from Fleet Master Firallon.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 4621,
+      "quest_name": "Avast Ye, Admiral!",
+      "quest_tag": null,
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4621"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Baron Revilgaz, Fleet Master Seahorn. [QC4621 Avast Ye, Admiral!]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Baron Revilgaz, Fleet Master Seahorn",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2496,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 27.23,
+              "y": 76.87
+            }
+          ],
+          "name": "Baron Revilgaz",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2487,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 27.17,
+              "y": 77.01
+            }
+          ],
+          "name": "Fleet Master Seahorn",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 9,
+      "quest_id": 4621,
+      "quest_name": "Avast Ye, Admiral!",
+      "quest_tag": null,
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2546,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 30.58,
+              "y": 90.63
+            }
+          ],
+          "name": "Fleet Master Firallon",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4621"
+      ],
+      "instruction": "Turn in [QT4621 Avast Ye, Admiral!] to Fleet Master Firallon",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 4621,
+      "quest_name": "Avast Ye, Admiral!",
+      "quest_tag": null,
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14387,
+          "kind": "npc",
+          "locations": [],
+          "name": "Lothos Riftwaker",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7848"
+      ],
+      "instruction": "Accept [QA7848 Attunement to the Core] from Lothos Riftwaker.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 7848,
+      "quest_name": "Attunement to the Core",
+      "quest_tag": "Dungeon",
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 2717,
+      "zone_or_sort_name": "Molten Core"
+    },
+    {
+      "before_quest_id": 7848,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7848:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 33,
+      "map_name": "Stranglethorn Vale",
+      "optional": true,
+      "order": 12,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        7848
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 27.39,
+      "y": 69.42
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7848"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required item: Core Fragment. [QC7848 Attunement to the Core]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Core Fragment",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 18412,
+          "kind": "item",
+          "locations": [],
+          "name": "Core Fragment",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 13,
+      "quest_id": 7848,
+      "quest_name": "Attunement to the Core",
+      "quest_tag": "Dungeon",
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 2717,
+      "zone_or_sort_name": "Molten Core"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14387,
+          "kind": "npc",
+          "locations": [],
+          "name": "Lothos Riftwaker",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7848"
+      ],
+      "instruction": "Turn in [QT7848 Attunement to the Core] to Lothos Riftwaker",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 7848,
+      "quest_name": "Attunement to the Core",
+      "quest_tag": "Dungeon",
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 2717,
+      "zone_or_sort_name": "Molten Core"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11801,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 493,
+              "map_name": "Moonglade",
+              "verification": "questie_structured_source_only",
+              "x": 51.69,
+              "y": 45.1
+            }
+          ],
+          "name": "Rabine Saturna",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5526"
+      ],
+      "instruction": "Accept [QA5526 Shards of the Felvine] from Rabine Saturna.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 5526,
+      "quest_name": "Shards of the Felvine",
+      "quest_tag": "Dungeon",
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 493,
+      "zone_or_sort_name": "Moonglade"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5526"
+      ],
+      "instruction": "Dungeon \u2014 Use the quest item [UI18539-] as directed; collect or use the required item: Sealed Reliquary of Purity. [QC5526 Shards of the Felvine]",
+      "item_use_id": 18539,
+      "objective_hint": "Collect or use the required item: Sealed Reliquary of Purity",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 18540,
+          "kind": "item",
+          "locations": [],
+          "name": "Sealed Reliquary of Purity",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 16,
+      "quest_id": 5526,
+      "quest_name": "Shards of the Felvine",
+      "quest_tag": "Dungeon",
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 493,
+      "zone_or_sort_name": "Moonglade"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11801,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 493,
+              "map_name": "Moonglade",
+              "verification": "questie_structured_source_only",
+              "x": 51.69,
+              "y": 45.1
+            }
+          ],
+          "name": "Rabine Saturna",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5526"
+      ],
+      "instruction": "Turn in [QT5526 Shards of the Felvine] to Rabine Saturna",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 5526,
+      "quest_name": "Shards of the Felvine",
+      "quest_tag": "Dungeon",
+      "required_level": 60,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 493,
+      "zone_or_sort_name": "Moonglade"
+    }
+  ],
+  "title": "Optional Content 18 - Stranglethorn Vale & Molten Core"
+}

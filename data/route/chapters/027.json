@@ -1,0 +1,4705 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 26 Duskwood, or select this chapter on a partially completed character. Begin in Ashenvale with Vindicator Palanaar. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 331,
+    "map_name": "Ashenvale",
+    "x": 34.89,
+    "y": 49.71
+  },
+  "entry_zone_or_sort": 331,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 331,
+    "map_name": "Ashenvale",
+    "quest_id": 9522,
+    "tag": "QT",
+    "x": 86.47,
+    "y": 43.64
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/027_world_27.lua",
+  "id": "027-primary-27-ashenvale",
+  "maximum_level": 27,
+  "minimum_level": 26,
+  "next_chapter": "28 Wetlands & Thousand Needles",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "26 Duskwood",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 9533,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:55:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9533:starter",
+        "travel-network:auberdine-menethil",
+        "https://www.wowhead.com/tbc/quest=942/the-absent-minded-prospector"
+      ],
+      "instruction": "Travel from Duskwood to Ashenvale: Take the ship between Auberdine and Menethil Harbor. Continue to [G34.89,49.71 Ashenvale]. [O]",
+      "map_id": 331,
+      "map_name": "Ashenvale",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 10,
+      "origin_map_name": "Duskwood",
+      "origin_x": 7.78,
+      "origin_y": 34.07,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [
+        "auberdine-menethil"
+      ],
+      "type": "transport",
+      "verification": "questie_endpoints_and_tbc_transport_network",
+      "x": 34.89,
+      "y": 49.71
+    },
+    {
+      "before_quest_id": 9533,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9533:starter"
+      ],
+      "instruction": "Before you begin: travel to Ashenvale and meet the first quest giver at [G34.89,49.71 Ashenvale]. Leave at least two quest-log slots open. [O]",
+      "map_id": 331,
+      "map_name": "Ashenvale",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 34.89,
+      "y": 49.71
+    },
+    {
+      "before_quest_id": 9533,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9533:requiredLevel"
+      ],
+      "instruction": "Reach level 26 before accepting A Helping Hand. [XP26 Level 26]",
+      "map_id": 331,
+      "map_name": "Ashenvale",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 26,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 34.89,
+      "y": 49.71
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17106,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 34.89,
+              "y": 49.71
+            }
+          ],
+          "name": "Vindicator Palanaar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9533"
+      ],
+      "instruction": "Accept [QA9533 A Helping Hand] from Vindicator Palanaar.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 9533,
+      "quest_name": "A Helping Hand",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9533"
+      ],
+      "instruction": "Complete [QC9533 A Helping Hand]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 9533,
+      "quest_name": "A Helping Hand",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17291,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 86.84,
+              "y": 44.81
+            }
+          ],
+          "name": "Architect Nemos",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9533"
+      ],
+      "instruction": "Turn in [QT9533 A Helping Hand] to Architect Nemos",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 9533,
+      "quest_name": "A Helping Hand",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3663,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 26.2,
+              "y": 38.7
+            }
+          ],
+          "name": "Delgren the Purifier",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1167"
+      ],
+      "instruction": "Accept [QA1167 The Tower of Althalaxx] from Delgren the Purifier.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 1167,
+      "quest_name": "The Tower of Althalaxx",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 148,
+      "zone_or_sort_name": "Darkshore"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1167"
+      ],
+      "instruction": "Complete [QC1167 The Tower of Althalaxx]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 1167,
+      "quest_name": "The Tower of Althalaxx",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 148,
+      "zone_or_sort_name": "Darkshore"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3661,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 148,
+              "map_name": "Darkshore",
+              "verification": "questie_structured_source_only",
+              "x": 54.97,
+              "y": 24.89
+            }
+          ],
+          "name": "Balthule Shadowstrike",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1167"
+      ],
+      "instruction": "Turn in [QT1167 The Tower of Althalaxx] to Balthule Shadowstrike",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 1167,
+      "quest_name": "The Tower of Althalaxx",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 148,
+      "zone_or_sort_name": "Darkshore"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3661,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 148,
+              "map_name": "Darkshore",
+              "verification": "questie_structured_source_only",
+              "x": 54.97,
+              "y": 24.89
+            }
+          ],
+          "name": "Balthule Shadowstrike",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1143"
+      ],
+      "instruction": "Accept [QA1143 The Tower of Althalaxx] from Balthule Shadowstrike.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 1143,
+      "quest_name": "The Tower of Althalaxx",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 148,
+      "zone_or_sort_name": "Darkshore"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1143"
+      ],
+      "instruction": "Collect or use the required item: Athrikus Narassin's Head. [QC1143 The Tower of Althalaxx]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Athrikus Narassin's Head",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 5383,
+          "kind": "item",
+          "locations": [],
+          "name": "Athrikus Narassin's Head",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 11,
+      "quest_id": 1143,
+      "quest_name": "The Tower of Althalaxx",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 148,
+      "zone_or_sort_name": "Darkshore"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3661,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 148,
+              "map_name": "Darkshore",
+              "verification": "questie_structured_source_only",
+              "x": 54.97,
+              "y": 24.89
+            }
+          ],
+          "name": "Balthule Shadowstrike",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1143"
+      ],
+      "instruction": "Turn in [QT1143 The Tower of Althalaxx] to Balthule Shadowstrike",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 1143,
+      "quest_name": "The Tower of Althalaxx",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 148,
+      "zone_or_sort_name": "Darkshore"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3661,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 148,
+              "map_name": "Darkshore",
+              "verification": "questie_structured_source_only",
+              "x": 54.97,
+              "y": 24.89
+            }
+          ],
+          "name": "Balthule Shadowstrike",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:981"
+      ],
+      "instruction": "Accept [QA981 The Tower of Althalaxx] from Balthule Shadowstrike.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 981,
+      "quest_name": "The Tower of Althalaxx",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 148,
+      "zone_or_sort_name": "Darkshore"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:981"
+      ],
+      "instruction": "Complete [QC981 The Tower of Althalaxx]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 981,
+      "quest_name": "The Tower of Althalaxx",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 148,
+      "zone_or_sort_name": "Darkshore"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3663,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 26.2,
+              "y": 38.7
+            }
+          ],
+          "name": "Delgren the Purifier",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:981"
+      ],
+      "instruction": "Turn in [QT981 The Tower of Althalaxx] to Delgren the Purifier",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 981,
+      "quest_name": "The Tower of Althalaxx",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 148,
+      "zone_or_sort_name": "Darkshore"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3848,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 85.24,
+              "y": 44.71
+            }
+          ],
+          "name": "Kayneth Stillwind",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9519"
+      ],
+      "instruction": "Accept [QA9519 The Lost Chalice] from Kayneth Stillwind.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 9519,
+      "quest_name": "The Lost Chalice",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9519"
+      ],
+      "instruction": "Collect or use the required item: Chalice of Elune. [QC9519 The Lost Chalice]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Chalice of Elune",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 23760,
+          "kind": "item",
+          "locations": [],
+          "name": "Chalice of Elune",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 17,
+      "quest_id": 9519,
+      "quest_name": "The Lost Chalice",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3848,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 85.24,
+              "y": 44.71
+            }
+          ],
+          "name": "Kayneth Stillwind",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9519"
+      ],
+      "instruction": "Turn in [QT9519 The Lost Chalice] to Kayneth Stillwind",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 9519,
+      "quest_name": "The Lost Chalice",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3845,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 34.67,
+              "y": 48.84
+            }
+          ],
+          "name": "Shindrell Swiftfire",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4581"
+      ],
+      "instruction": "Accept [QA4581 Kayneth Stillwind] from Shindrell Swiftfire.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 4581,
+      "quest_name": "Kayneth Stillwind",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4581"
+      ],
+      "instruction": "Complete [QC4581 Kayneth Stillwind]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 4581,
+      "quest_name": "Kayneth Stillwind",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3848,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 85.24,
+              "y": 44.71
+            }
+          ],
+          "name": "Kayneth Stillwind",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4581"
+      ],
+      "instruction": "Turn in [QT4581 Kayneth Stillwind] to Kayneth Stillwind",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 4581,
+      "quest_name": "Kayneth Stillwind",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3848,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 85.24,
+              "y": 44.71
+            }
+          ],
+          "name": "Kayneth Stillwind",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1011"
+      ],
+      "instruction": "Accept [QA1011 Forsaken Diseases] from Kayneth Stillwind.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 22,
+      "quest_id": 1011,
+      "quest_name": "Forsaken Diseases",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1011"
+      ],
+      "instruction": "Collect or use the required item: Bottle of Disease. [QC1011 Forsaken Diseases]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Bottle of Disease",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 5440,
+          "kind": "item",
+          "locations": [],
+          "name": "Bottle of Disease",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 23,
+      "quest_id": 1011,
+      "quest_name": "Forsaken Diseases",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3848,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 85.24,
+              "y": 44.71
+            }
+          ],
+          "name": "Kayneth Stillwind",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1011"
+      ],
+      "instruction": "Turn in [QT1011 Forsaken Diseases] to Kayneth Stillwind",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 24,
+      "quest_id": 1011,
+      "quest_name": "Forsaken Diseases",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3848,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 85.24,
+              "y": 44.71
+            }
+          ],
+          "name": "Kayneth Stillwind",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1012"
+      ],
+      "instruction": "Accept [QA1012 Insane Druids] from Kayneth Stillwind.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 25,
+      "quest_id": 1012,
+      "quest_name": "Insane Druids",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17291,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 86.84,
+              "y": 44.81
+            }
+          ],
+          "name": "Architect Nemos",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9517"
+      ],
+      "instruction": "Accept [QA9517 A Shameful Waste] from Architect Nemos.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 26,
+      "quest_id": 9517,
+      "quest_name": "A Shameful Waste",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17287,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 86.0,
+              "y": 44.36
+            }
+          ],
+          "name": "Sentinel Luciel Starwhisper",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9518"
+      ],
+      "instruction": "Accept [QA9518 Agents of Destruction] from Sentinel Luciel Starwhisper.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 27,
+      "quest_id": 9518,
+      "quest_name": "Agents of Destruction",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9518"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Overseer Gorthak, Warsong Shredder, Horde Deforester, plus 1 more. [QC9518 Agents of Destruction]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Overseer Gorthak, Warsong Shredder, Horde Deforester, plus 1 more",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17304,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 88.82,
+              "y": 59.55
+            }
+          ],
+          "name": "Overseer Gorthak",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11684,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 86.58,
+              "y": 55.69
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 88.37,
+              "y": 64.74
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 85.3,
+              "y": 62.22
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 84.59,
+              "y": 61.27
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 72.52,
+              "y": 80.33
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 83.13,
+              "y": 56.14
+            }
+          ],
+          "name": "Warsong Shredder",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11681,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 86.79,
+              "y": 63.39
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 84.68,
+              "y": 58.88
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 86.44,
+              "y": 58.84
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 84.75,
+              "y": 56.8
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 85.1,
+              "y": 57.06
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 88.16,
+              "y": 52.9
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 84.03,
+              "y": 60.49
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 84.87,
+              "y": 63.18
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 83.57,
+              "y": 59.58
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 84.12,
+              "y": 58.02
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 83.62,
+              "y": 57.22
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 71.64,
+              "y": 79.93
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 71.43,
+              "y": 81.85
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 73.01,
+              "y": 79.55
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 83.12,
+              "y": 61.1
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 70.23,
+              "y": 82.71
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 69.79,
+              "y": 84.02
+            }
+          ],
+          "name": "Horde Deforester",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11680,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 89.17,
+              "y": 50.02
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 89.12,
+              "y": 54.56
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 89.33,
+              "y": 52.84
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 89.24,
+              "y": 51.15
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 88.2,
+              "y": 57.7
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 89.76,
+              "y": 62.35
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 89.56,
+              "y": 62.79
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 88.13,
+              "y": 61.44
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 87.59,
+              "y": 62.32
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 89.42,
+              "y": 62.29
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 87.07,
+              "y": 64.44
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 86.61,
+              "y": 62.07
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 84.13,
+              "y": 58.76
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 84.76,
+              "y": 59.22
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 87.49,
+              "y": 58.48
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 86.89,
+              "y": 58.1
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 85.8,
+              "y": 57.6
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 86.15,
+              "y": 57.11
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 86.4,
+              "y": 57.11
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 85.74,
+              "y": 56.28
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 86.45,
+              "y": 54.84
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 85.31,
+              "y": 62.44
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 86.98,
+              "y": 59.38
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 89.64,
+              "y": 49.26
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 88.66,
+              "y": 50.16
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 87.49,
+              "y": 53.61
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 91.93,
+              "y": 53.86
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 72.5,
+              "y": 78.76
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 69.69,
+              "y": 84.47
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 69.47,
+              "y": 83.68
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 85.17,
+              "y": 60.56
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 83.13,
+              "y": 62.06
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 71.48,
+              "y": 79.18
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 69.3,
+              "y": 82.39
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 73.56,
+              "y": 79.38
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 87.43,
+              "y": 64.9
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 70.88,
+              "y": 82.02
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 86.31,
+              "y": 60.42
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 92.16,
+              "y": 54.32
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 73.43,
+              "y": 81.2
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 70.9,
+              "y": 83.77
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 91.92,
+              "y": 53.99
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 72.39,
+              "y": 81.97
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 87.08,
+              "y": 64.74
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 69.71,
+              "y": 84.4
+            }
+          ],
+          "name": "Horde Scout",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 28,
+      "quest_id": 9518,
+      "quest_name": "Agents of Destruction",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1012"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Taneel Darkwood, Uthil Mooncall, Mavoris Cloudsbreak. [QC1012 Insane Druids]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Taneel Darkwood, Uthil Mooncall, Mavoris Cloudsbreak",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3940,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 77.18,
+              "y": 73.99
+            }
+          ],
+          "name": "Taneel Darkwood",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3941,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 77.96,
+              "y": 72.74
+            }
+          ],
+          "name": "Uthil Mooncall",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3942,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 75.05,
+              "y": 74.2
+            }
+          ],
+          "name": "Mavoris Cloudsbreak",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 29,
+      "quest_id": 1012,
+      "quest_name": "Insane Druids",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9517"
+      ],
+      "instruction": "Collect or use the required items: Warsong Lumber, Satyrnaar Fel Wood. [QC9517 A Shameful Waste]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Warsong Lumber, Satyrnaar Fel Wood",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 23776,
+          "kind": "item",
+          "locations": [],
+          "name": "Warsong Lumber",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 24081,
+          "kind": "item",
+          "locations": [],
+          "name": "Satyrnaar Fel Wood",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 30,
+      "quest_id": 9517,
+      "quest_name": "A Shameful Waste",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17310,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 84.18,
+              "y": 45.63
+            }
+          ],
+          "name": "Gnarl",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9517"
+      ],
+      "instruction": "Turn in [QT9517 A Shameful Waste] to Gnarl",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 31,
+      "quest_id": 9517,
+      "quest_name": "A Shameful Waste",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3848,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 85.24,
+              "y": 44.71
+            }
+          ],
+          "name": "Kayneth Stillwind",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1012"
+      ],
+      "instruction": "Turn in [QT1012 Insane Druids] to Kayneth Stillwind",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 32,
+      "quest_id": 1012,
+      "quest_name": "Insane Druids",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17287,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 86.0,
+              "y": 44.36
+            }
+          ],
+          "name": "Sentinel Luciel Starwhisper",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9518"
+      ],
+      "instruction": "Turn in [QT9518 Agents of Destruction] to Sentinel Luciel Starwhisper",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 33,
+      "quest_id": 9518,
+      "quest_name": "Agents of Destruction",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4456,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 148,
+              "map_name": "Darkshore",
+              "verification": "questie_structured_source_only",
+              "x": 33.77,
+              "y": 42.37
+            }
+          ],
+          "name": "Fiora Longears",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1135"
+      ],
+      "instruction": "Accept [QA1135 Highperch Venom] from Fiora Longears.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 34,
+      "quest_id": 1135,
+      "quest_name": "Highperch Venom",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 148,
+      "zone_or_sort_name": "Darkshore"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1135"
+      ],
+      "instruction": "Collect or use the required item: Highperch Venom Sac. [QC1135 Highperch Venom]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Highperch Venom Sac",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 5809,
+          "kind": "item",
+          "locations": [],
+          "name": "Highperch Venom Sac",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 35,
+      "quest_id": 1135,
+      "quest_name": "Highperch Venom",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 148,
+      "zone_or_sort_name": "Darkshore"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4456,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 148,
+              "map_name": "Darkshore",
+              "verification": "questie_structured_source_only",
+              "x": 33.77,
+              "y": 42.37
+            }
+          ],
+          "name": "Fiora Longears",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1135"
+      ],
+      "instruction": "Turn in [QT1135 Highperch Venom] to Fiora Longears",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 36,
+      "quest_id": 1135,
+      "quest_name": "Highperch Venom",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 148,
+      "zone_or_sort_name": "Darkshore"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3880,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 86.03,
+              "y": 44.12
+            }
+          ],
+          "name": "Sentinel Melyria Frostshadow",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1022"
+      ],
+      "instruction": "Accept [QA1022 The Howling Vale] from Sentinel Melyria Frostshadow.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 37,
+      "quest_id": 1022,
+      "quest_name": "The Howling Vale",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1022"
+      ],
+      "instruction": "Interact with the required object: Tome of Mel'Thandris. [QC1022 The Howling Vale]",
+      "item_use_id": null,
+      "objective_hint": "Interact with the required object: Tome of Mel'Thandris",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 19027,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 50.49,
+              "y": 39.13
+            }
+          ],
+          "name": "Tome of Mel'Thandris",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 38,
+      "quest_id": 1022,
+      "quest_name": "The Howling Vale",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3880,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 86.03,
+              "y": 44.12
+            }
+          ],
+          "name": "Sentinel Melyria Frostshadow",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1022"
+      ],
+      "instruction": "Turn in [QT1022 The Howling Vale] to Sentinel Melyria Frostshadow",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 39,
+      "quest_id": 1022,
+      "quest_name": "The Howling Vale",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3880,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 86.03,
+              "y": 44.12
+            }
+          ],
+          "name": "Sentinel Melyria Frostshadow",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1037"
+      ],
+      "instruction": "Accept [QA1037 Velinde Starsong] from Sentinel Melyria Frostshadow.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 40,
+      "quest_id": 1037,
+      "quest_name": "Velinde Starsong",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1037"
+      ],
+      "instruction": "Complete [QC1037 Velinde Starsong]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 41,
+      "quest_id": 1037,
+      "quest_name": "Velinde Starsong",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8026,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1657,
+              "map_name": "Darnassus",
+              "verification": "questie_structured_source_only",
+              "x": 61.77,
+              "y": 39.18
+            }
+          ],
+          "name": "Thyn'tel Bladeweaver",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1037"
+      ],
+      "instruction": "Turn in [QT1037 Velinde Starsong] to Thyn'tel Bladeweaver",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 42,
+      "quest_id": 1037,
+      "quest_name": "Velinde Starsong",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8026,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1657,
+              "map_name": "Darnassus",
+              "verification": "questie_structured_source_only",
+              "x": 61.77,
+              "y": 39.18
+            }
+          ],
+          "name": "Thyn'tel Bladeweaver",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1038"
+      ],
+      "instruction": "Accept [QA1038 Velinde's Effects] from Thyn'tel Bladeweaver.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 43,
+      "quest_id": 1038,
+      "quest_name": "Velinde's Effects",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1038"
+      ],
+      "instruction": "Collect or use the required item: Velinde's Journal. [QC1038 Velinde's Effects]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Velinde's Journal",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 5520,
+          "kind": "item",
+          "locations": [],
+          "name": "Velinde's Journal",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 44,
+      "quest_id": 1038,
+      "quest_name": "Velinde's Effects",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8026,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1657,
+              "map_name": "Darnassus",
+              "verification": "questie_structured_source_only",
+              "x": 61.77,
+              "y": 39.18
+            }
+          ],
+          "name": "Thyn'tel Bladeweaver",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1038"
+      ],
+      "instruction": "Turn in [QT1038 Velinde's Effects] to Thyn'tel Bladeweaver",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 45,
+      "quest_id": 1038,
+      "quest_name": "Velinde's Effects",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8026,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1657,
+              "map_name": "Darnassus",
+              "verification": "questie_structured_source_only",
+              "x": 61.77,
+              "y": 39.18
+            }
+          ],
+          "name": "Thyn'tel Bladeweaver",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1039"
+      ],
+      "instruction": "Accept [QA1039 The Barrens Port] from Thyn'tel Bladeweaver.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 46,
+      "quest_id": 1039,
+      "quest_name": "The Barrens Port",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1039"
+      ],
+      "instruction": "Complete [QC1039 The Barrens Port]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 47,
+      "quest_id": 1039,
+      "quest_name": "The Barrens Port",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3453,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 63.35,
+              "y": 38.45
+            }
+          ],
+          "name": "Wharfmaster Dizzywig",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1039"
+      ],
+      "instruction": "Turn in [QT1039 The Barrens Port] to Wharfmaster Dizzywig",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 48,
+      "quest_id": 1039,
+      "quest_name": "The Barrens Port",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3453,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 63.35,
+              "y": 38.45
+            }
+          ],
+          "name": "Wharfmaster Dizzywig",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1040"
+      ],
+      "instruction": "Accept [QA1040 Passage to Booty Bay] from Wharfmaster Dizzywig.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 49,
+      "quest_id": 1040,
+      "quest_name": "Passage to Booty Bay",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1040"
+      ],
+      "instruction": "Complete [QC1040 Passage to Booty Bay]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 50,
+      "quest_id": 1040,
+      "quest_name": "Passage to Booty Bay",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3945,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 27.37,
+              "y": 74.08
+            }
+          ],
+          "name": "Caravaneer Ruzzgot",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1040"
+      ],
+      "instruction": "Turn in [QT1040 Passage to Booty Bay] to Caravaneer Ruzzgot",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 51,
+      "quest_id": 1040,
+      "quest_name": "Passage to Booty Bay",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3945,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 27.37,
+              "y": 74.08
+            }
+          ],
+          "name": "Caravaneer Ruzzgot",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1041"
+      ],
+      "instruction": "Accept [QA1041 The Caravan Road] from Caravaneer Ruzzgot.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 52,
+      "quest_id": 1041,
+      "quest_name": "The Caravan Road",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1041"
+      ],
+      "instruction": "Complete [QC1041 The Caravan Road]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 53,
+      "quest_id": 1041,
+      "quest_name": "The Caravan Road",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 267,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 72.54,
+              "y": 46.87
+            }
+          ],
+          "name": "Clerk Daltry",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1041"
+      ],
+      "instruction": "Turn in [QT1041 The Caravan Road] to Clerk Daltry",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 54,
+      "quest_id": 1041,
+      "quest_name": "The Caravan Road",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 267,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 72.54,
+              "y": 46.87
+            }
+          ],
+          "name": "Clerk Daltry",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1042"
+      ],
+      "instruction": "Accept [QA1042 The Carevin Family] from Clerk Daltry.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 55,
+      "quest_id": 1042,
+      "quest_name": "The Carevin Family",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1042"
+      ],
+      "instruction": "Complete [QC1042 The Carevin Family]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 56,
+      "quest_id": 1042,
+      "quest_name": "The Carevin Family",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 661,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 75.32,
+              "y": 49.02
+            }
+          ],
+          "name": "Jonathan Carevin",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1042"
+      ],
+      "instruction": "Turn in [QT1042 The Carevin Family] to Jonathan Carevin",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 57,
+      "quest_id": 1042,
+      "quest_name": "The Carevin Family",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 661,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 75.32,
+              "y": 49.02
+            }
+          ],
+          "name": "Jonathan Carevin",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1043"
+      ],
+      "instruction": "Accept [QA1043 The Scythe of Elune] from Jonathan Carevin.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 58,
+      "quest_id": 1043,
+      "quest_name": "The Scythe of Elune",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1043"
+      ],
+      "instruction": "Interact with the required object: Mound of Dirt. [QC1043 The Scythe of Elune]",
+      "item_use_id": null,
+      "objective_hint": "Interact with the required object: Mound of Dirt",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 19030,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 73.53,
+              "y": 79.14
+            }
+          ],
+          "name": "Mound of Dirt",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 59,
+      "quest_id": 1043,
+      "quest_name": "The Scythe of Elune",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 661,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 75.32,
+              "y": 49.02
+            }
+          ],
+          "name": "Jonathan Carevin",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1043"
+      ],
+      "instruction": "Turn in [QT1043 The Scythe of Elune] to Jonathan Carevin",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 60,
+      "quest_id": 1043,
+      "quest_name": "The Scythe of Elune",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 661,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 75.32,
+              "y": 49.02
+            }
+          ],
+          "name": "Jonathan Carevin",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1044"
+      ],
+      "instruction": "Accept [QA1044 Answered Questions] from Jonathan Carevin.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 61,
+      "quest_id": 1044,
+      "quest_name": "Answered Questions",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1044"
+      ],
+      "instruction": "Complete [QC1044 Answered Questions]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 62,
+      "quest_id": 1044,
+      "quest_name": "Answered Questions",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8026,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1657,
+              "map_name": "Darnassus",
+              "verification": "questie_structured_source_only",
+              "x": 61.77,
+              "y": 39.18
+            }
+          ],
+          "name": "Thyn'tel Bladeweaver",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1044"
+      ],
+      "instruction": "Turn in [QT1044 Answered Questions] to Thyn'tel Bladeweaver",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 63,
+      "quest_id": 1044,
+      "quest_name": "Answered Questions",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3901,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 87.1,
+              "y": 43.49
+            }
+          ],
+          "name": "Illiyana",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1021"
+      ],
+      "instruction": "Accept [QA1021 Vile Satyr! Dryads in Danger!] from Illiyana.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 64,
+      "quest_id": 1021,
+      "quest_name": "Vile Satyr! Dryads in Danger!",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1021"
+      ],
+      "instruction": "Complete [QC1021 Vile Satyr! Dryads in Danger!]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 65,
+      "quest_id": 1021,
+      "quest_name": "Vile Satyr! Dryads in Danger!",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3920,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 78.33,
+              "y": 44.82
+            }
+          ],
+          "name": "Anilia",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1021"
+      ],
+      "instruction": "Turn in [QT1021 Vile Satyr! Dryads in Danger!] to Anilia",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 66,
+      "quest_id": 1021,
+      "quest_name": "Vile Satyr! Dryads in Danger!",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3920,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 78.33,
+              "y": 44.82
+            }
+          ],
+          "name": "Anilia",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1031"
+      ],
+      "instruction": "Accept [QA1031 The Branch of Cenarius] from Anilia.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 67,
+      "quest_id": 1031,
+      "quest_name": "The Branch of Cenarius",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1031"
+      ],
+      "instruction": "Collect or use the required item: Branch of Cenarius. [QC1031 The Branch of Cenarius]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Branch of Cenarius",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 5461,
+          "kind": "item",
+          "locations": [],
+          "name": "Branch of Cenarius",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 68,
+      "quest_id": 1031,
+      "quest_name": "The Branch of Cenarius",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3901,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 87.1,
+              "y": 43.49
+            }
+          ],
+          "name": "Illiyana",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1031"
+      ],
+      "instruction": "Turn in [QT1031 The Branch of Cenarius] to Illiyana",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 69,
+      "quest_id": 1031,
+      "quest_name": "The Branch of Cenarius",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3901,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 87.1,
+              "y": 43.49
+            }
+          ],
+          "name": "Illiyana",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1032"
+      ],
+      "instruction": "Accept [QA1032 Satyr Slaying!] from Illiyana.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 70,
+      "quest_id": 1032,
+      "quest_name": "Satyr Slaying!",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17303,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 86.47,
+              "y": 43.64
+            }
+          ],
+          "name": "Vindicator Vedaar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9516"
+      ],
+      "instruction": "Accept [QA9516 Destroy the Legion] from Vindicator Vedaar.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 71,
+      "quest_id": 9516,
+      "quest_name": "Destroy the Legion",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "before_quest_id": 9520,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9520:requiredLevel"
+      ],
+      "instruction": "Reach level 27 before accepting Diabolical Plans. [XP27 Level 27]",
+      "map_id": 331,
+      "map_name": "Ashenvale",
+      "optional": false,
+      "order": 72,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 27,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": null,
+      "y": null
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 23777,
+          "kind": "item",
+          "locations": [],
+          "name": "Diabolical Plans",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9520"
+      ],
+      "instruction": "Accept [QA9520 Diabolical Plans] from Diabolical Plans.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 73,
+      "quest_id": 9520,
+      "quest_name": "Diabolical Plans",
+      "quest_tag": null,
+      "required_level": 27,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9516"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Mannoroc Lasher, Roaming Felguard, Searing Infernal. [QC9516 Destroy the Legion]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Mannoroc Lasher, Roaming Felguard, Searing Infernal",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11697,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 79.97,
+              "y": 82.04
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 84.65,
+              "y": 75.14
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 87.1,
+              "y": 79.28
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 79.76,
+              "y": 80.47
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 89.26,
+              "y": 77.01
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 80.63,
+              "y": 66.29
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 84.05,
+              "y": 69.97
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 81.31,
+              "y": 79.5
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 82.09,
+              "y": 77.01
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 78.11,
+              "y": 83.13
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 77.95,
+              "y": 84.59
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 78.02,
+              "y": 85.08
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 77.7,
+              "y": 83.54
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 78.92,
+              "y": 80.36
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 78.47,
+              "y": 83.89
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 77.71,
+              "y": 83.99
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 78.0,
+              "y": 83.86
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 79.12,
+              "y": 81.38
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 79.06,
+              "y": 80.91
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 79.24,
+              "y": 81.74
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 79.39,
+              "y": 82.26
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 79.48,
+              "y": 81.58
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 79.66,
+              "y": 80.92
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 78.96,
+              "y": 82.13
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 79.38,
+              "y": 81.53
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 78.88,
+              "y": 81.37
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 78.11,
+              "y": 84.42
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 78.4,
+              "y": 84.77
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 78.34,
+              "y": 84.03
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 88.9,
+              "y": 77.76
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 89.69,
+              "y": 77.13
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 89.65,
+              "y": 76.55
+            }
+          ],
+          "name": "Mannoroc Lasher",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 6115,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 79.97,
+              "y": 82.04
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 81.26,
+              "y": 70.85
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 84.63,
+              "y": 71.06
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 85.89,
+              "y": 78.49
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 82.86,
+              "y": 66.57
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 82.97,
+              "y": 68.14
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 81.69,
+              "y": 66.48
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 81.9,
+              "y": 67.75
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 82.31,
+              "y": 67.55
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 83.87,
+              "y": 68.51
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 78.11,
+              "y": 83.13
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 77.95,
+              "y": 84.59
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 78.02,
+              "y": 85.08
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 77.7,
+              "y": 83.54
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 78.47,
+              "y": 83.89
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 77.71,
+              "y": 83.99
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 78.0,
+              "y": 83.86
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 79.12,
+              "y": 81.38
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 81.14,
+              "y": 79.79
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 83.52,
+              "y": 77.8
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 79.24,
+              "y": 81.74
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 79.39,
+              "y": 82.26
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 79.48,
+              "y": 81.58
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 79.66,
+              "y": 80.92
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 78.96,
+              "y": 82.13
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 78.11,
+              "y": 84.42
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 78.4,
+              "y": 84.77
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 78.34,
+              "y": 84.03
+            }
+          ],
+          "name": "Roaming Felguard",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 6073,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 79.97,
+              "y": 82.04
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 84.44,
+              "y": 73.35
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 81.77,
+              "y": 70.1
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 83.04,
+              "y": 71.74
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 80.68,
+              "y": 70.08
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 84.14,
+              "y": 71.61
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 84.76,
+              "y": 77.86
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 85.28,
+              "y": 77.64
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 88.22,
+              "y": 78.52
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 82.97,
+              "y": 78.57
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 82.47,
+              "y": 79.25
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 83.42,
+              "y": 70.65
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 83.19,
+              "y": 69.89
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 82.49,
+              "y": 70.96
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 80.65,
+              "y": 64.87
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 81.15,
+              "y": 65.71
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 83.47,
+              "y": 67.61
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 82.49,
+              "y": 69.02
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 80.61,
+              "y": 68.22
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 81.47,
+              "y": 69.21
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 78.11,
+              "y": 83.13
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 77.95,
+              "y": 84.59
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 78.02,
+              "y": 85.08
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 77.7,
+              "y": 83.54
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 78.47,
+              "y": 83.89
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 77.71,
+              "y": 83.99
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 78.0,
+              "y": 83.86
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 79.12,
+              "y": 81.38
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 79.24,
+              "y": 81.74
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 79.39,
+              "y": 82.26
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 79.48,
+              "y": 81.58
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 80.8,
+              "y": 80.38
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 78.44,
+              "y": 81.56
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 79.66,
+              "y": 80.92
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 79.79,
+              "y": 81.1
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 78.96,
+              "y": 82.13
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 78.11,
+              "y": 84.42
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 78.4,
+              "y": 84.77
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 78.34,
+              "y": 84.03
+            }
+          ],
+          "name": "Searing Infernal",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 74,
+      "quest_id": 9516,
+      "quest_name": "Destroy the Legion",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1032"
+      ],
+      "instruction": "Collect or use the required item: Satyr Horns. [QC1032 Satyr Slaying!]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Satyr Horns",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 5481,
+          "kind": "item",
+          "locations": [],
+          "name": "Satyr Horns",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 75,
+      "quest_id": 1032,
+      "quest_name": "Satyr Slaying!",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9520"
+      ],
+      "instruction": "Complete [QC9520 Diabolical Plans]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 76,
+      "quest_id": 9520,
+      "quest_name": "Diabolical Plans",
+      "quest_tag": null,
+      "required_level": 27,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17303,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 86.47,
+              "y": 43.64
+            }
+          ],
+          "name": "Vindicator Vedaar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9516"
+      ],
+      "instruction": "Turn in [QT9516 Destroy the Legion] to Vindicator Vedaar",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 77,
+      "quest_id": 9516,
+      "quest_name": "Destroy the Legion",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17303,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 86.47,
+              "y": 43.64
+            }
+          ],
+          "name": "Vindicator Vedaar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9520"
+      ],
+      "instruction": "Turn in [QT9520 Diabolical Plans] to Vindicator Vedaar",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 78,
+      "quest_id": 9520,
+      "quest_name": "Diabolical Plans",
+      "quest_tag": null,
+      "required_level": 27,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3901,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 87.1,
+              "y": 43.49
+            }
+          ],
+          "name": "Illiyana",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1032"
+      ],
+      "instruction": "Turn in [QT1032 Satyr Slaying!] to Illiyana",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 79,
+      "quest_id": 1032,
+      "quest_name": "Satyr Slaying!",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17303,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 86.47,
+              "y": 43.64
+            }
+          ],
+          "name": "Vindicator Vedaar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9522"
+      ],
+      "instruction": "Accept [QA9522 Never Again!] from Vindicator Vedaar.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 80,
+      "quest_id": 9522,
+      "quest_name": "Never Again!",
+      "quest_tag": null,
+      "required_level": 27,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17310,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 84.18,
+              "y": 45.63
+            }
+          ],
+          "name": "Gnarl",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9526"
+      ],
+      "instruction": "Accept [QA9526 Reclaiming Felfire Hill] from Gnarl.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 81,
+      "quest_id": 9526,
+      "quest_name": "Reclaiming Felfire Hill",
+      "quest_tag": null,
+      "required_level": 27,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9526"
+      ],
+      "instruction": "Use the quest item [UI23788-] as directed; interact with the required object: Fertile Dirt Mound. [QC9526 Reclaiming Felfire Hill]",
+      "item_use_id": 23788,
+      "objective_hint": "Interact with the required object: Fertile Dirt Mound",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 181690,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 80.4,
+              "y": 69.55
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 80.84,
+              "y": 71.08
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 81.55,
+              "y": 69.78
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 80.78,
+              "y": 67.82
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 82.05,
+              "y": 70.37
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 83.06,
+              "y": 71.06
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 83.37,
+              "y": 69.53
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 84.17,
+              "y": 67.59
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 83.7,
+              "y": 66.34
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 84.3,
+              "y": 68.89
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 85.06,
+              "y": 70.41
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 84.51,
+              "y": 71.17
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 80.09,
+              "y": 66.56
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 80.09,
+              "y": 64.69
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 81.0,
+              "y": 66.77
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 82.03,
+              "y": 65.05
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 82.11,
+              "y": 66.78
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 82.29,
+              "y": 68.05
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 82.58,
+              "y": 69.49
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 83.55,
+              "y": 68.22
+            }
+          ],
+          "name": "Fertile Dirt Mound",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 82,
+      "quest_id": 9526,
+      "quest_name": "Reclaiming Felfire Hill",
+      "quest_tag": null,
+      "required_level": 27,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9522"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Gorgannon, Diathorus the Seeker. [QC9522 Never Again!]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Gorgannon, Diathorus the Seeker",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17300,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 89.79,
+              "y": 76.73
+            }
+          ],
+          "name": "Gorgannon",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 6072,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 78.95,
+              "y": 84.67
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 78.6,
+              "y": 85.82
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 79.49,
+              "y": 81.23
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 78.64,
+              "y": 82.59
+            },
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 78.0,
+              "y": 83.67
+            }
+          ],
+          "name": "Diathorus the Seeker",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 83,
+      "quest_id": 9522,
+      "quest_name": "Never Again!",
+      "quest_tag": null,
+      "required_level": 27,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17310,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 84.18,
+              "y": 45.63
+            }
+          ],
+          "name": "Gnarl",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9526"
+      ],
+      "instruction": "Turn in [QT9526 Reclaiming Felfire Hill] to Gnarl",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 84,
+      "quest_id": 9526,
+      "quest_name": "Reclaiming Felfire Hill",
+      "quest_tag": null,
+      "required_level": 27,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17303,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 86.47,
+              "y": 43.64
+            }
+          ],
+          "name": "Vindicator Vedaar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9522"
+      ],
+      "instruction": "Turn in [QT9522 Never Again!] to Vindicator Vedaar",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 85,
+      "quest_id": 9522,
+      "quest_name": "Never Again!",
+      "quest_tag": null,
+      "required_level": 27,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    }
+  ],
+  "title": "27 Ashenvale"
+}

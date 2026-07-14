@@ -1,0 +1,2026 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 69 Felwood & Winterspring, or select this chapter on a partially completed character. Begin in Silithus with Beetix Ficklespragg. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 1377,
+    "map_name": "Silithus",
+    "x": 51.61,
+    "y": 38.63
+  },
+  "entry_zone_or_sort": 1377,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 618,
+    "map_name": "Winterspring",
+    "quest_id": 975,
+    "tag": "QT",
+    "x": 61.92,
+    "y": 38.3
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/070_world_70.lua",
+  "id": "070-primary-70-silithus",
+  "maximum_level": 55,
+  "minimum_level": 54,
+  "next_chapter": "71 Darnassus & The Exodar",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "69 Felwood & Winterspring",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 8278,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5245:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8278:starter",
+        "travel-network:ratchet-booty-bay",
+        "https://www.wowhead.com/tbc/quest=1040/passage-to-booty-bay"
+      ],
+      "instruction": "Travel from Eastern Plaguelands to Silithus: Take the ship between Ratchet and Booty Bay. Continue to [G51.61,38.63 Silithus]. [O]",
+      "map_id": 1377,
+      "map_name": "Silithus",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 139,
+      "origin_map_name": "Eastern Plaguelands",
+      "origin_x": 53.5,
+      "origin_y": 22.0,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [
+        "ratchet-booty-bay"
+      ],
+      "type": "transport",
+      "verification": "questie_endpoints_and_tbc_transport_network",
+      "x": 51.61,
+      "y": 38.63
+    },
+    {
+      "before_quest_id": 8278,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8278:starter"
+      ],
+      "instruction": "Before you begin: travel to Silithus and meet the first quest giver at [G51.61,38.63 Silithus]. Leave at least two quest-log slots open. [O]",
+      "map_id": 1377,
+      "map_name": "Silithus",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 51.61,
+      "y": 38.63
+    },
+    {
+      "before_quest_id": 8278,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8278:requiredLevel"
+      ],
+      "instruction": "Reach level 54 before accepting Noggle's Last Hope. [XP54 Level 54]",
+      "map_id": 1377,
+      "map_name": "Silithus",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 54,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 51.61,
+      "y": 38.63
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15189,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 51.61,
+              "y": 38.63
+            }
+          ],
+          "name": "Beetix Ficklespragg",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8278"
+      ],
+      "instruction": "Accept [QA8278 Noggle's Last Hope] from Beetix Ficklespragg.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 8278,
+      "quest_name": "Noggle's Last Hope",
+      "quest_tag": null,
+      "required_level": 54,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8278"
+      ],
+      "instruction": "Collect or use the required items: Stonelash Flayer Stinger, Stonelash Pincer Stinger, Rock Stalker Fang. [QC8278 Noggle's Last Hope]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Stonelash Flayer Stinger, Stonelash Pincer Stinger, Rock Stalker Fang",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 20375,
+          "kind": "item",
+          "locations": [],
+          "name": "Stonelash Flayer Stinger",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 20374,
+          "kind": "item",
+          "locations": [],
+          "name": "Stonelash Pincer Stinger",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 20377,
+          "kind": "item",
+          "locations": [],
+          "name": "Rock Stalker Fang",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 5,
+      "quest_id": 8278,
+      "quest_name": "Noggle's Last Hope",
+      "quest_tag": null,
+      "required_level": 54,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15189,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 51.61,
+              "y": 38.63
+            }
+          ],
+          "name": "Beetix Ficklespragg",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8278"
+      ],
+      "instruction": "Turn in [QT8278 Noggle's Last Hope] to Beetix Ficklespragg",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 8278,
+      "quest_name": "Noggle's Last Hope",
+      "quest_tag": null,
+      "required_level": 54,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15190,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 51.63,
+              "y": 38.5
+            }
+          ],
+          "name": "Noggle Ficklespragg",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8282"
+      ],
+      "instruction": "Accept [QA8282 Noggle's Lost Satchel] from Noggle Ficklespragg.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 8282,
+      "quest_name": "Noggle's Lost Satchel",
+      "quest_tag": null,
+      "required_level": 54,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 180448,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 51.35,
+              "y": 38.27
+            }
+          ],
+          "name": "Wanted Poster: Deathclasp",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8283"
+      ],
+      "instruction": "Accept [QA8283 Wanted - Deathclasp, Terror of the Sands] from Wanted Poster: Deathclasp.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 8283,
+      "quest_name": "Wanted - Deathclasp, Terror of the Sands",
+      "quest_tag": "Elite",
+      "required_level": 54,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15183,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 49.67,
+              "y": 37.46
+            }
+          ],
+          "name": "Geologist Larksbane",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8284"
+      ],
+      "instruction": "Accept [QA8284 The Twilight Mystery] from Geologist Larksbane.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 8284,
+      "quest_name": "The Twilight Mystery",
+      "quest_tag": null,
+      "required_level": 54,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8282"
+      ],
+      "instruction": "Collect or use the required item: Noggle's Satchel. [QC8282 Noggle's Lost Satchel]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Noggle's Satchel",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 20379,
+          "kind": "item",
+          "locations": [],
+          "name": "Noggle's Satchel",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 10,
+      "quest_id": 8282,
+      "quest_name": "Noggle's Lost Satchel",
+      "quest_tag": null,
+      "required_level": 54,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "before_quest_id": 8283,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8283:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 1377,
+      "map_name": "Silithus",
+      "optional": true,
+      "order": 11,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        8283
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 51.61,
+      "y": 38.63
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8283"
+      ],
+      "instruction": "Elite/group recommended \u2014 Collect or use the required item: Deathclasp's Pincer. [QC8283 Wanted - Deathclasp, Terror of the Sands]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Deathclasp's Pincer",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 20385,
+          "kind": "item",
+          "locations": [],
+          "name": "Deathclasp's Pincer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 12,
+      "quest_id": 8283,
+      "quest_name": "Wanted - Deathclasp, Terror of the Sands",
+      "quest_tag": "Elite",
+      "required_level": 54,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8284"
+      ],
+      "instruction": "Collect or use the required item: Twilight Tablet Fragment. [QC8284 The Twilight Mystery]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Twilight Tablet Fragment",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 20378,
+          "kind": "item",
+          "locations": [],
+          "name": "Twilight Tablet Fragment",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 13,
+      "quest_id": 8284,
+      "quest_name": "The Twilight Mystery",
+      "quest_tag": null,
+      "required_level": 54,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15183,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 49.67,
+              "y": 37.46
+            }
+          ],
+          "name": "Geologist Larksbane",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8284"
+      ],
+      "instruction": "Turn in [QT8284 The Twilight Mystery] to Geologist Larksbane",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 8284,
+      "quest_name": "The Twilight Mystery",
+      "quest_tag": null,
+      "required_level": 54,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15190,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 51.63,
+              "y": 38.5
+            }
+          ],
+          "name": "Noggle Ficklespragg",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8282"
+      ],
+      "instruction": "Turn in [QT8282 Noggle's Lost Satchel] to Noggle Ficklespragg",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 8282,
+      "quest_name": "Noggle's Lost Satchel",
+      "quest_tag": null,
+      "required_level": 54,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15182,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 50.75,
+              "y": 33.65
+            }
+          ],
+          "name": "Vish Kozus",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8283"
+      ],
+      "instruction": "Turn in [QT8283 Wanted - Deathclasp, Terror of the Sands] to Vish Kozus",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 8283,
+      "quest_name": "Wanted - Deathclasp, Terror of the Sands",
+      "quest_tag": "Elite",
+      "required_level": 54,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15183,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 49.67,
+              "y": 37.46
+            }
+          ],
+          "name": "Geologist Larksbane",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8285"
+      ],
+      "instruction": "Accept [QA8285 The Deserter] from Geologist Larksbane.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 8285,
+      "quest_name": "The Deserter",
+      "quest_tag": null,
+      "required_level": 54,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8285"
+      ],
+      "instruction": "Complete [QC8285 The Deserter]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 8285,
+      "quest_name": "The Deserter",
+      "quest_tag": null,
+      "required_level": 54,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15194,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 67.19,
+              "y": 69.76
+            }
+          ],
+          "name": "Hermit Ortell",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8285"
+      ],
+      "instruction": "Turn in [QT8285 The Deserter] to Hermit Ortell",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 8285,
+      "quest_name": "The Deserter",
+      "quest_tag": null,
+      "required_level": 54,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15194,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 67.19,
+              "y": 69.76
+            }
+          ],
+          "name": "Hermit Ortell",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8279"
+      ],
+      "instruction": "Accept [QA8279 The Twilight Lexicon] from Hermit Ortell.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 8279,
+      "quest_name": "The Twilight Lexicon",
+      "quest_tag": null,
+      "required_level": 54,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8279"
+      ],
+      "instruction": "Collect or use the required items: Twilight Lexicon - Chapter 1, Twilight Lexicon - Chapter 2, Twilight Lexicon - Chapter 3. [QC8279 The Twilight Lexicon]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Twilight Lexicon - Chapter 1, Twilight Lexicon - Chapter 2, Twilight Lexicon - Chapter 3",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 20394,
+          "kind": "item",
+          "locations": [],
+          "name": "Twilight Lexicon - Chapter 1",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 20395,
+          "kind": "item",
+          "locations": [],
+          "name": "Twilight Lexicon - Chapter 2",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 20396,
+          "kind": "item",
+          "locations": [],
+          "name": "Twilight Lexicon - Chapter 3",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 21,
+      "quest_id": 8279,
+      "quest_name": "The Twilight Lexicon",
+      "quest_tag": null,
+      "required_level": 54,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15194,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 67.19,
+              "y": 69.76
+            }
+          ],
+          "name": "Hermit Ortell",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8279"
+      ],
+      "instruction": "Turn in [QT8279 The Twilight Lexicon] to Hermit Ortell",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 22,
+      "quest_id": 8279,
+      "quest_name": "The Twilight Lexicon",
+      "quest_tag": null,
+      "required_level": 54,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15194,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 67.19,
+              "y": 69.76
+            }
+          ],
+          "name": "Hermit Ortell",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8287"
+      ],
+      "instruction": "Accept [QA8287 A Terrible Purpose] from Hermit Ortell.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 23,
+      "quest_id": 8287,
+      "quest_name": "A Terrible Purpose",
+      "quest_tag": null,
+      "required_level": 54,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15194,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 67.19,
+              "y": 69.76
+            }
+          ],
+          "name": "Hermit Ortell",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8323"
+      ],
+      "instruction": "Accept [QA8323 True Believers] from Hermit Ortell.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 24,
+      "quest_id": 8323,
+      "quest_name": "True Believers",
+      "quest_tag": null,
+      "required_level": 54,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "before_quest_id": 8804,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8804:requiredLevel"
+      ],
+      "instruction": "Reach level 55 before accepting Desert Survival Kits. [XP55 Level 55]",
+      "map_id": 1377,
+      "map_name": "Silithus",
+      "optional": false,
+      "order": 25,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 55,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": null,
+      "y": null
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 21378,
+          "kind": "item",
+          "locations": [],
+          "name": "Logistics Task Briefing I",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8804"
+      ],
+      "instruction": "Accept [QA8804 Desert Survival Kits] from Logistics Task Briefing I.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 26,
+      "quest_id": 8804,
+      "quest_name": "Desert Survival Kits",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 21379,
+          "kind": "item",
+          "locations": [],
+          "name": "Logistics Task Briefing II",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8805"
+      ],
+      "instruction": "Accept [QA8805 Boots for the Guard] from Logistics Task Briefing II.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 27,
+      "quest_id": 8805,
+      "quest_name": "Boots for the Guard",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 21380,
+          "kind": "item",
+          "locations": [],
+          "name": "Logistics Task Briefing III",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8806"
+      ],
+      "instruction": "Accept [QA8806 Grinding Stones for the Guard] from Logistics Task Briefing III.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 28,
+      "quest_id": 8806,
+      "quest_name": "Grinding Stones for the Guard",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 21382,
+          "kind": "item",
+          "locations": [],
+          "name": "Logistics Task Briefing V",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8807"
+      ],
+      "instruction": "Accept [QA8807 Scrying Materials] from Logistics Task Briefing V.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 29,
+      "quest_id": 8807,
+      "quest_name": "Scrying Materials",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8287"
+      ],
+      "instruction": "Complete [QC8287 A Terrible Purpose]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 30,
+      "quest_id": 8287,
+      "quest_name": "A Terrible Purpose",
+      "quest_tag": null,
+      "required_level": 54,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8323"
+      ],
+      "instruction": "Collect or use the required item: Encrypted Twilight Text. [QC8323 True Believers]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Encrypted Twilight Text",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 20404,
+          "kind": "item",
+          "locations": [],
+          "name": "Encrypted Twilight Text",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 31,
+      "quest_id": 8323,
+      "quest_name": "True Believers",
+      "quest_tag": null,
+      "required_level": 54,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8804"
+      ],
+      "instruction": "Collect or use the required items: Globe of Water, Powerful Anti-Venom, Smoked Desert Dumplings. [QC8804 Desert Survival Kits]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Globe of Water, Powerful Anti-Venom, Smoked Desert Dumplings",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 7079,
+          "kind": "item",
+          "locations": [],
+          "name": "Globe of Water",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 19440,
+          "kind": "item",
+          "locations": [],
+          "name": "Powerful Anti-Venom",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 20452,
+          "kind": "item",
+          "locations": [],
+          "name": "Smoked Desert Dumplings",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 32,
+      "quest_id": 8804,
+      "quest_name": "Desert Survival Kits",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8805"
+      ],
+      "instruction": "Collect or use the required item: Ornate Mithril Boots. [QC8805 Boots for the Guard]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Ornate Mithril Boots",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 7936,
+          "kind": "item",
+          "locations": [],
+          "name": "Ornate Mithril Boots",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 33,
+      "quest_id": 8805,
+      "quest_name": "Boots for the Guard",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8806"
+      ],
+      "instruction": "Collect or use the required items: Dense Grinding Stone, Solid Grinding Stone, Heavy Grinding Stone. [QC8806 Grinding Stones for the Guard]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Dense Grinding Stone, Solid Grinding Stone, Heavy Grinding Stone",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 12644,
+          "kind": "item",
+          "locations": [],
+          "name": "Dense Grinding Stone",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 7966,
+          "kind": "item",
+          "locations": [],
+          "name": "Solid Grinding Stone",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 3486,
+          "kind": "item",
+          "locations": [],
+          "name": "Heavy Grinding Stone",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 34,
+      "quest_id": 8806,
+      "quest_name": "Grinding Stones for the Guard",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8807"
+      ],
+      "instruction": "Collect or use the required items: Large Brilliant Shard, Large Radiant Shard, Huge Emerald. [QC8807 Scrying Materials]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Large Brilliant Shard, Large Radiant Shard, Huge Emerald",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 14344,
+          "kind": "item",
+          "locations": [],
+          "name": "Large Brilliant Shard",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 11178,
+          "kind": "item",
+          "locations": [],
+          "name": "Large Radiant Shard",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 12364,
+          "kind": "item",
+          "locations": [],
+          "name": "Huge Emerald",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 35,
+      "quest_id": 8807,
+      "quest_name": "Scrying Materials",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15194,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 67.19,
+              "y": 69.76
+            }
+          ],
+          "name": "Hermit Ortell",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8323"
+      ],
+      "instruction": "Turn in [QT8323 True Believers] to Hermit Ortell",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 36,
+      "quest_id": 8323,
+      "quest_name": "True Believers",
+      "quest_tag": null,
+      "required_level": 54,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15174,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 51.89,
+              "y": 39.16
+            }
+          ],
+          "name": "Calandrath",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8804"
+      ],
+      "instruction": "Turn in [QT8804 Desert Survival Kits] to Calandrath",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 37,
+      "quest_id": 8804,
+      "quest_name": "Desert Survival Kits",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15183,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 49.67,
+              "y": 37.46
+            }
+          ],
+          "name": "Geologist Larksbane",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8807"
+      ],
+      "instruction": "Turn in [QT8807 Scrying Materials] to Geologist Larksbane",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 38,
+      "quest_id": 8807,
+      "quest_name": "Scrying Materials",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15181,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 49.2,
+              "y": 34.18
+            }
+          ],
+          "name": "Commander Mar'alith",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8287"
+      ],
+      "instruction": "Turn in [QT8287 A Terrible Purpose] to Commander Mar'alith",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 39,
+      "quest_id": 8287,
+      "quest_name": "A Terrible Purpose",
+      "quest_tag": null,
+      "required_level": 54,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15182,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 50.75,
+              "y": 33.65
+            }
+          ],
+          "name": "Vish Kozus",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8805"
+      ],
+      "instruction": "Turn in [QT8805 Boots for the Guard] to Vish Kozus",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 40,
+      "quest_id": 8805,
+      "quest_name": "Boots for the Guard",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 15182,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 50.75,
+              "y": 33.65
+            }
+          ],
+          "name": "Vish Kozus",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8806"
+      ],
+      "instruction": "Turn in [QT8806 Grinding Stones for the Guard] to Vish Kozus",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 41,
+      "quest_id": 8806,
+      "quest_name": "Grinding Stones for the Guard",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17082,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 50.68,
+              "y": 34.71
+            }
+          ],
+          "name": "Rifleman Torrig",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9415"
+      ],
+      "instruction": "Accept [QA9415 Report to Marshal Bluewall] from Rifleman Torrig.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 42,
+      "quest_id": 9415,
+      "quest_name": "Report to Marshal Bluewall",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9415"
+      ],
+      "instruction": "Complete [QC9415 Report to Marshal Bluewall]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 43,
+      "quest_id": 9415,
+      "quest_name": "Report to Marshal Bluewall",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17080,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1377,
+              "map_name": "Silithus",
+              "verification": "questie_structured_source_only",
+              "x": 33.29,
+              "y": 51.06
+            }
+          ],
+          "name": "Marshal Bluewall",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9415"
+      ],
+      "instruction": "Turn in [QT9415 Report to Marshal Bluewall] to Marshal Bluewall",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 44,
+      "quest_id": 9415,
+      "quest_name": "Report to Marshal Bluewall",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1377,
+      "zone_or_sort_name": "Silithus"
+    },
+    {
+      "before_quest_id": 969,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:npc:11138",
+        "authored-route:guidelime-tugs-tbc-alliance-2.50:52-53Felwood.lua:43"
+      ],
+      "instruction": "Optional: learn the flight path from Maethrya. [P][G62.33,36.61 Winterspring][O]",
+      "map_id": 618,
+      "map_name": "Winterspring",
+      "optional": true,
+      "order": 45,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "acquire_flight_path",
+      "verification": "cross_verified_questie_and_authored_route",
+      "x": 62.33,
+      "y": 36.61
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10307,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 61.92,
+              "y": 38.3
+            }
+          ],
+          "name": "Witch Doctor Mau'ari",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:969"
+      ],
+      "instruction": "Accept [QA969 Luck Be With You] from Witch Doctor Mau'ari.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 46,
+      "quest_id": 969,
+      "quest_name": "Luck Be With You",
+      "quest_tag": "Elite",
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 618,
+      "zone_or_sort_name": "Winterspring"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:969"
+      ],
+      "instruction": "Elite/group recommended \u2014 Collect or use the required item: Frostmaul Shards. [QC969 Luck Be With You]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Frostmaul Shards",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 12334,
+          "kind": "item",
+          "locations": [],
+          "name": "Frostmaul Shards",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 47,
+      "quest_id": 969,
+      "quest_name": "Luck Be With You",
+      "quest_tag": "Elite",
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 618,
+      "zone_or_sort_name": "Winterspring"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10307,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 61.92,
+              "y": 38.3
+            }
+          ],
+          "name": "Witch Doctor Mau'ari",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:969"
+      ],
+      "instruction": "Turn in [QT969 Luck Be With You] to Witch Doctor Mau'ari",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 48,
+      "quest_id": 969,
+      "quest_name": "Luck Be With You",
+      "quest_tag": "Elite",
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 618,
+      "zone_or_sort_name": "Winterspring"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10307,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 61.92,
+              "y": 38.3
+            }
+          ],
+          "name": "Witch Doctor Mau'ari",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:975"
+      ],
+      "instruction": "Accept [QA975 Cache of Mau'ari] from Witch Doctor Mau'ari.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 49,
+      "quest_id": 975,
+      "quest_name": "Cache of Mau'ari",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 618,
+      "zone_or_sort_name": "Winterspring"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:975"
+      ],
+      "instruction": "Complete the scripted or exploration event. [QC975 Cache of Mau'ari]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 50,
+      "quest_id": 975,
+      "quest_name": "Cache of Mau'ari",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 618,
+      "zone_or_sort_name": "Winterspring"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10307,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 618,
+              "map_name": "Winterspring",
+              "verification": "questie_structured_source_only",
+              "x": 61.92,
+              "y": 38.3
+            }
+          ],
+          "name": "Witch Doctor Mau'ari",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:975"
+      ],
+      "instruction": "Turn in [QT975 Cache of Mau'ari] to Witch Doctor Mau'ari",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 51,
+      "quest_id": 975,
+      "quest_name": "Cache of Mau'ari",
+      "quest_tag": null,
+      "required_level": 55,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 618,
+      "zone_or_sort_name": "Winterspring"
+    }
+  ],
+  "title": "70 Silithus"
+}

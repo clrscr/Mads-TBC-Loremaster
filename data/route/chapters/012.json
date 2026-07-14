@@ -1,0 +1,1911 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 11 Dun Morogh & Redridge Mountains, or select this chapter on a partially completed character. Begin in Teldrassil with Conservator Ilthalaine. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 141,
+    "map_name": "Teldrassil",
+    "x": 58.69,
+    "y": 44.27
+  },
+  "entry_zone_or_sort": 188,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 141,
+    "map_name": "Teldrassil",
+    "quest_id": 3522,
+    "tag": "QT",
+    "x": 54.59,
+    "y": 32.99
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/012_world_12.lua",
+  "id": "012-primary-12-deeprun-tram",
+  "maximum_level": 15,
+  "minimum_level": 15,
+  "next_chapter": "13 Azuremyst Isle",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "11 Dun Morogh & Redridge Mountains",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 456,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:178:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:456:starter",
+        "travel-network:auberdine-menethil",
+        "https://www.wowhead.com/tbc/quest=942/the-absent-minded-prospector"
+      ],
+      "instruction": "Travel from Elwynn Forest to Teldrassil: Take the ship between Auberdine and Menethil Harbor. Continue to [G58.69,44.27 Teldrassil]. [O]",
+      "map_id": 141,
+      "map_name": "Teldrassil",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 12,
+      "origin_map_name": "Elwynn Forest",
+      "origin_x": 65.22,
+      "origin_y": 69.71,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [
+        "auberdine-menethil"
+      ],
+      "type": "transport",
+      "verification": "questie_endpoints_and_tbc_transport_network",
+      "x": 58.69,
+      "y": 44.27
+    },
+    {
+      "before_quest_id": 456,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:456:starter"
+      ],
+      "instruction": "Before you begin: travel to Teldrassil and meet the first quest giver at [G58.69,44.27 Teldrassil]. Leave at least two quest-log slots open. [O]",
+      "map_id": 141,
+      "map_name": "Teldrassil",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 58.69,
+      "y": 44.27
+    },
+    {
+      "before_quest_id": 456,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:456:requiredLevel"
+      ],
+      "instruction": "Reach level 15 before accepting The Balance of Nature. [XP15 Level 15]",
+      "map_id": 141,
+      "map_name": "Teldrassil",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 15,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 58.69,
+      "y": 44.27
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2079,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 58.69,
+              "y": 44.27
+            }
+          ],
+          "name": "Conservator Ilthalaine",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:456"
+      ],
+      "instruction": "Accept [QA456 The Balance of Nature] from Conservator Ilthalaine.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 456,
+      "quest_name": "The Balance of Nature",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 188,
+      "zone_or_sort_name": "Map or sort 188"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:456"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Young Nightsaber, Young Thistle Boar. [QC456 The Balance of Nature]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Young Nightsaber, Young Thistle Boar",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2031,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 63.35,
+              "y": 42.14
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 64.37,
+              "y": 40.47
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 61.48,
+              "y": 39.3
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 64.32,
+              "y": 42.03
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 62.84,
+              "y": 43.93
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 62.64,
+              "y": 42.31
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 58.39,
+              "y": 46.73
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 56.62,
+              "y": 44.52
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 62.01,
+              "y": 43.61
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 61.58,
+              "y": 44.19
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 61.61,
+              "y": 40.94
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 62.56,
+              "y": 41.7
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 62.18,
+              "y": 45.44
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 62.3,
+              "y": 44.3
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 61.97,
+              "y": 42.82
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 58.81,
+              "y": 45.95
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 58.43,
+              "y": 45.56
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 60.3,
+              "y": 45.99
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 60.61,
+              "y": 45.03
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 61.09,
+              "y": 45.13
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 61.38,
+              "y": 44.51
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 57.86,
+              "y": 38.95
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 61.86,
+              "y": 44.22
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 57.87,
+              "y": 44.69
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 61.48,
+              "y": 41.62
+            }
+          ],
+          "name": "Young Nightsaber",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1984,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 56.72,
+              "y": 42.19
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 55.6,
+              "y": 41.92
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 57.77,
+              "y": 42.42
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 55.49,
+              "y": 42.26
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 55.07,
+              "y": 43.42
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 63.23,
+              "y": 42.23
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 63.3,
+              "y": 42.44
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 55.54,
+              "y": 43.44
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 55.87,
+              "y": 41.25
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 62.08,
+              "y": 41.23
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 60.61,
+              "y": 46.26
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 56.57,
+              "y": 42.22
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 57.63,
+              "y": 39.54
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 57.44,
+              "y": 45.02
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 56.68,
+              "y": 44.25
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 57.05,
+              "y": 45.62
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 61.29,
+              "y": 43.71
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 61.53,
+              "y": 42.94
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 61.17,
+              "y": 45.66
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 62.03,
+              "y": 42.45
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 59.1,
+              "y": 43.34
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 59.5,
+              "y": 45.26
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 58.51,
+              "y": 45.66
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 59.0,
+              "y": 44.37
+            }
+          ],
+          "name": "Young Thistle Boar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 5,
+      "quest_id": 456,
+      "quest_name": "The Balance of Nature",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 188,
+      "zone_or_sort_name": "Map or sort 188"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2079,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 58.69,
+              "y": 44.27
+            }
+          ],
+          "name": "Conservator Ilthalaine",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:456"
+      ],
+      "instruction": "Turn in [QT456 The Balance of Nature] to Conservator Ilthalaine",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 456,
+      "quest_name": "The Balance of Nature",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 188,
+      "zone_or_sort_name": "Map or sort 188"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2079,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 58.69,
+              "y": 44.27
+            }
+          ],
+          "name": "Conservator Ilthalaine",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:457"
+      ],
+      "instruction": "Accept [QA457 The Balance of Nature] from Conservator Ilthalaine.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 457,
+      "quest_name": "The Balance of Nature",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 188,
+      "zone_or_sort_name": "Map or sort 188"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2077,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 59.92,
+              "y": 42.47
+            }
+          ],
+          "name": "Melithar Staghelm",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:458"
+      ],
+      "instruction": "Accept [QA458 The Woodland Protector] from Melithar Staghelm.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 458,
+      "quest_name": "The Woodland Protector",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 188,
+      "zone_or_sort_name": "Map or sort 188"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:457"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Mangy Nightsaber, Thistle Boar. [QC457 The Balance of Nature]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Mangy Nightsaber, Thistle Boar",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2032,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 60.0,
+              "y": 36.04
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 63.44,
+              "y": 38.79
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 62.36,
+              "y": 39.03
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 62.3,
+              "y": 37.99
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 62.16,
+              "y": 39.01
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 62.04,
+              "y": 36.87
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 62.73,
+              "y": 37.86
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 62.38,
+              "y": 37.04
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 63.01,
+              "y": 37.01
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 61.25,
+              "y": 39.08
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 59.52,
+              "y": 35.79
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 58.93,
+              "y": 35.87
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 59.18,
+              "y": 31.46
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 59.84,
+              "y": 34.21
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 60.69,
+              "y": 35.54
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 60.98,
+              "y": 34.68
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 62.56,
+              "y": 34.43
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 61.73,
+              "y": 35.17
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 62.86,
+              "y": 36.47
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 60.55,
+              "y": 34.34
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 60.31,
+              "y": 36.12
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 60.82,
+              "y": 35.68
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 62.47,
+              "y": 38.25
+            }
+          ],
+          "name": "Mangy Nightsaber",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1985,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 55.34,
+              "y": 37.07
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 56.35,
+              "y": 37.88
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 55.5,
+              "y": 39.44
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 56.36,
+              "y": 36.94
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 56.33,
+              "y": 38.36
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 57.19,
+              "y": 35.71
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 61.83,
+              "y": 38.65
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 60.15,
+              "y": 39.09
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 59.81,
+              "y": 37.6
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 60.21,
+              "y": 34.85
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 58.24,
+              "y": 34.84
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 60.04,
+              "y": 31.59
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 59.43,
+              "y": 34.61
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 60.28,
+              "y": 34.15
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 60.34,
+              "y": 34.04
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 59.64,
+              "y": 36.91
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 61.37,
+              "y": 36.04
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 61.37,
+              "y": 35.3
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 61.8,
+              "y": 34.25
+            },
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 62.2,
+              "y": 35.87
+            }
+          ],
+          "name": "Thistle Boar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 9,
+      "quest_id": 457,
+      "quest_name": "The Balance of Nature",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 188,
+      "zone_or_sort_name": "Map or sort 188"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:458"
+      ],
+      "instruction": "Complete [QC458 The Woodland Protector]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 458,
+      "quest_name": "The Woodland Protector",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 188,
+      "zone_or_sort_name": "Map or sort 188"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2079,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 58.69,
+              "y": 44.27
+            }
+          ],
+          "name": "Conservator Ilthalaine",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:457"
+      ],
+      "instruction": "Turn in [QT457 The Balance of Nature] to Conservator Ilthalaine",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 457,
+      "quest_name": "The Balance of Nature",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 188,
+      "zone_or_sort_name": "Map or sort 188"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1992,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 57.83,
+              "y": 45.21
+            }
+          ],
+          "name": "Tarindrella",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:458"
+      ],
+      "instruction": "Turn in [QT458 The Woodland Protector] to Tarindrella",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 458,
+      "quest_name": "The Woodland Protector",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 188,
+      "zone_or_sort_name": "Map or sort 188"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1992,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 57.83,
+              "y": 45.21
+            }
+          ],
+          "name": "Tarindrella",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:459"
+      ],
+      "instruction": "Accept [QA459 The Woodland Protector] from Tarindrella.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 459,
+      "quest_name": "The Woodland Protector",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 188,
+      "zone_or_sort_name": "Map or sort 188"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8583,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 60.9,
+              "y": 41.96
+            }
+          ],
+          "name": "Dirania Silvershine",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4495"
+      ],
+      "instruction": "Accept [QA4495 A Good Friend] from Dirania Silvershine.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 4495,
+      "quest_name": "A Good Friend",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 188,
+      "zone_or_sort_name": "Map or sort 188"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:459"
+      ],
+      "instruction": "Collect or use the required item: Fel Moss. [QC459 The Woodland Protector]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Fel Moss",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 3297,
+          "kind": "item",
+          "locations": [],
+          "name": "Fel Moss",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 15,
+      "quest_id": 459,
+      "quest_name": "The Woodland Protector",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 188,
+      "zone_or_sort_name": "Map or sort 188"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4495"
+      ],
+      "instruction": "Complete [QC4495 A Good Friend]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 4495,
+      "quest_name": "A Good Friend",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 188,
+      "zone_or_sort_name": "Map or sort 188"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1992,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 57.83,
+              "y": 45.21
+            }
+          ],
+          "name": "Tarindrella",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:459"
+      ],
+      "instruction": "Turn in [QT459 The Woodland Protector] to Tarindrella",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 459,
+      "quest_name": "The Woodland Protector",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 188,
+      "zone_or_sort_name": "Map or sort 188"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8584,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 54.59,
+              "y": 32.99
+            }
+          ],
+          "name": "Iverron",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4495"
+      ],
+      "instruction": "Turn in [QT4495 A Good Friend] to Iverron",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 4495,
+      "quest_name": "A Good Friend",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 188,
+      "zone_or_sort_name": "Map or sort 188"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8584,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 54.59,
+              "y": 32.99
+            }
+          ],
+          "name": "Iverron",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3519"
+      ],
+      "instruction": "Accept [QA3519 A Friend in Need] from Iverron.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 3519,
+      "quest_name": "A Friend in Need",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 188,
+      "zone_or_sort_name": "Map or sort 188"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3519"
+      ],
+      "instruction": "Complete [QC3519 A Friend in Need]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 3519,
+      "quest_name": "A Friend in Need",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 188,
+      "zone_or_sort_name": "Map or sort 188"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8583,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 60.9,
+              "y": 41.96
+            }
+          ],
+          "name": "Dirania Silvershine",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3519"
+      ],
+      "instruction": "Turn in [QT3519 A Friend in Need] to Dirania Silvershine",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 3519,
+      "quest_name": "A Friend in Need",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 188,
+      "zone_or_sort_name": "Map or sort 188"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8583,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 60.9,
+              "y": 41.96
+            }
+          ],
+          "name": "Dirania Silvershine",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3521"
+      ],
+      "instruction": "Accept [QA3521 Iverron's Antidote] from Dirania Silvershine.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 22,
+      "quest_id": 3521,
+      "quest_name": "Iverron's Antidote",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 188,
+      "zone_or_sort_name": "Map or sort 188"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3521"
+      ],
+      "instruction": "Collect or use the required items: Hyacinth Mushroom, Moonpetal Lily, Webwood Ichor. [QC3521 Iverron's Antidote]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Hyacinth Mushroom, Moonpetal Lily, Webwood Ichor",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 10639,
+          "kind": "item",
+          "locations": [],
+          "name": "Hyacinth Mushroom",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 10641,
+          "kind": "item",
+          "locations": [],
+          "name": "Moonpetal Lily",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 10640,
+          "kind": "item",
+          "locations": [],
+          "name": "Webwood Ichor",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 23,
+      "quest_id": 3521,
+      "quest_name": "Iverron's Antidote",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 188,
+      "zone_or_sort_name": "Map or sort 188"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8583,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 60.9,
+              "y": 41.96
+            }
+          ],
+          "name": "Dirania Silvershine",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3521"
+      ],
+      "instruction": "Turn in [QT3521 Iverron's Antidote] to Dirania Silvershine",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 24,
+      "quest_id": 3521,
+      "quest_name": "Iverron's Antidote",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 188,
+      "zone_or_sort_name": "Map or sort 188"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8583,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 60.9,
+              "y": 41.96
+            }
+          ],
+          "name": "Dirania Silvershine",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3522"
+      ],
+      "instruction": "Accept [QA3522 Iverron's Antidote] from Dirania Silvershine.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 25,
+      "quest_id": 3522,
+      "quest_name": "Iverron's Antidote",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 188,
+      "zone_or_sort_name": "Map or sort 188"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3522"
+      ],
+      "instruction": "Complete [QC3522 Iverron's Antidote]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 26,
+      "quest_id": 3522,
+      "quest_name": "Iverron's Antidote",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 188,
+      "zone_or_sort_name": "Map or sort 188"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8584,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 141,
+              "map_name": "Teldrassil",
+              "verification": "questie_structured_source_only",
+              "x": 54.59,
+              "y": 32.99
+            }
+          ],
+          "name": "Iverron",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3522"
+      ],
+      "instruction": "Turn in [QT3522 Iverron's Antidote] to Iverron",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 27,
+      "quest_id": 3522,
+      "quest_name": "Iverron's Antidote",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 188,
+      "zone_or_sort_name": "Map or sort 188"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 12997,
+          "kind": "npc",
+          "locations": [],
+          "name": "Monty",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6661"
+      ],
+      "instruction": "Accept [QA6661 Deeprun Rat Roundup] from Monty.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 28,
+      "quest_id": 6661,
+      "quest_name": "Deeprun Rat Roundup",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 2257,
+      "zone_or_sort_name": "Deeprun Tram"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6661"
+      ],
+      "instruction": "Use the quest item [UI17117-] as directed; complete the required NPC or creature objective: Enthralled Deeprun Rat. [QC6661 Deeprun Rat Roundup]",
+      "item_use_id": 17117,
+      "objective_hint": "Complete the required NPC or creature objective: Enthralled Deeprun Rat",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 13017,
+          "kind": "npc",
+          "locations": [],
+          "name": "Enthralled Deeprun Rat",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 29,
+      "quest_id": 6661,
+      "quest_name": "Deeprun Rat Roundup",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 2257,
+      "zone_or_sort_name": "Deeprun Tram"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 12997,
+          "kind": "npc",
+          "locations": [],
+          "name": "Monty",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6661"
+      ],
+      "instruction": "Turn in [QT6661 Deeprun Rat Roundup] to Monty",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 30,
+      "quest_id": 6661,
+      "quest_name": "Deeprun Rat Roundup",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 2257,
+      "zone_or_sort_name": "Deeprun Tram"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 12997,
+          "kind": "npc",
+          "locations": [],
+          "name": "Monty",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6662"
+      ],
+      "instruction": "Accept [QA6662 Me Brother, Nipsy] from Monty.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 31,
+      "quest_id": 6662,
+      "quest_name": "Me Brother, Nipsy",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 2257,
+      "zone_or_sort_name": "Deeprun Tram"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6662"
+      ],
+      "instruction": "Complete [QC6662 Me Brother, Nipsy]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 32,
+      "quest_id": 6662,
+      "quest_name": "Me Brother, Nipsy",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 2257,
+      "zone_or_sort_name": "Deeprun Tram"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 13018,
+          "kind": "npc",
+          "locations": [],
+          "name": "Nipsy",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6662"
+      ],
+      "instruction": "Turn in [QT6662 Me Brother, Nipsy] to Nipsy",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 33,
+      "quest_id": 6662,
+      "quest_name": "Me Brother, Nipsy",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 2257,
+      "zone_or_sort_name": "Deeprun Tram"
+    }
+  ],
+  "title": "12 Deeprun Tram"
+}

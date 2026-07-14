@@ -1,0 +1,4656 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 29 Dustwallow Marsh, or select this chapter on a partially completed character. Begin in Desolace with Captain Pentigast. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 405,
+    "map_name": "Desolace",
+    "x": 66.66,
+    "y": 10.93
+  },
+  "entry_zone_or_sort": 405,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 1519,
+    "map_name": "Stormwind City",
+    "quest_id": 563,
+    "tag": "QT",
+    "x": 72.57,
+    "y": 15.88
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/030_world_30.lua",
+  "id": "030-primary-30-desolace",
+  "maximum_level": 30,
+  "minimum_level": 30,
+  "next_chapter": "31 Arathi Highlands & Hillsbrad Foothills",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "29 Dustwallow Marsh",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 1382,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1115:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1382:starter",
+        "travel-network:ratchet-booty-bay",
+        "https://www.wowhead.com/tbc/quest=1040/passage-to-booty-bay"
+      ],
+      "instruction": "Travel from Stranglethorn Vale to Desolace: Take the ship between Ratchet and Booty Bay. Continue to [G66.66,10.93 Desolace]. [O]",
+      "map_id": 405,
+      "map_name": "Desolace",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 33,
+      "origin_map_name": "Stranglethorn Vale",
+      "origin_x": 26.94,
+      "origin_y": 77.21,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [
+        "ratchet-booty-bay"
+      ],
+      "type": "transport",
+      "verification": "questie_endpoints_and_tbc_transport_network",
+      "x": 66.66,
+      "y": 10.93
+    },
+    {
+      "before_quest_id": 1382,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1382:starter"
+      ],
+      "instruction": "Before you begin: travel to Desolace and meet the first quest giver at [G66.66,10.93 Desolace]. Leave at least two quest-log slots open. [O]",
+      "map_id": 405,
+      "map_name": "Desolace",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 66.66,
+      "y": 10.93
+    },
+    {
+      "before_quest_id": 1382,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1382:requiredLevel"
+      ],
+      "instruction": "Reach level 30 before accepting Strange Alliance. [XP30 Level 30]",
+      "map_id": 405,
+      "map_name": "Desolace",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 30,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 66.66,
+      "y": 10.93
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5396,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 66.66,
+              "y": 10.93
+            }
+          ],
+          "name": "Captain Pentigast",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1382"
+      ],
+      "instruction": "Accept [QA1382 Strange Alliance] from Captain Pentigast.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 1382,
+      "quest_name": "Strange Alliance",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1382"
+      ],
+      "instruction": "Complete [QC1382 Strange Alliance]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 1382,
+      "quest_name": "Strange Alliance",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5397,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 36.22,
+              "y": 79.25
+            }
+          ],
+          "name": "Uthek the Wise",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1382"
+      ],
+      "instruction": "Turn in [QT1382 Strange Alliance] to Uthek the Wise",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 1382,
+      "quest_name": "Strange Alliance",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5397,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 36.22,
+              "y": 79.25
+            }
+          ],
+          "name": "Uthek the Wise",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1384"
+      ],
+      "instruction": "Accept [QA1384 Raid on the Kolkar] from Uthek the Wise.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 1384,
+      "quest_name": "Raid on the Kolkar",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1384"
+      ],
+      "instruction": "Collect or use the required item: Crude Charm. [QC1384 Raid on the Kolkar]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Crude Charm",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 6079,
+          "kind": "item",
+          "locations": [],
+          "name": "Crude Charm",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 8,
+      "quest_id": 1384,
+      "quest_name": "Raid on the Kolkar",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5397,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 36.22,
+              "y": 79.25
+            }
+          ],
+          "name": "Uthek the Wise",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1384"
+      ],
+      "instruction": "Turn in [QT1384 Raid on the Kolkar] to Uthek the Wise",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 1384,
+      "quest_name": "Raid on the Kolkar",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5397,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 36.22,
+              "y": 79.25
+            }
+          ],
+          "name": "Uthek the Wise",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1370"
+      ],
+      "instruction": "Accept [QA1370 Stealing Supplies] from Uthek the Wise.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 1370,
+      "quest_name": "Stealing Supplies",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1370"
+      ],
+      "instruction": "Collect or use the required item: Crudely Dried Meat. [QC1370 Stealing Supplies]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Crudely Dried Meat",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 6069,
+          "kind": "item",
+          "locations": [],
+          "name": "Crudely Dried Meat",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 11,
+      "quest_id": 1370,
+      "quest_name": "Stealing Supplies",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5397,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 36.22,
+              "y": 79.25
+            }
+          ],
+          "name": "Uthek the Wise",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1370"
+      ],
+      "instruction": "Turn in [QT1370 Stealing Supplies] to Uthek the Wise",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 1370,
+      "quest_name": "Stealing Supplies",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5397,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 36.22,
+              "y": 79.25
+            }
+          ],
+          "name": "Uthek the Wise",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1373"
+      ],
+      "instruction": "Accept [QA1373 Ongeku] from Uthek the Wise.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 1373,
+      "quest_name": "Ongeku",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1373"
+      ],
+      "instruction": "Collect or use the required item: Draenethyst Shard. [QC1373 Ongeku]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Draenethyst Shard",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 6190,
+          "kind": "item",
+          "locations": [],
+          "name": "Draenethyst Shard",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 14,
+      "quest_id": 1373,
+      "quest_name": "Ongeku",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5397,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 36.22,
+              "y": 79.25
+            }
+          ],
+          "name": "Uthek the Wise",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1373"
+      ],
+      "instruction": "Turn in [QT1373 Ongeku] to Uthek the Wise",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 1373,
+      "quest_name": "Ongeku",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5397,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 36.22,
+              "y": 79.25
+            }
+          ],
+          "name": "Uthek the Wise",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1374"
+      ],
+      "instruction": "Accept [QA1374 Khan Jehn] from Uthek the Wise.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 1374,
+      "quest_name": "Khan Jehn",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1374"
+      ],
+      "instruction": "Collect or use the required item: Khan Jehn's Head. [QC1374 Khan Jehn]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Khan Jehn's Head",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 6072,
+          "kind": "item",
+          "locations": [],
+          "name": "Khan Jehn's Head",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 17,
+      "quest_id": 1374,
+      "quest_name": "Khan Jehn",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5397,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 36.22,
+              "y": 79.25
+            }
+          ],
+          "name": "Uthek the Wise",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1374"
+      ],
+      "instruction": "Turn in [QT1374 Khan Jehn] to Uthek the Wise",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 1374,
+      "quest_name": "Khan Jehn",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5397,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 36.22,
+              "y": 79.25
+            }
+          ],
+          "name": "Uthek the Wise",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1380"
+      ],
+      "instruction": "Accept [QA1380 Khan Hratha] from Uthek the Wise.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 1380,
+      "quest_name": "Khan Hratha",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1380"
+      ],
+      "instruction": "Collect or use the required item: Maraudine Key Fragment. [QC1380 Khan Hratha]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Maraudine Key Fragment",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 6077,
+          "kind": "item",
+          "locations": [],
+          "name": "Maraudine Key Fragment",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 20,
+      "quest_id": 1380,
+      "quest_name": "Khan Hratha",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5397,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 36.22,
+              "y": 79.25
+            }
+          ],
+          "name": "Uthek the Wise",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1380"
+      ],
+      "instruction": "Turn in [QT1380 Khan Hratha] to Uthek the Wise",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 1380,
+      "quest_name": "Khan Hratha",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5396,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 66.66,
+              "y": 10.93
+            }
+          ],
+          "name": "Captain Pentigast",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1385"
+      ],
+      "instruction": "Accept [QA1385 Brutal Politics] from Captain Pentigast.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 22,
+      "quest_id": 1385,
+      "quest_name": "Brutal Politics",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1385"
+      ],
+      "instruction": "Complete [QC1385 Brutal Politics]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 23,
+      "quest_id": 1385,
+      "quest_name": "Brutal Politics",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5398,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 74.97,
+              "y": 68.16
+            }
+          ],
+          "name": "Warug",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1385"
+      ],
+      "instruction": "Turn in [QT1385 Brutal Politics] to Warug",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 24,
+      "quest_id": 1385,
+      "quest_name": "Brutal Politics",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5398,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 74.97,
+              "y": 68.16
+            }
+          ],
+          "name": "Warug",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1386"
+      ],
+      "instruction": "Accept [QA1386 Assault on the Kolkar] from Warug.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 25,
+      "quest_id": 1386,
+      "quest_name": "Assault on the Kolkar",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1386"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Kolkar Centaur, Kolkar Scout, Kolkar Mauler. [QC1386 Assault on the Kolkar]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Kolkar Centaur, Kolkar Scout, Kolkar Mauler",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4632,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 69.23,
+              "y": 51.0
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 68.55,
+              "y": 52.17
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 68.67,
+              "y": 47.94
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 69.35,
+              "y": 46.87
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 68.63,
+              "y": 43.57
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 70.11,
+              "y": 41.16
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 69.35,
+              "y": 42.54
+            }
+          ],
+          "name": "Kolkar Centaur",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4633,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 70.12,
+              "y": 49.94
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 70.06,
+              "y": 45.53
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 69.3,
+              "y": 48.95
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 69.39,
+              "y": 44.42
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 68.62,
+              "y": 45.66
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 68.47,
+              "y": 38.82
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 69.3,
+              "y": 40.13
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 68.58,
+              "y": 41.22
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 68.7,
+              "y": 50.0
+            }
+          ],
+          "name": "Kolkar Scout",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4634,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 73.71,
+              "y": 43.1
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 72.15,
+              "y": 42.39
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 71.44,
+              "y": 43.76
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 70.9,
+              "y": 50.62
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 70.92,
+              "y": 46.71
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 74.44,
+              "y": 47.43
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 71.54,
+              "y": 45.46
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 72.26,
+              "y": 44.71
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 72.25,
+              "y": 40.17
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 73.05,
+              "y": 45.74
+            },
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 70.75,
+              "y": 43.6
+            }
+          ],
+          "name": "Kolkar Mauler",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 26,
+      "quest_id": 1386,
+      "quest_name": "Assault on the Kolkar",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5398,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 74.97,
+              "y": 68.16
+            }
+          ],
+          "name": "Warug",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1386"
+      ],
+      "instruction": "Turn in [QT1386 Assault on the Kolkar] to Warug",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 27,
+      "quest_id": 1386,
+      "quest_name": "Assault on the Kolkar",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5398,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 74.97,
+              "y": 68.16
+            }
+          ],
+          "name": "Warug",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1369"
+      ],
+      "instruction": "Accept [QA1369 Broken Tears] from Warug.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 28,
+      "quest_id": 1369,
+      "quest_name": "Broken Tears",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1369"
+      ],
+      "instruction": "Collect or use the required item: Broken Tears. [QC1369 Broken Tears]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Broken Tears",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 6083,
+          "kind": "item",
+          "locations": [],
+          "name": "Broken Tears",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 29,
+      "quest_id": 1369,
+      "quest_name": "Broken Tears",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5398,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 74.97,
+              "y": 68.16
+            }
+          ],
+          "name": "Warug",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1369"
+      ],
+      "instruction": "Turn in [QT1369 Broken Tears] to Warug",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 30,
+      "quest_id": 1369,
+      "quest_name": "Broken Tears",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5398,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 74.97,
+              "y": 68.16
+            }
+          ],
+          "name": "Warug",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1371"
+      ],
+      "instruction": "Accept [QA1371 Gizmo for Warug] from Warug.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 31,
+      "quest_id": 1371,
+      "quest_name": "Gizmo for Warug",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1371"
+      ],
+      "instruction": "Collect or use the required item: Advanced Target Dummy. [QC1371 Gizmo for Warug]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Advanced Target Dummy",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4392,
+          "kind": "item",
+          "locations": [],
+          "name": "Advanced Target Dummy",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 32,
+      "quest_id": 1371,
+      "quest_name": "Gizmo for Warug",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5398,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 74.97,
+              "y": 68.16
+            }
+          ],
+          "name": "Warug",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1371"
+      ],
+      "instruction": "Turn in [QT1371 Gizmo for Warug] to Warug",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 33,
+      "quest_id": 1371,
+      "quest_name": "Gizmo for Warug",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5398,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 74.97,
+              "y": 68.16
+            }
+          ],
+          "name": "Warug",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1375"
+      ],
+      "instruction": "Accept [QA1375 Khan Shaka] from Warug.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 34,
+      "quest_id": 1375,
+      "quest_name": "Khan Shaka",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1375"
+      ],
+      "instruction": "Collect or use the required item: Khan Shaka's Head. [QC1375 Khan Shaka]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Khan Shaka's Head",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 6073,
+          "kind": "item",
+          "locations": [],
+          "name": "Khan Shaka's Head",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 35,
+      "quest_id": 1375,
+      "quest_name": "Khan Shaka",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5398,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 74.97,
+              "y": 68.16
+            }
+          ],
+          "name": "Warug",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1375"
+      ],
+      "instruction": "Turn in [QT1375 Khan Shaka] to Warug",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 36,
+      "quest_id": 1375,
+      "quest_name": "Khan Shaka",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5398,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 74.97,
+              "y": 68.16
+            }
+          ],
+          "name": "Warug",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1381"
+      ],
+      "instruction": "Accept [QA1381 Khan Hratha] from Warug.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 37,
+      "quest_id": 1381,
+      "quest_name": "Khan Hratha",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1381"
+      ],
+      "instruction": "Collect or use the required item: Maraudine Key Fragment. [QC1381 Khan Hratha]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Maraudine Key Fragment",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 6077,
+          "kind": "item",
+          "locations": [],
+          "name": "Maraudine Key Fragment",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 38,
+      "quest_id": 1381,
+      "quest_name": "Khan Hratha",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5398,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 74.97,
+              "y": 68.16
+            }
+          ],
+          "name": "Warug",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1381"
+      ],
+      "instruction": "Turn in [QT1381 Khan Hratha] to Warug",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 39,
+      "quest_id": 1381,
+      "quest_name": "Khan Hratha",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5752,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 66.74,
+              "y": 10.87
+            }
+          ],
+          "name": "Corporal Melkins",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1387"
+      ],
+      "instruction": "Accept [QA1387 Centaur Bounty] from Corporal Melkins.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 40,
+      "quest_id": 1387,
+      "quest_name": "Centaur Bounty",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5642,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 66.44,
+              "y": 11.82
+            }
+          ],
+          "name": "Vahlarriel Demonslayer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1437"
+      ],
+      "instruction": "Accept [QA1437 Vahlarriel's Search] from Vahlarriel Demonslayer.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 41,
+      "quest_id": 1437,
+      "quest_name": "Vahlarriel's Search",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1387"
+      ],
+      "instruction": "Collect or use the required item: Centaur Ear. [QC1387 Centaur Bounty]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Centaur Ear",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 6067,
+          "kind": "item",
+          "locations": [],
+          "name": "Centaur Ear",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 42,
+      "quest_id": 1387,
+      "quest_name": "Centaur Bounty",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1437"
+      ],
+      "instruction": "Complete [QC1437 Vahlarriel's Search]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 43,
+      "quest_id": 1437,
+      "quest_name": "Vahlarriel's Search",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5752,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 66.74,
+              "y": 10.87
+            }
+          ],
+          "name": "Corporal Melkins",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1387"
+      ],
+      "instruction": "Turn in [QT1387 Centaur Bounty] to Corporal Melkins",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 44,
+      "quest_id": 1387,
+      "quest_name": "Centaur Bounty",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 50961,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 56.52,
+              "y": 17.84
+            }
+          ],
+          "name": "Malem Chest",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1437"
+      ],
+      "instruction": "Turn in [QT1437 Vahlarriel's Search] to Malem Chest",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 45,
+      "quest_id": 1437,
+      "quest_name": "Vahlarriel's Search",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 50961,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 56.52,
+              "y": 17.84
+            }
+          ],
+          "name": "Malem Chest",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1465"
+      ],
+      "instruction": "Accept [QA1465 Vahlarriel's Search] from Malem Chest.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 46,
+      "quest_id": 1465,
+      "quest_name": "Vahlarriel's Search",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1465"
+      ],
+      "instruction": "Complete [QC1465 Vahlarriel's Search]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 47,
+      "quest_id": 1465,
+      "quest_name": "Vahlarriel's Search",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5642,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 66.44,
+              "y": 11.82
+            }
+          ],
+          "name": "Vahlarriel Demonslayer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1465"
+      ],
+      "instruction": "Turn in [QT1465 Vahlarriel's Search] to Vahlarriel Demonslayer",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 48,
+      "quest_id": 1465,
+      "quest_name": "Vahlarriel's Search",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5642,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 66.44,
+              "y": 11.82
+            }
+          ],
+          "name": "Vahlarriel Demonslayer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1438"
+      ],
+      "instruction": "Accept [QA1438 Vahlarriel's Search] from Vahlarriel Demonslayer.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 49,
+      "quest_id": 1438,
+      "quest_name": "Vahlarriel's Search",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1438"
+      ],
+      "instruction": "Complete [QC1438 Vahlarriel's Search]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 50,
+      "quest_id": 1438,
+      "quest_name": "Vahlarriel's Search",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5644,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 54.86,
+              "y": 26.13
+            }
+          ],
+          "name": "Dalinda Malem",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1438"
+      ],
+      "instruction": "Turn in [QT1438 Vahlarriel's Search] to Dalinda Malem",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 51,
+      "quest_id": 1438,
+      "quest_name": "Vahlarriel's Search",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5644,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 54.86,
+              "y": 26.13
+            }
+          ],
+          "name": "Dalinda Malem",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1439"
+      ],
+      "instruction": "Accept [QA1439 Search for Tyranis] from Dalinda Malem.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 52,
+      "quest_id": 1439,
+      "quest_name": "Search for Tyranis",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1439"
+      ],
+      "instruction": "Collect or use the required item: Tyranis' Pendant. [QC1439 Search for Tyranis]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Tyranis' Pendant",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 6767,
+          "kind": "item",
+          "locations": [],
+          "name": "Tyranis' Pendant",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 53,
+      "quest_id": 1439,
+      "quest_name": "Search for Tyranis",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5644,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 54.86,
+              "y": 26.13
+            }
+          ],
+          "name": "Dalinda Malem",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1439"
+      ],
+      "instruction": "Turn in [QT1439 Search for Tyranis] to Dalinda Malem",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 54,
+      "quest_id": 1439,
+      "quest_name": "Search for Tyranis",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5644,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 54.86,
+              "y": 26.13
+            }
+          ],
+          "name": "Dalinda Malem",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1440"
+      ],
+      "instruction": "Accept [QA1440 Return to Vahlarriel] from Dalinda Malem.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 55,
+      "quest_id": 1440,
+      "quest_name": "Return to Vahlarriel",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1440"
+      ],
+      "instruction": "Complete the scripted or exploration event. [QC1440 Return to Vahlarriel]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 56,
+      "quest_id": 1440,
+      "quest_name": "Return to Vahlarriel",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5642,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 66.44,
+              "y": 11.82
+            }
+          ],
+          "name": "Vahlarriel Demonslayer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1440"
+      ],
+      "instruction": "Turn in [QT1440 Return to Vahlarriel] to Vahlarriel Demonslayer",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 57,
+      "quest_id": 1440,
+      "quest_name": "Return to Vahlarriel",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11596,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 60.86,
+              "y": 61.86
+            }
+          ],
+          "name": "Smeed Scrabblescrew",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5561"
+      ],
+      "instruction": "Accept [QA5561 Kodo Roundup] from Smeed Scrabblescrew.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 58,
+      "quest_id": 5561,
+      "quest_name": "Kodo Roundup",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5561"
+      ],
+      "instruction": "Complete the required NPC or creature objective: Tamed Kodo. [QC5561 Kodo Roundup]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Tamed Kodo",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11627,
+          "kind": "npc",
+          "locations": [],
+          "name": "Tamed Kodo",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 59,
+      "quest_id": 5561,
+      "quest_name": "Kodo Roundup",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11596,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 60.86,
+              "y": 61.86
+            }
+          ],
+          "name": "Smeed Scrabblescrew",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5561"
+      ],
+      "instruction": "Turn in [QT5561 Kodo Roundup] to Smeed Scrabblescrew",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 60,
+      "quest_id": 5561,
+      "quest_name": "Kodo Roundup",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11863,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 38.88,
+              "y": 27.16
+            }
+          ],
+          "name": "Azore Aldamort",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5741"
+      ],
+      "instruction": "Accept [QA5741 Sceptre of Light] from Azore Aldamort.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 61,
+      "quest_id": 5741,
+      "quest_name": "Sceptre of Light",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5741"
+      ],
+      "instruction": "Collect or use the required item: Sceptre of Light. [QC5741 Sceptre of Light]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Sceptre of Light",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 15750,
+          "kind": "item",
+          "locations": [],
+          "name": "Sceptre of Light",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 62,
+      "quest_id": 5741,
+      "quest_name": "Sceptre of Light",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11863,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 38.88,
+              "y": 27.16
+            }
+          ],
+          "name": "Azore Aldamort",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5741"
+      ],
+      "instruction": "Turn in [QT5741 Sceptre of Light] to Azore Aldamort",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 63,
+      "quest_id": 5741,
+      "quest_name": "Sceptre of Light",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11625,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 66.78,
+              "y": 58.13
+            }
+          ],
+          "name": "Cork Gizelton",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5821"
+      ],
+      "instruction": "Accept [QA5821 Bodyguard for Hire] from Cork Gizelton.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 64,
+      "quest_id": 5821,
+      "quest_name": "Bodyguard for Hire",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5821"
+      ],
+      "instruction": "Complete the scripted or exploration event. [QC5821 Bodyguard for Hire]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 65,
+      "quest_id": 5821,
+      "quest_name": "Bodyguard for Hire",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11596,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 60.86,
+              "y": 61.86
+            }
+          ],
+          "name": "Smeed Scrabblescrew",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5821"
+      ],
+      "instruction": "Turn in [QT5821 Bodyguard for Hire] to Smeed Scrabblescrew",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 66,
+      "quest_id": 5821,
+      "quest_name": "Bodyguard for Hire",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11863,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 38.88,
+              "y": 27.16
+            }
+          ],
+          "name": "Azore Aldamort",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6027"
+      ],
+      "instruction": "Accept [QA6027 Book of the Ancients] from Azore Aldamort.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 67,
+      "quest_id": 6027,
+      "quest_name": "Book of the Ancients",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 177787,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 36.07,
+              "y": 30.41
+            }
+          ],
+          "name": "Rackmore's Log",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6161"
+      ],
+      "instruction": "Accept [QA6161 Claim Rackmore's Treasure!] from Rackmore's Log.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 68,
+      "quest_id": 6161,
+      "quest_name": "Claim Rackmore's Treasure!",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6027"
+      ],
+      "instruction": "Collect or use the required item: Book of the Ancients. [QC6027 Book of the Ancients]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Book of the Ancients",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 15803,
+          "kind": "item",
+          "locations": [],
+          "name": "Book of the Ancients",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 69,
+      "quest_id": 6027,
+      "quest_name": "Book of the Ancients",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6161"
+      ],
+      "instruction": "Collect or use the required items: Rackmore's Silver Key, Rackmore's Golden Key. [QC6161 Claim Rackmore's Treasure!]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Rackmore's Silver Key, Rackmore's Golden Key",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 15878,
+          "kind": "item",
+          "locations": [],
+          "name": "Rackmore's Silver Key",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 15881,
+          "kind": "item",
+          "locations": [],
+          "name": "Rackmore's Golden Key",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 70,
+      "quest_id": 6161,
+      "quest_name": "Claim Rackmore's Treasure!",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11863,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 38.88,
+              "y": 27.16
+            }
+          ],
+          "name": "Azore Aldamort",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6027"
+      ],
+      "instruction": "Turn in [QT6027 Book of the Ancients] to Azore Aldamort",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 71,
+      "quest_id": 6027,
+      "quest_name": "Book of the Ancients",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 177786,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 30.0,
+              "y": 8.71
+            }
+          ],
+          "name": "Rackmore's Chest",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6161"
+      ],
+      "instruction": "Turn in [QT6161 Claim Rackmore's Treasure!] to Rackmore's Chest",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 72,
+      "quest_id": 6161,
+      "quest_name": "Claim Rackmore's Treasure!",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 405,
+      "zone_or_sort_name": "Desolace"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2228,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 51.46,
+              "y": 58.39
+            }
+          ],
+          "name": "Lieutenant Farren Orinelle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:536"
+      ],
+      "instruction": "Accept [QA536 Down the Coast] from Lieutenant Farren Orinelle.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 73,
+      "quest_id": 536,
+      "quest_name": "Down the Coast",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 267,
+      "zone_or_sort_name": "Hillsbrad Foothills"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:536"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Torn Fin Tidehunter, Torn Fin Oracle. [QC536 Down the Coast]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Torn Fin Tidehunter, Torn Fin Oracle",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2377,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 46.03,
+              "y": 63.96
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 41.02,
+              "y": 69.49
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 47.4,
+              "y": 64.7
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 40.67,
+              "y": 69.86
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 45.01,
+              "y": 68.56
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 41.11,
+              "y": 67.95
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 43.36,
+              "y": 68.2
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 44.62,
+              "y": 66.99
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 43.93,
+              "y": 67.15
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 46.42,
+              "y": 66.47
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 48.62,
+              "y": 64.41
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 40.33,
+              "y": 68.82
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 36.37,
+              "y": 69.61
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 39.95,
+              "y": 72.82
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 37.33,
+              "y": 70.27
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 49.4,
+              "y": 67.63
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 36.18,
+              "y": 70.22
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 38.58,
+              "y": 71.12
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 42.49,
+              "y": 72.62
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 42.69,
+              "y": 70.71
+            }
+          ],
+          "name": "Torn Fin Tidehunter",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2376,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 46.25,
+              "y": 63.04
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 40.68,
+              "y": 69.22
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 40.88,
+              "y": 68.81
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 42.73,
+              "y": 69.21
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 44.34,
+              "y": 67.87
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 45.05,
+              "y": 67.38
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 45.98,
+              "y": 66.75
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 44.37,
+              "y": 66.47
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 37.24,
+              "y": 69.14
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 37.39,
+              "y": 66.18
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 35.68,
+              "y": 66.4
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 46.14,
+              "y": 69.13
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 36.06,
+              "y": 68.74
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 47.15,
+              "y": 68.34
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 44.15,
+              "y": 71.11
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 43.95,
+              "y": 68.65
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 48.29,
+              "y": 66.37
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 36.53,
+              "y": 69.41
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 40.4,
+              "y": 71.23
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 38.02,
+              "y": 72.83
+            }
+          ],
+          "name": "Torn Fin Oracle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 74,
+      "quest_id": 536,
+      "quest_name": "Down the Coast",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 267,
+      "zone_or_sort_name": "Hillsbrad Foothills"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2228,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 51.46,
+              "y": 58.39
+            }
+          ],
+          "name": "Lieutenant Farren Orinelle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:536"
+      ],
+      "instruction": "Turn in [QT536 Down the Coast] to Lieutenant Farren Orinelle",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 75,
+      "quest_id": 536,
+      "quest_name": "Down the Coast",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 267,
+      "zone_or_sort_name": "Hillsbrad Foothills"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2228,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 51.46,
+              "y": 58.39
+            }
+          ],
+          "name": "Lieutenant Farren Orinelle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:559"
+      ],
+      "instruction": "Accept [QA559 Farren's Proof] from Lieutenant Farren Orinelle.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 76,
+      "quest_id": 559,
+      "quest_name": "Farren's Proof",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 267,
+      "zone_or_sort_name": "Hillsbrad Foothills"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:559"
+      ],
+      "instruction": "Collect or use the required item: Murloc Head. [QC559 Farren's Proof]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Murloc Head",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 3716,
+          "kind": "item",
+          "locations": [],
+          "name": "Murloc Head",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 77,
+      "quest_id": 559,
+      "quest_name": "Farren's Proof",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 267,
+      "zone_or_sort_name": "Hillsbrad Foothills"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2228,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 51.46,
+              "y": 58.39
+            }
+          ],
+          "name": "Lieutenant Farren Orinelle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:559"
+      ],
+      "instruction": "Turn in [QT559 Farren's Proof] to Lieutenant Farren Orinelle",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 78,
+      "quest_id": 559,
+      "quest_name": "Farren's Proof",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 267,
+      "zone_or_sort_name": "Hillsbrad Foothills"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2228,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 51.46,
+              "y": 58.39
+            }
+          ],
+          "name": "Lieutenant Farren Orinelle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:560"
+      ],
+      "instruction": "Accept [QA560 Farren's Proof] from Lieutenant Farren Orinelle.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 79,
+      "quest_id": 560,
+      "quest_name": "Farren's Proof",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 267,
+      "zone_or_sort_name": "Hillsbrad Foothills"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:560"
+      ],
+      "instruction": "Complete [QC560 Farren's Proof]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 80,
+      "quest_id": 560,
+      "quest_name": "Farren's Proof",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 267,
+      "zone_or_sort_name": "Hillsbrad Foothills"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2263,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 49.47,
+              "y": 58.73
+            }
+          ],
+          "name": "Marshal Redpath",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:560"
+      ],
+      "instruction": "Turn in [QT560 Farren's Proof] to Marshal Redpath",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 81,
+      "quest_id": 560,
+      "quest_name": "Farren's Proof",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 267,
+      "zone_or_sort_name": "Hillsbrad Foothills"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2263,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 49.47,
+              "y": 58.73
+            }
+          ],
+          "name": "Marshal Redpath",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:561"
+      ],
+      "instruction": "Accept [QA561 Farren's Proof] from Marshal Redpath.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 82,
+      "quest_id": 561,
+      "quest_name": "Farren's Proof",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 267,
+      "zone_or_sort_name": "Hillsbrad Foothills"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:561"
+      ],
+      "instruction": "Complete [QC561 Farren's Proof]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 83,
+      "quest_id": 561,
+      "quest_name": "Farren's Proof",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 267,
+      "zone_or_sort_name": "Hillsbrad Foothills"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2228,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 51.46,
+              "y": 58.39
+            }
+          ],
+          "name": "Lieutenant Farren Orinelle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:561"
+      ],
+      "instruction": "Turn in [QT561 Farren's Proof] to Lieutenant Farren Orinelle",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 84,
+      "quest_id": 561,
+      "quest_name": "Farren's Proof",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 267,
+      "zone_or_sort_name": "Hillsbrad Foothills"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2228,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 51.46,
+              "y": 58.39
+            }
+          ],
+          "name": "Lieutenant Farren Orinelle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:562"
+      ],
+      "instruction": "Accept [QA562 Stormwind Ho!] from Lieutenant Farren Orinelle.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 85,
+      "quest_id": 562,
+      "quest_name": "Stormwind Ho!",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 267,
+      "zone_or_sort_name": "Hillsbrad Foothills"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:562"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Daggerspine Shorehunter, Daggerspine Siren. [QC562 Stormwind Ho!]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Daggerspine Shorehunter, Daggerspine Siren",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2369,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 55.89,
+              "y": 72.28
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 58.9,
+              "y": 77.56
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 53.7,
+              "y": 63.47
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 55.87,
+              "y": 66.59
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 53.7,
+              "y": 66.75
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 54.68,
+              "y": 68.44
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 57.84,
+              "y": 69.11
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 58.16,
+              "y": 70.01
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 54.48,
+              "y": 64.37
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 57.74,
+              "y": 66.3
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 52.73,
+              "y": 65.51
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 51.7,
+              "y": 66.15
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 60.57,
+              "y": 74.73
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 58.3,
+              "y": 72.63
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 58.73,
+              "y": 74.01
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 59.79,
+              "y": 71.97
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 57.8,
+              "y": 75.95
+            }
+          ],
+          "name": "Daggerspine Shorehunter",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2371,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 56.91,
+              "y": 73.77
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 61.66,
+              "y": 81.82
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 57.03,
+              "y": 77.33
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 53.21,
+              "y": 64.23
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 58.59,
+              "y": 66.53
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 58.69,
+              "y": 66.03
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 57.91,
+              "y": 65.05
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 56.53,
+              "y": 66.2
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 55.32,
+              "y": 63.84
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 55.2,
+              "y": 61.43
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 56.3,
+              "y": 65.0
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 54.39,
+              "y": 61.98
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 59.03,
+              "y": 71.54
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 58.37,
+              "y": 68.61
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 58.89,
+              "y": 70.22
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 57.24,
+              "y": 68.35
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 56.89,
+              "y": 71.11
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 55.95,
+              "y": 69.87
+            },
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 60.14,
+              "y": 73.28
+            }
+          ],
+          "name": "Daggerspine Siren",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 86,
+      "quest_id": 562,
+      "quest_name": "Stormwind Ho!",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 267,
+      "zone_or_sort_name": "Hillsbrad Foothills"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2228,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 51.46,
+              "y": 58.39
+            }
+          ],
+          "name": "Lieutenant Farren Orinelle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:562"
+      ],
+      "instruction": "Turn in [QT562 Stormwind Ho!] to Lieutenant Farren Orinelle",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 87,
+      "quest_id": 562,
+      "quest_name": "Stormwind Ho!",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 267,
+      "zone_or_sort_name": "Hillsbrad Foothills"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2228,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 51.46,
+              "y": 58.39
+            }
+          ],
+          "name": "Lieutenant Farren Orinelle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:563"
+      ],
+      "instruction": "Accept [QA563 Reassignment] from Lieutenant Farren Orinelle.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 88,
+      "quest_id": 563,
+      "quest_name": "Reassignment",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 267,
+      "zone_or_sort_name": "Hillsbrad Foothills"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17218,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 50.99,
+              "y": 58.69
+            }
+          ],
+          "name": "Huraan",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9435"
+      ],
+      "instruction": "Accept [QA9435 Missing Crystals] from Huraan.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 89,
+      "quest_id": 9435,
+      "quest_name": "Missing Crystals",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 267,
+      "zone_or_sort_name": "Hillsbrad Foothills"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2430,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 51.89,
+              "y": 58.68
+            }
+          ],
+          "name": "Chef Jessen",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:555"
+      ],
+      "instruction": "Accept [QA555 Soothing Turtle Bisque] from Chef Jessen.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 90,
+      "quest_id": 555,
+      "quest_name": "Soothing Turtle Bisque",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 267,
+      "zone_or_sort_name": "Hillsbrad Foothills"
+    },
+    {
+      "before_quest_id": 565,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:npc:2432",
+        "authored-route:guidelime-tugs-tbc-alliance-2.50:29-31Duskwood,Hillsbrad.lua:95"
+      ],
+      "instruction": "Optional: learn the flight path from Darla Harris. [P][G49.34,52.27 Hillsbrad Foothills][O]",
+      "map_id": 267,
+      "map_name": "Hillsbrad Foothills",
+      "optional": true,
+      "order": 91,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "acquire_flight_path",
+      "verification": "cross_verified_questie_and_authored_route",
+      "x": 49.34,
+      "y": 52.27
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2438,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 49.43,
+              "y": 55.53
+            }
+          ],
+          "name": "Bartolo Ginsetti",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:565"
+      ],
+      "instruction": "Accept [QA565 Bartolo's Yeti Fur Cloak] from Bartolo Ginsetti.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 92,
+      "quest_id": 565,
+      "quest_name": "Bartolo's Yeti Fur Cloak",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 267,
+      "zone_or_sort_name": "Hillsbrad Foothills"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:563"
+      ],
+      "instruction": "Complete [QC563 Reassignment]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 93,
+      "quest_id": 563,
+      "quest_name": "Reassignment",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 267,
+      "zone_or_sort_name": "Hillsbrad Foothills"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9435"
+      ],
+      "instruction": "Collect or use the required item: Shipment of Rare Crystals. [QC9435 Missing Crystals]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Shipment of Rare Crystals",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 23646,
+          "kind": "item",
+          "locations": [],
+          "name": "Shipment of Rare Crystals",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 94,
+      "quest_id": 9435,
+      "quest_name": "Missing Crystals",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 267,
+      "zone_or_sort_name": "Hillsbrad Foothills"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:555"
+      ],
+      "instruction": "Collect or use the required items: Turtle Meat, Soothing Spices. [QC555 Soothing Turtle Bisque]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Turtle Meat, Soothing Spices",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 3712,
+          "kind": "item",
+          "locations": [],
+          "name": "Turtle Meat",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 3713,
+          "kind": "item",
+          "locations": [],
+          "name": "Soothing Spices",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 95,
+      "quest_id": 555,
+      "quest_name": "Soothing Turtle Bisque",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 267,
+      "zone_or_sort_name": "Hillsbrad Foothills"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:565"
+      ],
+      "instruction": "Collect or use the required items: Bolt of Woolen Cloth, Fine Thread, Hillman's Cloak, plus 1 more. [QC565 Bartolo's Yeti Fur Cloak]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Bolt of Woolen Cloth, Fine Thread, Hillman's Cloak, plus 1 more",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 2997,
+          "kind": "item",
+          "locations": [],
+          "name": "Bolt of Woolen Cloth",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 2321,
+          "kind": "item",
+          "locations": [],
+          "name": "Fine Thread",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 3719,
+          "kind": "item",
+          "locations": [],
+          "name": "Hillman's Cloak",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 3720,
+          "kind": "item",
+          "locations": [],
+          "name": "Yeti Fur",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 96,
+      "quest_id": 565,
+      "quest_name": "Bartolo's Yeti Fur Cloak",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 267,
+      "zone_or_sort_name": "Hillsbrad Foothills"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2438,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 49.43,
+              "y": 55.53
+            }
+          ],
+          "name": "Bartolo Ginsetti",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:565"
+      ],
+      "instruction": "Turn in [QT565 Bartolo's Yeti Fur Cloak] to Bartolo Ginsetti",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 97,
+      "quest_id": 565,
+      "quest_name": "Bartolo's Yeti Fur Cloak",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 267,
+      "zone_or_sort_name": "Hillsbrad Foothills"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17218,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 50.99,
+              "y": 58.69
+            }
+          ],
+          "name": "Huraan",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9435"
+      ],
+      "instruction": "Turn in [QT9435 Missing Crystals] to Huraan",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 98,
+      "quest_id": 9435,
+      "quest_name": "Missing Crystals",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 267,
+      "zone_or_sort_name": "Hillsbrad Foothills"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2430,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 267,
+              "map_name": "Hillsbrad Foothills",
+              "verification": "questie_structured_source_only",
+              "x": 51.89,
+              "y": 58.68
+            }
+          ],
+          "name": "Chef Jessen",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:555"
+      ],
+      "instruction": "Turn in [QT555 Soothing Turtle Bisque] to Chef Jessen",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 99,
+      "quest_id": 555,
+      "quest_name": "Soothing Turtle Bisque",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 267,
+      "zone_or_sort_name": "Hillsbrad Foothills"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2439,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 72.57,
+              "y": 15.88
+            }
+          ],
+          "name": "Major Samuelson",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:563"
+      ],
+      "instruction": "Turn in [QT563 Reassignment] to Major Samuelson",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 100,
+      "quest_id": 563,
+      "quest_name": "Reassignment",
+      "quest_tag": null,
+      "required_level": 30,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 267,
+      "zone_or_sort_name": "Hillsbrad Foothills"
+    }
+  ],
+  "title": "30 Desolace"
+}

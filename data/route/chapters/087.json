@@ -1,0 +1,6253 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 86 Terokkar Forest, or select this chapter on a partially completed character. Begin in Terokkar Forest with Empoor. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 3519,
+    "map_name": "Terokkar Forest",
+    "x": 43.17,
+    "y": 26.53
+  },
+  "entry_zone_or_sort": 3703,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 3519,
+    "map_name": "Terokkar Forest",
+    "quest_id": 10930,
+    "tag": "QT",
+    "x": 30.98,
+    "y": 76.19
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/087_world_87.lua",
+  "id": "087-primary-87-shattrath-city-&-terokkar-forest",
+  "maximum_level": 63,
+  "minimum_level": 62,
+  "next_chapter": "88 Silithus",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "86 Terokkar Forest",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 9979,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10879:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9979:starter"
+      ],
+      "instruction": "Travel from Shattrath City to Terokkar Forest. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G43.17,26.53 Terokkar Forest]. [O]",
+      "map_id": 3519,
+      "map_name": "Terokkar Forest",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 3703,
+      "origin_map_name": "Shattrath City",
+      "origin_x": 52.54,
+      "origin_y": 21.01,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 43.17,
+      "y": 26.53
+    },
+    {
+      "before_quest_id": 9979,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9979:starter"
+      ],
+      "instruction": "Before you begin: travel to Terokkar Forest and meet the first quest giver at [G43.17,26.53 Terokkar Forest]. Leave at least two quest-log slots open. [O]",
+      "map_id": 3519,
+      "map_name": "Terokkar Forest",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 43.17,
+      "y": 26.53
+    },
+    {
+      "before_quest_id": 9979,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9979:requiredLevel"
+      ],
+      "instruction": "Reach level 62 before accepting Wind Trader Lathrai. [XP62 Level 62]",
+      "map_id": 3519,
+      "map_name": "Terokkar Forest",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 62,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 43.17,
+      "y": 26.53
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18482,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 43.17,
+              "y": 26.53
+            }
+          ],
+          "name": "Empoor",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9979"
+      ],
+      "instruction": "Accept [QA9979 Wind Trader Lathrai] from Empoor.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 9979,
+      "quest_name": "Wind Trader Lathrai",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9979"
+      ],
+      "instruction": "Complete [QC9979 Wind Trader Lathrai]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 9979,
+      "quest_name": "Wind Trader Lathrai",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18484,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 72.22,
+              "y": 30.75
+            }
+          ],
+          "name": "Wind Trader Lathrai",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9979"
+      ],
+      "instruction": "Turn in [QT9979 Wind Trader Lathrai] to Wind Trader Lathrai",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 9979,
+      "quest_name": "Wind Trader Lathrai",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18484,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 72.22,
+              "y": 30.75
+            }
+          ],
+          "name": "Wind Trader Lathrai",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10112"
+      ],
+      "instruction": "Accept [QA10112 A Personal Favor] from Wind Trader Lathrai.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 10112,
+      "quest_name": "A Personal Favor",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10112"
+      ],
+      "instruction": "Collect or use the required item: Lathrai's Stolen Goods. [QC10112 A Personal Favor]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Lathrai's Stolen Goods",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 27861,
+          "kind": "item",
+          "locations": [],
+          "name": "Lathrai's Stolen Goods",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 8,
+      "quest_id": 10112,
+      "quest_name": "A Personal Favor",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18484,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 72.22,
+              "y": 30.75
+            }
+          ],
+          "name": "Wind Trader Lathrai",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10112"
+      ],
+      "instruction": "Turn in [QT10112 A Personal Favor] to Wind Trader Lathrai",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 10112,
+      "quest_name": "A Personal Favor",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18484,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 72.22,
+              "y": 30.75
+            }
+          ],
+          "name": "Wind Trader Lathrai",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9990"
+      ],
+      "instruction": "Accept [QA9990 Investigate Tuurem] from Wind Trader Lathrai.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 9990,
+      "quest_name": "Investigate Tuurem",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9990"
+      ],
+      "instruction": "Collect or use the required item: Sealed Box. [QC9990 Investigate Tuurem]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Sealed Box",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 25727,
+          "kind": "item",
+          "locations": [],
+          "name": "Sealed Box",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 11,
+      "quest_id": 9990,
+      "quest_name": "Investigate Tuurem",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18446,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 44.33,
+              "y": 26.31
+            }
+          ],
+          "name": "Earthbinder Tavgren",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9990"
+      ],
+      "instruction": "Turn in [QT9990 Investigate Tuurem] to Earthbinder Tavgren",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 9990,
+      "quest_name": "Investigate Tuurem",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18446,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 44.33,
+              "y": 26.31
+            }
+          ],
+          "name": "Earthbinder Tavgren",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9994"
+      ],
+      "instruction": "Accept [QA9994 What Are These Things?] from Earthbinder Tavgren.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 9994,
+      "quest_name": "What Are These Things?",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9994"
+      ],
+      "instruction": "Complete [QC9994 What Are These Things?]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 9994,
+      "quest_name": "What Are These Things?",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18459,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 57.01,
+              "y": 53.49
+            }
+          ],
+          "name": "Jenai Starwhisper",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9994"
+      ],
+      "instruction": "Turn in [QT9994 What Are These Things?] to Jenai Starwhisper",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 9994,
+      "quest_name": "What Are These Things?",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18459,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 57.01,
+              "y": 53.49
+            }
+          ],
+          "name": "Jenai Starwhisper",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10444"
+      ],
+      "instruction": "Accept [QA10444 Report to the Allerian Post] from Jenai Starwhisper.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 10444,
+      "quest_name": "Report to the Allerian Post",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10444"
+      ],
+      "instruction": "Complete [QC10444 Report to the Allerian Post]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 10444,
+      "quest_name": "Report to the Allerian Post",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 21006,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 69.66,
+              "y": 44.18
+            }
+          ],
+          "name": "Lieutenant Meridian",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10444"
+      ],
+      "instruction": "Turn in [QT10444 Report to the Allerian Post] to Lieutenant Meridian",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 10444,
+      "quest_name": "Report to the Allerian Post",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 21006,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 69.66,
+              "y": 44.18
+            }
+          ],
+          "name": "Lieutenant Meridian",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9996"
+      ],
+      "instruction": "Accept [QA9996 Attack on Firewing Point] from Lieutenant Meridian.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 9996,
+      "quest_name": "Attack on Firewing Point",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9996"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Firewing Defender, Firewing Bloodwarder, Firewing Warlock. [QC9996 Attack on Firewing Point]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Firewing Defender, Firewing Bloodwarder, Firewing Warlock",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5355,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 70.69,
+              "y": 38.7
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 71.52,
+              "y": 39.56
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 71.0,
+              "y": 40.24
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 73.42,
+              "y": 37.55
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 70.49,
+              "y": 37.39
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 72.16,
+              "y": 35.81
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 70.27,
+              "y": 36.16
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 70.21,
+              "y": 37.81
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 70.23,
+              "y": 37.14
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 69.78,
+              "y": 38.39
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 71.62,
+              "y": 35.74
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 72.21,
+              "y": 34.6
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 70.89,
+              "y": 35.49
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 70.37,
+              "y": 35.49
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 72.18,
+              "y": 35.08
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 71.87,
+              "y": 39.66
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 72.39,
+              "y": 38.44
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 73.35,
+              "y": 34.71
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 73.85,
+              "y": 35.8
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 74.11,
+              "y": 36.14
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 73.76,
+              "y": 36.06
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 73.88,
+              "y": 35.28
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 72.38,
+              "y": 36.31
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 68.15,
+              "y": 36.54
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 69.75,
+              "y": 36.64
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 68.08,
+              "y": 36.34
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 69.81,
+              "y": 35.68
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 68.07,
+              "y": 36.73
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 72.0,
+              "y": 38.84
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 71.58,
+              "y": 40.27
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 72.84,
+              "y": 40.13
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 73.95,
+              "y": 35.3
+            }
+          ],
+          "name": "Firewing Defender",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1410,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 74.11,
+              "y": 36.14
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 72.39,
+              "y": 38.44
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 68.08,
+              "y": 36.34
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 68.15,
+              "y": 36.54
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 68.07,
+              "y": 36.73
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 69.78,
+              "y": 38.39
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 70.37,
+              "y": 35.49
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 70.21,
+              "y": 37.81
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 70.23,
+              "y": 37.14
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 70.49,
+              "y": 37.39
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 73.76,
+              "y": 36.06
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 71.44,
+              "y": 34.99
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 72.18,
+              "y": 35.08
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 70.89,
+              "y": 35.49
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 73.95,
+              "y": 35.3
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 73.38,
+              "y": 34.74
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 73.88,
+              "y": 35.28
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 71.52,
+              "y": 39.56
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 71.0,
+              "y": 40.24
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 70.69,
+              "y": 38.7
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 72.49,
+              "y": 38.58
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 72.51,
+              "y": 38.89
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 72.46,
+              "y": 39.72
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 72.0,
+              "y": 38.84
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 72.38,
+              "y": 36.31
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 72.84,
+              "y": 34.75
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 69.81,
+              "y": 35.68
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 71.43,
+              "y": 35.48
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 71.43,
+              "y": 34.98
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 69.75,
+              "y": 36.64
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 72.9,
+              "y": 39.27
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 71.58,
+              "y": 40.27
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 72.85,
+              "y": 37.6
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 72.21,
+              "y": 40.28
+            }
+          ],
+          "name": "Firewing Bloodwarder",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16769,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 71.15,
+              "y": 36.06
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 72.23,
+              "y": 37.39
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 72.21,
+              "y": 37.08
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 72.12,
+              "y": 39.31
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 70.83,
+              "y": 39.61
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 72.21,
+              "y": 39.3
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 71.32,
+              "y": 38.77
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 73.82,
+              "y": 35.71
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 71.16,
+              "y": 37.58
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 71.66,
+              "y": 37.89
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 71.76,
+              "y": 37.64
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 73.85,
+              "y": 35.8
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 70.95,
+              "y": 36.12
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 71.62,
+              "y": 36.82
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 71.41,
+              "y": 37.52
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 71.12,
+              "y": 37.22
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 70.84,
+              "y": 37.11
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 70.95,
+              "y": 36.85
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 71.52,
+              "y": 38.74
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 71.09,
+              "y": 38.05
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 71.64,
+              "y": 35.01
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 71.37,
+              "y": 37.16
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 70.94,
+              "y": 37.88
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 71.47,
+              "y": 36.65
+            }
+          ],
+          "name": "Firewing Warlock",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 20,
+      "quest_id": 9996,
+      "quest_name": "Attack on Firewing Point",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 21006,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 69.66,
+              "y": 44.18
+            }
+          ],
+          "name": "Lieutenant Meridian",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9996"
+      ],
+      "instruction": "Turn in [QT9996 Attack on Firewing Point] to Lieutenant Meridian",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 9996,
+      "quest_name": "Attack on Firewing Point",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 21006,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 69.66,
+              "y": 44.18
+            }
+          ],
+          "name": "Lieutenant Meridian",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10446"
+      ],
+      "instruction": "Accept [QA10446 The Final Code] from Lieutenant Meridian.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 22,
+      "quest_id": 10446,
+      "quest_name": "The Final Code",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10446"
+      ],
+      "instruction": "Use the quest item [UI29912-] as directed; interact with the required object: Mana Bomb. [QC10446 The Final Code]",
+      "item_use_id": 29912,
+      "objective_hint": "Interact with the required object: Mana Bomb",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 184725,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 71.27,
+              "y": 37.37
+            }
+          ],
+          "name": "Mana Bomb",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 23,
+      "quest_id": 10446,
+      "quest_name": "The Final Code",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18459,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 57.01,
+              "y": 53.49
+            }
+          ],
+          "name": "Jenai Starwhisper",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10446"
+      ],
+      "instruction": "Turn in [QT10446 The Final Code] to Jenai Starwhisper",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 24,
+      "quest_id": 10446,
+      "quest_name": "The Final Code",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18459,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 57.01,
+              "y": 53.49
+            }
+          ],
+          "name": "Jenai Starwhisper",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10005"
+      ],
+      "instruction": "Accept [QA10005 Letting Earthbinder Tavgren Know] from Jenai Starwhisper.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 25,
+      "quest_id": 10005,
+      "quest_name": "Letting Earthbinder Tavgren Know",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "before_quest_id": 10035,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10035:requiredLevel"
+      ],
+      "instruction": "Reach level 63 before accepting Torgos! [XP63 Level 63]",
+      "map_id": 3519,
+      "map_name": "Terokkar Forest",
+      "optional": false,
+      "order": 26,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 63,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 58.1,
+      "y": 53.42
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18704,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 58.1,
+              "y": 53.42
+            }
+          ],
+          "name": "Taela Everstride",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10035"
+      ],
+      "instruction": "Accept [QA10035 Torgos!] from Taela Everstride.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 27,
+      "quest_id": 10035,
+      "quest_name": "Torgos!",
+      "quest_tag": "Elite",
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10005"
+      ],
+      "instruction": "Complete [QC10005 Letting Earthbinder Tavgren Know]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 28,
+      "quest_id": 10005,
+      "quest_name": "Letting Earthbinder Tavgren Know",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "before_quest_id": 10035,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10035:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 3519,
+      "map_name": "Terokkar Forest",
+      "optional": true,
+      "order": 29,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        10035
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 43.17,
+      "y": 26.53
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10035"
+      ],
+      "instruction": "Elite/group recommended \u2014 Collect or use the required item: Tail Feather of Torgos. [QC10035 Torgos!]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Tail Feather of Torgos",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 25852,
+          "kind": "item",
+          "locations": [],
+          "name": "Tail Feather of Torgos",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 30,
+      "quest_id": 10035,
+      "quest_name": "Torgos!",
+      "quest_tag": "Elite",
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18704,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 58.1,
+              "y": 53.42
+            }
+          ],
+          "name": "Taela Everstride",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10035"
+      ],
+      "instruction": "Turn in [QT10035 Torgos!] to Taela Everstride",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 31,
+      "quest_id": 10035,
+      "quest_name": "Torgos!",
+      "quest_tag": "Elite",
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18446,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 44.33,
+              "y": 26.31
+            }
+          ],
+          "name": "Earthbinder Tavgren",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10005"
+      ],
+      "instruction": "Turn in [QT10005 Letting Earthbinder Tavgren Know] to Earthbinder Tavgren",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 32,
+      "quest_id": 10005,
+      "quest_name": "Letting Earthbinder Tavgren Know",
+      "quest_tag": null,
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22278,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 37.45,
+              "y": 50.76
+            }
+          ],
+          "name": "High Priest Orglum",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10840"
+      ],
+      "instruction": "Accept [QA10840 The Tomb of Lights] from High Priest Orglum.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 33,
+      "quest_id": 10840,
+      "quest_name": "The Tomb of Lights",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10840"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Ethereal Nethermancer, Ethereal Plunderer. [QC10840 The Tomb of Lights]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Ethereal Nethermancer, Ethereal Plunderer",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 21370,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 46.51,
+              "y": 56.55
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.77,
+              "y": 55.07
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.96,
+              "y": 54.54
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.56,
+              "y": 53.53
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.61,
+              "y": 53.03
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.86,
+              "y": 53.18
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.79,
+              "y": 55.08
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.13,
+              "y": 54.98
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.04,
+              "y": 55.1
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.88,
+              "y": 53.71
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.98,
+              "y": 56.2
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.01,
+              "y": 55.61
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 46.29,
+              "y": 54.19
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 46.31,
+              "y": 56.1
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 50.11,
+              "y": 54.87
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 50.5,
+              "y": 55.01
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.41,
+              "y": 54.44
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.95,
+              "y": 56.56
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.36,
+              "y": 55.15
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.71,
+              "y": 56.85
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.01,
+              "y": 55.0
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.01,
+              "y": 54.62
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.67,
+              "y": 53.28
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.79,
+              "y": 54.62
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.13,
+              "y": 54.69
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.02,
+              "y": 56.22
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.69,
+              "y": 56.1
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 46.72,
+              "y": 53.91
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.0,
+              "y": 56.27
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 46.99,
+              "y": 53.99
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 46.63,
+              "y": 54.98
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.38,
+              "y": 56.26
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.23,
+              "y": 55.79
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 46.81,
+              "y": 55.82
+            }
+          ],
+          "name": "Ethereal Nethermancer",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 21368,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 46.51,
+              "y": 56.55
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.77,
+              "y": 55.07
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.96,
+              "y": 54.54
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.56,
+              "y": 53.53
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.61,
+              "y": 53.03
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.86,
+              "y": 53.18
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.79,
+              "y": 55.08
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.13,
+              "y": 54.98
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.04,
+              "y": 55.1
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.88,
+              "y": 53.71
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.98,
+              "y": 56.2
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.01,
+              "y": 55.61
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 46.29,
+              "y": 54.19
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 46.31,
+              "y": 56.1
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.76,
+              "y": 52.5
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.83,
+              "y": 57.21
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.41,
+              "y": 54.44
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.95,
+              "y": 56.56
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.36,
+              "y": 55.15
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.71,
+              "y": 56.85
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.01,
+              "y": 55.0
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.01,
+              "y": 54.62
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.67,
+              "y": 53.28
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.79,
+              "y": 54.62
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.13,
+              "y": 54.69
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.02,
+              "y": 56.22
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.69,
+              "y": 56.1
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 46.72,
+              "y": 53.91
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.0,
+              "y": 56.27
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 46.99,
+              "y": 53.99
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 46.63,
+              "y": 54.98
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.38,
+              "y": 56.26
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.23,
+              "y": 55.79
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 46.81,
+              "y": 55.82
+            }
+          ],
+          "name": "Ethereal Plunderer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 34,
+      "quest_id": 10840,
+      "quest_name": "The Tomb of Lights",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22278,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 37.45,
+              "y": 50.76
+            }
+          ],
+          "name": "High Priest Orglum",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10840"
+      ],
+      "instruction": "Turn in [QT10840 The Tomb of Lights] to High Priest Orglum",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 35,
+      "quest_id": 10840,
+      "quest_name": "The Tomb of Lights",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18675,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 37.05,
+              "y": 49.53
+            }
+          ],
+          "name": "Soolaveen",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10030"
+      ],
+      "instruction": "Accept [QA10030 Recover the Bones] from Soolaveen.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 36,
+      "quest_id": 10030,
+      "quest_name": "Recover the Bones",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10030"
+      ],
+      "instruction": "Collect or use the required item: Restless Bones. [QC10030 Recover the Bones]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Restless Bones",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 25842,
+          "kind": "item",
+          "locations": [],
+          "name": "Restless Bones",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 37,
+      "quest_id": 10030,
+      "quest_name": "Recover the Bones",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19417,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 35.15,
+              "y": 66.24
+            }
+          ],
+          "name": "Ramdor the Mad",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10030"
+      ],
+      "instruction": "Turn in [QT10030 Recover the Bones] to Ramdor the Mad",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 38,
+      "quest_id": 10030,
+      "quest_name": "Recover the Bones",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19417,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 35.15,
+              "y": 66.24
+            }
+          ],
+          "name": "Ramdor the Mad",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10031"
+      ],
+      "instruction": "Accept [QA10031 Helping the Lost Find Their Way] from Ramdor the Mad.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 39,
+      "quest_id": 10031,
+      "quest_name": "Helping the Lost Find Their Way",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10031"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Lost Spirit, Broken Skeleton. [QC10031 Helping the Lost Find Their Way]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Lost Spirit, Broken Skeleton",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18460,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 30.09,
+              "y": 64.11
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 29.62,
+              "y": 64.36
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 29.63,
+              "y": 62.2
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 28.99,
+              "y": 60.71
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 29.75,
+              "y": 60.57
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 29.77,
+              "y": 59.05
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 30.74,
+              "y": 58.88
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 30.2,
+              "y": 58.09
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 31.45,
+              "y": 58.77
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 31.68,
+              "y": 57.66
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 32.14,
+              "y": 62.32
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 31.56,
+              "y": 63.48
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 31.06,
+              "y": 63.66
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 31.99,
+              "y": 65.16
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 31.4,
+              "y": 64.82
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 30.92,
+              "y": 67.1
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 30.51,
+              "y": 65.85
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 30.93,
+              "y": 68.25
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 32.55,
+              "y": 70.6
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 31.01,
+              "y": 70.92
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 36.87,
+              "y": 78.39
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 38.13,
+              "y": 78.15
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 38.83,
+              "y": 77.49
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 39.33,
+              "y": 78.28
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 37.62,
+              "y": 78.98
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 38.86,
+              "y": 78.99
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 38.33,
+              "y": 79.37
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 39.97,
+              "y": 79.95
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 40.18,
+              "y": 78.95
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 39.26,
+              "y": 80.07
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 40.03,
+              "y": 81.76
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 41.14,
+              "y": 81.72
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 40.8,
+              "y": 80.87
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 41.34,
+              "y": 80.28
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 40.86,
+              "y": 78.78
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 39.47,
+              "y": 76.38
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.01,
+              "y": 74.53
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.11,
+              "y": 73.7
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.8,
+              "y": 76.46
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.49,
+              "y": 74.49
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.05,
+              "y": 75.7
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.08,
+              "y": 75.37
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.14,
+              "y": 77.25
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.53,
+              "y": 76.47
+            }
+          ],
+          "name": "Lost Spirit",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16805,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 36.49,
+              "y": 78.67
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 37.65,
+              "y": 77.28
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 39.91,
+              "y": 78.83
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 40.61,
+              "y": 79.85
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 38.52,
+              "y": 80.76
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 40.81,
+              "y": 77.19
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 41.32,
+              "y": 78.34
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 40.15,
+              "y": 77.35
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 41.27,
+              "y": 75.75
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.1,
+              "y": 69.05
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 50.44,
+              "y": 65.95
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 45.54,
+              "y": 58.43
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.96,
+              "y": 61.31
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.61,
+              "y": 62.83
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.14,
+              "y": 63.5
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.8,
+              "y": 62.59
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 50.62,
+              "y": 62.5
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 50.0,
+              "y": 62.48
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 51.27,
+              "y": 66.35
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 51.23,
+              "y": 65.36
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 51.84,
+              "y": 64.3
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 52.47,
+              "y": 65.73
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 52.46,
+              "y": 67.02
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 51.97,
+              "y": 66.37
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 51.15,
+              "y": 69.11
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 52.07,
+              "y": 68.17
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 51.08,
+              "y": 71.03
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 51.84,
+              "y": 69.83
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.92,
+              "y": 70.92
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 50.4,
+              "y": 71.68
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 51.68,
+              "y": 72.02
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 50.64,
+              "y": 73.18
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 50.93,
+              "y": 72.49
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 50.29,
+              "y": 72.43
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.29,
+              "y": 71.64
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 50.46,
+              "y": 74.42
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.94,
+              "y": 74.85
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.56,
+              "y": 73.71
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.74,
+              "y": 72.33
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.73,
+              "y": 70.71
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.14,
+              "y": 75.16
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.76,
+              "y": 71.85
+            }
+          ],
+          "name": "Broken Skeleton",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 40,
+      "quest_id": 10031,
+      "quest_name": "Helping the Lost Find Their Way",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18675,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 37.05,
+              "y": 49.53
+            }
+          ],
+          "name": "Soolaveen",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10031"
+      ],
+      "instruction": "Turn in [QT10031 Helping the Lost Find Their Way] to Soolaveen",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 41,
+      "quest_id": 10031,
+      "quest_name": "Helping the Lost Find Their Way",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22278,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 37.45,
+              "y": 50.76
+            }
+          ],
+          "name": "High Priest Orglum",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10842"
+      ],
+      "instruction": "Accept [QA10842 The Vengeful Harbinger] from High Priest Orglum.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 42,
+      "quest_id": 10842,
+      "quest_name": "The Vengeful Harbinger",
+      "quest_tag": "Elite",
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10842"
+      ],
+      "instruction": "Elite/group recommended \u2014 Use the quest item [UI30527-] as directed; complete the required NPC or creature objective: Vengeful Harbinger. [QC10842 The Vengeful Harbinger]",
+      "item_use_id": 30527,
+      "objective_hint": "Complete the required NPC or creature objective: Vengeful Harbinger",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 21638,
+          "kind": "npc",
+          "locations": [],
+          "name": "Vengeful Harbinger",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 43,
+      "quest_id": 10842,
+      "quest_name": "The Vengeful Harbinger",
+      "quest_tag": "Elite",
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 184830,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 50.88,
+              "y": 54.75
+            }
+          ],
+          "name": "Draenei Ascendant",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10842"
+      ],
+      "instruction": "Turn in [QT10842 The Vengeful Harbinger] to Draenei Ascendant",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 44,
+      "quest_id": 10842,
+      "quest_name": "The Vengeful Harbinger",
+      "quest_tag": "Elite",
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22364,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 31.44,
+              "y": 75.66
+            }
+          ],
+          "name": "Scout Navrin",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10873"
+      ],
+      "instruction": "Accept [QA10873 Taken in the Night] from Scout Navrin.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 45,
+      "quest_id": 10873,
+      "quest_name": "Taken in the Night",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22456,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 31.06,
+              "y": 76.53
+            }
+          ],
+          "name": "Oakun",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10877"
+      ],
+      "instruction": "Accept [QA10877 The Dread Relic] from Oakun.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 46,
+      "quest_id": 10877,
+      "quest_name": "The Dread Relic",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10873"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Freed Sha'tar Warrior, Netherweb Victim. [QC10873 Taken in the Night]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Freed Sha'tar Warrior, Netherweb Victim",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22459,
+          "kind": "npc",
+          "locations": [],
+          "name": "Freed Sha'tar Warrior",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22355,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 50.78,
+              "y": 81.64
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 51.31,
+              "y": 80.9
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 52.56,
+              "y": 80.81
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 51.89,
+              "y": 79.37
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 52.91,
+              "y": 79.75
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 52.33,
+              "y": 77.85
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 52.66,
+              "y": 78.53
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 51.99,
+              "y": 78.44
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 53.23,
+              "y": 78.1
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 52.6,
+              "y": 76.81
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 51.9,
+              "y": 77.3
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 53.21,
+              "y": 78.95
+            }
+          ],
+          "name": "Netherweb Victim",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 47,
+      "quest_id": 10873,
+      "quest_name": "Taken in the Night",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10877"
+      ],
+      "instruction": "Collect or use the required item: Dread Relic. [QC10877 The Dread Relic]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Dread Relic",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 31697,
+          "kind": "item",
+          "locations": [],
+          "name": "Dread Relic",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 48,
+      "quest_id": 10877,
+      "quest_name": "The Dread Relic",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22364,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 31.44,
+              "y": 75.66
+            }
+          ],
+          "name": "Scout Navrin",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10873"
+      ],
+      "instruction": "Turn in [QT10873 Taken in the Night] to Scout Navrin",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 49,
+      "quest_id": 10873,
+      "quest_name": "Taken in the Night",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22456,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 31.06,
+              "y": 76.53
+            }
+          ],
+          "name": "Oakun",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10877"
+      ],
+      "instruction": "Turn in [QT10877 The Dread Relic] to Oakun",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 50,
+      "quest_id": 10877,
+      "quest_name": "The Dread Relic",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22424,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 53.85,
+              "y": 72.38
+            }
+          ],
+          "name": "Skywing",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10898"
+      ],
+      "instruction": "Accept [QA10898 Skywing] from Skywing.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 51,
+      "quest_id": 10898,
+      "quest_name": "Skywing",
+      "quest_tag": "Elite",
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10898"
+      ],
+      "instruction": "Elite/group recommended \u2014 Complete the scripted or exploration event. [QC10898 Skywing]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 52,
+      "quest_id": 10898,
+      "quest_name": "Skywing",
+      "quest_tag": "Elite",
+      "required_level": 63,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22292,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 52.54,
+              "y": 21.01
+            }
+          ],
+          "name": "Rilak the Redeemed",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10898"
+      ],
+      "instruction": "Turn in [QT10898 Skywing] to Rilak the Redeemed",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 53,
+      "quest_id": 10898,
+      "quest_name": "Skywing",
+      "quest_tag": "Elite",
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22446,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 31.0,
+              "y": 76.11
+            }
+          ],
+          "name": "Commander Ra'vaj",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10913"
+      ],
+      "instruction": "Accept [QA10913 An Improper Burial] from Commander Ra'vaj.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 54,
+      "quest_id": 10913,
+      "quest_name": "An Improper Burial",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10913"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Slain Sha'tar Vindicator, Slain Auchenai Warrior. [QC10913 An Improper Burial]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Slain Sha'tar Vindicator, Slain Auchenai Warrior",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 21859,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 34.96,
+              "y": 76.38
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 36.8,
+              "y": 76.81
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 35.98,
+              "y": 76.64
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 35.41,
+              "y": 76.14
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 34.6,
+              "y": 77.31
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 35.4,
+              "y": 76.74
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 37.44,
+              "y": 75.92
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 33.47,
+              "y": 75.58
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 36.26,
+              "y": 76.39
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 37.12,
+              "y": 76.48
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 35.61,
+              "y": 75.88
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 33.82,
+              "y": 75.37
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 33.11,
+              "y": 74.71
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 33.7,
+              "y": 75.75
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 33.2,
+              "y": 75.32
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 33.55,
+              "y": 76.1
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 32.59,
+              "y": 73.44
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 33.34,
+              "y": 73.19
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 36.34,
+              "y": 76.97
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 32.69,
+              "y": 73.33
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 33.12,
+              "y": 76.5
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 34.6,
+              "y": 77.24
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 34.66,
+              "y": 77.0
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 33.74,
+              "y": 76.61
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 35.16,
+              "y": 77.15
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 35.51,
+              "y": 76.37
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 35.6,
+              "y": 76.16
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 37.42,
+              "y": 76.84
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 33.15,
+              "y": 74.39
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 34.55,
+              "y": 75.5
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 32.36,
+              "y": 74.68
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 32.39,
+              "y": 74.35
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 32.52,
+              "y": 75.97
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 32.07,
+              "y": 74.65
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 34.77,
+              "y": 75.57
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 33.25,
+              "y": 74.42
+            }
+          ],
+          "name": "Slain Sha'tar Vindicator",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 21846,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 34.96,
+              "y": 76.38
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 36.8,
+              "y": 76.81
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 35.98,
+              "y": 76.64
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 35.41,
+              "y": 76.14
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 34.6,
+              "y": 77.31
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 35.4,
+              "y": 76.74
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 37.44,
+              "y": 75.92
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 33.47,
+              "y": 75.58
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 36.26,
+              "y": 76.39
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 37.12,
+              "y": 76.48
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 35.61,
+              "y": 75.88
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 33.82,
+              "y": 75.37
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 33.11,
+              "y": 74.71
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 33.7,
+              "y": 75.75
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 33.2,
+              "y": 75.32
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 33.55,
+              "y": 76.1
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 32.59,
+              "y": 73.44
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 33.34,
+              "y": 73.19
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 36.34,
+              "y": 76.97
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 32.69,
+              "y": 73.33
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 33.12,
+              "y": 76.5
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 34.6,
+              "y": 77.24
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 34.66,
+              "y": 77.0
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 33.74,
+              "y": 76.61
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 35.16,
+              "y": 77.15
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 35.51,
+              "y": 76.37
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 35.6,
+              "y": 76.16
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 37.42,
+              "y": 76.84
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 33.15,
+              "y": 74.39
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 34.55,
+              "y": 75.5
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 32.36,
+              "y": 74.68
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 32.39,
+              "y": 74.35
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 32.52,
+              "y": 75.97
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 34.49,
+              "y": 74.77
+            }
+          ],
+          "name": "Slain Auchenai Warrior",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 55,
+      "quest_id": 10913,
+      "quest_name": "An Improper Burial",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22446,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 31.0,
+              "y": 76.11
+            }
+          ],
+          "name": "Commander Ra'vaj",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10913"
+      ],
+      "instruction": "Turn in [QT10913 An Improper Burial] to Commander Ra'vaj",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 56,
+      "quest_id": 10913,
+      "quest_name": "An Improper Burial",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22446,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 31.0,
+              "y": 76.11
+            }
+          ],
+          "name": "Commander Ra'vaj",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10914"
+      ],
+      "instruction": "Accept [QA10914 A Hero Is Needed] from Commander Ra'vaj.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 57,
+      "quest_id": 10914,
+      "quest_name": "A Hero Is Needed",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10914"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Auchenai Initiate, Auchenai Doomsayer. [QC10914 A Hero Is Needed]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Auchenai Initiate, Auchenai Doomsayer",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 21284,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 32.72,
+              "y": 71.32
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 32.89,
+              "y": 72.94
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 35.91,
+              "y": 73.88
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 36.03,
+              "y": 74.66
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 35.03,
+              "y": 74.52
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 36.88,
+              "y": 74.67
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 35.1,
+              "y": 72.88
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 36.13,
+              "y": 73.05
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 33.3,
+              "y": 72.74
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 34.1,
+              "y": 69.45
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 34.12,
+              "y": 68.53
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 33.86,
+              "y": 67.69
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 37.2,
+              "y": 73.79
+            }
+          ],
+          "name": "Auchenai Initiate",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 21285,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 32.49,
+              "y": 74.58
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 36.94,
+              "y": 74.57
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 33.96,
+              "y": 70.44
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.98,
+              "y": 67.22
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.58,
+              "y": 67.68
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.88,
+              "y": 68.12
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.05,
+              "y": 68.8
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.43,
+              "y": 68.32
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 48.6,
+              "y": 65.91
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 47.62,
+              "y": 66.14
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 50.04,
+              "y": 68.39
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.79,
+              "y": 67.58
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.6,
+              "y": 67.7
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.4,
+              "y": 65.65
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.65,
+              "y": 66.65
+            }
+          ],
+          "name": "Auchenai Doomsayer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 58,
+      "quest_id": 10914,
+      "quest_name": "A Hero Is Needed",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22446,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 31.0,
+              "y": 76.11
+            }
+          ],
+          "name": "Commander Ra'vaj",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10914"
+      ],
+      "instruction": "Turn in [QT10914 A Hero Is Needed] to Commander Ra'vaj",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 59,
+      "quest_id": 10914,
+      "quest_name": "A Hero Is Needed",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22446,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 31.0,
+              "y": 76.11
+            }
+          ],
+          "name": "Commander Ra'vaj",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10915"
+      ],
+      "instruction": "Accept [QA10915 The Fallen Exarch] from Commander Ra'vaj.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 60,
+      "quest_id": 10915,
+      "quest_name": "The Fallen Exarch",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10915"
+      ],
+      "instruction": "Complete the required NPC or creature objective: Reanimated Exarch. [QC10915 The Fallen Exarch]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Reanimated Exarch",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22452,
+          "kind": "npc",
+          "locations": [],
+          "name": "Reanimated Exarch",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 61,
+      "quest_id": 10915,
+      "quest_name": "The Fallen Exarch",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22446,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 31.0,
+              "y": 76.11
+            }
+          ],
+          "name": "Commander Ra'vaj",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10915"
+      ],
+      "instruction": "Turn in [QT10915 The Fallen Exarch] to Commander Ra'vaj",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 62,
+      "quest_id": 10915,
+      "quest_name": "The Fallen Exarch",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22462,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.71,
+              "y": 76.19
+            }
+          ],
+          "name": "Vindicator Haylen",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10920"
+      ],
+      "instruction": "Accept [QA10920 For the Fallen] from Vindicator Haylen.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 63,
+      "quest_id": 10920,
+      "quest_name": "For the Fallen",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10920"
+      ],
+      "instruction": "Complete the required NPC or creature objective: Dreadfang Widow. [QC10920 For the Fallen]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Dreadfang Widow",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18467,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 55.07,
+              "y": 56.9
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.39,
+              "y": 49.58
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 46.87,
+              "y": 49.84
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 32.25,
+              "y": 47.78
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 31.75,
+              "y": 48.47
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 30.35,
+              "y": 48.65
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 25.41,
+              "y": 55.95
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 24.61,
+              "y": 56.74
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 24.13,
+              "y": 57.65
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 23.98,
+              "y": 56.1
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 16.76,
+              "y": 65.48
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 17.09,
+              "y": 70.0
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 18.55,
+              "y": 73.79
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 16.75,
+              "y": 74.79
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 17.39,
+              "y": 75.51
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 17.94,
+              "y": 76.6
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 18.15,
+              "y": 76.96
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 19.61,
+              "y": 77.66
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 17.32,
+              "y": 78.98
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 21.64,
+              "y": 76.54
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 22.13,
+              "y": 77.52
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 25.07,
+              "y": 67.23
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 23.82,
+              "y": 67.01
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 23.52,
+              "y": 67.97
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 22.9,
+              "y": 66.81
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 23.33,
+              "y": 66.12
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 25.5,
+              "y": 65.55
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 22.94,
+              "y": 65.15
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 24.16,
+              "y": 64.01
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 20.55,
+              "y": 69.06
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 20.94,
+              "y": 71.57
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 22.21,
+              "y": 69.98
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 19.01,
+              "y": 68.84
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 18.91,
+              "y": 70.56
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 20.26,
+              "y": 74.17
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 21.65,
+              "y": 74.36
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 28.65,
+              "y": 78.15
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 29.54,
+              "y": 79.15
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 30.23,
+              "y": 80.3
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 30.53,
+              "y": 78.14
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 30.99,
+              "y": 79.56
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 28.99,
+              "y": 74.16
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 28.31,
+              "y": 73.74
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 32.65,
+              "y": 79.84
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.84,
+              "y": 81.76
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 50.8,
+              "y": 82.62
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 52.0,
+              "y": 80.96
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 53.05,
+              "y": 78.29
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 52.49,
+              "y": 78.33
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 51.29,
+              "y": 78.2
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 53.38,
+              "y": 71.45
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 53.36,
+              "y": 71.5
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 54.22,
+              "y": 70.46
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 54.67,
+              "y": 64.54
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 54.61,
+              "y": 64.26
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 53.82,
+              "y": 68.57
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 54.09,
+              "y": 67.43
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 54.27,
+              "y": 62.46
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 54.91,
+              "y": 61.74
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 53.27,
+              "y": 61.66
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 54.58,
+              "y": 61.62
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 55.46,
+              "y": 62.61
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 56.12,
+              "y": 61.86
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 55.15,
+              "y": 60.57
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 55.44,
+              "y": 60.63
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 57.27,
+              "y": 61.74
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 56.06,
+              "y": 60.26
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 56.86,
+              "y": 60.65
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 56.78,
+              "y": 58.81
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 55.61,
+              "y": 58.85
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 54.93,
+              "y": 57.98
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 56.1,
+              "y": 58.15
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 54.46,
+              "y": 58.77
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 55.63,
+              "y": 56.94
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 53.82,
+              "y": 58.56
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 53.44,
+              "y": 58.61
+            },
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 50.06,
+              "y": 52.16
+            }
+          ],
+          "name": "Dreadfang Widow",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 64,
+      "quest_id": 10920,
+      "quest_name": "For the Fallen",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22462,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.71,
+              "y": 76.19
+            }
+          ],
+          "name": "Vindicator Haylen",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10920"
+      ],
+      "instruction": "Turn in [QT10920 For the Fallen] to Vindicator Haylen",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 65,
+      "quest_id": 10920,
+      "quest_name": "For the Fallen",
+      "quest_tag": null,
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22462,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.71,
+              "y": 76.19
+            }
+          ],
+          "name": "Vindicator Haylen",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10921"
+      ],
+      "instruction": "Accept [QA10921 Terokkarantula] from Vindicator Haylen.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 66,
+      "quest_id": 10921,
+      "quest_name": "Terokkarantula",
+      "quest_tag": "Elite",
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10921"
+      ],
+      "instruction": "Elite/group recommended \u2014 Complete the required NPC or creature objective: Terokkarantula. [QC10921 Terokkarantula]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Terokkarantula",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 20682,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 54.27,
+              "y": 81.82
+            }
+          ],
+          "name": "Terokkarantula",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 67,
+      "quest_id": 10921,
+      "quest_name": "Terokkarantula",
+      "quest_tag": "Elite",
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22462,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 49.71,
+              "y": 76.19
+            }
+          ],
+          "name": "Vindicator Haylen",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10921"
+      ],
+      "instruction": "Turn in [QT10921 Terokkarantula] to Vindicator Haylen",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 68,
+      "quest_id": 10921,
+      "quest_name": "Terokkarantula",
+      "quest_tag": "Elite",
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22458,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 31.27,
+              "y": 76.09
+            }
+          ],
+          "name": "Chief Archaeologist Letoll",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10922"
+      ],
+      "instruction": "Accept [QA10922 Digging Through Bones] from Chief Archaeologist Letoll.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 69,
+      "quest_id": 10922,
+      "quest_name": "Digging Through Bones",
+      "quest_tag": "Elite",
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22456,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 31.06,
+              "y": 76.53
+            }
+          ],
+          "name": "Oakun",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10923"
+      ],
+      "instruction": "Accept [QA10923 Evil Draws Near] from Oakun.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 70,
+      "quest_id": 10923,
+      "quest_name": "Evil Draws Near",
+      "quest_tag": "Elite",
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10923"
+      ],
+      "instruction": "Elite/group recommended \u2014 Use the quest item [UI31811-] as directed; complete the required NPC or creature objective: Teribus the Cursed. [QC10923 Evil Draws Near]",
+      "item_use_id": 31811,
+      "objective_hint": "Complete the required NPC or creature objective: Teribus the Cursed",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22441,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 46.86,
+              "y": 70.47
+            }
+          ],
+          "name": "Teribus the Cursed",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 71,
+      "quest_id": 10923,
+      "quest_name": "Evil Draws Near",
+      "quest_tag": "Elite",
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10922"
+      ],
+      "instruction": "Elite/group recommended \u2014 Complete the scripted or exploration event. [QC10922 Digging Through Bones]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 72,
+      "quest_id": 10922,
+      "quest_name": "Digging Through Bones",
+      "quest_tag": "Elite",
+      "required_level": 63,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22481,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 30.98,
+              "y": 76.19
+            }
+          ],
+          "name": "Dwarfowitz",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10922"
+      ],
+      "instruction": "Turn in [QT10922 Digging Through Bones] to Dwarfowitz",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 73,
+      "quest_id": 10922,
+      "quest_name": "Digging Through Bones",
+      "quest_tag": "Elite",
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22456,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 31.06,
+              "y": 76.53
+            }
+          ],
+          "name": "Oakun",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10923"
+      ],
+      "instruction": "Turn in [QT10923 Evil Draws Near] to Oakun",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 74,
+      "quest_id": 10923,
+      "quest_name": "Evil Draws Near",
+      "quest_tag": "Elite",
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22481,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 30.98,
+              "y": 76.19
+            }
+          ],
+          "name": "Dwarfowitz",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10929"
+      ],
+      "instruction": "Accept [QA10929 Fumping] from Dwarfowitz.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 75,
+      "quest_id": 10929,
+      "quest_name": "Fumping",
+      "quest_tag": "Elite",
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10929"
+      ],
+      "instruction": "Elite/group recommended \u2014 Collect or use the required item: Mature Bone Sifter Carcass. [QC10929 Fumping]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Mature Bone Sifter Carcass",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 31814,
+          "kind": "item",
+          "locations": [],
+          "name": "Mature Bone Sifter Carcass",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 76,
+      "quest_id": 10929,
+      "quest_name": "Fumping",
+      "quest_tag": "Elite",
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22481,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 30.98,
+              "y": 76.19
+            }
+          ],
+          "name": "Dwarfowitz",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10929"
+      ],
+      "instruction": "Turn in [QT10929 Fumping] to Dwarfowitz",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 77,
+      "quest_id": 10929,
+      "quest_name": "Fumping",
+      "quest_tag": "Elite",
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22481,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 30.98,
+              "y": 76.19
+            }
+          ],
+          "name": "Dwarfowitz",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10930"
+      ],
+      "instruction": "Accept [QA10930 The Big Bone Worm] from Dwarfowitz.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 78,
+      "quest_id": 10930,
+      "quest_name": "The Big Bone Worm",
+      "quest_tag": "Elite",
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10930"
+      ],
+      "instruction": "Elite/group recommended \u2014 Collect or use the required item: Enormous Bone Worm Organs. [QC10930 The Big Bone Worm]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Enormous Bone Worm Organs",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 31826,
+          "kind": "item",
+          "locations": [],
+          "name": "Enormous Bone Worm Organs",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 79,
+      "quest_id": 10930,
+      "quest_name": "The Big Bone Worm",
+      "quest_tag": "Elite",
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22481,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3519,
+              "map_name": "Terokkar Forest",
+              "verification": "questie_structured_source_only",
+              "x": 30.98,
+              "y": 76.19
+            }
+          ],
+          "name": "Dwarfowitz",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10930"
+      ],
+      "instruction": "Turn in [QT10930 The Big Bone Worm] to Dwarfowitz",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 80,
+      "quest_id": 10930,
+      "quest_name": "The Big Bone Worm",
+      "quest_tag": "Elite",
+      "required_level": 63,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3519,
+      "zone_or_sort_name": "Terokkar Forest"
+    }
+  ],
+  "title": "87 Shattrath City & Terokkar Forest"
+}

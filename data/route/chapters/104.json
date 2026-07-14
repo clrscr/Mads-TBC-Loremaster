@@ -1,0 +1,1585 @@
+{
+  "branch": "optional_content",
+  "entry_contract": "Complete the relevant shared prerequisites. Begin in Moonglade with Zaetar's Spirit. Leave at least two quest-log slots open; group and reputation gates remain explicit.",
+  "entry_route_point": {
+    "map_id": 493,
+    "map_name": "Moonglade",
+    "x": 36.18,
+    "y": 41.79
+  },
+  "entry_zone_or_sort": 2100,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 440,
+    "map_name": "Tanaris",
+    "quest_id": 2946,
+    "tag": "QT",
+    "x": 37.63,
+    "y": 81.4
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Optional Content",
+  "guide_file": "Guides/optional_content/104_dungeon_08.lua",
+  "id": "104-optional_content-optional-content-08---maraudon",
+  "maximum_level": null,
+  "minimum_level": null,
+  "next_chapter": "Optional Content 09 - The Hinterlands & Sunken Temple",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "Optional Content 07 - Badlands & Sunken Temple",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 7066,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1475:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7066:finisher",
+        "travel-network:auberdine-menethil",
+        "https://www.wowhead.com/tbc/quest=942/the-absent-minded-prospector"
+      ],
+      "instruction": "Travel from Stormwind City to Moonglade: Take the ship between Auberdine and Menethil Harbor. Continue to [G36.18,41.79 Moonglade]. [O]",
+      "map_id": 493,
+      "map_name": "Moonglade",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 1519,
+      "origin_map_name": "Stormwind City",
+      "origin_x": 64.33,
+      "origin_y": 20.63,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [
+        "auberdine-menethil"
+      ],
+      "type": "transport",
+      "verification": "questie_endpoints_and_tbc_transport_network",
+      "x": 36.18,
+      "y": 41.79
+    },
+    {
+      "before_quest_id": 7066,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "route-branch:optional_content"
+      ],
+      "instruction": "Optional entry requirements: complete the relevant shared prerequisites. [O]",
+      "map_id": 493,
+      "map_name": "Moonglade",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "branch_entry",
+      "verification": "route_dependency_graph",
+      "x": 36.18,
+      "y": 41.79
+    },
+    {
+      "before_quest_id": 7066,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7066:finisher"
+      ],
+      "instruction": "Optional chapter: travel to Moonglade and begin at [G36.18,41.79 Moonglade]. Leave at least two quest-log slots open. [O]",
+      "map_id": 493,
+      "map_name": "Moonglade",
+      "optional": true,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 36.18,
+      "y": 41.79
+    },
+    {
+      "before_quest_id": 7066,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7066:requiredLevel"
+      ],
+      "instruction": "Reach level 41 before accepting Seed of Life. [XP41 Level 41]",
+      "map_id": 2100,
+      "map_name": "Maraudon",
+      "optional": false,
+      "order": 4,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 41,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": null,
+      "y": null
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 12238,
+          "kind": "npc",
+          "locations": [],
+          "name": "Zaetar's Spirit",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7066"
+      ],
+      "instruction": "Accept [QA7066 Seed of Life] from Zaetar's Spirit.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 7066,
+      "quest_name": "Seed of Life",
+      "quest_tag": "Dungeon",
+      "required_level": 41,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 2100,
+      "zone_or_sort_name": "Maraudon"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 13717,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 50.42,
+              "y": 86.65
+            }
+          ],
+          "name": "Centaur Pariah",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7067"
+      ],
+      "instruction": "Accept [QA7067 The Pariah's Instructions] from Centaur Pariah.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 7067,
+      "quest_name": "The Pariah's Instructions",
+      "quest_tag": "Dungeon",
+      "required_level": 41,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 2100,
+      "zone_or_sort_name": "Maraudon"
+    },
+    {
+      "before_quest_id": 7066,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7066:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 493,
+      "map_name": "Moonglade",
+      "optional": true,
+      "order": 7,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        7066
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 36.18,
+      "y": 41.79
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7066"
+      ],
+      "instruction": "Dungeon \u2014 Complete [QC7066 Seed of Life]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 7066,
+      "quest_name": "Seed of Life",
+      "quest_tag": "Dungeon",
+      "required_level": 41,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 2100,
+      "zone_or_sort_name": "Maraudon"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7067"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required item: Amulet of Union. [QC7067 The Pariah's Instructions]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Amulet of Union",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 17758,
+          "kind": "item",
+          "locations": [],
+          "name": "Amulet of Union",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 9,
+      "quest_id": 7067,
+      "quest_name": "The Pariah's Instructions",
+      "quest_tag": "Dungeon",
+      "required_level": 41,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 2100,
+      "zone_or_sort_name": "Maraudon"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 13717,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 50.42,
+              "y": 86.65
+            }
+          ],
+          "name": "Centaur Pariah",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7067"
+      ],
+      "instruction": "Turn in [QT7067 The Pariah's Instructions] to Centaur Pariah",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 7067,
+      "quest_name": "The Pariah's Instructions",
+      "quest_tag": "Dungeon",
+      "required_level": 41,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 2100,
+      "zone_or_sort_name": "Maraudon"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11832,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 493,
+              "map_name": "Moonglade",
+              "verification": "questie_structured_source_only",
+              "x": 36.18,
+              "y": 41.79
+            }
+          ],
+          "name": "Keeper Remulos",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7066"
+      ],
+      "instruction": "Turn in [QT7066 Seed of Life] to Keeper Remulos",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 7066,
+      "quest_name": "Seed of Life",
+      "quest_tag": "Dungeon",
+      "required_level": 41,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 2100,
+      "zone_or_sort_name": "Maraudon"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4967,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 66.42,
+              "y": 49.26
+            }
+          ],
+          "name": "Archmage Tervosh",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7070"
+      ],
+      "instruction": "Accept [QA7070 Shadowshard Fragments] from Archmage Tervosh.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 7070,
+      "quest_name": "Shadowshard Fragments",
+      "quest_tag": "Dungeon",
+      "required_level": 41,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 2100,
+      "zone_or_sort_name": "Maraudon"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7070"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required item: Shadowshard Fragment. [QC7070 Shadowshard Fragments]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Shadowshard Fragment",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 17756,
+          "kind": "item",
+          "locations": [],
+          "name": "Shadowshard Fragment",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 13,
+      "quest_id": 7070,
+      "quest_name": "Shadowshard Fragments",
+      "quest_tag": "Dungeon",
+      "required_level": 41,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 2100,
+      "zone_or_sort_name": "Maraudon"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4967,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 15,
+              "map_name": "Dustwallow Marsh",
+              "verification": "questie_structured_source_only",
+              "x": 66.42,
+              "y": 49.26
+            }
+          ],
+          "name": "Archmage Tervosh",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7070"
+      ],
+      "instruction": "Turn in [QT7070 Shadowshard Fragments] to Archmage Tervosh",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 7070,
+      "quest_name": "Shadowshard Fragments",
+      "quest_tag": "Dungeon",
+      "required_level": 41,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 2100,
+      "zone_or_sort_name": "Maraudon"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 13656,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 62.2,
+              "y": 39.63
+            }
+          ],
+          "name": "Willow",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7028"
+      ],
+      "instruction": "Accept [QA7028 Twisted Evils] from Willow.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 7028,
+      "quest_name": "Twisted Evils",
+      "quest_tag": "Dungeon",
+      "required_level": 41,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 2100,
+      "zone_or_sort_name": "Maraudon"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7028"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required item: Theradric Crystal Carving. [QC7028 Twisted Evils]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Theradric Crystal Carving",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 17684,
+          "kind": "item",
+          "locations": [],
+          "name": "Theradric Crystal Carving",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 16,
+      "quest_id": 7028,
+      "quest_name": "Twisted Evils",
+      "quest_tag": "Dungeon",
+      "required_level": 41,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 2100,
+      "zone_or_sort_name": "Maraudon"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 13656,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 62.2,
+              "y": 39.63
+            }
+          ],
+          "name": "Willow",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7028"
+      ],
+      "instruction": "Turn in [QT7028 Twisted Evils] to Willow",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 7028,
+      "quest_name": "Twisted Evils",
+      "quest_tag": "Dungeon",
+      "required_level": 41,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 2100,
+      "zone_or_sort_name": "Maraudon"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11715,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 68.5,
+              "y": 8.88
+            }
+          ],
+          "name": "Talendria",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7041"
+      ],
+      "instruction": "Accept [QA7041 Vyletongue Corruption] from Talendria.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 7041,
+      "quest_name": "Vyletongue Corruption",
+      "quest_tag": "Dungeon",
+      "required_level": 41,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 2100,
+      "zone_or_sort_name": "Maraudon"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7041"
+      ],
+      "instruction": "Dungeon \u2014 Use the quest item [UI17693-] as directed; complete the required objectives \u2014 NPCs or creatures: Noxxious Scion; items: Filled Cerulean Vial. [QC7041 Vyletongue Corruption]",
+      "item_use_id": 17693,
+      "objective_hint": "Complete the required objectives \u2014 NPCs or creatures: Noxxious Scion; items: Filled Cerulean Vial",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 13696,
+          "kind": "npc",
+          "locations": [],
+          "name": "Noxxious Scion",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 17696,
+          "kind": "item",
+          "locations": [],
+          "name": "Filled Cerulean Vial",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 19,
+      "quest_id": 7041,
+      "quest_name": "Vyletongue Corruption",
+      "quest_tag": "Dungeon",
+      "required_level": 41,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 2100,
+      "zone_or_sort_name": "Maraudon"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11715,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 68.5,
+              "y": 8.88
+            }
+          ],
+          "name": "Talendria",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7041"
+      ],
+      "instruction": "Turn in [QT7041 Vyletongue Corruption] to Talendria",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 7041,
+      "quest_name": "Vyletongue Corruption",
+      "quest_tag": "Dungeon",
+      "required_level": 41,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 2100,
+      "zone_or_sort_name": "Maraudon"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 13697,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 32.1,
+              "y": 63.96
+            }
+          ],
+          "name": "Cavindra",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7044"
+      ],
+      "instruction": "Accept [QA7044 Legends of Maraudon] from Cavindra.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 7044,
+      "quest_name": "Legends of Maraudon",
+      "quest_tag": "Dungeon",
+      "required_level": 41,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 2100,
+      "zone_or_sort_name": "Maraudon"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7044"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required items: Celebrian Diamond, Celebrian Rod. [QC7044 Legends of Maraudon]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Celebrian Diamond, Celebrian Rod",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 17703,
+          "kind": "item",
+          "locations": [],
+          "name": "Celebrian Diamond",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 17702,
+          "kind": "item",
+          "locations": [],
+          "name": "Celebrian Rod",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 22,
+      "quest_id": 7044,
+      "quest_name": "Legends of Maraudon",
+      "quest_tag": "Dungeon",
+      "required_level": 41,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 2100,
+      "zone_or_sort_name": "Maraudon"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 13716,
+          "kind": "npc",
+          "locations": [],
+          "name": "Celebras the Redeemed",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7044"
+      ],
+      "instruction": "Turn in [QT7044 Legends of Maraudon] to Celebras the Redeemed",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 23,
+      "quest_id": 7044,
+      "quest_name": "Legends of Maraudon",
+      "quest_tag": "Dungeon",
+      "required_level": 41,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 2100,
+      "zone_or_sort_name": "Maraudon"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 13716,
+          "kind": "npc",
+          "locations": [],
+          "name": "Celebras the Redeemed",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7046"
+      ],
+      "instruction": "Accept [QA7046 The Scepter of Celebras] from Celebras the Redeemed.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 24,
+      "quest_id": 7046,
+      "quest_name": "The Scepter of Celebras",
+      "quest_tag": "Dungeon",
+      "required_level": 41,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 2100,
+      "zone_or_sort_name": "Maraudon"
+    },
+    {
+      "before_quest_id": 7065,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7065:requiredLevel"
+      ],
+      "instruction": "Reach level 45 before accepting Corruption of Earth and Seed. [XP45 Level 45]",
+      "map_id": 405,
+      "map_name": "Desolace",
+      "optional": false,
+      "order": 25,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 45,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 63.83,
+      "y": 10.67
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 13698,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 63.83,
+              "y": 10.67
+            }
+          ],
+          "name": "Keeper Marandis",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7065"
+      ],
+      "instruction": "Accept [QA7065 Corruption of Earth and Seed] from Keeper Marandis.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 26,
+      "quest_id": 7065,
+      "quest_name": "Corruption of Earth and Seed",
+      "quest_tag": "Dungeon",
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 2100,
+      "zone_or_sort_name": "Maraudon"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7046"
+      ],
+      "instruction": "Dungeon \u2014 Complete the scripted or exploration event. [QC7046 The Scepter of Celebras]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 27,
+      "quest_id": 7046,
+      "quest_name": "The Scepter of Celebras",
+      "quest_tag": "Dungeon",
+      "required_level": 41,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 2100,
+      "zone_or_sort_name": "Maraudon"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7065"
+      ],
+      "instruction": "Dungeon \u2014 Complete the required NPC or creature objective: Princess Theradras. [QC7065 Corruption of Earth and Seed]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Princess Theradras",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 12201,
+          "kind": "npc",
+          "locations": [],
+          "name": "Princess Theradras",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 28,
+      "quest_id": 7065,
+      "quest_name": "Corruption of Earth and Seed",
+      "quest_tag": "Dungeon",
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 2100,
+      "zone_or_sort_name": "Maraudon"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 13698,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 405,
+              "map_name": "Desolace",
+              "verification": "questie_structured_source_only",
+              "x": 63.83,
+              "y": 10.67
+            }
+          ],
+          "name": "Keeper Marandis",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7065"
+      ],
+      "instruction": "Turn in [QT7065 Corruption of Earth and Seed] to Keeper Marandis",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 29,
+      "quest_id": 7065,
+      "quest_name": "Corruption of Earth and Seed",
+      "quest_tag": "Dungeon",
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 2100,
+      "zone_or_sort_name": "Maraudon"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 13716,
+          "kind": "npc",
+          "locations": [],
+          "name": "Celebras the Redeemed",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7046"
+      ],
+      "instruction": "Turn in [QT7046 The Scepter of Celebras] to Celebras the Redeemed",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 30,
+      "quest_id": 7046,
+      "quest_name": "The Scepter of Celebras",
+      "quest_tag": "Dungeon",
+      "required_level": 41,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 2100,
+      "zone_or_sort_name": "Maraudon"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 6169,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 67.92,
+              "y": 46.1
+            }
+          ],
+          "name": "Klockmort Spannerspan",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2769"
+      ],
+      "instruction": "Accept [QA2769 The Brassbolts Brothers] from Klockmort Spannerspan.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 31,
+      "quest_id": 2769,
+      "quest_name": "The Brassbolts Brothers",
+      "quest_tag": "Dungeon",
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 400,
+      "zone_or_sort_name": "Thousand Needles"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2769"
+      ],
+      "instruction": "Dungeon \u2014 Complete [QC2769 The Brassbolts Brothers]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 32,
+      "quest_id": 2769,
+      "quest_name": "The Brassbolts Brothers",
+      "quest_tag": "Dungeon",
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 400,
+      "zone_or_sort_name": "Thousand Needles"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4453,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 400,
+              "map_name": "Thousand Needles",
+              "verification": "questie_structured_source_only",
+              "x": 78.14,
+              "y": 77.12
+            }
+          ],
+          "name": "Wizzle Brassbolts",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2769"
+      ],
+      "instruction": "Turn in [QT2769 The Brassbolts Brothers] to Wizzle Brassbolts",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 33,
+      "quest_id": 2769,
+      "quest_name": "The Brassbolts Brothers",
+      "quest_tag": "Dungeon",
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 400,
+      "zone_or_sort_name": "Thousand Needles"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5387,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 69.93,
+              "y": 18.55
+            }
+          ],
+          "name": "High Explorer Magellas",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2439"
+      ],
+      "instruction": "Accept [QA2439 The Platinum Discs] from High Explorer Magellas.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 34,
+      "quest_id": 2439,
+      "quest_name": "The Platinum Discs",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2439"
+      ],
+      "instruction": "Complete [QC2439 The Platinum Discs]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 35,
+      "quest_id": 2439,
+      "quest_name": "The Platinum Discs",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7292,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 33.88,
+              "y": 59.15
+            }
+          ],
+          "name": "Dinita Stonemantle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2439"
+      ],
+      "instruction": "Turn in [QT2439 The Platinum Discs] to Dinita Stonemantle",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 36,
+      "quest_id": 2439,
+      "quest_name": "The Platinum Discs",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5387,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 69.93,
+              "y": 18.55
+            }
+          ],
+          "name": "High Explorer Magellas",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2963"
+      ],
+      "instruction": "Accept [QA2963 Portents of Uldum] from High Explorer Magellas.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 37,
+      "quest_id": 2963,
+      "quest_name": "Portents of Uldum",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2963"
+      ],
+      "instruction": "Complete [QC2963 Portents of Uldum]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 38,
+      "quest_id": 2963,
+      "quest_name": "Portents of Uldum",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2916,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 77.54,
+              "y": 11.82
+            }
+          ],
+          "name": "Historian Karnik",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2963"
+      ],
+      "instruction": "Turn in [QT2963 Portents of Uldum] to Historian Karnik",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 39,
+      "quest_id": 2963,
+      "quest_name": "Portents of Uldum",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2916,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 77.54,
+              "y": 11.82
+            }
+          ],
+          "name": "Historian Karnik",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2946"
+      ],
+      "instruction": "Accept [QA2946 Seeing What Happens] from Historian Karnik.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 40,
+      "quest_id": 2946,
+      "quest_name": "Seeing What Happens",
+      "quest_tag": "Elite",
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2946"
+      ],
+      "instruction": "Elite/group recommended \u2014 Complete [QC2946 Seeing What Happens]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 41,
+      "quest_id": 2946,
+      "quest_name": "Seeing What Happens",
+      "quest_tag": "Elite",
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 142343,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 37.63,
+              "y": 81.4
+            }
+          ],
+          "name": "Uldum Pedestal",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2946"
+      ],
+      "instruction": "Turn in [QT2946 Seeing What Happens] to Uldum Pedestal",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 42,
+      "quest_id": 2946,
+      "quest_name": "Seeing What Happens",
+      "quest_tag": "Elite",
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    }
+  ],
+  "title": "Optional Content 08 - Maraudon"
+}

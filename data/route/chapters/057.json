@@ -1,0 +1,473 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 56 Tanaris & Un'Goro Crater, or select this chapter on a partially completed character. Begin in Ironforge with Curator Thorius. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 1537,
+    "map_name": "Ironforge",
+    "x": 71.5,
+    "y": 15.74
+  },
+  "entry_zone_or_sort": 1537,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 1537,
+    "map_name": "Ironforge",
+    "quest_id": 3566,
+    "tag": "QT",
+    "x": 71.5,
+    "y": 15.74
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/057_world_57.lua",
+  "id": "057-primary-57-ironforge-&-searing-gorge",
+  "maximum_level": 47,
+  "minimum_level": 47,
+  "next_chapter": "58 Felwood",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "56 Tanaris & Un'Goro Crater",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 3371,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4321:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3371:starter",
+        "travel-network:ratchet-booty-bay",
+        "https://www.wowhead.com/tbc/quest=1040/passage-to-booty-bay"
+      ],
+      "instruction": "Travel from Un'Goro Crater to Ironforge: Take the ship between Ratchet and Booty Bay. Continue to [G71.50,15.74 Ironforge]. [O]",
+      "map_id": 1537,
+      "map_name": "Ironforge",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 490,
+      "origin_map_name": "Un'Goro Crater",
+      "origin_x": 41.92,
+      "origin_y": 2.7,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [
+        "ratchet-booty-bay"
+      ],
+      "type": "transport",
+      "verification": "questie_endpoints_and_tbc_transport_network",
+      "x": 71.5,
+      "y": 15.74
+    },
+    {
+      "before_quest_id": 3371,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3371:starter"
+      ],
+      "instruction": "Before you begin: travel to Ironforge and meet the first quest giver at [G71.50,15.74 Ironforge]. Leave at least two quest-log slots open. [O]",
+      "map_id": 1537,
+      "map_name": "Ironforge",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 71.5,
+      "y": 15.74
+    },
+    {
+      "before_quest_id": 3371,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3371:requiredLevel"
+      ],
+      "instruction": "Reach level 47 before accepting Dwarven Justice. [XP47 Level 47]",
+      "map_id": 1537,
+      "map_name": "Ironforge",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 47,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 71.5,
+      "y": 15.74
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8256,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 71.5,
+              "y": 15.74
+            }
+          ],
+          "name": "Curator Thorius",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3371"
+      ],
+      "instruction": "Accept [QA3371 Dwarven Justice] from Curator Thorius.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 3371,
+      "quest_name": "Dwarven Justice",
+      "quest_tag": null,
+      "required_level": 47,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3371"
+      ],
+      "instruction": "Complete [QC3371 Dwarven Justice]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 3371,
+      "quest_name": "Dwarven Justice",
+      "quest_tag": null,
+      "required_level": 47,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8417,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 41.14,
+              "y": 25.56
+            }
+          ],
+          "name": "Dying Archaeologist",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3371"
+      ],
+      "instruction": "Turn in [QT3371 Dwarven Justice] to Dying Archaeologist",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 3371,
+      "quest_name": "Dwarven Justice",
+      "quest_tag": null,
+      "required_level": 47,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1537,
+      "zone_or_sort_name": "Ironforge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8417,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 41.14,
+              "y": 25.56
+            }
+          ],
+          "name": "Dying Archaeologist",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3372"
+      ],
+      "instruction": "Accept [QA3372 Release Them] from Dying Archaeologist.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 3372,
+      "quest_name": "Release Them",
+      "quest_tag": null,
+      "required_level": 47,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3372"
+      ],
+      "instruction": "Collect or use the required item: Mysterious Artifact. [QC3372 Release Them]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Mysterious Artifact",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 10442,
+          "kind": "item",
+          "locations": [],
+          "name": "Mysterious Artifact",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 8,
+      "quest_id": 3372,
+      "quest_name": "Release Them",
+      "quest_tag": null,
+      "required_level": 47,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 148498,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 41.25,
+              "y": 25.41
+            }
+          ],
+          "name": "Altar of Suntara",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3372"
+      ],
+      "instruction": "Turn in [QT3372 Release Them] to Altar of Suntara",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 3372,
+      "quest_name": "Release Them",
+      "quest_tag": null,
+      "required_level": 47,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8417,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 41.14,
+              "y": 25.56
+            }
+          ],
+          "name": "Dying Archaeologist",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3566"
+      ],
+      "instruction": "Accept [QA3566 Rise, Obsidion!] from Dying Archaeologist.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 3566,
+      "quest_name": "Rise, Obsidion!",
+      "quest_tag": null,
+      "required_level": 47,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3566"
+      ],
+      "instruction": "Collect or use the required items: Head of Lathoric the Black, Heart of Obsidion. [QC3566 Rise, Obsidion!]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Head of Lathoric the Black, Heart of Obsidion",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 10447,
+          "kind": "item",
+          "locations": [],
+          "name": "Head of Lathoric the Black",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 10446,
+          "kind": "item",
+          "locations": [],
+          "name": "Heart of Obsidion",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 11,
+      "quest_id": 3566,
+      "quest_name": "Rise, Obsidion!",
+      "quest_tag": null,
+      "required_level": 47,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8256,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 71.5,
+              "y": 15.74
+            }
+          ],
+          "name": "Curator Thorius",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3566"
+      ],
+      "instruction": "Turn in [QT3566 Rise, Obsidion!] to Curator Thorius",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 3566,
+      "quest_name": "Rise, Obsidion!",
+      "quest_tag": null,
+      "required_level": 47,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    }
+  ],
+  "title": "57 Ironforge & Searing Gorge"
+}

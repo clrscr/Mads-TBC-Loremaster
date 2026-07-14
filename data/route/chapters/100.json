@@ -1,0 +1,1394 @@
+{
+  "branch": "optional_content",
+  "entry_contract": "Complete Lonebrow's Journal; complete The Dark Iron War. Begin in The Barrens with Mebok Mizzyrix. Leave at least two quest-log slots open; group and reputation gates remain explicit.",
+  "entry_route_point": {
+    "map_id": 17,
+    "map_name": "The Barrens",
+    "x": 62.37,
+    "y": 37.62
+  },
+  "entry_zone_or_sort": 1717,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 331,
+    "map_name": "Ashenvale",
+    "quest_id": 7863,
+    "tag": "QT",
+    "x": 61.49,
+    "y": 83.86
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [
+    [
+      1100
+    ],
+    [
+      303
+    ]
+  ],
+  "external_prerequisite_quest_ids": [
+    303,
+    1100
+  ],
+  "group": "Mad's Loremaster Guide - Optional Content",
+  "guide_file": "Guides/optional_content/100_dungeon_04.lua",
+  "id": "100-optional_content-optional-content-04---the-stockade-&-ashenvale",
+  "maximum_level": null,
+  "minimum_level": null,
+  "next_chapter": "Optional Content 05 - Gnomeregan & Arathi Basin",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "Optional Content 03 - Wetlands & Gnomeregan",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 1221,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:2930:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1221:starter",
+        "travel-network:ratchet-booty-bay",
+        "https://www.wowhead.com/tbc/quest=1040/passage-to-booty-bay"
+      ],
+      "instruction": "Travel from Ironforge to The Barrens: Take the ship between Ratchet and Booty Bay. Continue to [G62.37,37.62 The Barrens]. [O]",
+      "map_id": 17,
+      "map_name": "The Barrens",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 1537,
+      "origin_map_name": "Ironforge",
+      "origin_x": 69.83,
+      "origin_y": 48.1,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [
+        "ratchet-booty-bay"
+      ],
+      "type": "transport",
+      "verification": "questie_endpoints_and_tbc_transport_network",
+      "x": 62.37,
+      "y": 37.62
+    },
+    {
+      "before_quest_id": 1221,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:303:dependency",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1100:dependency"
+      ],
+      "instruction": "Optional entry requirements: complete Lonebrow's Journal; complete The Dark Iron War. [O]",
+      "map_id": 17,
+      "map_name": "The Barrens",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        303,
+        1100
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "branch_entry",
+      "verification": "route_dependency_graph",
+      "x": 62.37,
+      "y": 37.62
+    },
+    {
+      "before_quest_id": 1221,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1221:starter"
+      ],
+      "instruction": "Optional chapter: travel to The Barrens and begin at [G62.37,37.62 The Barrens]. Leave at least two quest-log slots open. [O]",
+      "map_id": 17,
+      "map_name": "The Barrens",
+      "optional": true,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 62.37,
+      "y": 37.62
+    },
+    {
+      "before_quest_id": 1221,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1221:requiredLevel"
+      ],
+      "instruction": "Reach level 25 before accepting Blueleaf Tubers. [XP25 Level 25]",
+      "map_id": 17,
+      "map_name": "The Barrens",
+      "optional": false,
+      "order": 4,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 25,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 62.37,
+      "y": 37.62
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3446,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 62.37,
+              "y": 37.62
+            }
+          ],
+          "name": "Mebok Mizzyrix",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1221"
+      ],
+      "instruction": "Accept [QA1221 Blueleaf Tubers] from Mebok Mizzyrix.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 1221,
+      "quest_name": "Blueleaf Tubers",
+      "quest_tag": "Dungeon",
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1717,
+      "zone_or_sort_name": "Map or sort 1717"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4508,
+          "kind": "npc",
+          "locations": [],
+          "name": "Willix the Importer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1144"
+      ],
+      "instruction": "Accept [QA1144 Willix the Importer] from Willix the Importer.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 1144,
+      "quest_name": "Willix the Importer",
+      "quest_tag": "Dungeon",
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1717,
+      "zone_or_sort_name": "Map or sort 1717"
+    },
+    {
+      "before_quest_id": 1221,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1221:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 17,
+      "map_name": "The Barrens",
+      "optional": true,
+      "order": 7,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        1221
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 62.37,
+      "y": 37.62
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1221"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required items: Blueleaf Tuber, Crate With Holes, Snufflenose Owner's Manual, plus 1 more. [QC1221 Blueleaf Tubers]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Blueleaf Tuber, Crate With Holes, Snufflenose Owner's Manual, plus 1 more",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 5876,
+          "kind": "item",
+          "locations": [],
+          "name": "Blueleaf Tuber",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 5880,
+          "kind": "item",
+          "locations": [],
+          "name": "Crate With Holes",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 5897,
+          "kind": "item",
+          "locations": [],
+          "name": "Snufflenose Owner's Manual",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 6684,
+          "kind": "item",
+          "locations": [],
+          "name": "Snufflenose Command Stick",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 8,
+      "quest_id": 1221,
+      "quest_name": "Blueleaf Tubers",
+      "quest_tag": "Dungeon",
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1717,
+      "zone_or_sort_name": "Map or sort 1717"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1144"
+      ],
+      "instruction": "Dungeon \u2014 Complete [QC1144 Willix the Importer]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 1144,
+      "quest_name": "Willix the Importer",
+      "quest_tag": "Dungeon",
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1717,
+      "zone_or_sort_name": "Map or sort 1717"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 3446,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 17,
+              "map_name": "The Barrens",
+              "verification": "questie_structured_source_only",
+              "x": 62.37,
+              "y": 37.62
+            }
+          ],
+          "name": "Mebok Mizzyrix",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1221"
+      ],
+      "instruction": "Turn in [QT1221 Blueleaf Tubers] to Mebok Mizzyrix",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 1221,
+      "quest_name": "Blueleaf Tubers",
+      "quest_tag": "Dungeon",
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1717,
+      "zone_or_sort_name": "Map or sort 1717"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4508,
+          "kind": "npc",
+          "locations": [],
+          "name": "Willix the Importer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1144"
+      ],
+      "instruction": "Turn in [QT1144 Willix the Importer] to Willix the Importer",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 1144,
+      "quest_name": "Willix the Importer",
+      "quest_tag": "Dungeon",
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1717,
+      "zone_or_sort_name": "Map or sort 1717"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4048,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 357,
+              "map_name": "Feralas",
+              "verification": "questie_structured_source_only",
+              "x": 89.64,
+              "y": 46.57
+            }
+          ],
+          "name": "Falfindel Waywarder",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1101"
+      ],
+      "instruction": "Accept [QA1101 The Crone of the Kraul] from Falfindel Waywarder.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 1101,
+      "quest_name": "The Crone of the Kraul",
+      "quest_tag": "Dungeon",
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1717,
+      "zone_or_sort_name": "Map or sort 1717"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4510,
+          "kind": "npc",
+          "locations": [],
+          "name": "Heralath Fallowbrook",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1142"
+      ],
+      "instruction": "Accept [QA1142 Mortality Wanes] from Heralath Fallowbrook.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 1142,
+      "quest_name": "Mortality Wanes",
+      "quest_tag": "Dungeon",
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1717,
+      "zone_or_sort_name": "Map or sort 1717"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1101"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required item: Razorflank's Medallion. [QC1101 The Crone of the Kraul]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Razorflank's Medallion",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 5792,
+          "kind": "item",
+          "locations": [],
+          "name": "Razorflank's Medallion",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 14,
+      "quest_id": 1101,
+      "quest_name": "The Crone of the Kraul",
+      "quest_tag": "Dungeon",
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1717,
+      "zone_or_sort_name": "Map or sort 1717"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1142"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required item: Treshala's Pendant. [QC1142 Mortality Wanes]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Treshala's Pendant",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 5825,
+          "kind": "item",
+          "locations": [],
+          "name": "Treshala's Pendant",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 15,
+      "quest_id": 1142,
+      "quest_name": "Mortality Wanes",
+      "quest_tag": "Dungeon",
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1717,
+      "zone_or_sort_name": "Map or sort 1717"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4048,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 357,
+              "map_name": "Feralas",
+              "verification": "questie_structured_source_only",
+              "x": 89.64,
+              "y": 46.57
+            }
+          ],
+          "name": "Falfindel Waywarder",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1101"
+      ],
+      "instruction": "Turn in [QT1101 The Crone of the Kraul] to Falfindel Waywarder",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 1101,
+      "quest_name": "The Crone of the Kraul",
+      "quest_tag": "Dungeon",
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1717,
+      "zone_or_sort_name": "Map or sort 1717"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4521,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1657,
+              "map_name": "Darnassus",
+              "verification": "questie_structured_source_only",
+              "x": 69.54,
+              "y": 67.75
+            }
+          ],
+          "name": "Treshala Fallowbrook",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:1142"
+      ],
+      "instruction": "Turn in [QT1142 Mortality Wanes] to Treshala Fallowbrook",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 1142,
+      "quest_name": "Mortality Wanes",
+      "quest_tag": "Dungeon",
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1717,
+      "zone_or_sort_name": "Map or sort 1717"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 270,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 71.92,
+              "y": 47.79
+            }
+          ],
+          "name": "Councilman Millstipe",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:377"
+      ],
+      "instruction": "Accept [QA377 Crime and Punishment] from Councilman Millstipe.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 377,
+      "quest_name": "Crime and Punishment",
+      "quest_tag": "Dungeon",
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 717,
+      "zone_or_sort_name": "The Stockade"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:377"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required item: Hand of Dextren Ward. [QC377 Crime and Punishment]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Hand of Dextren Ward",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 3628,
+          "kind": "item",
+          "locations": [],
+          "name": "Hand of Dextren Ward",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 19,
+      "quest_id": 377,
+      "quest_name": "Crime and Punishment",
+      "quest_tag": "Dungeon",
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 717,
+      "zone_or_sort_name": "The Stockade"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 270,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 71.92,
+              "y": 47.79
+            }
+          ],
+          "name": "Councilman Millstipe",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:377"
+      ],
+      "instruction": "Turn in [QT377 Crime and Punishment] to Councilman Millstipe",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 377,
+      "quest_name": "Crime and Punishment",
+      "quest_tag": "Dungeon",
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 717,
+      "zone_or_sort_name": "The Stockade"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 859,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 26.26,
+              "y": 46.58
+            }
+          ],
+          "name": "Guard Berton",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:386"
+      ],
+      "instruction": "Accept [QA386 What Comes Around...] from Guard Berton.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 386,
+      "quest_name": "What Comes Around...",
+      "quest_tag": "Dungeon",
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 717,
+      "zone_or_sort_name": "The Stockade"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:386"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required item: Head of Targorr. [QC386 What Comes Around...]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Head of Targorr",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 3630,
+          "kind": "item",
+          "locations": [],
+          "name": "Head of Targorr",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 22,
+      "quest_id": 386,
+      "quest_name": "What Comes Around...",
+      "quest_tag": "Dungeon",
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 717,
+      "zone_or_sort_name": "The Stockade"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 859,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 26.26,
+              "y": 46.58
+            }
+          ],
+          "name": "Guard Berton",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:386"
+      ],
+      "instruction": "Turn in [QT386 What Comes Around...] to Guard Berton",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 23,
+      "quest_id": 386,
+      "quest_name": "What Comes Around...",
+      "quest_tag": "Dungeon",
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 717,
+      "zone_or_sort_name": "The Stockade"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1719,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 41.11,
+              "y": 58.09
+            }
+          ],
+          "name": "Warden Thelwater",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:387"
+      ],
+      "instruction": "Accept [QA387 Quell The Uprising] from Warden Thelwater.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 24,
+      "quest_id": 387,
+      "quest_name": "Quell The Uprising",
+      "quest_tag": "Dungeon",
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 717,
+      "zone_or_sort_name": "The Stockade"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:387"
+      ],
+      "instruction": "Dungeon \u2014 Complete the required NPC or creature objectives: Defias Prisoner, Defias Convict, Defias Insurgent. [QC387 Quell The Uprising]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Defias Prisoner, Defias Convict, Defias Insurgent",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1706,
+          "kind": "npc",
+          "locations": [],
+          "name": "Defias Prisoner",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1711,
+          "kind": "npc",
+          "locations": [],
+          "name": "Defias Convict",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1715,
+          "kind": "npc",
+          "locations": [],
+          "name": "Defias Insurgent",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 25,
+      "quest_id": 387,
+      "quest_name": "Quell The Uprising",
+      "quest_tag": "Dungeon",
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 717,
+      "zone_or_sort_name": "The Stockade"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1719,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 41.11,
+              "y": 58.09
+            }
+          ],
+          "name": "Warden Thelwater",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:387"
+      ],
+      "instruction": "Turn in [QT387 Quell The Uprising] to Warden Thelwater",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 26,
+      "quest_id": 387,
+      "quest_name": "Quell The Uprising",
+      "quest_tag": "Dungeon",
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 717,
+      "zone_or_sort_name": "The Stockade"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1721,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 69.93,
+              "y": 39.05
+            }
+          ],
+          "name": "Nikova Raskol",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:388"
+      ],
+      "instruction": "Accept [QA388 The Color of Blood] from Nikova Raskol.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 27,
+      "quest_id": 388,
+      "quest_name": "The Color of Blood",
+      "quest_tag": "Dungeon",
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 717,
+      "zone_or_sort_name": "The Stockade"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:388"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required item: Red Wool Bandana. [QC388 The Color of Blood]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Red Wool Bandana",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 2909,
+          "kind": "item",
+          "locations": [],
+          "name": "Red Wool Bandana",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 28,
+      "quest_id": 388,
+      "quest_name": "The Color of Blood",
+      "quest_tag": "Dungeon",
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 717,
+      "zone_or_sort_name": "The Stockade"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1721,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 69.93,
+              "y": 39.05
+            }
+          ],
+          "name": "Nikova Raskol",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:388"
+      ],
+      "instruction": "Turn in [QT388 The Color of Blood] to Nikova Raskol",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 29,
+      "quest_id": 388,
+      "quest_name": "The Color of Blood",
+      "quest_tag": "Dungeon",
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 717,
+      "zone_or_sort_name": "The Stockade"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1074,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 49.67,
+              "y": 18.23
+            }
+          ],
+          "name": "Motley Garmason",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:378"
+      ],
+      "instruction": "Accept [QA378 The Fury Runs Deep] from Motley Garmason.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 30,
+      "quest_id": 378,
+      "quest_name": "The Fury Runs Deep",
+      "quest_tag": "Dungeon",
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 717,
+      "zone_or_sort_name": "The Stockade"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:378"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required item: Head of Deepfury. [QC378 The Fury Runs Deep]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Head of Deepfury",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 3640,
+          "kind": "item",
+          "locations": [],
+          "name": "Head of Deepfury",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 31,
+      "quest_id": 378,
+      "quest_name": "The Fury Runs Deep",
+      "quest_tag": "Dungeon",
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 717,
+      "zone_or_sort_name": "The Stockade"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1074,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 49.67,
+              "y": 18.23
+            }
+          ],
+          "name": "Motley Garmason",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:378"
+      ],
+      "instruction": "Turn in [QT378 The Fury Runs Deep] to Motley Garmason",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 32,
+      "quest_id": 378,
+      "quest_name": "The Fury Runs Deep",
+      "quest_tag": "Dungeon",
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 717,
+      "zone_or_sort_name": "The Stockade"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14753,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 61.49,
+              "y": 83.86
+            }
+          ],
+          "name": "Illiyana Moonblaze",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7863"
+      ],
+      "instruction": "Accept [QA7863 Sentinel Basic Care Package] from Illiyana Moonblaze.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 33,
+      "quest_id": 7863,
+      "quest_name": "Sentinel Basic Care Package",
+      "quest_tag": null,
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7863"
+      ],
+      "instruction": "Complete [QC7863 Sentinel Basic Care Package]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 34,
+      "quest_id": 7863,
+      "quest_name": "Sentinel Basic Care Package",
+      "quest_tag": null,
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14753,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 331,
+              "map_name": "Ashenvale",
+              "verification": "questie_structured_source_only",
+              "x": 61.49,
+              "y": 83.86
+            }
+          ],
+          "name": "Illiyana Moonblaze",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7863"
+      ],
+      "instruction": "Turn in [QT7863 Sentinel Basic Care Package] to Illiyana Moonblaze",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 35,
+      "quest_id": 7863,
+      "quest_name": "Sentinel Basic Care Package",
+      "quest_tag": null,
+      "required_level": 25,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 331,
+      "zone_or_sort_name": "Ashenvale"
+    }
+  ],
+  "title": "Optional Content 04 - The Stockade & Ashenvale"
+}

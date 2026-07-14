@@ -1,0 +1,1506 @@
+{
+  "branch": "optional_content",
+  "entry_contract": "Complete The Tempest Key. Begin in Shadowmoon Valley with Exarch Onaala. Leave at least two quest-log slots open; group and reputation gates remain explicit.",
+  "entry_route_point": {
+    "map_id": 3520,
+    "map_name": "Shadowmoon Valley",
+    "x": 61.2,
+    "y": 29.23
+  },
+  "entry_zone_or_sort": 3518,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 3521,
+    "map_name": "Zangarmarsh",
+    "quest_id": 9765,
+    "tag": "QT",
+    "x": 78.4,
+    "y": 62.02
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [
+    [
+      10883
+    ]
+  ],
+  "external_prerequisite_quest_ids": [
+    10883
+  ],
+  "group": "Mad's Loremaster Guide - Optional Content",
+  "guide_file": "Guides/optional_content/142_dungeon_46.lua",
+  "id": "142-optional_content-optional-content-46---nagrand-&-shattrath-city",
+  "maximum_level": null,
+  "minimum_level": null,
+  "next_chapter": "Optional Content 47 - Karazhan",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "Optional Content 45 - Shadowmoon Valley",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 10640,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:11026:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10640:starter"
+      ],
+      "instruction": "Travel from Blade's Edge Mountains to Shadowmoon Valley. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G61.20,29.23 Shadowmoon Valley]. [O]",
+      "map_id": 3520,
+      "map_name": "Shadowmoon Valley",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 3522,
+      "origin_map_name": "Blade's Edge Mountains",
+      "origin_x": 28.9,
+      "origin_y": 57.92,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 61.2,
+      "y": 29.23
+    },
+    {
+      "before_quest_id": 10640,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10883:dependency"
+      ],
+      "instruction": "Optional entry requirements: complete The Tempest Key. [O]",
+      "map_id": 3520,
+      "map_name": "Shadowmoon Valley",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        10883
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "branch_entry",
+      "verification": "route_dependency_graph",
+      "x": 61.2,
+      "y": 29.23
+    },
+    {
+      "before_quest_id": 10640,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10640:starter"
+      ],
+      "instruction": "Optional chapter: travel to Shadowmoon Valley and begin at [G61.20,29.23 Shadowmoon Valley]. Leave at least two quest-log slots open. [O]",
+      "map_id": 3520,
+      "map_name": "Shadowmoon Valley",
+      "optional": true,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 61.2,
+      "y": 29.23
+    },
+    {
+      "before_quest_id": 10640,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10640:requiredLevel"
+      ],
+      "instruction": "Reach level 70 before accepting Altruis. [XP70 Level 70]",
+      "map_id": 3520,
+      "map_name": "Shadowmoon Valley",
+      "optional": false,
+      "order": 4,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 70,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 61.2,
+      "y": 29.23
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 21860,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3520,
+              "map_name": "Shadowmoon Valley",
+              "verification": "questie_structured_source_only",
+              "x": 61.2,
+              "y": 29.23
+            }
+          ],
+          "name": "Exarch Onaala",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10640"
+      ],
+      "instruction": "Accept [QA10640 Altruis] from Exarch Onaala.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 10640,
+      "quest_name": "Altruis",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10640"
+      ],
+      "instruction": "Complete [QC10640 Altruis]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 10640,
+      "quest_name": "Altruis",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "reputation",
+      "conditional_categories": [
+        "one_time",
+        "reputation",
+        "reputation_gated"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18417,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 27.34,
+              "y": 43.09
+            }
+          ],
+          "name": "Altruis the Sufferer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10640"
+      ],
+      "instruction": "Turn in [QT10640 Altruis] to Altruis the Sufferer",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 10640,
+      "quest_name": "Altruis",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18417,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 27.34,
+              "y": 43.09
+            }
+          ],
+          "name": "Altruis the Sufferer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10641"
+      ],
+      "instruction": "Accept [QA10641 Against the Legion] from Altruis the Sufferer.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 10641,
+      "quest_name": "Against the Legion",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18417,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 27.34,
+              "y": 43.09
+            }
+          ],
+          "name": "Altruis the Sufferer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10668"
+      ],
+      "instruction": "Accept [QA10668 Against the Illidari] from Altruis the Sufferer.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 10668,
+      "quest_name": "Against the Illidari",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18417,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 27.34,
+              "y": 43.09
+            }
+          ],
+          "name": "Altruis the Sufferer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10669"
+      ],
+      "instruction": "Accept [QA10669 Against All Odds] from Altruis the Sufferer.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 10669,
+      "quest_name": "Against All Odds",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10668"
+      ],
+      "instruction": "Complete the required NPC or creature objective: Lothros. [QC10668 Against the Illidari]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Lothros",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 21928,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3520,
+              "map_name": "Shadowmoon Valley",
+              "verification": "questie_structured_source_only",
+              "x": 28.29,
+              "y": 49.97
+            }
+          ],
+          "name": "Lothros",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 11,
+      "quest_id": 10668,
+      "quest_name": "Against the Illidari",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10641"
+      ],
+      "instruction": "Complete the required NPC or creature objective: Avatar of Sathal. [QC10641 Against the Legion]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Avatar of Sathal",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 21925,
+          "kind": "npc",
+          "locations": [],
+          "name": "Avatar of Sathal",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 12,
+      "quest_id": 10641,
+      "quest_name": "Against the Legion",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10669"
+      ],
+      "instruction": "Use the quest item [UI30853-] as directed; complete the required NPC or creature objective: Xeleth. [QC10669 Against All Odds]",
+      "item_use_id": 30853,
+      "objective_hint": "Complete the required NPC or creature objective: Xeleth",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 21894,
+          "kind": "npc",
+          "locations": [],
+          "name": "Xeleth",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 13,
+      "quest_id": 10669,
+      "quest_name": "Against All Odds",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18417,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 27.34,
+              "y": 43.09
+            }
+          ],
+          "name": "Altruis the Sufferer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10641"
+      ],
+      "instruction": "Turn in [QT10641 Against the Legion] to Altruis the Sufferer",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 10641,
+      "quest_name": "Against the Legion",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18417,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 27.34,
+              "y": 43.09
+            }
+          ],
+          "name": "Altruis the Sufferer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10668"
+      ],
+      "instruction": "Turn in [QT10668 Against the Illidari] to Altruis the Sufferer",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 10668,
+      "quest_name": "Against the Illidari",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18417,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 27.34,
+              "y": 43.09
+            }
+          ],
+          "name": "Altruis the Sufferer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10669"
+      ],
+      "instruction": "Turn in [QT10669 Against All Odds] to Altruis the Sufferer",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 10669,
+      "quest_name": "Against All Odds",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18417,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 27.34,
+              "y": 43.09
+            }
+          ],
+          "name": "Altruis the Sufferer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10646"
+      ],
+      "instruction": "Accept [QA10646 Illidan's Pupil] from Altruis the Sufferer.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 10646,
+      "quest_name": "Illidan's Pupil",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10646"
+      ],
+      "instruction": "Complete the scripted or exploration event; complete the required NPC or creature objective: Altruis the Sufferer. [QC10646 Illidan's Pupil]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Altruis the Sufferer",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18417,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 27.34,
+              "y": 43.09
+            }
+          ],
+          "name": "Altruis the Sufferer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 18,
+      "quest_id": 10646,
+      "quest_name": "Illidan's Pupil",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18417,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 27.34,
+              "y": 43.09
+            }
+          ],
+          "name": "Altruis the Sufferer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10646"
+      ],
+      "instruction": "Turn in [QT10646 Illidan's Pupil] to Altruis the Sufferer",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 10646,
+      "quest_name": "Illidan's Pupil",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "heroic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18481,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 53.99,
+              "y": 44.75
+            }
+          ],
+          "name": "A'dal",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10884"
+      ],
+      "instruction": "Accept [QA10884 Trial of the Naaru: Mercy] from A'dal.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 10884,
+      "quest_name": "Trial of the Naaru: Mercy",
+      "quest_tag": "Heroic",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "heroic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18481,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 53.99,
+              "y": 44.75
+            }
+          ],
+          "name": "A'dal",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10885"
+      ],
+      "instruction": "Accept [QA10885 Trial of the Naaru: Strength] from A'dal.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 10885,
+      "quest_name": "Trial of the Naaru: Strength",
+      "quest_tag": "Heroic",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "heroic",
+        "one_time",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18481,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 53.99,
+              "y": 44.75
+            }
+          ],
+          "name": "A'dal",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10886"
+      ],
+      "instruction": "Accept [QA10886 Trial of the Naaru: Tenacity] from A'dal.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 22,
+      "quest_id": 10886,
+      "quest_name": "Trial of the Naaru: Tenacity",
+      "quest_tag": "Heroic",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "before_quest_id": 10884,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10884:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 3520,
+      "map_name": "Shadowmoon Valley",
+      "optional": true,
+      "order": 23,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        10884
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 61.2,
+      "y": 29.23
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "heroic",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10884"
+      ],
+      "instruction": "Heroic dungeon \u2014 Collect or use the required item: Unused Axe of the Executioner. [QC10884 Trial of the Naaru: Mercy]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Unused Axe of the Executioner",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 31716,
+          "kind": "item",
+          "locations": [],
+          "name": "Unused Axe of the Executioner",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 24,
+      "quest_id": 10884,
+      "quest_name": "Trial of the Naaru: Mercy",
+      "quest_tag": "Heroic",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "heroic",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10885"
+      ],
+      "instruction": "Heroic dungeon \u2014 Collect or use the required items: Kalithresh's Trident, Murmur's Essence. [QC10885 Trial of the Naaru: Strength]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Kalithresh's Trident, Murmur's Essence",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 31721,
+          "kind": "item",
+          "locations": [],
+          "name": "Kalithresh's Trident",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 31722,
+          "kind": "item",
+          "locations": [],
+          "name": "Murmur's Essence",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 25,
+      "quest_id": 10885,
+      "quest_name": "Trial of the Naaru: Strength",
+      "quest_tag": "Heroic",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "heroic",
+        "one_time",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10886"
+      ],
+      "instruction": "Heroic dungeon \u2014 Complete the scripted or exploration event. [QC10886 Trial of the Naaru: Tenacity]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 26,
+      "quest_id": 10886,
+      "quest_name": "Trial of the Naaru: Tenacity",
+      "quest_tag": "Heroic",
+      "required_level": 70,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "heroic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18481,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 53.99,
+              "y": 44.75
+            }
+          ],
+          "name": "A'dal",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10884"
+      ],
+      "instruction": "Turn in [QT10884 Trial of the Naaru: Mercy] to A'dal",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 27,
+      "quest_id": 10884,
+      "quest_name": "Trial of the Naaru: Mercy",
+      "quest_tag": "Heroic",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "heroic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18481,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 53.99,
+              "y": 44.75
+            }
+          ],
+          "name": "A'dal",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10885"
+      ],
+      "instruction": "Turn in [QT10885 Trial of the Naaru: Strength] to A'dal",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 28,
+      "quest_id": 10885,
+      "quest_name": "Trial of the Naaru: Strength",
+      "quest_tag": "Heroic",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "heroic",
+        "one_time",
+        "scripted_or_event"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18481,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 53.99,
+              "y": 44.75
+            }
+          ],
+          "name": "A'dal",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10886"
+      ],
+      "instruction": "Turn in [QT10886 Trial of the Naaru: Tenacity] to A'dal",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 29,
+      "quest_id": 10886,
+      "quest_name": "Trial of the Naaru: Tenacity",
+      "quest_tag": "Heroic",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17884,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 52.29,
+              "y": 35.98
+            }
+          ],
+          "name": "Watcher Jhang",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9763"
+      ],
+      "instruction": "Accept [QA9763 The Warlord's Hideout] from Watcher Jhang.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 30,
+      "quest_id": 9763,
+      "quest_name": "The Warlord's Hideout",
+      "quest_tag": "Dungeon",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3715,
+      "zone_or_sort_name": "The Steamvault"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "item_triggered",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 24367,
+          "kind": "item",
+          "locations": [],
+          "name": "Orders from Lady Vashj",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9764"
+      ],
+      "instruction": "Accept [QA9764 Orders from Lady Vashj] from Orders from Lady Vashj.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 31,
+      "quest_id": 9764,
+      "quest_name": "Orders from Lady Vashj",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3715,
+      "zone_or_sort_name": "The Steamvault"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9763"
+      ],
+      "instruction": "Dungeon \u2014 Complete the required NPC or creature objective: Warlord Kalithresh. [QC9763 The Warlord's Hideout]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Warlord Kalithresh",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17798,
+          "kind": "npc",
+          "locations": [],
+          "name": "Warlord Kalithresh",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 32,
+      "quest_id": 9763,
+      "quest_name": "The Warlord's Hideout",
+      "quest_tag": "Dungeon",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3715,
+      "zone_or_sort_name": "The Steamvault"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "item_triggered",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9764"
+      ],
+      "instruction": "Dungeon \u2014 Complete [QC9764 Orders from Lady Vashj]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 33,
+      "quest_id": 9764,
+      "quest_name": "Orders from Lady Vashj",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3715,
+      "zone_or_sort_name": "The Steamvault"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17884,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 52.29,
+              "y": 35.98
+            }
+          ],
+          "name": "Watcher Jhang",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9763"
+      ],
+      "instruction": "Turn in [QT9763 The Warlord's Hideout] to Watcher Jhang",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 34,
+      "quest_id": 9763,
+      "quest_name": "The Warlord's Hideout",
+      "quest_tag": "Dungeon",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3715,
+      "zone_or_sort_name": "The Steamvault"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "item_triggered",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17841,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 78.4,
+              "y": 62.02
+            }
+          ],
+          "name": "Ysiel Windsinger",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9764"
+      ],
+      "instruction": "Turn in [QT9764 Orders from Lady Vashj] to Ysiel Windsinger",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 35,
+      "quest_id": 9764,
+      "quest_name": "Orders from Lady Vashj",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3715,
+      "zone_or_sort_name": "The Steamvault"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17841,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 78.4,
+              "y": 62.02
+            }
+          ],
+          "name": "Ysiel Windsinger",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9765"
+      ],
+      "instruction": "Accept [QA9765 Preparing for War] from Ysiel Windsinger.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 36,
+      "quest_id": 9765,
+      "quest_name": "Preparing for War",
+      "quest_tag": "Dungeon",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3715,
+      "zone_or_sort_name": "The Steamvault"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9765"
+      ],
+      "instruction": "Dungeon \u2014 Collect or use the required item: Coilfang Armaments. [QC9765 Preparing for War]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Coilfang Armaments",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 24368,
+          "kind": "item",
+          "locations": [],
+          "name": "Coilfang Armaments",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 37,
+      "quest_id": 9765,
+      "quest_name": "Preparing for War",
+      "quest_tag": "Dungeon",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3715,
+      "zone_or_sort_name": "The Steamvault"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17841,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3521,
+              "map_name": "Zangarmarsh",
+              "verification": "questie_structured_source_only",
+              "x": 78.4,
+              "y": 62.02
+            }
+          ],
+          "name": "Ysiel Windsinger",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9765"
+      ],
+      "instruction": "Turn in [QT9765 Preparing for War] to Ysiel Windsinger",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 38,
+      "quest_id": 9765,
+      "quest_name": "Preparing for War",
+      "quest_tag": "Dungeon",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3715,
+      "zone_or_sort_name": "The Steamvault"
+    }
+  ],
+  "title": "Optional Content 46 - Nagrand & Shattrath City"
+}

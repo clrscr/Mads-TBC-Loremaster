@@ -1,0 +1,5024 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 25 Bloodmyst Isle & The Exodar, or select this chapter on a partially completed character. Begin in Duskwood with Mound of loose dirt. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 10,
+    "map_name": "Duskwood",
+    "x": 49.85,
+    "y": 77.71
+  },
+  "entry_zone_or_sort": 10,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 10,
+    "map_name": "Duskwood",
+    "quest_id": 55,
+    "tag": "QT",
+    "x": 7.78,
+    "y": 34.07
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/026_world_26.lua",
+  "id": "026-primary-26-duskwood",
+  "maximum_level": 26,
+  "minimum_level": 26,
+  "next_chapter": "27 Ashenvale",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "25 Bloodmyst Isle & The Exodar",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 230,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7798:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:230:starter",
+        "travel-network:auberdine-exodar",
+        "travel-network:auberdine-menethil",
+        "https://www.wowhead.com/tbc/guide/how-to-get-to-the-exodar-in-burning-crusade-classic",
+        "https://www.wowhead.com/tbc/quest=942/the-absent-minded-prospector"
+      ],
+      "instruction": "Travel from The Exodar to Duskwood: Take the ship between Auberdine and Valnaar's Berth outside the Exodar; then take the ship between Auberdine and Menethil Harbor. Continue to [G49.85,77.71 Duskwood]. [O]",
+      "map_id": 10,
+      "map_name": "Duskwood",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 3557,
+      "origin_map_name": "The Exodar",
+      "origin_x": 63.51,
+      "origin_y": 67.74,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [
+        "auberdine-exodar",
+        "auberdine-menethil"
+      ],
+      "type": "transport",
+      "verification": "questie_endpoints_and_tbc_transport_network",
+      "x": 49.85,
+      "y": 77.71
+    },
+    {
+      "before_quest_id": 230,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:230:starter"
+      ],
+      "instruction": "Before you begin: travel to Duskwood and meet the first quest giver at [G49.85,77.71 Duskwood]. Leave at least two quest-log slots open. [O]",
+      "map_id": 10,
+      "map_name": "Duskwood",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 49.85,
+      "y": 77.71
+    },
+    {
+      "before_quest_id": 230,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:230:requiredLevel"
+      ],
+      "instruction": "Reach level 26 before accepting Sven's Camp. [XP26 Level 26]",
+      "map_id": 10,
+      "map_name": "Duskwood",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 26,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 49.85,
+      "y": 77.71
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 59,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 49.85,
+              "y": 77.71
+            }
+          ],
+          "name": "Mound of loose dirt",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:230"
+      ],
+      "instruction": "Accept [QA230 Sven's Camp] from Mound of loose dirt.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 230,
+      "quest_name": "Sven's Camp",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:230"
+      ],
+      "instruction": "Complete [QC230 Sven's Camp]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 230,
+      "quest_name": "Sven's Camp",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 311,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 7.78,
+              "y": 34.07
+            }
+          ],
+          "name": "Sven Yorgen",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:230"
+      ],
+      "instruction": "Turn in [QT230 Sven's Camp] to Sven Yorgen",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 230,
+      "quest_name": "Sven's Camp",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 311,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 7.78,
+              "y": 34.07
+            }
+          ],
+          "name": "Sven Yorgen",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:262"
+      ],
+      "instruction": "Accept [QA262 The Shadowy Figure] from Sven Yorgen.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 262,
+      "quest_name": "The Shadowy Figure",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:262"
+      ],
+      "instruction": "Complete [QC262 The Shadowy Figure]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 262,
+      "quest_name": "The Shadowy Figure",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 265,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 75.79,
+              "y": 45.32
+            }
+          ],
+          "name": "Madame Eva",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:262"
+      ],
+      "instruction": "Turn in [QT262 The Shadowy Figure] to Madame Eva",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 262,
+      "quest_name": "The Shadowy Figure",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 265,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 75.79,
+              "y": 45.32
+            }
+          ],
+          "name": "Madame Eva",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:265"
+      ],
+      "instruction": "Accept [QA265 The Shadowy Search Continues] from Madame Eva.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 265,
+      "quest_name": "The Shadowy Search Continues",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:265"
+      ],
+      "instruction": "Complete [QC265 The Shadowy Search Continues]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 265,
+      "quest_name": "The Shadowy Search Continues",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 267,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 72.54,
+              "y": 46.87
+            }
+          ],
+          "name": "Clerk Daltry",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:265"
+      ],
+      "instruction": "Turn in [QT265 The Shadowy Search Continues] to Clerk Daltry",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 265,
+      "quest_name": "The Shadowy Search Continues",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 267,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 72.54,
+              "y": 46.87
+            }
+          ],
+          "name": "Clerk Daltry",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:266"
+      ],
+      "instruction": "Accept [QA266 Inquire at the Inn] from Clerk Daltry.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 266,
+      "quest_name": "Inquire at the Inn",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:266"
+      ],
+      "instruction": "Complete [QC266 Inquire at the Inn]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 266,
+      "quest_name": "Inquire at the Inn",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 273,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 73.78,
+              "y": 44.49
+            }
+          ],
+          "name": "Tavernkeep Smitts",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:266"
+      ],
+      "instruction": "Turn in [QT266 Inquire at the Inn] to Tavernkeep Smitts",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 266,
+      "quest_name": "Inquire at the Inn",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 273,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 73.78,
+              "y": 44.49
+            }
+          ],
+          "name": "Tavernkeep Smitts",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:453"
+      ],
+      "instruction": "Accept [QA453 Finding the Shadowy Figure] from Tavernkeep Smitts.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 453,
+      "quest_name": "Finding the Shadowy Figure",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:453"
+      ],
+      "instruction": "Complete [QC453 Finding the Shadowy Figure]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 453,
+      "quest_name": "Finding the Shadowy Figure",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 288,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 18.38,
+              "y": 56.37
+            }
+          ],
+          "name": "Jitters",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:453"
+      ],
+      "instruction": "Turn in [QT453 Finding the Shadowy Figure] to Jitters",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 453,
+      "quest_name": "Finding the Shadowy Figure",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 288,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 18.38,
+              "y": 56.37
+            }
+          ],
+          "name": "Jitters",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:268"
+      ],
+      "instruction": "Accept [QA268 Return to Sven] from Jitters.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 268,
+      "quest_name": "Return to Sven",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:268"
+      ],
+      "instruction": "Complete [QC268 Return to Sven]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 268,
+      "quest_name": "Return to Sven",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 311,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 7.78,
+              "y": 34.07
+            }
+          ],
+          "name": "Sven Yorgen",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:268"
+      ],
+      "instruction": "Turn in [QT268 Return to Sven] to Sven Yorgen",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 268,
+      "quest_name": "Return to Sven",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 265,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 75.79,
+              "y": 45.32
+            }
+          ],
+          "name": "Madame Eva",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:66"
+      ],
+      "instruction": "Accept [QA66 The Legend of Stalvan] from Madame Eva.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 22,
+      "quest_id": 66,
+      "quest_name": "The Legend of Stalvan",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:66"
+      ],
+      "instruction": "Complete [QC66 The Legend of Stalvan]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 23,
+      "quest_id": 66,
+      "quest_name": "The Legend of Stalvan",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 267,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 72.54,
+              "y": 46.87
+            }
+          ],
+          "name": "Clerk Daltry",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:66"
+      ],
+      "instruction": "Turn in [QT66 The Legend of Stalvan] to Clerk Daltry",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 24,
+      "quest_id": 66,
+      "quest_name": "The Legend of Stalvan",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 267,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 72.54,
+              "y": 46.87
+            }
+          ],
+          "name": "Clerk Daltry",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:67"
+      ],
+      "instruction": "Accept [QA67 The Legend of Stalvan] from Clerk Daltry.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 25,
+      "quest_id": 67,
+      "quest_name": "The Legend of Stalvan",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:67"
+      ],
+      "instruction": "Complete [QC67 The Legend of Stalvan]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 26,
+      "quest_id": 67,
+      "quest_name": "The Legend of Stalvan",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 3643,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 40,
+              "map_name": "Westfall",
+              "verification": "questie_structured_source_only",
+              "x": 41.51,
+              "y": 66.73
+            }
+          ],
+          "name": "Old Footlocker",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:67"
+      ],
+      "instruction": "Turn in [QT67 The Legend of Stalvan] to Old Footlocker",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 27,
+      "quest_id": 67,
+      "quest_name": "The Legend of Stalvan",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 3643,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 40,
+              "map_name": "Westfall",
+              "verification": "questie_structured_source_only",
+              "x": 41.51,
+              "y": 66.73
+            }
+          ],
+          "name": "Old Footlocker",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:68"
+      ],
+      "instruction": "Accept [QA68 The Legend of Stalvan] from Old Footlocker.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 28,
+      "quest_id": 68,
+      "quest_name": "The Legend of Stalvan",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:68"
+      ],
+      "instruction": "Complete [QC68 The Legend of Stalvan]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 29,
+      "quest_id": 68,
+      "quest_name": "The Legend of Stalvan",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 267,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 72.54,
+              "y": 46.87
+            }
+          ],
+          "name": "Clerk Daltry",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:68"
+      ],
+      "instruction": "Turn in [QT68 The Legend of Stalvan] to Clerk Daltry",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 30,
+      "quest_id": 68,
+      "quest_name": "The Legend of Stalvan",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 267,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 72.54,
+              "y": 46.87
+            }
+          ],
+          "name": "Clerk Daltry",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:69"
+      ],
+      "instruction": "Accept [QA69 The Legend of Stalvan] from Clerk Daltry.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 31,
+      "quest_id": 69,
+      "quest_name": "The Legend of Stalvan",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:69"
+      ],
+      "instruction": "Complete [QC69 The Legend of Stalvan]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 32,
+      "quest_id": 69,
+      "quest_name": "The Legend of Stalvan",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 295,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 43.77,
+              "y": 65.8
+            }
+          ],
+          "name": "Innkeeper Farley",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:69"
+      ],
+      "instruction": "Turn in [QT69 The Legend of Stalvan] to Innkeeper Farley",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 33,
+      "quest_id": 69,
+      "quest_name": "The Legend of Stalvan",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 295,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 43.77,
+              "y": 65.8
+            }
+          ],
+          "name": "Innkeeper Farley",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:70"
+      ],
+      "instruction": "Accept [QA70 The Legend of Stalvan] from Innkeeper Farley.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 34,
+      "quest_id": 70,
+      "quest_name": "The Legend of Stalvan",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:70"
+      ],
+      "instruction": "Collect or use the required item: An Undelivered Letter. [QC70 The Legend of Stalvan]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: An Undelivered Letter",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 910,
+          "kind": "item",
+          "locations": [],
+          "name": "An Undelivered Letter",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 35,
+      "quest_id": 70,
+      "quest_name": "The Legend of Stalvan",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 297,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 29.53,
+              "y": 61.93
+            }
+          ],
+          "name": "Caretaker Folsom",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:70"
+      ],
+      "instruction": "Turn in [QT70 The Legend of Stalvan] to Caretaker Folsom",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 36,
+      "quest_id": 70,
+      "quest_name": "The Legend of Stalvan",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 297,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 29.53,
+              "y": 61.93
+            }
+          ],
+          "name": "Caretaker Folsom",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:72"
+      ],
+      "instruction": "Accept [QA72 The Legend of Stalvan] from Caretaker Folsom.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 37,
+      "quest_id": 72,
+      "quest_name": "The Legend of Stalvan",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:72"
+      ],
+      "instruction": "Complete [QC72 The Legend of Stalvan]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 38,
+      "quest_id": 72,
+      "quest_name": "The Legend of Stalvan",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 1561,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 29.45,
+              "y": 61.53
+            }
+          ],
+          "name": "Sealed Crate",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:72"
+      ],
+      "instruction": "Turn in [QT72 The Legend of Stalvan] to Sealed Crate",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 39,
+      "quest_id": 72,
+      "quest_name": "The Legend of Stalvan",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 1561,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 29.45,
+              "y": 61.53
+            }
+          ],
+          "name": "Sealed Crate",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:74"
+      ],
+      "instruction": "Accept [QA74 The Legend of Stalvan] from Sealed Crate.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 40,
+      "quest_id": 74,
+      "quest_name": "The Legend of Stalvan",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:74"
+      ],
+      "instruction": "Complete [QC74 The Legend of Stalvan]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 41,
+      "quest_id": 74,
+      "quest_name": "The Legend of Stalvan",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 294,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 84.61,
+              "y": 69.38
+            }
+          ],
+          "name": "Marshal Haggard",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:74"
+      ],
+      "instruction": "Turn in [QT74 The Legend of Stalvan] to Marshal Haggard",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 42,
+      "quest_id": 74,
+      "quest_name": "The Legend of Stalvan",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 294,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 84.61,
+              "y": 69.38
+            }
+          ],
+          "name": "Marshal Haggard",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:75"
+      ],
+      "instruction": "Accept [QA75 The Legend of Stalvan] from Marshal Haggard.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 43,
+      "quest_id": 75,
+      "quest_name": "The Legend of Stalvan",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:75"
+      ],
+      "instruction": "Collect or use the required item: A Faded Journal Page. [QC75 The Legend of Stalvan]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: A Faded Journal Page",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 921,
+          "kind": "item",
+          "locations": [],
+          "name": "A Faded Journal Page",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 44,
+      "quest_id": 75,
+      "quest_name": "The Legend of Stalvan",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 294,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 84.61,
+              "y": 69.38
+            }
+          ],
+          "name": "Marshal Haggard",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:75"
+      ],
+      "instruction": "Turn in [QT75 The Legend of Stalvan] to Marshal Haggard",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 45,
+      "quest_id": 75,
+      "quest_name": "The Legend of Stalvan",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 294,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 84.61,
+              "y": 69.38
+            }
+          ],
+          "name": "Marshal Haggard",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:78"
+      ],
+      "instruction": "Accept [QA78 The Legend of Stalvan] from Marshal Haggard.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 46,
+      "quest_id": 78,
+      "quest_name": "The Legend of Stalvan",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:78"
+      ],
+      "instruction": "Complete [QC78 The Legend of Stalvan]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 47,
+      "quest_id": 78,
+      "quest_name": "The Legend of Stalvan",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 273,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 73.78,
+              "y": 44.49
+            }
+          ],
+          "name": "Tavernkeep Smitts",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:78"
+      ],
+      "instruction": "Turn in [QT78 The Legend of Stalvan] to Tavernkeep Smitts",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 48,
+      "quest_id": 78,
+      "quest_name": "The Legend of Stalvan",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 273,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 73.78,
+              "y": 44.49
+            }
+          ],
+          "name": "Tavernkeep Smitts",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:79"
+      ],
+      "instruction": "Accept [QA79 The Legend of Stalvan] from Tavernkeep Smitts.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 49,
+      "quest_id": 79,
+      "quest_name": "The Legend of Stalvan",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:79"
+      ],
+      "instruction": "Complete [QC79 The Legend of Stalvan]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 50,
+      "quest_id": 79,
+      "quest_name": "The Legend of Stalvan",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 264,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 73.54,
+              "y": 46.82
+            }
+          ],
+          "name": "Commander Althea Ebonlocke",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:79"
+      ],
+      "instruction": "Turn in [QT79 The Legend of Stalvan] to Commander Althea Ebonlocke",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 51,
+      "quest_id": 79,
+      "quest_name": "The Legend of Stalvan",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 264,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 73.54,
+              "y": 46.82
+            }
+          ],
+          "name": "Commander Althea Ebonlocke",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:80"
+      ],
+      "instruction": "Accept [QA80 The Legend of Stalvan] from Commander Althea Ebonlocke.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 52,
+      "quest_id": 80,
+      "quest_name": "The Legend of Stalvan",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:80"
+      ],
+      "instruction": "Complete [QC80 The Legend of Stalvan]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 53,
+      "quest_id": 80,
+      "quest_name": "The Legend of Stalvan",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 267,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 72.54,
+              "y": 46.87
+            }
+          ],
+          "name": "Clerk Daltry",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:80"
+      ],
+      "instruction": "Turn in [QT80 The Legend of Stalvan] to Clerk Daltry",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 54,
+      "quest_id": 80,
+      "quest_name": "The Legend of Stalvan",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 267,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 72.54,
+              "y": 46.87
+            }
+          ],
+          "name": "Clerk Daltry",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:97"
+      ],
+      "instruction": "Accept [QA97 The Legend of Stalvan] from Clerk Daltry.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 55,
+      "quest_id": 97,
+      "quest_name": "The Legend of Stalvan",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:97"
+      ],
+      "instruction": "Complete [QC97 The Legend of Stalvan]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 56,
+      "quest_id": 97,
+      "quest_name": "The Legend of Stalvan",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 264,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 73.54,
+              "y": 46.82
+            }
+          ],
+          "name": "Commander Althea Ebonlocke",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:97"
+      ],
+      "instruction": "Turn in [QT97 The Legend of Stalvan] to Commander Althea Ebonlocke",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 57,
+      "quest_id": 97,
+      "quest_name": "The Legend of Stalvan",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 264,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 73.54,
+              "y": 46.82
+            }
+          ],
+          "name": "Commander Althea Ebonlocke",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:98"
+      ],
+      "instruction": "Accept [QA98 The Legend of Stalvan] from Commander Althea Ebonlocke.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 58,
+      "quest_id": 98,
+      "quest_name": "The Legend of Stalvan",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 663,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 75.75,
+              "y": 47.57
+            }
+          ],
+          "name": "Calor",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:173"
+      ],
+      "instruction": "Accept [QA173 Worgen in the Woods] from Calor.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 59,
+      "quest_id": 173,
+      "quest_name": "Worgen in the Woods",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:173"
+      ],
+      "instruction": "Complete the required NPC or creature objective: Nightbane Shadow Weaver. [QC173 Worgen in the Woods]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Nightbane Shadow Weaver",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 533,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 62.03,
+              "y": 30.22
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 61.94,
+              "y": 52.05
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 61.07,
+              "y": 37.3
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 57.32,
+              "y": 30.42
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 65.11,
+              "y": 38.64
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 62.56,
+              "y": 35.0
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 58.28,
+              "y": 29.32
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 63.46,
+              "y": 37.17
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 61.43,
+              "y": 45.87
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 62.0,
+              "y": 47.77
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 59.74,
+              "y": 52.8
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 64.7,
+              "y": 42.86
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 64.95,
+              "y": 45.75
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 63.39,
+              "y": 44.21
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 60.09,
+              "y": 72.17
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 64.24,
+              "y": 67.74
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 63.3,
+              "y": 70.26
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 62.49,
+              "y": 72.4
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 60.68,
+              "y": 70.91
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 65.08,
+              "y": 66.37
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 64.32,
+              "y": 66.16
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 66.4,
+              "y": 66.44
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 67.33,
+              "y": 70.77
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 65.0,
+              "y": 74.99
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 66.22,
+              "y": 71.06
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 67.22,
+              "y": 75.57
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 65.48,
+              "y": 69.13
+            }
+          ],
+          "name": "Nightbane Shadow Weaver",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 60,
+      "quest_id": 173,
+      "quest_name": "Worgen in the Woods",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:98"
+      ],
+      "instruction": "Collect or use the required item: Mistmantle Family Ring. [QC98 The Legend of Stalvan]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Mistmantle Family Ring",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 3629,
+          "kind": "item",
+          "locations": [],
+          "name": "Mistmantle Family Ring",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 61,
+      "quest_id": 98,
+      "quest_name": "The Legend of Stalvan",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 265,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 75.79,
+              "y": 45.32
+            }
+          ],
+          "name": "Madame Eva",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:98"
+      ],
+      "instruction": "Turn in [QT98 The Legend of Stalvan] to Madame Eva",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 62,
+      "quest_id": 98,
+      "quest_name": "The Legend of Stalvan",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 663,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 75.75,
+              "y": 47.57
+            }
+          ],
+          "name": "Calor",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:173"
+      ],
+      "instruction": "Turn in [QT173 Worgen in the Woods] to Calor",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 63,
+      "quest_id": 173,
+      "quest_name": "Worgen in the Woods",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 663,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 75.75,
+              "y": 47.57
+            }
+          ],
+          "name": "Calor",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:221"
+      ],
+      "instruction": "Accept [QA221 Worgen in the Woods] from Calor.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 64,
+      "quest_id": 221,
+      "quest_name": "Worgen in the Woods",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:221"
+      ],
+      "instruction": "Complete the required NPC or creature objective: Nightbane Dark Runner. [QC221 Worgen in the Woods]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Nightbane Dark Runner",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 205,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 63.61,
+              "y": 51.67
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 60.89,
+              "y": 41.69
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 60.92,
+              "y": 39.76
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 63.24,
+              "y": 50.77
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 64.66,
+              "y": 51.87
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 64.28,
+              "y": 50.85
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 63.98,
+              "y": 49.83
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 60.0,
+              "y": 45.24
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 60.57,
+              "y": 39.92
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 60.75,
+              "y": 41.5
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 61.17,
+              "y": 41.26
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 62.19,
+              "y": 38.8
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 64.14,
+              "y": 51.65
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 60.03,
+              "y": 39.6
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 60.44,
+              "y": 42.24
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 60.09,
+              "y": 40.91
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 60.75,
+              "y": 41.01
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 62.14,
+              "y": 42.74
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 63.85,
+              "y": 40.9
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 66.24,
+              "y": 47.75
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 67.13,
+              "y": 49.61
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 67.59,
+              "y": 45.86
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 66.31,
+              "y": 44.84
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 65.15,
+              "y": 70.01
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 67.3,
+              "y": 69.24
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 64.59,
+              "y": 69.21
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 66.31,
+              "y": 67.88
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 65.58,
+              "y": 65.92
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 64.82,
+              "y": 65.99
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 61.1,
+              "y": 73.35
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 63.7,
+              "y": 75.48
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 60.38,
+              "y": 74.47
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 64.06,
+              "y": 72.65
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 60.92,
+              "y": 75.19
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 61.22,
+              "y": 76.11
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 61.61,
+              "y": 75.49
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 62.78,
+              "y": 75.67
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 60.55,
+              "y": 75.31
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 62.23,
+              "y": 74.27
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 63.95,
+              "y": 73.72
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 64.39,
+              "y": 73.12
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 63.69,
+              "y": 73.44
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 67.25,
+              "y": 77.5
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 65.56,
+              "y": 77.48
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 65.13,
+              "y": 67.39
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 66.09,
+              "y": 75.06
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 66.23,
+              "y": 73.96
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 65.45,
+              "y": 75.72
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 65.93,
+              "y": 69.41
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 65.44,
+              "y": 67.71
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 66.35,
+              "y": 76.9
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 65.6,
+              "y": 67.23
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 66.07,
+              "y": 76.5
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 66.0,
+              "y": 69.14
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 66.42,
+              "y": 76.4
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 65.64,
+              "y": 66.97
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 65.44,
+              "y": 67.81
+            }
+          ],
+          "name": "Nightbane Dark Runner",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 65,
+      "quest_id": 221,
+      "quest_name": "Worgen in the Woods",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 663,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 75.75,
+              "y": 47.57
+            }
+          ],
+          "name": "Calor",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:221"
+      ],
+      "instruction": "Turn in [QT221 Worgen in the Woods] to Calor",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 66,
+      "quest_id": 221,
+      "quest_name": "Worgen in the Woods",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 663,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 75.75,
+              "y": 47.57
+            }
+          ],
+          "name": "Calor",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:222"
+      ],
+      "instruction": "Accept [QA222 Worgen in the Woods] from Calor.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 67,
+      "quest_id": 222,
+      "quest_name": "Worgen in the Woods",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:222"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Nightbane Vile Fang, Nightbane Tainted One. [QC222 Worgen in the Woods]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Nightbane Vile Fang, Nightbane Tainted One",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 206,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 73.38,
+              "y": 72.59
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 72.55,
+              "y": 73.61
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 73.01,
+              "y": 72.72
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 72.3,
+              "y": 68.41
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 72.32,
+              "y": 70.19
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 73.31,
+              "y": 70.68
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 72.45,
+              "y": 69.58
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 73.73,
+              "y": 69.9
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 72.04,
+              "y": 74.71
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 72.93,
+              "y": 72.09
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 71.76,
+              "y": 72.84
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 71.06,
+              "y": 71.49
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 71.94,
+              "y": 72.31
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 71.57,
+              "y": 71.66
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 72.41,
+              "y": 67.38
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 73.5,
+              "y": 68.54
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 61.9,
+              "y": 81.86
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 61.82,
+              "y": 80.97
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 62.69,
+              "y": 79.23
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 61.62,
+              "y": 82.22
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 62.64,
+              "y": 79.82
+            }
+          ],
+          "name": "Nightbane Vile Fang",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 920,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 73.13,
+              "y": 75.52
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 73.9,
+              "y": 77.22
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 74.11,
+              "y": 78.7
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 74.06,
+              "y": 79.59
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 73.5,
+              "y": 76.99
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 73.61,
+              "y": 78.95
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 63.48,
+              "y": 83.67
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 63.6,
+              "y": 84.2
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 62.33,
+              "y": 82.2
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 62.37,
+              "y": 81.1
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 63.57,
+              "y": 83.62
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 60.91,
+              "y": 80.91
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 61.24,
+              "y": 81.67
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 63.14,
+              "y": 80.34
+            }
+          ],
+          "name": "Nightbane Tainted One",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 68,
+      "quest_id": 222,
+      "quest_name": "Worgen in the Woods",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 663,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 75.75,
+              "y": 47.57
+            }
+          ],
+          "name": "Calor",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:222"
+      ],
+      "instruction": "Turn in [QT222 Worgen in the Woods] to Calor",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 69,
+      "quest_id": 222,
+      "quest_name": "Worgen in the Woods",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 663,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 75.75,
+              "y": 47.57
+            }
+          ],
+          "name": "Calor",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:223"
+      ],
+      "instruction": "Accept [QA223 Worgen in the Woods] from Calor.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 70,
+      "quest_id": 223,
+      "quest_name": "Worgen in the Woods",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:223"
+      ],
+      "instruction": "Complete [QC223 Worgen in the Woods]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 71,
+      "quest_id": 223,
+      "quest_name": "Worgen in the Woods",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 661,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 75.32,
+              "y": 49.02
+            }
+          ],
+          "name": "Jonathan Carevin",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:223"
+      ],
+      "instruction": "Turn in [QT223 Worgen in the Woods] to Jonathan Carevin",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 72,
+      "quest_id": 223,
+      "quest_name": "Worgen in the Woods",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 311,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 7.78,
+              "y": 34.07
+            }
+          ],
+          "name": "Sven Yorgen",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:323"
+      ],
+      "instruction": "Accept [QA323 Proving Your Worth] from Sven Yorgen.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 73,
+      "quest_id": 323,
+      "quest_name": "Proving Your Worth",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:323"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Skeletal Raider, Skeletal Healer, Skeletal Warder. [QC323 Proving Your Worth]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Skeletal Raider, Skeletal Healer, Skeletal Warder",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1110,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 18.14,
+              "y": 39.42
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 17.56,
+              "y": 37.0
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 17.72,
+              "y": 32.66
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 15.78,
+              "y": 38.02
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 15.2,
+              "y": 38.31
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 16.13,
+              "y": 39.47
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 15.37,
+              "y": 39.2
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 14.37,
+              "y": 36.21
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 17.45,
+              "y": 34.22
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 15.15,
+              "y": 36.85
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 16.37,
+              "y": 38.55
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 17.38,
+              "y": 33.36
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 17.22,
+              "y": 33.56
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 17.16,
+              "y": 34.94
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 13.67,
+              "y": 33.39
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 16.89,
+              "y": 31.34
+            }
+          ],
+          "name": "Skeletal Raider",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 787,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 16.86,
+              "y": 40.42
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 15.87,
+              "y": 41.04
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 14.95,
+              "y": 40.47
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 17.01,
+              "y": 39.19
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 16.66,
+              "y": 37.75
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 13.51,
+              "y": 36.3
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 13.96,
+              "y": 36.42
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 16.28,
+              "y": 32.15
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 14.9,
+              "y": 34.17
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 16.84,
+              "y": 28.99
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 19.84,
+              "y": 26.71
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 16.9,
+              "y": 35.0
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 17.33,
+              "y": 37.43
+            }
+          ],
+          "name": "Skeletal Healer",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 785,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 16.84,
+              "y": 37.56
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 16.05,
+              "y": 37.28
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 17.81,
+              "y": 35.47
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 13.73,
+              "y": 36.16
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 15.96,
+              "y": 34.65
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 16.8,
+              "y": 30.12
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 16.28,
+              "y": 32.7
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 16.12,
+              "y": 31.37
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 16.83,
+              "y": 28.59
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 17.3,
+              "y": 37.39
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 17.17,
+              "y": 28.09
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 15.92,
+              "y": 38.75
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 14.05,
+              "y": 32.57
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 13.46,
+              "y": 33.39
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 13.84,
+              "y": 34.46
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 17.41,
+              "y": 35.5
+            },
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 18.27,
+              "y": 35.66
+            }
+          ],
+          "name": "Skeletal Warder",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 74,
+      "quest_id": 323,
+      "quest_name": "Proving Your Worth",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 311,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 7.78,
+              "y": 34.07
+            }
+          ],
+          "name": "Sven Yorgen",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:323"
+      ],
+      "instruction": "Turn in [QT323 Proving Your Worth] to Sven Yorgen",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 75,
+      "quest_id": 323,
+      "quest_name": "Proving Your Worth",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 311,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 7.78,
+              "y": 34.07
+            }
+          ],
+          "name": "Sven Yorgen",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:269"
+      ],
+      "instruction": "Accept [QA269 Seeking Wisdom] from Sven Yorgen.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 76,
+      "quest_id": 269,
+      "quest_name": "Seeking Wisdom",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:269"
+      ],
+      "instruction": "Complete [QC269 Seeking Wisdom]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 77,
+      "quest_id": 269,
+      "quest_name": "Seeking Wisdom",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1212,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 39.1,
+              "y": 27.86
+            }
+          ],
+          "name": "Bishop Farthing",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:269"
+      ],
+      "instruction": "Turn in [QT269 Seeking Wisdom] to Bishop Farthing",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 78,
+      "quest_id": 269,
+      "quest_name": "Seeking Wisdom",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1212,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 39.1,
+              "y": 27.86
+            }
+          ],
+          "name": "Bishop Farthing",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:270"
+      ],
+      "instruction": "Accept [QA270 The Doomed Fleet] from Bishop Farthing.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 79,
+      "quest_id": 270,
+      "quest_name": "The Doomed Fleet",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:270"
+      ],
+      "instruction": "Complete [QC270 The Doomed Fleet]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 80,
+      "quest_id": 270,
+      "quest_name": "The Doomed Fleet",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1217,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 10.58,
+              "y": 60.59
+            }
+          ],
+          "name": "Glorin Steelbrow",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:270"
+      ],
+      "instruction": "Turn in [QT270 The Doomed Fleet] to Glorin Steelbrow",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 81,
+      "quest_id": 270,
+      "quest_name": "The Doomed Fleet",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1217,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 10.58,
+              "y": 60.59
+            }
+          ],
+          "name": "Glorin Steelbrow",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:321"
+      ],
+      "instruction": "Accept [QA321 Lightforge Iron] from Glorin Steelbrow.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 82,
+      "quest_id": 321,
+      "quest_name": "Lightforge Iron",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:321"
+      ],
+      "instruction": "Complete [QC321 Lightforge Iron]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 83,
+      "quest_id": 321,
+      "quest_name": "Lightforge Iron",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 2734,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 12.11,
+              "y": 64.19
+            }
+          ],
+          "name": "Waterlogged Chest",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:321"
+      ],
+      "instruction": "Turn in [QT321 Lightforge Iron] to Waterlogged Chest",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 84,
+      "quest_id": 321,
+      "quest_name": "Lightforge Iron",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 61,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 17.73,
+              "y": 29.08
+            }
+          ],
+          "name": "A Weathered Grave",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:225"
+      ],
+      "instruction": "Accept [QA225 The Weathered Grave] from A Weathered Grave.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 85,
+      "quest_id": 225,
+      "quest_name": "The Weathered Grave",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:225"
+      ],
+      "instruction": "Complete [QC225 The Weathered Grave]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 86,
+      "quest_id": 225,
+      "quest_name": "The Weathered Grave",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 268,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 72.62,
+              "y": 47.62
+            }
+          ],
+          "name": "Sirra Von'Indi",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:225"
+      ],
+      "instruction": "Turn in [QT225 The Weathered Grave] to Sirra Von'Indi",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 87,
+      "quest_id": 225,
+      "quest_name": "The Weathered Grave",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 2734,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 12.11,
+              "y": 64.19
+            }
+          ],
+          "name": "Waterlogged Chest",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:324"
+      ],
+      "instruction": "Accept [QA324 The Lost Ingots] from Waterlogged Chest.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 88,
+      "quest_id": 324,
+      "quest_name": "The Lost Ingots",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:324"
+      ],
+      "instruction": "Collect or use the required item: Lightforge Ingot. [QC324 The Lost Ingots]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Lightforge Ingot",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 2702,
+          "kind": "item",
+          "locations": [],
+          "name": "Lightforge Ingot",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 89,
+      "quest_id": 324,
+      "quest_name": "The Lost Ingots",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1217,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 10.58,
+              "y": 60.59
+            }
+          ],
+          "name": "Glorin Steelbrow",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:324"
+      ],
+      "instruction": "Turn in [QT324 The Lost Ingots] to Glorin Steelbrow",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 90,
+      "quest_id": 324,
+      "quest_name": "The Lost Ingots",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1217,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 10.58,
+              "y": 60.59
+            }
+          ],
+          "name": "Glorin Steelbrow",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:526"
+      ],
+      "instruction": "Accept [QA526 Lightforge Ingots] from Glorin Steelbrow.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 91,
+      "quest_id": 526,
+      "quest_name": "Lightforge Ingots",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1217,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 10.58,
+              "y": 60.59
+            }
+          ],
+          "name": "Glorin Steelbrow",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:322"
+      ],
+      "instruction": "Accept [QA322 Blessed Arm] from Glorin Steelbrow.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 92,
+      "quest_id": 322,
+      "quest_name": "Blessed Arm",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:526"
+      ],
+      "instruction": "Collect or use the required item: Lightforge Ingot. [QC526 Lightforge Ingots]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Lightforge Ingot",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 2702,
+          "kind": "item",
+          "locations": [],
+          "name": "Lightforge Ingot",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 93,
+      "quest_id": 526,
+      "quest_name": "Lightforge Ingots",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:322"
+      ],
+      "instruction": "Complete [QC322 Blessed Arm]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 94,
+      "quest_id": 322,
+      "quest_name": "Blessed Arm",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1217,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 11,
+              "map_name": "Wetlands",
+              "verification": "questie_structured_source_only",
+              "x": 10.58,
+              "y": 60.59
+            }
+          ],
+          "name": "Glorin Steelbrow",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:526"
+      ],
+      "instruction": "Turn in [QT526 Lightforge Ingots] to Glorin Steelbrow",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 95,
+      "quest_id": 526,
+      "quest_name": "Lightforge Ingots",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1416,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 51.76,
+              "y": 12.08
+            }
+          ],
+          "name": "Grimand Elmore",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:322"
+      ],
+      "instruction": "Turn in [QT322 Blessed Arm] to Grimand Elmore",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 96,
+      "quest_id": 322,
+      "quest_name": "Blessed Arm",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1416,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 51.76,
+              "y": 12.08
+            }
+          ],
+          "name": "Grimand Elmore",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:325"
+      ],
+      "instruction": "Accept [QA325 Armed and Ready] from Grimand Elmore.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 97,
+      "quest_id": 325,
+      "quest_name": "Armed and Ready",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:325"
+      ],
+      "instruction": "Complete [QC325 Armed and Ready]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 98,
+      "quest_id": 325,
+      "quest_name": "Armed and Ready",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 311,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 7.78,
+              "y": 34.07
+            }
+          ],
+          "name": "Sven Yorgen",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:325"
+      ],
+      "instruction": "Turn in [QT325 Armed and Ready] to Sven Yorgen",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 99,
+      "quest_id": 325,
+      "quest_name": "Armed and Ready",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 311,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 7.78,
+              "y": 34.07
+            }
+          ],
+          "name": "Sven Yorgen",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:55"
+      ],
+      "instruction": "Accept [QA55 Morbent Fel] from Sven Yorgen.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 100,
+      "quest_id": 55,
+      "quest_name": "Morbent Fel",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:55"
+      ],
+      "instruction": "Use the quest item [UI7297-] as directed; complete the required NPC or creature objective: Weakened Morbent Fel. [QC55 Morbent Fel]",
+      "item_use_id": 7297,
+      "objective_hint": "Complete the required NPC or creature objective: Weakened Morbent Fel",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 24782,
+          "kind": "npc",
+          "locations": [],
+          "name": "Weakened Morbent Fel",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 101,
+      "quest_id": 55,
+      "quest_name": "Morbent Fel",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 311,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 10,
+              "map_name": "Duskwood",
+              "verification": "questie_structured_source_only",
+              "x": 7.78,
+              "y": 34.07
+            }
+          ],
+          "name": "Sven Yorgen",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:55"
+      ],
+      "instruction": "Turn in [QT55 Morbent Fel] to Sven Yorgen",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 102,
+      "quest_id": 55,
+      "quest_name": "Morbent Fel",
+      "quest_tag": null,
+      "required_level": 26,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 10,
+      "zone_or_sort_name": "Duskwood"
+    }
+  ],
+  "title": "26 Duskwood"
+}

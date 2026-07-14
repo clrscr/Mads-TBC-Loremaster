@@ -1,0 +1,3668 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 10 World, or select this chapter on a partially completed character. Begin in Dun Morogh with Senir Whitebeard. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 1,
+    "map_name": "Dun Morogh",
+    "x": 46.73,
+    "y": 53.83
+  },
+  "entry_zone_or_sort": 1,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 12,
+    "map_name": "Elwynn Forest",
+    "quest_id": 178,
+    "tag": "QT",
+    "x": 65.22,
+    "y": 69.71
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/011_world_11.lua",
+  "id": "011-primary-11-dun-morogh-&-redridge-mountains",
+  "maximum_level": 15,
+  "minimum_level": 15,
+  "next_chapter": "12 Deeprun Tram",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "10 World",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 287,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3365:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:287:starter"
+      ],
+      "instruction": "Continue within Dun Morogh to the next route hub at [G46.73,53.83 Dun Morogh]. [O]",
+      "map_id": 1,
+      "map_name": "Dun Morogh",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 1,
+      "origin_map_name": "Dun Morogh",
+      "origin_x": 24.98,
+      "origin_y": 75.96,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 46.73,
+      "y": 53.83
+    },
+    {
+      "before_quest_id": 287,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:287:starter"
+      ],
+      "instruction": "Before you begin: travel to Dun Morogh and meet the first quest giver at [G46.73,53.83 Dun Morogh]. Leave at least two quest-log slots open. [O]",
+      "map_id": 1,
+      "map_name": "Dun Morogh",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 46.73,
+      "y": 53.83
+    },
+    {
+      "before_quest_id": 287,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:287:requiredLevel"
+      ],
+      "instruction": "Reach level 15 before accepting Frostmane Hold. [XP15 Level 15]",
+      "map_id": 1,
+      "map_name": "Dun Morogh",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 15,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 46.73,
+      "y": 53.83
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1252,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 46.73,
+              "y": 53.83
+            }
+          ],
+          "name": "Senir Whitebeard",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:287"
+      ],
+      "instruction": "Accept [QA287 Frostmane Hold] from Senir Whitebeard.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 287,
+      "quest_name": "Frostmane Hold",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1,
+      "zone_or_sort_name": "Dun Morogh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:287"
+      ],
+      "instruction": "Complete the scripted or exploration event; complete the required NPC or creature objective: Frostmane Headhunter. [QC287 Frostmane Hold]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Frostmane Headhunter",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1123,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 25.99,
+              "y": 51.49
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 26.15,
+              "y": 51.45
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 23.42,
+              "y": 51.4
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 25.5,
+              "y": 50.86
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 23.17,
+              "y": 50.88
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 23.57,
+              "y": 50.93
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 24.29,
+              "y": 50.88
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 24.6,
+              "y": 50.94
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 26.03,
+              "y": 52.2
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 23.9,
+              "y": 53.25
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 22.03,
+              "y": 50.13
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 22.37,
+              "y": 51.78
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 21.17,
+              "y": 50.95
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 21.07,
+              "y": 51.63
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 21.25,
+              "y": 54.48
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 22.63,
+              "y": 54.62
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 40.94,
+              "y": 43.84
+            },
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 39.34,
+              "y": 35.87
+            }
+          ],
+          "name": "Frostmane Headhunter",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 5,
+      "quest_id": 287,
+      "quest_name": "Frostmane Hold",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 1,
+      "zone_or_sort_name": "Dun Morogh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1252,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 46.73,
+              "y": 53.83
+            }
+          ],
+          "name": "Senir Whitebeard",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:287"
+      ],
+      "instruction": "Turn in [QT287 Frostmane Hold] to Senir Whitebeard",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 287,
+      "quest_name": "Frostmane Hold",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1,
+      "zone_or_sort_name": "Dun Morogh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1252,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1,
+              "map_name": "Dun Morogh",
+              "verification": "questie_structured_source_only",
+              "x": 46.73,
+              "y": 53.83
+            }
+          ],
+          "name": "Senir Whitebeard",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:291"
+      ],
+      "instruction": "Accept [QA291 The Reports] from Senir Whitebeard.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 291,
+      "quest_name": "The Reports",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1,
+      "zone_or_sort_name": "Dun Morogh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:291"
+      ],
+      "instruction": "Complete [QC291 The Reports]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 291,
+      "quest_name": "The Reports",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1,
+      "zone_or_sort_name": "Dun Morogh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1274,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 39.55,
+              "y": 57.49
+            }
+          ],
+          "name": "Senator Barin Redstone",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:291"
+      ],
+      "instruction": "Turn in [QT291 The Reports] to Senator Barin Redstone",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 291,
+      "quest_name": "The Reports",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1,
+      "zone_or_sort_name": "Dun Morogh"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 464,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 15.27,
+              "y": 71.46
+            }
+          ],
+          "name": "Guard Parker",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:244"
+      ],
+      "instruction": "Accept [QA244 Encroaching Gnolls] from Guard Parker.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 244,
+      "quest_name": "Encroaching Gnolls",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:244"
+      ],
+      "instruction": "Complete [QC244 Encroaching Gnolls]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 244,
+      "quest_name": "Encroaching Gnolls",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "before_quest_id": 244,
+      "before_tag": "QT",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:npc:931",
+        "authored-route:guidelime-tugs-tbc-alliance-2.50:19-21 Redridge Mountains.lua:16"
+      ],
+      "instruction": "Optional: learn the flight path from Ariena Stormfeather. [P][G30.59,59.41 Redridge Mountains][O]",
+      "map_id": 44,
+      "map_name": "Redridge Mountains",
+      "optional": true,
+      "order": 12,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "acquire_flight_path",
+      "verification": "cross_verified_questie_and_authored_route",
+      "x": 30.59,
+      "y": 59.41
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1070,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 30.73,
+              "y": 60.0
+            }
+          ],
+          "name": "Deputy Feldon",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:244"
+      ],
+      "instruction": "Turn in [QT244 Encroaching Gnolls] to Deputy Feldon",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 244,
+      "quest_name": "Encroaching Gnolls",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1070,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 30.73,
+              "y": 60.0
+            }
+          ],
+          "name": "Deputy Feldon",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:246"
+      ],
+      "instruction": "Accept [QA246 Assessing the Threat] from Deputy Feldon.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 246,
+      "quest_name": "Assessing the Threat",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:246"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Redridge Mongrel, Redridge Poacher. [QC246 Assessing the Threat]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Redridge Mongrel, Redridge Poacher",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 423,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 40.13,
+              "y": 73.01
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 43.62,
+              "y": 71.07
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 15.63,
+              "y": 59.53
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 29.41,
+              "y": 84.35
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 34.46,
+              "y": 82.9
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 15.06,
+              "y": 60.98
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 14.84,
+              "y": 61.47
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 15.57,
+              "y": 66.59
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 44.4,
+              "y": 72.3
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 14.51,
+              "y": 65.82
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 32.44,
+              "y": 82.82
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 31.05,
+              "y": 84.02
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 29.86,
+              "y": 84.12
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 16.74,
+              "y": 63.0
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 32.05,
+              "y": 82.49
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 30.35,
+              "y": 81.2
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 15.3,
+              "y": 63.92
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 16.74,
+              "y": 62.18
+            }
+          ],
+          "name": "Redridge Mongrel",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 424,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 43.17,
+              "y": 70.63
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 43.34,
+              "y": 71.27
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 29.27,
+              "y": 83.65
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 29.07,
+              "y": 84.38
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 35.34,
+              "y": 83.82
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 34.69,
+              "y": 83.09
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 34.69,
+              "y": 82.84
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 32.28,
+              "y": 82.28
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 32.01,
+              "y": 82.73
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 32.1,
+              "y": 82.9
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 30.91,
+              "y": 84.22
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 42.99,
+              "y": 71.19
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 41.44,
+              "y": 72.35
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 31.3,
+              "y": 81.14
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 32.39,
+              "y": 79.49
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 30.97,
+              "y": 79.5
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 28.34,
+              "y": 79.41
+            }
+          ],
+          "name": "Redridge Poacher",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 15,
+      "quest_id": 246,
+      "quest_name": "Assessing the Threat",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1070,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 30.73,
+              "y": 60.0
+            }
+          ],
+          "name": "Deputy Feldon",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:246"
+      ],
+      "instruction": "Turn in [QT246 Assessing the Threat] to Deputy Feldon",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 246,
+      "quest_name": "Assessing the Threat",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 346,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 26.48,
+              "y": 43.96
+            }
+          ],
+          "name": "Barkeep Daniels",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:116"
+      ],
+      "instruction": "Accept [QA116 Dry Times] from Barkeep Daniels.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 116,
+      "quest_name": "Dry Times",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 379,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 26.62,
+              "y": 44.3
+            }
+          ],
+          "name": "Darcy",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:129"
+      ],
+      "instruction": "Accept [QA129 A Free Lunch] from Darcy.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 129,
+      "quest_name": "A Free Lunch",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 47,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 26.75,
+              "y": 46.44
+            }
+          ],
+          "name": "Wanted: Lieutenant Fangore",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:180"
+      ],
+      "instruction": "Accept [QA180 Wanted: Lieutenant Fangore] from Wanted: Lieutenant Fangore.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 180,
+      "quest_name": "Wanted: Lieutenant Fangore",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8965,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 29.32,
+              "y": 53.64
+            }
+          ],
+          "name": "Shawn",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3741"
+      ],
+      "instruction": "Accept [QA3741 Hilary's Necklace] from Shawn.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 20,
+      "quest_id": 3741,
+      "quest_name": "Hilary's Necklace",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 415,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 30.97,
+              "y": 47.27
+            }
+          ],
+          "name": "Verner Osgood",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:118"
+      ],
+      "instruction": "Accept [QA118 The Price of Shoes] from Verner Osgood.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 118,
+      "quest_name": "The Price of Shoes",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:116"
+      ],
+      "instruction": "Collect or use the required items: Keg of Thunderbrew Lager, Cask of Merlot, Bottle of Moonshine, plus 1 more. [QC116 Dry Times]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Keg of Thunderbrew Lager, Cask of Merlot, Bottle of Moonshine, plus 1 more",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 1262,
+          "kind": "item",
+          "locations": [],
+          "name": "Keg of Thunderbrew Lager",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 1941,
+          "kind": "item",
+          "locations": [],
+          "name": "Cask of Merlot",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 1942,
+          "kind": "item",
+          "locations": [],
+          "name": "Bottle of Moonshine",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 1939,
+          "kind": "item",
+          "locations": [],
+          "name": "Skin of Sweet Rum",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 22,
+      "quest_id": 116,
+      "quest_name": "Dry Times",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:129"
+      ],
+      "instruction": "Complete [QC129 A Free Lunch]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 23,
+      "quest_id": 129,
+      "quest_name": "A Free Lunch",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:180"
+      ],
+      "instruction": "Collect or use the required item: Fangore's Paw. [QC180 Wanted: Lieutenant Fangore]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Fangore's Paw",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 3632,
+          "kind": "item",
+          "locations": [],
+          "name": "Fangore's Paw",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 24,
+      "quest_id": 180,
+      "quest_name": "Wanted: Lieutenant Fangore",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3741"
+      ],
+      "instruction": "Collect or use the required item: Hilary's Necklace. [QC3741 Hilary's Necklace]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Hilary's Necklace",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 10958,
+          "kind": "item",
+          "locations": [],
+          "name": "Hilary's Necklace",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 25,
+      "quest_id": 3741,
+      "quest_name": "Hilary's Necklace",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:118"
+      ],
+      "instruction": "Complete [QC118 The Price of Shoes]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 26,
+      "quest_id": 118,
+      "quest_name": "The Price of Shoes",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 344,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 29.99,
+              "y": 44.45
+            }
+          ],
+          "name": "Magistrate Solomon",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:180"
+      ],
+      "instruction": "Turn in [QT180 Wanted: Lieutenant Fangore] to Magistrate Solomon",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 27,
+      "quest_id": 180,
+      "quest_name": "Wanted: Lieutenant Fangore",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 346,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 26.48,
+              "y": 43.96
+            }
+          ],
+          "name": "Barkeep Daniels",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:116"
+      ],
+      "instruction": "Turn in [QT116 Dry Times] to Barkeep Daniels",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 28,
+      "quest_id": 116,
+      "quest_name": "Dry Times",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8962,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 29.24,
+              "y": 53.63
+            }
+          ],
+          "name": "Hilary",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3741"
+      ],
+      "instruction": "Turn in [QT3741 Hilary's Necklace] to Hilary",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 29,
+      "quest_id": 3741,
+      "quest_name": "Hilary's Necklace",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 464,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 15.27,
+              "y": 71.46
+            }
+          ],
+          "name": "Guard Parker",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:129"
+      ],
+      "instruction": "Turn in [QT129 A Free Lunch] to Guard Parker",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 30,
+      "quest_id": 129,
+      "quest_name": "A Free Lunch",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 514,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 41.71,
+              "y": 65.54
+            }
+          ],
+          "name": "Smith Argus",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:118"
+      ],
+      "instruction": "Turn in [QT118 The Price of Shoes] to Smith Argus",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 31,
+      "quest_id": 118,
+      "quest_name": "The Price of Shoes",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 514,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 41.71,
+              "y": 65.54
+            }
+          ],
+          "name": "Smith Argus",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:119"
+      ],
+      "instruction": "Accept [QA119 Return to Verner] from Smith Argus.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 32,
+      "quest_id": 119,
+      "quest_name": "Return to Verner",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:119"
+      ],
+      "instruction": "Complete [QC119 Return to Verner]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 33,
+      "quest_id": 119,
+      "quest_name": "Return to Verner",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 415,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 30.97,
+              "y": 47.27
+            }
+          ],
+          "name": "Verner Osgood",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:119"
+      ],
+      "instruction": "Turn in [QT119 Return to Verner] to Verner Osgood",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 34,
+      "quest_id": 119,
+      "quest_name": "Return to Verner",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 344,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 29.99,
+              "y": 44.45
+            }
+          ],
+          "name": "Magistrate Solomon",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:120"
+      ],
+      "instruction": "Accept [QA120 Messenger to Stormwind] from Magistrate Solomon.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 35,
+      "quest_id": 120,
+      "quest_name": "Messenger to Stormwind",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:120"
+      ],
+      "instruction": "Complete [QC120 Messenger to Stormwind]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 36,
+      "quest_id": 120,
+      "quest_name": "Messenger to Stormwind",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 466,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 63.97,
+              "y": 75.32
+            }
+          ],
+          "name": "General Marcus Jonathan",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:120"
+      ],
+      "instruction": "Turn in [QT120 Messenger to Stormwind] to General Marcus Jonathan",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 37,
+      "quest_id": 120,
+      "quest_name": "Messenger to Stormwind",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 466,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 63.97,
+              "y": 75.32
+            }
+          ],
+          "name": "General Marcus Jonathan",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:121"
+      ],
+      "instruction": "Accept [QA121 Messenger to Stormwind] from General Marcus Jonathan.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 38,
+      "quest_id": 121,
+      "quest_name": "Messenger to Stormwind",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:121"
+      ],
+      "instruction": "Complete [QC121 Messenger to Stormwind]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 39,
+      "quest_id": 121,
+      "quest_name": "Messenger to Stormwind",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 344,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 29.99,
+              "y": 44.45
+            }
+          ],
+          "name": "Magistrate Solomon",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:121"
+      ],
+      "instruction": "Turn in [QT121 Messenger to Stormwind] to Magistrate Solomon",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 40,
+      "quest_id": 121,
+      "quest_name": "Messenger to Stormwind",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 415,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 30.97,
+              "y": 47.27
+            }
+          ],
+          "name": "Verner Osgood",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:122"
+      ],
+      "instruction": "Accept [QA122 Underbelly Scales] from Verner Osgood.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 41,
+      "quest_id": 122,
+      "quest_name": "Underbelly Scales",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:122"
+      ],
+      "instruction": "Collect or use the required item: Underbelly Whelp Scale. [QC122 Underbelly Scales]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Underbelly Whelp Scale",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 1221,
+          "kind": "item",
+          "locations": [],
+          "name": "Underbelly Whelp Scale",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 42,
+      "quest_id": 122,
+      "quest_name": "Underbelly Scales",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 415,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 30.97,
+              "y": 47.27
+            }
+          ],
+          "name": "Verner Osgood",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:122"
+      ],
+      "instruction": "Turn in [QT122 Underbelly Scales] to Verner Osgood",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 43,
+      "quest_id": 122,
+      "quest_name": "Underbelly Scales",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 464,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 15.27,
+              "y": 71.46
+            }
+          ],
+          "name": "Guard Parker",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:130"
+      ],
+      "instruction": "Accept [QA130 Visit the Herbalist] from Guard Parker.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 44,
+      "quest_id": 130,
+      "quest_name": "Visit the Herbalist",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:130"
+      ],
+      "instruction": "Complete [QC130 Visit the Herbalist]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 45,
+      "quest_id": 130,
+      "quest_name": "Visit the Herbalist",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 342,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 21.86,
+              "y": 46.33
+            }
+          ],
+          "name": "Martie Jainrose",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:130"
+      ],
+      "instruction": "Turn in [QT130 Visit the Herbalist] to Martie Jainrose",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 46,
+      "quest_id": 130,
+      "quest_name": "Visit the Herbalist",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 342,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 21.86,
+              "y": 46.33
+            }
+          ],
+          "name": "Martie Jainrose",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:131"
+      ],
+      "instruction": "Accept [QA131 Delivering Daffodils] from Martie Jainrose.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 47,
+      "quest_id": 131,
+      "quest_name": "Delivering Daffodils",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 344,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 29.99,
+              "y": 44.45
+            }
+          ],
+          "name": "Magistrate Solomon",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:143"
+      ],
+      "instruction": "Accept [QA143 Messenger to Westfall] from Magistrate Solomon.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 48,
+      "quest_id": 143,
+      "quest_name": "Messenger to Westfall",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:131"
+      ],
+      "instruction": "Complete [QC131 Delivering Daffodils]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 49,
+      "quest_id": 131,
+      "quest_name": "Delivering Daffodils",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:143"
+      ],
+      "instruction": "Complete [QC143 Messenger to Westfall]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 50,
+      "quest_id": 143,
+      "quest_name": "Messenger to Westfall",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 379,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 26.62,
+              "y": 44.3
+            }
+          ],
+          "name": "Darcy",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:131"
+      ],
+      "instruction": "Turn in [QT131 Delivering Daffodils] to Darcy",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 51,
+      "quest_id": 131,
+      "quest_name": "Delivering Daffodils",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 234,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 40,
+              "map_name": "Westfall",
+              "verification": "questie_structured_source_only",
+              "x": 56.33,
+              "y": 47.52
+            }
+          ],
+          "name": "Gryan Stoutmantle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:143"
+      ],
+      "instruction": "Turn in [QT143 Messenger to Westfall] to Gryan Stoutmantle",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 52,
+      "quest_id": 143,
+      "quest_name": "Messenger to Westfall",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 234,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 40,
+              "map_name": "Westfall",
+              "verification": "questie_structured_source_only",
+              "x": 56.33,
+              "y": 47.52
+            }
+          ],
+          "name": "Gryan Stoutmantle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:144"
+      ],
+      "instruction": "Accept [QA144 Messenger to Westfall] from Gryan Stoutmantle.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 53,
+      "quest_id": 144,
+      "quest_name": "Messenger to Westfall",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:144"
+      ],
+      "instruction": "Complete [QC144 Messenger to Westfall]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 54,
+      "quest_id": 144,
+      "quest_name": "Messenger to Westfall",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 344,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 29.99,
+              "y": 44.45
+            }
+          ],
+          "name": "Magistrate Solomon",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:144"
+      ],
+      "instruction": "Turn in [QT144 Messenger to Westfall] to Magistrate Solomon",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 55,
+      "quest_id": 144,
+      "quest_name": "Messenger to Westfall",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 60,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 29.62,
+              "y": 46.16
+            }
+          ],
+          "name": "Wanted: Gath'Ilzogg",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:169"
+      ],
+      "instruction": "Accept [QA169 Wanted: Gath'Ilzogg] from Wanted: Gath'Ilzogg.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 56,
+      "quest_id": 169,
+      "quest_name": "Wanted: Gath'Ilzogg",
+      "quest_tag": "Elite",
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 343,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 22.68,
+              "y": 43.84
+            }
+          ],
+          "name": "Chef Breanna",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:92"
+      ],
+      "instruction": "Accept [QA92 Redridge Goulash] from Chef Breanna.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 57,
+      "quest_id": 92,
+      "quest_name": "Redridge Goulash",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 415,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 30.97,
+              "y": 47.27
+            }
+          ],
+          "name": "Verner Osgood",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:124"
+      ],
+      "instruction": "Accept [QA124 A Baying of Gnolls] from Verner Osgood.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 58,
+      "quest_id": 124,
+      "quest_name": "A Baying of Gnolls",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 341,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 32.14,
+              "y": 48.64
+            }
+          ],
+          "name": "Foreman Oslow",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:125"
+      ],
+      "instruction": "Accept [QA125 The Lost Tools] from Foreman Oslow.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 59,
+      "quest_id": 125,
+      "quest_name": "The Lost Tools",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:124"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Redridge Brute, Redridge Mystic. [QC124 A Baying of Gnolls]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Redridge Brute, Redridge Mystic",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 426,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 40.34,
+              "y": 35.01
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 24.0,
+              "y": 34.91
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 21.49,
+              "y": 36.22
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 21.24,
+              "y": 36.09
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 21.21,
+              "y": 36.41
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 20.14,
+              "y": 33.25
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 24.12,
+              "y": 32.62
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 24.05,
+              "y": 37.29
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 29.52,
+              "y": 37.88
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 22.59,
+              "y": 38.32
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 20.84,
+              "y": 40.03
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 38.89,
+              "y": 31.77
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 38.54,
+              "y": 31.75
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 38.81,
+              "y": 31.58
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 40.65,
+              "y": 32.02
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 39.54,
+              "y": 31.44
+            }
+          ],
+          "name": "Redridge Brute",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 430,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 32.07,
+              "y": 29.43
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 33.56,
+              "y": 22.56
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 28.58,
+              "y": 28.25
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 24.76,
+              "y": 31.74
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 28.06,
+              "y": 28.89
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 22.67,
+              "y": 26.51
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 20.24,
+              "y": 32.95
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 26.83,
+              "y": 35.66
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 24.01,
+              "y": 37.28
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 26.98,
+              "y": 37.23
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 16.9,
+              "y": 17.73
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 36.09,
+              "y": 37.38
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 28.47,
+              "y": 27.93
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 34.46,
+              "y": 25.44
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 34.49,
+              "y": 25.15
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 37.29,
+              "y": 36.0
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 27.05,
+              "y": 23.0
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 31.11,
+              "y": 23.51
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 27.69,
+              "y": 21.98
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 25.63,
+              "y": 22.95
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 21.66,
+              "y": 35.28
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 23.35,
+              "y": 27.36
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 23.91,
+              "y": 29.81
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 41.81,
+              "y": 33.98
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 39.21,
+              "y": 30.81
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 39.73,
+              "y": 35.01
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 29.38,
+              "y": 21.99
+            },
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 33.12,
+              "y": 25.53
+            }
+          ],
+          "name": "Redridge Mystic",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 60,
+      "quest_id": 124,
+      "quest_name": "A Baying of Gnolls",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "before_quest_id": 169,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:169:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 1,
+      "map_name": "Dun Morogh",
+      "optional": true,
+      "order": 61,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        169
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 46.73,
+      "y": 53.83
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:169"
+      ],
+      "instruction": "Elite/group recommended \u2014 Collect or use the required item: Head of Gath'Ilzogg. [QC169 Wanted: Gath'Ilzogg]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Head of Gath'Ilzogg",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 3633,
+          "kind": "item",
+          "locations": [],
+          "name": "Head of Gath'Ilzogg",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 62,
+      "quest_id": 169,
+      "quest_name": "Wanted: Gath'Ilzogg",
+      "quest_tag": "Elite",
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:92"
+      ],
+      "instruction": "Collect or use the required items: Great Goretusk Snout, Tough Condor Meat, Crisp Spider Meat. [QC92 Redridge Goulash]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Great Goretusk Snout, Tough Condor Meat, Crisp Spider Meat",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 2296,
+          "kind": "item",
+          "locations": [],
+          "name": "Great Goretusk Snout",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 1080,
+          "kind": "item",
+          "locations": [],
+          "name": "Tough Condor Meat",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 1081,
+          "kind": "item",
+          "locations": [],
+          "name": "Crisp Spider Meat",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 63,
+      "quest_id": 92,
+      "quest_name": "Redridge Goulash",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:125"
+      ],
+      "instruction": "Collect or use the required item: Oslow's Toolbox. [QC125 The Lost Tools]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Oslow's Toolbox",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 1309,
+          "kind": "item",
+          "locations": [],
+          "name": "Oslow's Toolbox",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 64,
+      "quest_id": 125,
+      "quest_name": "The Lost Tools",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 344,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 29.99,
+              "y": 44.45
+            }
+          ],
+          "name": "Magistrate Solomon",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:169"
+      ],
+      "instruction": "Turn in [QT169 Wanted: Gath'Ilzogg] to Magistrate Solomon",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 65,
+      "quest_id": 169,
+      "quest_name": "Wanted: Gath'Ilzogg",
+      "quest_tag": "Elite",
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 415,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 30.97,
+              "y": 47.27
+            }
+          ],
+          "name": "Verner Osgood",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:124"
+      ],
+      "instruction": "Turn in [QT124 A Baying of Gnolls] to Verner Osgood",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 66,
+      "quest_id": 124,
+      "quest_name": "A Baying of Gnolls",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 341,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 32.14,
+              "y": 48.64
+            }
+          ],
+          "name": "Foreman Oslow",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:125"
+      ],
+      "instruction": "Turn in [QT125 The Lost Tools] to Foreman Oslow",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 67,
+      "quest_id": 125,
+      "quest_name": "The Lost Tools",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 343,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 22.68,
+              "y": 43.84
+            }
+          ],
+          "name": "Chef Breanna",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:92"
+      ],
+      "instruction": "Turn in [QT92 Redridge Goulash] to Chef Breanna",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 68,
+      "quest_id": 92,
+      "quest_name": "Redridge Goulash",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 341,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 32.14,
+              "y": 48.64
+            }
+          ],
+          "name": "Foreman Oslow",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:89"
+      ],
+      "instruction": "Accept [QA89 The Everstill Bridge] from Foreman Oslow.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 69,
+      "quest_id": 89,
+      "quest_name": "The Everstill Bridge",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 415,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 30.97,
+              "y": 47.27
+            }
+          ],
+          "name": "Verner Osgood",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:126"
+      ],
+      "instruction": "Accept [QA126 Howling in the Hills] from Verner Osgood.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 70,
+      "quest_id": 126,
+      "quest_name": "Howling in the Hills",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 1962,
+          "kind": "item",
+          "locations": [],
+          "name": "Glowing Shadowhide Pendant",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:178"
+      ],
+      "instruction": "Accept [QA178 Theocritus' Retrieval] from Glowing Shadowhide Pendant.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 71,
+      "quest_id": 178,
+      "quest_name": "Theocritus' Retrieval",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:89"
+      ],
+      "instruction": "Collect or use the required items: Iron Pike, Iron Rivet. [QC89 The Everstill Bridge]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Iron Pike, Iron Rivet",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 2856,
+          "kind": "item",
+          "locations": [],
+          "name": "Iron Pike",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 1013,
+          "kind": "item",
+          "locations": [],
+          "name": "Iron Rivet",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 72,
+      "quest_id": 89,
+      "quest_name": "The Everstill Bridge",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:126"
+      ],
+      "instruction": "Collect or use the required item: Yowler's Paw. [QC126 Howling in the Hills]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Yowler's Paw",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 3614,
+          "kind": "item",
+          "locations": [],
+          "name": "Yowler's Paw",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 73,
+      "quest_id": 126,
+      "quest_name": "Howling in the Hills",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:178"
+      ],
+      "instruction": "Complete [QC178 Theocritus' Retrieval]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 74,
+      "quest_id": 178,
+      "quest_name": "Theocritus' Retrieval",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 415,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 30.97,
+              "y": 47.27
+            }
+          ],
+          "name": "Verner Osgood",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:126"
+      ],
+      "instruction": "Turn in [QT126 Howling in the Hills] to Verner Osgood",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 75,
+      "quest_id": 126,
+      "quest_name": "Howling in the Hills",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 341,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 44,
+              "map_name": "Redridge Mountains",
+              "verification": "questie_structured_source_only",
+              "x": 32.14,
+              "y": 48.64
+            }
+          ],
+          "name": "Foreman Oslow",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:89"
+      ],
+      "instruction": "Turn in [QT89 The Everstill Bridge] to Foreman Oslow",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 76,
+      "quest_id": 89,
+      "quest_name": "The Everstill Bridge",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 313,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 12,
+              "map_name": "Elwynn Forest",
+              "verification": "questie_structured_source_only",
+              "x": 65.22,
+              "y": 69.71
+            }
+          ],
+          "name": "Theocritus",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:178"
+      ],
+      "instruction": "Turn in [QT178 Theocritus' Retrieval] to Theocritus",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 77,
+      "quest_id": 178,
+      "quest_name": "Theocritus' Retrieval",
+      "quest_tag": null,
+      "required_level": 15,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 44,
+      "zone_or_sort_name": "Redridge Mountains"
+    }
+  ],
+  "title": "11 Dun Morogh & Redridge Mountains"
+}

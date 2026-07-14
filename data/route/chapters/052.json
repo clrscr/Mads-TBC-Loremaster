@@ -1,0 +1,2957 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 51 Badlands, or select this chapter on a partially completed character. Begin in Searing Gorge with Dorius Stonetender. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 51,
+    "map_name": "Searing Gorge",
+    "x": 63.92,
+    "y": 60.99
+  },
+  "entry_zone_or_sort": 51,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 51,
+    "map_name": "Searing Gorge",
+    "quest_id": 7729,
+    "tag": "QT",
+    "x": 38.97,
+    "y": 27.51
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/052_world_52.lua",
+  "id": "052-primary-52-searing-gorge",
+  "maximum_level": 45,
+  "minimum_level": 45,
+  "next_chapter": "53 Feralas",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "51 Badlands",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 3367,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3721:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3367:starter"
+      ],
+      "instruction": "Travel from Stranglethorn Vale to Searing Gorge. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G63.92,60.99 Searing Gorge]. [O]",
+      "map_id": 51,
+      "map_name": "Searing Gorge",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 33,
+      "origin_map_name": "Stranglethorn Vale",
+      "origin_x": 28.36,
+      "origin_y": 76.35,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 63.92,
+      "y": 60.99
+    },
+    {
+      "before_quest_id": 3367,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3367:starter"
+      ],
+      "instruction": "Before you begin: travel to Searing Gorge and meet the first quest giver at [G63.92,60.99 Searing Gorge]. Leave at least two quest-log slots open. [O]",
+      "map_id": 51,
+      "map_name": "Searing Gorge",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 63.92,
+      "y": 60.99
+    },
+    {
+      "before_quest_id": 3367,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3367:requiredLevel"
+      ],
+      "instruction": "Reach level 45 before accepting Suntara Stones. [XP45 Level 45]",
+      "map_id": 51,
+      "map_name": "Searing Gorge",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 45,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 63.92,
+      "y": 60.99
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8284,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 63.92,
+              "y": 60.99
+            }
+          ],
+          "name": "Dorius Stonetender",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3367"
+      ],
+      "instruction": "Accept [QA3367 Suntara Stones] from Dorius Stonetender.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 3367,
+      "quest_name": "Suntara Stones",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3367"
+      ],
+      "instruction": "Complete the scripted or exploration event. [QC3367 Suntara Stones]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 3367,
+      "quest_name": "Suntara Stones",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 175704,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 74.45,
+              "y": 19.29
+            }
+          ],
+          "name": "Singed Letter",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3367"
+      ],
+      "instruction": "Turn in [QT3367 Suntara Stones] to Singed Letter",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 3367,
+      "quest_name": "Suntara Stones",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 175704,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 74.45,
+              "y": 19.29
+            }
+          ],
+          "name": "Singed Letter",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3368"
+      ],
+      "instruction": "Accept [QA3368 Suntara Stones] from Singed Letter.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 3368,
+      "quest_name": "Suntara Stones",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3368"
+      ],
+      "instruction": "Complete [QC3368 Suntara Stones]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 3368,
+      "quest_name": "Suntara Stones",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8256,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1537,
+              "map_name": "Ironforge",
+              "verification": "questie_structured_source_only",
+              "x": 71.5,
+              "y": 15.74
+            }
+          ],
+          "name": "Curator Thorius",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3368"
+      ],
+      "instruction": "Turn in [QT3368 Suntara Stones] to Curator Thorius",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 3368,
+      "quest_name": "Suntara Stones",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4098,
+          "kind": "item",
+          "locations": [],
+          "name": "Carefully Folded Note",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:594"
+      ],
+      "instruction": "Accept [QA594 Message in a Bottle] from Carefully Folded Note.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 594,
+      "quest_name": "Message in a Bottle",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:594"
+      ],
+      "instruction": "Complete [QC594 Message in a Bottle]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 594,
+      "quest_name": "Message in a Bottle",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2634,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 38.53,
+              "y": 80.58
+            }
+          ],
+          "name": "Princess Poobah",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:594"
+      ],
+      "instruction": "Turn in [QT594 Message in a Bottle] to Princess Poobah",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 594,
+      "quest_name": "Message in a Bottle",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2634,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 38.53,
+              "y": 80.58
+            }
+          ],
+          "name": "Princess Poobah",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:630"
+      ],
+      "instruction": "Accept [QA630 Message in a Bottle] from Princess Poobah.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 630,
+      "quest_name": "Message in a Bottle",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:630"
+      ],
+      "instruction": "Collect or use the required item: Shackle Key. [QC630 Message in a Bottle]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Shackle Key",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4103,
+          "kind": "item",
+          "locations": [],
+          "name": "Shackle Key",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 14,
+      "quest_id": 630,
+      "quest_name": "Message in a Bottle",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 2634,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 33,
+              "map_name": "Stranglethorn Vale",
+              "verification": "questie_structured_source_only",
+              "x": 38.53,
+              "y": 80.58
+            }
+          ],
+          "name": "Princess Poobah",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:630"
+      ],
+      "instruction": "Turn in [QT630 Message in a Bottle] to Princess Poobah",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 630,
+      "quest_name": "Message in a Bottle",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 33,
+      "zone_or_sort_name": "Stranglethorn Vale"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8436,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 29.57,
+              "y": 26.29
+            }
+          ],
+          "name": "Zamael Lunthistle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3377"
+      ],
+      "instruction": "Accept [QA3377 Prayer to Elune] from Zamael Lunthistle.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 3377,
+      "quest_name": "Prayer to Elune",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3377"
+      ],
+      "instruction": "Complete the scripted or exploration event. [QC3377 Prayer to Elune]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 3377,
+      "quest_name": "Prayer to Elune",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8436,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 29.57,
+              "y": 26.29
+            }
+          ],
+          "name": "Zamael Lunthistle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3377"
+      ],
+      "instruction": "Turn in [QT3377 Prayer to Elune] to Zamael Lunthistle",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 3377,
+      "quest_name": "Prayer to Elune",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 8436,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 29.57,
+              "y": 26.29
+            }
+          ],
+          "name": "Zamael Lunthistle",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3378"
+      ],
+      "instruction": "Accept [QA3378 Prayer to Elune] from Zamael Lunthistle.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 3378,
+      "quest_name": "Prayer to Elune",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3378"
+      ],
+      "instruction": "Collect or use the required item: Prayer to Elune. [QC3378 Prayer to Elune]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Prayer to Elune",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 10458,
+          "kind": "item",
+          "locations": [],
+          "name": "Prayer to Elune",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 20,
+      "quest_id": 3378,
+      "quest_name": "Prayer to Elune",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 4090,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1657,
+              "map_name": "Darnassus",
+              "verification": "questie_structured_source_only",
+              "x": 38.33,
+              "y": 80.95
+            }
+          ],
+          "name": "Astarii Starseeker",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3378"
+      ],
+      "instruction": "Turn in [QT3378 Prayer to Elune] to Astarii Starseeker",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 3378,
+      "quest_name": "Prayer to Elune",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 173265,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 65.59,
+              "y": 62.17
+            }
+          ],
+          "name": "Wooden Outhouse",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4449"
+      ],
+      "instruction": "Accept [QA4449 Caught!] from Wooden Outhouse.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 22,
+      "quest_id": 4449,
+      "quest_name": "Caught!",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4449"
+      ],
+      "instruction": "Complete the required objectives \u2014 NPCs or creatures: Dark Iron Geologist; items: Silk Cloth. [QC4449 Caught!]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required objectives \u2014 NPCs or creatures: Dark Iron Geologist; items: Silk Cloth",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5839,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 63.66,
+              "y": 59.26
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 63.06,
+              "y": 59.56
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 63.14,
+              "y": 61.34
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 63.9,
+              "y": 60.39
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 62.76,
+              "y": 62.27
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 69.2,
+              "y": 34.2
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 68.87,
+              "y": 33.24
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 69.35,
+              "y": 32.7
+            }
+          ],
+          "name": "Dark Iron Geologist",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4306,
+          "kind": "item",
+          "locations": [],
+          "name": "Silk Cloth",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 23,
+      "quest_id": 4449,
+      "quest_name": "Caught!",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 173265,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 65.59,
+              "y": 62.17
+            }
+          ],
+          "name": "Wooden Outhouse",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4449"
+      ],
+      "instruction": "Turn in [QT4449 Caught!] to Wooden Outhouse",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 24,
+      "quest_id": 4449,
+      "quest_name": "Caught!",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 173265,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 65.59,
+              "y": 62.17
+            }
+          ],
+          "name": "Wooden Outhouse",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4450"
+      ],
+      "instruction": "Accept [QA4450 Ledger from Tanaris] from Wooden Outhouse.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 25,
+      "quest_id": 4450,
+      "quest_name": "Ledger from Tanaris",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 11818,
+          "kind": "item",
+          "locations": [],
+          "name": "Grimesilt Outhouse Key",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4451"
+      ],
+      "instruction": "Accept [QA4451 The Key to Freedom] from Grimesilt Outhouse Key.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 26,
+      "quest_id": 4451,
+      "quest_name": "The Key to Freedom",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4450"
+      ],
+      "instruction": "Collect or use the required items: Goodsteel Ledger, Solid Crystal Leg Shaft, Overdue Package, plus 1 more. [QC4450 Ledger from Tanaris]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Goodsteel Ledger, Solid Crystal Leg Shaft, Overdue Package, plus 1 more",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 11727,
+          "kind": "item",
+          "locations": [],
+          "name": "Goodsteel Ledger",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 11725,
+          "kind": "item",
+          "locations": [],
+          "name": "Solid Crystal Leg Shaft",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 11724,
+          "kind": "item",
+          "locations": [],
+          "name": "Overdue Package",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 11723,
+          "kind": "item",
+          "locations": [],
+          "name": "Goodsteel's Balanced Flameberge",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 27,
+      "quest_id": 4450,
+      "quest_name": "Ledger from Tanaris",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4451"
+      ],
+      "instruction": "Use the quest item [UI11818-] as directed. [QC4451 The Key to Freedom]",
+      "item_use_id": 11818,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 28,
+      "quest_id": 4451,
+      "quest_name": "The Key to Freedom",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "item_triggered",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 173265,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 65.59,
+              "y": 62.17
+            }
+          ],
+          "name": "Wooden Outhouse",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4451"
+      ],
+      "instruction": "Turn in [QT4451 The Key to Freedom] to Wooden Outhouse",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 29,
+      "quest_id": 4451,
+      "quest_name": "The Key to Freedom",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "before_quest_id": 4450,
+      "before_tag": "QT",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:npc:7823",
+        "authored-route:guidelime-tugs-tbc-alliance-2.50:31-36STV,Desolace.lua:80"
+      ],
+      "instruction": "Optional: learn the flight path from Bera Stonehammer. [P][G51.01,29.34 Tanaris][O]",
+      "map_id": 440,
+      "map_name": "Tanaris",
+      "optional": true,
+      "order": 30,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "acquire_flight_path",
+      "verification": "cross_verified_questie_and_authored_route",
+      "x": 51.01,
+      "y": 29.34
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5411,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 51.46,
+              "y": 28.81
+            }
+          ],
+          "name": "Krinkle Goodsteel",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:4450"
+      ],
+      "instruction": "Turn in [QT4450 Ledger from Tanaris] to Krinkle Goodsteel",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 31,
+      "quest_id": 4450,
+      "quest_name": "Ledger from Tanaris",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 179827,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 37.65,
+              "y": 26.47
+            }
+          ],
+          "name": "Wanted/Missing/Lost & Found",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7701"
+      ],
+      "instruction": "Accept [QA7701 WANTED: Overseer Maltorius] from Wanted/Missing/Lost & Found.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 32,
+      "quest_id": 7701,
+      "quest_name": "WANTED: Overseer Maltorius",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14624,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 38.8,
+              "y": 28.51
+            }
+          ],
+          "name": "Master Smith Burninate",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7722"
+      ],
+      "instruction": "Accept [QA7722 What the Flux?] from Master Smith Burninate.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 33,
+      "quest_id": 7722,
+      "quest_name": "What the Flux?",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14627,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 38.58,
+              "y": 27.81
+            }
+          ],
+          "name": "Hansel Heavyhands",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7723"
+      ],
+      "instruction": "Accept [QA7723 Curse These Fat Fingers] from Hansel Heavyhands.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 34,
+      "quest_id": 7723,
+      "quest_name": "Curse These Fat Fingers",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14627,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 38.58,
+              "y": 27.81
+            }
+          ],
+          "name": "Hansel Heavyhands",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7724"
+      ],
+      "instruction": "Accept [QA7724 Fiery Menace!] from Hansel Heavyhands.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 35,
+      "quest_id": 7724,
+      "quest_name": "Fiery Menace!",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14627,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 38.58,
+              "y": 27.81
+            }
+          ],
+          "name": "Hansel Heavyhands",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7727"
+      ],
+      "instruction": "Accept [QA7727 Incendosaurs? Whateverosaur is More Like It] from Hansel Heavyhands.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 36,
+      "quest_id": 7727,
+      "quest_name": "Incendosaurs? Whateverosaur is More Like It",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 179827,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 37.65,
+              "y": 26.47
+            }
+          ],
+          "name": "Wanted/Missing/Lost & Found",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7728"
+      ],
+      "instruction": "Accept [QA7728 STOLEN: Smithing Tuyere and Lookout's Spyglass] from Wanted/Missing/Lost & Found.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 37,
+      "quest_id": 7728,
+      "quest_name": "STOLEN: Smithing Tuyere and Lookout's Spyglass",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7727"
+      ],
+      "instruction": "Complete the required NPC or creature objective: Incendosaur. [QC7727 Incendosaurs? Whateverosaur is More Like It]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Incendosaur",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 9318,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 49.88,
+              "y": 39.01
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 50.14,
+              "y": 32.72
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 51.62,
+              "y": 37.39
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 51.24,
+              "y": 33.71
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 51.15,
+              "y": 29.25
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 50.44,
+              "y": 25.98
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 48.46,
+              "y": 26.48
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 43.38,
+              "y": 28.26
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 44.57,
+              "y": 24.85
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 45.15,
+              "y": 21.49
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 46.32,
+              "y": 20.07
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 47.8,
+              "y": 21.56
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 49.49,
+              "y": 23.4
+            }
+          ],
+          "name": "Incendosaur",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 38,
+      "quest_id": 7727,
+      "quest_name": "Incendosaurs? Whateverosaur is More Like It",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7724"
+      ],
+      "instruction": "Complete the required NPC or creature objective: Greater Lava Spider. [QC7724 Fiery Menace!]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Greater Lava Spider",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5858,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 38.01,
+              "y": 33.34
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 31.02,
+              "y": 40.82
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 29.49,
+              "y": 43.82
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 32.27,
+              "y": 39.81
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 28.15,
+              "y": 44.76
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 27.72,
+              "y": 43.45
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 27.98,
+              "y": 50.37
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 27.17,
+              "y": 48.55
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 29.31,
+              "y": 62.39
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 29.56,
+              "y": 56.52
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 31.1,
+              "y": 61.43
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 26.25,
+              "y": 51.03
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 28.28,
+              "y": 55.19
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 22.03,
+              "y": 77.29
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 24.87,
+              "y": 76.68
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 22.84,
+              "y": 74.89
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 26.04,
+              "y": 69.17
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 31.36,
+              "y": 67.98
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 27.91,
+              "y": 66.88
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 30.38,
+              "y": 70.85
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 26.41,
+              "y": 75.38
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 28.94,
+              "y": 77.61
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 29.08,
+              "y": 76.17
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 43.85,
+              "y": 68.16
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 27.12,
+              "y": 37.34
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 40.36,
+              "y": 69.0
+            }
+          ],
+          "name": "Greater Lava Spider",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 39,
+      "quest_id": 7724,
+      "quest_name": "Fiery Menace!",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7723"
+      ],
+      "instruction": "Complete the required NPC or creature objective: Heavy War Golem. [QC7723 Curse These Fat Fingers]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objective: Heavy War Golem",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5854,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 36.55,
+              "y": 61.46
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 40.54,
+              "y": 54.66
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 51.73,
+              "y": 59.28
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 37.17,
+              "y": 62.03
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 50.9,
+              "y": 38.71
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 35.13,
+              "y": 45.24
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 35.54,
+              "y": 59.78
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 39.86,
+              "y": 44.17
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 41.66,
+              "y": 41.39
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 32.5,
+              "y": 45.87
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 33.91,
+              "y": 47.91
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 32.45,
+              "y": 52.55
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 38.27,
+              "y": 47.97
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 45.8,
+              "y": 41.61
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 47.66,
+              "y": 39.48
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 37.23,
+              "y": 45.15
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 35.24,
+              "y": 40.91
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 43.26,
+              "y": 44.02
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 45.93,
+              "y": 55.71
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 41.64,
+              "y": 63.42
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 44.85,
+              "y": 63.76
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 44.76,
+              "y": 38.72
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 46.45,
+              "y": 38.01
+            }
+          ],
+          "name": "Heavy War Golem",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 40,
+      "quest_id": 7723,
+      "quest_name": "Curse These Fat Fingers",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7701"
+      ],
+      "instruction": "Collect or use the required item: Head of Overseer Maltorius. [QC7701 WANTED: Overseer Maltorius]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Head of Overseer Maltorius",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 18946,
+          "kind": "item",
+          "locations": [],
+          "name": "Head of Overseer Maltorius",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 41,
+      "quest_id": 7701,
+      "quest_name": "WANTED: Overseer Maltorius",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7722"
+      ],
+      "instruction": "Collect or use the required item: Secret Plans: Fiery Flux. [QC7722 What the Flux?]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Secret Plans: Fiery Flux",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 18922,
+          "kind": "item",
+          "locations": [],
+          "name": "Secret Plans: Fiery Flux",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 42,
+      "quest_id": 7722,
+      "quest_name": "What the Flux?",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7728"
+      ],
+      "instruction": "Collect or use the required items: Smithing Tuyere, Lookout's Spyglass. [QC7728 STOLEN: Smithing Tuyere and Lookout's Spyglass]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Smithing Tuyere, Lookout's Spyglass",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 18959,
+          "kind": "item",
+          "locations": [],
+          "name": "Smithing Tuyere",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 18960,
+          "kind": "item",
+          "locations": [],
+          "name": "Lookout's Spyglass",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 43,
+      "quest_id": 7728,
+      "quest_name": "STOLEN: Smithing Tuyere and Lookout's Spyglass",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14624,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 38.8,
+              "y": 28.51
+            }
+          ],
+          "name": "Master Smith Burninate",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7722"
+      ],
+      "instruction": "Turn in [QT7722 What the Flux?] to Master Smith Burninate",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 44,
+      "quest_id": 7722,
+      "quest_name": "What the Flux?",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14627,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 38.58,
+              "y": 27.81
+            }
+          ],
+          "name": "Hansel Heavyhands",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7723"
+      ],
+      "instruction": "Turn in [QT7723 Curse These Fat Fingers] to Hansel Heavyhands",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 45,
+      "quest_id": 7723,
+      "quest_name": "Curse These Fat Fingers",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14627,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 38.58,
+              "y": 27.81
+            }
+          ],
+          "name": "Hansel Heavyhands",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7724"
+      ],
+      "instruction": "Turn in [QT7724 Fiery Menace!] to Hansel Heavyhands",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 46,
+      "quest_id": 7724,
+      "quest_name": "Fiery Menace!",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14627,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 38.58,
+              "y": 27.81
+            }
+          ],
+          "name": "Hansel Heavyhands",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7727"
+      ],
+      "instruction": "Turn in [QT7727 Incendosaurs? Whateverosaur is More Like It] to Hansel Heavyhands",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 47,
+      "quest_id": 7727,
+      "quest_name": "Incendosaurs? Whateverosaur is More Like It",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14626,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 38.97,
+              "y": 27.51
+            }
+          ],
+          "name": "Taskmaster Scrange",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7728"
+      ],
+      "instruction": "Turn in [QT7728 STOLEN: Smithing Tuyere and Lookout's Spyglass] to Taskmaster Scrange",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 48,
+      "quest_id": 7728,
+      "quest_name": "STOLEN: Smithing Tuyere and Lookout's Spyglass",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14634,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 37.74,
+              "y": 26.56
+            }
+          ],
+          "name": "Lookout Captain Lolo Longstriker",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7701"
+      ],
+      "instruction": "Turn in [QT7701 WANTED: Overseer Maltorius] to Lookout Captain Lolo Longstriker",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 49,
+      "quest_id": 7701,
+      "quest_name": "WANTED: Overseer Maltorius",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcObjectDB.lua",
+          "id": 179827,
+          "kind": "object",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 37.65,
+              "y": 26.47
+            }
+          ],
+          "name": "Wanted/Missing/Lost & Found",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7729"
+      ],
+      "instruction": "Accept [QA7729 JOB OPPORTUNITY: Culling the Competition] from Wanted/Missing/Lost & Found.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 50,
+      "quest_id": 7729,
+      "quest_name": "JOB OPPORTUNITY: Culling the Competition",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7729"
+      ],
+      "instruction": "Complete the required NPC or creature objectives: Dark Iron Taskmaster, Dark Iron Slaver. [QC7729 JOB OPPORTUNITY: Culling the Competition]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Dark Iron Taskmaster, Dark Iron Slaver",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5846,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 41.22,
+              "y": 53.04
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 39.99,
+              "y": 54.24
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 44.79,
+              "y": 51.93
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 46.49,
+              "y": 25.27
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 44.11,
+              "y": 31.61
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 49.15,
+              "y": 39.93
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 49.26,
+              "y": 39.34
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 45.68,
+              "y": 39.65
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 45.83,
+              "y": 39.17
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 43.12,
+              "y": 40.37
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 34.48,
+              "y": 47.0
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 34.28,
+              "y": 46.33
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 41.21,
+              "y": 23.33
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 37.49,
+              "y": 39.64
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 39.88,
+              "y": 54.47
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 57.97,
+              "y": 41.9
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 40.52,
+              "y": 51.14
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 38.77,
+              "y": 50.52
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 38.56,
+              "y": 45.09
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 42.48,
+              "y": 33.84
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 43.09,
+              "y": 31.21
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 42.6,
+              "y": 31.57
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 43.29,
+              "y": 28.24
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 41.01,
+              "y": 43.82
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 44.57,
+              "y": 35.47
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 42.74,
+              "y": 36.37
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 42.99,
+              "y": 36.43
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 43.96,
+              "y": 33.66
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 43.88,
+              "y": 33.68
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 35.53,
+              "y": 42.91
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 38.03,
+              "y": 31.95
+            }
+          ],
+          "name": "Dark Iron Taskmaster",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5844,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 58.15,
+              "y": 42.0
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 41.22,
+              "y": 53.04
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 35.37,
+              "y": 58.6
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 35.32,
+              "y": 58.48
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 39.99,
+              "y": 54.24
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 43.2,
+              "y": 51.97
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 46.63,
+              "y": 25.46
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 42.81,
+              "y": 40.54
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 43.32,
+              "y": 24.0
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 36.22,
+              "y": 41.88
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 39.88,
+              "y": 54.47
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 58.05,
+              "y": 41.95
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 46.33,
+              "y": 48.91
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 46.27,
+              "y": 49.17
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 40.52,
+              "y": 51.14
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 38.77,
+              "y": 50.52
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 38.56,
+              "y": 45.09
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 49.11,
+              "y": 44.61
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 43.28,
+              "y": 31.1
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 42.55,
+              "y": 33.62
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 39.14,
+              "y": 37.86
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 41.01,
+              "y": 43.82
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 38.39,
+              "y": 38.04
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 40.25,
+              "y": 32.04
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 41.61,
+              "y": 29.27
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 45.93,
+              "y": 28.76
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 44.52,
+              "y": 31.09
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 44.38,
+              "y": 31.07
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 41.65,
+              "y": 56.23
+            },
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 41.75,
+              "y": 56.41
+            }
+          ],
+          "name": "Dark Iron Slaver",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 51,
+      "quest_id": 7729,
+      "quest_name": "JOB OPPORTUNITY: Culling the Competition",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14626,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 51,
+              "map_name": "Searing Gorge",
+              "verification": "questie_structured_source_only",
+              "x": 38.97,
+              "y": 27.51
+            }
+          ],
+          "name": "Taskmaster Scrange",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7729"
+      ],
+      "instruction": "Turn in [QT7729 JOB OPPORTUNITY: Culling the Competition] to Taskmaster Scrange",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 52,
+      "quest_id": 7729,
+      "quest_name": "JOB OPPORTUNITY: Culling the Competition",
+      "quest_tag": null,
+      "required_level": 45,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 51,
+      "zone_or_sort_name": "Searing Gorge"
+    }
+  ],
+  "title": "52 Searing Gorge"
+}

@@ -1,0 +1,621 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 93 Shadowmoon Valley, or select this chapter on a partially completed character. Begin in Netherstorm with Image of Nexus-Prince Haramad. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 3523,
+    "map_name": "Netherstorm",
+    "x": 45.87,
+    "y": 35.96
+  },
+  "entry_zone_or_sort": 3703,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 3703,
+    "map_name": "Shattrath City",
+    "quest_id": 10984,
+    "tag": "QT",
+    "x": 64.93,
+    "y": 68.14
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/094_world_94.lua",
+  "id": "094-primary-94-shattrath-city",
+  "maximum_level": 70,
+  "minimum_level": 70,
+  "next_chapter": "95 Caverns of Time & Hellfire Peninsula",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "93 Shadowmoon Valley",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 10280,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10010:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10280:starter"
+      ],
+      "instruction": "Travel from Nagrand to Netherstorm. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G45.87,35.96 Netherstorm]. [O]",
+      "map_id": 3523,
+      "map_name": "Netherstorm",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 3518,
+      "origin_map_name": "Nagrand",
+      "origin_x": 27.34,
+      "origin_y": 43.09,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 45.87,
+      "y": 35.96
+    },
+    {
+      "before_quest_id": 10280,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10280:starter"
+      ],
+      "instruction": "Before you begin: travel to Netherstorm and meet the first quest giver at [G45.87,35.96 Netherstorm]. Leave at least two quest-log slots open. [O]",
+      "map_id": 3523,
+      "map_name": "Netherstorm",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 45.87,
+      "y": 35.96
+    },
+    {
+      "before_quest_id": 10280,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10280:requiredLevel"
+      ],
+      "instruction": "Reach level 70 before accepting Special Delivery to Shattrath City. [XP70 Level 70]",
+      "map_id": 3523,
+      "map_name": "Netherstorm",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 70,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 45.87,
+      "y": 35.96
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 20084,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3523,
+              "map_name": "Netherstorm",
+              "verification": "questie_structured_source_only",
+              "x": 45.87,
+              "y": 35.96
+            }
+          ],
+          "name": "Image of Nexus-Prince Haramad",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10280"
+      ],
+      "instruction": "Accept [QA10280 Special Delivery to Shattrath City] from Image of Nexus-Prince Haramad.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 10280,
+      "quest_name": "Special Delivery to Shattrath City",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10280"
+      ],
+      "instruction": "Complete [QC10280 Special Delivery to Shattrath City]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 10280,
+      "quest_name": "Special Delivery to Shattrath City",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18481,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 53.99,
+              "y": 44.75
+            }
+          ],
+          "name": "A'dal",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10280"
+      ],
+      "instruction": "Turn in [QT10280 Special Delivery to Shattrath City] to A'dal",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 10280,
+      "quest_name": "Special Delivery to Shattrath City",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18417,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 27.34,
+              "y": 43.09
+            }
+          ],
+          "name": "Altruis the Sufferer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10011"
+      ],
+      "instruction": "Accept [QA10011 Forge Camp: Annihilated] from Altruis the Sufferer.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 10011,
+      "quest_name": "Forge Camp: Annihilated",
+      "quest_tag": "Elite",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "before_quest_id": 10011,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10011:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 3518,
+      "map_name": "Nagrand",
+      "optional": true,
+      "order": 8,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        10011
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 25.1,
+      "y": 35.98
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10011"
+      ],
+      "instruction": "Elite/group recommended \u2014 Complete the required NPC or creature objectives: Fel Cannon: Hate, Fel Cannon: Fear. [QC10011 Forge Camp: Annihilated]",
+      "item_use_id": null,
+      "objective_hint": "Complete the required NPC or creature objectives: Fel Cannon: Hate, Fel Cannon: Fear",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19067,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 25.1,
+              "y": 35.98
+            }
+          ],
+          "name": "Fel Cannon: Hate",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 19210,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 19.37,
+              "y": 50.77
+            }
+          ],
+          "name": "Fel Cannon: Fear",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 9,
+      "quest_id": 10011,
+      "quest_name": "Forge Camp: Annihilated",
+      "quest_tag": "Elite",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18417,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3518,
+              "map_name": "Nagrand",
+              "verification": "questie_structured_source_only",
+              "x": 27.34,
+              "y": 43.09
+            }
+          ],
+          "name": "Altruis the Sufferer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10011"
+      ],
+      "instruction": "Turn in [QT10011 Forge Camp: Annihilated] to Altruis the Sufferer",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 10011,
+      "quest_name": "Forge Camp: Annihilated",
+      "quest_tag": "Elite",
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3518,
+      "zone_or_sort_name": "Nagrand"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18166,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 54.75,
+              "y": 44.32
+            }
+          ],
+          "name": "Khadgar",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10883"
+      ],
+      "instruction": "Accept [QA10883 The Tempest Key] from Khadgar.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 10883,
+      "quest_name": "The Tempest Key",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22497,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 56.46,
+              "y": 49.08
+            }
+          ],
+          "name": "V'eru",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10984"
+      ],
+      "instruction": "Accept [QA10984 Speak with the Ogre] from V'eru.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 10984,
+      "quest_name": "Speak with the Ogre",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10883"
+      ],
+      "instruction": "Complete [QC10883 The Tempest Key]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 10883,
+      "quest_name": "The Tempest Key",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10984"
+      ],
+      "instruction": "Complete [QC10984 Speak with the Ogre]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 10984,
+      "quest_name": "Speak with the Ogre",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 18481,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 53.99,
+              "y": 44.75
+            }
+          ],
+          "name": "A'dal",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10883"
+      ],
+      "instruction": "Turn in [QT10883 The Tempest Key] to A'dal",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 15,
+      "quest_id": 10883,
+      "quest_name": "The Tempest Key",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 22940,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 3703,
+              "map_name": "Shattrath City",
+              "verification": "questie_structured_source_only",
+              "x": 64.93,
+              "y": 68.14
+            }
+          ],
+          "name": "Grok",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:10984"
+      ],
+      "instruction": "Turn in [QT10984 Speak with the Ogre] to Grok",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 10984,
+      "quest_name": "Speak with the Ogre",
+      "quest_tag": null,
+      "required_level": 70,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 3703,
+      "zone_or_sort_name": "Shattrath City"
+    }
+  ],
+  "title": "94 Shattrath City"
+}

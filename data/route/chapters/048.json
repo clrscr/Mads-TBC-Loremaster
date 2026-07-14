@@ -1,0 +1,352 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 47 Tanaris, or select this chapter on a partially completed character. Begin in Loch Modan with Ghak Healtouch. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 38,
+    "map_name": "Loch Modan",
+    "x": 37.07,
+    "y": 49.38
+  },
+  "entry_zone_or_sort": 1517,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 1657,
+    "map_name": "Darnassus",
+    "quest_id": 7799,
+    "tag": "QT",
+    "x": 64.02,
+    "y": 23.0
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/048_world_48.lua",
+  "id": "048-primary-48-darnassus",
+  "maximum_level": 43,
+  "minimum_level": 43,
+  "next_chapter": "49 The Exodar & Westfall",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "47 Tanaris",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 17,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:836:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:17:starter"
+      ],
+      "instruction": "Travel from Stranglethorn Vale to Loch Modan. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G37.07,49.38 Loch Modan]. [O]",
+      "map_id": 38,
+      "map_name": "Loch Modan",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 33,
+      "origin_map_name": "Stranglethorn Vale",
+      "origin_x": 28.36,
+      "origin_y": 76.35,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 37.07,
+      "y": 49.38
+    },
+    {
+      "before_quest_id": 17,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:17:starter"
+      ],
+      "instruction": "Before you begin: travel to Loch Modan and meet the first quest giver at [G37.07,49.38 Loch Modan]. Leave at least two quest-log slots open. [O]",
+      "map_id": 38,
+      "map_name": "Loch Modan",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 37.07,
+      "y": 49.38
+    },
+    {
+      "before_quest_id": 17,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:17:requiredLevel"
+      ],
+      "instruction": "Reach level 43 before accepting Uldaman Reagent Run. [XP43 Level 43]",
+      "map_id": 38,
+      "map_name": "Loch Modan",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 43,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 37.07,
+      "y": 49.38
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1470,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 37.07,
+              "y": 49.38
+            }
+          ],
+          "name": "Ghak Healtouch",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:17"
+      ],
+      "instruction": "Accept [QA17 Uldaman Reagent Run] from Ghak Healtouch.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 17,
+      "quest_name": "Uldaman Reagent Run",
+      "quest_tag": null,
+      "required_level": 43,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:17"
+      ],
+      "instruction": "Collect or use the required item: Magenta Fungus Cap. [QC17 Uldaman Reagent Run]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Magenta Fungus Cap",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 8047,
+          "kind": "item",
+          "locations": [],
+          "name": "Magenta Fungus Cap",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 5,
+      "quest_id": 17,
+      "quest_name": "Uldaman Reagent Run",
+      "quest_tag": null,
+      "required_level": 43,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 1470,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 38,
+              "map_name": "Loch Modan",
+              "verification": "questie_structured_source_only",
+              "x": 37.07,
+              "y": 49.38
+            }
+          ],
+          "name": "Ghak Healtouch",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:17"
+      ],
+      "instruction": "Turn in [QT17 Uldaman Reagent Run] to Ghak Healtouch",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 6,
+      "quest_id": 17,
+      "quest_name": "Uldaman Reagent Run",
+      "quest_tag": null,
+      "required_level": 43,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1517,
+      "zone_or_sort_name": "Map or sort 1517"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14725,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1657,
+              "map_name": "Darnassus",
+              "verification": "questie_structured_source_only",
+              "x": 64.02,
+              "y": 23.0
+            }
+          ],
+          "name": "Raedon Duskstriker",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7799"
+      ],
+      "instruction": "Accept [QA7799 A Donation of Mageweave] from Raedon Duskstriker.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 7799,
+      "quest_name": "A Donation of Mageweave",
+      "quest_tag": null,
+      "required_level": 43,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 1657,
+      "zone_or_sort_name": "Darnassus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7799"
+      ],
+      "instruction": "Collect or use the required item: Mageweave Cloth. [QC7799 A Donation of Mageweave]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Mageweave Cloth",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 4338,
+          "kind": "item",
+          "locations": [],
+          "name": "Mageweave Cloth",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 8,
+      "quest_id": 7799,
+      "quest_name": "A Donation of Mageweave",
+      "quest_tag": null,
+      "required_level": 43,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 1657,
+      "zone_or_sort_name": "Darnassus"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 14725,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1657,
+              "map_name": "Darnassus",
+              "verification": "questie_structured_source_only",
+              "x": 64.02,
+              "y": 23.0
+            }
+          ],
+          "name": "Raedon Duskstriker",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:7799"
+      ],
+      "instruction": "Turn in [QT7799 A Donation of Mageweave] to Raedon Duskstriker",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 7799,
+      "quest_name": "A Donation of Mageweave",
+      "quest_tag": null,
+      "required_level": 43,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 1657,
+      "zone_or_sort_name": "Darnassus"
+    }
+  ],
+  "title": "48 Darnassus"
+}

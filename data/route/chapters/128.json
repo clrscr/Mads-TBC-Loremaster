@@ -1,0 +1,516 @@
+{
+  "branch": "optional_content",
+  "entry_contract": "Complete the relevant shared prerequisites. Begin in Scholomance with Bodley. Leave at least two quest-log slots open; group and reputation gates remain explicit.",
+  "entry_route_point": {
+    "map_id": 2057,
+    "map_name": "Scholomance",
+    "x": null,
+    "y": null
+  },
+  "entry_zone_or_sort": 2057,
+  "exit_route_point": {
+    "basis": "chapter_entry_fallback_no_mapped_operation",
+    "map_id": 2057,
+    "map_name": "Scholomance",
+    "quest_id": null,
+    "tag": null,
+    "x": null,
+    "y": null
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Optional Content",
+  "guide_file": "Guides/optional_content/128_dungeon_32.lua",
+  "id": "128-optional_content-optional-content-32---scholomance-&-dire-maul",
+  "maximum_level": null,
+  "minimum_level": null,
+  "next_chapter": "Optional Content 33 - Ironforge & Blackrock Spire",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "Optional Content 31 - Alcaz Island & Blackrock Spire",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 8992,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8970:objective",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8992:objective"
+      ],
+      "instruction": "Travel from Alcaz Island to Scholomance. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to Scholomance. [O]",
+      "map_id": 2057,
+      "map_name": "Scholomance",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 2079,
+      "origin_map_name": "Alcaz Island",
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": null,
+      "y": null
+    },
+    {
+      "before_quest_id": 8992,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "route-branch:optional_content"
+      ],
+      "instruction": "Optional entry requirements: complete the relevant shared prerequisites. [O]",
+      "map_id": 2057,
+      "map_name": "Scholomance",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "branch_entry",
+      "verification": "route_dependency_graph",
+      "x": null,
+      "y": null
+    },
+    {
+      "before_quest_id": 8992,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8992:objective"
+      ],
+      "instruction": "Optional chapter: enter Scholomance. Leave at least two quest-log slots open. [O]",
+      "map_id": 2057,
+      "map_name": "Scholomance",
+      "optional": true,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": null,
+      "y": null
+    },
+    {
+      "before_quest_id": 8992,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8992:requiredLevel"
+      ],
+      "instruction": "Reach level 62 before accepting The Right Piece of Lord Valthalak's Amulet. [XP62 Level 62]",
+      "map_id": 2057,
+      "map_name": "Scholomance",
+      "optional": false,
+      "order": 4,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 62,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": null,
+      "y": null
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16033,
+          "kind": "npc",
+          "locations": [],
+          "name": "Bodley",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8992"
+      ],
+      "instruction": "Accept [QA8992 The Right Piece of Lord Valthalak's Amulet] from Bodley.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 5,
+      "quest_id": 8992,
+      "quest_name": "The Right Piece of Lord Valthalak's Amulet",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 2057,
+      "zone_or_sort_name": "Scholomance"
+    },
+    {
+      "before_quest_id": 8992,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8992:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 2057,
+      "map_name": "Scholomance",
+      "optional": true,
+      "order": 6,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        8992
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": null,
+      "y": null
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8992"
+      ],
+      "instruction": "Dungeon \u2014 Use the quest item [UI22052-] as directed; complete the required objectives \u2014 NPCs or creatures: Kormok; items: Lord Valthalak's Amulet. [QC8992 The Right Piece of Lord Valthalak's Amulet]",
+      "item_use_id": 22052,
+      "objective_hint": "Complete the required objectives \u2014 NPCs or creatures: Kormok; items: Lord Valthalak's Amulet",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16118,
+          "kind": "npc",
+          "locations": [],
+          "name": "Kormok",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 22048,
+          "kind": "item",
+          "locations": [],
+          "name": "Lord Valthalak's Amulet",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 7,
+      "quest_id": 8992,
+      "quest_name": "The Right Piece of Lord Valthalak's Amulet",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 2057,
+      "zone_or_sort_name": "Scholomance"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16033,
+          "kind": "npc",
+          "locations": [],
+          "name": "Bodley",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8992"
+      ],
+      "instruction": "Turn in [QT8992 The Right Piece of Lord Valthalak's Amulet] to Bodley",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 8992,
+      "quest_name": "The Right Piece of Lord Valthalak's Amulet",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 2057,
+      "zone_or_sort_name": "Scholomance"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16033,
+          "kind": "npc",
+          "locations": [],
+          "name": "Bodley",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8990"
+      ],
+      "instruction": "Accept [QA8990 The Right Piece of Lord Valthalak's Amulet] from Bodley.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 9,
+      "quest_id": 8990,
+      "quest_name": "The Right Piece of Lord Valthalak's Amulet",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8990"
+      ],
+      "instruction": "Dungeon \u2014 Use the quest item [UI22050-] as directed; complete the required objectives \u2014 NPCs or creatures: Isalien; items: Lord Valthalak's Amulet. [QC8990 The Right Piece of Lord Valthalak's Amulet]",
+      "item_use_id": 22050,
+      "objective_hint": "Complete the required objectives \u2014 NPCs or creatures: Isalien; items: Lord Valthalak's Amulet",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16097,
+          "kind": "npc",
+          "locations": [],
+          "name": "Isalien",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 22048,
+          "kind": "item",
+          "locations": [],
+          "name": "Lord Valthalak's Amulet",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 10,
+      "quest_id": 8990,
+      "quest_name": "The Right Piece of Lord Valthalak's Amulet",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "dungeon",
+      "conditional_categories": [
+        "dungeon",
+        "group_content",
+        "item_mechanic",
+        "one_time"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16033,
+          "kind": "npc",
+          "locations": [],
+          "name": "Bodley",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8990"
+      ],
+      "instruction": "Turn in [QT8990 The Right Piece of Lord Valthalak's Amulet] to Bodley",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 8990,
+      "quest_name": "The Right Piece of Lord Valthalak's Amulet",
+      "quest_tag": "Dungeon",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 2557,
+      "zone_or_sort_name": "Dire Maul"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16033,
+          "kind": "npc",
+          "locations": [],
+          "name": "Bodley",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8994"
+      ],
+      "instruction": "Accept [QA8994 Final Preparations] from Bodley.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 8994,
+      "quest_name": "Final Preparations",
+      "quest_tag": "Raid",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 25,
+      "zone_or_sort_name": "Map or sort 25"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8994"
+      ],
+      "instruction": "Raid \u2014 Collect or use the required items: Blackrock Bracer, Flask of Supreme Power. [QC8994 Final Preparations]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Blackrock Bracer, Flask of Supreme Power",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 22138,
+          "kind": "item",
+          "locations": [],
+          "name": "Blackrock Bracer",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 13512,
+          "kind": "item",
+          "locations": [],
+          "name": "Flask of Supreme Power",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 13,
+      "quest_id": 8994,
+      "quest_name": "Final Preparations",
+      "quest_tag": "Raid",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 25,
+      "zone_or_sort_name": "Map or sort 25"
+    },
+    {
+      "category": "raid",
+      "conditional_categories": [
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "raid"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 16033,
+          "kind": "npc",
+          "locations": [],
+          "name": "Bodley",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:8994"
+      ],
+      "instruction": "Turn in [QT8994 Final Preparations] to Bodley",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 8994,
+      "quest_name": "Final Preparations",
+      "quest_tag": "Raid",
+      "required_level": 62,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 25,
+      "zone_or_sort_name": "Map or sort 25"
+    }
+  ],
+  "title": "Optional Content 32 - Scholomance & Dire Maul"
+}

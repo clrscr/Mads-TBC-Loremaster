@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "burning-crusade-anniversary-pre-cataclysm-only",
+  "rule": "pre_cataclysm_only",
+  "maximum_expansion": "TBC",
+  "allowed_quest_sources": [
+    "Database/TBC/tbcQuestDB.lua",
+    "Database/Corrections/tbcQuestFixes.lua"
+  ],
+  "allowed_entity_sources": [
+    "Database/TBC/tbcNpcDB.lua",
+    "Database/TBC/tbcObjectDB.lua",
+    "Database/TBC/tbcItemDB.lua",
+    "Database/Corrections/tbcObjectFixes.lua"
+  ],
+  "covered_correction_only_allowlist": [],
+  "forbidden_source_prefixes": [
+    "Database/Cata/",
+    "Database/Wotlk/",
+    "Database/MoP/",
+    "Database/Corrections/cata",
+    "Database/Corrections/wotlk",
+    "Database/Corrections/mop"
+  ],
+  "notes": "Every covered or baseline quest must exist in Questie's TBC quest snapshot. TBC runtime corrections may refine those rows. A correction-only quest cannot enter a guide unless its ID is explicitly reviewed and allowlisted. No Cataclysm, Wrath, MoP, or later-expansion database may supply quest or interaction facts."
+}

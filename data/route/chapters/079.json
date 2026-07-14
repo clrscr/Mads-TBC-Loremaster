@@ -1,0 +1,1097 @@
+{
+  "branch": "primary",
+  "entry_contract": "Continue from 78 Azshara, or select this chapter on a partially completed character. Begin in Swamp of Sorrows with Fallen Hero of the Horde. Leave at least two quest-log slots open.",
+  "entry_route_point": {
+    "map_id": 8,
+    "map_name": "Swamp of Sorrows",
+    "x": 34.29,
+    "y": 66.14
+  },
+  "entry_zone_or_sort": 4,
+  "exit_route_point": {
+    "basis": "last_mapped_operation",
+    "map_id": 28,
+    "map_name": "Western Plaguelands",
+    "quest_id": 6184,
+    "tag": "QT",
+    "x": 43.61,
+    "y": 84.51
+  },
+  "external_prerequisite_all_quest_ids": [],
+  "external_prerequisite_any_groups": [],
+  "external_prerequisite_quest_ids": [],
+  "group": "Mad's Loremaster Guide - Primary Route",
+  "guide_file": "Guides/primary/079_world_79.lua",
+  "id": "079-primary-79-blasted-lands-&-western-plaguelands",
+  "maximum_level": 58,
+  "minimum_level": 58,
+  "next_chapter": "80 Eastern Plaguelands & Stormwind City",
+  "phase_profile": "tbc-anniversary-phase-2",
+  "previous_chapter": "78 Azshara",
+  "review_status": "static_review_passed_needs_in_game",
+  "schema_version": 2,
+  "static_review": {
+    "bounded_zone_scope": true,
+    "chapter_entry_instruction": true,
+    "chapter_transition_instruction": true,
+    "endpoint_names_on_accept_and_turn_in": true,
+    "lua_line_budget": true,
+    "objective_instruction_coverage": true,
+    "preparation_warning_coverage": true,
+    "reserved_quest_log_slots": true
+  },
+  "steps": [
+    {
+      "before_quest_id": 3627,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3626:QT",
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3627:starter"
+      ],
+      "instruction": "Continue within Swamp of Sorrows to the next route hub at [G34.29,66.14 Swamp of Sorrows]. [O]",
+      "map_id": 8,
+      "map_name": "Swamp of Sorrows",
+      "optional": true,
+      "order": 1,
+      "origin_map_id": 8,
+      "origin_map_name": "Swamp of Sorrows",
+      "origin_x": 34.29,
+      "origin_y": 66.14,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "zone_transition",
+      "verification": "questie_structured_route_points",
+      "x": 34.29,
+      "y": 66.14
+    },
+    {
+      "before_quest_id": 3627,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3627:starter"
+      ],
+      "instruction": "Before you begin: travel to Swamp of Sorrows and meet the first quest giver at [G34.29,66.14 Swamp of Sorrows]. Leave at least two quest-log slots open. [O]",
+      "map_id": 8,
+      "map_name": "Swamp of Sorrows",
+      "optional": true,
+      "order": 2,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "chapter_entry",
+      "verification": "questie_structured_source_only",
+      "x": 34.29,
+      "y": 66.14
+    },
+    {
+      "before_quest_id": 3627,
+      "before_tag": "QA",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3627:requiredLevel"
+      ],
+      "instruction": "Reach level 58 before accepting Uniting the Shattered Amulet. [XP58 Level 58]",
+      "map_id": 8,
+      "map_name": "Swamp of Sorrows",
+      "optional": false,
+      "order": 3,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [],
+      "required_level": 58,
+      "transport_link_ids": [],
+      "type": "level_gate",
+      "verification": "questie_required_level",
+      "x": 34.29,
+      "y": 66.14
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7572,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 34.29,
+              "y": 66.14
+            }
+          ],
+          "name": "Fallen Hero of the Horde",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3627"
+      ],
+      "instruction": "Accept [QA3627 Uniting the Shattered Amulet] from Fallen Hero of the Horde.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 4,
+      "quest_id": 3627,
+      "quest_name": "Uniting the Shattered Amulet",
+      "quest_tag": "Elite",
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 4,
+      "zone_or_sort_name": "Blasted Lands"
+    },
+    {
+      "before_quest_id": 3627,
+      "before_tag": "QC",
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3627:difficulty",
+        "ux-policy:recoverable-group-content"
+      ],
+      "instruction": "No group available? Switch chapters and return later; keep the quest and any active parent quest in your log. [O]",
+      "map_id": 8,
+      "map_name": "Swamp of Sorrows",
+      "optional": true,
+      "order": 5,
+      "origin_map_id": null,
+      "origin_map_name": null,
+      "origin_x": null,
+      "origin_y": null,
+      "related_quest_ids": [
+        3627
+      ],
+      "required_level": null,
+      "transport_link_ids": [],
+      "type": "recovery",
+      "verification": "questie_difficulty_and_route_recovery_policy",
+      "x": 34.29,
+      "y": 66.14
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3627"
+      ],
+      "instruction": "Elite/group recommended \u2014 Collect or use the required items: Amulet of Allistarj, Amulet of Grol, Amulet of Sevine. [QC3627 Uniting the Shattered Amulet]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required items: Amulet of Allistarj, Amulet of Grol, Amulet of Sevine",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 10755,
+          "kind": "item",
+          "locations": [],
+          "name": "Amulet of Allistarj",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 10753,
+          "kind": "item",
+          "locations": [],
+          "name": "Amulet of Grol",
+          "verification": "questie_structured_source_only"
+        },
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 10754,
+          "kind": "item",
+          "locations": [],
+          "name": "Amulet of Sevine",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 6,
+      "quest_id": 3627,
+      "quest_name": "Uniting the Shattered Amulet",
+      "quest_tag": "Elite",
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 4,
+      "zone_or_sort_name": "Blasted Lands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7572,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 34.29,
+              "y": 66.14
+            }
+          ],
+          "name": "Fallen Hero of the Horde",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3627"
+      ],
+      "instruction": "Turn in [QT3627 Uniting the Shattered Amulet] to Fallen Hero of the Horde",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 7,
+      "quest_id": 3627,
+      "quest_name": "Uniting the Shattered Amulet",
+      "quest_tag": "Elite",
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 4,
+      "zone_or_sort_name": "Blasted Lands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7572,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 34.29,
+              "y": 66.14
+            }
+          ],
+          "name": "Fallen Hero of the Horde",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3628"
+      ],
+      "instruction": "Accept [QA3628 You Are Rakh'likh, Demon] from Fallen Hero of the Horde.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 8,
+      "quest_id": 3628,
+      "quest_name": "You Are Rakh'likh, Demon",
+      "quest_tag": "Elite",
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 4,
+      "zone_or_sort_name": "Blasted Lands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3628"
+      ],
+      "instruction": "Elite/group recommended \u2014 Collect or use the required item: Severed Horn of the Defiler. [QC3628 You Are Rakh'likh, Demon]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Severed Horn of the Defiler",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 10759,
+          "kind": "item",
+          "locations": [],
+          "name": "Severed Horn of the Defiler",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 9,
+      "quest_id": 3628,
+      "quest_name": "You Are Rakh'likh, Demon",
+      "quest_tag": "Elite",
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 4,
+      "zone_or_sort_name": "Blasted Lands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 7572,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 8,
+              "map_name": "Swamp of Sorrows",
+              "verification": "questie_structured_source_only",
+              "x": 34.29,
+              "y": 66.14
+            }
+          ],
+          "name": "Fallen Hero of the Horde",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:3628"
+      ],
+      "instruction": "Turn in [QT3628 You Are Rakh'likh, Demon] to Fallen Hero of the Horde",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 10,
+      "quest_id": 3628,
+      "quest_name": "You Are Rakh'likh, Demon",
+      "quest_tag": "Elite",
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 4,
+      "zone_or_sort_name": "Blasted Lands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 10838,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 28,
+              "map_name": "Western Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 42.7,
+              "y": 84.03
+            }
+          ],
+          "name": "Commander Ashlam Valorfist",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5533"
+      ],
+      "instruction": "Accept [QA5533 Scholomance] from Commander Ashlam Valorfist.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 11,
+      "quest_id": 5533,
+      "quest_name": "Scholomance",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 28,
+      "zone_or_sort_name": "Western Plaguelands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5533"
+      ],
+      "instruction": "Complete [QC5533 Scholomance]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 12,
+      "quest_id": 5533,
+      "quest_name": "Scholomance",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 28,
+      "zone_or_sort_name": "Western Plaguelands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11056,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 28,
+              "map_name": "Western Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 42.66,
+              "y": 83.77
+            }
+          ],
+          "name": "Alchemist Arbington",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5533"
+      ],
+      "instruction": "Turn in [QT5533 Scholomance] to Alchemist Arbington",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 13,
+      "quest_id": 5533,
+      "quest_name": "Scholomance",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 28,
+      "zone_or_sort_name": "Western Plaguelands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11056,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 28,
+              "map_name": "Western Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 42.66,
+              "y": 83.77
+            }
+          ],
+          "name": "Alchemist Arbington",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5537"
+      ],
+      "instruction": "Accept [QA5537 Skeletal Fragments] from Alchemist Arbington.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 14,
+      "quest_id": 5537,
+      "quest_name": "Skeletal Fragments",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 28,
+      "zone_or_sort_name": "Western Plaguelands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5537"
+      ],
+      "instruction": "Collect or use the required item: Skeletal Fragments. [QC5537 Skeletal Fragments]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Skeletal Fragments",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 14619,
+          "kind": "item",
+          "locations": [],
+          "name": "Skeletal Fragments",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 15,
+      "quest_id": 5537,
+      "quest_name": "Skeletal Fragments",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 28,
+      "zone_or_sort_name": "Western Plaguelands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11056,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 28,
+              "map_name": "Western Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 42.66,
+              "y": 83.77
+            }
+          ],
+          "name": "Alchemist Arbington",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5537"
+      ],
+      "instruction": "Turn in [QT5537 Skeletal Fragments] to Alchemist Arbington",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 16,
+      "quest_id": 5537,
+      "quest_name": "Skeletal Fragments",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 28,
+      "zone_or_sort_name": "Western Plaguelands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11056,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 28,
+              "map_name": "Western Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 42.66,
+              "y": 83.77
+            }
+          ],
+          "name": "Alchemist Arbington",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5538"
+      ],
+      "instruction": "Accept [QA5538 Mold Rhymes With...] from Alchemist Arbington.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 17,
+      "quest_id": 5538,
+      "quest_name": "Mold Rhymes With...",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 28,
+      "zone_or_sort_name": "Western Plaguelands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17238,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 28,
+              "map_name": "Western Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 42.91,
+              "y": 84.5
+            }
+          ],
+          "name": "Anchorite Truuen",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9474"
+      ],
+      "instruction": "Accept [QA9474 The Mark of the Lightbringer] from Anchorite Truuen.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 18,
+      "quest_id": 9474,
+      "quest_name": "The Mark of the Lightbringer",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 28,
+      "zone_or_sort_name": "Western Plaguelands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5538"
+      ],
+      "instruction": "Complete [QC5538 Mold Rhymes With...]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 19,
+      "quest_id": 5538,
+      "quest_name": "Mold Rhymes With...",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 28,
+      "zone_or_sort_name": "Western Plaguelands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9474"
+      ],
+      "instruction": "Collect or use the required item: Mark of the Lightbringer. [QC9474 The Mark of the Lightbringer]",
+      "item_use_id": null,
+      "objective_hint": "Collect or use the required item: Mark of the Lightbringer",
+      "objective_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcItemDB.lua",
+          "id": 23661,
+          "kind": "item",
+          "locations": [],
+          "name": "Mark of the Lightbringer",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "order": 20,
+      "quest_id": 9474,
+      "quest_name": "The Mark of the Lightbringer",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 28,
+      "zone_or_sort_name": "Western Plaguelands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17238,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 28,
+              "map_name": "Western Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 42.91,
+              "y": 84.5
+            }
+          ],
+          "name": "Anchorite Truuen",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9474"
+      ],
+      "instruction": "Turn in [QT9474 The Mark of the Lightbringer] to Anchorite Truuen",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 21,
+      "quest_id": 9474,
+      "quest_name": "The Mark of the Lightbringer",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 28,
+      "zone_or_sort_name": "Western Plaguelands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "item_mechanic",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 5411,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 440,
+              "map_name": "Tanaris",
+              "verification": "questie_structured_source_only",
+              "x": 51.46,
+              "y": 28.81
+            }
+          ],
+          "name": "Krinkle Goodsteel",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:5538"
+      ],
+      "instruction": "Turn in [QT5538 Mold Rhymes With...] to Krinkle Goodsteel",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 22,
+      "quest_id": 5538,
+      "quest_name": "Mold Rhymes With...",
+      "quest_tag": null,
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 28,
+      "zone_or_sort_name": "Western Plaguelands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 17238,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 28,
+              "map_name": "Western Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 42.91,
+              "y": 84.5
+            }
+          ],
+          "name": "Anchorite Truuen",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9446"
+      ],
+      "instruction": "Accept [QA9446 Tomb of the Lightbringer] from Anchorite Truuen.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 23,
+      "quest_id": 9446,
+      "quest_name": "Tomb of the Lightbringer",
+      "quest_tag": "Elite",
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 28,
+      "zone_or_sort_name": "Western Plaguelands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9446"
+      ],
+      "instruction": "Elite/group recommended \u2014 Complete the scripted or exploration event. [QC9446 Tomb of the Lightbringer]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 24,
+      "quest_id": 9446,
+      "quest_name": "Tomb of the Lightbringer",
+      "quest_tag": "Elite",
+      "required_level": 58,
+      "scripted_objective": true,
+      "type": "complete",
+      "zone_or_sort": 28,
+      "zone_or_sort_name": "Western Plaguelands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "scripted_or_event",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 11053,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 28,
+              "map_name": "Western Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 42.97,
+              "y": 84.5
+            }
+          ],
+          "name": "High Priestess MacDonnell",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:9446"
+      ],
+      "instruction": "Turn in [QT9446 Tomb of the Lightbringer] to High Priestess MacDonnell",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 25,
+      "quest_id": 9446,
+      "quest_name": "Tomb of the Lightbringer",
+      "quest_tag": "Elite",
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 28,
+      "zone_or_sort_name": "Western Plaguelands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 332,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 1519,
+              "map_name": "Stormwind City",
+              "verification": "questie_structured_source_only",
+              "x": 75.78,
+              "y": 59.84
+            }
+          ],
+          "name": "Master Mathias Shaw",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6184"
+      ],
+      "instruction": "Accept [QA6184 Flint Shadowmore] from Master Mathias Shaw.",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 26,
+      "quest_id": 6184,
+      "quest_name": "Flint Shadowmore",
+      "quest_tag": "Elite",
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "accept",
+      "zone_or_sort": 28,
+      "zone_or_sort_name": "Western Plaguelands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6184"
+      ],
+      "instruction": "Elite/group recommended \u2014 Complete [QC6184 Flint Shadowmore]",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 27,
+      "quest_id": 6184,
+      "quest_name": "Flint Shadowmore",
+      "quest_tag": "Elite",
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "complete",
+      "zone_or_sort": 28,
+      "zone_or_sort_name": "Western Plaguelands"
+    },
+    {
+      "category": "world",
+      "conditional_categories": [
+        "elite",
+        "group_content",
+        "one_time",
+        "world"
+      ],
+      "endpoint_sources": [
+        {
+          "content_era": "pre_cataclysm",
+          "data_source": "Database/TBC/tbcNpcDB.lua",
+          "id": 12425,
+          "kind": "npc",
+          "locations": [
+            {
+              "map_id": 28,
+              "map_name": "Western Plaguelands",
+              "verification": "questie_structured_source_only",
+              "x": 43.61,
+              "y": 84.51
+            }
+          ],
+          "name": "Flint Shadowmore",
+          "verification": "questie_structured_source_only"
+        }
+      ],
+      "evidence_refs": [
+        "questie:0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44:quest:6184"
+      ],
+      "instruction": "Turn in [QT6184 Flint Shadowmore] to Flint Shadowmore",
+      "item_use_id": null,
+      "objective_hint": null,
+      "objective_sources": [],
+      "order": 28,
+      "quest_id": 6184,
+      "quest_name": "Flint Shadowmore",
+      "quest_tag": "Elite",
+      "required_level": 58,
+      "scripted_objective": false,
+      "type": "turn_in",
+      "zone_or_sort": 28,
+      "zone_or_sort_name": "Western Plaguelands"
+    }
+  ],
+  "title": "79 Blasted Lands & Western Plaguelands"
+}
