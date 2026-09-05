@@ -1,4 +1,4 @@
-Guidelime.registerGuide([[
+MadsTBC.RegisterLegacyGuide([[
 [D Mad's Phase 2 Overlords of Outland Loremaster route. Mutually exclusive alternative. Choose before completing its conflicting default outcome and satisfy any listed primary or optional prerequisites.]
 [N Aldor Alternative 01 - Shattrath City & Netherstorm]
 Alternative entry requirements: complete Allegiance to the Aldor. Choose this branch before its conflicting default. [O]

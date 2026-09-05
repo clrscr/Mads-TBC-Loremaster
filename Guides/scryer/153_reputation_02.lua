@@ -1,4 +1,4 @@
-Guidelime.registerGuide([[
+MadsTBC.RegisterLegacyGuide([[
 [D Mad's Phase 2 Overlords of Outland Loremaster route. Mutually exclusive alternative. Choose before completing its conflicting default outcome and satisfy any listed primary or optional prerequisites.]
 [N Scryer Alternative 02 - Nagrand & Netherstorm]
 Travel from Shattrath City to Shadowmoon Valley. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G55.73,58.17 Shadowmoon Valley]. [O]

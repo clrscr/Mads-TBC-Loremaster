@@ -1,4 +1,4 @@
-Guidelime.registerGuide([[
+MadsTBC.RegisterLegacyGuide([[
 [D Mad's Phase 2 Overlords of Outland Loremaster route. Main solo and open-world completion route. Start after the documented level 1-9 Teldrassil baseline.]
 [N15-15 10 World]
 [NX15-15 11 Dun Morogh & Redridge Mountains]

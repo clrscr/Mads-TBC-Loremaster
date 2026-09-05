@@ -1,4 +1,4 @@
-Guidelime.registerGuide([[
+MadsTBC.RegisterLegacyGuide([[
 [D Mad's Phase 2 Overlords of Outland Loremaster route. Main solo and open-world completion route. Start after the documented level 1-9 Teldrassil baseline.]
 [N56-56 74 Burning Steppes & Blasted Lands]
 [NX56-56 75 Winterspring]

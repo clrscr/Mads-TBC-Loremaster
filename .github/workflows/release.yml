@@ -1,0 +1,80 @@
+name: Validate and package addon
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    env:
+      QUESTIE_PATH: ${{ github.workspace }}/.questie
+      LUA: lua5.1
+      PYTHONPATH: tools
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Lua 5.1
+        run: sudo apt-get update && sudo apt-get install -y lua5.1
+      - name: Check out pinned Questie source
+        uses: actions/checkout@v4
+        with:
+          repository: Questie/Questie
+          ref: 0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44
+          path: .questie
+          persist-credentials: false
+      - name: Run behavioral, catalog, and packaging tests
+        run: python3 -B -m unittest discover -s tests
+      - name: Compile every loaded Lua file
+        run: |
+          python3 - <<'PY'
+          import subprocess
+          from pathlib import Path
+          from mads_loremaster.guides import toc_all_lua_files
+          for path in toc_all_lua_files(Path.cwd()):
+              subprocess.run(['luac5.1', '-p', str(path)], check=True)
+          PY
+      - name: Validate and build WowUp assets
+        run: ./mads-loremaster package "$QUESTIE_PATH" --source-revision 0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44
+      - uses: actions/upload-artifact@v4
+        with:
+          name: addon-release
+          path: |
+            dist/*-bcc.zip
+            dist/release.json
+          if-no-files-found: error
+
+  release:
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: validate
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: addon-release
+          path: dist
+      - name: Publish tagged addon release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ github.ref_name }}
+        shell: bash
+        run: |
+          version=$(python3 -c 'import json; print(json.load(open("config/release.json"))["version"])')
+          channel=$(python3 -c 'import json; print(json.load(open("config/release.json"))["channel"])')
+          test "$RELEASE_TAG" = "v$version"
+          flags=()
+          if [[ "$channel" != "stable" ]]; then flags+=(--prerelease); fi
+          gh release create "$RELEASE_TAG" dist/*-bcc.zip dist/release.json \
+            --verify-tag --title "Mad's TBC Loremaster $version" \
+            --notes-file docs/RELEASE_NOTES.md "${flags[@]}"

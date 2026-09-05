@@ -1,4 +1,4 @@
-Guidelime.registerGuide([[
+MadsTBC.RegisterLegacyGuide([[
 [D Mad's Phase 2 Overlords of Outland Loremaster route. Mutually exclusive alternative. Choose before completing its conflicting default outcome and satisfy any listed primary or optional prerequisites.]
 [N Choice Route A 04 - Argent Dawn Commission & Sister Pamela + More Choices]
 [NX Choice Route A 05 - A Taste of Flame & Starfall + More Choices]

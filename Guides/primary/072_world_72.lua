@@ -1,4 +1,4 @@
-Guidelime.registerGuide([[
+MadsTBC.RegisterLegacyGuide([[
 [D Mad's Phase 2 Overlords of Outland Loremaster route. Main solo and open-world completion route. Start after the documented level 1-9 Teldrassil baseline.]
 [N55-55 72 Eastern Plaguelands & Western Plaguelands]
 [NX55-56 73 Stormwind City]

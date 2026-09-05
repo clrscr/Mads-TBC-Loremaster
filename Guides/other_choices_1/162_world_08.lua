@@ -1,4 +1,4 @@
-Guidelime.registerGuide([[
+MadsTBC.RegisterLegacyGuide([[
 [D Mad's Phase 2 Overlords of Outland Loremaster route. Mutually exclusive alternative. Choose before completing its conflicting default outcome and satisfy any listed primary or optional prerequisites.]
 [N Choice Route A 08 - Where Did Those Darn Gnomes Go? & Parts for the Rocket-Chief + More Choices]
 Travel from Terokkar Forest to Blade's Edge Mountains. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G36.22,66.18 Blade's Edge Mountains]. [O]

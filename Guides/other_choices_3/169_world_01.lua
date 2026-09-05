@@ -1,4 +1,4 @@
-Guidelime.registerGuide([[
+MadsTBC.RegisterLegacyGuide([[
 [D Mad's Phase 2 Overlords of Outland Loremaster route. Mutually exclusive alternative. Choose before completing its conflicting default outcome and satisfy any listed primary or optional prerequisites.]
 [N Choice Route C 01 - The Hunter's Path & Assisting Arch Druid Staghelm + More Choices]
 [NX Choice Route C 02 - Sage's Pledge & Sage's Vow + More Choices]

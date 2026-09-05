@@ -1,4 +1,4 @@
-Guidelime.registerGuide([[
+MadsTBC.RegisterLegacyGuide([[
 [D Mad's Phase 2 Overlords of Outland Loremaster route. Main solo and open-world completion route. Start after the documented level 1-9 Teldrassil baseline.]
 [N60-62 84 Terokkar Forest & Shattrath City]
 [NX62-62 85 Zangarmarsh]

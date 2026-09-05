@@ -1,6 +1,6 @@
 # Mad's Loremaster Anniversary Audit and Route Remediation Plan
 
-> Historical note: this ledger describes the legacy `0.9.0-rc.1` Guidelime module. The active product is the `1.0.0-alpha.1` standalone runtime documented in `STANDALONE_ARCHITECTURE.md` and `STATIC_RELEASE_GATE.md`.
+> Historical note: this ledger describes the legacy Guidelime module. The active private alpha.2 plan is [IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md); architecture and verification limits are documented separately. Historical public-release gates below do not override the private-use scope.
 
 ## Purpose
 

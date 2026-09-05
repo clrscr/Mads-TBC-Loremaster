@@ -95,7 +95,7 @@ def build_catalog(questie_path: str | Path) -> Catalog:
     root = resolve_questie_root(questie_path)
     scope, phase_profile = load_scope()
     content_policy = load_content_policy(PROJECT_ROOT / str(scope["content_policy"]))
-    quests = load_quests(root)
+    quests = load_quests(root, legacy_faction_replacement=True)
     zones = load_zones(root)
     zones.update(load_sort_names(root))
     zones.update(ZONE_NAME_OVERRIDES)

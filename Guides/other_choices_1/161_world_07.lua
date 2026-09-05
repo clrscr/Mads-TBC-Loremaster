@@ -1,4 +1,4 @@
-Guidelime.registerGuide([[
+MadsTBC.RegisterLegacyGuide([[
 [D Mad's Phase 2 Overlords of Outland Loremaster route. Mutually exclusive alternative. Choose before completing its conflicting default outcome and satisfy any listed primary or optional prerequisites.]
 [N Choice Route A 07 - Concerns About Tuurem & What's Wrong at Cenarion Thicket?]
 [NX Choice Route A 08 - Where Did Those Darn Gnomes Go? & Parts for the Rocket-Chief + More Choices]

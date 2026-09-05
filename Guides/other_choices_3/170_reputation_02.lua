@@ -1,4 +1,4 @@
-Guidelime.registerGuide([[
+MadsTBC.RegisterLegacyGuide([[
 [D Mad's Phase 2 Overlords of Outland Loremaster route. Mutually exclusive alternative. Choose before completing its conflicting default outcome and satisfy any listed primary or optional prerequisites.]
 [N Choice Route C 02 - Sage's Pledge & Sage's Vow + More Choices]
 Travel from Western Plaguelands to Scholomance. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to Scholomance. [O]

@@ -1,4 +1,4 @@
-Guidelime.registerGuide([[
+MadsTBC.RegisterLegacyGuide([[
 [D Mad's Phase 2 Overlords of Outland Loremaster route. Mutually exclusive alternative. Choose before completing its conflicting default outcome and satisfy any listed primary or optional prerequisites.]
 [N Choice Route B 05 - A Mystifying Vision & The Trouble Below + More Choices]
 [NX Choice Route B 06 - Path of the Violet Assassin & Down the Violet Path + More Choices]

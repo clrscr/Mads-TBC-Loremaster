@@ -28,7 +28,7 @@ MadsTBC.Lore = {
   },
   [3483] = {
     arc = "Hellfire Peninsula opens Outland through a brutal campaign against the Burning Legion, fel orcs, and the shattered world's unstable frontier.",
-    deep = "Alliance forces reconnect with old expedition survivors while the route establishes the military, demonic, and faction conflicts that span Outland.",
+    deep = "Arriving forces reconnect with old expedition survivors while the route establishes the military, demonic, and faction conflicts that span Outland.",
   },
   [3519] = {
     arc = "Terokkar Forest joins refugee stories, arakkoa mysteries, and the competing powers centered on Shattrath City.",

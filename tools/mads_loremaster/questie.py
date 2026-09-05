@@ -56,7 +56,7 @@ def resolve_questie_root(path: str | Path) -> Path:
     )
 
 
-def load_quests(root: Path) -> dict[int, Quest]:
+def load_quests(root: Path, context=("Alliance", "HUNTER", "NightElf"), *, legacy_faction_replacement=False) -> dict[int, Quest]:
     database = root / TBC_QUEST_DATABASE
     quests: dict[int, Quest] = {}
     in_data = False
@@ -88,7 +88,7 @@ def load_quests(root: Path) -> dict[int, Quest]:
         )
     if not quests:
         raise QuestieLayoutError(f"no quests found in {database}")
-    _apply_corrections(root, quests)
+    _apply_corrections(root, quests, context, legacy_faction_replacement=legacy_faction_replacement)
     return quests
 
 
@@ -342,7 +342,7 @@ LUA_QUEST_KEYS = (
 )
 
 
-def _apply_corrections(root: Path, quests: dict[int, Quest]) -> None:
+def _apply_corrections(root: Path, quests: dict[int, Quest], context=("Alliance", "HUNTER", "NightElf"), *, legacy_faction_replacement=False) -> None:
     path = root / TBC_QUEST_CORRECTIONS
     if not path.is_file():
         return
@@ -355,12 +355,18 @@ def _apply_corrections(root: Path, quests: dict[int, Quest]) -> None:
     main_table = _balanced_table(source, main_table_start)
     corrections = _parse_correction_table(main_table, root)
 
-    alliance_marker = "local questFixesAlliance ="
+    alliance_marker = "local questFixes" + (context[0] if context else "Unused") + " ="
     alliance_start = source.find(alliance_marker)
     if alliance_start >= 0:
         alliance_table_start = source.find("{", alliance_start + len(alliance_marker))
         alliance_table = _balanced_table(source, alliance_table_start)
-        corrections.update(_parse_correction_table(alliance_table, root, alliance=True))
+        for quest_id, fields in _parse_correction_table(alliance_table, root, context=context).items():
+            if legacy_faction_replacement:
+                # Reproduce the frozen 171-chapter historical guide corpus. The
+                # adaptive catalog always uses field-wise composition below.
+                corrections[quest_id] = fields
+            else:
+                corrections.setdefault(quest_id, {}).update(fields)
 
     for quest_id, overrides in corrections.items():
         if not isinstance(quest_id, int) or not isinstance(overrides, dict):
@@ -383,21 +389,22 @@ def _apply_corrections(root: Path, quests: dict[int, Quest]) -> None:
         )
 
 
-def _parse_correction_table(source: str, root: Path, alliance: bool = False) -> dict:
+def _parse_correction_table(source: str, root: Path, alliance: bool = False, context=None) -> dict:
     transformed = source
-    if alliance:
+    if alliance or context:
+        context = context or ("Alliance", "HUNTER", "NightElf")
         class_pattern = re.compile(r"\(\{(.*?)\}\)\[playerClass\]", re.DOTALL)
 
         def hunter_value(match: re.Match) -> str:
-            hunter = re.search(r'\[\s*"HUNTER"\s*\]\s*=\s*(\d+)', match.group(1))
+            hunter = re.search(r'\[\s*"' + re.escape(context[1]) + r'"\s*\]\s*=\s*(\d+)', match.group(1))
             if not hunter:
-                raise QuestieLayoutError("unable to resolve Hunter faction correction")
+                raise QuestieLayoutError("unable to resolve class faction correction: " + context[1])
             return hunter.group(1)
 
         transformed = class_pattern.sub(hunter_value, transformed)
         transformed = re.sub(
             r'playerRace\s*==\s*"Human"\s*and\s*(\d+)\s*or\s*(\d+)',
-            lambda match: match.group(2),
+            lambda match: match.group(1 if context[2] == "Human" else 2),
             transformed,
         )
     transformed = re.sub(

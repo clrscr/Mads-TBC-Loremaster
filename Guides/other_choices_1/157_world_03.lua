@@ -1,4 +1,4 @@
-Guidelime.registerGuide([[
+MadsTBC.RegisterLegacyGuide([[
 [D Mad's Phase 2 Overlords of Outland Loremaster route. Mutually exclusive alternative. Choose before completing its conflicting default outcome and satisfy any listed primary or optional prerequisites.]
 [N Choice Route A 03 - Help for Mudsprocket & Arathor Standard Care Package + More Choices]
 [NX Choice Route A 04 - Argent Dawn Commission & Sister Pamela + More Choices]

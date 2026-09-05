@@ -1,4 +1,4 @@
-Guidelime.registerGuide([[
+MadsTBC.RegisterLegacyGuide([[
 [D Mad's Phase 2 Overlords of Outland Loremaster route. Optional completionist route. Enter after the relevant primary prerequisites; dungeon, raid, class, reputation, and PvP gates are explicit.]
 [N Optional Content 54 - Mana-Tombs & Blade's Edge Mountains]
 Travel from Deadwind Pass to Blade's Edge Mountains: Cross the Dark Portal between the Blasted Lands and Hellfire Peninsula. Continue to [G52.85,14.99 Blade's Edge Mountains]. [O]

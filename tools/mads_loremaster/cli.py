@@ -2,11 +2,12 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 from pathlib import Path
 
 from .catalog import build_catalog
 from .guides import generate_addon
-from .reports import build_zip, release_archive_name, write_audit, write_catalog
+from .reports import build_zip, release_archive_name, write_audit, write_catalog, write_release_metadata
 from .validate import validate_addon
 
 
@@ -17,6 +18,8 @@ def parser() -> argparse.ArgumentParser:
     for name in ("catalog", "generate", "validate", "audit", "package", "all"):
         command = commands.add_parser(name)
         command.add_argument("questie", type=Path, help="Questie addon directory or checkout")
+        command.add_argument("--source-revision", help="Explicit commit provenance for a verified source archive")
+        command.add_argument("--require-environment", action="store_true", help="Also require the configured installed client and authored-route fixture")
         if name == "catalog":
             command.add_argument("--output", type=Path)
         if name == "package":
@@ -28,6 +31,12 @@ def main(argv: list[str] | None = None) -> int:
     args = parser().parse_args(argv)
     project_root = args.project_root.expanduser().resolve()
     catalog = build_catalog(args.questie)
+    if args.source_revision:
+        if not re.fullmatch(r"[0-9a-f]{40}", args.source_revision):
+            raise ValueError("source revision must be a full lowercase Git SHA")
+        if catalog.source_revision and catalog.source_revision != args.source_revision:
+            raise ValueError("explicit source revision disagrees with the checkout")
+        catalog.source_revision = args.source_revision
     reports = project_root / "reports"
 
     if args.command == "catalog":
@@ -41,7 +50,7 @@ def main(argv: list[str] | None = None) -> int:
         if args.command == "generate":
             return 0
     if args.command in {"validate", "audit", "package", "all"}:
-        validation = validate_addon(catalog, project_root)
+        validation = validate_addon(catalog, project_root, require_environment=args.require_environment)
         print(json.dumps(validation.to_dict(), indent=2, sort_keys=True))
         if args.command in {"audit", "all"}:
             write_catalog(catalog, reports / "catalog.json")
@@ -50,5 +59,6 @@ def main(argv: list[str] | None = None) -> int:
         if args.command in {"package", "all"} and validation.ok:
             output = getattr(args, "output", None) or project_root / "dist" / release_archive_name(project_root)
             print(build_zip(project_root, output.resolve()))
+            print(write_release_metadata(project_root, output.resolve()))
         return 0 if validation.ok else 1
     return 2

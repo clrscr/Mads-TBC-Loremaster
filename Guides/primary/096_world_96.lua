@@ -1,4 +1,4 @@
-Guidelime.registerGuide([[
+MadsTBC.RegisterLegacyGuide([[
 [D Mad's Phase 2 Overlords of Outland Loremaster route. Main solo and open-world completion route. Start after the documented level 1-9 Teldrassil baseline.]
 [N70-70 96 Blade's Edge Mountains]
 Travel from Hellfire Peninsula to Shattrath City. Use a known flight path when it saves time; otherwise follow roads and zone connections. Continue to [G64.93,68.14 Shattrath City]. [O]

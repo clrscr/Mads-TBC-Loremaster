@@ -1,37 +1,33 @@
-# Static release gate — 1.0.0-alpha.1
+# Personal-use alpha.4 validation ledger
 
-## Environment
+The private-use instruction removes public branding, publication and all-character walkthrough-authoring approvals as implementation gates. It does not establish live-client compatibility. This build remains an alpha until its client behavior is verified.
 
-- Target: TBC Classic Anniversary, Phase 2 profile, interface `20506`
-- Questie: `11.32.1`, pinned revision `0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44`
-- Runtime contract: any level 1–70 Alliance race/class and arbitrary prior quest progress
-- Dependencies: Questie required; TomTom and Guidelime optional
+Static checks cover exact-case TOC paths, generated source-row coverage, historical guide/spec consistency, source provenance, dependency and quest-log simulation, and packaging inputs. The Lua 5.1 behavior harness exercises initialization, migration, classification, compatible counts, action routing, recurring history, UI callbacks and optional dependency handling, including the packaged catalog across 104 supported race/class/level profiles.
 
-## Current static results
+The validator distinguishes code/artifact errors from unavailable installed-environment evidence. Missing local WoW and independent authored-route fixtures are warnings in static mode. `--require-environment` makes them errors. Public-ready packaging, if ever enabled, also requires them. Neither mode silently uses historical installation records as proof of a current installation.
 
-| Gate | Result | Evidence |
-|---|---|---|
-| Standalone package contract | PASS | Runtime/data TOC order, SavedVariables, Questie requirement, optional integrations |
-| Runtime eligibility manifest | PASS | 4,269 Alliance-visible records, including race/class alternatives, recurring, profession, event, exclusivity, and prerequisite metadata |
-| Legacy authored coverage | PASS | 1,910 primary, 577 optional, 140 alternative, and 40 baseline quests |
-| Pre-Cataclysm provenance | PASS | Zero post-TBC or correction-only emitted guide quests and zero forbidden source references |
-| Dynamic route surface | PASS static | Continue, Catch Up, Get Back on Track, zone sweep, dependency expansion, persistence, and deferral contracts present |
-| Completion experience | PASS static | Stable permanent score, separate recurring score, canonical zones, choice warnings, progressive disclosure |
-| Navigation adapters | PASS static | Questie readiness/update callbacks and guarded TomTom waypoint adapter present |
-| Legacy guide validation | PASS | 171 route specs, 7,881 quest steps, prerequisite order, choice branches, level gates, and resume simulations |
-| Automated tests | PASS | `pytest -q`: 33 passed |
-| Full validator | PASS | `./mads-loremaster validate /private/tmp/Questie` reports zero errors |
-| Installed standalone parity | OPEN | New package has not been deployed and launched in the client |
+The bundled phase profile remains the historical Phase 2 profile. Current phase, event state, UI layout, client-modified Lua/API behavior, combat lockdown, taint, practical travel and runtime performance require the unexecuted [client checklist](IN_GAME_SMOKE_TEST.md).
 
-## Evidence boundaries
+The catalog is larger than the historical guide scope. Source-backed quest coordinates are not a navigation mesh, and unknown availability is not proof that a quest is impossible. Compatible totals are explicitly provisional when unresolved records or a bounded projection prevent a complete result.
 
-- The runtime is original code; no Guidelime engine source is copied. The generated guide-format compatibility layer defers to Guidelime when separately installed.
-- Questie’s public callbacks are the stable live integration. The guarded zone-map conversion adapter is optional and must fail safely if Questie changes its private mapping helper.
-- The manifest is character-neutral, but the inherited authored route order was reviewed originally on a Night Elf Hunter. Other Alliance starting-race and class flows require live and authored review before public release.
-- Static tests cannot prove WoW API signatures, SavedVariables behavior, UI layout, TomTom coordinates, live phase availability, or route quality.
+## Executed on 2026-09-04
 
-## Remaining public-release gates
+- `QUESTIE_PATH=/private/tmp/mtl-questie LUA=/private/tmp/mtl-lua/src/lua PYTHONPATH=tools python3 -B -m unittest discover -s tests`: 38 Python tests passed, including 60 Lua behavior cases and the packaged catalog across 104 race/class/level profiles and 52 filtered journeys. The interpreter was stock Lua 5.1.5 built locally from its source archive.
+- Lua 5.1 syntax compilation: all 182 TOC-loaded Lua files passed.
+- Static CLI validation against the pinned Questie source: zero errors and two explicit environment warnings (missing authored-route installation; unavailable configured WoW installation).
+- Generated runtime audit: 6,647 source rows, 6,378 included records and 269 explicit exclusions. Legitimate “Test Flight” and “Test of…” quests are retained.
+- `git diff --check`: passed.
 
-- Complete the all-Alliance authored coverage review.
-- Complete the standalone matrix in `IN_GAME_RESULTS.md`.
-- Record permission for public **Powered by Guidelime** branding, or remove that subtitle while retaining the compatible route format.
+These checks did not launch WoW, inspect rendered in-game frames, exercise protected execution, or verify today's realm phase. The configured historical installed-client checks remain unverified.
+
+Category/skip validation also covers overlapping metadata, hard exclusions, allowed prerequisite alternatives, access-only parent/enabling relationships, skipped child work, persistence, malformed preferences, selected subtotals, UI control callbacks and waypoint changes. The generated TOC and static runtime inventory include the shared Selection module. The private ZIP must pass CRC and byte-for-byte comparison against every final TOC-loaded file before delivery.
+
+## Executed on 2026-09-05 — alpha.4
+
+- 39 Python tests passed against the pinned Questie source, including 74 Lua behavior cases, 104 character/level profiles, and 52 filtered journeys.
+- All 184 TOC-loaded Lua files compiled with stock Lua 5.1.5.
+- Static validation passed with zero errors. Missing independent authored-route and installed-client evidence remain explicit warnings.
+- Packaging tests verified a single top-level addon folder, ZIP CRC, byte parity for every loaded Lua file, and WowUp `bcc`/20506 release metadata.
+- `git diff --check` passed.
+
+The public GitHub repository and tagged development releases are authorized for personal WowUp installation. Readiness flags remain false because live-client verification has not been performed. Public visibility is independent of that gameplay-readiness status.

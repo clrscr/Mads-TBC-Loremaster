@@ -1,4 +1,4 @@
-Guidelime.registerGuide([[
+MadsTBC.RegisterLegacyGuide([[
 [D Mad's Phase 2 Overlords of Outland Loremaster route. Optional completionist route. Enter after the relevant primary prerequisites; dungeon, raid, class, reputation, and PvP gates are explicit.]
 [N Optional Content 07 - Badlands & Sunken Temple]
 [NX Optional Content 08 - Maraudon]

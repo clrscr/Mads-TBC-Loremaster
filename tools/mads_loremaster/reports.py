@@ -1065,6 +1065,11 @@ def build_zip(project_root: Path, output: Path) -> Path:
         project_root / "docs" / "IN_GAME_RESULTS.md",
         project_root / "docs" / "STATIC_RELEASE_GATE.md",
         project_root / "docs" / "STANDALONE_ARCHITECTURE.md",
+        project_root / "docs" / "IMPLEMENTATION_PLAN.md",
+        project_root / "docs" / "RELEASE_NOTES.md",
+        project_root / "docs" / "USAGE.md",
+        project_root / "docs" / "DEVELOPMENT.md",
+        project_root / "data" / "evidence" / "runtime-coverage.json",
         project_root / "config" / "baseline_teldrassil_1_9.json",
         project_root / "config" / "scope.json",
         project_root / "config" / "content_policy.json",
@@ -1087,4 +1092,14 @@ def build_zip(project_root: Path, output: Path) -> Path:
 
 def release_archive_name(project_root: Path) -> str:
     release = load_release(project_root / "config" / "release.json")
-    return f"{ADDON_NAME}-{release['version']}.zip"
+    return f"{ADDON_NAME}-{release['version']}-bcc.zip"
+
+
+def write_release_metadata(project_root: Path, archive: Path) -> Path:
+    """BigWigs-compatible metadata consumed by WowUp's GitHub provider."""
+    release = load_release(project_root / "config" / "release.json")
+    output = archive.parent / "release.json"
+    payload = {"releases": [{"name": release["version"], "filename": archive.name,
+                              "nolib": False, "metadata": [{"flavor": "bcc", "interface": 20506}]}]}
+    output.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
+    return output

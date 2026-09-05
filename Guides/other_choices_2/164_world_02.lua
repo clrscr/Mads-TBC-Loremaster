@@ -1,4 +1,4 @@
-Guidelime.registerGuide([[
+MadsTBC.RegisterLegacyGuide([[
 [D Mad's Phase 2 Overlords of Outland Loremaster route. Mutually exclusive alternative. Choose before completing its conflicting default outcome and satisfy any listed primary or optional prerequisites.]
 [N Choice Route B 02 - Arathor Advanced Care Package & Assisting Arch Druid Staghelm + More Choices]
 [NX Choice Route B 03 - Chromatic Mantle of the Dawn & The Dread Citadel - Naxxramas + More Choices]

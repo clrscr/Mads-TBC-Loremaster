@@ -62,7 +62,7 @@ ENTRY_LOCATION_OVERRIDES = {
 }
 
 REGISTER_RE = re.compile(
-    r"Guidelime\.registerGuide\(\[\[(.*?)\]\],\s*[\"'](.*?)[\"']\s*\)", re.DOTALL
+    r"(?:Guidelime\.registerGuide|MadsTBC\.RegisterLegacyGuide)\(\[\[(.*?)\]\],\s*[\"'](.*?)[\"']\s*\)", re.DOTALL
 )
 TAG_RE = re.compile(r"\[(QA|QC|QT)(\d+)(?:,\d+)?(?:\s[^\]]*)?\]")
 NAME_RE = re.compile(r"\[N(?:\d+(?:-\d+)?)?\s*(.*?)\]")
@@ -759,7 +759,7 @@ def generate_addon(catalog: Catalog, project_root: Path) -> list[GuideFile]:
                 "default outcome and satisfy any listed primary or optional prerequisites."
             )
         lines = [
-            "Guidelime.registerGuide([[",
+            "MadsTBC.RegisterLegacyGuide([[",
             f"[D Mad's Phase {catalog.phase_profile.get('phase')} {catalog.phase_profile.get('name')} "
             f"Loremaster route. {description}]",
         ]
@@ -793,7 +793,7 @@ def generate_addon(catalog: Catalog, project_root: Path) -> list[GuideFile]:
         f"## Title: {PRODUCT_TITLE}",
         "## Author: Mad",
         f"## Version: {release['version']}",
-        f"## Notes: Phase-aware Alliance quest completion, catch-up, routing, and lore for TBC Anniversary.",
+        f"## Notes: Alliance and Horde adaptive quest journey and completion tracking for TBC Anniversary.",
         "## RequiredDeps: Questie",
         "## OptionalDeps: TomTom, Guidelime",
         "## SavedVariables: MadsTBCLoremasterDB",
@@ -808,10 +808,13 @@ def generate_addon(catalog: Catalog, project_root: Path) -> list[GuideFile]:
     for manifest in runtime_manifests:
         toc_lines.append(str(manifest.relative_to(project_root)).replace("/", "\\"))
     toc_lines.extend([
-        "Data\\Lore.lua",
+        "data\\Lore.lua",
         "Runtime\\Core.lua",
         "Runtime\\Character.lua",
         "Runtime\\Eligibility.lua",
+        "Runtime\\Selection.lua",
+        "Runtime\\Planning.lua",
+        "Runtime\\Travel.lua",
         "Runtime\\Router.lua",
         "Runtime\\Navigation.lua",
         "Runtime\\GuideCompat.lua",

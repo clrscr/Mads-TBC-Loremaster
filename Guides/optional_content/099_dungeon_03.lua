@@ -1,4 +1,4 @@
-Guidelime.registerGuide([[
+MadsTBC.RegisterLegacyGuide([[
 [D Mad's Phase 2 Overlords of Outland Loremaster route. Optional completionist route. Enter after the relevant primary prerequisites; dungeon, raid, class, reputation, and PvP gates are explicit.]
 [N Optional Content 03 - Wetlands & Gnomeregan]
 [NX Optional Content 04 - The Stockade & Ashenvale]
