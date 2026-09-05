@@ -1,14 +1,14 @@
-# 1.0.0-alpha.4
+# 1.0.0-alpha.5
 
-Adds a zone departure checklist with cleanup guidance, a proactive missable-quest forecast with dependent-quest consequences, and character-aware travel planning.
+The mini tracker can now be hidden without opening Settings, and restored from the minimap.
 
-- Open `/mtl leave`, `/mtl missable`, or `/mtl travel`, or use the dashboard buttons.
-- Flight maps teach directed flight connections. Hearth planning requires a mapped bind, a carried Hearthstone, and available cooldown data. Riding rank affects relative ground effort.
-- Record reusable boat/zeppelin, portal, and road connections with the departure/arrival buttons. TomTom can guide you to the first transport stop.
-- Existing quest progress, category preferences, and skipped quests are preserved.
+- Click the tracker's top-right **X** to hide it. It stays hidden across reloads and logins while quest tracking continues.
+- Left-click the book-shaped Loremaster minimap button to show/hide the tracker; right-click to toggle the dashboard.
+- Drag the minimap button to reposition it; its location is saved using the minimap library already supplied by Questie.
+- Use `/mtl show`, `/mtl hide`, or `/mtl toggle` as keyboard alternatives. The Settings toggle also remains available.
 
-Requires Questie. Targets TBC Classic Anniversary interface 20506; TomTom and Guidelime are optional. This is a development release: automated checks pass, but this build has not yet been tested inside WoW. The packaged phase profile is historical; use the correct phase override for your realm.
+Requires Questie; targets TBC Anniversary interface 20506. This remains a development release with in-game verification pending. Existing quest progress and routing preferences are preserved.
 
-Validation: 39 Python tests, including 74 Lua behavior cases and 104 character/level profiles; all 184 loaded Lua files compiled; static validation passed. See [usage](USAGE.md) and [development](DEVELOPMENT.md) documentation for details.
+Validation: 39 Python tests, including 77 Lua behavior cases and 104 character/level profiles. See the usage and client-checklist documents inside the addon package.
 
-In WowUp, select your TBC Anniversary client, choose **Get Addons → Install from URL**, and enter `https://github.com/clrscr/Mads-TBC-Loremaster`. The GitHub release includes a packaged addon ZIP and TBC metadata. Use the Beta/Alpha channel for development updates if needed; WowUp's GitHub provider classifies GitHub prereleases as Beta.
+Update from `https://github.com/clrscr/Mads-TBC-Loremaster` in WowUp. Use the Beta/Alpha channel for development updates if needed; WowUp's GitHub provider classifies GitHub prereleases as Beta.

@@ -1,7 +1,7 @@
 local addonName, namespace = ...
 MadsTBC = MadsTBC or namespace or {}
 local Addon = MadsTBC
-Addon.name, Addon.version = addonName, "1.0.0-alpha.4"
+Addon.name, Addon.version = addonName, "1.0.0-alpha.5"
 Addon.modules, Addon.listeners = {}, {}
 Addon.status = "Waiting for login and Questie…"
 
@@ -60,6 +60,8 @@ function Addon:NormalizeSavedVariables()
   db.window = position(db.window, {point="CENTER", x=0, y=0})
   db.tracker = position(db.tracker, {point="RIGHT", x=-45, y=40})
   db.trackerVisible = db.trackerVisible ~= false
+  local minimap = type(db.minimap) == "table" and db.minimap or {}
+  db.minimap = {minimapPos=self:IsNumber(minimap.minimapPos) and minimap.minimapPos%360 or 135, hide=false}
   if not ({minimal=true, route=true, arc=true, deep=true})[db.detailLevel] then db.detailLevel = "minimal" end
   if db.progressView ~= "completionist" then db.progressView = "achievable" end
   if not self:IsID(db.phaseOverride) or db.phaseOverride > 5 then db.phaseOverride = nil end
@@ -198,6 +200,9 @@ frame:SetScript("OnEvent", function(_, event, arg1)
       elseif message == "leave" then Addon.modules.UI:OpenPlanner("checklist")
       elseif message == "missable" then Addon.modules.UI:OpenPlanner("forecast")
       elseif message == "travel" then Addon.modules.UI:OpenPlanner("travel")
+      elseif message == "hide" then Addon.modules.UI:SetTrackerVisible(false)
+      elseif message == "show" then Addon.modules.UI:SetTrackerVisible(true)
+      elseif message == "toggle" then Addon.modules.UI:ToggleTracker()
       else Addon.modules.UI:Toggle() end
     end
   elseif event == "PLAYER_LOGIN" then

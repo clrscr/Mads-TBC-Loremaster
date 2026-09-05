@@ -1,6 +1,6 @@
 # In-game verification results
 
-Build under test: **1.0.0-alpha.4** (private).
+Build under test: **1.0.0-alpha.5** (private).
 
 **Not run.** The configured WoW client and independent authored-route installation were unavailable in this implementation environment. Lua API doubles, syntax checks, catalog generation and static validation do not substitute for gameplay or taint testing.
 

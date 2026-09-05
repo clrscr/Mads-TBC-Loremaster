@@ -2,7 +2,7 @@
 
 A personal quest-completion addon for Burning Crusade Classic Anniversary. Its goal is one adaptive journey through every available quest for your current character, with progress that updates as you play.
 
-**Development build: `1.0.0-alpha.4`.** Targets interface `20506`, Alliance and Horde, all supported TBC race/class combinations, levels 1–70, Normal PvE and PvP realms. Retail, Era, other Classic expansions and Hardcore are outside this build's scope. Live-client verification of this implementation has not been performed.
+**Development build: `1.0.0-alpha.5`.** Targets interface `20506`, Alliance and Horde, all supported TBC race/class combinations, levels 1–70, Normal PvE and PvP realms. Retail, Era, other Classic expansions and Hardcore are outside this build's scope. Live-client verification of this implementation has not been performed.
 
 ## Use
 
@@ -25,7 +25,12 @@ The dashboard searches quest names or IDs, filters states, shows zone totals, an
 /mtl leave     Open the zone departure checklist
 /mtl missable  Open the missable-quest forecast
 /mtl travel    Open character travel planning
+/mtl hide      Hide the mini tracker
+/mtl show      Restore the mini tracker
+/mtl toggle    Toggle the mini tracker
 ```
+
+Close the mini tracker with its top-right **X** to reclaim screen space. Your visibility choice survives reloads and logins, and quest progress continues updating while it is hidden. Left-click the book-shaped Loremaster minimap button to show/hide the tracker; right-click it to toggle the dashboard. Questie's supplied minimap library lets you drag the icon around the minimap and remembers its position. Dashboard Settings still includes the tracker visibility toggle. `/mtl show` restores the tracker even if your minimap is hidden by another addon.
 
 ## Zone departure, missable forecast, and travel
 

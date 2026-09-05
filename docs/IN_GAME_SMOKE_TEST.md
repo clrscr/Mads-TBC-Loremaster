@@ -1,4 +1,4 @@
-# Private alpha.4 client verification
+# Personal-use alpha.5 client verification
 
 **Not executed for this implementation.** Record client build/interface, realm/region/phase, character faction/race/class/level, Questie version, optional addon versions and results in `IN_GAME_RESULTS.md`. Interface 20506 and Questie 11.32.1 are the pinned evidence baseline, not a claim that they are the newest versions.
 
@@ -17,6 +17,14 @@
 13. Observe unrecognized quests and temporary API delays/loading screens. They should remain visible with unknown source details, and a failed scan must preserve the previous journey. `/mtl scan` should recover after data becomes available.
 
 No live-result claim should be inferred from the stock Lua harness or historical installation evidence.
+
+## Tracker visibility and minimap launcher — alpha.5
+
+- Close the tracker with its X. Complete or update a quest, change zones, reload, and log out/in: it should stay hidden while progress continues updating.
+- Left-click the Loremaster book minimap icon to restore/hide the tracker. Right-click it to toggle the dashboard without changing tracker visibility.
+- Drag the icon around the minimap, then reload. Check that its position persists and it works with your minimap customization addons.
+- Try `/mtl hide`, `/mtl show`, `/mtl toggle`, and the Settings tracker toggle, including in combat. Verify hiding the tracker does not skip quests or change routing preferences.
+- Check the close button and tracker title at your normal UI scale. Confirm the minimap tooltip explains both clicks.
 
 ## Category and skip extension
 

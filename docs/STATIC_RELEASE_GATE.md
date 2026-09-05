@@ -31,3 +31,7 @@ Category/skip validation also covers overlapping metadata, hard exclusions, allo
 - `git diff --check` passed.
 
 The public GitHub repository and tagged development releases are authorized for personal WowUp installation. Readiness flags remain false because live-client verification has not been performed. Public visibility is independent of that gameplay-readiness status.
+
+## Tracker visibility — alpha.5
+
+The local suite passes 39 Python tests, including 77 Lua behavior cases. Added checks cover quest completion while hidden, hidden-state restoration across reloads, saved minimap position, independent dashboard/tracker clicks, and slash-command recovery without a minimap. The changed Lua modules compile under Lua 5.1. The actual minimap appearance, dragging, and combat interaction still require the client checklist.

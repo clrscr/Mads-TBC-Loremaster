@@ -42,6 +42,7 @@ end
 function UI:Initialize()
   self.page,self.zonePage,self.filter="overview",1,"all"
   self:_CreateDashboard(); self:_CreateCategories(); self:_CreateTracker(); self:_CreatePlanner()
+  self:_CreateMinimapButton()
   Addon:On("STATE_UPDATED",function() self:Refresh() end)
   if not Addon.charDB.firstScanComplete then self.dashboard:Show() end
 end
@@ -119,7 +120,7 @@ function UI:_CreateDashboard()
     local phase=Addon.db.phaseOverride
     Addon:SetPhaseOverride(phase and (phase<5 and phase+1 or nil) or 1)
   end)
-  self.trackerButton=setting("",-415,function() Addon.db.trackerVisible=not Addon.db.trackerVisible; self:Refresh() end)
+  self.trackerButton=setting("",-415,function() self:ToggleTracker() end)
   setting("Restore all skipped quests",-453,function() Addon.modules.Router:RestoreAll() end)
   setting("Rescan character",-491,function() Addon:Rescan("manual") end)
   setting("Reset window and tracker positions",-529,function()
@@ -171,13 +172,73 @@ end
 function UI:_CreateTracker()
   local f=panel("MadsTBCLoremasterTracker",380,200,Addon.db.tracker)
   self.tracker=f
+  f:SetShown(Addon.db.trackerVisible)
   f:SetScript("OnDragStop",function(frame) savePosition(frame,"tracker") end)
-  self.trackerMode=text(f,12,345); self.trackerMode:SetPoint("TOPLEFT",14,-12)
+  self.trackerHide=CreateFrame("Button",nil,f,"UIPanelCloseButton")
+  self.trackerHide:SetPoint("TOPRIGHT",-2,-2)
+  self.trackerHide:SetScript("OnClick",function() self:SetTrackerVisible(false) end)
+  self.trackerHide:SetScript("OnEnter",function(b)
+    if not GameTooltip then return end
+    GameTooltip:SetOwner(b,"ANCHOR_LEFT")
+    GameTooltip:SetText("Hide tracker")
+    GameTooltip:AddLine("Restore with the Loremaster minimap button or /mtl show.",1,1,1,true)
+    GameTooltip:Show()
+  end)
+  self.trackerHide:SetScript("OnLeave",function() if GameTooltip then GameTooltip:Hide() end end)
+  self.trackerMode=text(f,12,315); self.trackerMode:SetPoint("TOPLEFT",14,-12)
   self.trackerStep=text(f,14,345); self.trackerStep:SetPoint("TOPLEFT",14,-37)
   self.trackerMeta=text(f,11,345); self.trackerMeta:SetPoint("TOPLEFT",self.trackerStep,"BOTTOMLEFT",0,-8)
   self.trackerOpen=button(f,"Dashboard",105,14,-165,function() self.dashboard:Show() end)
   self.defer=button(f,"Skip",100,130,-165,function() Addon.modules.Router:SkipCurrent() end)
   self.trackerLeave=button(f,"Before leaving",125,240,-165,function() self:OpenPlanner("checklist") end)
+end
+function UI:SetTrackerVisible(visible)
+  Addon.db.trackerVisible=visible==true
+  self:_RefreshTracker()
+  self:_RefreshDashboard()
+  if GameTooltip then GameTooltip:Hide() end
+end
+function UI:ToggleTracker() self:SetTrackerVisible(not Addon.db.trackerVisible) end
+function UI:_CreateMinimapButton()
+  local object={type="launcher",text=L.title,icon="Interface\\Icons\\INV_Misc_Book_09",
+    OnClick=function(_,mouseButton)
+      if mouseButton=="RightButton" then self:Toggle()
+      elseif mouseButton=="LeftButton" then self:ToggleTracker() end
+    end,
+    OnTooltipShow=function(tooltip)
+      tooltip:AddLine(L.title)
+      tooltip:AddLine(Addon.db.trackerVisible and "Left-click: hide tracker" or "Left-click: show tracker",1,1,1)
+      tooltip:AddLine("Right-click: toggle dashboard",1,1,1)
+      if self.minimapDraggable then tooltip:AddLine("Drag: move minimap button",1,1,1) end
+      tooltip:AddLine("/mtl show: restore tracker",1,1,1)
+    end}
+  self.minimapObject=object
+  -- Questie already supplies LibDBIcon; it handles minimap shapes and saves
+  -- drag positions. No additional addon or bundled library is required.
+  local ok,icons=pcall(function() return LibStub and LibStub("LibDBIcon-1.0",true) end)
+  if ok and icons and icons.Register then
+    local registered=pcall(icons.Register,icons,"MadsTBCLoremaster",object,Addon.db.minimap)
+    if registered then
+      self.minimapDraggable=true
+      self.minimapButton=icons:GetMinimapButton("MadsTBCLoremaster")
+      return
+    end
+  end
+  -- Keep a basic launcher available if the dependency's optional library
+  -- changes. Slash commands also remain available if the minimap is absent.
+  if not Minimap then return end
+  local b=CreateFrame("Button","MadsTBCLoremasterMinimapButton",Minimap)
+  self.minimapButton=b
+  b:SetSize(28,28); b:SetPoint("TOPLEFT",Minimap,"TOPLEFT",-8,8)
+  b:SetFrameStrata("MEDIUM"); b:RegisterForClicks("LeftButtonUp","RightButtonUp")
+  b:SetNormalTexture(object.icon)
+  b:SetHighlightTexture("Interface\\Minimap\\UI-Minimap-ZoomButton-Highlight")
+  b:SetScript("OnClick",object.OnClick)
+  b:SetScript("OnEnter",function(button)
+    if not GameTooltip then return end
+    GameTooltip:SetOwner(button,"ANCHOR_LEFT"); object.OnTooltipShow(GameTooltip); GameTooltip:Show()
+  end)
+  b:SetScript("OnLeave",function() if GameTooltip then GameTooltip:Hide() end end)
 end
 function UI:SetPage(page)
   self.page,self.zonePage=page,1

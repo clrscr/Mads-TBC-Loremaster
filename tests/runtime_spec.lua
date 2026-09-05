@@ -40,7 +40,8 @@ local function setup(records,characterSaved,accountSaved)
   Guidelime,TomTom=nil,nil
   api={completed={},active={},race="Human",raceID=1,class="WARRIOR",classID=1,faction="Alliance",level=20}
   timers,errors={},{}
-  UIParent=frame(); SlashCmdList={}; StaticPopupDialogs={}; UISpecialFrames={}; OKAY="Okay"
+  UIParent=frame(); Minimap=frame(); LibStub=nil; GameTooltip=nil
+  SlashCmdList={}; StaticPopupDialogs={}; UISpecialFrames={}; OKAY="Okay"
   StaticPopup_Show=function(dialog,title,names,data) api.popup={dialog=dialog,title=title,names=names,data=data} end
   CreateFrame=frame
   geterrorhandler=function() return function(msg) errors[#errors+1]=msg end end
@@ -649,6 +650,45 @@ test("planner UI handles pre-scan empty filtered and selected states",function()
   ui.plannerSearch:SetText("no match"); ui:_RefreshPlanner(); eq(ui.plannerQuest,nil); eq(ui.plannerInspect.enabled,false)
   ui:OpenPlanner("travel"); assert(ui.transportDeparture:IsShown()); eq(ui.transportArrival.enabled,false)
   assert(ui.plannerDetails.value:find("remembered stops",1,true)); eq(#errors,0)
+end)
+
+test("hidden tracker keeps tracking and stays hidden after reload until restored",function()
+  setup({[1]=q(1)}); scan()
+  local ui=A.modules.UI; ui:Initialize(); ui:Refresh()
+  ui.trackerHide.scripts.OnClick(); eq(A.db.trackerVisible,false); eq(ui.tracker:IsShown(),false)
+  api.completed[1]=true; scan(); ui:Refresh()
+  eq(E.summary.completionistCompleted,1); eq(ui.tracker:IsShown(),false)
+  local saved=A:Copy(A.db); setup({[1]=q(1)},nil,saved)
+  ui=A.modules.UI; ui:Initialize(); eq(ui.tracker:IsShown(),false)
+  ui.minimapButton.scripts.OnClick(nil,"LeftButton"); eq(ui.tracker:IsShown(),true)
+  eq(A.db.trackerVisible,true)
+end)
+test("minimap library launcher preserves position and separates dashboard from tracker",function()
+  setup({},nil,{minimap={minimapPos=450,hide=true}}); scan()
+  local launcher,settings
+  local icon=frame()
+  LibStub=function(name)
+    eq(name,"LibDBIcon-1.0")
+    return {Register=function(_,key,object,db) launcher,settings=object,db; eq(key,"MadsTBCLoremaster") end,
+      GetMinimapButton=function() return icon end}
+  end
+  local ui=A.modules.UI; ui:Initialize()
+  eq(ui.minimapButton,icon); eq(settings.minimapPos,90); eq(settings.hide,false)
+  ui.dashboard:Hide(); ui:SetTrackerVisible(false)
+  launcher.OnClick(nil,"RightButton"); eq(ui.dashboard:IsShown(),true); eq(ui.tracker:IsShown(),false)
+  launcher.OnClick(nil,"LeftButton"); eq(ui.tracker:IsShown(),true)
+  ui.trackerButton.scripts.OnClick(); eq(ui.tracker:IsShown(),false)
+  settings.minimapPos=132
+  local saved=A:Copy(A.db); setup({},nil,saved); eq(A.db.minimap.minimapPos,132)
+end)
+test("slash visibility controls recover the tracker without a minimap",function()
+  setup({},nil,{minimap={minimapPos=0/0}}); eq(A.db.minimap.minimapPos,135)
+  Minimap=nil; local ui=A.modules.UI; ui:Initialize(); A.initialized=true
+  A.eventFrame.scripts.OnEvent(nil,"ADDON_LOADED","Mads_TBCLoremaster")
+  SlashCmdList.MADSTBCLOREMASTER("hide"); eq(ui.tracker:IsShown(),false)
+  SlashCmdList.MADSTBCLOREMASTER("show"); eq(ui.tracker:IsShown(),true)
+  SlashCmdList.MADSTBCLOREMASTER("toggle"); eq(ui.tracker:IsShown(),false)
+  SlashCmdList.MADSTBCLOREMASTER("show"); eq(A.db.trackerVisible,true)
 end)
 
 for _,case in ipairs(cases) do
