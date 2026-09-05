@@ -2,6 +2,7 @@ import json
 import hashlib
 import os
 import re
+import tempfile
 import unittest
 from dataclasses import replace
 from pathlib import Path
@@ -33,6 +34,7 @@ from mads_loremaster.questie import (
 )
 from mads_loremaster.validate import validate_addon, validate_content_provenance
 from mads_loremaster.travel import load_travel_network, plan_travel
+from mads_loremaster.reports import write_route_metrics
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -537,7 +539,7 @@ class GeneratedAddonTests(unittest.TestCase):
 
     def test_frozen_route_metrics_are_reproducible_and_regression_bounded(self):
         snapshot = json.loads(
-            (PROJECT_ROOT / "reports" / "baseline" / "pre_remediation_route.json")
+            (PROJECT_ROOT / "data" / "evidence" / "pre-remediation-route.json")
             .read_text(encoding="utf-8")
         )
         canonical = json.dumps(
@@ -550,9 +552,10 @@ class GeneratedAddonTests(unittest.TestCase):
             snapshot["canonical_chapters_sha256"], hashlib.sha256(canonical).hexdigest()
         )
 
-        metrics = json.loads(
-            (PROJECT_ROOT / "reports" / "route-metrics.json").read_text(encoding="utf-8")
-        )
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory) / "route-metrics.json"
+            write_route_metrics(self.catalog, validate_addon(self.catalog, PROJECT_ROOT), output, PROJECT_ROOT)
+            metrics = json.loads(output.read_text(encoding="utf-8"))
         self.assertEqual(len(metrics["baseline"]["route_metrics"]["chapter_metrics"]), 36)
         self.assertEqual(
             len(metrics["revised"]["route_metrics"]["chapter_metrics"]),

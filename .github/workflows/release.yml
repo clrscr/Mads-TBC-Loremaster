@@ -18,14 +18,14 @@ jobs:
       LUA: lua5.1
       PYTHONPATH: tools
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
       - name: Install Lua 5.1
         run: sudo apt-get update && sudo apt-get install -y lua5.1
       - name: Check out pinned Questie source
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           repository: Questie/Questie
           ref: 0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44
@@ -59,7 +59,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: actions/download-artifact@v4
         with:
           name: addon-release

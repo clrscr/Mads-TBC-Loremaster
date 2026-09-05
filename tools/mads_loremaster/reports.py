@@ -740,7 +740,9 @@ def _nearest_rank_percentile(values: list[int], percentile: float) -> int:
     return ordered[index]
 
 
-def write_route_metrics(catalog: Catalog, validation: ValidationResult, path: Path) -> None:
+def write_route_metrics(catalog: Catalog, validation: ValidationResult, path: Path,
+                        project_root: Path | None = None) -> None:
+    project_root = project_root or path.parents[1]
     primary = catalog.selected("covered_primary")
     zones = [int(entry.quest.get("zone_or_sort", 0)) for entry in primary]
     zone_runs: list[int] = []
@@ -750,7 +752,7 @@ def write_route_metrics(catalog: Catalog, validation: ValidationResult, path: Pa
     visits = Counter(zone_runs)
     specs = [
         json.loads(spec.read_text(encoding="utf-8"))
-        for spec in sorted((path.parents[1] / "data" / "route" / "chapters").glob("*.json"))
+        for spec in sorted((project_root / "data" / "route" / "chapters").glob("*.json"))
     ]
     primary_specs = [spec for spec in specs if spec.get("branch") == "primary"]
     chapter_by_quest: dict[int, int] = {}
@@ -856,7 +858,7 @@ def write_route_metrics(catalog: Catalog, validation: ValidationResult, path: Pa
     continent_transitions = sum(
         left != right for left, right in zip(continents, continents[1:])
     )
-    baseline_path = path.parent / "baseline" / "pre_remediation_route.json"
+    baseline_path = project_root / "data" / "evidence" / "pre-remediation-route.json"
     baseline_snapshot = json.loads(baseline_path.read_text(encoding="utf-8"))
     baseline_chapters = _metric_chapters_from_snapshot(baseline_snapshot)
     revised_chapters = _metric_chapters_from_specs(specs)
@@ -906,8 +908,8 @@ def write_route_metrics(catalog: Catalog, validation: ValidationResult, path: Pa
         "scope_id": catalog.scope.get("id"),
         "phase_profile": catalog.phase_profile.get("id"),
         "baseline": {
-            "source": "reports/baseline/pre_remediation_2026-07-13.json",
-            "route_snapshot": "reports/baseline/pre_remediation_route.json",
+            "source": "frozen pre-remediation route snapshot (2026-07-13)",
+            "route_snapshot": "data/evidence/pre-remediation-route.json",
             "route_snapshot_sha256": baseline_snapshot["canonical_chapters_sha256"],
             "quest_state_steps": 7665,
             "covered_quests": 2555,
@@ -1080,7 +1082,6 @@ def build_zip(project_root: Path, output: Path) -> Path:
         project_root / "config" / "client_installation.json",
         project_root / "config" / "release.json",
         project_root / "docs" / "REMEDIATION_PLAN.md",
-        project_root / "reports" / "anniversary-audit" / "AUDIT.md",
     ]
     included.extend(toc_all_lua_files(project_root))
     with zipfile.ZipFile(output, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
