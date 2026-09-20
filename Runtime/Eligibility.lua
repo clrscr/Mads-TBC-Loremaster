@@ -70,6 +70,21 @@ function Eligibility:ResolveRecords()
       end
     end
     for _, children in pairs(self.children) do table.sort(children) end
+    -- Reverse only explicit requirements; a relation is not an availability claim.
+    self.followUps = {}
+    for id, q in pairs(self.records) do
+      local requirements = {}
+      for _, group in ipairs(self:RequirementGroups(q)) do
+        for _, prerequisite in ipairs(group) do requirements[prerequisite] = true end
+      end
+      if q.parentQuest then requirements[q.parentQuest] = true end
+      if q.enabledBy then requirements[q.enabledBy] = true end
+      for prerequisite in pairs(requirements) do
+        self.followUps[prerequisite] = self.followUps[prerequisite] or {}
+        table.insert(self.followUps[prerequisite], id)
+      end
+    end
+    for _, ids in pairs(self.followUps) do table.sort(ids) end
   end
   for id, info in pairs(Addon.charDB.discovered) do
     if not self.records[id] then
@@ -151,18 +166,21 @@ function Eligibility:Classify(q, c, visiting)
       if not rank then return done("ineligible_profession", "Requires a profession this character has not learned.") end
       if rank < (q.requiredSkill[2] or 1) then localState,localReason="blocked_profession", "Increase the required profession rank." end
     end
-    local positive, meets, learned = false, false, false
-    for _, requirement in ipairs(q.requiredRanks or {}) do
-      local rank, minimum = c.professions[requirement[1]], requirement[2] or 0
-      if minimum < 0 and rank and rank >= -minimum then return done("permanently_locked", "Exceeded this skill's quest rank limit.") end
-      if minimum >= 0 then
-        positive = true
-        if rank then learned = true; if rank >= minimum then meets = true end end
+    if q.requiredRanks and #q.requiredRanks>0 then
+      -- Questie's signed tier indices refer to trained spells. Skill points
+      -- cannot distinguish a capped Journeyman from a trained Expert.
+      local professions=Addon:Import("QuestieProfessions")
+      if not professions or type(professions.HasProfessionAndRankLevel)~="function" then
+        return done("unknown_requirement", "Trained profession rank data is unavailable.")
       end
-    end
-    if positive and not meets then
-      if not learned then return done("ineligible_profession", "Requires a profession this character has not learned.") end
-      localState,localReason="blocked_profession", "Requires a higher skill rank."
+      local ok,learned,meets,negative=pcall(professions.HasProfessionAndRankLevel,professions,q.requiredRanks)
+      if not ok or type(learned)~="boolean" or type(meets)~="boolean" or type(negative)~="boolean" then
+        return done("unknown_requirement", "Trained profession rank data is unavailable.")
+      end
+      if negative then
+        if learned and not meets then return done("permanently_locked", "A trained profession rank closes this quest opportunity.") end
+      elseif not learned then return done("ineligible_profession", "Requires a profession this character has not learned.")
+      elseif not meets then localState,localReason="blocked_profession", "Train the required profession rank." end
     end
   end
   if q.requiredSpecialization then return done("unknown_requirement", "Specialization requirement needs verification.") end

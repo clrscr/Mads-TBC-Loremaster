@@ -1,6 +1,6 @@
 # Personal-use alpha.5 client verification
 
-**Not executed for this implementation.** Record client build/interface, realm/region/phase, character faction/race/class/level, Questie version, optional addon versions and results in `IN_GAME_RESULTS.md`. Interface 20506 and Questie 11.32.1 are the pinned evidence baseline, not a claim that they are the newest versions.
+**Not executed for this implementation.** Record client build/interface, realm/region/phase, character faction/race/class/level, observed Questie version, optional addon versions and results in `IN_GAME_RESULTS.md`. Interface 20506 is the target. Questie 11.32.1 identifies the bundled-data evidence baseline only; installed Questie can update normally and has no exact-version requirement.
 
 1. Back up this addon's SavedVariables with the client closed. Start with no saved settings, then separately try the previous alpha's settings. Login should wait for reliable data, automatically choose a useful action, and retain genuine progress. Reload while following an objective and confirm it resumes.
 2. Try representative Alliance and Horde starts, including Draenei and Blood Elf, a level-70 cleanup character, and race/class-specific quests. Other-faction records must not enter the faction score; other race/class records should remain in Completionist but not falsely enter Achievable.
@@ -17,6 +17,27 @@
 13. Observe unrecognized quests and temporary API delays/loading screens. They should remain visible with unknown source details, and a failed scan must preserve the previous journey. `/mtl scan` should recover after data becomes available.
 
 No live-result claim should be inferred from the stock Lua harness or historical installation evidence.
+
+## Questing workflow polish — focused smoke test
+
+Not executed: the target client is installed, but computer-use access to WoW was denied during this review. Use the development package with Questie and enable Lua errors or BugSack.
+
+1. **Initial load:** open `/mtl` with existing settings, then on a fresh character. Confirm the waiting state resolves, Journey starts, active/ready counts agree with the quest log, and categories/progress remain intact. Check the dependency message with a missing readiness API; WoW itself prevents loading without the required Questie addon.
+2. **Accept/update:** accept a quest and advance multiple objectives. Compare Journey, Quest log, tracker counts, Details and destinations to the game log. Search the client-localized title. All should update without `/mtl scan`.
+3. **Finish/abandon:** reach turn-in readiness, turn in, then abandon a different quest. Confirm only the turn-in grants completion, abandoned work leaves Quest log, and stale waypoints disappear or change. Inspect a failed quest and a recurring quest held after its first completion.
+4. **Next steps:** inspect an all-of chain, an any-of chain, and an uncatalogued quest. Verify requirements and related quests reflect source facts; unknown relationships/destinations stay explicit. Confirm Up next agrees with Journey and Details preserves journey intent.
+5. **Preferences/empty states:** skip or exclude a held quest; it stays in Quest log while leaving guidance. Restore it, try no matching searches, and shrink the log while on its last page. Check row selection, full-title tooltips, result counts and filter recovery.
+6. **Reload/recovery:** hide the tracker, reload during active work, and restore it with `/mtl show`. Check objective counts, completion history, current action, skip/category settings and positions. Change zones or enter an instance; delayed data must preserve the last reliable state with a notice and recover on later events.
+7. **Layout/scaling:** inspect long localized titles, many objectives and every detail level at your normal and enlarged UI scale. Scroll tracker and Details; check no footer overlap, usable row tooltips, selected tabs, dragging, close and Escape behavior. Windows continue to inherit the game's UI scale.
+8. **Combat/integrations:** open, scroll, hide/show and move the ordinary addon panels in combat. Repeat tracking with and without TomTom/Guidelime. No quest actions should fire automatically; only addon-owned waypoints should change. Record Lua errors, blocked-action messages and taint findings.
+
+## Review fixes awaiting client verification
+
+- Run `/mtl scan` with Journeyman Riding and no flying rank. Where otherwise eligible, Learning to Fly should remain available; training Expert Riding should close the opportunity without a manual rescan.
+- With Fragments of the Orb of Orahil active, guide that quest and skip either shard path. The other permitted path should remain actionable. Skipping both should explain the blocker.
+- Guide The Champion of the Horde's turn-in: Rokaro's destination should be Desolace 25.6,70.0.
+- On Costly Menace, finish the Mountain Lion objective while Hulking Mountain Lions remain. Guidance should continue pointing to Hulking Mountain Lions.
+- Drag the Categories window and release the mouse: it should stop immediately. Exercise these paths with Lua errors or BugSack enabled and record any new errors.
 
 ## Tracker visibility and minimap launcher — alpha.5
 

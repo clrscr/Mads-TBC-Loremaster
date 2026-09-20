@@ -175,22 +175,13 @@ class GeneratedAddonTests(unittest.TestCase):
         self.assertEqual(self.catalog.zones[1977], "Zul'Gurub")
         self.assertEqual(self.catalog.zones[3836], "Magtheridon's Lair")
 
-    def test_missing_entity_rows_remain_explicit_unverified_sources(self):
-        missing = {
-            (entry.quest.id, source.kind, source.id)
-            for entry in self.catalog.entries.values()
-            for source in entry.quest.starter_sources + entry.quest.finisher_sources
-            if source.name is None
-        }
-        self.assertIn((9685, "npc", 178420), missing)
-        unresolved = next(
-            source
-            for entry in self.catalog.entries.values()
-            for source in entry.quest.starter_sources + entry.quest.finisher_sources
-            if source.name is None
-        )
+    def test_correction_only_entities_keep_explicit_source_provenance(self):
+        corrected = next(source for source in self.catalog.entries[9685].quest.starter_sources
+                         if source.id == 178420)
+        self.assertEqual(corrected.name, "Magister Astalor Bloodsworn")
+        self.assertEqual(corrected.data_source, "Database/Corrections/tbcNPCFixes.lua")
         self.assertEqual(
-            unresolved.to_dict()["verification"],
+            corrected.to_dict()["verification"],
             "questie_structured_source_only",
         )
 
@@ -343,7 +334,7 @@ class GeneratedAddonTests(unittest.TestCase):
         manifest = (PROJECT_ROOT / "data" / "QuestManifest.lua").read_text(encoding="utf-8")
         for quest_id in (2338, 2318):
             self.assertRegex(manifest, rf"(?m)^\s*\[{quest_id}\]\s*=")
-        self.assertIn("requiredRanks={{762,-125},{762,-225},{762,-300}}", manifest)
+        self.assertIn("requiredRanks={{762,-3},{762,-4},{762,-5}}", manifest)
         self.assertIn("hordeRaceMask = 690", manifest)
         self.assertIn("availabilityByPhase=", manifest)
         self.assertIn("variants=", manifest)

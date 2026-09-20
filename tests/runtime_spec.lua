@@ -27,6 +27,7 @@ local function frame()
   function methods:GetFontString() return frame() end
   function methods:CreateFontString() return frame() end
   function methods:SetHeight(v) self.height=v end
+  function methods:SetVerticalScroll(v) self.scroll=v end
   function methods:SetSize(w,h) self.width,self.height=w,h end
   function methods:GetPoint() return "CENTER",nil,"CENTER",0,0 end
   function methods:Enable() self.enabled=true end
@@ -53,6 +54,7 @@ local function setup(records,characterSaved,accountSaved)
   UnitFactionGroup=function() return api.faction end
   UnitLevel=function() return api.level end
   GetQuestsCompleted=function() return api.completed end
+  GetQuestLogTitle,GetNumQuestLogEntries=nil,nil
   C_QuestLog={GetNumQuestLogEntries=function() return api.count or #api.active end,
     GetInfo=function(i) return api.active[i] end,
     IsComplete=function(id) for _,q in ipairs(api.active) do if q.questID==id then return q.complete end end end,
@@ -105,6 +107,15 @@ test("login waits for Questie and coalesces updates",function()
   A:Initialize(); A:Rescan("QUEST_LOG_UPDATE"); eq(#timers,0); eq(#R.plan,0)
   api.onReady(); api.onUpdate(); api.onUpdate(); eq(#timers,1)
   tick(); eq(C.snapshot.ready,true); eq(#R.plan,1); eq(A.charDB.firstScanComplete,true)
+  eq(#errors,0)
+end)
+test("missing Questie readiness reports a capability issue without a version requirement",function()
+  setup({[1]=q(1)}); A.modules.UI.Initialize=function() end
+  Questie.API.RegisterOnReady=nil
+  A:Initialize()
+  eq(A.questieReady,nil); eq(#timers,0)
+  assert(A.status:find("readiness API is unavailable",1,true))
+  assert(A.status:find("compatibility update",1,true))
   eq(#errors,0)
 end)
 test("incomplete scan preserves route and snapshot with bounded retries",function()
@@ -176,11 +187,50 @@ test("profession slots after holes and missing private data are handled",functio
   imports.QuestieProfessions=nil; scan(); eq(E:GetState(1),"unknown_requirement")
 end)
 test("signed skill spell reputation and level restrictions",function()
-  setup({[1]=q(1,{requiredRanks={{762,-125}}}),[2]=q(2,{requiredSpell=-123}),[3]=q(3,{requiredMaxRep={932,3000}}),[4]=q(4,{maximumLevel=10})})
-  imports.QuestieProfessions.GetPlayerProfessions=function() return {[762]={"Riding",125}} end
+  setup({[1]=q(1,{requiredRanks={{762,-3}}}),[2]=q(2,{requiredSpell=-123}),[3]=q(3,{requiredMaxRep={932,3000}}),[4]=q(4,{maximumLevel=10})})
+  imports.QuestieProfessions.GetPlayerProfessions=function() return {[762]={"Riding",225}} end
+  imports.QuestieProfessions.HasProfessionAndRankLevel=function() return true,false,true end
   imports.QuestieReputation.GetPlayerReputations=function() return {[932]={4,3000}} end
   api.spells={[123]=true}; scan()
   for id=1,4 do eq(E:GetState(id),"permanently_locked") end
+end)
+test("Learning to Fly stays available until a flying rank is trained",function()
+  setup({}); dofile(root.."/data/QuestManifest.lua")
+  local quest=A.Manifest.quests[11497]
+  setup({[11497]=quest}); api.level=70
+  local professions=imports.QuestieProfessions
+  professions.GetPlayerProfessions=function() return {[762]={"Riding",150}} end
+  professions.GetProfessionName=function(_,id) eq(id,762); return "Riding" end
+  professions.HasProfessionAndRankLevel=function(_,requirements)
+    eq(#requirements,3)
+    for i=1,3 do eq(requirements[i][1],762); eq(requirements[i][2],-(i+2)) end
+    return true,not IsSpellKnown(34090),true
+  end
+  api.spells={[33391]=true}; scan()
+  eq(E:GetState(11497),"available"); eq(contains(R.plan,11497,"accept"),true)
+  assert(table.concat(A.modules.Planning.risks[11497].reasons):find("before training Expert Riding",1,true))
+  api.spells[34090]=true; scan()
+  eq(E:GetState(11497),"permanently_locked"); eq(contains(R.plan,11497),false)
+end)
+test("profession rank adapter preserves positive alternatives and negative gates",function()
+  setup({[1]=q(1,{requiredRanks={{182,4},{393,4},{186,4}}}),[2]=q(2,{requiredRanks={{762,-3}}})})
+  local learned,meets=false,false
+  imports.QuestieProfessions.HasProfessionAndRankLevel=function(_,requirements)
+    if requirements[1][2]<0 then return false,false,true end
+    eq(requirements[1][2],4); return learned,meets,false
+  end
+  scan(); eq(E:GetState(1),"ineligible_profession"); eq(E:GetState(2),"available")
+  learned=true; scan(); eq(E:GetState(1),"blocked_profession")
+  meets=true; scan(); eq(E:GetState(1),"available")
+end)
+test("missing or failing trained-rank adapters leave eligibility unknown",function()
+  setup({[1]=q(1,{requiredRanks={{762,-3}}})})
+  local professions=imports.QuestieProfessions
+  scan(); eq(E:GetState(1),"unknown_requirement")
+  professions.HasProfessionAndRankLevel=function() error("not ready") end
+  scan(); eq(E:GetState(1),"unknown_requirement")
+  professions.HasProfessionAndRankLevel=function() return nil,nil,nil end
+  scan(); eq(E:GetState(1),"unknown_requirement"); eq(#errors,0)
 end)
 test("phase and event uncertainty are explicit and recover dynamically",function()
   setup({[1]=q(1,{availabilityByPhase={"future","future","current","current","current"}}),[2]=q(2,{eventOnly=true})})
@@ -322,7 +372,7 @@ test("category facets preserve class skill heroic PvP and event distinctions",fu
   assert(s:Categories(q(1,{category="profession",kinds={"dungeon","heroic"}})).dungeon)
   assert(s:Categories(q(2,{requiredClasses=128})).class)
   eq(s:Categories(q(3,{requiredClasses=1503})).class,false)
-  assert(s:Categories(q(4,{requiredRanks={{762,-125}}})).profession)
+  assert(s:Categories(q(4,{requiredRanks={{762,-3}}})).profession)
   assert(s:Categories(q(5,{kinds={"pvp","world"}})).pvp)
   eq(s:Categories(q(5,{kinds={"pvp","world"}})).general,false)
   eq(s:Categories(q(6,{kinds={"scripted_or_event"}})).event,false)
@@ -552,7 +602,7 @@ test("held quests do not retain acquisition-level forecasts",function()
   eq(A.modules.Planning.risks[1],nil); eq(E:GetState(1),"active")
 end)
 test("forecast warns about parent turn-ins reputation skill and spell gates",function()
-  setup({[1]=q(1),[2]=q(2,{parentQuest=1}),[3]=q(3,{requiredMaxRep={47,3000},requiredRanks={{762,-150}},requiredSpell=-123})})
+  setup({[1]=q(1),[2]=q(2,{parentQuest=1}),[3]=q(3,{requiredMaxRep={47,3000},requiredRanks={{762,-3}},requiredSpell=-123})})
   api.active={{questID=1},{questID=2}}; scan()
   local p=A.modules.Planning
   eq(p.risks[2].priority,1); eq(#p.risks[3].reasons,3)
@@ -689,6 +739,188 @@ test("slash visibility controls recover the tracker without a minimap",function(
   SlashCmdList.MADSTBCLOREMASTER("show"); eq(ui.tracker:IsShown(),true)
   SlashCmdList.MADSTBCLOREMASTER("toggle"); eq(ui.tracker:IsShown(),false)
   SlashCmdList.MADSTBCLOREMASTER("show"); eq(A.db.trackerVisible,true)
+end)
+
+test("objective destinations distinguish overlapping creature names",function()
+  setup({[1]=q(1,{objectives={
+    {kind="npc",id=2406,name="Mountain Lion",points={{areaId=12,x=50,y=50}}},
+    {kind="npc",id=2407,name="Hulking Mountain Lion",points={{areaId=12,x=90,y=50}}}}})})
+  api.active={{questID=1,objectives={
+    {type="monster",text="Mountain Lion slain: 8/8",finished=true},
+    {type="monster",text="Hulking Mountain Lion slain: 0/10",finished=false}}}}
+  scan()
+  local point,source=N:_PointForAction({questID=1,type="objective",objectiveIndex=2})
+  eq(source.id,2407); eq(point.x,90)
+  eq(N.current.x,90,"Guidance must not return to the completed creature target")
+end)
+test("ambiguous or untranslated multi-target objectives do not invent destinations",function()
+  setup({[1]=q(1,{objectives={
+    {kind="npc",name="Alpha",points={{areaId=12,x=50,y=50}}},
+    {kind="npc",name="Beta",points={{areaId=12,x=90,y=50}}}}})})
+  api.active={{questID=1,objectives={{type="monster",text="Alpha or Beta slain: 0/1",finished=false}}}}
+  scan(); eq(N:_PointForAction({questID=1,type="objective",objectiveIndex=1}),nil)
+  api.active[1].objectives[1].text="Anderes Ziel: 0/1"
+  scan(); eq(N:_PointForAction({questID=1,type="objective",objectiveIndex=1}),nil)
+end)
+test("localized single objectives retain their unambiguous source fallback",function()
+  setup({[1]=q(1,{objectives={{kind="npc",name="Mountain Lion",points={{areaId=12,x=80,y=50}}}}})})
+  api.active={{questID=1,objectives={{type="monster",text="Bergloewe getoetet: 0/1",finished=false}}}}
+  scan(); eq(N:_PointForAction({questID=1,type="objective",objectiveIndex=1}).x,80)
+  api.active[1].objectives[1].type="object"
+  scan(); eq(N:_PointForAction({questID=1,type="objective",objectiveIndex=1}),nil)
+end)
+test("category panel stops following the cursor when its drag ends",function()
+  setup({})
+  CreateFrame=function()
+    local f=frame()
+    f.StartMoving=function(self) self.moving=true end
+    f.StopMovingOrSizing=function(self) self.moving=false end
+    return f
+  end
+  local ui=A.modules.UI; ui:Initialize()
+  local panel=ui.categoryPanel
+  panel.scripts.OnDragStart(panel); eq(panel.moving,true)
+  panel.scripts.OnDragStop(panel); eq(panel.moving,false)
+end)
+
+test("parent goals select one compatible child and can switch a skipped alternative",function()
+  setup({[1]=q(1),[2]=q(2,{parentQuest=1,exclusiveTo={3}}),[3]=q(3,{parentQuest=1})})
+  api.active={{questID=1}}; scan(); R:Start("quest",nil,1)
+  eq(#R.plan,1); eq(R.plan[1].questID,2)
+  local total=E.summary.achievableTotal
+  R:Skip(2); eq(#R.plan,1); eq(R.plan[1].questID,3)
+  eq(A.modules.Selection:Check(1).allowed,true); eq(E.summary.achievableTotal,total)
+  R:Skip(3); eq(#R.plan,0); eq(A.modules.Selection:Check(1).allowed,false)
+  R:Restore(2); eq(#R.plan,1); eq(R.plan[1].questID,2)
+end)
+test("excluded child alternatives do not block a permitted path",function()
+  setup({[1]=q(1),[2]=q(2,{parentQuest=1,exclusiveTo={3},category="profession"}),[3]=q(3,{parentQuest=1})})
+  api.active={{questID=1}}; scan(); R:Start("quest",nil,1)
+  A.modules.Selection:SetCategory("profession","exclude")
+  eq(#R.plan,1); eq(R.plan[1].questID,3); eq(A.modules.Selection:Check(1).allowed,true)
+end)
+test("mandatory children still block independently of an allowed alternative",function()
+  setup({[1]=q(1),[2]=q(2,{parentQuest=1,exclusiveTo={3}}),[3]=q(3,{parentQuest=1}),[4]=q(4,{parentQuest=1})})
+  api.active={{questID=1}}; scan(); R:Start("quest",nil,1)
+  eq(#R.plan,2); assert(contains(R.plan,2)); assert(contains(R.plan,4))
+  R:Skip(3); eq(#R.plan,2)
+  R:Skip(4); eq(#R.plan,0); eq(A.modules.Selection:Check(1).blocker,4)
+end)
+test("active and completed child choices retain their observed branch",function()
+  setup({[1]=q(1),[2]=q(2,{parentQuest=1,exclusiveTo={3}}),[3]=q(3,{parentQuest=1})})
+  api.active={{questID=1},{questID=3}}; scan(); R:Start("quest",nil,1)
+  eq(#R.plan,1); eq(R.plan[1].questID,3); eq(R.plan[1].type,"objective")
+  R:Skip(3); eq(#R.plan,0); eq(A.modules.Selection:Check(1).blocker,3)
+  R:Restore(3); api.active={{questID=1}}; api.completed[3]=true; scan()
+  eq(#R.plan,1); eq(R.plan[1].questID,1); eq(R.plan[1].type,"objective")
+end)
+test("overlapping child alternatives retain direct compatibility and backtrack",function()
+  setup({[1]=q(1),[2]=q(2,{parentQuest=1,exclusiveTo={3}}),
+    [3]=q(3,{parentQuest=1,exclusiveTo={4}}),[4]=q(4,{parentQuest=1})})
+  api.active={{questID=1}}; scan(); R:Start("quest",nil,1)
+  eq(#R.plan,2); assert(contains(R.plan,2)); assert(contains(R.plan,4)); eq(contains(R.plan,3),false)
+  R:Skip(4); eq(#R.plan,1); eq(R.plan[1].questID,3)
+  R:Skip(3); eq(#R.plan,0)
+end)
+test("packaged Orb of Orahil goal permits either exclusive shard path",function()
+  setup({}); dofile(root.."/data/QuestManifest.lua")
+  api.level=40; api.class,api.classID="WARLOCK",9; api.active={{questID=1799}}
+  scan(); R:Start("quest",nil,1799)
+  eq(#R.plan,1); eq(R.plan[1].questID,4962)
+  R:Skip(4963); eq(#R.plan,1); eq(R.plan[1].questID,4962)
+  R:Restore(4963); R:Skip(4962); eq(#R.plan,1); eq(R.plan[1].questID,4963)
+end)
+
+test("quest log view retains held skipped excluded and uncatalogued quests",function()
+  setup({[1]=q(1,{category="dungeon"}),[2]=q(2),[3]=q(3)})
+  api.active={{questID=1,title="Localized dungeon"},{questID=2,title="Ready",complete=true},{questID=99,title="New discovery"}}
+  scan(); R:Skip(2); A.modules.Selection:SetCategory("dungeon","exclude")
+  local ui=A.modules.UI; ui:Initialize(); ui.selectedZone=999; ui.filter="completed"; ui:SetPage("log")
+  local rows=ui:_Rows(); eq(#rows,3); eq(rows[1].id,2)
+  ui.search:SetText("localized"); eq(#ui:_Rows(),1); eq(ui:_Rows()[1].id,1)
+  ui.search:SetText("99"); eq(ui:_Rows()[1].id,99)
+  eq(contains(R.plan,1),false); eq(contains(R.plan,2),false)
+  eq(ui:QuestStatus(E.records[99]),"In progress")
+end)
+test("journey preview follows plan order and omits completed catalog work",function()
+  setup({[1]=q(1),[2]=q(2),[3]=q(3)})
+  api.completed[3]=true; scan(); R:Start("quest",nil,2)
+  local ui=A.modules.UI; ui:Initialize(); ui.filter="completed"; ui.selectedZone=999; ui.search:SetText("missing")
+  ui:SetPage("overview"); eq(#ui:_Rows(),1); eq(ui:_Rows()[1].id,2)
+  eq(ui.filter,"all"); eq(ui.selectedZone,nil); eq(ui.search:GetText(),"")
+end)
+test("reused objective tables update tracker details and route through coalesced events",function()
+  setup({[1]=q(1),[2]=q(2,{prerequisitesAll={1}})})
+  api.active={{questID=1,title="Live quest",objectives={{text="Collect: 0/2",finished=false}}}}
+  scan(); A.initialized,A.questieReady,A.status=true,true,nil
+  local ui=A.modules.UI; ui:Initialize(); ui.selectedQuest=1; ui.dashboard:Show(); ui:Refresh()
+  assert(ui.trackerMeta.value:find("Collect: 0/2",1,true))
+  api.active[1].objectives[1].text="Collect: 1/2"
+  A.eventFrame.scripts.OnEvent(nil,"QUEST_LOG_UPDATE"); A.eventFrame.scripts.OnEvent(nil,"QUEST_LOG_UPDATE")
+  eq(#timers,1); tick()
+  assert(ui.trackerMeta.value:find("Collect: 1/2",1,true)); assert(ui.details.value:find("Collect: 1/2",1,true))
+  api.active[1].complete=true; A.eventFrame.scripts.OnEvent(nil,"QUEST_LOG_UPDATE"); tick()
+  eq(R.plan[1].type,"turn_in"); assert(ui.trackerStep.value:find("Ready to turn in",1,true))
+  api.active={}; A.eventFrame.scripts.OnEvent(nil,"QUEST_TURNED_IN",1); tick()
+  eq(E:CompletedOnce(1),true); eq(R.plan[1].questID,2); eq(ui:QuestStatus(E.records[1]),"Completed")
+  api.active={{questID=2}}; A.eventFrame.scripts.OnEvent(nil,"QUEST_ACCEPTED",1); tick()
+  ui:SetPage("log"); eq(#ui:_Rows(),1)
+  api.active={}; A.eventFrame.scripts.OnEvent(nil,"QUEST_REMOVED",2); tick()
+  eq(#ui:_Rows(),0); eq(E:CompletedOnce(2),false); eq(E:GetState(2),"available")
+  eq(#errors,0)
+end)
+test("tracker bounds objective preview and opens current details without changing intent",function()
+  setup({[1]=q(1),[2]=q(2)})
+  local objectives={}
+  for i=1,8 do objectives[i]={text=string.rep("Long objective ",20)..i,finished=i==1} end
+  api.active={{questID=1,title="Tracked",objectives=objectives}}; scan()
+  local ui=A.modules.UI; ui:Initialize(); ui:Refresh()
+  assert(ui.trackerMeta.value:find("1 / 8 objectives complete",1,true))
+  assert(ui.trackerMeta.value:find("+ 4 more",1,true)); assert(ui.trackerMeta.value:find("Up next",1,true))
+  assert(ui.tracker.height<=385); eq(ui.trackerScroll.height,300)
+  local mode=A.charDB.journey.mode; ui.trackerOpen.scripts.OnClick()
+  eq(ui.selectedQuest,R.plan[1].questID); eq(A.charDB.journey.mode,mode)
+  assert(ui.details.value:find(objectives[8].text,1,true)); eq(ui.detailScroll.scroll,0)
+end)
+test("objective presentation distinguishes unavailable failed and ready data",function()
+  setup({[1]=q(1)}); local ui=A.modules.UI
+  assert(table.concat(ui:ObjectiveLines({})," "):find("unavailable",1,true))
+  assert(table.concat(ui:ObjectiveLines({complete=true})," "):find("ready to turn in",1,true))
+  local readyDetails=table.concat(ui:ObjectiveLines({complete=true,objectives={{text="Client objective",finished=true}}})," ")
+  assert(readyDetails:find("Client objective",1,true)); eq(readyDetails:find("Waiting",1,true),nil)
+  assert(table.concat(ui:ObjectiveLines({failed=true})," "):find("failed",1,true))
+  assert(table.concat(ui:ObjectiveLines({objectives={{finished=true,text="Done"}}})," "):find("Waiting",1,true))
+end)
+test("legacy failure evidence overrides modern readiness only for the matching row",function()
+  setup({[1]=q(1)}); api.active={{questID=1,complete=true}}
+  GetQuestLogTitle=function() return "Quest",10,nil,false,nil,-1,nil,1 end
+  scan(); eq(C:IsActive(1).failed,true); eq(C:IsActive(1).complete,false)
+  eq(A.modules.UI:QuestStatus(E.records[1]),"Failed · check quest log")
+  GetQuestLogTitle=function() return "Different row",10,nil,false,nil,-1,nil,2 end
+  scan(); eq(C:IsActive(1).failed,nil); eq(C:IsActive(1).complete,true)
+end)
+test("related quest details preserve alternatives unknowns and live availability",function()
+  setup({[1]=q(1),[2]=q(2,{prerequisitesAny={1,3}}),[3]=q(3),[4]=q(4,{prerequisitesAll={99}})})
+  scan(); local ui=A.modules.UI; ui:Initialize(); ui.selectedQuest=1; ui.dashboard:Show(); ui:Refresh()
+  eq(E.followUps[1][1],2); assert(ui.details.value:find("Quest 2 (2) · Prerequisite needed",1,true))
+  ui.selectedQuest=2; ui:_Details(); assert(ui.details.value:find("Any one: Quest 1 / Quest 3",1,true))
+  ui.selectedQuest=4; ui:_Details(); assert(ui.details.value:find("Uncatalogued quest 99",1,true))
+  assert(ui.details.value:find("No follow-up requirement",1,true))
+  assert(ui.details.value:find("No verified destination",1,true))
+end)
+test("list pagination and empty feedback recover after quest log shrink",function()
+  local records={}; for i=1,17 do records[i]=q(i) end
+  setup(records); for i=1,17 do api.active[i]={questID=i} end
+  scan(); local ui=A.modules.UI; ui:Initialize(); ui.dashboard:Show(); ui:SetPage("log")
+  ui.zonePage=3; ui:_RefreshDashboard(); assert(ui.pageCount.value:find("3 / 3",1,true))
+  api.active={}; scan(); ui:_RefreshDashboard()
+  eq(ui.zonePage,1); eq(ui.emptyRows:IsShown(),true); eq(ui.nextZones:IsShown(),false)
+  ui.selectedQuest=999; ui:_RefreshDashboard(); eq(ui.deferSelected.enabled,false); eq(ui.goalButton.enabled,false)
+end)
+test("repeated recurring quest status shows current work before historical completion",function()
+  setup({[1]=q(1,{permanent=false})},{recurringHistory={[1]=true}})
+  api.active={{questID=1}}; scan(); eq(A.modules.UI:QuestStatus(E.records[1]),"In progress")
+  api.active={}; scan(); eq(A.modules.UI:QuestStatus(E.records[1]),"Completed")
 end)
 
 for _,case in ipairs(cases) do

@@ -7,6 +7,18 @@ local function name(id)
   local q=Addon:GetQuest(id)
   return q and q.name or ("Quest "..tostring(id))
 end
+local trainedRanks={"Apprentice","Journeyman","Expert","Artisan","Master"}
+local function rankName(professionID,tier)
+  local professions=Addon:Import("QuestieProfessions")
+  local function label(method,id,fallback)
+    if professions and type(professions[method])=="function" then
+      local ok,value=pcall(professions[method],professions,id)
+      if ok and type(value)=="string" and value~="" then return value end
+    end
+    return fallback
+  end
+  return label("GetRankName",tier,trainedRanks[tier] or ("rank "..tier)).." "..label("GetProfessionName",professionID,"profession "..professionID)
+end
 local function pointIn(sources,area)
   for _,source in ipairs(sources or {}) do
     for _,p in ipairs(source.points or (source.point and {source.point}) or {}) do
@@ -50,7 +62,7 @@ function Planning:Rebuild()
             (rep and (" (current "..rep.value..").") or " (current value unknown)."),false)
         end
         for _,rank in ipairs(q.requiredRanks or {}) do
-          if rank[2]<0 then add("Complete before skill "..rank[1].." reaches rank "..(-rank[2])..".",false) end
+          if rank[2]<0 then add("Complete before training "..rankName(rank[1],-rank[2])..".",false) end
         end
         if q.requiredSpell and q.requiredSpell<0 then add("Complete before learning spell "..(-q.requiredSpell)..".",false) end
       end

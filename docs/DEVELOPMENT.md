@@ -4,6 +4,8 @@ The working checkout is connected to `https://github.com/clrscr/Mads-TBC-Loremas
 
 Push changes to `main` to run the GitHub Actions validation and package workflow. It uses the pinned Questie revision, Python 3.12, and stock Lua 5.1. The workflow publishes a downloadable Actions artifact on successful builds. Branch pushes do not update WowUp.
 
+The Questie source revision pins **build inputs and bundled-data provenance only**. Installed Questie can update normally: there is no required release number or database hash match. Installation checks verify presence and the target interface declaration, recording the observed version for diagnostics. Runtime adapters check the capabilities they use; if Questie changes those APIs, update this addon's adapters. Refreshing bundled quest facts is a separate regeneration and review step.
+
 To ship an update:
 
 1. Update the version consistently in `config/release.json`, `Mads_TBCLoremaster.toc`, `Runtime/Core.lua`, `pyproject.toml`, and the current usage/results documentation. Keep development builds on the alpha channel until the client checklist is complete.

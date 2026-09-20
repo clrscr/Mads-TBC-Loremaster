@@ -30,15 +30,32 @@ function Navigation:_PointForAction(action, playerPosition)
     local expected={monster="npc",object="object",item="item"}
     local kind=objective and expected[objective.type]
     if kind and action.objectiveIndex then
-      local candidates={}
+      local matches,candidates={},{}
       local title=type(objective.text)=="string" and string.lower(objective.text) or ""
       for _, source in ipairs(q.objectives or {}) do
-        local named=source.name and string.find(title,string.lower(source.name),1,true)
-        if source.kind==kind and (named or (#q.objectives==1 and #live.objectives==1)) then
-          table.insert(candidates,source)
+        local name=type(source.name)=="string" and string.lower(source.name) or ""
+        if source.kind==kind and name~="" and string.find(title,name,1,true) then
+          table.insert(matches,{source=source,name=name})
         end
       end
-      if #candidates>0 then sources=candidates end
+      local matchedName,ambiguous
+      for _,match in ipairs(matches) do
+        local contained=false
+        for _,other in ipairs(matches) do
+          if other.name~=match.name and string.find(other.name,match.name,1,true) then contained=true; break end
+        end
+        -- A Hulking Mountain Lion objective must not select a nearer Mountain
+        -- Lion. Distinct remaining names still leave the target ambiguous.
+        if not contained then
+          if matchedName and matchedName~=match.name then ambiguous=true end
+          matchedName=match.name
+          table.insert(candidates,match.source)
+        end
+      end
+      if #candidates>0 and not ambiguous then sources=candidates
+      elseif q.objectives and #q.objectives==1 and #live.objectives==1 and q.objectives[1].kind==kind then
+        sources=q.objectives
+      end
     end
     if not action.objectiveIndex and q.objectives and #q.objectives==1 then sources=q.objectives end
   end

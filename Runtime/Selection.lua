@@ -176,13 +176,58 @@ function Selection:Check(id,accessOnly,visiting)
     end
   end
   if not accessOnly and not (c.active[id] and c.active[id].complete) then
+    local pending,allowed,failures,failure={}, {}, {}, nil
     for _,child in ipairs(e.children[id] or {}) do
       if not e:CompletedOnce(child) and e:IsRoutable(child,true) then
+        table.insert(pending,child)
         local check=self:Check(child,false,visiting)
-        if not check.allowed then return blocked(check) end
-        table.insert(result.children,child)
+        if check.allowed then table.insert(allowed,child)
+        else failures[child]=check; failure=failure or check end
       end
     end
+    table.sort(allowed,function(a,b)
+      local aa,ba=c.active[a]~=nil,c.active[b]~=nil
+      if aa~=ba then return aa end
+      local ap,bp=e:IsRecommendedChoice(a),e:IsRecommendedChoice(b)
+      if ap~=bp then return ap end
+      return a<b
+    end)
+    local chosen={}
+    local function conflicts(a,b) return e.conflicts[a] and e.conflicts[a][b] end
+    -- Each child needs either its own work or a directly exclusive alternative.
+    -- Do not turn a whole connected conflict component into an any-of group:
+    -- two children can share an alternative without being alternatives themselves.
+    local function choose()
+      local needed
+      for _,child in ipairs(pending) do
+        local covered=false
+        for _,pick in ipairs(chosen) do
+          if child==pick or conflicts(child,pick) then covered=true; break end
+        end
+        if not covered then needed=child; break end
+      end
+      if not needed then return true end
+      local descendantFailure
+      for _,child in ipairs(allowed) do
+        if child==needed or conflicts(child,needed) then
+          local compatible=true
+          for _,pick in ipairs(chosen) do
+            if conflicts(child,pick) then compatible=false; break end
+          end
+          if compatible then
+            table.insert(chosen,child)
+            local solved,reason=choose()
+            if solved then return true end
+            descendantFailure=descendantFailure or reason
+            table.remove(chosen)
+          end
+        end
+      end
+      return false,descendantFailure or failures[needed] or failure
+    end
+    local allowedChildren,childFailure=choose()
+    if not allowedChildren then return blocked(childFailure) end
+    result.children=chosen
   end
   visiting[key]=nil
   self.checks[key]=result

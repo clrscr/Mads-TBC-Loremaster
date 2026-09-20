@@ -120,7 +120,7 @@ function Addon:Initialize()
       end)
     end
   else
-    self.status = "Questie's readiness API is unavailable. Use the verified Questie version."
+    self.status = "Questie's readiness API is unavailable. Check that Questie is enabled; this addon may need an API compatibility update."
   end
   self:Emit("STATE_UPDATED", "initialize")
 end
@@ -182,10 +182,6 @@ end
 
 local frame = CreateFrame("Frame")
 Addon.eventFrame = frame
-for _, event in ipairs({"ADDON_LOADED", "PLAYER_LOGIN", "PLAYER_LEVEL_UP", "QUEST_ACCEPTED", "QUEST_REMOVED", "QUEST_TURNED_IN", "QUEST_LOG_UPDATE", "SKILL_LINES_CHANGED", "UPDATE_FACTION", "QUEST_DETAIL", "QUEST_COMPLETE", "SPELLS_CHANGED", "ZONE_CHANGED_NEW_AREA", "ZONE_CHANGED"}) do frame:RegisterEvent(event) end
-for _,event in ipairs({"TAXIMAP_OPENED","HEARTHSTONE_BOUND","BAG_UPDATE_COOLDOWN","BAG_UPDATE_DELAYED","PLAYER_CONTROL_GAINED"}) do
-  pcall(frame.RegisterEvent,frame,event)
-end
 frame:SetScript("OnEvent", function(_, event, arg1)
   if event == "ADDON_LOADED" and arg1 == addonName then
     frame:UnregisterEvent("ADDON_LOADED")
@@ -220,3 +216,7 @@ frame:SetScript("OnEvent", function(_, event, arg1)
     end
   end
 end)
+for _, event in ipairs({"ADDON_LOADED", "PLAYER_LOGIN", "PLAYER_ENTERING_WORLD", "PLAYER_LEVEL_UP", "QUEST_ACCEPTED", "QUEST_REMOVED", "QUEST_TURNED_IN", "QUEST_LOG_UPDATE", "SKILL_LINES_CHANGED", "UPDATE_FACTION", "QUEST_DETAIL", "QUEST_COMPLETE", "SPELLS_CHANGED", "ZONE_CHANGED_NEW_AREA", "ZONE_CHANGED"}) do frame:RegisterEvent(event) end
+for _,event in ipairs({"TAXIMAP_OPENED","HEARTHSTONE_BOUND","BAG_UPDATE_COOLDOWN","BAG_UPDATE_DELAYED","PLAYER_CONTROL_GAINED"}) do
+  pcall(frame.RegisterEvent,frame,event)
+end

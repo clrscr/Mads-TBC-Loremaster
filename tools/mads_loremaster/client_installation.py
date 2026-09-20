@@ -27,21 +27,9 @@ def inspect_client_installation(project_root: Path) -> dict:
     questie = _toc_metadata(questie_toc)
     tomtom = _toc_metadata(tomtom_toc) if tomtom_toc else {}
     product = _build_product(build_info, config["product"])
-    questie_source = Path(
-        load_json_object(project_root / "config" / "source.json")["questie_path"]
-    )
-    parity_files = [
-        Path("Database/TBC/tbcQuestDB.lua"),
-        Path("Database/Corrections/ContentPhases/BurningCrusade.lua"),
-    ]
-    questie_parity = {
-        str(relative): (
-            (questie_source / relative).is_file()
-            and (addons / "Questie" / relative).is_file()
-            and _hash(questie_source / relative) == _hash(addons / "Questie" / relative)
-        )
-        for relative in parity_files
-    }
+    # Questie updates independently of our bundled catalog. Record its version
+    # for diagnostics, but do not require a release or source-data hash match.
+    # Runtime adapters check capabilities; TOC metadata cannot prove API support.
     installed_toc = installed_addon / f"{ADDON_NAME}.toc"
     deployed_at = installed_toc.stat().st_mtime if installed_toc.is_file() else None
     saved_variables = list((client_root / "WTF").rglob(f"{ADDON_NAME}.lua"))
@@ -56,9 +44,10 @@ def inspect_client_installation(project_root: Path) -> dict:
     checks = {
         "client_product": product.get("Product") == config["product"],
         "client_version": product.get("Version") == config["expected_version"],
-        "questie_interface": questie.get("Interface") == config["expected_interface"],
-        "questie_version": questie.get("Version") == config["questie_version"],
-        "questie_source_parity": all(questie_parity.values()),
+        "questie_installed": questie_toc.is_file(),
+        "questie_interface": config["expected_interface"] in {
+            value.strip() for value in questie.get("Interface", "").split(",")
+        },
     }
     deployment_checks = {
         "installed_runtime_parity": bool(runtime_matches) and all(runtime_matches),
@@ -77,7 +66,6 @@ def inspect_client_installation(project_root: Path) -> dict:
         },
         "checks": checks,
         "deployment_checks": deployment_checks,
-        "questie_parity_files": questie_parity,
         "runtime_files_compared": len(runtime_matches),
         "historical_guidelime_load_signal": historical_signal,
         "launched_after_current_deployment": launched_after_deployment,
@@ -91,6 +79,7 @@ def inspect_client_installation(project_root: Path) -> dict:
             else "installation_mismatch"
         ),
         "limitations": [
+            "Questie versions and data updates are not pinned at runtime; API compatibility requires capability checks and gameplay testing.",
             "SavedVariables prove only that the standalone addon reached a save cycle.",
             "A post-deployment launch does not prove quest, waypoint, or route behavior without the manual matrix.",
             "No account, realm, or character identifiers are retained in this evidence record.",

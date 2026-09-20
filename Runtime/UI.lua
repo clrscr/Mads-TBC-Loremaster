@@ -8,6 +8,46 @@ Addon.Text={title="Mad's TBC Loremaster", journey="Adaptive Journey", completion
   recurring="Each recurring quest counts once toward your journey. Later runs are optional. Older completions may be unknown until observed again."}
 local L=Addon.Text
 local GOLD={0.84,0.66,0.29}
+local PAGE_SIZE=7
+local statusLabels={available="Available",active="In progress",ready_to_turn_in="Ready to turn in",completed="Completed",
+  prerequisite_blocked="Prerequisite needed",level_locked="Level needed",blocked_profession="Profession needed",
+  blocked_reputation="Reputation needed",permanently_locked="Unavailable",unreachable_dependency="Chain unavailable"}
+function UI:QuestTitle(q)
+  local live=Addon.modules.Character:IsActive(q.id)
+  return live and live.title or q.name
+end
+function UI:QuestStatus(q)
+  local live=Addon.modules.Character:IsActive(q.id)
+  if live then return live.failed and "Failed · check quest log" or live.complete and "Ready to turn in" or "In progress" end
+  if Addon.modules.Eligibility:CompletedOnce(q.id) then return "Completed" end
+  local state=Addon.modules.Eligibility:GetState(q.id) or "unknown"
+  return statusLabels[state] or (string.find(state,"unknown",1,true) and "Needs verification")
+    or (string.find(state,"ineligible",1,true) and "Not eligible") or "Unavailable for now"
+end
+function UI:ObjectiveLines(live,limit)
+  if not live then return {} end
+  if live.failed then return {"Quest failed. Inspect the quest log before retrying."} end
+  local objectives=live.objectives
+  if live.complete and (limit or not objectives or #objectives==0) then return {"Objectives complete · ready to turn in."} end
+  if not objectives or #objectives==0 then return {"Objective details unavailable. Check the in-game quest text."} end
+  local lines,done,remaining={},0,0
+  for _,objective in ipairs(objectives) do
+    if objective.finished then done=done+1 else
+      remaining=remaining+1
+      if not limit or #lines<limit then table.insert(lines,"• "..(objective.text or "Objective data pending")) end
+    end
+  end
+  if not limit then
+    for _,objective in ipairs(objectives) do
+      if objective.finished then table.insert(lines,"Done: "..(objective.text or "Objective")) end
+    end
+  end
+  table.insert(lines,1,done.." / "..#objectives.." objectives complete")
+  if limit and remaining>limit then table.insert(lines,"+ "..(remaining-limit).." more · open Details") end
+  if live.complete then table.insert(lines,1,"Quest ready to turn in; objective details below are the latest client report.")
+  elseif remaining==0 then table.insert(lines,"Waiting for quest turn-in readiness.") end
+  return lines
+end
 local function text(parent,size,width)
   local f=parent:CreateFontString(nil,"OVERLAY",size>=16 and "GameFontNormalLarge" or "GameFontHighlight")
   f:SetJustifyH("LEFT"); f:SetJustifyV("TOP"); f:SetWidth(width); f:SetWordWrap(true)
@@ -56,8 +96,10 @@ function UI:_CreateDashboard()
   local title=text(f,20,780); title:SetPoint("TOPLEFT",22,-18); title:SetText(L.title)
   self.summaryTitle=text(f,18,810); self.summaryTitle:SetPoint("TOPLEFT",22,-56)
   self.summaryBody=text(f,12,810); self.summaryBody:SetPoint("TOPLEFT",22,-83); self.summaryBody:SetHeight(65)
-  for i,page in ipairs({"overview","quests","zones","recurring","settings"}) do
-    button(f,page:gsub("^%l",string.upper),150,22+(i-1)*160,-218,function() self:SetPage(page) end)
+  self.tabs={}
+  for i,entry in ipairs({{"overview","Journey"},{"log","Quest log"},{"quests","Catalog"},{"zones","Zones"},{"recurring","Recurring"},{"settings","Settings"}}) do
+    local page,label=entry[1],entry[2]
+    self.tabs[page]=button(f,label,128,22+(i-1)*135,-218,function() self:SetPage(page) end)
   end
   self.selectionSummary=text(f,12,810); self.selectionSummary:SetPoint("TOPLEFT",22,-151)
   self.categorySummary=text(f,12,810); self.categorySummary:SetPoint("TOPLEFT",22,-176); self.categorySummary:SetHeight(35)
@@ -71,9 +113,11 @@ function UI:_CreateDashboard()
   end)
   local search=CreateFrame("EditBox",nil,f,"InputBoxTemplate")
   search:SetSize(270,25); search:SetPoint("TOPLEFT",28,-293); search:SetAutoFocus(false)
-  search:SetScript("OnTextChanged",function() self.zonePage=1; self:_RefreshDashboard() end)
+  local hint=text(search,12,250); hint:SetPoint("LEFT",4,0); hint:SetText("Search quest name or ID")
+  search:SetScript("OnTextChanged",function() hint:SetShown((search:GetText() or "")==""); self.zonePage=1; self:_RefreshDashboard() end)
   search:SetScript("OnEscapePressed",function(s) s:ClearFocus() end)
   self.search=search
+  self.searchHint=hint
   self.filterButton=button(f,"Filter: all",140,310,-293,function()
     local order={all="available",available="active",active="blocked",blocked="skipped",skipped="completed",completed="inaccessible",inaccessible="unknown",unknown="all"}
     self.filter=order[self.filter]; if self.filter=="skipped" then self.page="quests"; self.selectedZone=nil end; self.zonePage=1; self:_RefreshDashboard()
@@ -83,10 +127,22 @@ function UI:_CreateDashboard()
   end)
   self.clearZone=button(f,"All zones",140,620,-293,function() self.selectedZone=nil; self.zonePage=1; self:_RefreshDashboard() end)
   self.zoneRows={}
-  for i=1,11 do
-    self.zoneRows[i]=button(f,"",392,22,-334-(i-1)*27,function() end)
-    self.zoneRows[i]:GetFontString():SetJustifyH("LEFT")
+  for i=1,PAGE_SIZE do
+    local row=button(f,"",392,22,-334-(i-1)*43,function() end)
+    row:SetHeight(40)
+    row:GetFontString():SetJustifyH("LEFT")
+    row:GetFontString():SetWidth(368)
+    row:GetFontString():SetHeight(32)
+    row:GetFontString():SetWordWrap(false)
+    row:SetScript("OnEnter",function(b)
+      if not GameTooltip or not b.tooltip then return end
+      GameTooltip:SetOwner(b,"ANCHOR_RIGHT"); GameTooltip:SetText(b.tooltip); GameTooltip:Show()
+    end)
+    row:SetScript("OnLeave",function() if GameTooltip then GameTooltip:Hide() end end)
+    self.zoneRows[i]=row
   end
+  self.emptyRows=text(f,12,380); self.emptyRows:SetPoint("TOPLEFT",28,-345)
+  self.pageCount=text(f,12,200); self.pageCount:SetPoint("TOPLEFT",122,-655)
   self.previousZones=button(f,"Previous",90,22,-649,function() self.zonePage=math.max(1,self.zonePage-1); self:_RefreshDashboard() end)
   self.nextZones=button(f,"Next",90,324,-649,function() self.zonePage=self.zonePage+1; self:_RefreshDashboard() end)
   local scroll=CreateFrame("ScrollFrame",nil,f,"UIPanelScrollFrameTemplate")
@@ -136,6 +192,7 @@ function UI:_CreateCategories()
   local f=panel("MadsTBCLoremasterCategories",520,575,{point="CENTER",x=0,y=0})
   f:SetParent(self.dashboard); f:Hide(); f:SetFrameStrata("DIALOG")
   f:ClearAllPoints(); f:SetPoint("CENTER",self.dashboard,"CENTER",0,0)
+  f:SetScript("OnDragStop",f.StopMovingOrSizing)
   self.categoryPanel=f
   if UISpecialFrames then table.insert(UISpecialFrames,"MadsTBCLoremasterCategories") end
   local close=CreateFrame("Button",nil,f,"UIPanelCloseButton"); close:SetPoint("TOPRIGHT",-5,-5)
@@ -186,9 +243,17 @@ function UI:_CreateTracker()
   end)
   self.trackerHide:SetScript("OnLeave",function() if GameTooltip then GameTooltip:Hide() end end)
   self.trackerMode=text(f,12,315); self.trackerMode:SetPoint("TOPLEFT",14,-12)
-  self.trackerStep=text(f,14,345); self.trackerStep:SetPoint("TOPLEFT",14,-37)
-  self.trackerMeta=text(f,11,345); self.trackerMeta:SetPoint("TOPLEFT",self.trackerStep,"BOTTOMLEFT",0,-8)
-  self.trackerOpen=button(f,"Dashboard",105,14,-165,function() self.dashboard:Show() end)
+  local scroll=CreateFrame("ScrollFrame",nil,f,"UIPanelScrollFrameTemplate")
+  scroll:SetPoint("TOPLEFT",14,-37); scroll:SetSize(325,120)
+  local child=CreateFrame("Frame",nil,scroll); child:SetSize(323,120); scroll:SetScrollChild(child)
+  self.trackerScroll,self.trackerChild=scroll,child
+  self.trackerStep=text(child,16,320); self.trackerStep:SetPoint("TOPLEFT",0,0)
+  self.trackerMeta=text(child,11,320); self.trackerMeta:SetPoint("TOPLEFT",self.trackerStep,"BOTTOMLEFT",0,-8)
+  self.trackerOpen=button(f,"Details",105,14,-165,function()
+    local q=Addon.modules.Router:GetCurrent()
+    if q then self.selectedQuest=q.id; self.detailScroll:SetVerticalScroll(0) end
+    self:SetPage("overview"); self.dashboard:Show()
+  end)
   self.defer=button(f,"Skip",100,130,-165,function() Addon.modules.Router:SkipCurrent() end)
   self.trackerLeave=button(f,"Before leaving",125,240,-165,function() self:OpenPlanner("checklist") end)
 end
@@ -242,6 +307,10 @@ function UI:_CreateMinimapButton()
 end
 function UI:SetPage(page)
   self.page,self.zonePage=page,1
+  if page=="overview" then
+    self.filter,self.selectedZone="all",nil
+    self.search:SetText("")
+  end
   self:_RefreshDashboard()
 end
 function UI:Toggle() self.dashboard:SetShown(not self.dashboard:IsShown()) end
@@ -250,13 +319,20 @@ function UI:_Rows()
   local selection=Addon.modules.Selection
   local rows={}
   local search=string.lower(self.search:GetText() or "")
+  local live=Addon.modules.Character.snapshot.active or {}
+  local journey={}
+  for index,action in ipairs(Addon.modules.Router.plan or {}) do
+    journey[action.questID]=journey[action.questID] or index
+  end
   if self.page=="zones" then
     for _,z in pairs(selection.zones) do if search=="" or string.find(string.lower(z.name),search,1,true) then table.insert(rows,z) end end
     table.sort(rows,function(a,b) if a.name~=b.name then return a.name<b.name end; return a.id<b.id end)
     return rows
   end
   for id,q in pairs(e.records or {}) do
-    if e:InFaction(q) and (self.filter=="skipped" or not self.selectedZone or q.canonicalZone==self.selectedZone or selection.bridges[id])
+    if self.page=="log" and live[id] then
+      if search=="" or string.find(string.lower(self:QuestTitle(q)),search,1,true) or tostring(id)==search then table.insert(rows,q) end
+    elseif self.page~="log" and (self.page~="overview" or live[id] or journey[id]) and e:InFaction(q) and (self.filter=="skipped" or not self.selectedZone or q.canonicalZone==self.selectedZone or selection.bridges[id])
       and (self.filter=="skipped" or self.page~="recurring" or not q.permanent or selection.bridges[id])
       and (self.filter=="skipped" or selection:Visible(q)) then
       local state=e:GetState(id) or "unknown"
@@ -269,10 +345,21 @@ function UI:_Rows()
         or self.filter=="blocked" and (string.find(state,"blocked",1,true) or state=="level_locked" or not selection:Check(id).allowed)
         or self.filter=="unknown" and string.find(state,"unknown",1,true)
         or self.filter=="inaccessible" and (string.find(state,"ineligible",1,true) or state=="permanently_locked" or state=="unreachable_dependency" or string.find(state,"temporarily",1,true))
-      if match and (search=="" or string.find(string.lower(q.name),search,1,true) or tostring(id)==search) then table.insert(rows,q) end
+      if match and (search=="" or string.find(string.lower(self:QuestTitle(q)),search,1,true) or string.find(string.lower(q.name),search,1,true) or tostring(id)==search) then table.insert(rows,q) end
     end
   end
+  local function rank(q)
+    local held=live[q.id]
+    if held then return held.failed and 1 or held.complete and 0 or 2 end
+    return e:CompletedOnce(q.id) and 5 or e:IsRoutable(q.id,false) and 3 or 4
+  end
   table.sort(rows,function(a,b)
+    if self.page=="overview" then
+      local ar,br=journey[a.id] or math.huge,journey[b.id] or math.huge
+      if ar~=br then return ar<br end
+    end
+    local ar,br=rank(a),rank(b)
+    if ar~=br then return ar<br end
     local aa,ba=e:IsRoutable(a.id,false),e:IsRoutable(b.id,false)
     if aa~=ba then return aa end
     if a.zoneName~=b.zoneName then return a.zoneName<b.zoneName end
@@ -283,10 +370,13 @@ function UI:_Rows()
 end
 function UI:_Details()
   local q=self.selectedQuest and Addon:GetQuest(self.selectedQuest)
-  if not q then self.details:SetText("Select a quest to inspect its status, requirements, and source instructions.\n\n"..L.unknown); return end
+  if not q then
+    self.details:SetText("Select a quest to inspect its status, requirements, and source instructions.\n\n"..L.unknown)
+    self.detailChild:SetHeight(292); return
+  end
   local e=Addon.modules.Eligibility
   local result=e:GetResult(q.id)
-  local lines={q.name.." ("..q.id..")",q.zoneName.." · "..(q.category or "quest"),"",result.reason}
+  local lines={"|cffd6a84b"..self:QuestTitle(q).."|r ("..q.id..")",self:QuestStatus(q),q.zoneName.." · "..(q.category or "quest"),"",result.reason}
   local selection=Addon.modules.Selection
   local check=selection:Check(q.id)
   if not check.allowed then table.insert(lines,check.reason) end
@@ -304,8 +394,42 @@ function UI:_Details()
   if not q.permanent then table.insert(lines,e:CompletedOnce(q.id) and "First completion confirmed. Further runs are optional." or "First completion has not been established.") end
   local live=Addon.modules.Character:IsActive(q.id)
   if live then
-    for _,objective in ipairs(live.objectives or {}) do table.insert(lines,(objective.finished and "Done: " or "Next: ")..(objective.text or "Objective data pending")) end
+    table.insert(lines,"\n|cffd6a84bCurrent objectives|r")
+    for _,line in ipairs(self:ObjectiveLines(live)) do table.insert(lines,line) end
   end
+  local state=result.state
+  local action={questID=q.id,type=(state=="ready_to_turn_in" or state=="completed") and "turn_in" or live and "objective" or "accept"}
+  if live and not live.complete then
+    for index,objective in ipairs(live.objectives or {}) do
+      if not objective.finished then action.objectiveIndex=index; break end
+    end
+  end
+  local point,source=Addon.modules.Navigation:_PointForAction(action)
+  table.insert(lines,"\n|cffd6a84b"..(action.type=="turn_in" and "Turn-in location" or action.type=="accept" and "Pickup location" or "Next objective location").."|r")
+  table.insert(lines,point and string.format("%s%s · %.1f, %.1f",source and source.name and (source.name.." · ") or "",point.mapName or q.zoneName,point.x,point.y)
+    or "No verified destination for this step. Consult the quest text.")
+  local groups=e:RequirementGroups(q)
+  if #groups>0 then table.insert(lines,"\n|cffd6a84bSource prerequisites|r") end
+  for _,group in ipairs(groups) do
+    local names={}
+    for _,id in ipairs(group) do
+      local record=Addon:GetQuest(id)
+      table.insert(names,(record and self:QuestTitle(record) or ("Uncatalogued quest "..id))..(Addon.modules.Character:IsCompleted(id) and " (done)" or ""))
+    end
+    table.insert(lines,(#group>1 and "Any one: " or "Required: ")..table.concat(names," / "))
+  end
+  table.insert(lines,"\n|cffd6a84bKnown related next quests|r")
+  local related=0
+  for _,id in ipairs(e.followUps and e.followUps[q.id] or {}) do
+    local record=Addon:GetQuest(id)
+    if record and e:InFaction(record) then
+      related=related+1
+      if related<=8 then table.insert(lines,self:QuestTitle(record).." ("..id..") · "..self:QuestStatus(record)) end
+    end
+  end
+  table.insert(lines,related==0 and "No follow-up requirement is recorded in the packaged source. This does not establish the end of a chain."
+    or "Relations may have other requirements or alternative prerequisites. Search a name or ID in Catalog to inspect it.")
+  if related>8 then table.insert(lines,"+ "..(related-8).." other source relations") end
   table.insert(lines,"\nSource instructions:")
   for _,line in ipairs(q.objectiveText or {}) do if type(line)=="string" and line~="" then table.insert(lines,line) end end
   if not q.objectiveText or #q.objectiveText==0 then table.insert(lines,"Special instructions are unavailable. Consult the in-game quest text.") end
@@ -333,8 +457,12 @@ function UI:_RefreshDashboard()
   local view=Addon.db.progressView
   local done,total=s[view.."Completed"] or 0,s[view.."Total"] or 0
   self.summaryTitle:SetText(Addon.status or (L[view]..": "..done.." / "..total.." ("..percent(done,total,s.provisional)..")"))
-  self.summaryBody:SetText(string.format("%s · %d available · %d blocked · %d locked · %d skipped · %d unknown\n%s\nPhase %s (%s). %s",
-    Addon.modules.Character.snapshot.faction or "Character scan",s.available or 0,s.blocked or 0,s.locked or 0,selection.skipped or 0,s.unknown or 0,
+  local active,ready=0,0
+  for _,live in pairs(Addon.modules.Character.snapshot.active or {}) do
+    if live.complete then ready=ready+1 else active=active+1 end
+  end
+  self.summaryBody:SetText(string.format("%s · %d in progress · %d ready to turn in · %d available · %d skipped · %d unknown\n%s\nPhase %s (%s). %s",
+    Addon.modules.Character.snapshot.faction or "Character scan",active,ready,s.available or 0,selection.skipped or 0,s.unknown or 0,
     view=="completionist" and "All current-faction quests, including other races/classes and conflicting outcomes; recurring quests count once."
       or "Projected compatible outcomes for this character and current conditions; recoverable blockers remain unfinished.",
     tostring(Addon.db.phaseOverride or Addon.Manifest.phase.number),Addon.db.phaseOverride and "manual override" or "packaged profile",
@@ -344,12 +472,20 @@ function UI:_RefreshDashboard()
   local selectedDone,selectedTotal=chosen[view.."Completed"] or 0,chosen[view.."Total"] or 0
   self.selectionSummary:SetText("Selected categories: "..selectedDone.." / "..selectedTotal.." ("..percent(selectedDone,selectedTotal,chosen.provisional)..") · overall totals unchanged")
   self.categorySummary:SetText(self.filter=="skipped" and "Skipped management: all categories and zones. Restore does not change category exclusions." or selection:Description())
+  if self.page=="log" then
+    local snapshot=Addon.modules.Character.snapshot
+    self.categorySummary:SetText("Quest log: "..(snapshot.logUsed or 0).." / "..(snapshot.logMaximum or 25).." slots · all held quests, including skipped and excluded work.")
+  elseif self.page=="overview" then
+    self.categorySummary:SetText("Your journey in action order · select a quest for objectives and locations. "..selection:Description())
+  end
   self.viewButton:SetText("Progress: "..L[view])
+  for page,b in pairs(self.tabs) do if page==self.page then b:Disable() else b:Enable() end end
   local settings=self.page=="settings"
   for _,b in ipairs(self.settingsControls) do b:SetShown(settings) end
   for _,b in ipairs(self.modeButtons) do b:SetShown(not settings) end
-  self.search:SetShown(not settings); self.filterButton:SetShown(not settings and self.page~="zones")
-  self.zoneFocus:SetShown(not settings and self.selectedZone~=nil); self.clearZone:SetShown(not settings and self.selectedZone~=nil)
+  self.search:SetShown(not settings); self.filterButton:SetShown(not settings and self.page~="zones" and self.page~="log")
+  self.searchHint:SetText(self.page=="zones" and "Search zone name" or "Search quest name or ID")
+  self.zoneFocus:SetShown(not settings and self.page~="log" and self.selectedZone~=nil); self.clearZone:SetShown(not settings and self.page~="log" and self.selectedZone~=nil)
   self.detailScroll:SetShown(not settings); self.goalButton:SetShown(not settings); self.deferSelected:SetShown(not settings)
   self.filterButton:SetText("Filter: "..self.filter)
   if settings then
@@ -358,8 +494,15 @@ function UI:_RefreshDashboard()
     self.trackerButton:SetText("Tracker: "..(Addon.db.trackerVisible and "visible" or "hidden"))
   end
   local rows=settings and {} or self:_Rows()
-  self.zonePage=math.max(1,math.min(self.zonePage,math.max(1,math.ceil(#rows/11))))
-  local start=(self.zonePage-1)*11
+  local pages=math.max(1,math.ceil(#rows/PAGE_SIZE))
+  self.zonePage=math.max(1,math.min(self.zonePage,pages))
+  local start=(self.zonePage-1)*PAGE_SIZE
+  self.emptyRows:SetShown(not settings and #rows==0)
+  self.emptyRows:SetText(Addon.status or (self.page=="log" and "No held quests match your search. Clear the search or open Journey to find available work."
+    or self.page=="overview" and (Addon.modules.Router.explanation or L.waiting).."\n\nOpen Quest log for held work, or Catalog to review blockers. Clear search/status filters if needed."
+    or L.empty.."\n\nClear the search, choose Filter: all, or review Categories and All zones."))
+  self.pageCount:SetShown(not settings)
+  self.pageCount:SetText(#rows.." results · "..self.zonePage.." / "..pages)
   for i,b in ipairs(self.zoneRows) do
     local row=rows[start+i]
     b:SetShown(row~=nil)
@@ -368,30 +511,37 @@ function UI:_RefreshDashboard()
         b:SetText(row.name.." · "..(row.completionistTotal==0 and "prerequisites only" or (row[view.."Completed"].."/"..row[view.."Total"])))
         b:SetScript("OnClick",function() self.selectedZone=row.id; self.filter="all"; self:SetPage("quests") end)
       else
-        local prefix=e:CompletedOnce(row.id) and "Done · " or Addon.charDB.deferred[row.id] and "Skipped · " or selection.bridges[row.id] and "Prerequisite · " or ""
-        b:SetText(prefix..row.name)
+        local preference=Addon.charDB.deferred[row.id] and " · Skipped" or selection:Excluded(row) and " · Excluded" or selection.bridges[row.id] and " · Prerequisite" or ""
+        local label=self:QuestStatus(row)..preference
+        local current=Addon.modules.Router:GetCurrent()
+        local prefix=current and current.id==row.id and "Now · " or ""
+        b:SetText((self.selectedQuest==row.id and "|cffd6a84b" or "|cffffffff")..prefix..self:QuestTitle(row).."|r\n|cffb8c0cc"..label.." · "..row.zoneName.."|r")
         b:SetScript("OnClick",function() self.selectedQuest=row.id; self.detailScroll:SetVerticalScroll(0); self:_RefreshDashboard() end)
       end
+      b.tooltip=self.page=="zones" and row.name or self:QuestTitle(row).."\n"..self:QuestStatus(row).." · "..row.zoneName
     end
   end
   self.previousZones:SetShown(not settings and self.zonePage>1)
-  self.nextZones:SetShown(not settings and start+11<#rows)
+  self.nextZones:SetShown(not settings and start+PAGE_SIZE<#rows)
   local selected=self.selectedQuest and Addon:GetQuest(self.selectedQuest)
   self.goalButton:SetText(self.selectedQuest and Addon.charDB.deferred[self.selectedQuest] and "Restore and guide" or "Guide this quest")
   self.deferSelected:SetText(self.selectedQuest and Addon.charDB.deferred[self.selectedQuest] and "Restore" or "Skip")
   if selected and e:IsRoutable(selected.id,true) and not selection:Excluded(selected) then self.goalButton:Enable() else self.goalButton:Disable() end
-  if self.selectedQuest then self.deferSelected:Enable() else self.deferSelected:Disable() end
+  if selected then self.deferSelected:Enable() else self.deferSelected:Disable() end
   self:_Details()
 end
 function UI:_RefreshTracker()
   self.tracker:SetShown(Addon.db.trackerVisible)
   if not Addon.db.trackerVisible then return end
   local q,state,_,total,action=Addon.modules.Router:GetCurrent()
-  self.trackerMode:SetText(Addon.modules.Router:ModeLabel()..(next(Addon.charDB.categoryPreferences) and " · categories filtered" or ""))
+  self.trackerMode:SetText(Addon.modules.Router:ModeLabel()..(next(Addon.charDB.categoryPreferences) and " · filtered" or ""))
   if q then
     local live=Addon.modules.Character:IsActive(q.id)
-    self.trackerStep:SetText((live and live.title or q.name).."\n"..Addon.modules.Router:DescribeStep(q,state,action))
-    local lines={Addon.modules.Navigation:Description()}
+    self.trackerStep:SetText("|cffd6a84b"..self:QuestTitle(q).."|r\n"..self:QuestStatus(q))
+    local lines=self:ObjectiveLines(live,3)
+    if not live then table.insert(lines,"Pick up this quest.") end
+    if Addon.status then table.insert(lines,1,Addon.status.." Showing the last reliable scan.") end
+    table.insert(lines,"\n"..Addon.modules.Navigation:Description())
     local bridge=Addon.modules.Selection:BridgeText(q.id)
     if bridge then table.insert(lines,1,bridge) end
     local travel=Addon.modules.Navigation:TravelHint()
@@ -403,13 +553,22 @@ function UI:_RefreshTracker()
     if q.category=="dungeon" or q.category=="raid" or q.category=="pvp" or q.category=="elite" then table.insert(lines,"Requires "..q.category.." participation. Skip if you are not ready.") end
     local lore=Addon:GetLore(q.canonicalZone,Addon.db.detailLevel)
     if lore then table.insert(lines,lore) end
+    local nextQuest,nextAction
+    for _,candidate in ipairs(Addon.modules.Router.plan or {}) do
+      if candidate.questID~=q.id then nextQuest=Addon:GetQuest(candidate.questID); nextAction=candidate; break end
+    end
+    if nextQuest then table.insert(lines,"\n|cffd6a84bUp next|r · "..(nextAction.type=="accept" and "Pick up: " or nextAction.type=="turn_in" and "Turn in: " or "Continue: ")..self:QuestTitle(nextQuest)) end
     self.trackerMeta:SetText(table.concat(lines,"\n")); self.defer:Show()
   else
     self.trackerStep:SetText(Addon.status or "No actionable step in this focus")
     self.trackerMeta:SetText(Addon.modules.Router.explanation or L.waiting); self.defer:Hide()
   end
-  local height=math.max(180,85+self.trackerStep:GetStringHeight()+self.trackerMeta:GetStringHeight())
-  self.tracker:SetHeight(height)
+  local contentHeight=self.trackerStep:GetStringHeight()+self.trackerMeta:GetStringHeight()+12
+  local visibleHeight=math.max(90,math.min(300,contentHeight))
+  self.trackerChild:SetHeight(contentHeight); self.trackerScroll:SetHeight(visibleHeight)
+  if self.trackerActionKey~=(action and action.key) then self.trackerScroll:SetVerticalScroll(0) end
+  self.trackerActionKey=action and action.key
+  self.tracker:SetHeight(visibleHeight+85)
   self.trackerOpen:ClearAllPoints(); self.trackerOpen:SetPoint("BOTTOMLEFT",14,12)
   self.defer:ClearAllPoints(); self.defer:SetPoint("BOTTOMLEFT",130,12)
   self.trackerLeave:ClearAllPoints(); self.trackerLeave:SetPoint("BOTTOMLEFT",240,12)

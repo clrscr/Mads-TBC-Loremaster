@@ -16,6 +16,10 @@ Install the `Mads_TBCLoremaster` directory in the target client's `Interface/Add
 
 The dashboard searches quest names or IDs, filters states, shows zone totals, and explains blockers. Select a quest for live objective progress, source instructions, starter/finisher information and conflicting outcomes. Settings control tracker detail, window positions, progress view and a phase override.
 
+**Journey** opens with the current route in action order. **Quest log** shows every held quest, including skipped or category-excluded work; those preferences still prevent guidance. **Catalog** browses the wider completion record. Rows show status and zone, mark the current step with **Now**, and highlight the selected quest. Hover a truncated row for its full title and status. Search uses client quest titles where available, and the footer shows result and page counts. Returning to Journey clears list search, status and zone filters without changing your journey intent or category preferences.
+
+The tracker shows unfinished objectives (up to three), a completed-objective count, the current destination, and the next distinct quest already in your route. Long content scrolls within a bounded panel. **Details** opens the current quest without changing your route. Quest details include all live objectives, a source-backed destination when identifiable, explicit prerequisite alternatives, and known related next quests with their current status. A relation does not promise that a follow-up is available; missing source relationships do not establish the end of a chain. Objective data that has not arrived is labeled unavailable. Failed scans retain the previous journey with a notice; abandoned quests leave Quest log without gaining completion credit.
+
 ```text
 /mtl           Toggle dashboard
 /mtl scan      Rescan character
@@ -64,11 +68,13 @@ Blizzard completion evidence and observed turn-ins establish progress. Old saved
 
 ## Compatibility and evidence limits
 
+Keep Questie updated normally. Installed Questie is not pinned to a release or database snapshot. The addon checks the API capabilities it uses and explains missing data or unavailable integrations. If a Questie update changes those APIs, this addon will need a compatibility update. A source revision below identifies the bundled catalog's provenance; it does not require installing that Questie version, and updating Questie alone does not regenerate the bundled catalog.
+
 The packaged facts come from [Questie revision `0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44`](https://github.com/Questie/Questie/tree/0ad1972cbd54f9aac0a5e202fec9ee6c818fbf44), version 11.32.1, including common and character-dependent TBC quest corrections. The source-row audit is [runtime-coverage.json](../data/evidence/runtime-coverage.json). The 171 inherited Night Elf Hunter chapters are a separate historical Guidelime compatibility corpus, not the coverage authority for the adaptive journey.
 
 The bundled **Phase 2 profile is historical evidence**, not a claim about the live phase in September 2026. Choose a phase override only after checking your realm. Event activity uses the ready Questie event snapshot; missing readiness/data remains unknown. Questie private profession, reputation, event and map adapters are capability-checked; changes to these interfaces require verification.
 
-Coordinates are source-backed quest destinations or observed travel endpoints, not a verified navigation mesh. The addon does not know every road, cave entrance, transport connection, flight path, or live NPC phase. Hearth planning requires a mapped bind and available cooldown data. Missing instructions and destinations are shown explicitly. Unknown quests observed in your log remain visible without fabricated starters. English source text has not been fully localized; active quest titles/objectives use client text where available.
+Coordinates are source-backed quest destinations or observed travel endpoints, not a verified navigation mesh. Common TBC NPC/object name and location corrections are included; faction/calendar-specific entity corrections are not applied, and coordinates with unresolved phase conditions are omitted. The addon does not know every road, cave entrance, transport connection, flight path, or live NPC phase. Hearth planning requires a mapped bind and available cooldown data. Missing instructions and destinations are shown explicitly. Unknown quests observed in your log remain visible without fabricated starters. English source text has not been fully localized; active quest titles/objectives use client text where available.
 
 No quest is accepted, completed, abandoned, or chosen automatically. There are no addon messages, chat broadcasts, external communication or purchase actions. Public GitHub development releases are provided for personal installation through WowUp. The readiness flags describe unverified live behavior, not repository visibility.
 

@@ -33,9 +33,18 @@ local function questLogSnapshot()
       if not Addon:IsID(id) then return nil end
       local complete = info.complete
       if C_QuestLog and C_QuestLog.IsComplete then complete = C_QuestLog.IsComplete(id) end
+      local failed = info.failed
+      -- The pinned TBC QuestLogCache uses the sixth legacy return for failure.
+      -- Only merge it when the row still identifies this exact quest.
+      if GetQuestLogTitle then
+        local _, _, _, _, _, legacyComplete, _, legacyID = GetQuestLogTitle(index)
+        if legacyID == id then failed = legacyComplete == -1 end
+      end
       local objectives = C_QuestLog and C_QuestLog.GetQuestObjectives and C_QuestLog.GetQuestObjectives(id)
-      active[id] = {complete=complete == true or complete == 1, failed=info.failed,
-        objectives=type(objectives) == "table" and objectives or nil, title=info.title, level=info.level, logIndex=index}
+      active[id] = {complete=not failed and (complete == true or complete == 1), failed=failed,
+        -- Client/dependency tables can be reused and mutated between events.
+        -- Own the snapshot so equality still detects objective-only changes.
+        objectives=type(objectives) == "table" and Addon:Copy(objectives) or nil, title=info.title, level=info.level, logIndex=index}
       used = used + 1
     end
   end

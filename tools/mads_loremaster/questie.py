@@ -24,11 +24,9 @@ TBC_ENTITY_DATABASES = {
     "object": "Database/TBC/tbcObjectDB.lua",
     "item": "Database/TBC/tbcItemDB.lua",
 }
-TBC_OBJECT_CORRECTIONS = "Database/Corrections/tbcObjectFixes.lua"
-TBC_ENTITY_NAME_CORRECTIONS = {
-    # Questie's TBC correction supplies the name; its placeholder -1/-1 spawn
-    # is intentionally not emitted as a waypoint.
-    ("object", 185519): ("Mana-Tombs Stasis Chamber", TBC_OBJECT_CORRECTIONS),
+TBC_ENTITY_CORRECTIONS = {
+    "npc": ("Database/Corrections/tbcNPCFixes.lua", "QuestieTBCNpcFixes"),
+    "object": ("Database/Corrections/tbcObjectFixes.lua", "QuestieTBCObjectFixes"),
 }
 
 
@@ -137,17 +135,8 @@ def load_quest_sources(
             map_names,
         ),
     }
-    for (kind, source_id), (name, data_source) in TBC_ENTITY_NAME_CORRECTIONS.items():
-        if source_id not in referenced[kind]:
-            continue
-        existing = entities[kind].get(source_id)
-        entities[kind][source_id] = QuestSource(
-            kind,
-            source_id,
-            name,
-            existing.locations if existing else (),
-            data_source=data_source,
-        )
+    for kind in TBC_ENTITY_CORRECTIONS:
+        _apply_entity_corrections(root, kind, entities[kind], referenced[kind], map_names)
 
     result = {}
     for quest_id, quest in quests.items():
@@ -218,6 +207,7 @@ def load_flight_masters(root: Path, map_names: dict[int, str]) -> dict[int, Ques
             _map_points(values[6], map_names),
             data_source=TBC_ENTITY_DATABASES["npc"],
         )
+    _apply_entity_corrections(root, "npc", result, set(result), map_names)
     return result
 
 
@@ -326,6 +316,101 @@ def _map_points(value, map_names: dict[int, str]) -> tuple[MapPoint, ...]:
                     )
                 )
     return tuple(result)
+
+
+def _apply_entity_corrections(
+    root: Path,
+    kind: str,
+    entities: dict[int, QuestSource],
+    wanted: set[int],
+    map_names: dict[int, str],
+) -> None:
+    """Compose the common TBC name/spawn overrides without executing Lua.
+
+    Faction and Darkmoon loaders need live character/calendar context and are
+    deliberately not folded into this character-neutral snapshot. Likewise,
+    phase-conditioned points are omitted rather than treated as always visible.
+    Empty spawn tables replace stale database points; they are not a fallback.
+    """
+    relative, module = TBC_ENTITY_CORRECTIONS[kind]
+    path = root / relative
+    if not path.is_file():
+        return
+    source = _strip_lua_comments(path.read_text(encoding="utf-8"))
+    marker = f"function {module}:Load()"
+    start = source.find(marker)
+    if start < 0:
+        raise QuestieLayoutError(f"missing TBC entity correction loader in {path}")
+    return_start = source.find("return", start + len(marker))
+    table = _balanced_table(source, source.find("{", return_start))
+    constants = _named_constants(root / "Database/Zones/data/zoneIds.lua", "zoneIDs")
+    cursor = 1
+    while cursor < len(table) - 1:
+        separator = re.match(r"[\s,;]*", table[cursor:])
+        cursor += separator.end()
+        if cursor == len(table) - 1:
+            break
+        entry = re.match(r"\[(\d+)\]\s*=\s*", table[cursor:])
+        if not entry:
+            raise QuestieLayoutError(f"unsupported TBC entity correction entry in {path}")
+        entity_id = int(entry.group(1))
+        cursor += entry.end()
+        row = _balanced_table(table, cursor)
+        cursor += len(row)
+        if entity_id not in wanted:
+            continue
+        fields = {}
+        for field in ("name", "spawns"):
+            assignment = re.search(rf"\[\s*{kind}Keys\.{field}\s*\]\s*=\s*", row)
+            if not assignment:
+                continue
+            raw = _entity_correction_literal(row[assignment.end():], path)
+            if raw == "nil":
+                continue  # A nil-valued field is absent from the Lua override table.
+            if field == "spawns":
+                for name, value in constants.items():
+                    raw = re.sub(rf"\b{re.escape(name)}\b", str(value), raw)
+                raw = re.sub(r"\bphases\.[A-Z0-9_]+\b", '"conditional_spawn"', raw)
+            try:
+                value = parse_lua_table(raw)
+            except LuaParseError as error:
+                raise QuestieLayoutError(f"failed to parse {kind} {entity_id} {field} in {path}: {error}") from error
+            if field == "name" and not isinstance(value, str):
+                raise QuestieLayoutError(f"invalid {kind} {entity_id} name correction in {path}")
+            if field == "spawns":
+                if not isinstance(value, dict) and value != []:
+                    raise QuestieLayoutError(f"invalid {kind} {entity_id} spawn correction in {path}")
+                value = {
+                    area: [point for point in points
+                           if isinstance(point, list) and (len(point) < 3 or point[2] is None)]
+                    for area, points in (value.items() if isinstance(value, dict) else ())
+                    if isinstance(points, list)
+                }
+            fields[field] = value
+        if not fields:
+            continue
+        existing = entities.get(entity_id)
+        entities[entity_id] = QuestSource(
+            kind,
+            entity_id,
+            fields.get("name", existing.name if existing else None),
+            _map_points(fields["spawns"], map_names) if "spawns" in fields
+            else existing.locations if existing else (),
+            data_source=relative,
+        )
+
+
+def _entity_correction_literal(source: str, path: Path) -> str:
+    if source.startswith("{"):
+        literal = _balanced_table(source, 0)
+    else:
+        match = re.match(r'''(?:"(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*'|nil\b)''', source, re.DOTALL)
+        if not match:
+            raise QuestieLayoutError(f"unsupported TBC entity correction value in {path}")
+        literal = match.group(0)
+    if source[len(literal):].lstrip()[:1] not in {",", ";", "}"}:
+        raise QuestieLayoutError(f"unsupported TBC entity correction expression in {path}")
+    return literal
 
 
 LUA_QUEST_KEYS = (
@@ -448,7 +533,8 @@ def _correction_constants(root: Path) -> dict[str, int]:
         "specialFlags.NONE": 0, "specialFlags.REPEATABLE": 1,
         "profKeys.HERBALISM": 182, "profKeys.MINING": 186,
         "profKeys.RIDING": 762, "profKeys.SKINNING": 393,
-        "rankKeys.EXPERT": 125, "rankKeys.ARTISAN": 225, "rankKeys.MASTER": 300,
+        # Questie requiredRanks uses trained-tier indices, not skill points.
+        "rankKeys.EXPERT": 3, "rankKeys.ARTISAN": 4, "rankKeys.MASTER": 5,
     })
     for icon in ("EVENT", "INTERACT", "LOOT", "NODE_FISH", "OBJECT", "SLAY", "TALK"):
         constants[f"Questie.ICON_TYPE_{icon}"] = 0
